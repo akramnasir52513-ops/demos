@@ -397,7 +397,14 @@
         .demo-info a.btn-navy, .wax-float { animation: none; }
       }
     </style>
-  </head>
+  <style>
+/* ctax: CTA button pulses — added 22 Oct 2026, in-file insertion only */
+@keyframes ctaPulseGlow { 0%,100% { box-shadow: 0 0 0 0 rgba(14,124,116,.45); } 50% { box-shadow: 0 0 0 9px rgba(14,124,116,0); } }
+a.nav-cta { animation: ctaPulseGlow 2s ease-in-out infinite; }
+a.btn-primary[href="#demos"] { animation: ctaPulseGlow 2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { a.nav-cta, a.btn-primary[href="#demos"] { animation: none; } }
+</style>
+</head>
   <body>
     <nav class="nav">
       <div class="wrap nav-inner">
