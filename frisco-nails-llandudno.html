@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frisco Nails Organics | Nail Salon in Llandudno, Wales — Gel Nails, BIAB, Acrylics, Manicure & Pedicure</title>
+<meta name="description" content="Frisco Nails Organics is a nail salon in Llandudno, Conwy, North Wales — rated 5.0 stars from 240 Google reviews. Gel nails, acrylics, BIAB builder gel, manicures, pedicures and nail art. Call or message for prices and bookings.">
+<style>
+:root{
+  --leaf:#2e5e3a; --leaf2:#3f7d4e; --leaf-soft:#e7f0e4; --moss:#24482d;
+  --blush:#f3d3c8; --blush2:#e9b7a8; --cream:#fbf6ee; --cream2:#f5ecdd;
+  --ink:#26332a; --muted:#5d6f60; --gold:#c39a5b; --white:#ffffff;
+  --shadow:0 10px 30px rgba(36,72,45,.14); --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--leaf);text-decoration:none}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.2;color:var(--moss)}
+h2{font-size:1.9rem;margin-bottom:.6rem}
+h3{font-size:1.2rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.section{padding:64px 0}
+.kicker{display:inline-block;background:var(--leaf-soft);color:var(--leaf);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;padding:6px 14px;border-radius:999px;margin-bottom:14px}
+.lead{color:var(--muted);max-width:680px}
+.center{text-align:center}
+.center .lead{margin:0 auto}
+/* top bar */
+.topbar{background:var(--moss);color:#eaf3e6;font-size:.85rem;padding:8px 0;text-align:center}
+.topbar strong{color:#ffd9a8}
+.topbar a{color:#fff;font-weight:700;text-decoration:underline}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(251,246,238,.96);backdrop-filter:blur(6px);border-bottom:1px solid #e7dcc8}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-size:1.25rem;color:var(--moss);font-weight:700}
+.logo .mark{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--leaf2),var(--leaf));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;flex:none}
+.logo small{display:block;font-family:'Segoe UI',sans-serif;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.nav-links{display:none;gap:22px;font-size:.95rem;font-weight:600}
+.nav-links a{color:var(--ink)}
+.nav-links a:hover{color:var(--leaf2)}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:700;font-size:.98rem;transition:transform .2s ease, box-shadow .2s ease;border:2px solid transparent}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#08351a;box-shadow:0 8px 20px rgba(37,211,102,.35)}
+.btn-call{background:var(--leaf);color:#fff}
+.btn-ghost{background:transparent;border-color:var(--leaf);color:var(--leaf)}
+.btn-sm{padding:9px 18px;font-size:.88rem}
+/* hero */
+.hero{background:linear-gradient(160deg,var(--cream) 0%,var(--leaf-soft) 55%,var(--blush) 130%);padding:56px 0 70px;overflow:hidden}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.hero h1{font-size:2.4rem;margin-bottom:14px}
+.hero h1 em{color:var(--leaf2);font-style:italic}
+.hero p.sub{color:var(--muted);font-size:1.08rem;max-width:540px;margin-bottom:22px}
+.stars{color:#e8a13a;letter-spacing:2px;font-size:1.05rem}
+.rating-line{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:20px;font-weight:600}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img img{border-radius:26px;box-shadow:var(--shadow);aspect-ratio:4/3.4;object-fit:cover;width:100%}
+.hero-card{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.95);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-size:.88rem}
+.hero-card strong{display:block;color:var(--moss);font-size:1rem}
+.leaf-badge{position:absolute;top:14px;right:14px;background:var(--leaf);color:#fff;padding:8px 14px;border-radius:999px;font-size:.8rem;font-weight:700;box-shadow:var(--shadow)}
+/* strip */
+.strip{background:var(--leaf);color:#eaf3e6}
+.strip .wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-top:26px;padding-bottom:26px;text-align:center}
+.strip b{display:block;font-size:1.5rem;color:#fff;font-family:Georgia,serif}
+.strip span{font-size:.85rem;opacity:.9}
+/* cards */
+.grid{display:grid;gap:22px;margin-top:34px}
+.card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 18px rgba(36,72,45,.08);border:1px solid #eee2cd}
+.card img{height:190px;width:100%;object-fit:cover}
+.card-body{padding:22px}
+.card-body h3{margin-bottom:8px}
+.card-body p{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;margin-top:12px;background:var(--blush);color:#7c4636;font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:999px}
+/* about */
+.about-grid{display:grid;gap:36px;align-items:center}
+.about-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-imgs img{border-radius:16px;height:100%;min-height:150px;object-fit:cover;box-shadow:var(--shadow)}
+.about-imgs img:first-child{grid-row:span 2;min-height:320px}
+.checklist{list-style:none;margin-top:18px}
+.checklist li{padding:8px 0 8px 32px;position:relative;color:var(--muted)}
+.checklist li::before{content:"🌿";position:absolute;left:0;top:8px}
+.checklist li strong{color:var(--ink)}
+/* detail rows */
+.detail-row{display:grid;gap:26px;align-items:center;margin-top:44px}
+.detail-row img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;width:100%}
+.detail-row p{color:var(--muted);margin-top:10px}
+.detail-row ul{margin:14px 0 0 18px;color:var(--muted)}
+.detail-row li{margin-bottom:6px}
+/* gallery */
+.gallery{background:var(--moss)}
+.gallery h2,.gallery .lead{color:#eaf3e6}
+.gallery h2{color:#fff}
+.gal-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.gal-grid figure{border-radius:16px;overflow:hidden;position:relative}
+.gal-grid img{height:210px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal-grid figure:hover img{transform:scale(1.06)}
+.gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(20,40,25,.85));color:#fff;font-size:.85rem;padding:26px 14px 10px}
+/* why */
+.why-card{background:var(--white);border-radius:var(--radius);padding:26px;border:1px solid #eee2cd;box-shadow:0 4px 18px rgba(36,72,45,.07)}
+.why-card .icon{font-size:1.7rem;margin-bottom:10px}
+.why-card p{color:var(--muted);font-size:.95rem;margin-top:6px}
+/* steps */
+.steps{display:grid;gap:18px;margin-top:30px}
+.step{background:var(--leaf-soft);border-radius:var(--radius);padding:24px;text-align:center}
+.step .num{width:46px;height:46px;margin:0 auto 10px;border-radius:50%;background:var(--leaf);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:1.2rem;font-weight:700}
+.step p{color:var(--muted);font-size:.94rem;margin-top:6px}
+/* faq */
+.faq-list{max-width:820px;margin:30px auto 0}
+details{background:var(--white);border:1px solid #eee2cd;border-radius:14px;margin-bottom:12px;padding:0 20px;box-shadow:0 2px 10px rgba(36,72,45,.05)}
+summary{cursor:pointer;font-weight:700;padding:16px 0;color:var(--moss);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--leaf2);font-size:1.3rem;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{color:var(--muted);padding:0 0 18px;font-size:.96rem}
+/* booking */
+.booking{background:linear-gradient(150deg,var(--leaf) 0%,var(--moss) 70%);border-radius:26px;padding:40px 28px;color:#eaf3e6;text-align:center;box-shadow:var(--shadow)}
+.booking h2{color:#fff}
+.booking p{max-width:560px;margin:0 auto 22px;opacity:.92}
+.booking .btn-call{background:#fff;color:var(--leaf)}
+.info-grid{display:grid;gap:18px;margin-top:26px}
+.info-card{background:var(--white);border-radius:var(--radius);padding:24px;border:1px solid #eee2cd}
+.info-card h3{margin-bottom:10px}
+.info-card p,.info-card li{color:var(--muted);font-size:.95rem}
+.info-card ul{list-style:none}
+.info-card li{padding:5px 0;border-bottom:1px dashed #eadfc9}
+.info-card li:last-child{border-bottom:none}
+.info-card li strong{color:var(--ink)}
+/* footer */
+footer{background:#1d3524;color:#cfe0cb;padding:48px 0 26px;margin-top:70px}
+footer h3{color:#fff;margin-bottom:12px;font-size:1.05rem}
+.foot-grid{display:grid;gap:28px}
+footer a{color:#cfe0cb}
+footer a:hover{color:#fff}
+.foot-note{border-top:1px solid #33513c;margin-top:30px;padding-top:18px;font-size:.82rem;opacity:.75;text-align:center}
+/* floating WA */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+/* animations — always end fully visible */
+@keyframes riseIn{from{opacity:.25;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes softZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+.rise{animation:riseIn .8s ease both}
+.hero-img img{animation:softZoom 2.4s ease both}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+@media(min-width:720px){
+  .nav-links{display:flex}
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .hero h1{font-size:3rem}
+  .strip .wrap{grid-template-columns:repeat(4,1fr)}
+  .grid{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr 1fr}
+  .detail-row{grid-template-columns:1fr 1fr}
+  .detail-row.flip img{order:2}
+  .gal-grid{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .info-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1.4fr 1fr 1fr}
+}
+@media(min-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+
+<div class="topbar">⭐ Rated <strong>5.0 stars from 240 Google reviews</strong> · Frisco Nails Organics, Llandudno · <a href="tel:+447730279671">Call 07730 279671</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="mark">🌿</span><span>Frisco Nails<small>Organics · Llandudno</small></span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-wa btn-sm" href="https://wa.me/447730279671">💬 WhatsApp Us</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="rise">
+      <span class="kicker">Nail Salon · Llandudno, North Wales</span>
+      <h1>Beautiful nails, <em>the natural way</em>, in the heart of Llandudno</h1>
+      <p class="sub">Welcome to Frisco Nails Organics — a friendly nail studio in Llandudno, Conwy, specialising in gel nails, BIAB builder gel, acrylics, relaxing manicures and pedicures, and hand-finished nail art.</p>
+      <div class="rating-line"><span class="stars">★★★★★</span><span>5.0 · 240 Google reviews</span></div>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447730279671">💬 Book on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+447730279671">📞 Call 07730 279671</a>
+      </div>
+      <p style="margin-top:16px;color:var(--muted);font-size:.92rem">Prices vary by design and length — <strong>call or message for prices</strong> and a quick quote before you book.</p>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1000&q=80&auto=format&fit=crop" alt="Freshly painted nails in soft natural tones at Frisco Nails Organics, Llandudno">
+      <span class="leaf-badge">🌿 Organic-inspired care</span>
+      <div class="hero-card"><strong>★★★★★ 5.0 rated</strong>Loved by clients across Llandudno &amp; Conwy</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div><b>5.0 ★</b><span>Google rating</span></div>
+    <div><b>240</b><span>Google reviews</span></div>
+    <div><b>6+</b><span>Nail services</span></div>
+    <div><b>1 tap</b><span>WhatsApp booking</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-imgs">
+      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=800&q=80&auto=format&fit=crop" alt="Manicure treatment in progress at a nail salon">
+      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=700&q=80&auto=format&fit=crop" alt="Elegant finished manicure with polished nails">
+      <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=700&q=80&auto=format&fit=crop" alt="Calm spa setting with flowers and towels">
+    </div>
+    <div>
+      <span class="kicker">About Us</span>
+      <h2>A little studio with a big love for healthy, beautiful nails</h2>
+      <p class="lead">Frisco Nails Organics is a nail salon in Llandudno, Conwy, North Wales. Our name says a lot about how we work: we care about the condition of your natural nails just as much as the finished look, and we take our time over every set — no rushing, no cutting corners.</p>
+      <p class="lead" style="margin-top:12px">Whether you are treating yourself to a relaxing pedicure, getting holiday-ready with a fresh set of gels, or you have a wedding, party or special occasion coming up, you will find a warm welcome and honest advice on what will suit your nails best.</p>
+      <ul class="checklist">
+        <li><strong>Gentle, careful prep</strong> — we protect your natural nail at every appointment</li>
+        <li><strong>Huge colour choice</strong> — classic nudes, soft blush tones and bold seasonal shades</li>
+        <li><strong>Hand-finished nail art</strong> — from subtle French tips to full creative designs</li>
+        <li><strong>Honest advice</strong> — if a treatment is not right for your nails, we will tell you</li>
+        <li><strong>Easy booking</strong> — message us on WhatsApp or find us on Fresha and Facebook</li>
+      </ul>
+      <div style="margin-top:22px" class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447730279671">💬 Message the Studio</a>
+        <a class="btn btn-ghost" href="#services">See Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services" style="background:var(--cream2)">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">Our Services</span>
+      <h2>Everything your nails need, under one roof</h2>
+      <p class="lead">From a quick tidy-up to a full set of sculpted acrylics, every treatment starts with careful nail prep and finishes with cuticle care. Call or message for prices — quotes are always free.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80&auto=format&fit=crop" alt="Gel nails in a glossy finish">
+        <div class="card-body">
+          <h3>Gel Nails</h3>
+          <p>A glossy, chip-resistant finish cured under the lamp for a shine that lasts. Choose from a huge range of colours, glitters and chrome effects — perfect if you want polished nails that keep up with busy weeks, work and holidays without daily repainting.</p>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80&auto=format&fit=crop" alt="Long acrylic nails being shaped at a nail desk">
+        <div class="card-body">
+          <h3>Acrylic Nails</h3>
+          <p>Strong, sculpted extensions built to your perfect length and shape — almond, coffin, square or stiletto. Ideal if your natural nails need help growing, or you simply love a longer, statement look for a special occasion.</p>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1599206676335-193c82b13c9e?w=800&q=80&auto=format&fit=crop" alt="Natural-looking builder gel nails in a nude shade">
+        <div class="card-body">
+          <h3>BIAB / Builder Gel</h3>
+          <p>Builder in a bottle adds a strong, flexible layer over your own nails so they can grow longer and stronger underneath. A favourite for nail-biters and anyone whose nails split or peel — natural-looking, hard-wearing and kind to the nail beneath.</p>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=800&q=80&auto=format&fit=crop" alt="Relaxing spa towels ready for a manicure treatment">
+        <div class="card-body">
+          <h3>Manicure</h3>
+          <p>The classic reset for your hands: soak, cuticle care, careful shaping, buffing and a relaxing hand massage, finished with your choice of polish or a natural shine. Lovely as a regular treat or before a big event.</p>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=800&q=80&auto=format&fit=crop" alt="Pedicure treatment with polished toes">
+        <div class="card-body">
+          <h3>Pedicure</h3>
+          <p>Give hard-working feet the attention they deserve: a warm soak, hard-skin care, cuticle work, shaping, exfoliation and massage, finished with perfectly polished toes. Essential before sandal season and holidays — and bliss all year round.</p>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1614806687007-2215a9db3b1c?w=800&q=80&auto=format&fit=crop" alt="Colourful nail polish collection used for nail art">
+        <div class="card-body">
+          <h3>Nail Art</h3>
+          <p>From delicate hand-painted flowers and classic French tips to chrome, cat-eye, ombré and full themed sets — bring a photo of a design you love, or let us suggest something seasonal. Nail art can be added to gel, BIAB and acrylic appointments.</p>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES IN DETAIL -->
+<section class="section" id="details">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">In Detail</span>
+      <h2>Not sure which treatment is right for you?</h2>
+      <p class="lead">Here is a closer look at our most-loved treatments, so you can book with confidence. Still unsure? Send us a photo of your nails on WhatsApp and we will happily advise.</p>
+    </div>
+
+    <div class="detail-row">
+      <img src="https://images.unsplash.com/photo-1599206676335-193c82b13c9e?w=900&q=80&auto=format&fit=crop" alt="Close-up of natural builder gel nails">
+      <div>
+        <h3>BIAB — grow your own nails, stronger</h3>
+        <p>BIAB (builder in a bottle) is one of the kindest ways to wear long nails. A layer of builder gel is applied over your natural nail, adding strength and a gentle structure that helps your own nails grow underneath without snapping.</p>
+        <ul>
+          <li>Great for weak, peeling or bitten nails</li>
+          <li>Looks completely natural — wear it sheer or with colour on top</li>
+          <li>Infill appointments keep the growth journey going</li>
+          <li>Soak-off removal is gentle when done properly — never prised off</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail-row flip">
+      <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=900&q=80&auto=format&fit=crop" alt="Acrylic nail extensions being filed into shape">
+      <div>
+        <h3>Acrylics — length and drama, built to last</h3>
+        <p>If you dream of long nails today — not in three months — acrylic extensions deliver. We sculpt each nail by hand to suit your fingers and lifestyle, then finish with gel colour and any art you fancy.</p>
+        <ul>
+          <li>Almond, coffin, square, oval or stiletto shapes</li>
+          <li>Hard-wearing for hands-on jobs and busy lives</li>
+          <li>Repairs and infills available to keep your set fresh</li>
+          <li>Safe removal in the salon protects your natural nails</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail-row">
+      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900&q=80&auto=format&fit=crop" alt="Hands with an elegant French-style manicure">
+      <div>
+        <h3>The finishing touches — art, French &amp; occasion nails</h3>
+        <p>Some appointments are about more than polish. Brides, bridesmaids, prom nights, christenings, holidays and photoshoots all deserve nails that complete the outfit. Tell us your colours and theme, and we will design a set to match.</p>
+        <ul>
+          <li>Classic and modern French manicures</li>
+          <li>Hand-painted flowers, dots, lines and seasonal designs</li>
+          <li>Chrome, glitter, cat-eye and ombré finishes</li>
+          <li>Group and occasion bookings — just ask on WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker" style="background:rgba(255,255,255,.14);color:#ffd9a8">Gallery</span>
+      <h2>Fresh sets &amp; studio moments</h2>
+      <p class="lead">A little inspiration for your next appointment — soft naturals, glossy gels and creative art, all finished right here in Llandudno.</p>
+    </div>
+    <div class="gal-grid">
+      <figure><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=700&q=80&auto=format&fit=crop" alt="Glossy painted nails in soft tones"><figcaption>Soft glossy colour</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=700&q=80&auto=format&fit=crop" alt="Gel nail finish close up"><figcaption>High-shine gel finish</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=700&q=80&auto=format&fit=crop" alt="Manicure being applied at the nail desk"><figcaption>At the nail desk</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=700&q=80&auto=format&fit=crop" alt="Beauty products and brushes on a dressing table"><figcaption>Getting occasion-ready</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700&q=80&auto=format&fit=crop" alt="Makeup and beauty styling detail"><figcaption>The finishing touches</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=700&q=80&auto=format&fit=crop" alt="Decorated nails with detailed nail art"><figcaption>Detailed nail art</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">Why Frisco</span>
+      <h2>Why Llandudno loves Frisco Nails Organics</h2>
+      <p class="lead">A 5.0-star rating from 240 Google reviews does not happen by accident. Here is what our clients keep coming back for.</p>
+    </div>
+    <div class="grid">
+      <div class="why-card"><div class="icon">⭐</div><h3>5.0 stars, 240 reviews</h3><p>Every single review counts. Our perfect 5.0 average on Google reflects the care we put into every appointment, from a quick polish change to a full bridal set.</p></div>
+      <div class="why-card"><div class="icon">🌿</div><h3>Natural-nail first</h3><p>Beautiful nails should never cost you healthy ones. We prep gently, remove safely and will always recommend the treatment that suits your nails — not the most expensive one.</p></div>
+      <div class="why-card"><div class="icon">🎨</div><h3>Colours &amp; art for everyone</h3><p>Quiet nudes, bold brights, French tips, chrome and hand-painted designs — if you have seen it and loved it, bring a picture and we will recreate the look on your nails.</p></div>
+      <div class="why-card"><div class="icon">🧼</div><h3>Clean tools, every time</h3><p>Tools are cleaned and sterilised between clients and files are fresh for each appointment. A tidy desk and proper hygiene are part of the service, not an extra.</p></div>
+      <div class="why-card"><div class="icon">💬</div><h3>Booking that takes seconds</h3><p>No phone queues. Message us on WhatsApp, book through Fresha or find us on Facebook — tell us what you would like and when, and we will confirm your slot.</p></div>
+      <div class="why-card"><div class="icon">🤍</div><h3>Relaxed, friendly studio</h3><p>Nail appointments should feel like a treat, not a chore. Expect a warm welcome, honest advice and unhurried appointments in our Llandudno studio.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW BOOKING WORKS -->
+<section class="section" style="background:var(--cream2)" id="book-steps">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">Easy Booking</span>
+      <h2>Your appointment in three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Message us</h3><p>Tap the WhatsApp button anywhere on this page, or call <strong>07730 279671</strong>. Tell us the treatment you fancy and a day that suits you.</p></div>
+      <div class="step"><div class="num">2</div><h3>Get your quote</h3><p>We will confirm the price for your chosen design and length — no surprises — and find you a slot. You can also book via Fresha or Facebook.</p></div>
+      <div class="step"><div class="num">3</div><h3>Relax &amp; enjoy</h3><p>Come in, sit back and let us look after your nails. Leave with a set you love — and simple aftercare tips to keep them looking fresh.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AFTERCARE -->
+<section class="section" id="aftercare">
+  <div class="wrap about-grid">
+    <div>
+      <span class="kicker">Aftercare</span>
+      <h2>Keep your new set looking fresh for longer</h2>
+      <p class="lead">A few small habits make a big difference to how long gel, BIAB and acrylic nails last. Here is the advice we give every client at the desk:</p>
+      <ul class="checklist">
+        <li><strong>Cuticle oil daily</strong> — keeps the nail flexible and the skin around it healthy</li>
+        <li><strong>Gloves for housework</strong> — hot water and cleaning products are polish's worst enemy</li>
+        <li><strong>Nails are jewels, not tools</strong> — avoid opening cans and picking at labels with them</li>
+        <li><strong>Never peel or pry</strong> — if a nail lifts, message us instead of pulling it off</li>
+        <li><strong>Book infills in good time</strong> — regular maintenance keeps sets strong and safe</li>
+      </ul>
+    </div>
+    <div class="about-imgs" style="grid-template-columns:1fr">
+      <img src="https://images.unsplash.com/photo-1522337094846-8a818192de1f?w=900&q=80&auto=format&fit=crop" alt="Bright, welcoming salon interior" style="min-height:300px">
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="background:var(--cream2)">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">Questions</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>How do I book an appointment?</summary><p>The quickest way is WhatsApp — tap any green WhatsApp button on this page or message <strong>07730 279671</strong>. You can also call us, book through Fresha, or message our Facebook page. Tell us which treatment you would like and when, and we will confirm your appointment.</p></details>
+      <details><summary>How much do treatments cost?</summary><p>Prices depend on the treatment, length and design you choose, so we do not list fixed prices here. Call or message us for prices — tell us what you have in mind (a photo helps!) and we will give you a clear quote before you book, with no obligation.</p></details>
+      <details><summary>What is the difference between gel, BIAB and acrylics?</summary><p>Gel polish is a long-lasting colour applied to your own nails. BIAB (builder gel) adds a strengthening layer over your natural nails so they can grow. Acrylics are sculpted extensions that add instant length and strength. If you are not sure which suits you, message us a photo of your nails and we will advise honestly.</p></details>
+      <details><summary>How long do gel and BIAB nails last?</summary><p>With normal care, gel polish typically looks fresh for around two to three weeks, and BIAB sets are usually infilled every three to four weeks as your nails grow. Using cuticle oil daily and wearing gloves for housework really helps.</p></details>
+      <details><summary>Can you recreate a nail design from a photo?</summary><p>Usually, yes! Send us the photo on WhatsApp before your appointment so we can confirm the design, allow the right amount of time, and give you an exact price. Hand-painted art, French tips, chrome and ombré are all popular requests.</p></details>
+      <details><summary>Do you remove nails done at another salon?</summary><p>Yes — safe removal is always better than picking or prying at home, which damages the natural nail. Let us know when booking if you need a removal as well, so we can allow enough time. Call or message for prices.</p></details>
+      <details><summary>I bite my nails — can you still help?</summary><p>Absolutely, and you are not alone. BIAB is a brilliant option for nail-biters because the strong layer protects your nails while they grow underneath. We will never judge — we will help you get nails you are proud to show off.</p></details>
+      <details><summary>Do you do nails for weddings and special occasions?</summary><p>Yes — bridal parties, proms, holidays and photoshoots are some of our favourite appointments. Message us with your date and ideas, and we will plan your set (and your party's, if you like) so everything is ready in good time.</p></details>
+      <details><summary>Where are you based?</summary><p>We are a nail salon in Llandudno, Conwy, North Wales, welcoming clients from across the town and the surrounding area. Message us on WhatsApp for directions or anything else you need before your visit.</p></details>
+      <details><summary>What if I need to change or cancel my appointment?</summary><p>Life happens — just message us on WhatsApp as early as you can and we will do our best to move your appointment. Giving us notice means someone else can take the slot, and it keeps our small studio running smoothly.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL AREA -->
+<section class="section" id="area">
+  <div class="wrap about-grid">
+    <div>
+      <span class="kicker">Find Us</span>
+      <h2>Your local nail salon in Llandudno</h2>
+      <p class="lead">Frisco Nails Organics is based in Llandudno, the much-loved seaside town on the North Wales coast in the county of Conwy. We welcome clients from across the town — whether you live here year-round, work nearby, or are visiting the coast and fancy a holiday treat for your nails.</p>
+      <p class="lead" style="margin-top:12px">Clients also travel to us from the surrounding Conwy area, including Conwy town itself, Deganwy, Llandudno Junction, Penrhyn Bay, Craig-y-Don, Colwyn Bay and the Great Orme side of town. Wherever you are coming from, booking ahead on WhatsApp means your slot is waiting for you — no walk-in queues, no wasted trips.</p>
+      <ul class="checklist">
+        <li><strong>Easy to reach</strong> — in Llandudno, with the town's shops, cafés and seafront nearby</li>
+        <li><strong>Book ahead</strong> — message on WhatsApp and your appointment is reserved</li>
+        <li><strong>Visitors welcome</strong> — holiday nails and pre-event sets are our speciality</li>
+      </ul>
+      <div style="margin-top:22px" class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447730279671">💬 Plan Your Visit</a>
+      </div>
+    </div>
+    <div class="about-imgs" style="grid-template-columns:1fr">
+      <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=900&q=80&auto=format&fit=crop" alt="Calm, welcoming spa atmosphere with fresh flowers" style="min-height:300px">
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section class="section" id="occasions" style="background:var(--cream2)">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">Special Occasions</span>
+      <h2>Nails for the days that matter most</h2>
+      <p class="lead">Some sets are more than a treat — they are part of the outfit, the photos and the memories. Here is how we help clients get ready for their biggest days.</p>
+    </div>
+    <div class="grid">
+      <div class="why-card"><div class="icon">💍</div><h3>Weddings &amp; brides</h3><p>Soft French tips, milky whites and delicate shimmer are bridal favourites, and we can match your set to your flowers or colour scheme. Bridesmaids and mums are welcome too — message us early so we can plan everyone's appointments around the big day, and consider a trial set a few weeks before so your wedding nails are exactly right.</p></div>
+      <div class="why-card"><div class="icon">🌴</div><h3>Holidays &amp; getaways</h3><p>Heading somewhere sunny? Gel and BIAB sets stand up brilliantly to sun, sea and sand, and a pedicure before you go means sandal-ready feet from day one. Bright corals, tropical art and chrome finishes are holiday classics — book a few days before you fly so your set is fresh for the whole trip.</p></div>
+      <div class="why-card"><div class="icon">🎓</div><h3>Proms &amp; parties</h3><p>Prom night, birthdays, Christmas parties and nights out all deserve a statement set. Bring us your dress colour or a photo of a design you love, and we will build a set — glitter, gems, art and all — that completes the look and lasts long after the last dance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENT GUIDE -->
+<section class="section" id="guide">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">Treatment Guide</span>
+      <h2>Gel, BIAB or acrylics — a simple guide</h2>
+      <p class="lead">Three brilliant options, three different jobs. Use this quick guide to find your match — or simply message us and we will recommend the right one for your nails and lifestyle.</p>
+    </div>
+    <div class="grid">
+      <div class="why-card"><div class="icon">💅</div><h3>Choose gel polish if…</h3><p>Your natural nails are a length you already like, and you mainly want colour that lasts. Gel polish gives a glossy, even finish that stays put for weeks without chipping the way ordinary polish does. It is the quickest appointment of the three and a great first step into salon nails.</p></div>
+      <div class="why-card"><div class="icon">🌱</div><h3>Choose BIAB if…</h3><p>Your nails are weak, bendy, peeling or bitten, and you want to grow them. The builder-gel layer works like a protective shield while your own nails grow underneath. Many clients start on BIAB and never look back — their natural nails end up longer and stronger than they ever managed alone.</p></div>
+      <div class="why-card"><div class="icon">✨</div><h3>Choose acrylics if…</h3><p>You want length and shape right now. Acrylic extensions are sculpted to order — long almonds for a glamorous look, neat squares for something classic — and they are the strongest option for anyone whose hands work hard. Perfect for occasions, and for anyone whose natural nails simply will not grow.</p></div>
+    </div>
+    <p class="lead center" style="margin:30px auto 0">Whichever you choose, every appointment at Frisco Nails Organics starts with careful prep and honest advice — and every price is confirmed before we begin. <strong>Call or message for prices.</strong></p>
+  </div>
+</section>
+
+<!-- BOOKING / CONTACT -->
+<section class="section" id="book">
+  <div class="wrap">
+    <div class="booking">
+      <span class="kicker" style="background:rgba(255,255,255,.15);color:#ffd9a8">Book Now</span>
+      <h2>Ready for your best nails yet?</h2>
+      <p>Message us on WhatsApp with the treatment you fancy and a time that suits you — we will reply with your quote and the next available slots. Rated 5.0 ★ from 240 happy clients.</p>
+      <div class="hero-ctas" style="justify-content:center">
+        <a class="btn btn-wa" href="https://wa.me/447730279671">💬 Book on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+447730279671">📞 Call 07730 279671</a>
+      </div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>📍 Visit us</h3>
+        <ul>
+          <li><strong>Salon:</strong> Frisco Nails Organics</li>
+          <li><strong>Town:</strong> Llandudno, Conwy, North Wales</li>
+          <li><strong>Phone / WhatsApp:</strong> 07730 279671</li>
+          <li><strong>Also on:</strong> Fresha &amp; Facebook</li>
+        </ul>
+        <p style="margin-top:10px">Message us on WhatsApp for directions or to check anything before your visit.</p>
+      </div>
+      <div class="info-card">
+        <h3>💅 Good to know</h3>
+        <ul>
+          <li><strong>Prices:</strong> call or message for prices — free quotes</li>
+          <li><strong>Designs:</strong> send a photo for an exact quote</li>
+          <li><strong>Removals:</strong> safe soak-off available — just ask</li>
+          <li><strong>Occasions:</strong> weddings, proms &amp; groups welcome</li>
+        </ul>
+        <p style="margin-top:10px">Opening times can vary — message us to check availability for the day you have in mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>🌿 Frisco Nails Organics</h3>
+        <p>A friendly nail salon in Llandudno, Conwy, North Wales — gel nails, acrylics, BIAB builder gel, manicures, pedicures and nail art, rated 5.0 stars from 240 Google reviews.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <p><a href="#services">Gel Nails</a><br><a href="#services">Acrylic Nails</a><br><a href="#services">BIAB / Builder Gel</a><br><a href="#services">Manicure</a><br><a href="#services">Pedicure</a><br><a href="#services">Nail Art</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>📞 <a href="tel:+447730279671">07730 279671</a><br>💬 <a href="https://wa.me/447730279671">WhatsApp the studio</a><br>📍 Llandudno, Conwy, North Wales<br>Also find us on Fresha &amp; Facebook</p>
+      </div>
+    </div>
+    <div class="foot-note">© Frisco Nails Organics, Llandudno. Gel nails · acrylics · BIAB builder gel · manicures · pedicures · nail art. Prices confirmed on enquiry — call or message for prices, free quotes always.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447730279671" aria-label="Chat with Frisco Nails Organics on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
