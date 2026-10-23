@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Barber | Barber Shop in Harrogate, North Yorkshire — Haircuts, Skin Fades, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="Golden Barber in Harrogate, North Yorkshire — rated 4.5 stars from 68 Google reviews. Haircuts, skin fades, beard trims, hot towel shaves and kids cuts. No website needed to book — message us on WhatsApp.">
+<style>
+:root{
+  --gold:#c9a227; --gold-deep:#a8842a; --gold-soft:#e8cf7a;
+  --char:#1c1a17; --char2:#26231e; --ink:#2b2721;
+  --cream:#f7f1e3; --cream2:#efe5cd; --paper:#fbf7ec;
+  --line:#ddd0ac; --muted:#6f6450;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--gold-deep)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;color:var(--char)}
+h2{font-size:2rem;margin-bottom:.5rem}
+h3{font-size:1.25rem}
+.kicker{letter-spacing:.22em;text-transform:uppercase;font-size:.78rem;color:var(--gold-deep);font-weight:bold;margin-bottom:.6rem}
+.lede{color:var(--muted);max-width:640px}
+section{padding:64px 0}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:bold;font-size:1rem;border:2px solid var(--gold);transition:transform .2s ease,background .2s ease}
+.btn-gold{background:var(--gold);color:var(--char)}
+.btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--cream);border-color:var(--cream)}
+.btn-ghost:hover{background:rgba(247,241,227,.12);transform:translateY(-2px)}
+.btn-dark{background:var(--char);color:var(--cream);border-color:var(--char)}
+.btn-dark:hover{background:var(--char2);transform:translateY(-2px)}
+/* rating strip */
+.strip{background:var(--char);color:var(--cream);text-align:center;padding:10px 16px;font-size:.95rem}
+.strip .stars{color:var(--gold);letter-spacing:.15em}
+.strip strong{color:var(--gold-soft)}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(28,26,23,.97);border-bottom:3px solid var(--gold)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream)}
+.pole{width:16px;height:44px;border-radius:8px;border:2px solid var(--gold-soft);background:repeating-linear-gradient(45deg,var(--gold) 0 7px,var(--cream) 7px 14px,var(--char) 14px 21px);flex:none}
+.logo b{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;letter-spacing:.04em;display:block;line-height:1.1}
+.logo small{color:var(--gold-soft);letter-spacing:.28em;text-transform:uppercase;font-size:.62rem}
+.nav nav{display:none;gap:22px}
+.nav nav a{color:var(--cream);text-decoration:none;font-size:.95rem}
+.nav nav a:hover{color:var(--gold-soft)}
+.nav .btn{padding:10px 20px;font-size:.92rem}
+@media(min-width:820px){.nav nav{display:flex}}
+/* hero */
+.hero{background:var(--char);color:var(--cream);padding:0;overflow:hidden}
+.hero-grid{display:grid;gap:0}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr 1fr}}
+.hero-copy{padding:64px 20px 56px;max-width:640px}
+@media(min-width:900px){.hero-copy{padding:84px 40px 84px max(20px,calc((100vw - 1120px)/2 + 20px))}}
+.hero h1{color:var(--cream);font-size:2.6rem;margin-bottom:1rem}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{color:#d9cfb4;max-width:520px;margin-bottom:1.8rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-photo{position:relative;min-height:340px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.rating-card{position:absolute;left:20px;bottom:20px;background:var(--cream);color:var(--char);border-radius:var(--radius);padding:16px 20px;box-shadow:0 18px 40px rgba(0,0,0,.45);border-top:5px solid var(--gold);max-width:280px}
+.rating-card .big{font-family:'Playfair Display',Georgia,serif;font-size:2rem;line-height:1}
+.rating-card .stars{color:var(--gold-deep);letter-spacing:.12em}
+.rating-card p{font-size:.9rem;color:var(--muted);margin-top:4px}
+/* trust strip */
+.trust{background:var(--gold);color:var(--char)}
+.trust .wrap{display:grid;gap:14px;padding-top:22px;padding-bottom:22px;text-align:center;font-weight:bold}
+@media(min-width:760px){.trust .wrap{grid-template-columns:repeat(4,1fr)}}
+.trust span{display:block;font-weight:normal;font-size:.9rem;color:#4c3f14}
+/* generic grids */
+.grid{display:grid;gap:22px}
+@media(min-width:700px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 18px rgba(60,48,10,.06)}
+.card img{height:210px;width:100%;object-fit:cover}
+.card .pad{padding:22px}
+.card p{color:var(--muted);font-size:.97rem}
+.price-note{display:inline-block;margin-top:12px;background:var(--cream2);color:var(--gold-deep);font-size:.85rem;font-weight:bold;padding:5px 12px;border-radius:999px}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.about-photos img{border-radius:var(--radius);height:100%;min-height:220px;object-fit:cover;border:3px solid var(--cream2)}
+.checklist{list-style:none;margin-top:18px}
+.checklist li{padding:8px 0 8px 34px;position:relative;border-bottom:1px dashed var(--line)}
+.checklist li::before{content:"✂";position:absolute;left:2px;color:var(--gold-deep)}
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:820px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.gallery figure{border-radius:var(--radius);overflow:hidden;border:3px solid var(--cream2)}
+.gallery img{height:230px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{background:var(--char);color:var(--gold-soft);padding:9px 14px;font-size:.88rem}
+.dark{background:var(--char);color:var(--cream)}
+.dark h2{color:var(--cream)}
+.dark .lede{color:#cbbf9f}
+.why-card{background:var(--char2);border:1px solid #453c28;border-top:4px solid var(--gold);border-radius:var(--radius);padding:24px}
+.why-card h3{color:var(--gold-soft);margin-bottom:.4rem}
+.why-card p{color:#d9cfb4;font-size:.96rem}
+.steps{display:grid;gap:20px;counter-reset:step}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;position:relative}
+.step::before{counter-increment:step;content:counter(step);position:absolute;top:-18px;left:22px;background:var(--gold);color:var(--char);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-family:'Playfair Display',Georgia,serif;font-size:1.15rem}
+.step h3{margin:8px 0 .4rem}
+.step p{color:var(--muted);font-size:.96rem}
+.detail-row{display:grid;gap:26px;align-items:center;margin-bottom:44px}
+@media(min-width:820px){.detail-row{grid-template-columns:1fr 1fr}.detail-row.flip .txt{order:2}}
+.detail-row img{border-radius:var(--radius);height:300px;width:100%;object-fit:cover;border:3px solid var(--cream2)}
+.detail-row p{color:var(--muted)}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;padding:4px 22px}
+.faq summary{cursor:pointer;font-weight:bold;padding:14px 0;font-family:'Playfair Display',Georgia,serif;font-size:1.08rem;color:var(--char)}
+.faq details p{padding:0 0 16px;color:var(--muted)}
+.contact-card{background:var(--char);color:var(--cream);border-radius:18px;padding:36px;border-top:6px solid var(--gold)}
+.contact-card h2{color:var(--cream)}
+.contact-card p{color:#d9cfb4}
+.info-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px}
+.info-card dl{display:grid;gap:14px;margin-top:8px}
+.info-card dt{font-weight:bold;color:var(--gold-deep);font-size:.85rem;letter-spacing:.14em;text-transform:uppercase}
+.info-card dd{margin-top:2px}
+footer{background:var(--char);color:#cbbf9f;padding:48px 0 30px;border-top:3px solid var(--gold)}
+footer h3{color:var(--gold-soft);margin-bottom:.6rem}
+footer a{color:#e8cf7a;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.foot-grid{display:grid;gap:28px}
+@media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr}}
+.foot-base{border-top:1px solid #453c28;margin-top:32px;padding-top:18px;font-size:.88rem;text-align:center}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;text-decoration:none;font-weight:bold;padding:14px 20px;border-radius:999px;box-shadow:0 10px 26px rgba(0,0,0,.35);font-family:Arial,sans-serif;font-size:.95rem}
+@keyframes rise{from{opacity:.25;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.rise{animation:rise .8s ease both}
+@keyframes zoomslow{from{transform:scale(1)}to{transform:scale(1.07)}}
+.hero-photo img{animation:zoomslow 14s ease-in-out infinite alternate}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="strip"><span class="stars">★★★★★</span> Rated <strong>4.5 stars</strong> from <strong>68 Google reviews</strong> · Golden Barber, Harrogate</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="pole"></span><span><b>Golden Barber</b><small>Harrogate</small></span></a>
+    <nav>
+      <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-gold" href="https://wa.me/447846885348">WhatsApp Us</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy rise">
+      <p class="kicker" style="color:var(--gold-soft)">Barber shop · Harrogate, North Yorkshire</p>
+      <h1>Old-school craft, <em>golden</em> finish.</h1>
+      <p>Golden Barber is Harrogate's home of sharp haircuts, seamless skin fades, tidy beard work and proper hot towel shaves. No fuss, no rush — just a chair, a skilled barber and a finish worth reviewing. We're rated 4.5 stars from 68 Google reviews.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://wa.me/447846885348">Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447464931190">Call 07464 931190</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" alt="Barber giving a precision haircut at Golden Barber Harrogate">
+      <div class="rating-card">
+        <div class="big">4.5 ★</div>
+        <div class="stars">★★★★★</div>
+        <p>from 68 Google reviews — Harrogate locals keep coming back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div>4.5 ★ rated<span>68 Google reviews</span></div>
+    <div>Book in seconds<span>WhatsApp or Fresha</span></div>
+    <div>Classic &amp; modern<span>fades to hot towel shaves</span></div>
+    <div>Harrogate based<span>North Yorkshire</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="grid grid-2" style="align-items:center;gap:40px">
+      <div>
+        <p class="kicker">About Golden Barber</p>
+        <h2>A proper barber's, the way it should be</h2>
+        <p class="lede">Golden Barber brings the golden era of barbering to Harrogate — unhurried chairs, honest advice and cuts finished with real care. Whether it's your regular tidy-up, a complete restyle or a beard that needs bringing back under control, you'll leave sharper than you arrived.</p>
+        <ul class="checklist">
+          <li>Precision cuts tailored to your head shape and hair type</li>
+          <li>Skin fades blended seamlessly, checked from every angle</li>
+          <li>Traditional hot towel shaves with proper preparation</li>
+          <li>Patient, friendly cuts for younger customers</li>
+          <li>Book ahead on WhatsApp or Fresha — or call the shop</li>
+        </ul>
+      </div>
+      <div class="about-photos">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Inside a traditional barber shop">
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=80" alt="Classic barber chair ready for the next customer">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--cream)">
+  <div class="wrap">
+    <p class="kicker">Services</p>
+    <h2>What's on the menu</h2>
+    <p class="lede" style="margin-bottom:36px">Five core services, done properly. Message us on WhatsApp for today's prices and availability — no surprises, just straight answers.</p>
+    <div class="grid grid-3">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80" alt="Gentleman receiving a haircut">
+        <div class="pad"><h3>The Haircut</h3>
+        <p>A consultation first, then a cut shaped to suit you — scissor work, clippers or a blend of both. Finished with a tidy neckline, styled and checked in the mirror from every side before you leave the chair.</p>
+        <span class="price-note">Call or message for prices</span></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Barber creating a skin fade">
+        <div class="pad"><h3>Skin Fades</h3>
+        <p>High, mid or low — a fade is only as good as its blend. We build the gradient gradually, foil-finish the skin line and make sure there isn't a harsh step anywhere. Bring a photo if you have a look in mind.</p>
+        <span class="price-note">Call or message for prices</span></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?auto=format&fit=crop&w=800&q=80" alt="Beard trim and shaping">
+        <div class="pad"><h3>Beard Trim &amp; Shape</h3>
+        <p>Length taken down evenly, cheek and neck lines sharpened, stray growth cleaned up. We shape to your jaw rather than a template, and finish with balm so it sits right for days, not just an hour.</p>
+        <span class="price-note">Call or message for prices</span></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Traditional hot towel shave with a straight razor">
+        <div class="pad"><h3>Hot Towel Shave</h3>
+        <p>The traditional way: hot towels to soften the beard, a rich lather worked in with a brush, a careful straight-razor pass, then a cold towel and moisturiser to close everything down. The closest, calmest shave there is.</p>
+        <span class="price-note">Call or message for prices</span></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80" alt="Barber tools laid out ready for a kids cut">
+        <div class="pad"><h3>Kids Cuts</h3>
+        <p>Patient, unhurried cuts for younger customers — whether it's a first haircut or a back-to-school tidy. We keep it relaxed, explain what's happening, and never rush a nervous customer through the chair.</p>
+        <span class="price-note">Call or message for prices</span></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=800&q=80" alt="Barber finishing a full grooming service">
+        <div class="pad"><h3>The Full Works</h3>
+        <p>Cut, beard and hot towel finish in one sitting — the complete reset. Ideal before a wedding, a big night out, a job interview or whenever you want to walk out feeling like a new man.</p>
+        <span class="price-note">Call or message for prices</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">In detail</p>
+    <h2 style="margin-bottom:36px">The craft behind the chair</h2>
+    <div class="detail-row">
+      <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?auto=format&fit=crop&w=900&q=80" alt="Barber blending a fade with clippers">
+      <div class="txt"><h3>Fades, decoded</h3>
+      <p>Not sure which fade you want? A <strong>low fade</strong> keeps things subtle around the ears; a <strong>mid fade</strong> is the versatile all-rounder; a <strong>high fade</strong> gives the sharpest contrast. Tell us how you wear your hair day to day and how often you want to maintain it, and we'll match the fade to your lifestyle — not just the photo on your phone.</p></div>
+    </div>
+    <div class="detail-row flip">
+      <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=900&q=80" alt="Barber shaping a beard with detail trimmers">
+      <div class="txt"><h3>Beards, brought under control</h3>
+      <p>A good beard trim is about architecture: weight removed where it bulks out, length kept where it adds shape, and lines that follow your face. We'll also show you how to keep it tidy between visits — which brush, which balm, and how often to oil it so it never looks neglected.</p></div>
+    </div>
+    <div class="detail-row">
+      <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=900&q=80" alt="Hot towel being prepared for a traditional shave">
+      <div class="txt"><h3>The hot towel ritual</h3>
+      <p>Our shave isn't a rushed add-on — it's a ritual. Heat opens the pores and softens the bristles, the lather lifts each hair, and the razor does the rest in a single careful pass. If you've only ever shaved at the bathroom sink, this is the experience that converts you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="background:var(--cream)">
+  <div class="wrap">
+    <p class="kicker">Gallery</p>
+    <h2>From the shop floor</h2>
+    <p class="lede" style="margin-bottom:32px">The chairs, the tools and the craft — a look at everyday barbering at Golden Barber.</p>
+    <div class="gallery">
+      <figure><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=80" alt="Precision haircut in progress"><figcaption>Precision cutting</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80" alt="Straight razor shave"><figcaption>The straight-razor finish</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?auto=format&fit=crop&w=700&q=80" alt="Beard shaping"><figcaption>Beard shaping</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=700&q=80" alt="Classic barber chair"><figcaption>The chair is waiting</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=700&q=80" alt="Skin fade being blended"><figcaption>Fade work</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=700&q=80" alt="Barber tools of the trade"><figcaption>Tools of the trade</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--gold-soft)">Why Golden Barber</p>
+    <h2>Six reasons Harrogate keeps the chair warm</h2>
+    <p class="lede" style="margin-bottom:36px">Rated 4.5 stars from 68 Google reviews — here's what earns them.</p>
+    <div class="grid grid-3">
+      <div class="why-card"><h3>Consultation first</h3><p>Every appointment starts with a proper chat about what you want and what your hair will actually do. No guesswork, no surprises in the mirror.</p></div>
+      <div class="why-card"><h3>Never rushed</h3><p>A cut takes as long as it takes. We check the blend, the neckline and the finish from every angle before the cape comes off.</p></div>
+      <div class="why-card"><h3>Classic skills</h3><p>Hot towels, straight razors, scissor craft — the traditional techniques, kept alive and done properly.</p></div>
+      <div class="why-card"><h3>Easy booking</h3><p>Message on WhatsApp, book through Fresha, or simply call the shop. Pick whichever suits you.</p></div>
+      <div class="why-card"><h3>All ages welcome</h3><p>From first haircuts to gentlemen who've had the same style for forty years — everyone gets the same care.</p></div>
+      <div class="why-card"><h3>Honest advice</h3><p>If a style won't suit your hair, we'll say so — and show you the version that will. That's what a barber is for.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Booking</p>
+    <h2>Three steps to the chair</h2>
+    <p class="lede" style="margin-bottom:44px">No website sign-ups, no forms. Booking takes under a minute.</p>
+    <div class="steps">
+      <div class="step"><h3>Message or call</h3><p>Tap the WhatsApp button anywhere on this page, or call <a href="tel:+447464931190">07464 931190</a>. Tell us the service you'd like.</p></div>
+      <div class="step"><h3>Pick your time</h3><p>We'll confirm today's availability and the best slot for you — message us to check what's free before you set off.</p></div>
+      <div class="step"><h3>Sit back</h3><p>Arrive, take the chair, and leave sharper. Pay at the shop once you're happy with the mirror.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <p class="kicker">Grooming guide</p>
+    <h2>Keep it golden between visits</h2>
+    <p class="lede" style="margin-bottom:32px">A great cut deserves a little upkeep. Three habits that make the difference.</p>
+    <div class="grid grid-3">
+      <div class="card"><div class="pad"><h3>Fade upkeep</h3><p>A skin fade looks its sharpest for the first two weeks. Book your tidy-up before it grows out completely — shorter intervals keep the blend looking intentional, and a quick neckline clean-up between cuts works wonders.</p></div></div>
+      <div class="card"><div class="pad"><h3>Beard basics</h3><p>Brush it daily to train the growth direction, oil it after a warm shower when the hair is most receptive, and trim strays little and often rather than attempting a full reshape at home.</p></div></div>
+      <div class="card"><div class="pad"><h3>Bring a photo</h3><p>Seen a style you like? Save it and show us. A photo starts the consultation better than any description — and we'll tell you honestly how it'll translate to your hair type.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <p class="kicker">FAQ</p>
+    <h2>Questions, answered</h2>
+    <p class="lede" style="margin-bottom:32px">Anything else — just ask on WhatsApp.</p>
+    <details><summary>How do I book an appointment?</summary><p>The quickest way is WhatsApp — tap any WhatsApp button on this page and message us on <strong>07846 885348</strong>. You can also book via Fresha, find us on Facebook, or call the shop on <a href="tel:+447464931190">07464 931190</a>.</p></details>
+    <details><summary>How much does a haircut cost?</summary><p>Prices vary by service, so we don't publish a fixed list here — call or message us for prices and we'll confirm the exact cost of what you'd like before you book. No obligation, no pressure.</p></details>
+    <details><summary>Where is Golden Barber?</summary><p>We're in Harrogate, North Yorkshire. Message us on WhatsApp and we'll happily confirm directions and the easiest way to find the shop.</p></details>
+    <details><summary>What are your opening hours?</summary><p>Hours can vary, so message us on WhatsApp to check today's availability before you travel — we'll reply with the current times and the next free slot.</p></details>
+    <details><summary>Do you do skin fades?</summary><p>Yes — low, mid and high skin fades are one of our specialities. If you're unsure which height suits you, we'll talk it through in the consultation and match it to your head shape and how often you want to maintain it.</p></details>
+    <details><summary>What's included in a hot towel shave?</summary><p>Hot towels to soften the beard, a brush-worked lather, a careful straight-razor shave, then a cold towel and moisturiser to finish. It's the traditional full ritual, never rushed.</p></details>
+    <details><summary>Can you cut my child's hair?</summary><p>Absolutely. We're patient with younger customers, including first haircuts — we'll explain each step and keep the experience relaxed.</p></details>
+    <details><summary>I'm growing my beard out — can you help?</summary><p>Yes. Regular shaping trims keep a growing beard looking deliberate rather than scruffy. We'll map out a shape for your face and show you how to maintain it between visits.</p></details>
+    <details><summary>What if I don't know what style I want?</summary><p>That's what the consultation is for. Bring a photo if you have one, or just describe your routine and we'll recommend a style that suits your hair type, face shape and how much styling time you realistically have.</p></details>
+    <details><summary>Why don't you have a website?</summary><p>You're looking at our demo page — a full website like this one is exactly what we could have. For now, everything runs through WhatsApp, Fresha and Facebook, which keeps booking simple and personal.</p></details>
+    <details><summary>How often should I get my hair cut?</summary><p>It depends on the style. Skin fades look best with a tidy-up every two to three weeks; classic scissor cuts hold their shape for four to six weeks; longer styles can stretch further with an occasional weight-and-ends trim. We'll suggest your ideal rhythm at your appointment — no obligation to book it there and then.</p></details>
+    <details><summary>What products should I use at home?</summary><p>Ask in the chair and we'll recommend based on your actual hair — fine hair needs lighter products, thick or curly hair usually wants more moisture and hold. We'd rather you used one right product than a shelf of wrong ones, and we'll show you exactly how much to use.</p></details>
+    <details><summary>Can I book for a group or a wedding party?</summary><p>Yes — grooms and wedding parties are welcome. Message us on WhatsApp with the date and how many people, and we'll plan the chairs and timings so everyone is finished in good time for the day.</p></details>
+    <details><summary>Do I need to book, or can I just walk in?</summary><p>Booking ahead on WhatsApp, Fresha or by phone is the surest way to get the time you want. If you're passing, message us first to check today's availability — we'll tell you honestly whether there's a chair free or when the next one will be.</p></details>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <div class="grid grid-2" style="gap:28px;align-items:stretch">
+      <div class="contact-card">
+        <p class="kicker" style="color:var(--gold-soft)">Book now</p>
+        <h2>Your chair is waiting</h2>
+        <p style="margin:12px 0 24px">Message us on WhatsApp for the fastest reply — tell us the service you'd like and when suits you, and we'll confirm your slot.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <a class="btn btn-gold" href="https://wa.me/447846885348">WhatsApp 07846 885348</a>
+          <a class="btn btn-ghost" href="tel:+447464931190">Call 07464 931190</a>
+        </div>
+      </div>
+      <div class="info-card">
+        <h3>Good to know</h3>
+        <dl>
+          <div><dt>Location</dt><dd>Harrogate, North Yorkshire — message us for directions</dd></div>
+          <div><dt>Booking</dt><dd>WhatsApp, Fresha, Facebook or phone</dd></div>
+          <div><dt>Rating</dt><dd>4.5 ★ from 68 Google reviews</dd></div>
+          <div><dt>Prices</dt><dd>Call or message for prices — confirmed before you book</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">First visit?</p>
+    <h2>What to expect in the chair</h2>
+    <p class="lede" style="margin-bottom:32px">Never been to Golden Barber before? Here's how a visit runs, from the door to the mirror check.</p>
+    <div class="grid grid-2">
+      <div class="card"><div class="pad"><h3>A warm welcome, not a queue ticket</h3><p>Come in, take a seat and relax. If you've booked, we'll be expecting you; if you're passing and curious, message us first and we'll let you know the next free chair so you're not waiting around unnecessarily.</p></div></div>
+      <div class="card"><div class="pad"><h3>The consultation matters</h3><p>Before any clippers switch on, we talk: what you like, what you don't, how your hair grows, and how much effort you put in each morning. That two-minute conversation is the difference between a haircut that works for a day and one that works for a month.</p></div></div>
+      <div class="card"><div class="pad"><h3>Craft you can watch</h3><p>Section by section, blend by blend — you'll see the shape come together in the mirror. If something looks different from what you imagined, say so mid-cut; small adjustments are easy while you're still in the chair.</p></div></div>
+      <div class="card"><div class="pad"><h3>The finish is part of the service</h3><p>We don't stop at the cut. Necklines are cleaned up, the finish is styled, and we show you exactly how to recreate it at home — which product, how much, and in which direction. You leave knowing your own hair better than when you arrived.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--gold-soft)">Occasions</p>
+    <h2>Look the part, whatever the day</h2>
+    <p class="lede" style="margin-bottom:36px">Some haircuts carry extra weight. Tell us what's coming up and we'll time and tailor the visit around it.</p>
+    <div class="grid grid-3">
+      <div class="why-card"><h3>Weddings</h3><p>Groom, best man or guest — book a few days ahead of the big day so the cut has settled naturally, and add the hot towel shave for the full treatment. Group bookings: message us and we'll plan the chairs.</p></div>
+      <div class="why-card"><h3>Job interviews</h3><p>Sharp but safe. We'll keep it polished and professional, tidy the neckline and beard lines, and make sure you walk in looking like the most put-together version of yourself.</p></div>
+      <div class="why-card"><h3>Back to school</h3><p>Fresh starts deserve fresh cuts. Kids cuts are patient and unhurried — and booking ahead on WhatsApp means no long waits during the busiest week of the year.</p></div>
+      <div class="why-card"><h3>The big restyle</h3><p>Growing it out or chopping it off? A restyle starts with an honest consultation about your hair type and growth pattern. We'll map the journey, including the awkward in-between stages.</p></div>
+      <div class="why-card"><h3>Photo days</h3><p>Passport photos, family portraits, graduation pictures — the cuts that live forever in frames. A tidy-up a couple of days before keeps it natural on camera.</p></div>
+      <div class="why-card"><h3>Just because</h3><p>Sometimes there's no occasion at all — you just catch your reflection and decide it's time. Message us; the chair, the towels and the kettle-side chat are ready when you are.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <p class="kicker">Style notes</p>
+    <h2>Choosing your next cut</h2>
+    <p class="lede" style="margin-bottom:36px">Not sure what to ask for? A plain-English guide to the styles we cut most — bring this list to your consultation.</p>
+    <div class="detail-row">
+      <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80" alt="Classic scissor cut being styled">
+      <div class="txt"><h3>The classic scissor cut</h3><p>Timeless, tidy and grows out gracefully — the choice for gentlemen who want to look sharp for weeks without daily effort. Works with a side part, a natural sweep back, or simply neat all over. If your job or your taste runs traditional, this is your cut.</p></div>
+    </div>
+    <div class="detail-row flip">
+      <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?auto=format&fit=crop&w=900&q=80" alt="Modern textured crop with fade">
+      <div class="txt"><h3>The modern crop &amp; fade</h3><p>Short, textured on top with a clean fade at the sides — low maintenance, high impact. Suits most hair types and face shapes, and the fade height can be tuned from subtle to striking. Needs a tidy-up every few weeks to keep the blend crisp.</p></div>
+    </div>
+    <div class="detail-row">
+      <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=900&q=80" alt="Barber finishing a longer styled cut">
+      <div class="txt"><h3>Longer lengths, kept honest</h3><p>Growing your hair doesn't mean skipping the barber — it means smarter visits. We remove weight where it bulks, keep the ends healthy and shape the silhouette so the growing-out phase looks deliberate at every stage.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Visiting us</p>
+    <h2>Golden Barber &amp; Harrogate</h2>
+    <p class="lede" style="margin-bottom:32px">Harrogate is a town that appreciates the finer details — spa water, gardens, independent shops — and a proper haircut belongs on that list. Whether you're a local regular or visiting North Yorkshire, here's how a trip to the chair fits your day.</p>
+    <div class="grid grid-3">
+      <div class="card"><div class="pad"><h3>Locals</h3><p>Most of our chairs are filled by Harrogate regulars on a rhythm — every two to four weeks for fades, four to six for classic cuts. Once you've visited, we'll help you find your rhythm too, and a quick WhatsApp message is all it takes to keep it.</p></div></div>
+      <div class="card"><div class="pad"><h3>Visitors &amp; weekenders</h3><p>In town for a wedding, a conference or a weekend in the Dales and caught sight of yourself in a hotel mirror? Message us on WhatsApp to check today's availability — we'll do our best to fit you in before your event.</p></div></div>
+      <div class="card"><div class="pad"><h3>Make a morning of it</h3><p>A cut, a hot towel shave, then Harrogate's cafes and gardens at their best. Plenty of our customers plan their appointment as the first stop of a slow Saturday — start sharp, stay sharp.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap" style="text-align:center">
+    <p class="kicker" style="color:var(--gold-soft)">The Golden Standard</p>
+    <h2>Our promise, in plain words</h2>
+    <p style="color:#d9cfb4;max-width:720px;margin:0 auto 18px">Every customer who sits in our chair gets the same four things: an honest consultation, an unhurried cut, a finish checked from every angle, and straight answers about price before we start. That's the standard behind our 4.5 stars from 68 Google reviews — and it's why the chair rarely stays empty for long.</p>
+    <p style="color:#d9cfb4;max-width:720px;margin:0 auto 28px">If you ever leave less than happy, tell us while you're still in the shop and we'll put it right there and then. A barber's reputation in a town like Harrogate is built one head at a time — we protect ours by looking after yours.</p>
+    <a class="btn btn-gold" href="https://wa.me/447846885348">Book Your Chair on WhatsApp</a>
+  </div>
+</section>
+
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <p class="kicker">Aftercare</p>
+    <h2>The first week after your cut</h2>
+    <p class="lede" style="margin-bottom:32px">A few small things keep a fresh cut looking fresh for longer.</p>
+    <div class="grid grid-3">
+      <div class="card"><div class="pad"><h3>Day one</h3><p>Your cut is styled and finished when you leave — resist washing it the same evening if you can, so the style settles. A quick brush-through in the morning brings the shape back.</p></div></div>
+      <div class="card"><div class="pad"><h3>Through the week</h3><p>Use the product we recommended, in the amount we showed you — most people use twice as much as they need. Apply to dry or towel-dried hair, work it through with your fingers first, then finish with a comb or brush.</p></div></div>
+      <div class="card"><div class="pad"><h3>When it's time</h3><p>Fades announce themselves first at the neckline and around the ears. When those edges soften, that's your signal — message us and we'll get you back in the chair before the whole cut loses its shape.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Barber glossary</p>
+    <h2>Talk like a regular</h2>
+    <p class="lede" style="margin-bottom:32px">Barbering has its own language. A few terms you'll hear in the chair — so you can ask for exactly what you want.</p>
+    <div class="grid grid-3">
+      <div class="card"><div class="pad"><h3>Fade heights</h3><p><strong>Low, mid, high</strong> describes where the fade starts on the head. Low keeps it around the ears; high takes it up towards the crown for maximum contrast.</p></div></div>
+      <div class="card"><div class="pad"><h3>Guard numbers</h3><p>Clipper guards run from 0 (closest) upwards. A "number 2 back and sides" leaves about 6mm; a skin fade works down through the guards to bare skin. Not sure? Describe the length in words — we'll translate.</p></div></div>
+      <div class="card"><div class="pad"><h3>Taper</h3><p>A taper is a gentler, more gradual version of a fade, usually kept to the sideburns and neckline. The classic, understated finish for traditional cuts.</p></div></div>
+      <div class="card"><div class="pad"><h3>Texture</h3><p>Texture is cut into the top with scissors or a razor to remove bulk and add movement, so hair sits naturally instead of lying flat and heavy.</p></div></div>
+      <div class="card"><div class="pad"><h3>Line-up</h3><p>The sharpening of the hairline, temples and beard edges into clean, deliberate lines. It's the detail that makes a cut look freshly finished rather than nearly finished.</p></div></div>
+      <div class="card"><div class="pad"><h3>Neck shave</h3><p>The finishing touch on most cuts: the neckline is edged and shaved clean with lather and a razor, so the back looks as sharp as the front.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Golden Barber</h3>
+        <p>A golden-era barber shop in Harrogate, North Yorkshire — haircuts, skin fades, beard trims, hot towel shaves and kids cuts, rated 4.5 stars from 68 Google reviews.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p><a href="#about">About</a><br><a href="#services">Services</a><br><a href="#gallery">Gallery</a><br><a href="#faq">FAQ</a></p>
+      </div>
+      <div>
+        <h3>Book</h3>
+        <p><a href="https://wa.me/447846885348">WhatsApp: 07846 885348</a><br><a href="tel:+447464931190">Call: 07464 931190</a><br>Harrogate, North Yorkshire</p>
+      </div>
+    </div>
+    <div class="foot-base">Golden Barber · Harrogate · Rated 4.5 ★ from 68 Google reviews · Demo website</div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/447846885348">💬 WhatsApp Us</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
