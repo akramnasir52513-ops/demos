@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelly-Ann PMU &amp; Fine Line Tattoos — Permanent Makeup in Barnstaple, Devon</title>
+<meta name="description" content="Kelly-Ann PMU & Fine Line Tattoos in Barnstaple, Devon. Permanent makeup brows, lip blush, eyeliner, fine line tattoos and beauty treatments. Rated 5.0 stars from 106 Google reviews. Message on WhatsApp to book.">
+<style>
+:root{
+  --ivory:#faf6f1;
+  --ivory-2:#f3ebe2;
+  --cream:#fffdfb;
+  --rose:#c08a7e;
+  --rose-deep:#a06a5e;
+  --rose-soft:#ecd9d2;
+  --bronze:#a87f4f;
+  --bronze-deep:#8a6539;
+  --ink:#3a2f2b;
+  --ink-soft:#6f6059;
+  --line:#e5d9cd;
+  --gold:#c9a35f;
+  --shadow:0 18px 45px rgba(58,47,43,.12);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,'Times New Roman',serif;
+  background:var(--ivory);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.sans{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1140px,92%);margin:0 auto}
+
+/* ---------- animations (CSS only, always end fully visible) ---------- */
+@keyframes riseIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes softZoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+.rise{animation:riseIn .9s ease-out both}
+.rise-1{animation-delay:.08s}.rise-2{animation-delay:.18s}.rise-3{animation-delay:.3s}.rise-4{animation-delay:.42s}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* ---------- top bar ---------- */
+.topbar{
+  background:linear-gradient(90deg,var(--rose-deep),var(--bronze-deep));
+  color:#fdf8f2;text-align:center;
+  font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+  font-size:.82rem;letter-spacing:.06em;
+  padding:.5rem 1rem;
+}
+.topbar strong{letter-spacing:.12em;text-transform:uppercase}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,246,241,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand-mark{
+  width:46px;height:46px;border-radius:50%;
+  background:radial-gradient(circle at 32% 30%,var(--rose-soft),var(--rose));
+  border:1px solid var(--bronze);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.15rem;color:#fff;font-style:italic;
+}
+.brand-name{font-size:1.22rem;line-height:1.15}
+.brand-name small{display:block;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--rose-deep)}
+.nav-links{display:none;gap:1.6rem;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.9rem}
+.nav-links a{text-decoration:none;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--rose-deep)}
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+  font-weight:600;font-size:.92rem;text-decoration:none;
+  padding:.72rem 1.35rem;border-radius:999px;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#08351a;box-shadow:0 10px 24px rgba(37,211,102,.32)}
+.btn-call{background:var(--cream);color:var(--rose-deep);border:1px solid var(--rose)}
+.btn-bronze{background:linear-gradient(120deg,var(--bronze),var(--bronze-deep));color:#fff;box-shadow:0 10px 24px rgba(168,127,79,.3)}
+@media(min-width:860px){.nav-links{display:flex}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--ivory) 55%,var(--rose-soft) 130%)}
+.hero-grid{display:grid;gap:2.4rem;padding:3.2rem 0 3.6rem;align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr;padding:4.4rem 0 4.8rem}}
+.eyebrow{
+  font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+  letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;color:var(--bronze-deep);
+  display:flex;align-items:center;gap:.7rem;margin-bottom:1.1rem;
+}
+.eyebrow::before{content:"";width:38px;height:1px;background:var(--bronze)}
+.hero h1{font-size:clamp(2.3rem,6vw,3.7rem);line-height:1.12;font-weight:500}
+.hero h1 em{color:var(--rose-deep);font-style:italic}
+.hero p.lede{margin:1.25rem 0 1.7rem;font-size:1.08rem;color:var(--ink-soft);max-width:34rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero-note{margin-top:1.1rem;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.84rem;color:var(--ink-soft)}
+.rating-chip{
+  display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;
+  background:var(--cream);border:1px solid var(--line);border-radius:999px;
+  padding:.5rem 1rem;box-shadow:var(--shadow);
+  font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.86rem;
+}
+.stars{color:var(--gold);letter-spacing:.14em}
+.hero-media{position:relative}
+.hero-media .frame{
+  border-radius:200px 200px var(--radius) var(--radius);
+  overflow:hidden;border:6px solid var(--cream);box-shadow:var(--shadow);
+}
+.hero-media .frame img{height:520px;width:100%;object-fit:cover;animation:softZoom 2.4s ease-out both}
+.hero-badge{
+  position:absolute;right:-6px;bottom:34px;
+  background:var(--cream);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);padding:.8rem 1.05rem;max-width:230px;
+  animation:floaty 5.5s ease-in-out infinite;
+}
+.hero-badge .big{font-size:1.3rem;color:var(--rose-deep)}
+.hero-badge small{font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:var(--ink-soft);font-size:.76rem;line-height:1.4;display:block}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--cream);border-block:1px solid var(--line)}
+.trust-row{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;padding:1.7rem 0;text-align:center}
+@media(min-width:860px){.trust-row{grid-template-columns:repeat(4,1fr)}}
+.trust-item .num{font-size:1.55rem;color:var(--bronze-deep)}
+.trust-item .lbl{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- sections ---------- */
+section{padding:4.2rem 0}
+.section-head{max-width:44rem;margin-bottom:2.4rem}
+.section-head.center{margin-inline:auto;text-align:center}
+.section-head.center .eyebrow{justify-content:center}
+.section-head.center .eyebrow::after{content:"";width:38px;height:1px;background:var(--bronze)}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:500;line-height:1.2}
+h2 em{color:var(--rose-deep);font-style:italic}
+.section-head p{margin-top:.8rem;color:var(--ink-soft)}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;gap:2.4rem;align-items:center}
+@media(min-width:920px){.about-grid{grid-template-columns:.95fr 1.05fr}}
+.about-media{position:relative}
+.about-media .main-img{border-radius:var(--radius);box-shadow:var(--shadow);height:440px;width:100%;object-fit:cover}
+.about-media .mini{
+  position:absolute;left:-10px;bottom:-22px;width:46%;
+  border-radius:14px;border:5px solid var(--cream);box-shadow:var(--shadow);
+  height:190px;object-fit:cover;
+}
+.about-copy p{color:var(--ink-soft);margin-bottom:1rem}
+.about-list{list-style:none;margin-top:1.3rem;display:grid;gap:.65rem;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.95rem}
+.about-list li{display:flex;gap:.65rem;align-items:flex-start}
+.about-list li::before{content:"✦";color:var(--bronze);margin-top:.05rem}
+.signature{margin-top:1.6rem;font-style:italic;font-size:1.25rem;color:var(--rose-deep)}
+</style>
+</head>
+<body>
+
+<div class="topbar"><strong>Kelly-Ann PMU &amp; Fine Line Tattoos</strong> &nbsp;·&nbsp; Barnstaple, Devon &nbsp;·&nbsp; Rated 5.0 ★ from 106 Google reviews</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark">K</span>
+      <span class="brand-name">Kelly-Ann<small>Permanent Makeup &amp; Fine Line Tattoos</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Treatments</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/447753112346">WhatsApp Us</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow rise">Barnstaple · Devon</p>
+      <h1 class="rise rise-1">Wake up with makeup, <em>beautifully done.</em></h1>
+      <p class="lede rise rise-2">Kelly-Ann PMU &amp; Fine Line Tattoos is a permanent makeup and beauty clinic in Barnstaple, North Devon — specialising in natural-looking PMU brows, lip blush, eyeliner and delicate fine line tattoos, finished with a gentle, unhurried touch.</p>
+      <div class="hero-ctas rise rise-3">
+        <a class="btn btn-wa" href="https://wa.me/447753112346">Message on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+447753112346">Call 07753 112346</a>
+      </div>
+      <p class="hero-note rise rise-4">Consultations available — call or message for prices and availability.</p>
+      <div class="rating-chip rise rise-4">
+        <span class="stars">★★★★★</span>
+        <span><strong>5.0</strong> from <strong>106 Google reviews</strong></span>
+      </div>
+    </div>
+    <div class="hero-media rise rise-2">
+      <div class="frame">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Elegant makeup look with softly defined brows and lashes">
+      </div>
+      <div class="hero-badge">
+        <span class="big">5.0 ★ rated</span>
+        <small>Every single Google review, averaged — 106 happy clients and counting.</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TRUST STRIP ================= -->
+<div class="trust">
+  <div class="wrap trust-row">
+    <div class="trust-item"><div class="num">5.0 ★</div><div class="lbl">Google Rating</div></div>
+    <div class="trust-item"><div class="num">106</div><div class="lbl">Client Reviews</div></div>
+    <div class="trust-item"><div class="num">Barnstaple</div><div class="lbl">North Devon Clinic</div></div>
+    <div class="trust-item"><div class="num">1-to-1</div><div class="lbl">Personal Appointments</div></div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <img class="main-img" src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1200&auto=format&fit=crop" alt="Soft, natural beauty portrait with glowing skin">
+      <img class="mini" src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=800&auto=format&fit=crop" alt="Professional makeup brushes and cosmetics laid out ready for a treatment">
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">About the clinic</p>
+      <h2>A calmer kind of <em>beauty appointment</em></h2>
+      <p style="margin-top:.9rem">Permanent makeup is exactly that — permanent — so choosing the right artist matters. At Kelly-Ann PMU &amp; Fine Line Tattoos in Barnstaple, every treatment begins with a proper conversation: your features, your skin, your routine, and the look you actually want to wake up to.</p>
+      <p>The style here is soft and believable. Brows that frame your face rather than shout over it. Lips with a wash of healthy colour. Eyeliner that quietly defines. And fine line tattoos drawn with a light, precise hand — small pieces with real meaning.</p>
+      <p>Clients travel from across North Devon for appointments that never feel rushed, in a welcoming clinic setting where cleanliness, comfort and honest advice come as standard. That care shows in the results — and in a perfect 5.0-star rating across 106 Google reviews.</p>
+      <ul class="about-list">
+        <li>Personal, one-to-one appointments — never rushed</li>
+        <li>Natural, tailored results designed around your features</li>
+        <li>Consultation and design agreed with you before any treatment</li>
+        <li>Clear aftercare guidance with every procedure</li>
+        <li>Friendly, judgement-free clinic in the heart of Barnstaple</li>
+      </ul>
+      <p class="signature">— Kelly-Ann</p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- services ---------- */
+.services{background:linear-gradient(180deg,var(--ivory-2),var(--ivory))}
+.svc-grid{display:grid;gap:1.6rem}
+@media(min-width:760px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:0 8px 26px rgba(58,47,43,.06);
+  transition:transform .3s ease,box-shadow .3s ease;
+  display:flex;flex-direction:column;
+}
+.svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.svc img{height:210px;width:100%;object-fit:cover}
+.svc-body{padding:1.5rem 1.5rem 1.7rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.svc-tag{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze-deep)}
+.svc h3{font-size:1.32rem;font-weight:500}
+.svc p{color:var(--ink-soft);font-size:.97rem;flex:1}
+.svc ul{list-style:none;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.86rem;color:var(--ink-soft);display:grid;gap:.3rem}
+.svc ul li::before{content:"— ";color:var(--rose)}
+.svc-price{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.85rem;font-weight:600;color:var(--rose-deep)}
+.svc a.book-link{
+  font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.88rem;font-weight:600;
+  color:var(--bronze-deep);text-decoration:none;
+}
+.svc a.book-link:hover{text-decoration:underline}
+
+/* ---------- process ---------- */
+.process-row{display:grid;gap:1.4rem;margin-top:.4rem}
+@media(min-width:860px){.process-row{grid-template-columns:repeat(4,1fr)}}
+.step{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.8rem 1.4rem;text-align:center;position:relative;
+}
+.step .no{
+  width:52px;height:52px;margin:0 auto .9rem;border-radius:50%;
+  background:radial-gradient(circle at 32% 30%,var(--rose-soft),var(--rose));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:1.25rem;border:1px solid var(--bronze);
+}
+.step h3{font-size:1.12rem;font-weight:500;margin-bottom:.45rem}
+.step p{font-size:.92rem;color:var(--ink-soft)}
+
+/* ---------- gallery ---------- */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(min-width:860px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid figure{border-radius:14px;overflow:hidden;position:relative;box-shadow:0 8px 22px rgba(58,47,43,.08)}
+.gallery-grid img{height:250px;width:100%;object-fit:cover;transition:transform .6s ease}
+.gallery-grid figure:hover img{transform:scale(1.06)}
+.gallery-grid figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(transparent,rgba(58,47,43,.72));
+  color:#fdf8f2;font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+  font-size:.8rem;letter-spacing:.05em;padding:2rem .9rem .7rem;
+}
+
+/* ---------- why us ---------- */
+.why{background:linear-gradient(150deg,#4a3833,#3a2f2b);color:#f5ece3}
+.why h2{color:#fdf8f2}
+.why h2 em{color:var(--rose-soft)}
+.why .section-head p{color:#d9c8bc}
+.why-grid{display:grid;gap:1.4rem}
+@media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-card{
+  border:1px solid rgba(236,217,210,.25);border-radius:var(--radius);
+  padding:1.7rem 1.5rem;background:rgba(255,253,251,.04);
+}
+.why-card .ico{font-size:1.5rem;color:var(--gold);margin-bottom:.6rem}
+.why-card h3{font-size:1.15rem;font-weight:500;margin-bottom:.4rem;color:#fdf8f2}
+.why-card p{font-size:.93rem;color:#d9c8bc}
+
+/* ---------- faq ---------- */
+.faq-list{max-width:820px;margin:0 auto;display:grid;gap:.9rem}
+details{
+  background:var(--cream);border:1px solid var(--line);border-radius:14px;
+  padding:1.15rem 1.35rem;
+}
+details[open]{border-color:var(--rose)}
+summary{
+  cursor:pointer;font-size:1.05rem;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--rose-deep);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:.7rem;color:var(--ink-soft);font-size:.96rem}
+
+/* ---------- booking ---------- */
+.book{background:linear-gradient(160deg,var(--rose-soft),var(--ivory-2))}
+.book-card{
+  background:var(--cream);border:1px solid var(--line);border-radius:22px;
+  box-shadow:var(--shadow);overflow:hidden;display:grid;
+}
+@media(min-width:920px){.book-card{grid-template-columns:1fr 1fr}}
+.book-media img{height:100%;min-height:320px;width:100%;object-fit:cover}
+.book-body{padding:2.4rem 2.2rem}
+.book-body p{color:var(--ink-soft);margin:.8rem 0 1.4rem}
+.book-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.book-facts{margin-top:1.7rem;display:grid;gap:.55rem;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.92rem}
+.book-facts div{display:flex;gap:.6rem}
+.book-facts span:first-child{color:var(--bronze-deep)}
+
+/* ---------- footer ---------- */
+footer{background:#322823;color:#d9c8bc;padding:3rem 0 2rem}
+.foot-grid{display:grid;gap:2rem}
+@media(min-width:860px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer h4{color:#fdf8f2;font-weight:500;margin-bottom:.8rem;font-size:1.05rem}
+footer a{color:#d9c8bc;text-decoration:none}
+footer a:hover{color:#fff}
+.foot-links{list-style:none;display:grid;gap:.45rem;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.9rem}
+.foot-note{margin-top:2.2rem;padding-top:1.3rem;border-top:1px solid rgba(217,200,188,.2);font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.8rem;text-align:center}
+.float-wa{
+  position:fixed;right:18px;bottom:18px;z-index:60;
+  width:58px;height:58px;border-radius:50%;
+  background:#25d366;color:#08351a;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.55rem;text-decoration:none;
+  box-shadow:0 12px 28px rgba(8,53,26,.35);
+  animation:floaty 5s ease-in-out infinite;
+}
+</style>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Treatments</p>
+      <h2>Permanent makeup &amp; <em>beauty treatments</em></h2>
+      <p>Every treatment is designed around you — your features, your skin tone and the look you love. Prices are confirmed at consultation, so call or message for prices and honest advice on what will suit you best.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1200&auto=format&fit=crop" alt="Makeup artist carefully shaping and defining eyebrows">
+        <div class="svc-body">
+          <span class="svc-tag">Most Loved</span>
+          <h3>PMU Brows</h3>
+          <p>Say goodbye to the daily brow pencil. Permanent makeup brows are mapped and designed with you first, then created using fine, hair-like strokes or a soft powdered finish — whichever suits your face and style. Ideal if your brows are sparse, uneven, over-plucked, or simply take too long every morning.</p>
+          <ul>
+            <li>Hair-stroke, powder &amp; combination styles</li>
+            <li>Design drawn on and agreed before we begin</li>
+            <li>Colour matched to your skin tone &amp; hair</li>
+          </ul>
+          <span class="svc-price">Call or message for prices</span>
+          <a class="book-link" href="https://wa.me/447753112346">Ask about brows →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" alt="Lipsticks and cosmetics in soft rose tones">
+        <div class="svc-body">
+          <span class="svc-tag">Soft Colour</span>
+          <h3>Lip Blush</h3>
+          <p>Lip blush restores the natural colour and definition that lips lose over time. A sheer wash of pigment evens out tone, gently enhances the lip border and gives that just-bitten, healthy look — no lipstick required. Healed results are soft and subtle, never a harsh outline.</p>
+          <ul>
+            <li>Restores natural lip colour &amp; symmetry</li>
+            <li>Wide choice of soft, wearable shades</li>
+            <li>Lips look fuller without filler</li>
+          </ul>
+          <span class="svc-price">Call or message for prices</span>
+          <a class="book-link" href="https://wa.me/447753112346">Ask about lip blush →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Eye makeup and brushes arranged for a beauty treatment">
+        <div class="svc-body">
+          <span class="svc-tag">Define &amp; Brighten</span>
+          <h3>PMU Eyeliner</h3>
+          <p>Permanent eyeliner places pigment precisely along the lash line so your eyes look defined from the moment you wake up. Choose a subtle lash enhancement that simply makes lashes look thicker, or a softly shaded liner for a little more polish — perfect if eyeliner smudges, your hands aren't steady, or you wear contact lenses.</p>
+          <ul>
+            <li>Lash enhancement or soft shaded liner</li>
+            <li>Smudge-proof, swim-proof, gym-proof</li>
+            <li>Tailored thickness to suit your eyes</li>
+          </ul>
+          <span class="svc-price">Call or message for prices</span>
+          <a class="book-link" href="https://wa.me/447753112346">Ask about eyeliner →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?q=80&w=1200&auto=format&fit=crop" alt="Delicate fine line tattoo being created with a single needle">
+        <div class="svc-body">
+          <span class="svc-tag">Small &amp; Meaningful</span>
+          <h3>Fine Line Tattoos</h3>
+          <p>Delicate, single-needle tattoos drawn with a light hand — tiny florals, script, symbols and minimalist designs that sit elegantly on the skin. Bring your own idea or talk it through at a consultation; every piece is drawn for you and placed with care, so it heals fine and stays fine.</p>
+          <ul>
+            <li>Custom designs drawn just for you</li>
+            <li>Minimalist, floral &amp; script styles</li>
+            <li>Gentle technique, careful placement</li>
+          </ul>
+          <span class="svc-price">Call or message for prices</span>
+          <a class="book-link" href="https://wa.me/447753112346">Ask about fine line tattoos →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop" alt="Relaxing facial beauty treatment in a calm clinic setting">
+        <div class="svc-body">
+          <span class="svc-tag">Refresh &amp; Glow</span>
+          <h3>Beauty Treatments</h3>
+          <p>Alongside permanent makeup, the clinic offers beauty treatments to keep skin looking fresh and cared for. Whether you're preparing for a special occasion or simply building a little me-time into your month, treatments are chosen for your skin on the day — nothing generic, nothing you don't need.</p>
+          <ul>
+            <li>Tailored to your skin at every visit</li>
+            <li>Perfect pre-occasion refresh</li>
+            <li>Honest advice on home care too</li>
+          </ul>
+          <span class="svc-price">Call or message for prices</span>
+          <a class="book-link" href="https://wa.me/447753112346">Ask about beauty treatments →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200&auto=format&fit=crop" alt="Skincare serum bottle in warm bronze and ivory tones">
+        <div class="svc-body">
+          <span class="svc-tag">Start Here</span>
+          <h3>Consultations</h3>
+          <p>Not sure which treatment is right for you? A consultation is the place to start. We'll talk through what you'd like to change, look at styles and colours together, explain the process and healing honestly, and design a plan — with absolutely no pressure to book.</p>
+          <ul>
+            <li>Friendly, no-obligation chat</li>
+            <li>See styles, shapes &amp; colours up close</li>
+            <li>Clear quote before you decide</li>
+          </ul>
+          <span class="svc-price">Call or message for prices</span>
+          <a class="book-link" href="https://wa.me/447753112346">Book a consultation →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">How it works</p>
+      <h2>From first message to <em>final reveal</em></h2>
+      <p>Permanent makeup is a journey we take step by step — you'll always know what happens next.</p>
+    </div>
+    <div class="process-row">
+      <div class="step">
+        <div class="no">1</div>
+        <h3>Message or Call</h3>
+        <p>Say hello on WhatsApp or by phone. Tell us what you're dreaming of and ask anything at all.</p>
+      </div>
+      <div class="step">
+        <div class="no">2</div>
+        <h3>Consult &amp; Design</h3>
+        <p>We chat through styles, map out your design and agree shape and colour together — nothing starts until you love the plan.</p>
+      </div>
+      <div class="step">
+        <div class="no">3</div>
+        <h3>Your Treatment</h3>
+        <p>A calm, unhurried appointment. Numbing is used for comfort and every step is explained as we go.</p>
+      </div>
+      <div class="step">
+        <div class="no">4</div>
+        <h3>Heal &amp; Perfect</h3>
+        <p>You’ll leave with full aftercare guidance, and a follow-up perfecting session once healed, so the result is just right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" style="padding-top:1rem">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">The clinic look</p>
+      <h2>Soft, polished, <em> unmistakably you</em></h2>
+      <p>The Kelly-Ann finish: natural definition, healthy colour and fine detail — makeup that looks like you on your very best day.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200&auto=format&fit=crop" alt="Eyeshadow palette in warm rose and bronze shades">
+        <figcaption>Colours chosen for your skin tone</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1200&auto=format&fit=crop" alt="Makeup being applied with care and precision">
+        <figcaption>Precision in every stroke</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=1200&auto=format&fit=crop" alt="Soothing facial treatment for glowing skin">
+        <figcaption>Skin left fresh and glowing</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop" alt="Gentle hands performing a relaxing facial treatment">
+        <figcaption>A calm, unhurried setting</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=1200&auto=format&fit=crop" alt="Premium skincare product held in soft light">
+        <figcaption>Quality products, honest advice</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=1200&auto=format&fit=crop" alt="Skincare creams and natural ingredients for aftercare">
+        <figcaption>Aftercare that protects your result</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" style="color:var(--gold)">Why Kelly-Ann</p>
+      <h2>Chosen, reviewed &amp; <em>recommended</em></h2>
+      <p>A perfect 5.0-star score across 106 Google reviews doesn't happen by accident. Here's what sits behind it.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ico">★</div>
+        <h3>A Perfect 5.0 Rating</h3>
+        <p>106 Google reviews, averaging a full five stars. Clients consistently mention feeling listened to, relaxed and thrilled with their results.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">✎</div>
+        <h3>Designed With You</h3>
+        <p>Your shape and colour are drawn, measured and agreed with you in the mirror before any treatment begins. No surprises — ever.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">♡</div>
+        <h3>Natural, Not Overdone</h3>
+        <p>The house style is soft enhancement: people will notice you look fresher and more polished, not that you've "had something done".</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">✦</div>
+        <h3>One-to-One Care</h3>
+        <p>You're never a number on a conveyor belt. Appointments are private and unhurried, with time for every question.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">✓</div>
+        <h3>Hygiene Without Compromise</h3>
+        <p>Single-use needles, sterile setup and meticulous clinic hygiene as standard — your safety is never an afterthought.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">☏</div>
+        <h3>Easy to Reach</h3>
+        <p>Book the simple way: a WhatsApp message or a quick call. Friendly replies, honest prices and no pushy sales talk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- aftercare ---------- */
+.care-grid{display:grid;gap:1.4rem}
+@media(min-width:760px){.care-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.care-grid{grid-template-columns:repeat(4,1fr)}}
+.care-card{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.7rem 1.4rem;border-top:4px solid var(--rose);
+}
+.care-card h3{font-size:1.12rem;font-weight:500;margin-bottom:.5rem;color:var(--rose-deep)}
+.care-card p{font-size:.93rem;color:var(--ink-soft)}
+.care-card ul{list-style:none;margin-top:.6rem;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:.87rem;color:var(--ink-soft);display:grid;gap:.35rem}
+.care-card ul li::before{content:"✦ ";color:var(--bronze)}
+</style>
+
+<!-- ================= AFTERCARE ================= -->
+<section id="aftercare" style="padding-top:1rem">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Healing &amp; aftercare</p>
+      <h2>Looking after your <em>new look</em></h2>
+      <p>Great results are a team effort — beautiful work in the clinic, and a little care from you at home. You'll leave every appointment with clear aftercare guidance, but here's the shape of it.</p>
+    </div>
+    <div class="care-grid">
+      <div class="care-card">
+        <h3>The First Few Days</h3>
+        <p>Right after treatment, colour looks stronger and bolder than the healed result — that's completely normal. There may be a little tenderness or tightness.</p>
+        <ul>
+          <li>Keep the area clean and dry</li>
+          <li>Don't panic about the darker colour</li>
+          <li>Sleep on a clean pillowcase</li>
+        </ul>
+      </div>
+      <div class="care-card">
+        <h3>The Healing Week</h3>
+        <p>As skin heals, light flaking is common and colour softens considerably. This is where patience matters most — let everything settle naturally.</p>
+        <ul>
+          <li>Never pick or scratch flakes</li>
+          <li>Skip makeup on the area for now</li>
+          <li>Avoid saunas, swimming &amp; heavy workouts</li>
+        </ul>
+      </div>
+      <div class="care-card">
+        <h3>Simple Aftercare Rules</h3>
+        <p>You'll be given the exact aftercare for your treatment before you leave. The golden rules are always the same:</p>
+        <ul>
+          <li>Follow your aftercare sheet to the letter</li>
+          <li>Use only the products recommended</li>
+          <li>Protect healed PMU with SPF in the sun</li>
+        </ul>
+      </div>
+      <div class="care-card">
+        <h3>The Perfecting Session</h3>
+        <p>Once fully healed, a follow-up session fine-tunes shape and colour and fills any little areas that faded unevenly — the finishing touch that makes the result.</p>
+        <ul>
+          <li>Booked once healing is complete</li>
+          <li>Colour and shape refined together</li>
+          <li>Questions answered in person</li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:2.2rem;color:var(--ink-soft)" class="sans">Worried about anything while you're healing? Just <a href="https://wa.me/447753112346" style="color:var(--rose-deep);font-weight:600">message on WhatsApp</a> — advice is always a message away.</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Good questions</p>
+      <h2>Before you <em>book</em></h2>
+      <p>The things clients ask most. Anything else — just message and ask.</p>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Does permanent makeup hurt?</summary>
+        <p>Most clients are pleasantly surprised. Numbing products are used before and during the treatment to keep you comfortable, and any sensation is usually described as a light scratching or tingling. Appointments are unhurried, with breaks whenever you need one.</p>
+      </details>
+      <details>
+        <summary>How long does permanent makeup last?</summary>
+        <p>PMU is a long-lasting treatment, but it is designed to fade gradually and gracefully over time rather than stay harsh forever. How long it lasts depends on your skin type, lifestyle and sun exposure — many clients enjoy their results for a good long while before choosing a colour refresh. Your consultation will cover what to expect for your skin.</p>
+      </details>
+      <details>
+        <summary>Will it look natural?</summary>
+        <p>Yes — that's the whole point here. Every design is mapped to your bone structure and agreed with you in the mirror before we start, using colours matched to your skin tone and hair. The aim is "you, but more polished", never a stamped-on look.</p>
+      </details>
+      <details>
+        <summary>What happens at a consultation?</summary>
+        <p>We'll talk about the look you want, look at styles and shapes together, and check that the treatment is suitable for you. You'll get honest advice, a clear idea of the process and healing, and a price before you decide anything. There's no obligation to book.</p>
+      </details>
+      <details>
+        <summary>How much do treatments cost?</summary>
+        <p>Prices depend on the treatment and what's right for you, so they're confirmed personally rather than guessed at on a website. Call <a href="tel:+447753112346">07753 112346</a> or message on <a href="https://wa.me/447753112346">WhatsApp</a> for prices — you'll get a straight answer and no pressure.</p>
+      </details>
+      <details>
+        <summary>What is a fine line tattoo?</summary>
+        <p>Fine line tattoos are small, delicate designs created with a single needle for thin, elegant lines — things like tiny flowers, words, dates and symbols. They're a lovely choice for a first tattoo or a meaningful little piece. Bring your idea to a consultation and we'll design it together.</p>
+      </details>
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp: tap any WhatsApp button on this page or message <a href="https://wa.me/447753112346">07753 112346</a>. Prefer to talk? Call the same number. You'll be helped to find a time that suits you.</p>
+      </details>
+      <details>
+        <summary>Where is the clinic?</summary>
+        <p>Kelly-Ann PMU &amp; Fine Line Tattoos is based in Barnstaple, North Devon, welcoming clients from across the surrounding area. Message on WhatsApp for directions and appointment details.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKING ================= -->
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="book-card">
+      <div class="book-media">
+        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1200&auto=format&fit=crop" alt="Calm spa-like treatment room with soft towels and candles">
+      </div>
+      <div class="book-body">
+        <p class="eyebrow">Book your visit</p>
+        <h2>Ready when <em>you</em> are</h2>
+        <p>Whether you know exactly what you'd like or you're still deciding, the first step is a friendly chat. Message on WhatsApp for the quickest reply, or call to talk it through — prices, availability and honest advice included.</p>
+        <div class="book-ctas">
+          <a class="btn btn-wa" href="https://wa.me/447753112346">Message on WhatsApp</a>
+          <a class="btn btn-call" href="tel:+447753112346">Call 07753 112346</a>
+        </div>
+        <div class="book-facts">
+          <div><span>★</span><span>Rated 5.0 from 106 Google reviews</span></div>
+          <div><span>✦</span><span>PMU brows · Lip blush · Eyeliner · Fine line tattoos</span></div>
+          <div><span>⌂</span><span>Barnstaple, North Devon</span></div>
+          <div><span>✉</span><span>Consultations available — call or message for prices</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Kelly-Ann PMU &amp; Fine Line Tattoos</h4>
+        <p style="font-size:.95rem">Permanent makeup and beauty clinic in Barnstaple, Devon — natural PMU brows, lip blush, eyeliner, delicate fine line tattoos and skin-refreshing beauty treatments, rated 5.0 stars by 106 clients on Google.</p>
+      </div>
+      <div>
+        <h4>Treatments</h4>
+        <ul class="foot-links">
+          <li><a href="#services">PMU Brows</a></li>
+          <li><a href="#services">Lip Blush</a></li>
+          <li><a href="#services">PMU Eyeliner</a></li>
+          <li><a href="#services">Fine Line Tattoos</a></li>
+          <li><a href="#services">Beauty Treatments</a></li>
+          <li><a href="#services">Consultations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="foot-links">
+          <li><a href="https://wa.me/447753112346">WhatsApp: 07753 112346</a></li>
+          <li><a href="tel:+447753112346">Call: 07753 112346</a></li>
+          <li>Barnstaple, North Devon</li>
+          <li><a href="#faq">Read the FAQ</a></li>
+          <li><a href="#book">Book an appointment</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-note">© Kelly-Ann PMU &amp; Fine Line Tattoos, Barnstaple. Call or message for prices and availability.</p>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/447753112346" aria-label="Chat on WhatsApp">✆</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
