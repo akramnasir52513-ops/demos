@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Barber Lounge — Dundee | Barbers</title>
+<meta name="description" content="The Barber Lounge, barbers in Dundee. Haircuts, skin fades, beard trims and hot towel shaves in a relaxed lounge setting. Rated 4.8 from 167 reviews on Google.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--walnut:#5b3d2a;--walnut2:#7a5638;--copper:#b87347;--cream:#faf4ea;--sand:#f0e4d0;--ink:#33291f;--mut:#77685a;--line:#e2d3bc}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Verdana,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,244,234,.97);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:13px;padding-bottom:13px;flex-wrap:wrap;gap:8px}
+.brand{font-size:1.28rem;font-weight:700;color:var(--walnut);text-decoration:none}
+.brand span{color:var(--copper);font-weight:400}
+nav ul{display:flex;gap:18px;list-style:none;flex-wrap:wrap}
+nav ul a{color:var(--mut);text-decoration:none;font-size:.9rem}
+nav ul a:hover{color:var(--copper)}
+header.hero{background:linear-gradient(165deg,#efe0c8 0%,#e2cba8 55%,#c8a87e 100%);text-align:center;padding:54px 20px 0;overflow:hidden}
+header.hero .kicker{letter-spacing:.3em;text-transform:uppercase;font-size:.76rem;color:var(--walnut2)}
+header.hero h1{font-size:2.8rem;font-weight:700;color:var(--walnut);margin:10px 0 2px}
+header.hero h1 span{color:var(--copper);font-weight:300}
+header.hero .town{letter-spacing:.24em;text-transform:uppercase;font-size:.82rem;color:#6d5844}
+header.hero p.tag{max-width:580px;margin:16px auto 0;color:#5a4a3a;font-size:1.03rem}
+.stars{color:#c07f2e;font-size:1.2rem;margin-top:14px;letter-spacing:.2em}
+.stars small{display:block;color:#6d5844;font-size:.82rem;letter-spacing:.03em;margin-top:2px}
+.cta{display:inline-block;background:var(--walnut);color:#fff;text-decoration:none;padding:14px 32px;border-radius:30px;font-size:1rem;margin:24px 0 36px;transition:background .25s,transform .25s}
+.cta:hover{background:var(--copper);transform:translateY(-2px)}
+.heroimg{max-width:860px;margin:4px auto 0;border-radius:22px 22px 0 0;overflow:hidden;height:340px}
+section{padding:54px 0 10px}
+h2{text-align:center;font-size:2rem;color:var(--walnut);font-weight:700}
+h2 span{color:var(--copper);font-weight:300}
+h2+.sub{text-align:center;color:var(--mut);margin:6px auto 30px;max-width:560px;font-size:.96rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;padding:0 0 20px;box-shadow:0 6px 18px rgba(51,41,31,.06);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(51,41,31,.12)}
+.card .ph{height:172px;overflow:hidden}
+.card .ph img{transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card h3{font-size:1.2rem;color:var(--walnut);margin:16px 22px 8px}
+.card p{margin:0 22px;font-size:.94rem;color:var(--mut)}
+.card ul{margin:10px 22px 0 40px;font-size:.92rem;color:var(--mut)}
+.card .price-note{margin:12px 22px 0;padding-top:10px;border-top:1px dashed var(--line);color:var(--copper);font-size:.92rem;font-weight:600}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.why .w{background:var(--sand);border-radius:18px;padding:26px 22px;text-align:center}
+.why .w h3{color:var(--walnut);font-size:1.1rem;margin-bottom:8px}
+.why .w p{font-size:.92rem;color:var(--mut)}
+.why .big{font-size:1.9rem;color:var(--copper);font-weight:800}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 22px;text-align:center}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--copper);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.15rem;font-weight:700}
+.step h3{color:var(--walnut);margin-bottom:6px}
+.step p{font-size:.93rem;color:var(--mut)}
+.about{background:var(--walnut);color:#f4ead9;margin-top:54px;padding:48px 0}
+.about .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.about h2{color:#fff;text-align:left}
+.about p{color:#e0d2bc;font-size:.97rem;margin-top:12px}
+.hours{background:var(--cream);color:var(--ink);border-radius:14px;padding:22px 24px}
+.hours h3{color:var(--walnut);margin-bottom:8px}
+.hours p{color:var(--mut);font-size:.93rem;margin-top:0}
+.reviews{background:var(--sand);margin-top:54px;padding:48px 20px;text-align:center}
+.reviews .big{font-size:3rem;color:var(--walnut);font-weight:800;line-height:1}
+.reviews .stars{margin-top:6px}
+.reviews p{color:var(--mut);max-width:530px;margin:10px auto 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.gallery .g{height:210px;overflow:hidden;border-radius:16px}
+.gallery .g img{transition:transform .5s}
+.gallery .g:hover img{transform:scale(1.07)}
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:16px 20px}
+.faq summary{cursor:pointer;font-weight:600;color:var(--walnut)}
+.faq p{color:var(--mut);font-size:.94rem;margin-top:8px}
+.contact{text-align:center}
+.contact p{color:var(--mut);max-width:530px;margin:8px auto 0}
+.contact .email{font-size:1.12rem;color:var(--copper);font-weight:700;margin-top:14px;word-break:break-all}
+.ctaband{background:linear-gradient(140deg,var(--walnut) 0%,var(--copper) 100%);color:#fff;text-align:center;padding:46px 20px;margin-top:54px}
+.ctaband h2{color:#fff}
+.ctaband p{color:#f2e2d2;margin-top:8px}
+.ctaband .cta{background:#fff;color:var(--walnut);margin-bottom:0;font-weight:700}
+footer{background:#2a2019;color:#b8a892;text-align:center;padding:22px 16px;font-size:.86rem}
+@media(max-width:640px){header.hero h1{font-size:2.1rem}.heroimg{height:230px}.about .wrap{grid-template-columns:1fr}nav ul{gap:12px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#top">The Barber <span>Lounge</span></a><ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<header class="hero" id="top">
+<div class="kicker">Sit Back · Relax · Look Great</div>
+<h1>The Barber <span>Lounge</span></h1>
+<div class="town">Dundee · Barbers</div>
+<p class="tag">Great haircuts without the rush — a warm, relaxed lounge in Dundee where you can settle in, switch off for a while and walk out feeling like yourself again, only sharper.</p>
+<div class="stars">★★★★★<small>Rated 4.8 from 167 reviews on Google</small></div>
+<br><a class="cta" href="mailto:thebarberlounge166@hotmail.com?subject=Booking%20enquiry">✉ Email Us to Book</a>
+<div class="heroimg"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=70" alt="Relaxed beard trim at The Barber Lounge Dundee"></div>
+</header>
+
+<section id="services"><div class="wrap">
+<h2 class="reveal">Our <span>Services</span></h2>
+<p class="sub reveal">Take your time choosing — every service is unhurried, comfortable and finished with genuine care.</p>
+<div class="cards">
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=900&q=70" alt="Barber tools ready for a relaxed haircut appointment"></div><h3>Haircuts</h3><p>A haircut that fits your life, not just the latest trend. We chat through what you like, how your hair behaves and how much time you want to spend styling it, then cut something that looks great on the day and keeps looking great as the weeks go by. Comfortable chair, good conversation, no rush.</p><ul><li>Friendly consultation first</li><li>Classic and modern cuts</li><li>Easy-to-manage finishes</li></ul><p class="price-note">Message for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?auto=format&fit=crop&w=900&q=70" alt="Cosy barbershop interior with comfortable seating"></div><h3>Skin Fades</h3><p>Crisp, clean fades with a soft touch. Your fade is blended gradually for a smooth, natural transition — as sharp as you want it, without ever looking harsh. We check the blend from every angle in the light before you head out, because the details are what make a fade truly great.</p><ul><li>Low, mid and high fades</li><li>Smooth, natural blending</li><li>Neat, tidy edges</li></ul><p class="price-note">Message for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=900&q=70" alt="Detailed clipper work during a beard and hair service"></div><h3>Beard Trim &amp; Hot Towel Shave</h3><p>Settle back and let the warm towels do their work. We shape your beard to suit your face, tidy every line, and finish with a traditional hot towel shave that leaves your skin feeling calm and fresh. For many of our regulars, this is the most relaxing half hour of their week.</p><ul><li>Beard shaping and tidy</li><li>Soothing hot towels</li><li>Gentle razor finish</li></ul><p class="price-note">Message for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=900&q=70" alt="Barber finishing a complete haircut and styling service"></div><h3>The Full Works</h3><p>Haircut, beard and hot towel shave together in one long, relaxing appointment. Perfect before a special occasion, a holiday, or simply as a well-earned treat. Book it, sink into the chair, and let us take care of absolutely everything while you properly switch off.</p><ul><li>Hair and beard in one visit</li><li>Hot towel shave included</li><li>Pure switch-off time</li></ul><p class="price-note">Message for prices</p></article>
+</div></div></section>
+
+<section><div class="wrap">
+<h2 class="reveal">Why the <span>Lounge?</span></h2>
+<p class="sub reveal">Because a haircut should be something you look forward to.</p>
+<div class="why">
+<div class="w reveal"><div class="big">4.8 ★</div><h3>Rated by Dundee</h3><p>4.8 ★ from 167 Google reviews — local people who keep coming back, and kindly tell others to do the same.</p></div>
+<div class="w reveal"><h3>Properly Relaxed</h3><p>No shouting over clippers, no being rushed out of the chair. Just a calm, cosy space and barbers who enjoy their work.</p></div>
+<div class="w reveal"><h3>Honest, Friendly Advice</h3><p>Not sure what suits you? We will talk it through honestly and find a style that works with your hair, not against it.</p></div>
+<div class="w reveal"><h3>Simple Email Booking</h3><p>One short email books your appointment. No apps, no forms, no passwords to remember — nice and easy.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2 class="reveal">How Booking <span>Works</span></h2>
+<p class="sub reveal">Easy as one, two, three.</p>
+<div class="steps">
+<div class="step reveal"><div class="n">1</div><h3>Choose Your Service</h3><p>Haircut, skin fade, beard trim and hot towel shave — or treat yourself to The Full Works.</p></div>
+<div class="step reveal"><div class="n">2</div><h3>Email Us</h3><p>Drop a line to thebarberlounge166@hotmail.com with what you fancy, and we will confirm your spot.</p></div>
+<div class="step reveal"><div class="n">3</div><h3>Visit Us in Dundee</h3><p>Come in, relax in the chair, and enjoy it. We will handle everything else.</p></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="wrap">
+<div class="reveal"><h2>About The Barber <span style="color:#d9a066">Lounge</span></h2>
+<p>The Barber Lounge in Dundee was created around a feeling: that a trip to the barbers should slow you down in the best possible way. Warm wood, comfortable chairs, hot towels and unhurried conversation — it is grooming as a proper break in your day, not another errand to rush through.</p>
+<p>Whether you pop in for a tidy-up between meetings or book The Full Works as a treat, you will get the same warmth and attention. We listen first, cut second, and only let you leave when you are genuinely happy with what you see in the mirror.</p>
+<p>Think of your appointment as a small reset in the middle of everything else: a comfortable seat, a warm welcome, a hot towel if you fancy it, and barbers who genuinely enjoy making people feel good about how they look. Plenty of our regulars tell us it is the calmest part of their week — and we take that as the finest compliment of all.</p></div>
+<div class="hours reveal"><h3>Opening Hours</h3><p>Opening hours vary — please email us at thebarberlounge166@hotmail.com for this week's hours and availability.</p></div>
+</div></section>
+
+<div class="reviews" id="reviews">
+<div class="big reveal">4.8 ★</div>
+<div class="stars reveal">★★★★★</div>
+<p class="reveal">Rated 4.8 from 167 reviews on Google. Thank you to everyone who has left us a review — your kind words mean a great deal, and they help new faces find their way to the lounge.</p>
+</div>
+
+<section id="gallery"><div class="wrap">
+<h2 class="reveal">The <span>Gallery</span></h2>
+<p class="sub reveal">Warm surroundings, careful work and comfortable finishes.</p>
+<div class="gallery">
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?auto=format&fit=crop&w=800&q=70" alt="Close-up razor detailing on a beard"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=70" alt="Classic haircut being styled by a barber"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=70" alt="Haircut in progress in a welcoming barbershop"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=70" alt="Fade being blended carefully with clippers"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=800&q=70" alt="Traditional barber tools arranged on a counter"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?auto=format&fit=crop&w=800&q=70" alt="Comfortable barber chairs in warm light"></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap">
+<h2 class="reveal">Questions, <span>Answered</span></h2>
+<p class="sub reveal">A few things people often ask us.</p>
+<div class="faq">
+<details class="reveal"><summary>How do I book an appointment?</summary><p>Just email us at thebarberlounge166@hotmail.com with the service you would like, and we will confirm your appointment and help with anything else you need.</p></details>
+<details class="reveal"><summary>How much does it cost?</summary><p>Message for prices — email us with the service you have in mind and we will confirm the price before you book, so there are never any surprises.</p></details>
+<details class="reveal"><summary>Where are you based?</summary><p>We are based in Dundee. Email us at thebarberlounge166@hotmail.com and we will happily send you directions.</p></details>
+<details class="reveal"><summary>Do I need to book, or can I walk in?</summary><p>Booking by email is the best way to be sure of a relaxed, unhurried slot at a time that suits you. Send us a message and we will look after the rest.</p></details>
+<details class="reveal"><summary>I am not sure what style I want — can you advise?</summary><p>Absolutely, and we enjoy it. Mention it when you email or when you arrive, and we will talk through options based on your hair type, face shape and daily routine.</p></details>
+<details class="reveal"><summary>Is the hot towel shave suitable for sensitive skin?</summary><p>The warm towels are actually there to soften and prepare the skin, which most people find very comfortable. Let us know about any sensitivities when you book and we will take extra care.</p></details>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2 class="reveal">Get in <span>Touch</span></h2>
+<p class="reveal">The Barber Lounge · Dundee. Pop us an email — we are a friendly bunch and we reply as soon as we can.</p>
+<p class="email reveal">thebarberlounge166@hotmail.com</p>
+<a class="cta reveal" href="mailto:thebarberlounge166@hotmail.com?subject=Booking%20enquiry">✉ Message Us</a>
+</div></section>
+
+<div class="ctaband"><h2 class="reveal">Your Chair Is Waiting</h2><p class="reveal">Book a relaxed appointment in Dundee — one email and it is sorted.</p><a class="cta reveal" href="mailto:thebarberlounge166@hotmail.com?subject=Booking%20enquiry">✉ Email Us to Book</a></div>
+<footer>© The Barber Lounge, Dundee · Demo website made by Akram Web Studio</footer>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});els.forEach(function(e){io.observe(e)});})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

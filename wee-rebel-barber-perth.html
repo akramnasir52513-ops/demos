@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wee Rebel Barber — Perth | Barbers</title>
+<meta name="description" content="Wee Rebel Barber, barbers in Perth. Haircuts, skin fades, beard trims and hot towel shaves with attitude. Rated 4.9 from 103 reviews on Google.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--red:#d92323;--red2:#a81212;--black:#141416;--coal:#222226;--white:#f7f4ee;--mut:#5f5b55;--line:#ddd5c6;--gold:#e0a526}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Arial Black','Segoe UI',Arial,sans-serif;background:var(--white);color:var(--black);line-height:1.6}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+p,li,summary,.faq p{font-family:'Segoe UI',Arial,sans-serif}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.plaid{height:16px;background:repeating-linear-gradient(45deg,#a81212 0 18px,#141416 18px 36px,#e0a526 36px 40px,#2e5e3a 40px 58px,#141416 58px 76px)}
+nav{position:sticky;top:0;z-index:50;background:var(--black)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:13px;padding-bottom:13px;flex-wrap:wrap;gap:8px}
+.brand{font-size:1.45rem;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.03em}
+.brand span{color:var(--red)}
+nav ul{display:flex;gap:17px;list-style:none;flex-wrap:wrap}
+nav ul a{color:#ddd;text-decoration:none;font-size:.84rem;text-transform:uppercase;letter-spacing:.07em}
+nav ul a:hover{color:var(--gold)}
+header.hero{background:var(--black);color:#fff;text-align:center;padding:54px 20px 0;overflow:hidden}
+header.hero .kicker{letter-spacing:.3em;text-transform:uppercase;font-size:.76rem;color:var(--gold)}
+header.hero h1{font-size:3.3rem;text-transform:uppercase;line-height:1.05;margin:10px 0 2px}
+header.hero h1 span{color:var(--red)}
+header.hero .town{letter-spacing:.22em;text-transform:uppercase;font-size:.86rem;color:#d8d2c4}
+header.hero p.tag{max-width:600px;margin:16px auto 0;color:#ece7da;font-size:1.03rem;font-family:'Segoe UI',Arial,sans-serif}
+.stars{color:var(--gold);font-size:1.25rem;margin-top:14px;letter-spacing:.2em}
+.stars small{display:block;color:#d8d2c4;font-size:.82rem;letter-spacing:.03em;margin-top:2px;font-family:'Segoe UI',Arial,sans-serif}
+.cta{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:15px 32px;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;margin:24px 0 36px;box-shadow:5px 5px 0 var(--gold);transition:background .25s,transform .25s;font-family:'Segoe UI',Arial,sans-serif;font-weight:700}
+.cta:hover{background:var(--red2);transform:translate(-2px,-2px)}
+.heroimg{max-width:860px;margin:4px auto 0;height:340px;border-top:6px solid var(--red)}
+section{padding:54px 0 10px}
+h2{text-align:center;font-size:2.15rem;text-transform:uppercase;letter-spacing:.02em}
+h2 span{color:var(--red)}
+h2+.sub{text-align:center;color:var(--mut);margin:6px auto 30px;max-width:570px;font-size:.97rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border:2px solid var(--black);padding:0 0 20px;box-shadow:6px 6px 0 rgba(20,20,22,.12);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translate(-3px,-3px);box-shadow:10px 10px 0 rgba(217,35,35,.22)}
+.card .ph{height:172px;overflow:hidden}
+.card .ph img{transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card h3{font-size:1.28rem;text-transform:uppercase;margin:16px 20px 8px}
+.card p{margin:0 20px;font-size:.94rem;color:var(--mut)}
+.card ul{margin:10px 20px 0 38px;font-size:.92rem;color:var(--mut)}
+.card .price-note{margin:12px 20px 0;padding-top:10px;border-top:2px dashed var(--line);color:var(--red);font-size:.92rem;font-weight:700}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.why .w{background:#fff;border:2px solid var(--black);padding:24px 20px;text-align:center}
+.why .w h3{text-transform:uppercase;font-size:1.08rem;margin-bottom:8px}
+.why .w p{font-size:.92rem;color:var(--mut)}
+.why .big{font-size:1.95rem;color:var(--red)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.step{background:var(--black);color:#fff;padding:28px 22px;text-align:center}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.18rem}
+.step h3{text-transform:uppercase;margin-bottom:6px}
+.step p{font-size:.93rem;color:#cfc9ba}
+.about{background:var(--coal);color:#f0ead9;margin-top:54px;padding:48px 0}
+.about .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.about h2{color:#fff;text-align:left}
+.about p{color:#d6cfbc;font-size:.97rem;margin-top:12px}
+.hours{background:#fff;color:var(--black);padding:22px 24px;border-left:8px solid var(--red)}
+.hours h3{text-transform:uppercase;margin-bottom:8px}
+.hours p{color:var(--mut);font-size:.93rem;margin-top:0}
+.reviews{background:var(--red);color:#fff;margin-top:0;padding:48px 20px;text-align:center}
+.reviews .big{font-size:3.1rem;line-height:1}
+.reviews .stars{color:#fff;margin-top:6px}
+.reviews p{color:#ffe9e9;max-width:540px;margin:10px auto 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.gallery .g{height:210px;overflow:hidden;border:2px solid var(--black)}
+.gallery .g img{transition:transform .5s}
+.gallery .g:hover img{transform:scale(1.07)}
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:#fff;border:2px solid var(--black);margin-bottom:10px;padding:16px 20px}
+.faq summary{cursor:pointer;font-weight:700}
+.faq p{color:var(--mut);font-size:.94rem;margin-top:8px}
+.contact{text-align:center}
+.contact p{color:var(--mut);max-width:540px;margin:8px auto 0}
+.contact .email{font-size:1.14rem;color:var(--red);font-weight:800;margin-top:14px;word-break:break-all}
+.ctaband{background:var(--black);color:#fff;text-align:center;padding:46px 20px;margin-top:54px}
+.ctaband h2{color:#fff}
+.ctaband p{color:#d8d2c4;margin-top:8px}
+footer{background:#0c0c0e;color:#a39c8d;text-align:center;padding:22px 16px;font-size:.86rem;font-family:'Segoe UI',Arial,sans-serif}
+@media(max-width:640px){header.hero h1{font-size:2.25rem}.heroimg{height:230px}.about .wrap{grid-template-columns:1fr}nav ul{gap:12px}}
+</style>
+</head>
+<body>
+<div class="plaid"></div>
+<nav><div class="wrap"><a class="brand" href="#top">Wee <span>Rebel</span> Barber</a><ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<header class="hero" id="top">
+<div class="kicker">Perth · No Boring Haircuts</div>
+<h1>Wee Rebel <span>Barber</span></h1>
+<div class="town">Perth · Barbers</div>
+<p class="tag">Small shop, big attitude. Bold fades, fearless restyles and proper hot towel shaves — for folk in Perth who refuse to blend in.</p>
+<div class="stars">★★★★★<small>Rated 4.9 from 103 reviews on Google</small></div>
+<br><a class="cta" href="mailto:weerebelbarber@yahoo.com?subject=Booking%20enquiry">✉ Email Us to Book</a>
+<div class="heroimg"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=1200&q=70" alt="Bold detailed barber work at Wee Rebel Barber Perth"></div>
+</header>
+
+<section id="services"><div class="wrap">
+<h2 class="reveal">Our <span>Services</span></h2>
+<p class="sub reveal">Four ways to leave looking sharper than you arrived. Pick your weapon.</p>
+<div class="cards">
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=900&q=70" alt="Barber cutting hair with scissors and confidence"></div><h3>Haircuts</h3><p>Safe trim or total restyle — your call, our craft. Tell us what you are after (photos welcome, wild ideas even more welcome) and we will shape a cut that suits your head, your hair and your nerve. You will leave knowing exactly how to style it yourself, too, no salon magic required.</p><ul><li>Restyles and classic cuts</li><li>Photos and ideas welcome</li><li>Styling tips before you go</li></ul><p class="price-note">Message for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?auto=format&fit=crop&w=900&q=70" alt="Close razor detailing on a skin fade"></div><h3>Skin Fades</h3><p>This is where the Rebel earns its name. Fades blended so smooth they look airbrushed, edges so sharp they should come with a warning. High, mid or low — we build it line by line and check it in the light twice, because a half-done fade is just a haircut with excuses.</p><ul><li>High, mid and low fades</li><li>Razor-sharp line-ups</li><li>Double-checked finish</li></ul><p class="price-note">Message for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=70" alt="Classic barber styling a client's hair"></div><h3>Beard Trim &amp; Hot Towel Shave</h3><p>Every rebel needs a tidy beard. We shape yours to actually suit your face, sort the stray rebels of the beard world, then finish with a traditional hot towel shave — warm towels, steady razor, zero drama. You will walk out looking dangerous in entirely the right way.</p><ul><li>Beard shaping with attitude</li><li>Traditional hot towels</li><li>Clean razor finish</li></ul><p class="price-note">Message for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=70" alt="Full barber service underway in the shop"></div><h3>The Full Works</h3><p>The whole rebellion in one sitting: haircut or fade, full beard work and a hot towel shave to finish. Book it before a big night, a wedding, a photo, or just because Tuesday deserves better. Maximum transformation, minimum effort on your part — just sit there and take the compliments later.</p><ul><li>Hair and beard, one visit</li><li>Hot towel shave included</li><li>Maximum transformation</li></ul><p class="price-note">Message for prices</p></article>
+</div></div></section>
+
+<section><div class="wrap">
+<h2 class="reveal">Why Join the <span>Rebellion?</span></h2>
+<p class="sub reveal">Wee shop. Loud standards.</p>
+<div class="why">
+<div class="w reveal"><div class="big">4.9 ★</div><h3>Perth Rates Us</h3><p>4.9 ★ from 103 Google reviews — near-perfect scores from people who do not hand out praise lightly.</p></div>
+<div class="w reveal"><h3>No Boring Haircuts</h3><p>Bring us the cut other barbers talked you out of. If it can be done well, we will do it properly.</p></div>
+<div class="w reveal"><h3>Straight Talking</h3><p>If a style will not work on your hair, we will say so — then show you the version that will. No nonsense, ever.</p></div>
+<div class="w reveal"><h3>Book in One Email</h3><p>No apps, no accounts, no forms longer than a shopping list. One email and your chair is yours.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2 class="reveal">How Booking <span>Works</span></h2>
+<p class="sub reveal">Dead simple. Even rebels follow these steps.</p>
+<div class="steps">
+<div class="step reveal"><div class="n">1</div><h3>Choose Your Service</h3><p>Haircut, skin fade, beard and hot towel shave — or go all-out with The Full Works.</p></div>
+<div class="step reveal"><div class="n">2</div><h3>Email Us</h3><p>Fire a message to weerebelbarber@yahoo.com with what you want, and we will confirm your appointment.</p></div>
+<div class="step reveal"><div class="n">3</div><h3>Visit Us in Perth</h3><p>Show up, sit down, and leave looking like the best version of yourself.</p></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="wrap">
+<div class="reveal"><h2>About Wee <span style="color:#e05656">Rebel</span></h2>
+<p>Wee Rebel Barber is Perth's small shop with the big personality. We started with a simple grudge: too many haircuts in this world are boring, rushed and exactly the same as the person in the chair before. So we do the opposite — bold where you want bold, classic where you want classic, and careful everywhere, every time.</p>
+<p>Rebel is about attitude, not gimmicks. The welcome is friendly, the banter is free, and the standard in the mirror at the end is deadly serious. First visit or fiftieth, you get the same energy: tell us what you are dreaming of, and watch us take it seriously.</p>
+<p>And yes — the tartan runs through more than the decor. There is a proud Scottish streak in everything here: do it yourself, do it your own way, and do not let anybody tell you your hair has to look like everybody else's. Bring the idea you have been sitting on for months. The chair is ready when you are.</p></div>
+<div class="hours reveal"><h3>Opening Hours</h3><p>Opening hours vary — please email us at weerebelbarber@yahoo.com for this week's hours and availability.</p></div>
+</div></section>
+
+<div class="plaid"></div>
+<div class="reviews" id="reviews">
+<div class="big reveal">4.9 ★</div>
+<div class="stars reveal">★★★★★</div>
+<p class="reveal">Rated 4.9 from 103 reviews on Google. Massive thanks to every rebel who has left a review — you lot are the reason the shop stays loud, busy and proud.</p>
+</div>
+<div class="plaid"></div>
+
+<section id="gallery"><div class="wrap">
+<h2 class="reveal">The <span>Gallery</span></h2>
+<p class="sub reveal">Evidence. Sharp lines, bold blends and not a boring haircut in sight.</p>
+<div class="gallery">
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=70" alt="Fade being blended with clipper-over-comb technique"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=70" alt="Hot towel shave being prepared the traditional way"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=70" alt="Finished modern haircut with strong styling"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=70" alt="Barber shaping hair with detailed finishing work"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=800&q=70" alt="Scissor work on a classic haircut"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?auto=format&fit=crop&w=800&q=70" alt="Razor detail finishing a sharp edge"></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap">
+<h2 class="reveal">Questions, <span>Answered</span></h2>
+<p class="sub reveal">Rebels ask questions. Here are the usual ones.</p>
+<div class="faq">
+<details class="reveal"><summary>How do I book an appointment?</summary><p>Email us at weerebelbarber@yahoo.com with the service you want, and we will confirm your appointment sharpish. That is genuinely all there is to it.</p></details>
+<details class="reveal"><summary>How much does it cost?</summary><p>Message for prices — tell us what service you are after by email and we will confirm the price upfront, before you book. No surprises at the till.</p></details>
+<details class="reveal"><summary>Where are you based?</summary><p>We are based in Perth. Email us at weerebelbarber@yahoo.com and we will happily send you directions.</p></details>
+<details class="reveal"><summary>Do I need to book, or can I just turn up?</summary><p>Booking by email is the way to guarantee your slot — the chairs fill up fast, especially later in the week. Send the email, secure the chair, sorted.</p></details>
+<details class="reveal"><summary>I want something different but I am not sure what — help?</summary><p>That is our favourite kind of booking. Bring photos, bring half an idea, or just bring yourself — we will talk through what suits your hair and face and build a style that is properly yours.</p></details>
+<details class="reveal"><summary>Can I get a full restyle and a beard tidy in one visit?</summary><p>Yes — that is exactly what The Full Works is for. Mention it in your email so we can allow plenty of time for the full transformation.</p></details>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2 class="reveal">Get in <span>Touch</span></h2>
+<p class="reveal">Wee Rebel Barber · Perth. Ready to rebel against your current haircut? One email starts it.</p>
+<p class="email reveal">weerebelbarber@yahoo.com</p>
+<a class="cta reveal" href="mailto:weerebelbarber@yahoo.com?subject=Booking%20enquiry">✉ Message Us</a>
+</div></section>
+
+<div class="ctaband"><h2 class="reveal">Dare to Look Different</h2><p class="reveal">Book your chair in Perth today — boring haircuts fear us.</p><a class="cta reveal" href="mailto:weerebelbarber@yahoo.com?subject=Booking%20enquiry">✉ Email Us to Book</a></div>
+<div class="plaid"></div>
+<footer>© Wee Rebel Barber, Perth · Demo website made by Akram Web Studio</footer>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});els.forEach(function(e){io.observe(e)});})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
