@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Posh Nail Bar | Nail Salon in Scarborough — Gel, Acrylics, BIAB & Luxury Pedicures</title>
+<meta name="description" content="Le Posh Nail Bar in Scarborough, North Yorkshire — rated 4.8 stars from 78 Google reviews. Gel nails, acrylics, BIAB builder gel, manicures, pedicures, nail art and luxury pedicure treatments. Book on WhatsApp.">
+<style>
+:root{
+  --ink:#0d0a0c;
+  --ink2:#171216;
+  --panel:#1e171c;
+  --blush:#f3cfd4;
+  --blush-soft:#f9e8ea;
+  --blush-deep:#d98a99;
+  --gold:#c9a24a;
+  --gold-bright:#e8c874;
+  --cream:#faf5ef;
+  --muted:#b9a8ad;
+  --line:rgba(201,162,74,.28);
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Jost","Segoe UI",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:var(--sans);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1140px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.18}
+.kicker{letter-spacing:.32em;text-transform:uppercase;font-size:.72rem;color:var(--gold-bright);font-weight:600}
+.btn{display:inline-block;padding:.95rem 1.9rem;border-radius:999px;font-weight:600;letter-spacing:.06em;text-decoration:none;font-size:.95rem;transition:transform .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#22b358;color:#fff;box-shadow:0 10px 26px rgba(34,179,88,.35)}
+.btn-gold{background:linear-gradient(120deg,var(--gold),var(--gold-bright));color:#241a05;box-shadow:0 10px 26px rgba(201,162,74,.35)}
+.btn-ghost{border:1px solid var(--line);color:var(--blush)}
+.rise{animation:rise .9s ease both}
+@keyframes rise{from{opacity:.25;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes zoomSlow{from{transform:scale(1)}to{transform:scale(1.08)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* top strip */
+.topstrip{background:linear-gradient(90deg,#241a05,var(--gold),#241a05);color:#1d1503;text-align:center;font-size:.85rem;font-weight:600;letter-spacing:.08em;padding:.5rem 1rem}
+.topstrip .stars{color:#1d1503}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(13,10,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.logo-mark{width:44px;height:44px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:1.15rem;color:var(--gold-bright);background:radial-gradient(circle at 30% 30%,#2b1d24,var(--ink2))}
+.logo b{font-family:var(--serif);font-size:1.25rem;letter-spacing:.04em;display:block;line-height:1}
+.logo small{letter-spacing:.3em;text-transform:uppercase;font-size:.6rem;color:var(--blush-deep)}
+.nav-links{display:none;gap:1.6rem}
+.nav-links a{text-decoration:none;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cream)}
+.nav-links a:hover{color:var(--gold-bright)}
+.nav-cta{display:flex;gap:.6rem}
+.nav-cta .btn{padding:.6rem 1.2rem;font-size:.85rem}
+@media(min-width:860px){.nav-links{display:flex}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--ink2)}
+.hero-grid{display:grid;gap:2.2rem;padding:3.2rem 0 3.6rem;align-items:center}
+.hero h1{font-size:clamp(2.3rem,6vw,3.9rem);margin:.7rem 0 1rem}
+.hero h1 em{font-style:italic;color:var(--blush)}
+.hero p.lede{color:#e9dcd9;font-size:1.08rem;max-width:34rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.6rem 0 1.2rem}
+.hero-note{font-size:.9rem;color:var(--muted)}
+.hero-media{position:relative}
+.hero-media .frame{border-radius:180px 180px 18px 18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.hero-media img{width:100%;height:520px;object-fit:cover;animation:zoomSlow 16s ease-in-out infinite alternate}
+.rating-card{position:absolute;left:-.6rem;bottom:1.4rem;background:rgba(23,18,22,.92);border:1px solid var(--gold);border-radius:14px;padding:.85rem 1.15rem;animation:bob 5s ease-in-out infinite;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.rating-card .stars{color:var(--gold-bright);font-size:1.05rem;letter-spacing:.15em}
+.rating-card b{font-family:var(--serif);font-size:1.3rem}
+.rating-card span{display:block;font-size:.8rem;color:var(--muted)}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+
+/* marquee */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#120d10;padding:.8rem 0;overflow:hidden;white-space:nowrap}
+.marquee span{display:inline-block;padding:0 1.4rem;font-family:var(--serif);font-style:italic;color:var(--blush);font-size:1.02rem}
+.marquee i{color:var(--gold);font-style:normal}
+
+/* trust strip */
+.trust{background:var(--blush-soft);color:#2b1c20}
+.trust-grid{display:grid;gap:1rem;padding:1.5rem 0;text-align:center}
+.trust b{font-family:var(--serif);font-size:1.5rem;display:block;color:#7c2233}
+.trust p{font-size:.9rem;color:#5d454b}
+@media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* sections */
+section{padding:4rem 0}
+.sec-head{max-width:44rem;margin-bottom:2.2rem}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.5rem);margin:.6rem 0 .8rem}
+.sec-head p{color:var(--muted)}
+.alt{background:var(--ink2)}
+.blush-band{background:linear-gradient(160deg,#2a161d,#171216 70%)}
+
+/* about */
+.about-grid{display:grid;gap:2.2rem;align-items:center}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.collage img{border-radius:14px;height:210px;width:100%;object-fit:cover;border:1px solid var(--line)}
+.collage img.tall{height:434px;grid-row:span 2}
+.about-copy p{color:#e6d8d4;margin-bottom:1rem}
+.checks{list-style:none;margin:1.2rem 0;display:grid;gap:.55rem}
+.checks li{padding-left:1.7rem;position:relative;color:#efe3df}
+.checks li::before{content:"✦";position:absolute;left:0;color:var(--gold-bright)}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr}}
+
+/* services */
+.svc-grid{display:grid;gap:1.2rem}
+.svc{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.svc img{height:190px;width:100%;object-fit:cover}
+.svc-body{padding:1.3rem 1.4rem 1.5rem}
+.svc h3{font-size:1.3rem;margin-bottom:.5rem;color:var(--blush-soft)}
+.svc p{color:var(--muted);font-size:.96rem;margin-bottom:.9rem}
+.svc ul{list-style:none;display:grid;gap:.35rem;font-size:.92rem;color:#e8d9d5;margin-bottom:1rem}
+.svc ul li::before{content:"— ";color:var(--gold)}
+.price-note{font-size:.85rem;letter-spacing:.05em;color:var(--gold-bright);text-transform:uppercase;font-weight:600}
+@media(min-width:700px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* detail rows */
+.detail-row{display:grid;gap:1.6rem;align-items:center;margin-bottom:2.6rem}
+.detail-row img{border-radius:16px;height:300px;width:100%;object-fit:cover;border:1px solid var(--line)}
+.detail-row h3{font-size:1.55rem;margin-bottom:.6rem;color:var(--blush-soft)}
+.detail-row p{color:var(--muted);margin-bottom:.8rem}
+@media(min-width:880px){.detail-row{grid-template-columns:1fr 1fr}.detail-row.flip img{order:2}}
+
+/* steps */
+.steps{display:grid;gap:1.1rem}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.5rem}
+.step .num{font-family:var(--serif);font-size:2rem;color:var(--gold);line-height:1}
+.step h3{margin:.5rem 0 .4rem;font-size:1.2rem}
+.step p{color:var(--muted);font-size:.95rem}
+@media(min-width:820px){.steps{grid-template-columns:repeat(4,1fr)}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
+.gal figure{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.gal img{height:230px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .9rem .6rem;background:linear-gradient(transparent,rgba(10,6,8,.88));font-size:.86rem;color:var(--blush-soft)}
+@media(min-width:820px){.gal{grid-template-columns:repeat(3,1fr)}}
+
+/* why */
+.why-grid{display:grid;gap:1.1rem}
+.why{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.5rem}
+.why .ic{font-size:1.5rem;color:var(--gold-bright)}
+.why h3{margin:.5rem 0 .4rem;font-size:1.18rem}
+.why p{color:var(--muted);font-size:.95rem}
+@media(min-width:700px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* faq */
+.faq-list{max-width:52rem;margin:0 auto;display:grid;gap:.7rem}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.08rem;color:var(--blush-soft)}
+details p{color:var(--muted);margin-top:.6rem;font-size:.96rem}
+details a{color:var(--gold-bright)}
+
+/* booking */
+.book-grid{display:grid;gap:1.4rem}
+.book-card{border-radius:18px;padding:2rem}
+.book-main{background:linear-gradient(150deg,#33161f,#1e1216);border:1px solid var(--gold)}
+.book-main h2{font-size:2rem;margin-bottom:.7rem}
+.book-main p{color:#efdcda;margin-bottom:1.2rem}
+.book-info{background:var(--panel);border:1px solid var(--line)}
+.book-info h3{margin-bottom:1rem;font-size:1.3rem;color:var(--blush-soft)}
+.book-info ul{list-style:none;display:grid;gap:.8rem;color:#e8d9d5;font-size:.97rem}
+.book-info b{color:var(--gold-bright);font-weight:600}
+@media(min-width:880px){.book-grid{grid-template-columns:1.2fr .8fr}}
+
+/* footer */
+footer{background:#090608;border-top:1px solid var(--line);padding:3rem 0 2rem}
+.foot-grid{display:grid;gap:2rem}
+footer h4{font-family:var(--serif);color:var(--blush-soft);margin-bottom:.7rem;font-size:1.1rem}
+footer p,footer li{color:var(--muted);font-size:.93rem}
+footer ul{list-style:none;display:grid;gap:.4rem}
+footer a{text-decoration:none}
+footer a:hover{color:var(--gold-bright)}
+.foot-base{border-top:1px solid rgba(201,162,74,.15);margin-top:2.2rem;padding-top:1.2rem;font-size:.82rem;color:#8b767c;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+
+/* floating WA */
+.wa-float{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;width:58px;height:58px;border-radius:50%;background:#22b358;display:grid;place-items:center;box-shadow:0 14px 30px rgba(0,0,0,.5);text-decoration:none;animation:bob 5s ease-in-out infinite}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="topstrip">★ Rated 4.8 from 78 Google reviews · Le Posh Nail Bar · Scarborough, North Yorkshire ★</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">LP</span>
+      <span><b>Le Posh</b><small>Nail Bar · Scarborough</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+447883838686">Call Us</a>
+      <a class="btn btn-wa" href="https://wa.me/447883838686" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="rise">
+      <p class="kicker">Nail Bar · Scarborough, North Yorkshire</p>
+      <h1>Nails, but make them <em>posh</em>.</h1>
+      <p class="lede">Welcome to Le Posh Nail Bar — Scarborough's home of beautiful gel nails, sculpted acrylics, glossy BIAB and properly pampering pedicures. A little luxury on the Yorkshire coast, finished with care, colour and a touch of glamour.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447883838686" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="btn btn-gold" href="#services">Explore Services</a>
+      </div>
+      <p class="hero-note">Booking is easy — message us on WhatsApp, find us on Fresha, or follow along on Facebook. Call or message for prices and the latest availability.</p>
+    </div>
+    <div class="hero-media rise">
+      <div class="frame"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop" alt="Elegant manicured nails at Le Posh Nail Bar Scarborough"></div>
+      <div class="rating-card">
+        <span class="stars">★★★★★</span>
+        <b>4.8 / 5</b>
+        <span>from 78 Google reviews</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <span>Gel Nails</span><i>✦</i><span>Acrylics</span><i>✦</i><span>BIAB Builder Gel</span><i>✦</i><span>Nail Art</span><i>✦</i><span>Luxury Pedicures</span><i>✦</i><span>Manicures</span><i>✦</i><span>French Tips</span><i>✦</i><span>Gloss &amp; Glamour</span><i>✦</i>
+</div>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div><b>4.8 ★</b><p>Average Google rating</p></div>
+    <div><b>78</b><p>Google reviews &amp; counting</p></div>
+    <div><b>7+</b><p>Nail services to choose from</p></div>
+    <div><b>Scarborough</b><p>On the North Yorkshire coast</p></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="collage rise">
+      <img class="tall" src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1200&auto=format&fit=crop" alt="Inside a glamorous nail salon">
+      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1200&auto=format&fit=crop" alt="Manicure treatment in progress">
+      <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=1200&auto=format&fit=crop" alt="Polished nails close up">
+    </div>
+    <div class="about-copy rise">
+      <p class="kicker">About Le Posh</p>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.4rem);margin:.6rem 0 1rem">A little luxury, right here in Scarborough</h2>
+      <p>Le Posh Nail Bar is where Scarborough comes for nails that turn heads. From a clean, natural BIAB finish to full-glam acrylics with hand-painted art, every set is shaped, finished and polished with real attention to detail.</p>
+      <p>We're rated <strong>4.8 stars from 78 Google reviews</strong> — and we work hard to earn every one of them, with honest advice, careful prep and a finish that lasts. Whether it's your first ever set or your fiftieth infill, you'll leave with nails you can't stop looking at.</p>
+      <ul class="checks">
+        <li>Gel, acrylic &amp; BIAB specialists</li>
+        <li>Hand-finished nail art, from subtle to statement</li>
+        <li>Luxury pedicure treatments for tired feet</li>
+        <li>Friendly, unhurried appointments</li>
+        <li>Easy booking on WhatsApp, Fresha &amp; Facebook</li>
+      </ul>
+      <a class="btn btn-wa" href="https://wa.me/447883838686" target="_blank" rel="noopener">Message Us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="kicker">What We Do</p>
+      <h2>Our Services</h2>
+      <p>Every treatment starts with careful nail prep and ends with a glossy, camera-ready finish. Prices vary by design and length — call or message for prices and we'll happily quote before you book.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1200&auto=format&fit=crop" alt="Gel nails with a glossy finish">
+        <div class="svc-body">
+          <h3>Gel Nails</h3>
+          <p>High-shine gel polish over your natural nails or extensions, cured for a chip-resistant finish that stays glossy for weeks.</p>
+          <ul><li>Full colour or French finish</li><li>Gel overlays &amp; extensions</li><li>Soak-off removal available</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1200&auto=format&fit=crop" alt="Nail polish colours for acrylic nails">
+        <div class="svc-body">
+          <h3>Acrylics</h3>
+          <p>Strong, sculpted acrylic extensions in the length and shape you love — from neat squares to full-glam stilettos.</p>
+          <ul><li>Full sets &amp; infills</li><li>Almond, coffin, square &amp; stiletto</li><li>Ombre &amp; glitter finishes</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=1200&auto=format&fit=crop" alt="Natural BIAB builder gel nails">
+        <div class="svc-body">
+          <h3>BIAB / Builder Gel</h3>
+          <p>Builder in a Bottle adds strength to natural nails so they can grow longer and stronger underneath — the go-to for a clean, natural look.</p>
+          <ul><li>Strengthens natural nails</li><li>Nude, milky &amp; tinted shades</li><li>Infill appointments to maintain</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1595867818082-083862f3d630?q=80&w=1200&auto=format&fit=crop" alt="Classic manicure treatment">
+        <div class="svc-body">
+          <h3>Manicure</h3>
+          <p>The classic tidy-up: shaping, cuticle care, a relaxing hand massage and your choice of polish or a natural buffed shine.</p>
+          <ul><li>Shape &amp; cuticle care</li><li>Hand massage included</li><li>Polish or natural finish</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?q=80&w=1200&auto=format&fit=crop" alt="Relaxing pedicure treatment">
+        <div class="svc-body">
+          <h3>Pedicure</h3>
+          <p>A proper refresh for your feet — soak, exfoliation, hard-skin care, a soothing massage and perfectly polished toes.</p>
+          <ul><li>Soak, scrub &amp; massage</li><li>Hard skin &amp; cuticle care</li><li>Gel or classic polish finish</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1200&auto=format&fit=crop" alt="Hand painted nail art">
+        <div class="svc-body">
+          <h3>Nail Art</h3>
+          <p>Make it yours — from delicate florals and French tips to chrome, cat-eye, gems and full hand-painted designs.</p>
+          <ul><li>French, chrome &amp; cat-eye</li><li>Seasonal &amp; occasion designs</li><li>Bring a photo — we love a challenge</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=1200&auto=format&fit=crop" alt="Luxury spa pedicure setting">
+        <div class="svc-body">
+          <h3>Luxury Pedicure Treatments</h3>
+          <p>Our most indulgent treatment: an extended soak, exfoliating scrub, mask, hot towels and a longer massage — pure bliss from knee to toe.</p>
+          <ul><li>Extended soak &amp; scrub</li><li>Mask &amp; hot towel wrap</li><li>Long, relaxing massage</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?q=80&w=1200&auto=format&fit=crop" alt="Evening glamour nails">
+        <div class="svc-body">
+          <h3>Occasion &amp; Bridal Nails</h3>
+          <p>Weddings, proms, holidays and big nights out — tell us the outfit and the occasion and we'll design a set to match.</p>
+          <ul><li>Bridal &amp; bridesmaid sets</li><li>Prom &amp; party glamour</li><li>Group bookings — just ask</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1200&auto=format&fit=crop" alt="Nail polish collection">
+        <div class="svc-body">
+          <h3>Removal &amp; Nail Care</h3>
+          <p>Safe, gentle soak-off removal for gel and acrylics, plus strengthening treatments to keep your natural nails healthy between sets.</p>
+          <ul><li>Gentle soak-off removal</li><li>Strengthening treatments</li><li>Honest advice on nail health</li></ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL ROWS -->
+<section>
+  <div class="wrap">
+    <div class="detail-row rise">
+      <img src="https://images.unsplash.com/photo-1620756236308-65c3ef5d25f3?q=80&w=1200&auto=format&fit=crop" alt="Nail technician carefully applying polish">
+      <div>
+        <p class="kicker">The Le Posh Finish</p>
+        <h3>Prep properly, polish perfectly</h3>
+        <p>Great nails are built, not rushed. Every set at Le Posh starts with thorough preparation — shaping, cuticle work and a clean, dry base — because that's what makes gel last, acrylics stay strong and BIAB protect the nail underneath.</p>
+        <p>Then comes the fun part: colour. Choose from timeless nudes and reds, soft milky tones, or this season's shades — and finish with art as subtle or as extra as you like.</p>
+        <a class="btn btn-gold" href="https://wa.me/447883838686" target="_blank" rel="noopener">Ask About Your Set</a>
+      </div>
+    </div>
+    <div class="detail-row flip rise">
+      <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop" alt="Relaxing beauty treatment">
+      <div>
+        <p class="kicker">Pedicure Time</p>
+        <h3>Feet that feel as good as they look</h3>
+        <p>Our pedicures are a proper treatment, not an afterthought. Warm soaks soften and relax, exfoliation smooths, and a generous massage melts the day away — before we finish with immaculate polish.</p>
+        <p>Step it up to a luxury pedicure treatment for masks, hot towels and even more massage time. Perfect before holidays, sandals season, or simply because you deserve it.</p>
+        <a class="btn btn-gold" href="https://wa.me/447883838686" target="_blank" rel="noopener">Book a Pedicure</a>
+      </div>
+    </div>
+    <div class="detail-row rise">
+      <img src="https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?q=80&w=1200&auto=format&fit=crop" alt="Elegant salon chairs">
+      <div>
+        <p class="kicker">Not Sure?</p>
+        <h3>Gel, acrylic or BIAB — we'll help you choose</h3>
+        <p>Not sure which system suits your nails and lifestyle? That's exactly what we're here for. Tell us how you use your hands, how long you want your set to last and the look you're after, and we'll recommend honestly — even if that's the simpler option.</p>
+        <p>Send us a message with a photo of your current nails or your dream set, and we'll talk you through it before you book.</p>
+        <a class="btn btn-gold" href="https://wa.me/447883838686" target="_blank" rel="noopener">Get Honest Advice</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="blush-band">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="kicker">Easy Booking</p>
+      <h2>Your appointment in four steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step rise"><span class="num">01</span><h3>Say Hello</h3><p>Message us on WhatsApp, book through Fresha, or find us on Facebook — whichever suits you.</p></div>
+      <div class="step rise"><span class="num">02</span><h3>Pick Your Set</h3><p>Tell us the service, shape, length and design you're dreaming of. Photos welcome!</p></div>
+      <div class="step rise"><span class="num">03</span><h3>Confirm Your Slot</h3><p>We'll confirm your appointment time and anything you need to know before you come in.</p></div>
+      <div class="step rise"><span class="num">04</span><h3>Sit Back &amp; Shine</h3><p>Relax while we work — then leave with nails you'll want to show everyone.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="alt">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="kicker">Inspiration</p>
+      <h2>The Look Book</h2>
+      <p>A taste of the styles we love creating — follow us on Facebook for our latest sets, then message us to book yours.</p>
+    </div>
+    <div class="gal">
+      <figure class="rise"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop" alt="Classic glossy manicure"><figcaption>Timeless gloss</figcaption></figure>
+      <figure class="rise"><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=1200&auto=format&fit=crop" alt="Soft pink polished nails"><figcaption>Soft pink perfection</figcaption></figure>
+      <figure class="rise"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1200&auto=format&fit=crop" alt="Manicure being applied"><figcaption>In the chair</figcaption></figure>
+      <figure class="rise"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1200&auto=format&fit=crop" alt="Nail art detail"><figcaption>Art details</figcaption></figure>
+      <figure class="rise"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=1200&auto=format&fit=crop" alt="Natural builder gel nails"><figcaption>Natural BIAB</figcaption></figure>
+      <figure class="rise"><img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?q=80&w=1200&auto=format&fit=crop" alt="Pedicure pampering"><figcaption>Pedicure pampering</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="kicker">Why Le Posh</p>
+      <h2>Why Scarborough chooses us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why rise"><span class="ic">★</span><h3>Rated 4.8 on Google</h3><p>78 Google reviews and a 4.8-star average — local clients who come back set after set.</p></div>
+      <div class="why rise"><span class="ic">✦</span><h3>Proper prep, lasting finish</h3><p>We never rush the base work, so your gel, acrylics or BIAB look better and last longer.</p></div>
+      <div class="why rise"><span class="ic">♥</span><h3>Nails for every style</h3><p>Natural and understated, or long, bold and glittering — your set, your rules.</p></div>
+      <div class="why rise"><span class="ic">✧</span><h3>Honest recommendations</h3><p>We'll always suggest what's healthiest and best value for your nails — not just what's dearest.</p></div>
+      <div class="why rise"><span class="ic">☏</span><h3>Easy to book</h3><p>WhatsApp, Fresha or Facebook — booking and questions take seconds, not phone-tag.</p></div>
+      <div class="why rise"><span class="ic">♛</span><h3>A touch of luxury</h3><p>From luxury pedicures to bridal sets, we make an everyday treat feel like an occasion.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AFTERCARE + OCCASIONS -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="kicker">Aftercare &amp; Occasions</p>
+      <h2>Make your set last — and make it an occasion</h2>
+      <p>A beautiful set deserves a little looking after. Follow these simple tips between appointments and your gel, acrylics or BIAB will stay glossy and strong for longer.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why rise"><span class="ic">✦</span><h3>Use your nails as jewels, not tools</h3><p>Opening cans, peeling labels and prising lids are the fastest way to chip or lift a set. Reach for a tool instead — your nails will thank you.</p></div>
+      <div class="why rise"><span class="ic">✧</span><h3>Cuticle oil, every day</h3><p>A drop of cuticle oil morning and night keeps the skin around your nails supple and helps your set stay flexible rather than brittle.</p></div>
+      <div class="why rise"><span class="ic">♥</span><h3>Gloves for chores</h3><p>Hot water, cleaning products and gardening are hard on polish. Pop gloves on for washing up and housework to protect the shine.</p></div>
+      <div class="why rise"><span class="ic">★</span><h3>Book infills in good time</h3><p>As your nails grow, the balance of an extension shifts. Booking infills every 2–3 weeks keeps sets safe, neat and looking freshly done.</p></div>
+      <div class="why rise"><span class="ic">♛</span><h3>Never peel or pick</h3><p>Peeling off gel or acrylic takes layers of your natural nail with it. If a nail lifts, message us — a proper soak-off removal is quick and gentle.</p></div>
+      <div class="why rise"><span class="ic">☏</span><h3>Not sure? Just ask</h3><p>Anything look or feel different between appointments? Send us a photo on WhatsApp and we'll advise honestly — that's what we're here for.</p></div>
+    </div>
+    <div class="detail-row rise" style="margin-top:3rem;margin-bottom:0">
+      <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1200&auto=format&fit=crop" alt="Beauty styling for a special occasion">
+      <div>
+        <p class="kicker">Weddings · Proms · Holidays</p>
+        <h3>Nails for the big moments</h3>
+        <p>Some days deserve extra polish. For weddings, we create elegant bridal sets — classic French, soft milky nudes or a gentle shimmer — and matching looks for bridesmaids so the whole party photographs beautifully together.</p>
+        <p>Prom season and holiday countdowns book up quickly, so if you have a date in the diary, message us early and we'll reserve your slot. Tell us your outfit colours and we'll design a set that completes the look.</p>
+        <a class="btn btn-gold" href="https://wa.me/447883838686" target="_blank" rel="noopener">Plan Your Occasion Nails</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="kicker">Good to Know</p>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="rise">
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp — tap any WhatsApp button on this page or message <a href="https://wa.me/447883838686" target="_blank" rel="noopener">+44 7883 838686</a>. You can also book via Fresha or message us on Facebook. Tell us the service you'd like and your preferred times, and we'll confirm your slot.</p>
+      </details>
+      <details class="rise">
+        <summary>How much do treatments cost?</summary>
+        <p>Prices depend on the service, length and design, so we don't publish a fixed list here — call or message for prices and we'll give you an exact quote before you book, with no obligation.</p>
+      </details>
+      <details class="rise">
+        <summary>What's the difference between gel, acrylics and BIAB?</summary>
+        <p>Gel polish is a long-lasting colour cured under a lamp, worn on natural nails or extensions. Acrylics are sculpted extensions that add length and strength. BIAB (builder gel) is a strengthening layer over your natural nails that helps them grow. Message us and we'll recommend the best fit for your nails and lifestyle.</p>
+      </details>
+      <details class="rise">
+        <summary>How long will my nails last?</summary>
+        <p>It varies with your nails and how you use your hands, but most clients book infills or a fresh set every 2–3 weeks to keep everything looking perfect. We'll advise on aftercare at your appointment to help your set last as long as possible.</p>
+      </details>
+      <details class="rise">
+        <summary>Can you do nail art from a photo I bring?</summary>
+        <p>Very often, yes! Send us your inspiration photo on WhatsApp before your appointment so we can plan the design and book the right amount of time for it.</p>
+      </details>
+      <details class="rise">
+        <summary>Do you remove gel and acrylics safely?</summary>
+        <p>Yes — we offer gentle soak-off removal that protects your natural nails. Please don't peel or force off your set at home, as that damages the nail underneath; book a removal with us instead.</p>
+      </details>
+      <details class="rise">
+        <summary>What's included in a luxury pedicure?</summary>
+        <p>Our luxury pedicure treatment extends the classic pedicure with a longer soak, exfoliating scrub, a nourishing mask, hot towels and an extended massage — finished with the polish of your choice.</p>
+      </details>
+      <details class="rise">
+        <summary>Do you do bridal or group bookings?</summary>
+        <p>We love occasion nails — weddings, proms, hen parties and holidays. Message us with your date and how many sets you're dreaming of, and we'll plan it with you.</p>
+      </details>
+      <details class="rise">
+        <summary>Where are you located?</summary>
+        <p>We're in Scarborough, North Yorkshire. Message us on WhatsApp and we'll happily point you in the right direction and help with any questions before your visit.</p>
+      </details>
+      <details class="rise">
+        <summary>I've never had my nails done — where do I start?</summary>
+        <p>Welcome! A classic manicure or a natural BIAB set is a lovely first step. Message us, tell us you're new, and we'll look after the rest — no question is too small.</p>
+      </details>
+      <details class="rise">
+        <summary>Can I match my fingers and toes?</summary>
+        <p>Absolutely — matching (or deliberately clashing!) fingers and toes is one of our favourite requests. Book a manicure or gel set together with a pedicure and we'll coordinate the colour, finish and art across both so everything works as one look.</p>
+      </details>
+      <details class="rise">
+        <summary>What should I do before my appointment?</summary>
+        <p>Just arrive with your inspiration photos if you have them, and let us know in advance if you'll need an old set removed — that way we can book enough time. If you're running late or need to rearrange, a quick WhatsApp message is all it takes.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL AREA -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <p class="kicker">Proudly Local</p>
+      <h2>Nail days in Scarborough</h2>
+      <p>There's something lovely about a nail appointment by the sea. Clients visit Le Posh Nail Bar from across Scarborough and the surrounding Yorkshire coast — pairing a fresh set with a stroll along the front, a coffee with friends, or the finishing touch before a night out in town.</p>
+    </div>
+    <div class="steps">
+      <div class="step rise"><span class="num">✦</span><h3>Beach-day ready</h3><p>Sandal season or a seaside holiday coming up? A pedicure and gel toes keep you looking polished from the promenade to the pool.</p></div>
+      <div class="step rise"><span class="num">✦</span><h3>Date-night glam</h3><p>Dinner, theatre or drinks in town — book your set for the afternoon and step out in the evening with nails that complete the outfit.</p></div>
+      <div class="step rise"><span class="num">✦</span><h3>Everyday confidence</h3><p>Work, school runs, typing all day — a neat BIAB or gel set quietly lifts every day, not just the special ones.</p></div>
+      <div class="step rise"><span class="num">✦</span><h3>The full treat</h3><p>Make it a ritual: luxury pedicure, a fresh set, and time that's entirely yours. Message us and we'll help you plan your visit.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING / CONTACT -->
+<section id="book">
+  <div class="wrap book-grid">
+    <div class="book-card book-main rise">
+      <p class="kicker">Book Now</p>
+      <h2>Ready for your best nails yet?</h2>
+      <p>Send us a WhatsApp message with the service you'd like and when suits you — we'll confirm your appointment and answer any questions. Prefer to talk? Give us a call.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:.8rem">
+        <a class="btn btn-wa" href="https://wa.me/447883838686" target="_blank" rel="noopener">WhatsApp +44 7883 838686</a>
+        <a class="btn btn-ghost" href="tel:+447883838686">Call +44 7883 838686</a>
+      </div>
+    </div>
+    <div class="book-card book-info rise">
+      <h3>Good to know</h3>
+      <ul>
+        <li><b>Find us:</b> Scarborough, North Yorkshire</li>
+        <li><b>WhatsApp:</b> +44 7883 838686</li>
+        <li><b>Phone:</b> +44 7883 838686</li>
+        <li><b>Booking:</b> WhatsApp, Fresha &amp; Facebook</li>
+        <li><b>Prices:</b> Call or message for prices</li>
+        <li><b>Rated:</b> 4.8 ★ from 78 Google reviews</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" style="margin-bottom:.9rem">
+          <span class="logo-mark">LP</span>
+          <span><b>Le Posh</b><small>Nail Bar · Scarborough</small></span>
+        </a>
+        <p>Le Posh Nail Bar — gel nails, acrylics, BIAB, manicures, pedicures, nail art and luxury pedicure treatments in Scarborough, North Yorkshire. Rated 4.8 stars from 78 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Gel Nails</a></li>
+          <li><a href="#services">Acrylics</a></li>
+          <li><a href="#services">BIAB / Builder Gel</a></li>
+          <li><a href="#services">Manicure &amp; Pedicure</a></li>
+          <li><a href="#services">Nail Art</a></li>
+          <li><a href="#services">Luxury Pedicure Treatments</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/447883838686" target="_blank" rel="noopener">+44 7883 838686</a></li>
+          <li>Call: <a href="tel:+447883838686">+44 7883 838686</a></li>
+          <li>Also booking via Fresha &amp; Facebook</li>
+          <li>Scarborough, North Yorkshire</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© Le Posh Nail Bar, Scarborough. All rights reserved.</span>
+      <span>Call or message for prices · Book on WhatsApp</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447883838686" target="_blank" rel="noopener" aria-label="Chat with Le Posh Nail Bar on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.8 9.8 0 0 0 12.04 2zm0 18.03h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
