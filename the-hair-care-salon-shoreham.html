@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The HAIR care SALON | Curly Hair Specialist, Shoreham-by-Sea</title>
+<meta name="description" content="The HAIR care SALON, The Vinery, Brunswick Road, Shoreham-by-Sea. Women's hair, curly hair specialist and trichology with Andrina. Book on WhatsApp.">
+<style>
+:root{--bg:#FAF7FB;--ink:#2E2130;--mut:#6E5E73;--plum:#5B2A5E;--plum-d:#43204A;--lilac:#B79AC8;--card:#FFFFFF;--line:#E9DEF0;--soft:#F1E8F6}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:var(--plum)}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,247,251,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{font-weight:bold;font-size:1.12rem;letter-spacing:.3px}
+.logo span{color:var(--plum)}
+.nav-links{display:flex;gap:18px;font-size:.92rem}
+.nav-links a{color:var(--ink);text-decoration:none}
+.nav-links a:hover{color:var(--plum)}
+@media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+.nav-cta{background:var(--plum);color:#fff!important;padding:7px 14px;border-radius:20px}
+.hero{padding:56px 0 40px;text-align:center}
+.hero .badge{display:inline-block;background:var(--soft);color:var(--plum-d);padding:5px 14px;border-radius:20px;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:2.5rem;line-height:1.15;margin-bottom:14px}
+.hero h1 em{color:var(--plum);font-style:normal}
+.hero p{color:var(--mut);max-width:580px;margin:0 auto 24px;font-size:1.06rem}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:30px;text-decoration:none;font-size:1rem}
+.btn-wa{background:#25D366;color:#fff}
+.btn-line{border:2px solid var(--plum);color:var(--plum)}
+.hero-img{margin:34px auto 0;max-width:820px;border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(46,33,48,.18)}
+.strip{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:26px 0 4px}
+.strip div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 18px;font-size:.92rem}
+section{padding:52px 0}
+h2{font-size:1.8rem;text-align:center;margin-bottom:8px}
+.sub{text-align:center;color:var(--mut);max-width:600px;margin:0 auto 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:1.12rem;margin-bottom:6px;color:var(--plum-d)}
+.card p{color:var(--mut);font-size:.95rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:860px;margin:0 auto}
+.step{background:var(--soft);border-radius:14px;padding:22px;text-align:center}
+.step .n{width:38px;height:38px;border-radius:50%;background:var(--plum);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:bold}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery img{border-radius:12px;height:200px;width:100%;object-fit:cover}
+table{width:100%;max-width:520px;margin:0 auto;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+td{padding:11px 18px;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;color:var(--mut)}
+tr:last-child td{border-bottom:none}
+.faq{max-width:720px;margin:0 auto}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:bold}
+.faq p{color:var(--mut);margin-top:8px;font-size:.96rem}
+.cta{background:var(--plum);color:#fff;text-align:center;border-radius:18px;padding:40px 24px}
+.cta h2{color:#fff}
+.cta p{opacity:.92;margin-bottom:20px}
+.cta .btn{background:#fff;color:var(--plum-d)}
+footer{padding:30px 0 90px;text-align:center;color:var(--mut);font-size:.9rem}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25D366;color:#fff;text-decoration:none;padding:13px 20px;border-radius:30px;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:.95rem}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.fade{animation:fadeUp .7s ease both}
+@media (prefers-reduced-motion: reduce){.fade{animation:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav-in">
+<div class="logo">The HAIR care <span>SALON</span></div>
+<div class="nav-links">
+<a href="#services">Services</a><a href="#about">About</a><a href="#booking">Booking</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a>
+<a class="nav-cta" href="https://wa.me/447540957636">Book Now</a>
+</div></div></nav>
+
+<header class="hero wrap fade">
+<div class="badge">Shoreham-by-Sea · Est. care for curls</div>
+<h1>Hair care that starts with <em>your hair</em></h1>
+<p>A women's salon in Shoreham-by-Sea specialising in curly hair and trichology — thoughtful, one-to-one care with Andrina.</p>
+<div class="btns">
+<a class="btn btn-wa" href="https://wa.me/447540957636">Book on WhatsApp</a>
+<a class="btn btn-line" href="#services">Explore Services</a>
+</div>
+<div class="hero-img"><img src="https://images.unsplash.com/photo-1560066984-49684dab74b6?auto=format&fit=crop&w=1200&q=70" alt="Inside a calm, modern hair salon"></div>
+<div class="strip">
+<div>🌀 Curly hair specialist</div><div>🔬 Trichology</div><div>💇‍♀️ Women's hair</div><div>📅 Online booking</div>
+</div>
+</header>
+
+<section id="services" class="wrap">
+<h2>Our Services</h2>
+<p class="sub">Specialist care for every hair type — with a dedicated curly hair menu.</p>
+<div class="grid">
+<div class="card"><h3>Curly Hair Specialist</h3><p>Curls need a different approach. Book from our dedicated curly hair menu online, or message us on WhatsApp — your curls are understood here.</p></div>
+<div class="card"><h3>Cut &amp; Styling</h3><p>Women's cuts and styling shaped around your hair's natural fall, texture and the way you wear it every day.</p></div>
+<div class="card"><h3>Trichology</h3><p>Concerned about your scalp or hair health? Andrina's trichology knowledge means advice that goes deeper than the surface.</p></div>
+<div class="card"><h3>One-to-One Appointments</h3><p>A calm salon setting at The Vinery where your appointment is about you — no rushing, no conveyor belt.</p></div>
+</div>
+<p class="sub" style="margin-top:22px">For prices and the full menu, message us on WhatsApp or check the online booking page — we'll help you choose the right service.</p>
+</section>
+
+<section id="about" class="wrap" style="padding-top:6px">
+<h2>Why Choose Us?</h2>
+<p class="sub">A small salon with specialist knowledge — and time for you.</p>
+<div class="grid">
+<div class="card"><h3>Specialist, not generalist</h3><p>Curly hair and trichology are our focus — not an afterthought on a long generic menu.</p></div>
+<div class="card"><h3>Honest advice</h3><p>We'll tell you what your hair actually needs, and what it doesn't — before you book anything.</p></div>
+<div class="card"><h3>Easy booking</h3><p>Book online any time, or simply message us on WhatsApp — whichever suits you best.</p></div>
+<div class="card"><h3>A calmer salon visit</h3><p>Find us at The Vinery on Brunswick Road — a relaxed space in the heart of Shoreham-by-Sea.</p></div>
+</div>
+</section>
+
+<section id="booking" class="wrap" style="padding-top:6px">
+<h2>How Booking Works</h2>
+<p class="sub">Your appointment in three simple steps.</p>
+<div class="steps">
+<div class="step"><div class="n">1</div><h3>Message or book online</h3><p>WhatsApp us on 07540 957636, or choose from the curly hair menu on our online booking page.</p></div>
+<div class="step"><div class="n">2</div><h3>We confirm your slot</h3><p>We'll confirm your appointment and anything you need to know before you arrive.</p></div>
+<div class="step"><div class="n">3</div><h3>Relax at The Vinery</h3><p>Come to The Vinery, Brunswick Road, and enjoy one-to-one care for your hair.</p></div>
+</div>
+</section>
+
+<section id="gallery" class="wrap" style="padding-top:6px">
+<h2>The Salon Look</h2>
+<p class="sub">Curls, cuts and calm salon days.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1560066984-49684dab74b6?auto=format&fit=crop&w=800&q=70" alt="Stylist working in the salon">
+<img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=70" alt="Hair being washed at the basin">
+<img src="https://images.unsplash.com/photo-1562322140-888baeece25f?auto=format&fit=crop&w=800&q=70" alt="Hair styling in progress">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=70" alt="Salon chairs and mirrors">
+<img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=70" alt="A finished hairstyle">
+<img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=70" alt="Hair care products and tools">
+<img src="https://images.unsplash.com/photo-1519699047748-4707cb2c52c1?auto=format&fit=crop&w=800&q=70" alt="Natural curly hair">
+<img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=800&q=70" alt="Woman with healthy flowing hair">
+</div>
+</section>
+
+<section class="wrap" style="padding-top:6px">
+<h2>Opening Hours</h2>
+<p class="sub">The Vinery, Brunswick Road, Shoreham-By-Sea BN43 5ZA.</p>
+<table>
+<tr><td>Tuesday – Wednesday</td><td>9:00am – 5:30pm</td></tr>
+<tr><td>Thursday – Friday</td><td>10:00am – 5:30pm</td></tr>
+<tr><td>Saturday</td><td>10:00am – 2:00pm (regular clients)</td></tr>
+<tr><td>Sunday – Monday</td><td>Closed</td></tr>
+</table>
+</section>
+
+<section id="faq" class="wrap" style="padding-top:6px">
+<h2>Questions &amp; Answers</h2>
+<p class="sub">Everything you're wondering, answered.</p>
+<div class="faq">
+<details><summary>How do I book an appointment?</summary><p>Message us on WhatsApp (07540 957636) or book online — curly hair appointments are under the curly hair menu on our booking page.</p></details>
+<details><summary>Do you specialise in curly hair?</summary><p>Yes — curly hair is a speciality here, with a dedicated curly hair menu and an approach built around your natural texture.</p></details>
+<details><summary>What is trichology?</summary><p>Trichology is the study of hair and scalp health. If you're worried about your scalp or hair condition, ask us when you book.</p></details>
+<details><summary>How much does it cost?</summary><p>Prices depend on the service and your hair — message us on WhatsApp and we'll confirm the right service and price before you book.</p></details>
+<details><summary>Where is the salon?</summary><p>We're at The Vinery, Brunswick Road, Shoreham-By-Sea BN43 5ZA.</p></details>
+<details><summary>When are you open?</summary><p>Tuesday to Saturday — see our opening hours above. Saturday appointments are for regular clients.</p></details>
+</div>
+</section>
+
+<section class="wrap">
+<div class="cta">
+<h2>Your hair deserves specialist care</h2>
+<p>Send us a WhatsApp message now — tell us about your hair and we'll find your perfect appointment.</p>
+<a class="btn" href="https://wa.me/447540957636">WhatsApp 07540 957636</a>
+</div>
+</section>
+
+<footer>
+The HAIR care SALON · The Vinery, Brunswick Road, Shoreham-By-Sea BN43 5ZA · WhatsApp 07540 957636 · Instagram @thehaircaresalonshoreham<br>
+Demo website preview — final site includes online booking and more.
+</footer>
+
+<a class="wa-float" href="https://wa.me/447540957636">💬 Book on WhatsApp</a>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
