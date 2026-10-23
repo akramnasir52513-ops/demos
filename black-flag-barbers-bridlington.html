@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Black Flag Barbers | Barbers in Bridlington, East Yorkshire — Haircuts, Skin Fades, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="The Black Flag Barbers in Bridlington, East Yorkshire. Rated 4.9 stars from 100 Google reviews. Haircuts, skin fades, beard trims, hot towel shaves and kids cuts. Book on WhatsApp, Nearcut, Fresha or Facebook.">
+<style>
+  :root{
+    --black:#0b0b0d;
+    --coal:#141417;
+    --panel:#1b1b1f;
+    --red:#c8102e;
+    --red-dark:#8f0a20;
+    --cream:#f4ead3;
+    --cream-dim:#d9cdb2;
+    --gold:#c9a24a;
+    --line:rgba(244,234,211,.14);
+    --shadow:0 18px 40px rgba(0,0,0,.45);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:var(--black);
+    color:var(--cream);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:Georgia, "Times New Roman", serif;
+    letter-spacing:.02em;
+    line-height:1.15;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1180px,92%);margin:0 auto}
+  .eyebrow{
+    display:inline-block;
+    text-transform:uppercase;
+    letter-spacing:.28em;
+    font-size:.72rem;
+    font-weight:700;
+    color:var(--red);
+    margin-bottom:.7rem;
+  }
+  .eyebrow::before{content:"⚑ "}
+  section{padding:4.2rem 0}
+  .section-head{max-width:720px;margin-bottom:2.4rem}
+  .section-head h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin-bottom:.6rem}
+  .section-head p{color:var(--cream-dim)}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;
+    padding:.85rem 1.6rem;border-radius:4px;
+    font-weight:700;text-decoration:none;font-size:.98rem;
+    border:2px solid transparent;
+    transition:transform .2s ease, background .2s ease, color .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-wa{background:#1fae55;color:#fff}
+  .btn-wa:hover{background:#178a43}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-dark)}
+  .btn-ghost{border-color:var(--cream);color:var(--cream);background:transparent}
+  .btn-ghost:hover{background:var(--cream);color:var(--black)}
+  .btn-row{display:flex;flex-wrap:wrap;gap:.8rem}
+
+  /* ---------- Top bar ---------- */
+  .topbar{
+    background:var(--red-dark);
+    color:#fff;text-align:center;
+    font-size:.86rem;font-weight:600;
+    padding:.5rem 1rem;letter-spacing:.04em;
+  }
+  .topbar a{color:#fff;text-decoration:underline}
+
+  /* ---------- Header / nav ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(11,11,13,.96);
+    border-bottom:2px solid var(--red);
+    backdrop-filter:blur(6px);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:1rem;padding:.8rem 0;
+  }
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+  .flag-mark{
+    width:44px;height:44px;flex:0 0 44px;
+    background:var(--red);
+    clip-path:polygon(0 0,100% 12%,88% 50%,100% 88%,0 100%);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:1.25rem;
+  }
+  .brand-text{line-height:1.1}
+  .brand-text strong{
+    display:block;font-family:Georgia,serif;
+    font-size:1.12rem;letter-spacing:.06em;text-transform:uppercase;
+  }
+  .brand-text span{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-dim)}
+  .nav-links{display:none;gap:1.6rem}
+  .nav-links a{
+    text-decoration:none;font-size:.92rem;font-weight:600;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--cream-dim);
+  }
+  .nav-links a:hover{color:var(--cream)}
+  .nav-cta{display:flex;gap:.5rem}
+  .nav-cta .btn{padding:.55rem 1rem;font-size:.85rem}
+  @media(min-width:860px){.nav-links{display:flex}}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    background:
+      linear-gradient(100deg, rgba(11,11,13,.96) 30%, rgba(11,11,13,.55) 65%, rgba(11,11,13,.25)),
+      url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop") center/cover no-repeat;
+    padding:5.2rem 0 5.6rem;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:90px;
+    background:linear-gradient(to bottom, transparent, var(--black));
+  }
+  .hero-inner{position:relative;z-index:2;max-width:640px}
+  .hero h1{
+    font-size:clamp(2.4rem,7vw,4.2rem);
+    text-transform:uppercase;
+    margin-bottom:1rem;
+  }
+  .hero h1 .red{color:var(--red)}
+  .hero p.lead{font-size:1.12rem;color:var(--cream);max-width:34rem;margin-bottom:1.6rem}
+  .rating-chip{
+    display:inline-flex;align-items:center;gap:.6rem;
+    background:rgba(20,20,23,.85);
+    border:1px solid var(--line);
+    border-left:4px solid var(--gold);
+    padding:.6rem 1rem;border-radius:4px;
+    margin-bottom:1.8rem;font-size:.95rem;
+  }
+  .stars{color:var(--gold);letter-spacing:.15em}
+  .hero-points{
+    display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;
+    margin-top:1.8rem;font-size:.92rem;color:var(--cream-dim);
+  }
+  .hero-points span::before{content:"✔ ";color:var(--red);font-weight:700}
+
+  /* ---------- Marquee strip ---------- */
+  .strip{
+    background:var(--red);color:#fff;
+    overflow:hidden;white-space:nowrap;
+    padding:.65rem 0;font-weight:800;letter-spacing:.18em;
+    text-transform:uppercase;font-size:.85rem;
+  }
+  .strip-track{display:inline-block;animation:scrollX 26s linear infinite}
+  @keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;gap:2.2rem;align-items:center}
+  @media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+  .about-photo{
+    border-radius:8px;overflow:hidden;box-shadow:var(--shadow);
+    border:1px solid var(--line);position:relative;
+  }
+  .about-photo::after{
+    content:"EST. ON THE EAST YORKSHIRE COAST";
+    position:absolute;left:0;right:0;bottom:0;
+    background:linear-gradient(transparent, rgba(0,0,0,.85));
+    padding:2rem 1rem .8rem;font-size:.7rem;letter-spacing:.24em;font-weight:700;
+  }
+  .about-copy h2{font-size:clamp(1.8rem,4.5vw,2.5rem);margin-bottom:1rem}
+  .about-copy p{color:var(--cream-dim);margin-bottom:1rem}
+  .checklist{list-style:none;margin:1.2rem 0 1.6rem}
+  .checklist li{
+    padding:.45rem 0 .45rem 1.9rem;position:relative;color:var(--cream);
+    border-bottom:1px dashed var(--line);
+  }
+  .checklist li::before{
+    content:"⚑";position:absolute;left:0;color:var(--red);
+  }
+
+  /* ---------- Services ---------- */
+  .services{background:var(--coal)}
+  .svc-grid{display:grid;gap:1.4rem}
+  @media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{
+    background:var(--panel);border:1px solid var(--line);
+    border-top:4px solid var(--red);
+    border-radius:6px;overflow:hidden;
+    display:flex;flex-direction:column;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .svc img{height:190px;width:100%;object-fit:cover}
+  .svc-body{padding:1.3rem 1.3rem 1.5rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+  .svc-body h3{font-size:1.25rem}
+  .svc-body p{color:var(--cream-dim);font-size:.95rem;flex:1}
+  .price-note{
+    font-size:.85rem;font-weight:700;color:var(--gold);
+    text-transform:uppercase;letter-spacing:.08em;
+  }
+  .svc-body a{
+    font-weight:700;color:var(--red);text-decoration:none;font-size:.95rem;
+  }
+  .svc-body a:hover{text-decoration:underline}
+
+  /* ---------- Detail rows ---------- */
+  .detail-row{
+    display:grid;gap:1.8rem;align-items:center;
+    padding:2rem 0;border-bottom:1px solid var(--line);
+  }
+  .detail-row:last-child{border-bottom:none}
+  @media(min-width:880px){
+    .detail-row{grid-template-columns:1fr 1fr}
+    .detail-row.flip .detail-img{order:2}
+  }
+  .detail-img{border-radius:8px;overflow:hidden;box-shadow:var(--shadow)}
+  .detail-img img{height:300px;width:100%;object-fit:cover}
+  .detail-copy h3{font-size:1.5rem;margin-bottom:.7rem}
+  .detail-copy p{color:var(--cream-dim);margin-bottom:.8rem}
+  .detail-copy ul{list-style:none}
+  .detail-copy li{padding:.3rem 0 .3rem 1.5rem;position:relative;color:var(--cream-dim)}
+  .detail-copy li::before{content:"—";position:absolute;left:0;color:var(--red);font-weight:700}
+
+  /* ---------- Gallery ---------- */
+  .gallery{background:var(--coal)}
+  .gal-grid{display:grid;gap:.9rem;grid-template-columns:repeat(2,1fr)}
+  @media(min-width:800px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+  .gal-grid figure{
+    border-radius:6px;overflow:hidden;position:relative;
+    border:1px solid var(--line);
+  }
+  .gal-grid img{height:230px;width:100%;object-fit:cover;transition:transform .4s ease}
+  .gal-grid figure:hover img{transform:scale(1.06)}
+  .gal-grid figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    background:linear-gradient(transparent, rgba(0,0,0,.88));
+    padding:1.6rem .9rem .6rem;font-size:.82rem;font-weight:600;letter-spacing:.04em;
+  }
+
+  /* ---------- Why us ---------- */
+  .why-grid{display:grid;gap:1.2rem}
+  @media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+  .why-card{
+    background:var(--panel);border:1px solid var(--line);
+    border-radius:6px;padding:1.5rem;
+  }
+  .why-card .icon{font-size:1.7rem;margin-bottom:.6rem}
+  .why-card h3{font-size:1.12rem;margin-bottom:.45rem}
+  .why-card p{color:var(--cream-dim);font-size:.94rem}
+  .stat-band{
+    margin-top:2.4rem;display:grid;gap:1rem;text-align:center;
+    background:linear-gradient(120deg, var(--red-dark), var(--red));
+    border-radius:8px;padding:2rem 1.2rem;
+  }
+  @media(min-width:760px){.stat-band{grid-template-columns:repeat(3,1fr)}}
+  .stat-band strong{display:block;font-family:Georgia,serif;font-size:2rem;color:#fff}
+  .stat-band span{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:#ffd9de}
+
+  /* ---------- Booking steps ---------- */
+  .steps{display:grid;gap:1.2rem;counter-reset:step}
+  @media(min-width:800px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{
+    background:var(--panel);border:1px solid var(--line);border-radius:6px;
+    padding:1.6rem 1.4rem;position:relative;
+  }
+  .step::before{
+    counter-increment:step;content:counter(step);
+    position:absolute;top:-16px;left:18px;
+    width:34px;height:34px;border-radius:50%;
+    background:var(--red);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-family:Georgia,serif;font-weight:700;font-size:1.05rem;
+  }
+  .step h3{margin:.4rem 0 .5rem;font-size:1.12rem}
+  .step p{color:var(--cream-dim);font-size:.94rem}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--coal)}
+  .faq-list{max-width:820px}
+  details{
+    background:var(--panel);border:1px solid var(--line);
+    border-left:4px solid var(--red);
+    border-radius:4px;margin-bottom:.8rem;
+  }
+  summary{
+    cursor:pointer;padding:1rem 1.2rem;font-weight:700;font-size:1.02rem;
+    list-style:none;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";float:right;color:var(--red);font-size:1.3rem;line-height:1}
+  details[open ] summary::after{content:"–"}
+  details .faq-body{padding:0 1.2rem 1.1rem;color:var(--cream-dim)}
+  details .faq-body a{color:var(--red);font-weight:700}
+
+  /* ---------- Contact / booking ---------- */
+  .contact-grid{display:grid;gap:1.4rem}
+  @media(min-width:860px){.contact-grid{grid-template-columns:1fr 1fr}}
+  .contact-card{
+    background:var(--panel);border:1px solid var(--line);
+    border-radius:8px;padding:2rem;
+  }
+  .contact-card h3{font-size:1.35rem;margin-bottom:.8rem}
+  .contact-card p{color:var(--cream-dim);margin-bottom:1.1rem}
+  .big-number{
+    display:block;font-family:Georgia,serif;font-size:1.6rem;
+    color:var(--cream);text-decoration:none;margin-bottom:1rem;
+  }
+  .big-number:hover{color:var(--gold)}
+  .channel-list{list-style:none;margin-bottom:1.2rem}
+  .channel-list li{
+    padding:.55rem 0;border-bottom:1px dashed var(--line);
+    display:flex;justify-content:space-between;gap:1rem;font-size:.96rem;
+  }
+  .channel-list li span:first-child{color:var(--cream-dim)}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:#060607;border-top:2px solid var(--red);
+    padding:3rem 0 2rem;
+  }
+  .foot-grid{display:grid;gap:2rem;margin-bottom:2rem}
+  @media(min-width:800px){.foot-grid{grid-template-columns:2fr 1fr 1fr}}
+  footer h4{
+    font-family:Georgia,serif;font-size:1rem;letter-spacing:.1em;
+    text-transform:uppercase;margin-bottom:.9rem;color:var(--cream);
+  }
+  footer p, footer li{color:var(--cream-dim);font-size:.93rem}
+  footer ul{list-style:none}
+  footer li{padding:.25rem 0}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--cream);text-decoration:underline}
+  .foot-bottom{
+    border-top:1px solid var(--line);padding-top:1.2rem;
+    display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;justify-content:space-between;
+    font-size:.83rem;color:#8d846c;
+  }
+
+  /* ---------- Floating WhatsApp ---------- */
+  .float-wa{
+    position:fixed;right:18px;bottom:18px;z-index:60;
+    width:58px;height:58px;border-radius:50%;
+    background:#1fae55;color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.6rem;text-decoration:none;
+    box-shadow:0 10px 26px rgba(0,0,0,.5);
+    animation:pulse 2.6s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.07)}
+  }
+
+  /* ---------- Reveal animation (CSS only, ends fully visible) ---------- */
+  .reveal{animation:rise .8s ease-out}
+  @keyframes rise{
+    from{opacity:0;transform:translateY(18px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .strip-track,.float-wa,.reveal{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">⚑ Rated <strong>4.9 ★</strong> from <strong>100 Google reviews</strong> — Bridlington's black flag barbershop · <a href="https://wa.me/447568384854">Book on WhatsApp</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="flag-mark">⚑</span>
+      <span class="brand-text">
+        <strong>The Black Flag</strong>
+        <span>Barbers · Bridlington</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+447906046756">Call Us</a>
+      <a class="btn btn-wa" href="https://wa.me/447568384854">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero-inner reveal">
+      <span class="eyebrow">Barber Shop · Bridlington, East Yorkshire</span>
+      <h1>Raise the <span class="red">Black Flag</span>.<br>Leave Looking Sharp.</h1>
+      <p class="lead">Proper cuts, skin-tight fades, tidy beards and old-school hot towel shaves — done right, with no fuss and no shortcuts. This is barbering the way it should be, right here in Bridlington.</p>
+      <div class="rating-chip">
+        <span class="stars">★★★★★</span>
+        <span><strong>4.9 rating</strong> from <strong>100 Google reviews</strong></span>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-wa" href="https://wa.me/447568384854">💬 Book on WhatsApp</a>
+        <a class="btn btn-red" href="#services">See Services</a>
+        <a class="btn btn-ghost" href="tel:+447906046756">📞 07906 046756</a>
+      </div>
+      <div class="hero-points">
+        <span>Skin fades &amp; classic cuts</span>
+        <span>Beard trims &amp; hot towel shaves</span>
+        <span>Kids cuts welcome</span>
+        <span>Book via Nearcut, Fresha or WhatsApp</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      Haircuts ⚑ Skin Fades ⚑ Beard Trims ⚑ Hot Towel Shaves ⚑ Kids Cuts ⚑ Bridlington ⚑ Haircuts ⚑ Skin Fades ⚑ Beard Trims ⚑ Hot Towel Shaves ⚑ Kids Cuts ⚑ Bridlington ⚑&nbsp;
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-photo reveal">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop" alt="Inside a traditional barber shop with classic barber chairs" loading="lazy">
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">About the Shop</span>
+        <h2>A Barber Shop With a Flag Worth Flying</h2>
+        <p>The Black Flag Barbers is Bridlington's no-nonsense barber shop. The name says it all — we fly our own flag, we set our own standard, and every cut that leaves this shop carries it. No gimmicks, no rushing you out of the chair, just honest barbering done properly.</p>
+        <p>Whether you're after a skin fade that stays sharp for weeks, a classic scissor cut, a beard brought back under control, or the full hot towel treatment, you'll get the same thing every time: time taken, tools kept spotless, and a finish you can check in the mirror with confidence.</p>
+        <p>Our customers have rated us <strong>4.9 stars across 100 Google reviews</strong> — and we work hard on every single appointment to keep it that way.</p>
+        <ul class="checklist">
+          <li>Experienced barbers who listen before they cut</li>
+          <li>Clean tools, fresh blades, tidy shop — every time</li>
+          <li>Honest advice on what suits your hair and head shape</li>
+          <li>Easy booking on WhatsApp, Nearcut, Fresha or Facebook</li>
+          <li>Lads, dads and young pirates all welcome</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-wa" href="https://wa.me/447568384854">💬 Message Us on WhatsApp</a>
+          <a class="btn btn-ghost" href="#book">How Booking Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What We Do</span>
+        <h2>Services at The Black Flag</h2>
+        <p>Every service starts with a quick chat about what you want and ends with a proper finish — neckline tidied, edges sharp, and a final check in the mirror. Prices vary by service, so call or message us for prices before you book.</p>
+      </div>
+      <div class="svc-grid">
+
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a classic haircut with clippers and comb" loading="lazy">
+          <div class="svc-body">
+            <h3>Haircuts</h3>
+            <p>The bread and butter of the shop. Classic scissor cuts, clipper cuts, crops, tapers and restyles — tailored to your hair type, your head shape and how much time you actually want to spend styling it in the morning. Tell us what you're after, or bring a photo and we'll talk you through what will work.</p>
+            <span class="price-note">Call or message for prices</span>
+            <a href="https://wa.me/447568384854">Book a haircut →</a>
+          </div>
+        </article>
+
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1200&auto=format&fit=crop" alt="Barber creating a sharp skin fade" loading="lazy">
+          <div class="svc-body">
+            <h3>Skin Fades</h3>
+            <p>Low, mid or high — a fade is only as good as its blend, and blending is where we earn our flag. Seamless graduation, crisp lines and a finish that grows out clean instead of messy. If you're not sure which fade suits you, sit down and we'll work it out together before the clippers come out.</p>
+            <span class="price-note">Call or message for prices</span>
+            <a href="https://wa.me/447568384854">Book a fade →</a>
+          </div>
+        </article>
+
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop" alt="Barber trimming and shaping a beard" loading="lazy">
+          <div class="svc-body">
+            <h3>Beard Trims &amp; Shaping</h3>
+            <p>A good beard is shaped, not just shortened. We tidy the length, sharpen the cheek and neck lines, and even out the growth so it looks deliberate — not like you just stopped shaving. We'll also show you how to keep it in shape at home between visits, so it never gets away from you again.</p>
+            <span class="price-note">Call or message for prices</span>
+            <a href="https://wa.me/447568384854">Book a beard trim →</a>
+          </div>
+        </article>
+
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=1200&auto=format&fit=crop" alt="Traditional hot towel wet shave with a straight razor" loading="lazy">
+          <div class="svc-body">
+            <h3>Hot Towel Shaves</h3>
+            <p>The old-school ritual, done the old-school way. Hot towels to soften the beard and open the pores, a rich lather, a steady straight-razor shave, then a cold towel finish to close everything down. The closest, cleanest shave you'll get — and half an hour of proper downtime while you're at it.</p>
+            <span class="price-note">Call or message for prices</span>
+            <a href="https://wa.me/447568384854">Book a hot towel shave →</a>
+          </div>
+        </article>
+
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=1200&auto=format&fit=crop" alt="Smart, well-groomed young man with a fresh haircut" loading="lazy">
+          <div class="svc-body">
+            <h3>Kids Cuts</h3>
+            <p>Young pirates welcome aboard. Patient, friendly cuts for kids — whether it's a first haircut, a back-to-school tidy-up or a fade just like Dad's. We take our time, keep it relaxed, and don't rush anyone. If your little one is nervous, let us know when you book and we'll make sure they've got a calm slot.</p>
+            <span class="price-note">Call or message for prices</span>
+            <a href="https://wa.me/447568384854">Book a kids cut →</a>
+          </div>
+        </article>
+
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?q=80&w=1200&auto=format&fit=crop" alt="Professional barber tools laid out ready for a full grooming service" loading="lazy">
+          <div class="svc-body">
+            <h3>The Full Works</h3>
+            <p>Cut, shave, beard — the complete reset. Book the full works when you want to walk out feeling like a new man: haircut of your choice, hot towel shave or full beard service, and every edge finished to the Black Flag standard. Ideal before a wedding, a big night out, a job interview or a holiday.</p>
+            <span class="price-note">Call or message for prices</span>
+            <a href="https://wa.me/447568384854">Book the full works →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DETAIL ROWS ================= -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Craft</span>
+        <h2>Barbering, Done Properly</h2>
+        <p>Anyone can own a pair of clippers. The difference is in the details — and details are the whole job here.</p>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-img">
+          <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=1200&auto=format&fit=crop" alt="Barber at work in the shop, focused on the finish" loading="lazy">
+        </div>
+        <div class="detail-copy">
+          <h3>The Consultation Comes First</h3>
+          <p>Every appointment starts in the chair, not with the clippers. We look at how your hair grows, where it sticks up, how it sat last time it grew out — then we agree the cut before a single blade moves.</p>
+          <ul>
+            <li>We ask how you style it day to day</li>
+            <li>We flag what will and won't work with your hair type</li>
+            <li>We agree the length and the finish up front — no surprises</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="detail-row flip">
+        <div class="detail-img">
+          <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1200&auto=format&fit=crop" alt="Barber carefully finishing a cut with precision tools" loading="lazy">
+        </div>
+        <div class="detail-copy">
+          <h3>The Finish Is the Reputation</h3>
+          <p>A cut isn't done when the bulk is off — it's done when the edges are clean, the neckline is tidy and it looks right from every angle. That's the part people notice a week later, and it's the part we never skip.</p>
+          <ul>
+            <li>Edges and neckline finished with precision</li>
+            <li>Final mirror check from all sides before you leave</li>
+            <li>Simple styling advice so it looks right at home too</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-img">
+          <img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?q=80&w=1200&auto=format&fit=crop" alt="Barber preparing for a traditional shave service" loading="lazy">
+        </div>
+        <div class="detail-copy">
+          <h3>Clean Tools, Fresh Blades, Every Time</h3>
+          <p>Hygiene isn't a selling point — it's the bare minimum, and we treat it that way. Tools are cleaned and sanitised between clients, blades are fresh, and the shop is kept as sharp as the cuts.</p>
+          <ul>
+            <li>Fresh razor blades for every shave</li>
+            <li>Clippers and tools sanitised between every client</li>
+            <li>Clean towels and a tidy chair for every appointment</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Inside the Shop</span>
+        <h2>From the Chair</h2>
+        <p>The tools, the craft and the atmosphere. Follow us on Facebook to see the latest cuts fresh out of the chair.</p>
+      </div>
+      <div class="gal-grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Barber shaping a cut with comb and clippers" loading="lazy">
+          <figcaption>Clipper work, done by eye and by feel</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop" alt="Classic barber chairs in a traditional barber shop" loading="lazy">
+          <figcaption>Take a seat — you're in good hands</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=1200&auto=format&fit=crop" alt="Straight razor shave in progress" loading="lazy">
+          <figcaption>The hot towel ritual</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop" alt="Beard being trimmed and shaped" loading="lazy">
+          <figcaption>Beards brought back under command</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=1200&auto=format&fit=crop" alt="Barber shop atmosphere with barber at work" loading="lazy">
+          <figcaption>No rush, no fuss — just barbering</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?q=80&w=1200&auto=format&fit=crop" alt="Barber tools of the trade ready on the counter" loading="lazy">
+          <figcaption>Tools of the trade, kept spotless</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why The Black Flag</span>
+        <h2>Why Bridlington Chooses Us</h2>
+        <p>A 4.9-star rating across 100 Google reviews doesn't happen by accident. Here's what keeps people coming back to the chair.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="icon">⚑</div>
+          <h3>We Fly Our Own Flag</h3>
+          <p>Independent and proud of it. No franchise shortcuts, no conveyor-belt cuts — just a local shop that stands or falls on the quality of every single haircut.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">✂️</div>
+          <h3>Skill Across Every Style</h3>
+          <p>Classic scissor work, modern skin fades, beard sculpting and traditional wet shaves — whatever you ask for, it's a service we practise daily, not a favour we're attempting.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">🪒</div>
+          <h3>Old-School Standards</h3>
+          <p>Hot towels, fresh blades, sanitised tools and a tidy shop. The traditional standards exist for a reason, and we hold every one of them on every appointment.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">💬</div>
+          <h3>Booking That Suits You</h3>
+          <p>Book in seconds on WhatsApp, through Nearcut or Fresha, or find us on Facebook. However you get in touch, you'll get a straight answer and a slot that suits.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">🧭</div>
+          <h3>Honest Advice, Always</h3>
+          <p>If a style won't suit your hair, we'll say so — and show you what will. We'd rather talk you into the right cut than let you pay for the wrong one.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">👨‍👦</div>
+          <h3>Everyone's Welcome</h3>
+          <p>First haircuts, school cuts, wedding parties, grandads who've had the same cut for forty years — the chair is open to the whole crew.</p>
+        </div>
+      </div>
+
+      <div class="stat-band">
+        <div>
+          <strong>4.9 ★</strong>
+          <span>Google Rating</span>
+        </div>
+        <div>
+          <strong>100</strong>
+          <span>Google Reviews</span>
+        </div>
+        <div>
+          <strong>6+</strong>
+          <span>Core Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING ================= -->
+  <section id="book" style="padding-top:1rem">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Booking</span>
+        <h2>Book Your Chair in Three Steps</h2>
+        <p>No phone queues and no complicated forms. Pick whichever channel suits you best.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Get in Touch</h3>
+          <p>Message us on <strong>WhatsApp</strong>, book through <strong>Nearcut</strong> or <strong>Fresha</strong>, reach us on <strong>Facebook</strong>, or simply call <strong>07906 046756</strong>.</p>
+        </div>
+        <div class="step">
+          <h3>Tell Us What You Need</h3>
+          <p>Cut, fade, beard, shave or the full works — let us know what you're after and roughly when suits you, and we'll confirm your slot and the price.</p>
+        </div>
+        <div class="step">
+          <h3>Sit Down, Leave Sharp</h3>
+          <p>Turn up, take the chair, and leave with the flag flying. Pay on the day — and book your next visit before you go if you want to keep it sharp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Good to Know</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Anything else you need to know, just ask us on WhatsApp — we reply as soon as we can between clients.</p>
+      </div>
+      <div class="faq-list">
+
+        <details>
+          <summary>How do I book an appointment?</summary>
+          <div class="faq-body">
+            <p>The quickest way is WhatsApp — message us on <a href="https://wa.me/447568384854">07568 384854</a> and tell us what service you'd like. You can also book through Nearcut or Fresha, message us on Facebook, or call us on <a href="tel:+447906046756">07906 046756</a>.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How much does a haircut cost?</summary>
+          <div class="faq-body">
+            <p>Prices depend on the service and the time it takes, so we don't publish a fixed list here. Call us on <a href="tel:+447906046756">07906 046756</a> or message us on WhatsApp for prices — tell us what you're after and we'll give you a straight figure before you book, with no obligation.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Do I need to book, or can I just walk in?</summary>
+          <div class="faq-body">
+            <p>Booking ahead is the surest way to get the time you want — it takes seconds on WhatsApp. If you're passing and want to check whether there's a slot, message or call us first and we'll tell you straight away what's available.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What's the difference between a low, mid and high fade?</summary>
+          <div class="faq-body">
+            <p>It's where the shortest part of the fade sits. A low fade starts just above the ear and keeps more length on the sides; a mid fade sits higher and looks sharper; a high fade goes up towards the crown for the boldest contrast. Not sure? Sit in the chair and we'll recommend the one that suits your head shape and hair type.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What happens in a hot towel shave?</summary>
+          <div class="faq-body">
+            <p>Hot towels soften your beard and open the pores, then a rich lather is worked in before a straight-razor shave — with the grain, then tidied against it where needed. A cold towel at the end closes the pores and finishes the service. It's the closest shave going, and it's as relaxing as it sounds.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Do you cut children's hair?</summary>
+          <div class="faq-body">
+            <p>Yes — kids are welcome aboard. We keep it patient and relaxed, whether it's a first haircut or a back-to-school tidy-up. If your child is a bit nervous, mention it when you book and we'll do our best to give you a calm appointment.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Can you copy a haircut from a photo?</summary>
+          <div class="faq-body">
+            <p>Bring the photo — it's a great starting point. We'll look at your hair type and growth pattern, tell you honestly how close we can get to it, and adjust the style so it works on your head, not just the model's.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How often should I come back to keep a fade sharp?</summary>
+          <div class="faq-body">
+            <p>Most lads find a fade looks its best for the first couple of weeks and stays tidy for a while after that — how fast it grows out depends on your hair. When you book, ask us and we'll give you a realistic return time for your cut, so you can plan ahead.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Where are you and when are you open?</summary>
+          <div class="faq-body">
+            <p>We're a barber shop based in Bridlington, East Yorkshire. For directions and today's availability, the quickest route is to message us on <a href="https://wa.me/447568384854">WhatsApp</a> or call <a href="tel:+447906046756">07906 046756</a> and we'll point you straight to the chair.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I buy a gift visit for someone?</summary>
+          <div class="faq-body">
+            <p>A fresh cut or a hot towel shave makes a cracking gift. Message us on WhatsApp and we'll sort out booking a visit for someone else — whether it's a birthday, Father's Day, or just because their beard has got out of hand.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Get Booked In</span>
+        <h2>Ready When You Are</h2>
+        <p>The chair is waiting. Message, call or book through your favourite app — whichever way you come, you'll leave sharper than you arrived.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>💬 WhatsApp Us</h3>
+          <p>The fastest way to book. Send us a message with the service you'd like and when suits you — we'll confirm your slot and the price.</p>
+          <a class="big-number" href="https://wa.me/447568384854">07568 384854</a>
+          <a class="btn btn-wa" href="https://wa.me/447568384854">Start a WhatsApp Chat</a>
+        </div>
+        <div class="contact-card">
+          <h3>📞 Call or Book Online</h3>
+          <p>Prefer to talk it through? Give us a ring. Or book in your own time through our online booking channels.</p>
+          <ul class="channel-list">
+            <li><span>Phone</span><a href="tel:+447906046756"><strong>07906 046756</strong></a></li>
+            <li><span>WhatsApp</span><strong>07568 384854</strong></li>
+            <li><span>Online booking</span><strong>Nearcut &amp; Fresha</strong></li>
+            <li><span>Social</span><strong>Find us on Facebook</strong></li>
+            <li><span>Location</span><strong>Bridlington, East Yorkshire</strong></li>
+          </ul>
+          <a class="btn btn-red" href="tel:+447906046756">Call the Shop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>⚑ The Black Flag Barbers</h4>
+        <p>An independent barber shop in Bridlington, East Yorkshire — haircuts, skin fades, beard trims, hot towel shaves and kids cuts, done properly and rated 4.9 stars from 100 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Haircuts</a></li>
+          <li><a href="#services">Skin Fades</a></li>
+          <li><a href="#services">Beard Trims &amp; Shaping</a></li>
+          <li><a href="#services">Hot Towel Shaves</a></li>
+          <li><a href="#services">Kids Cuts</a></li>
+          <li><a href="#services">The Full Works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Book Now</h4>
+        <ul>
+          <li><a href="https://wa.me/447568384854">WhatsApp: 07568 384854</a></li>
+          <li><a href="tel:+447906046756">Phone: 07906 046756</a></li>
+          <li>Nearcut &amp; Fresha booking</li>
+          <li>Message us on Facebook</li>
+          <li>Bridlington, East Yorkshire</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© The Black Flag Barbers, Bridlington. All rights reserved.</span>
+      <span>Rated 4.9 ★ from 100 Google reviews · Call or message for prices</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/447568384854" aria-label="Chat with The Black Flag Barbers on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
