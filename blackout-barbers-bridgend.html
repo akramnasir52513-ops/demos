@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blackout Barbers — Bridgend | Barbers</title>
+<meta name="description" content="Blackout Barbers — barbers in Bridgend. Haircuts, skin fades, beard trims and hot towel shaves. Rated 4.7 from 139 reviews on Google.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--lime:#b6ff00;--bg:#050505;--panel:#101010;--panel2:#161616;--txt:#e8e8e8;--mut:#9a9a9a;--line:#262626}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+section{padding:52px 0 8px}h2{text-align:center;font-size:1.9rem}
+h2+.sub,.sub{text-align:center;margin:6px auto 30px;max-width:560px;font-size:.95rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card .ph{height:170px;overflow:hidden}.card .ph img{transition:transform .5s}.card:hover .ph img{transform:scale(1.06)}
+.card h3{font-size:1.2rem;margin:16px 20px 8px}.card p{margin:0 20px;font-size:.94rem}
+.card ul{margin:10px 20px 0 38px;font-size:.92rem}.card li{margin:4px 0}
+.card .price-note{margin:12px 20px 20px;padding-top:10px;font-size:.92rem}
+.minis{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.mini{padding:22px}.mini h3{font-size:1.08rem;margin-bottom:8px}.mini p{font-size:.93rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;text-align:center}
+.step{padding:26px 20px}.step .num{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;font-size:1.25rem;margin-bottom:12px}
+.step h3{margin-bottom:8px}.step p{font-size:.93rem}
+.about{margin-top:52px;padding:48px 0}.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.about h2{text-align:left}.about p{font-size:.98rem;margin-top:10px}
+.hours{padding:22px 26px}.hours h3{margin-bottom:10px;font-size:1.1rem}.hours p{font-size:.95rem}
+.cta{display:inline-block;text-decoration:none;padding:14px 30px;font-size:1rem;margin:20px 0 0;transition:transform .25s,background .25s,box-shadow .25s}
+.cta:hover{transform:translateY(-2px)}.cta.small{padding:11px 22px;font-size:.92rem}.cta.big{font-size:1.1rem;padding:16px 40px}
+.reviews{text-align:center}.reviews .big{font-size:3rem;line-height:1.1}.reviews .stars2{font-size:1.5rem;letter-spacing:.25em;margin:6px 0}
+.reviews .from{font-size:1.05rem}.reviews .thanks{max-width:520px;margin:10px auto 0;font-size:.95rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.gallery .g{height:230px;overflow:hidden}.gallery .g img{transition:transform .6s}.gallery .g:hover img{transform:scale(1.08)}
+.faqs{max-width:780px;margin:0 auto;display:grid;gap:14px}.faq{padding:18px 22px}.faq h3{font-size:1.02rem;margin-bottom:6px}.faq p{font-size:.94rem}
+.contact{text-align:center;padding:56px 20px 64px}.contact p{max-width:520px;margin:8px auto 0;font-size:.96rem}
+.ctaband{text-align:center;padding:48px 20px 56px}.ctaband h2{margin-bottom:8px}
+footer{text-align:center;padding:22px 16px;font-size:.82rem}
+.mainnav{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 20px;flex-wrap:wrap}
+.mainnav .brand{font-size:1.02rem;white-space:nowrap}.mainnav .links{display:flex;flex-wrap:wrap;gap:2px}
+.mainnav .links a{text-decoration:none;font-size:.9rem;padding:5px 9px}
+header.hero{text-align:center;padding:48px 20px 0;overflow:hidden}
+header.hero h1{font-size:2.7rem;margin:6px 0 2px}
+header.hero .town{letter-spacing:.28em;text-transform:uppercase;font-size:.82rem}
+header.hero p.tag{max-width:580px;margin:14px auto 0;font-size:1.02rem}
+.stars{font-size:1.15rem;margin-top:14px;letter-spacing:.2em}
+.stars small{display:block;font-size:.82rem;letter-spacing:.05em;margin-top:3px}
+.heroimg{max-width:860px;margin:28px auto 0;height:340px}
+@media(max-width:640px){.about .wrap{grid-template-columns:1fr}header.hero h1{font-size:2.1rem}.heroimg{height:250px}}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+.mono,.mainnav .brand,.step .num,h2{font-family:'Courier New',monospace;letter-spacing:.03em}
+.mainnav{background:#000;border-bottom:1px solid var(--lime)}.mainnav .brand{color:var(--lime);font-weight:bold}.mainnav .links a{color:#ccc;font-family:'Courier New',monospace;font-size:.82rem}.mainnav .links a:hover{color:var(--lime)}
+header.hero{background:radial-gradient(ellipse at top,#14210a,#050505 65%);color:#fff}header.hero h1{text-transform:uppercase;letter-spacing:.03em}header.hero .town{color:var(--lime)}header.hero p.tag{color:#cfcfcf}.stars{color:var(--lime)}.stars small{color:#aaa}
+.heroimg{border:2px solid var(--lime);border-bottom:none}
+.cta{background:var(--lime);color:#06130a;border-radius:4px;font-weight:bold}.cta:hover{background:#d2ff4d;box-shadow:0 0 18px rgba(182,255,0,.45)}
+h2{color:#fff}h2 .accent{color:var(--lime)}.sub{color:var(--mut)}
+.card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--lime);border-radius:6px;padding:0 0 6px}.card h3{color:#fff}.card p{color:#bdbdbd}.card ul{color:#bdbdbd}.card .price-note{border-top:1px dashed #333;color:var(--lime);font-family:'Courier New',monospace;font-size:.85rem}
+.mini{background:var(--panel2);border:1px solid var(--line);border-radius:6px}.mini h3{color:var(--lime)}.mini p{color:#bdbdbd}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:6px}.step .num{background:#000;color:var(--lime);border:2px solid var(--lime);border-radius:50%}.step p{color:#bdbdbd}
+.about{background:#0b0b0b;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#e8e8e8}.about h2{color:#fff}.about p{color:#bdbdbd}.hours{background:#141414;color:#e8e8e8;border:1px solid var(--lime);border-radius:6px}.hours h3{color:var(--lime)}
+.reviews .big{color:var(--lime)}.reviews .stars2{color:var(--lime)}.reviews .from{color:#fff}.reviews .thanks{color:var(--mut)}
+.gallery .g{border:1px solid var(--line)}
+.faq{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--lime);border-radius:4px}.faq h3{color:#fff}.faq p{color:#bdbdbd}
+.contact p{color:var(--mut)}.contact a{color:var(--lime)}
+.ctaband{background:#000;border-top:1px solid var(--lime)}.ctaband h2{color:#fff}.ctaband p{color:#bdbdbd}
+footer{background:#000;color:#777;border-top:1px solid var(--line)}
+
+</style>
+</head>
+<body>
+<nav class="mainnav"><span class="brand">Blackout Barbers</span><span class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></span></nav>
+<header class="hero">
+
+<h1>Blackout Barbers</h1>
+<p class="town">Bridgend · Barbers</p>
+<p class="tag">Bridgend's sharpest fades and cleanest lines. No fuss, no waiting games — just standout cuts, done dark and done right.</p>
+<p class="stars">★★★★★<small>Rated 4.7 from 139 reviews on Google</small></p>
+<a class="cta" href="mailto:samwebbbarber@hotmail.com?subject=Booking%20enquiry">✉ Email Us to Book</a>
+<div class="heroimg"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=1200&q=70" alt="Blackout Barbers barber shop in Bridgend"></div>
+</header>
+<main>
+<section id="services"><div class="wrap">
+<h2 class="reveal">Our <span class="accent">Services</span></h2>
+<p class="sub reveal">Everything a good barber shop should do — done carefully, without rushing you out of the chair.</p>
+<div class="cards">
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=900&q=70" alt="Haircuts at Blackout Barbers, Bridgend" loading="lazy"></div><h3>Haircuts</h3><p>A proper haircut, done properly — that's the starting point for everything we do. Your barber will talk through what you want, how your hair grows and what will actually suit you before a single cut is made. Whether it's a classic scissor cut, a tidy restyle or keeping your current look sharp, you'll leave with a finish that's clean, even and easy to look after at home.</p><ul><li>Consultation before we start, every time</li><li>Classic cuts, restyles and tidy-ups</li><li>Styled and finished before you leave</li></ul><p class="price-note">Message for prices — just drop us an email.</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?auto=format&fit=crop&w=900&q=70" alt="Skin Fades at Blackout Barbers, Bridgend" loading="lazy"></div><h3>Skin Fades</h3><p>Sharp, blended and built to grow out well — a good fade is all about the blend. We work through the grades gradually so there are no harsh lines, just a smooth transition that suits your head shape and hair type. From low and subtle to high and tight, tell us the look you're after and we'll match it.</p><ul><li>Low, mid and high fades</li><li>Zero and skin finishes available</li><li>Blended by hand for a smooth finish</li></ul><p class="price-note">Message for prices — just drop us an email.</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=70" alt="Beard Trim & Hot Towel Shave at Blackout Barbers, Bridgend" loading="lazy"></div><h3>Beard Trim & Hot Towel Shave</h3><p>A beard needs looking after just as much as the hair on your head. We shape, tidy and define your beard so it works with your face rather than against it, and finish with care so the skin underneath feels fresh too. Add a hot towel shave for clean edges and that just-left-the-barbers feeling.</p><ul><li>Beard shaping and tidy-ups</li><li>Hot towel shave for a close finish</li><li>Clean, defined edges and neckline</li></ul><p class="price-note">Message for prices — just drop us an email.</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=70" alt="The Full Works at Blackout Barbers, Bridgend" loading="lazy"></div><h3>The Full Works</h3><p>The complete visit in one sitting — haircut, fade or restyle, plus full beard work and a hot towel finish. It's the option most of our regulars go for when they want to walk out feeling completely reset. One appointment, everything sorted, nothing rushed.</p><ul><li>Haircut or fade of your choice</li><li>Full beard trim and shaping included</li><li>Hot towel finish to complete the visit</li></ul><p class="price-note">Message for prices — just drop us an email.</p></article>
+</div>
+</div></section>
+<section><div class="wrap">
+<h2 class="reveal">Why Choose <span class="accent">Blackout Barbers</span>?</h2>
+<p class="sub reveal">A local barber shop in Bridgend that people keep coming back to — here's why.</p>
+<div class="minis">
+<article class="mini reveal"><h3>4.7 ★ Rated by Customers</h3><p>Rated 4.7 from 139 reviews on Google — the kind of score a barber shop in Bridgend earns by doing the job properly, visit after visit.</p></article>
+<article class="mini reveal"><h3>Skilled, Careful Barbers</h3><p>No rushed chairs and no guesswork. We listen first, cut second — so you get the style you actually asked for.</p></article>
+<article class="mini reveal"><h3>Clean, Sharp Finishes</h3><p>Lines so clean they stand out in any light — fades, edges and beard work finished with zero shortcuts.</p></article>
+<article class="mini reveal"><h3>Easy Email Booking</h3><p>No apps, no accounts, no fuss. One email is all it takes to book your chair and get a confirmed time.</p></article>
+</div>
+</div></section>
+<section><div class="wrap">
+<h2 class="reveal">Booking Is <span class="accent">Simple</span></h2>
+<p class="sub reveal">Three easy steps and you're in the chair.</p>
+<div class="steps">
+<div class="step reveal"><span class="num">1</span><h3>Choose Your Service</h3><p>Pick from haircuts, skin fades, beard trims and hot towel shaves — or go for The Full Works and have everything done in one visit.</p></div>
+<div class="step reveal"><span class="num">2</span><h3>Email Us</h3><p>Send us a message at samwebbbarber@hotmail.com with the service you'd like and when suits you. We'll reply to confirm your appointment.</p></div>
+<div class="step reveal"><span class="num">3</span><h3>Visit the Shop</h3><p>Come and see us in Bridgend, take a seat, and leave looking sharp. Simple as that.</p></div>
+</div>
+</div></section>
+<section class="about" id="about"><div class="wrap">
+<div>
+<h2 class="reveal">About Blackout Barbers</h2>
+<p class="reveal">Blackout Barbers is a local barber shop in the heart of Bridgend, built on a simple idea: a haircut should never feel rushed. When you sit in one of our chairs, you get a barber who listens first — to what you want, what your hair actually does, and what will work for your day-to-day life — and only then picks up the clippers.</p>
+<p class="reveal">Our barbers take real pride in the details: clean blends, tidy edges and a finish you can keep looking good at home without a shelf full of products. Whether you're in for a regular tidy-up, a complete restyle or the full works with beard and hot towel, you'll get the same care, the same honest advice and a warm welcome every time you visit us in Bridgend.</p>
+</div>
+<div class="hours reveal"><h3>Opening Hours</h3><p>Opening hours vary — please email us at samwebbbarber@hotmail.com for this week's hours and availability.</p><a class="cta small" href="mailto:samwebbbarber@hotmail.com?subject=Booking%20enquiry">✉ Email Us to Book</a></div>
+</div></section>
+<section class="reviews" id="reviews"><div class="wrap reveal">
+<p class="big">4.7 ★</p>
+<p class="stars2">★★★★★</p>
+<p class="from">from 139 reviews on Google</p>
+<p class="thanks">Thank you to every customer in Bridgend and beyond who has taken the time to leave us a review — we really do appreciate it.</p>
+</div></section>
+<section id="gallery"><div class="wrap">
+<h2 class="reveal">The <span class="accent">Gallery</span></h2>
+<p class="sub reveal">A look at the shop, the chairs and the craft.</p>
+<div class="gallery">
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=70" alt="Inside Blackout Barbers barbers in Bridgend" loading="lazy"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=70" alt="Barber at work at Blackout Barbers, Bridgend" loading="lazy"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=70" alt="Fresh cut finished at Blackout Barbers" loading="lazy"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=70" alt="Beard work at Blackout Barbers, Bridgend" loading="lazy"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=800&q=70" alt="Haircut detail at Blackout Barbers, Bridgend" loading="lazy"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=70" alt="Fade detail at Blackout Barbers, Bridgend" loading="lazy"></div>
+</div>
+</div></section>
+<section id="faq"><div class="wrap">
+<h2 class="reveal">Questions, <span class="accent">Answered</span></h2>
+<p class="sub reveal">Everything you might want to know before you book.</p>
+<div class="faqs">
+<div class="faq reveal"><h3>How do I book an appointment?</h3><p>The easiest way is by email. Send us a message at samwebbbarber@hotmail.com telling us which service you'd like and when suits you, and we'll get back to you to confirm your slot.</p></div>
+<div class="faq reveal"><h3>How much do your services cost?</h3><p>Message for prices — drop us an email at samwebbbarber@hotmail.com with the service you're interested in and we'll happily send you the details. That way you get the right information for exactly what you want done.</p></div>
+<div class="faq reveal"><h3>Where are you based?</h3><p>You'll find us in Bridgend. Email us at samwebbbarber@hotmail.com and we'll happily send you directions and help you find the shop.</p></div>
+<div class="faq reveal"><h3>Do I need to book, or can I just walk in?</h3><p>Booking by email is the best way to make sure you get a time that suits you and you're not left waiting. Send us a message before you come and we'll do our best to fit you in.</p></div>
+<div class="faq reveal"><h3>I'm not sure what style would suit me — can you help?</h3><p>Absolutely — that's part of the job. Come in and talk it through with your barber. We'll look at your hair type, how it grows and how much time you want to spend styling it, then suggest something that genuinely suits you.</p></div>
+<div class="faq reveal"><h3>Do you offer beard trims and shaves?</h3><p>Yes — beard trims, shaping and hot towel shaves are a big part of what we do. You can book beard work on its own, or combine it with a haircut as part of The Full Works.</p></div>
+</div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap reveal">
+<h2>Get In Touch</h2>
+<p><strong>Blackout Barbers</strong> · Bridgend</p>
+<p>Email us at <a href="mailto:samwebbbarber@hotmail.com?subject=Booking%20enquiry">samwebbbarber@hotmail.com</a> to book your appointment, ask about prices or check this week's availability. We read every message and will get back to you as soon as we can.</p>
+<a class="cta big" href="mailto:samwebbbarber@hotmail.com?subject=Booking%20enquiry">Message Us</a>
+</div></section>
+<section class="ctaband"><div class="wrap reveal">
+<h2>Ready for a fresher look?</h2>
+<p>Email Blackout Barbers in Bridgend today and book your chair.</p>
+<a class="cta" href="mailto:samwebbbarber@hotmail.com?subject=Booking%20enquiry">✉ Email Us to Book</a>
+</div></section>
+</main>
+<footer>© Blackout Barbers, Bridgend · Demo website made by Akram Web Studio</footer>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:0.12});els.forEach(function(e){io.observe(e);});})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
