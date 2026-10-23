@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheveux Hair Studio | Hair Salon in Tredegar, Blaenau Gwent</title>
+<meta name="description" content="Cheveux Hair Studio — a chic hair salon at 83 Ashvale, Tredegar. Cuts, colour, balayage, highlights and styling. Rated 5.0 from 35 Google reviews. Message on WhatsApp to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#8a9a82; --sage-deep:#5f7160; --sage-soft:#e6ebdf; --sage-pale:#f0f3ea;
+  --cream:#faf6ef; --cream-2:#f3ecdd; --charcoal:#2b2b28; --ink:#3a3a35;
+  --gold:#b3924e; --line:#ddd5c2; --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-weight:300}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;color:var(--charcoal);font-weight:600;line-height:1.15}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1160px,92%);margin:0 auto}
+.eyebrow{letter-spacing:.32em;text-transform:uppercase;font-size:.72rem;font-weight:500;color:var(--sage-deep)}
+.btn{display:inline-block;padding:.95rem 2rem;border-radius:999px;font-weight:500;letter-spacing:.06em;font-size:.95rem;transition:transform .25s ease,box-shadow .25s ease}
+.btn-wa{background:#25d366;color:#12351f;box-shadow:0 10px 24px rgba(37,211,102,.35)}
+.btn-wa:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--charcoal);color:var(--charcoal);background:transparent}
+.btn-ghost:hover{background:var(--charcoal);color:var(--cream)}
+@keyframes riseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.rise{animation:riseIn .9s ease both}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+/* top strip */
+.topstrip{background:var(--charcoal);color:var(--cream);font-size:.82rem;letter-spacing:.08em;text-align:center;padding:.5rem 1rem}
+.topstrip strong{color:#e9cf9a;font-weight:600}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0;gap:1rem}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;color:var(--charcoal);letter-spacing:.04em}
+.logo span{color:var(--sage-deep);font-style:italic;font-weight:500}
+.nav-links{display:none;gap:2rem;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;font-weight:400}
+.nav-links a:hover{color:var(--sage-deep)}
+.nav-cta{background:var(--charcoal);color:var(--cream)!important;padding:.55rem 1.3rem;border-radius:999px}
+@media(min-width:860px){.nav-links{display:flex;align-items:center}}
+
+/* hero */
+.hero{position:relative;padding:4.2rem 0 4.6rem;background:linear-gradient(180deg,var(--sage-pale),var(--cream));overflow:hidden}
+.hero-grid{display:grid;gap:2.6rem;align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{font-size:clamp(2.7rem,6vw,4.4rem);margin:.7rem 0 1rem}
+.hero h1 em{color:var(--sage-deep);font-style:italic}
+.hero p.lead{font-size:1.13rem;max-width:34rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:1rem;margin:1.8rem 0 1.2rem}
+.hero-note{font-size:.9rem;color:#6d6a5e}
+.hero-photo{position:relative}
+.hero-photo .frame{border-radius:220px 220px 18px 18px;overflow:hidden;border:6px solid var(--white);box-shadow:0 30px 60px rgba(43,43,40,.18)}
+.hero-photo img{width:100%;height:560px;object-fit:cover}
+.rating-card{position:absolute;left:-14px;bottom:26px;background:var(--white);border-radius:16px;box-shadow:0 18px 40px rgba(43,43,40,.18);padding:1rem 1.3rem;animation:bob 5s ease-in-out infinite}
+.rating-card .stars{color:var(--gold);font-size:1.05rem;letter-spacing:.15em}
+.rating-card .big{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:var(--charcoal);line-height:1}
+.rating-card small{color:#77735f;font-size:.78rem;letter-spacing:.05em}
+
+/* marquee */
+.marquee{background:var(--sage-deep);color:var(--cream);overflow:hidden;padding:.7rem 0}
+.marquee-track{display:flex;gap:3rem;white-space:nowrap;width:max-content;animation:drift 30s linear infinite;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem}
+
+/* sections */
+section{padding:4.6rem 0}
+.sec-head{max-width:44rem;margin-bottom:2.6rem}
+.sec-head h2{font-size:clamp(2rem,4vw,2.9rem);margin:.6rem 0 .8rem}
+.sec-head h2 em{color:var(--sage-deep);font-style:italic}
+
+/* about */
+.about-grid{display:grid;gap:2.4rem;align-items:center}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr}}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.collage img{border-radius:16px;height:230px;width:100%;object-fit:cover}
+.collage img:first-child{border-radius:120px 16px 16px 16px;height:280px}
+.collage img:last-child{border-radius:16px 16px 120px 16px}
+.checklist{list-style:none;margin-top:1.4rem;display:grid;gap:.7rem}
+.checklist li{padding-left:1.9rem;position:relative}
+.checklist li::before{content:"✦";position:absolute;left:0;color:var(--sage-deep)}
+
+/* services */
+.services{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;gap:1.4rem}
+@media(min-width:700px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+.svc{background:var(--cream);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.svc:hover{transform:translateY(-5px);box-shadow:0 20px 38px rgba(43,43,40,.12)}
+.svc img{height:190px;width:100%;object-fit:cover}
+.svc-body{padding:1.4rem 1.5rem 1.6rem}
+.svc-body h3{font-size:1.45rem;margin-bottom:.5rem}
+.svc-body p{font-size:.95rem}
+.svc-price{margin-top:.9rem;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-deep);font-weight:500}
+
+/* process */
+.steps{display:grid;gap:1.2rem}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--sage-pale);border-radius:16px;padding:1.6rem 1.4rem;border:1px solid var(--sage-soft)}
+.step .num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--sage-deep);line-height:1}
+.step h3{font-size:1.2rem;margin:.5rem 0 .4rem}
+.step p{font-size:.92rem}
+
+/* gallery */
+.gallery{background:var(--charcoal)}
+.gallery .sec-head h2{color:var(--cream)}
+.gallery .sec-head p{color:#cfc9b8}
+.gallery .eyebrow{color:#b9c4ae}
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(min-width:860px){.gal-grid{grid-template-columns:repeat(4,1fr)}}
+.gal-grid figure{border-radius:14px;overflow:hidden;position:relative}
+.gal-grid img{height:250px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal-grid figure:hover img{transform:scale(1.06)}
+.gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:.6rem .9rem;background:linear-gradient(0deg,rgba(20,20,18,.72),transparent);color:var(--cream);font-size:.82rem;letter-spacing:.06em}
+
+/* why */
+.why-grid{display:grid;gap:1.2rem}
+@media(min-width:700px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.why-grid{grid-template-columns:1fr 1fr 1fr}}
+.why-card{border:1px solid var(--line);border-radius:16px;padding:1.7rem 1.5rem;background:var(--white)}
+.why-card .ico{font-size:1.5rem;color:var(--sage-deep)}
+.why-card h3{font-size:1.3rem;margin:.6rem 0 .4rem}
+.why-card p{font-size:.94rem}
+
+/* care band */
+.care{background:var(--sage-pale);border-top:1px solid var(--sage-soft);border-bottom:1px solid var(--sage-soft)}
+.care-grid{display:grid;gap:1.2rem}
+@media(min-width:860px){.care-grid{grid-template-columns:repeat(3,1fr)}}
+.care-card{background:var(--cream);border-radius:16px;padding:1.6rem 1.5rem;border:1px solid var(--line)}
+.care-card h3{font-size:1.25rem;margin-bottom:.5rem}
+.care-card p{font-size:.93rem}
+
+/* faq */
+.faq-list{max-width:52rem}
+details{border:1px solid var(--line);border-radius:14px;background:var(--white);margin-bottom:.8rem;overflow:hidden}
+summary{cursor:pointer;padding:1.1rem 1.4rem;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--sage-deep);font-family:'Jost',sans-serif}
+details[open ] summary::after{content:"–"}
+details .ans{padding:0 1.4rem 1.2rem;font-size:.95rem}
+
+/* booking */
+.book-grid{display:grid;gap:2rem;align-items:stretch}
+@media(min-width:920px){.book-grid{grid-template-columns:1.1fr .9fr}}
+.book-card{background:var(--charcoal);color:var(--cream);border-radius:22px;padding:2.4rem 2.2rem}
+.book-card h2{color:var(--cream);font-size:2.2rem;margin-bottom:.8rem}
+.book-card h2 em{color:#b9c4ae;font-style:italic}
+.book-card p{color:#d8d2c2}
+.book-card .btn{margin-top:1.4rem;margin-right:.6rem}
+.info-card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:2.2rem}
+.info-card h3{font-size:1.5rem;margin-bottom:1rem}
+.info-row{display:flex;justify-content:space-between;gap:1rem;padding:.75rem 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.info-row:last-child{border-bottom:none}
+.info-row span:first-child{color:#77735f;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;font-weight:500;padding-top:.2rem}
+.info-row span:last-child{text-align:right;font-weight:400}
+
+/* footer */
+footer{background:var(--charcoal);color:#c9c3b2;padding:3.2rem 0 2.2rem}
+.foot-grid{display:grid;gap:2rem}
+@media(min-width:860px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer .logo{color:var(--cream)}
+footer h4{color:var(--cream);font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin-bottom:.8rem}
+footer ul{list-style:none;display:grid;gap:.45rem;font-size:.92rem}
+footer a:hover{color:#e9cf9a}
+.foot-base{border-top:1px solid #45453f;margin-top:2.4rem;padding-top:1.4rem;font-size:.82rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+
+/* floating WA */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#12351f;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 14px 30px rgba(18,53,31,.35);animation:bob 4.5s ease-in-out infinite}
+</style>
+</head>
+<body>
+
+<div class="topstrip">Rated <strong>5.0 ★ from 35 Google reviews</strong> · 83 Ashvale, Tredegar · Bookings via WhatsApp, Facebook &amp; Fresha</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Cheveux <span>hair studio</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://wa.me/447507185893">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="rise">
+      <p class="eyebrow">Tredegar · Blaenau Gwent</p>
+      <h1>Beautiful hair, <em>the French way</em> — quietly luxurious, effortlessly you.</h1>
+      <p class="lead">Cheveux Hair Studio is a chic little salon on Ashvale in Tredegar, loved for thoughtful cuts, luminous colour and a calm, unhurried chair. No rush, no fuss — just hair that turns heads for all the right reasons.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447507185893">💬 Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447507185893">Call 07507 185893</a>
+      </div>
+      <p class="hero-note">New to the salon? Message us first for a friendly chat about what your hair needs — consultations are relaxed and honest.</p>
+    </div>
+    <div class="hero-photo rise">
+      <div class="frame">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop" alt="Inside a chic hair salon">
+      </div>
+      <div class="rating-card">
+        <div class="stars">★★★★★</div>
+        <div class="big">5.0</div>
+        <small>from 35 Google reviews</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Cut &amp; Finish ✦ Colour ✦ Balayage ✦ Highlights ✦ Blow Dry ✦ Styling ✦ Cheveux Hair Studio ✦&nbsp;</span>
+    <span>Cut &amp; Finish ✦ Colour ✦ Balayage ✦ Highlights ✦ Blow Dry ✦ Styling ✦ Cheveux Hair Studio ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="collage">
+      <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=900&auto=format&fit=crop" alt="Stylist washing a client's hair at the basin">
+      <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=900&auto=format&fit=crop" alt="Hair styling in progress">
+      <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=900&auto=format&fit=crop" alt="Long glossy finished hair">
+      <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=900&auto=format&fit=crop" alt="Braided and styled hair detail">
+    </div>
+    <div>
+      <p class="eyebrow">About the studio</p>
+      <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin:.6rem 0 .9rem">A little salon with a <em style="color:var(--sage-deep)">Parisian heart</em>, right here in Tredegar</h2>
+      <p>"Cheveux" is simply French for "hair" — and that one word sums up the studio's philosophy: hair treated as craft, not conveyor belt. Every appointment starts with listening. What do you love about your hair? What drives you mad about it? What does your real life — work, weather, mornings in a hurry — actually allow?</p>
+      <p style="margin-top:.9rem">From that honest conversation comes a cut or colour designed around you: your face shape, your hair's natural behaviour, and the time you genuinely have to style it. That's how the studio has earned a perfect 5.0 rating from its clients across Tredegar and Blaenau Gwent.</p>
+      <ul class="checklist">
+        <li>One-to-one attention — your appointment is yours</li>
+        <li>Honest advice: if a colour won't suit your hair's condition, we'll say so</li>
+        <li>Styling tips before you leave, so the look lasts at home</li>
+        <li>Easy booking by WhatsApp, Facebook message or Fresha</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Services</p>
+      <h2>Everything your hair needs, <em>under one roof</em></h2>
+      <p>From a tidy-up between seasons to a complete colour transformation. Prices vary with hair length, thickness and the work involved — call or message for prices and we'll happily quote before you book.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=900&auto=format&fit=crop" alt="Haircut being finished with scissors">
+        <div class="svc-body">
+          <h3>Cut &amp; Finish</h3>
+          <p>The foundation of everything. A consultation, a precision cut shaped to your features and lifestyle, a relaxing wash, and a styled finish so you leave knowing exactly how the cut should look — and how to recreate it on a Tuesday morning.</p>
+          <p class="svc-price">Call or message for prices</p>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=900&auto=format&fit=crop" alt="Beauty and hair finishing touches">
+        <div class="svc-body">
+          <h3>Full Colour</h3>
+          <p>Rich, even, all-over colour — whether you're covering greys, deepening your natural shade or making a complete change. We talk through tone, warmth and upkeep first, so the colour you choose is one your hair can wear beautifully for weeks.</p>
+          <p class="svc-price">Call or message for prices</p>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=900&auto=format&fit=crop" alt="Soft sun-kissed balayage hair">
+        <div class="svc-body">
+          <h3>Balayage</h3>
+          <p>The French freehand technique that gives that soft, sun-kissed, "grew out on holiday" lightness. Balayage grows out gracefully with no harsh regrowth line, making it perfect if you want brightness without constant appointments.</p>
+          <p class="svc-price">Call or message for prices</p>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=900&auto=format&fit=crop" alt="Lightened highlighted hair">
+        <div class="svc-body">
+          <h3>Highlights &amp; Lowlights</h3>
+          <p>Fine, carefully placed foils that add dimension, brightness and movement. Full head, half head or a face-framing few — we'll match the placement to your cut and colour goals, and keep the condition of your hair front and centre.</p>
+          <p class="svc-price">Call or message for prices</p>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=900&auto=format&fit=crop" alt="Blow dry styling with a round brush">
+        <div class="svc-body">
+          <h3>Blow Dry</h3>
+          <p>Smooth and sleek, bouncy and voluminous, or soft waves — a proper salon blow dry for occasions, photographs, or simply because it's Friday. A wash, a skilled brush-out and a finish that holds its shape long after you've left the chair.</p>
+          <p class="svc-price">Call or message for prices</p>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=900&auto=format&fit=crop" alt="Elegant occasion hairstyling">
+        <div class="svc-body">
+          <h3>Occasion Styling</h3>
+          <p>Weddings, parties, proms and every "I need to feel amazing" moment in between. Up-dos, soft curls, braided details and polished finishes — bring a photo of your outfit and your inspiration, and we'll build the look around you.</p>
+          <p class="svc-price">Call or message for prices</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES IN DETAIL -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">In detail</p>
+      <h2>A closer look at <em>what we do</em></h2>
+      <p>Choosing a service is easier when you know what actually happens in the chair. Here's the honest detail behind our most-booked appointments.</p>
+    </div>
+    <div style="display:grid;gap:1.4rem">
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:2rem">
+        <h3 style="font-size:1.6rem;margin-bottom:.6rem">Colour, done properly</h3>
+        <p>Great colour is a process, not a product. It starts with looking at your hair's history — previous colour, heat habits, condition — then choosing a shade that works with your skin tone rather than against it. Roots-only regrowth appointments keep all-over colour looking fresh between full services, and toners refresh faded lengths and ends so the whole head reads as one beautiful, even colour. If your hair has been through a lot, we may suggest a staged plan: sometimes the most glamorous route is the patient one, and we'd rather your hair stayed strong while it gets lighter.</p>
+      </div>
+      <div style="background:var(--sage-pale);border:1px solid var(--sage-soft);border-radius:18px;padding:2rem">
+        <h3 style="font-size:1.6rem;margin-bottom:.6rem">The perfect cut is a conversation</h3>
+        <p>A haircut should solve problems, not create them. Before scissors come out, we talk about how your hair falls naturally, where it misbehaves, how you dry it, and how long you actually spend styling (be honest — we design for real life). Fringes, layers, texture, length — every element is chosen to grow out gracefully, so your hair still behaves weeks later, not just on day one. And before you leave, we style it the way you'll do it at home, talking you through each step as we go.</p>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:18px;padding:2rem">
+        <h3 style="font-size:1.6rem;margin-bottom:.6rem">Styling for the days that matter</h3>
+        <p>Some days just ask more of your hair: weddings, christenings, proms, interviews, photographs you'll keep forever. Occasion styling at Cheveux is planned, not improvised — bring your outfit photos and inspiration pictures, and we'll build a look that suits the day, the dress and you. From soft romantic curls to sleek polished finishes and classic up-dos, the aim is always the same: hair that looks wonderful at 9am and is still holding beautifully at midnight.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Your visit</p>
+      <h2>Simple, relaxed, <em>from first message to final mirror check</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Message or Book</h3>
+        <p>Send a WhatsApp, a Facebook message, or book through Fresha. Tell us what you're thinking — photos of your hair and your inspiration are welcome.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Honest Consultation</h3>
+        <p>In the chair, we talk honestly about what suits you, what your hair can achieve, and what it will take to maintain. No pressure, ever.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>The Appointment</h3>
+        <p>Sit back. Wash, cut, colour or styling done with care and quality products, in a calm space where the appointment is never rushed.</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <h3>Finish &amp; Know-How</h3>
+        <p>We style your hair properly and show you how to look after the result at home — the products, the order, the little tricks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Gallery</p>
+      <h2>The kind of hair <em>that leaves this studio</em></h2>
+      <p>Glossy finishes, soft movement, colour with depth. A little inspiration for your next visit.</p>
+    </div>
+    <div class="gal-grid">
+      <figure><img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?q=80&w=800&auto=format&fit=crop" alt="Portrait with styled hair"><figcaption>Smooth &amp; polished</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=800&auto=format&fit=crop" alt="Natural styled portrait"><figcaption>Soft everyday glamour</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=800&auto=format&fit=crop" alt="Braided hair detail"><figcaption>Braids &amp; detail work</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=800&auto=format&fit=crop" alt="Salon styling moment"><figcaption>In the chair</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=800&auto=format&fit=crop" alt="Finished beauty look"><figcaption>The finished look</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop" alt="Beauty products and care"><figcaption>Care &amp; products</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=800&auto=format&fit=crop" alt="Long flowing hair"><figcaption>Length &amp; gloss</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=800&auto=format&fit=crop" alt="Elegant hair from behind"><figcaption>Elegant finishes</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Why Cheveux</p>
+      <h2>Why Tredegar keeps <em>coming back</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="ico">★</div><h3>A Perfect 5.0 Rating</h3><p>Every single Google review counts. A 5.0 average from 35 reviews means clients consistently leave happy — and come back with friends.</p></div>
+      <div class="why-card"><div class="ico">✦</div><h3>Designed Around You</h3><p>No copy-paste haircuts. Your cut and colour are planned around your face, your hair type, and how much styling time your mornings really have.</p></div>
+      <div class="why-card"><div class="ico">❧</div><h3>Calm, Unhurried Chair</h3><p>A small studio means a quieter experience. No double-booked chaos — when you're in the chair, the time is yours.</p></div>
+      <div class="why-card"><div class="ico">✿</div><h3>Honest Colour Advice</h3><p>Healthy hair holds colour better. If your hair needs a gentler plan or a treatment first, we'll tell you straight and build the right route.</p></div>
+      <div class="why-card"><div class="ico">✆</div><h3>Booking That Suits You</h3><p>WhatsApp, Facebook message or Fresha — book the way that's easiest for you, and get a quick, friendly reply.</p></div>
+      <div class="why-card"><div class="ico">⌂</div><h3>Properly Local</h3><p>On Ashvale in the heart of Tredegar, serving clients across Blaenau Gwent who'd rather trust a local chair than travel to a city chain.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Occasions</p>
+      <h2>Hair for <em>every chapter</em></h2>
+      <p>Different moments ask different things of your hair. Here's how clients across Tredegar and Blaenau Gwent most often use the studio.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="ico">❧</div><h3>The Big Day</h3><p>Wedding hair for brides, bridesmaids and mothers of the bride. Trials first, a calm plan for the morning, and styles built to last from first photo to last dance.</p></div>
+      <div class="why-card"><div class="ico">✦</div><h3>The Fresh Start</h3><p>New job, new season, new you. A restyle appointment is the studio's favourite kind of transformation — bring your ideas, we'll shape them into something wearable.</p></div>
+      <div class="why-card"><div class="ico">✿</div><h3>The Colour Refresh</h3><p>Faded, brassy or grown out? A toner, gloss or regrowth appointment brings colour back to life between bigger services, quickly and kindly.</p></div>
+      <div class="why-card"><div class="ico">★</div><h3>The School Prom</h3><p>Curls, waves, braids and up-dos for the biggest night of the school year. Book early in prom season — these slots go first.</p></div>
+      <div class="why-card"><div class="ico">✆</div><h3>The Interview</h3><p>Polished, confident, nothing distracting. A tidy cut and smooth finish that lets you walk in feeling like the most put-together version of yourself.</p></div>
+      <div class="why-card"><div class="ico">⌂</div><h3>The Just-Because</h3><p>No occasion at all — just hair that had stopped feeling like you. Sometimes that's the very best reason to book.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section style="padding-top:0">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow">The Cheveux hair guide</p>
+      <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin:.6rem 0 .9rem">Three things your hair <em style="color:var(--sage-deep)">wishes you knew</em></h2>
+      <p><strong style="font-weight:500">1. Your hair has a history.</strong> Every colour, every heat tool, every summer of sunshine is still in the lengths of your hair. That's why honest consultations matter — the plan has to respect what's already happened to your hair, not just what you'd like next.</p>
+      <p style="margin-top:.9rem"><strong style="font-weight:500">2. Condition is the real luxury.</strong> Shiny, swishy hair isn't about the most expensive service — it's about healthy hair, well cut and properly cared for. Sometimes the glossiest result comes from a great cut and a conditioning routine, not another chemical process.</p>
+      <p style="margin-top:.9rem"><strong style="font-weight:500">3. The best style is the one you'll actually do.</strong> A look that needs forty minutes and three tools will last exactly one day in most lives. Tell us your real routine and we'll design for it — beautiful hair should fit your morning, not fight it.</p>
+    </div>
+    <div class="collage">
+      <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=900&auto=format&fit=crop" alt="Elegant finished hairstyle">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=900&auto=format&fit=crop" alt="Blow dry in the salon">
+      <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=900&auto=format&fit=crop" alt="Sun-kissed hair colour">
+      <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?q=80&w=900&auto=format&fit=crop" alt="Polished portrait hair">
+    </div>
+  </div>
+</section>
+
+<!-- CARE -->
+<section class="care">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Aftercare</p>
+      <h2>Keep the salon feeling <em>at home</em></h2>
+    </div>
+    <div class="care-grid">
+      <div class="care-card"><h3>Protect Your Colour</h3><p>Use colour-safe shampoo, wash in lukewarm (not hot) water, and leave a day or two between washes where you can. Dry shampoo is your friend on day two.</p></div>
+      <div class="care-card"><h3>Heat, Gently</h3><p>Always use a heat protectant before straighteners or curling tools, and keep the temperature as low as does the job. Your ends will thank you.</p></div>
+      <div class="care-card"><h3>Little &amp; Often Trims</h3><p>Regular small trims keep ends healthy and shapes sharp, so your style never reaches the "I can't stand it" stage. Ask at your visit when to rebook.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STANDARD -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div style="background:var(--charcoal);border-radius:22px;padding:2.8rem 2.4rem;color:var(--cream)">
+      <p class="eyebrow" style="color:#b9c4ae">The Cheveux standard</p>
+      <h2 style="color:var(--cream);font-size:clamp(1.9rem,3.6vw,2.6rem);margin:.6rem 0 1rem">Our promise, <em style="color:#b9c4ae">in plain words</em></h2>
+      <div style="display:grid;gap:1.4rem;grid-template-columns:1fr" >
+        <p style="color:#d8d2c2">We will never start a service we don't believe suits you. We will never rush a colour off before it's ready, never talk you into something your hair can't handle, and never let you leave without knowing how to look after what we've created. A perfect 5.0 rating isn't a marketing line — it's what happens, appointment after appointment, when a salon treats every head of hair like it matters. Because to the person wearing it, it does.</p>
+        <p style="color:#d8d2c2">If that sounds like your kind of salon, the kettle's on in spirit and the chair is waiting. Message us on WhatsApp and let's start with a chat about your hair.</p>
+      </div>
+      <a class="btn btn-wa" style="margin-top:1.4rem" href="https://wa.me/447507185893">💬 Start the conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you <em>book</em></h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>How do I book an appointment?</summary><div class="ans">The quickest way is WhatsApp — message <a href="https://wa.me/447507185893" style="color:var(--sage-deep);font-weight:500">07507 185893</a>. You can also message the studio on Facebook or book through Fresha. Tell us what you'd like done and a rough time that suits you.</div></details>
+      <details><summary>How much will my appointment cost?</summary><div class="ans">Prices depend on your hair's length and thickness and exactly what's involved — a full colour on long hair is simply more work than a fringe trim. Call or message for prices and we'll give you a clear quote before you commit to anything.</div></details>
+      <details><summary>Where is the studio?</summary><div class="ans">We're at 83 Ashvale, Tredegar, in Blaenau Gwent, South Wales — easy to reach from across Tredegar and the surrounding valleys.</div></details>
+      <details><summary>I'm not sure what I want — can I just get advice?</summary><div class="ans">Absolutely, and honestly that's the best way to start. Message us a photo of your hair as it is now and anything you've seen that you like, and we'll talk through what's achievable and what it would involve.</div></details>
+      <details><summary>What's the difference between balayage and highlights?</summary><div class="ans">Highlights are foiled sections that lighten hair from root to tip for an all-over brighter effect. Balayage is painted on freehand, concentrated through the mid-lengths and ends, so it grows out softly with no obvious regrowth line — lower maintenance, very natural.</div></details>
+      <details><summary>Will colour damage my hair?</summary><div class="ans">Any chemical service asks something of your hair, which is why the consultation matters. We'll assess your hair's condition first, recommend the gentlest route to your goal, and sometimes suggest building up lightness over more than one visit.</div></details>
+      <details><summary>Do you do wedding and occasion hair?</summary><div class="ans">Yes — occasion styling is one of our favourite things. For weddings, message as early as you can so we can plan trials and timings for the morning itself.</div></details>
+      <details><summary>How often should I get my hair cut?</summary><div class="ans">It depends on your style — short, sharp cuts hold their shape for a shorter time, while longer styles can go longer between visits. We'll give you an honest recommendation for your specific cut at your appointment.</div></details>
+      <details><summary>What if I need to rearrange?</summary><div class="ans">Life happens. Just message on WhatsApp as soon as you know, and we'll do our best to find you another slot that works.</div></details>
+      <details><summary>Why don't you have a price list on this page?</summary><div class="ans">Because hair isn't one-size-fits-all, and a guessed price helps nobody. Message us what you're after and we'll quote you properly — it only takes a minute.</div></details>
+      <details><summary>I'm growing my hair — should I still come in?</summary><div class="ans">Yes, and it's one of the smartest things you can do. Growing hair still needs its ends tidied and its shape maintained, otherwise it just gets longer and shaggier rather than longer and lovelier. We'll trim minimally and keep the shape working at every length along the way.</div></details>
+      <details><summary>My hair is fine and flat — can a cut actually help?</summary><div class="ans">Very often, yes. The right shape removes weight from the wrong places, adds movement, and makes fine hair look noticeably fuller. Pair it with the right blow-dry technique — which we'll show you in the chair — and the difference can be dramatic.</div></details>
+      <details><summary>Can I bring my child for a haircut?</summary><div class="ans">Message us and ask — we're a small, friendly studio and happy to talk through what you need. Tell us your child's age and what you're hoping for, and we'll let you know the best way to book it.</div></details>
+      <details><summary>What should I do before a colour appointment?</summary><div class="ans">Arrive with your hair as it normally is — no need for a special wash the night before unless we ask. If you've used home colour recently, tell us honestly when you book; it genuinely changes the plan, and knowing upfront protects your hair and your result.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section style="padding-top:0">
+  <div class="wrap book-grid">
+    <div class="book-card">
+      <p class="eyebrow" style="color:#b9c4ae">Book your chair</p>
+      <h2>Ready when <em>you are</em></h2>
+      <p>Send a message now and let's talk about your hair. Whether it's a tidy-up, a transformation, or a big day coming up — Cheveux Hair Studio would love to look after you.</p>
+      <a class="btn btn-wa" href="https://wa.me/447507185893">💬 WhatsApp 07507 185893</a>
+      <a class="btn" style="border:1px solid var(--cream);color:var(--cream)" href="tel:+447507185893">Call the Studio</a>
+    </div>
+    <div class="info-card">
+      <h3>Good to know</h3>
+      <div class="info-row"><span>Find us</span><span>83 Ashvale, Tredegar,<br>Blaenau Gwent</span></div>
+      <div class="info-row"><span>WhatsApp</span><span><a href="https://wa.me/447507185893" style="color:var(--sage-deep);font-weight:500">07507 185893</a></span></div>
+      <div class="info-row"><span>Phone</span><span><a href="tel:+447507185893" style="color:var(--sage-deep);font-weight:500">07507 185893</a></span></div>
+      <div class="info-row"><span>Booking</span><span>WhatsApp · Facebook · Fresha</span></div>
+      <div class="info-row"><span>Hours</span><span>Message on WhatsApp<br>to check today's availability</span></div>
+      <div class="info-row"><span>Rated</span><span>5.0 ★ · 35 Google reviews</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top">Cheveux <span style="color:#b9c4ae;font-style:italic">hair studio</span></a>
+        <p style="margin-top:.8rem;max-width:22rem">A chic, friendly hair studio in Tredegar — cuts, colour, balayage and styling, done with care.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Book</h4>
+        <ul>
+          <li><a href="https://wa.me/447507185893">WhatsApp: 07507 185893</a></li>
+          <li><a href="tel:+447507185893">Call: 07507 185893</a></li>
+          <li>83 Ashvale, Tredegar</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© Cheveux Hair Studio, 83 Ashvale, Tredegar, Blaenau Gwent. All rights reserved.</span>
+      <span>Rated 5.0 ★ from 35 Google reviews · Book on WhatsApp, Facebook or Fresha</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447507185893" aria-label="Chat on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
