@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taibach Barbers | Barber Shop in Taibach, Port Talbot — Haircuts, Skin Fades &amp; Beard Trims</title>
+<meta name="description" content="Taibach Barbers is a barber shop in Taibach, Port Talbot, Neath Port Talbot, Wales. Haircuts, skin fades, beard trims, hot towel shaves and kids' cuts. Rated 4.7 stars from 112 Google reviews. Book on WhatsApp, through Fresha or on Facebook. Call or message for prices.">
+<style>
+  :root{
+    --green-950:#071f16;
+    --green-900:#0b2e23;
+    --green-850:#0e382a;
+    --green-800:#114433;
+    --green-700:#17604a;
+    --green-100:#d9e9df;
+    --green-050:#eef4ef;
+    --charcoal:#16181c;
+    --charcoal-2:#202329;
+    --charcoal-3:#2b2f36;
+    --brass:#c19a3d;
+    --brass-light:#e6c877;
+    --brass-dark:#9a7a28;
+    --cream:#f6f1e3;
+    --paper:#faf8f1;
+    --ink:#22241f;
+    --muted:#5d6157;
+    --line:rgba(11,46,35,.15);
+    --shadow:0 18px 42px rgba(7,31,22,.16);
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,.display{font-family:Georgia,"Times New Roman",serif;line-height:1.14;color:var(--green-900);font-weight:700}
+  img{max-width:100%;display:block}
+  a{color:var(--green-800)}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+  .eyebrow{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;font-weight:800;color:var(--brass-dark);margin-bottom:14px}
+  .eyebrow.on-dark{color:var(--brass-light)}
+  section{padding:76px 0}
+  .sec-head{max-width:720px;margin-bottom:44px}
+  .sec-head h2{font-size:2.05rem;margin-bottom:14px}
+  .sec-head p{color:var(--muted);font-size:1.05rem}
+  .btn{display:inline-block;padding:15px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;line-height:1.2;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;text-align:center}
+  .btn-wa{background:#1faa59;color:#fff;box-shadow:0 10px 24px rgba(31,170,89,.28)}
+  .btn-wa:hover{transform:translateY(-2px);background:#178f4b}
+  .btn-call{background:var(--charcoal);color:var(--cream);box-shadow:0 10px 24px rgba(22,24,28,.25)}
+  .btn-call:hover{transform:translateY(-2px)}
+  .btn-brass{background:var(--brass);color:var(--green-950)}
+  .btn-brass:hover{transform:translateY(-2px);background:var(--brass-light)}
+  .btn-ghost{border:2px solid rgba(246,241,227,.75);color:var(--cream)}
+  .btn-ghost:hover{transform:translateY(-2px);border-color:var(--brass-light);color:var(--brass-light)}
+  .tag{display:inline-block;background:var(--green-050);border:1px solid var(--line);color:var(--green-800);font-size:.82rem;font-weight:700;padding:6px 13px;border-radius:999px}
+  .topstrip{background:var(--green-950);color:var(--green-100);text-align:center;font-size:.86rem;padding:9px 16px;letter-spacing:.01em}
+  .topstrip strong{color:var(--brass-light)}
+  header.site{position:sticky;top:0;z-index:60;background:rgba(250,248,241,.97);border-bottom:3px solid var(--brass);box-shadow:0 4px 18px rgba(7,31,22,.07)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:13px;text-decoration:none}
+  .brand-mark{width:48px;height:48px;flex:0 0 48px;border-radius:50%;background:var(--green-900);color:var(--brass-light);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:1.25rem;font-weight:700;border:2px solid var(--brass)}
+  .brand-name{font-family:Georgia,serif;font-size:1.3rem;font-weight:700;color:var(--green-900);line-height:1.1}
+  .brand-sub{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .nav-links{display:none}
+  .nav-cta{background:#1faa59;color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:999px;font-size:.94rem;white-space:nowrap}
+  .nav-cta:hover{background:#178f4b}
+  @media(min-width:860px){
+    .nav-links{display:flex;gap:28px;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.97rem}
+    .nav-links a:hover{color:var(--brass-dark)}
+  }
+  .hero{background:linear-gradient(155deg,var(--green-950) 0%,var(--green-900) 52%,var(--green-850) 100%);color:var(--cream);padding:64px 0 72px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:linear-gradient(90deg,var(--brass-dark),var(--brass-light),var(--brass-dark))}
+  .hero-grid{display:grid;gap:38px;align-items:center}
+  @media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+  .hero h1{color:var(--cream);font-size:2.55rem;margin-bottom:18px}
+  .hero h1 .gold{color:var(--brass-light)}
+  .hero p.lede{font-size:1.13rem;color:var(--green-100);max-width:560px;margin-bottom:28px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:30px}
+  .rating-card{display:inline-flex;align-items:center;gap:15px;background:rgba(246,241,227,.07);border:1px solid rgba(230,200,119,.4);border-radius:14px;padding:13px 20px}
+  .rating-card .score{font-family:Georgia,serif;font-size:2rem;color:var(--brass-light);line-height:1}
+  .rating-card .stars{color:var(--brass-light);letter-spacing:.14em;font-size:.95rem}
+  .rating-card .note{display:block;color:var(--green-100);font-size:.86rem}
+  .hero-photo{position:relative}
+  .hero-photo img{border-radius:var(--radius);border:3px solid var(--brass);box-shadow:var(--shadow);width:100%;height:420px;object-fit:cover}
+  .hero-badge{position:absolute;left:16px;bottom:16px;background:var(--charcoal);color:var(--cream);border-left:5px solid var(--brass);border-radius:10px;padding:12px 18px;font-size:.92rem;max-width:82%}
+  .hero-badge strong{color:var(--brass-light);display:block;font-size:1rem}
+  .trust{background:var(--charcoal);color:var(--cream)}
+  .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+  @media(min-width:820px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+  .trust-item{padding:26px 18px;text-align:center;border-bottom:1px solid var(--charcoal-3)}
+  @media(min-width:820px){.trust-item{border-bottom:none;border-right:1px solid var(--charcoal-3)}.trust-item:last-child{border-right:none}}
+  .trust-item .num{display:block;font-family:Georgia,serif;font-size:1.65rem;color:var(--brass-light)}
+  .trust-item .lbl{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:#c9cdc4;font-weight:700}
+  .about-grid{display:grid;gap:40px;align-items:center}
+  @media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr}}
+  .about-photo img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;height:440px;object-fit:cover}
+  .about-copy h2{font-size:2rem;margin-bottom:16px}
+  .about-copy p{color:var(--muted);margin-bottom:16px}
+  .about-copy p strong{color:var(--ink)}
+  .check-list{list-style:none;margin:22px 0 28px;display:grid;gap:11px}
+  .check-list li{padding-left:32px;position:relative;font-weight:600;color:var(--ink)}
+  .check-list li::before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--green-900);color:var(--brass-light);font-size:.78rem;display:flex;align-items:center;justify-content:center}
+  .services{background:var(--green-050)}
+  .svc-grid{display:grid;gap:22px}
+  @media(min-width:720px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 22px rgba(7,31,22,.06);display:flex;flex-direction:column}
+  .svc img{width:100%;height:190px;object-fit:cover}
+  .svc-body{padding:24px 24px 26px;display:flex;flex-direction:column;gap:11px;flex:1}
+  .svc-body h3{font-size:1.28rem}
+  .svc-body p{color:var(--muted);font-size:.97rem;flex:1}
+  .svc-body ul{list-style:none;display:grid;gap:6px;font-size:.93rem;color:var(--ink)}
+  .svc-body ul li{padding-left:19px;position:relative}
+  .svc-body ul li::before{content:"—";position:absolute;left:0;color:var(--brass-dark);font-weight:800}
+  .price-note{margin-top:36px;background:var(--green-900);color:var(--cream);border-radius:var(--radius);padding:28px 30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+  .price-note h3{color:var(--cream);font-size:1.35rem;margin-bottom:5px}
+  .price-note p{color:var(--green-100);max-width:560px}
+  .detail-row{display:grid;gap:26px;padding:30px 0;border-bottom:1px solid var(--line);align-items:start}
+  @media(min-width:820px){.detail-row{grid-template-columns:250px 1fr}}
+  .detail-row:last-child{border-bottom:none}
+  .detail-row h3{font-size:1.35rem}
+  .detail-row h3 span{display:block;font-family:"Segoe UI",system-ui,sans-serif;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-dark);margin-bottom:7px;font-weight:800}
+  .detail-row p{color:var(--muted);margin-bottom:12px}
+  .detail-row p:last-child{margin-bottom:0}
+  .gallery{background:var(--charcoal);color:var(--cream)}
+  .gallery .sec-head h2{color:var(--cream)}
+  .gallery .sec-head p{color:#c9cdc4}
+  .gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(min-width:820px){.gal-grid{grid-template-columns:repeat(3,1fr);gap:18px}}
+  .gal-grid figure{border-radius:12px;overflow:hidden;position:relative;border:1px solid var(--charcoal-3)}
+  .gal-grid img{width:100%;height:230px;object-fit:cover;transition:transform .5s ease}
+  .gal-grid figure:hover img{transform:scale(1.045)}
+  .gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(7,31,22,.88));color:var(--cream);padding:26px 15px 12px;font-size:.9rem;font-weight:600}
+  .why-grid{display:grid;gap:20px}
+  @media(min-width:720px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+  .why-card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--brass);border-radius:12px;padding:27px 25px;box-shadow:0 8px 20px rgba(7,31,22,.05)}
+  .why-card .icon{font-size:1.7rem;display:block;margin-bottom:13px}
+  .why-card h3{font-size:1.2rem;margin-bottom:9px}
+  .why-card p{color:var(--muted);font-size:.96rem}
+  .occasions{background:linear-gradient(150deg,var(--green-900),var(--green-950));color:var(--cream)}
+  .occasions .sec-head h2{color:var(--cream)}
+  .occasions .sec-head p{color:var(--green-100)}
+  .occ-grid{display:grid;gap:18px}
+  @media(min-width:720px){.occ-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.occ-grid{grid-template-columns:repeat(4,1fr)}}
+  .occ{background:rgba(246,241,227,.06);border:1px solid rgba(230,200,119,.32);border-radius:12px;padding:24px 22px}
+  .occ .icon{font-size:1.55rem;display:block;margin-bottom:11px}
+  .occ h3{color:var(--cream);font-size:1.12rem;margin-bottom:8px}
+  .occ p{color:var(--green-100);font-size:.93rem}
+  .faq-list{max-width:820px;display:grid;gap:13px}
+  details.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden}
+  details.faq summary{cursor:pointer;list-style:none;padding:19px 22px;font-weight:700;font-size:1.03rem;color:var(--green-900);display:flex;justify-content:space-between;gap:14px;align-items:center}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{content:"+";font-size:1.35rem;color:var(--brass-dark);font-weight:800;line-height:1}
+  details.faq[open] summary::after{content:"–"}
+  details.faq .faq-body{padding:0 22px 20px;color:var(--muted)}
+  details.faq .faq-body a{font-weight:700}
+  .booking{background:var(--green-050)}
+  .steps{display:grid;gap:18px;margin-bottom:40px}
+  @media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px 25px;text-align:left}
+  .step .n{display:inline-flex;width:44px;height:44px;border-radius:50%;background:var(--green-900);color:var(--brass-light);align-items:center;justify-content:center;font-family:Georgia,serif;font-size:1.2rem;margin-bottom:14px}
+  .step h3{font-size:1.18rem;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.96rem}
+  .book-panel{background:var(--charcoal);color:var(--cream);border-radius:20px;overflow:hidden;display:grid;box-shadow:var(--shadow)}
+  @media(min-width:920px){.book-panel{grid-template-columns:1fr 1fr}}
+  .book-copy{padding:38px 32px}
+  .book-copy h2{color:var(--cream);font-size:1.9rem;margin-bottom:14px}
+  .book-copy p{color:#d7dad2;margin-bottom:16px}
+  .book-list{list-style:none;display:grid;gap:13px;margin:22px 0 28px}
+  .book-list li{padding-left:30px;position:relative}
+  .book-list li::before{content:"›";position:absolute;left:6px;color:var(--brass-light);font-weight:800;font-size:1.2rem;line-height:1.3}
+  .book-list strong{color:var(--brass-light);display:block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+  .book-ctas{display:grid;gap:12px}
+  .book-photo img{width:100%;height:100%;min-height:280px;object-fit:cover}
+  footer{background:var(--green-950);color:var(--green-100);padding:58px 0 0}
+  .foot-grid{display:grid;gap:34px;padding-bottom:40px}
+  @media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+  footer h4{color:var(--cream);font-size:1.1rem;margin-bottom:15px}
+  footer p{font-size:.95rem;color:#b9c6bc}
+  .foot-links{list-style:none;display:grid;gap:9px}
+  .foot-links a{color:var(--green-100);text-decoration:none;font-size:.95rem}
+  .foot-links a:hover{color:var(--brass-light)}
+  .foot-base{border-top:1px solid rgba(230,200,119,.25);padding:20px 0 24px;font-size:.86rem;color:#9fb3a4;text-align:center;line-height:1.7}
+  .wa-float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#1faa59;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.55rem;text-decoration:none;box-shadow:0 12px 28px rgba(0,0,0,.32);z-index:70}
+  .wa-float:hover{background:#178f4b}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  .anim{animation:fadeUp .7s ease both}
+  .anim-d1{animation-delay:.08s}.anim-d2{animation-delay:.16s}.anim-d3{animation-delay:.24s}
+  @media(prefers-reduced-motion:reduce){.anim{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="topstrip">Rated <strong>4.7 ★ from 112 Google reviews</strong> · Taibach, Port Talbot, Wales · Book on WhatsApp, through Fresha or on Facebook</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Taibach Barbers — home">
+      <span class="brand-mark">TB</span>
+      <span><span class="brand-name">Taibach Barbers</span><br><span class="brand-sub">Port Talbot · Wales</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#book">Book</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/447449561516">Book on WhatsApp</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="anim">
+      <p class="eyebrow on-dark">Barber Shop · Taibach, Port Talbot</p>
+      <h1>A proper local barber in the heart of <span class="gold">Taibach</span></h1>
+      <p class="lede">Sharp haircuts, seamless skin fades, tidy beard work and traditional hot towel shaves — done properly, without the fuss. Taibach Barbers is your neighbourhood barber shop in Port Talbot, Neath Port Talbot, and booking takes less than a minute.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447449561516">💬 Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447449561516">📞 Call the Shop</a>
+        <a class="btn btn-brass" href="#services">See Services</a>
+      </div>
+      <div class="rating-card">
+        <span class="score">4.7</span>
+        <span><span class="stars">★★★★★</span><span class="note">from 112 Google reviews</span></span>
+      </div>
+    </div>
+    <div class="hero-photo anim anim-d1">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a precision haircut in the chair">
+      <div class="hero-badge"><strong>Haircuts · Skin Fades · Beards</strong>Call or message for prices — just ask, no guessing.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST BAR ================= -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><span class="num">4.7 ★</span><span class="lbl">Google Rating</span></div>
+    <div class="trust-item"><span class="num">112</span><span class="lbl">Google Reviews</span></div>
+    <div class="trust-item"><span class="num">3 Ways</span><span class="lbl">To Book — WhatsApp · Fresha · Facebook</span></div>
+    <div class="trust-item"><span class="num">Local</span><span class="lbl">Taibach · Port Talbot</span></div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo anim">
+      <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1000&auto=format&fit=crop" alt="Inside a traditional barber shop">
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">About the Shop</p>
+      <h2>Your barber in Taibach, Port Talbot</h2>
+      <p><strong>Taibach Barbers</strong> is a local barber shop serving Taibach and the wider Port Talbot area in Neath Port Talbot, Wales. It is the kind of shop a community relies on: you come in knowing you will leave looking sharper than when you arrived, whether that is a tidy classic cut for the week ahead, a skin fade that actually blends, or a beard that finally sits the way it should.</p>
+      <p>A good barber shop is about more than the cut itself. It is about the consultation before the clippers come out, the care taken around the edges and neckline, and the honest check in the mirror at the end. That is the standard every appointment here is held to — for regulars who have their usual, and for first-timers still deciding what suits them.</p>
+      <p>Customers have rated the shop <strong>4.7 stars from 112 Google reviews</strong> — a record built one haircut at a time, by people from Taibach, Port Talbot and the surrounding area who keep coming back to the chair.</p>
+      <ul class="check-list">
+        <li>Haircuts, skin fades, beard trims &amp; hot towel shaves</li>
+        <li>Kids' cuts in a relaxed, unhurried chair</li>
+        <li>Rated 4.7 stars from 112 Google reviews</li>
+        <li>Book on WhatsApp, through Fresha, or via Facebook</li>
+        <li>Call or message for prices — straight answers, no surprises</li>
+      </ul>
+      <a class="btn btn-wa" href="https://wa.me/447449561516">💬 Message the Shop</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What We Do</p>
+      <h2>Services at Taibach Barbers</h2>
+      <p>Every service starts with a proper consultation and ends with a proper check in the mirror. Prices are confirmed when you book — simply call or message for prices on any service below.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=800&auto=format&fit=crop" alt="Classic gents haircut being styled">
+        <div class="svc-body">
+          <h3>Gents Haircut</h3>
+          <p>The classic barber haircut, tailored to your head shape, hair type and how you actually wear it day to day. Scissor work, clipper work, or a blend of both — finished and styled so you can recreate it at home.</p>
+          <ul><li>Style &amp; length consultation</li><li>Clipper and scissor work</li><li>Neckline &amp; edge tidy</li><li>Styled finish</li></ul>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=800&auto=format&fit=crop" alt="Skin fade being blended with clippers">
+        <div class="svc-body">
+          <h3>Skin Fade</h3>
+          <p>A seamless fade with no visible lines — high, mid or low, taken down to the skin and blended cleanly into the top. The fade is only finished when it reads smooth from every angle, in every light.</p>
+          <ul><li>High, mid or low fade</li><li>Seamless, line-free blend</li><li>Razor-sharp edges</li><li>Styled top to finish</li></ul>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=800&auto=format&fit=crop" alt="Beard trim and shaping">
+        <div class="svc-body">
+          <h3>Beard Trim</h3>
+          <p>Shape, length and lines brought back under control. Your beard is evened out, the cheek and neck lines are sharpened, and the finish is conditioned — so it looks deliberate, not just grown.</p>
+          <ul><li>Shape &amp; length consultation</li><li>Even length reduction</li><li>Cheek &amp; neckline sharpening</li><li>Oil / balm finish</li></ul>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800&auto=format&fit=crop" alt="Traditional hot towel shave with a straight razor">
+        <div class="svc-body">
+          <h3>Hot Towel Shave</h3>
+          <p>The traditional wet shave, done the old way: hot towels to soften and prepare the skin, a rich lather, a close straight-razor shave, and a cold towel finish. The closest, cleanest shave there is — and half an hour properly switched off.</p>
+          <ul><li>Hot towel skin preparation</li><li>Rich lather &amp; straight razor</li><li>Cold towel close-down</li><li>Soothing balm finish</li></ul>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=800&auto=format&fit=crop" alt="Young customer having a careful haircut">
+        <div class="svc-body">
+          <h3>Kids' Cuts</h3>
+          <p>Patient, unhurried cuts for younger customers — the same neat finish as the gents, with none of the rush. A good first-barber experience matters, and the chair is kept calm and friendly throughout.</p>
+          <ul><li>Relaxed, unhurried appointment</li><li>Style agreed with the parent</li><li>Same neat finish as the gents</li></ul>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=800&auto=format&fit=crop" alt="Barber finishing a cut with detail work">
+        <div class="svc-body">
+          <h3>The Full Works</h3>
+          <p>Combine the services into one full reset — haircut or skin fade, beard trim, and the hot towel finish. Ideal before a wedding, a holiday, a job interview, or whenever the mirror tells you it is time.</p>
+          <ul><li>Cut or fade of your choice</li><li>Beard trim &amp; shaping</li><li>Hot towel finish</li></ul>
+          <span class="tag">Call or message for prices</span>
+        </div>
+      </article>
+    </div>
+    <div class="price-note">
+      <div>
+        <h3>Wondering what it costs?</h3>
+        <p>We keep prices simple and confirmed up front: call or message for prices on any cut, fade, beard trim or shave — you will know exactly where you stand before you sit in the chair.</p>
+      </div>
+      <a class="btn btn-brass" href="https://wa.me/447449561516">Ask for Prices on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES IN DETAIL ================= -->
+<section id="in-detail">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">In Detail</p>
+      <h2>What actually happens in the chair</h2>
+      <p>No mysteries and no rushing. Here is how each of the main services runs, from the moment you sit down to the moment you check the mirror.</p>
+    </div>
+    <div class="detail-row">
+      <h3><span>Step by Step</span>The Haircut</h3>
+      <div>
+        <p>It starts with a conversation: what you want, how your hair grows, and how much styling you realistically do in the morning. The cut is then built with clipper and scissor work matched to your hair type — thick, fine, straight or wavy all behave differently, and the technique follows the hair, not a template.</p>
+        <p>The detail work is where a good cut separates itself: clean edges around the ears, a neckline that sits right, and a fringe that falls where it should. You finish styled, with a clear look at the back and sides before you leave the chair.</p>
+      </div>
+    </div>
+    <div class="detail-row">
+      <h3><span>Step by Step</span>The Skin Fade</h3>
+      <div>
+        <p>First, the height: high, mid or low, chosen against your head shape and the style on top. The barber then works through the grades, blending each one into the next until the transition disappears — checking the blend in the mirror as it develops, because a fade can look right from the front and wrong from the side.</p>
+        <p>Edges are sharpened last, the top is cut and styled to sit with the fade, and the whole thing is checked once more under the shop light. If a line is visible, it is not finished — that is the rule.</p>
+      </div>
+    </div>
+    <div class="detail-row">
+      <h3><span>Step by Step</span>Beard Trim &amp; Hot Towel Shave</h3>
+      <div>
+        <p>For a beard trim, the shape is agreed first — how much length comes off, where the cheek line sits, and how the neckline should run. Length is evened, lines are sharpened, and a hot towel softens everything where needed before the finishing oil or balm goes on.</p>
+        <p>For the full hot towel shave, towels open the pores and soften the bristles, a protective lather is worked up, and the straight razor takes it close in careful passes. A cold towel closes everything down, and balm leaves the skin calm rather than raw.</p>
+      </div>
+    </div>
+    <div class="detail-row">
+      <h3><span>Step by Step</span>Kids' Cuts</h3>
+      <div>
+        <p>Young customers get time, not pressure. The style is agreed with the parent first, the pace stays relaxed, and the cut itself is done to the same standard as any gents cut — tidy edges, even length, and a finish they can wear to school with pride.</p>
+        <p>If it is a first proper barber visit, say so when you book on WhatsApp and the appointment can be kept as calm and straightforward as possible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow on-dark">The Craft</p>
+      <h2>From the barber's chair</h2>
+      <p>Clipper work, scissor work, razor work — the tools and techniques behind every cut, fade, trim and shave at Taibach Barbers.</p>
+    </div>
+    <div class="gal-grid">
+      <figure><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop" alt="Barber at work in the shop"><figcaption>Chair-side craft</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=800&auto=format&fit=crop" alt="Traditional barber shop scene"><figcaption>The traditional way</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?q=80&w=800&auto=format&fit=crop" alt="Detailed clipper work on a haircut"><figcaption>Detail clipper work</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=800&auto=format&fit=crop" alt="Barber styling a finished cut"><figcaption>The styled finish</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=800&auto=format&fit=crop" alt="Barber tools of the trade laid out"><figcaption>Tools of the trade</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=800&auto=format&fit=crop" alt="Close barber work on a gents cut"><figcaption>Close, careful work</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Why Choose Us</p>
+      <h2>Why Port Talbot chooses Taibach Barbers</h2>
+      <p>A 4.7-star rating from 112 Google reviews does not happen by accident. Here is what keeps the chair busy in Taibach.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><span class="icon">⭐</span><h3>Rated by Locals</h3><p>4.7 stars across 112 Google reviews — real ratings from real customers in Taibach, Port Talbot and the surrounding Neath Port Talbot area who trust the shop with their hair.</p></div>
+      <div class="why-card"><span class="icon">✂️</span><h3>Proper Consultations</h3><p>Every appointment starts with a conversation about what you want and what your hair will actually do. No sitting down to a guess — the style is agreed before the first cut is made.</p></div>
+      <div class="why-card"><span class="icon">🪒</span><h3>Traditional Skills</h3><p>Hot towel shaves and straight-razor finishing sit alongside modern skin fades and styling. Old-school craft, current styles — both done to the same high standard.</p></div>
+      <div class="why-card"><span class="icon">📱</span><h3>Booking That Suits You</h3><p>Book the way you prefer: a quick WhatsApp message, through Fresha, or a message on Facebook. Three routes to the same chair — use whichever is easiest for you.</p></div>
+      <div class="why-card"><span class="icon">💷</span><h3>Honest Pricing</h3><p>Call or message for prices and you will get a straight answer before you book. The price is confirmed up front, so there are no surprises at the till.</p></div>
+      <div class="why-card"><span class="icon">🏴󐁧󐁢󐁷󐁥󐁳󐁿</span><h3>Your Local Shop</h3><p>A neighbourhood barber in Taibach, Port Talbot — part of the community it serves. Regulars are known, first-timers are welcomed, and everyone leaves sharper than they arrived.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OCCASIONS ================= -->
+<section class="occasions">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow on-dark">Look Sharp For It</p>
+      <h2>Whatever is coming up, arrive ready</h2>
+      <p>Some haircuts are routine. Some are for a day that matters. Either way, book ahead on WhatsApp and the chair is yours.</p>
+    </div>
+    <div class="occ-grid">
+      <div class="occ"><span class="icon">💼</span><h3>Job Interviews</h3><p>First impressions count. A clean, classic cut and a tidy beard say you have got your act together before you say a single word.</p></div>
+      <div class="occ"><span class="icon">💍</span><h3>Weddings</h3><p>Groom, best man, or guest — get the cut a few days before the big day so it settles in, and the beard shaped for the photos.</p></div>
+      <div class="occ"><span class="icon">✈️</span><h3>Holidays</h3><p>Heading away? Get the fade done before you go — low-maintenance, sun-ready, and sharp in every holiday photo.</p></div>
+      <div class="occ"><span class="icon">📸</span><h3>Photos &amp; Events</h3><p>Family photos, christenings, parties, nights out — if a camera is involved, you will want the edges sharp and the beard in shape.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FIRST VISIT ================= -->
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">First Visit?</p>
+      <h2>How to get the most from your appointment</h2>
+      <p>A little preparation makes a good cut even better. Four simple things regulars at barber shops everywhere swear by — they work just as well for your first visit to Taibach Barbers.</p>
+    </div>
+    <div class="detail-row">
+      <h3><span>Tip One</span>Bring a photo</h3>
+      <div><p>A picture of the style you want is the fastest way to make sure you and your barber are picturing the same haircut. Screenshots are fine — show them at the consultation, and the barber will tell you honestly how the style will work with your hair type and growth pattern, and adjust it where it needs adjusting.</p></div>
+    </div>
+    <div class="detail-row">
+      <h3><span>Tip Two</span>Know your last cut</h3>
+      <div><p>If you liked your last haircut, remembering the grade used on the back and sides — a two into a fade, a scissor cut all over, and so on — gives the barber a head start. If you did not like it, say what bothered you. Both are useful; barbers would always rather know.</p></div>
+    </div>
+    <div class="detail-row">
+      <h3><span>Tip Three</span>Time a fresh fade right</h3>
+      <div><p>A skin fade looks its absolute sharpest in its first week. If the cut is for a wedding, interview, holiday or photos, book a few days before the event rather than the morning of it — the style settles, you get used to it, and there is room for a small adjustment if you want one. Message on WhatsApp to line the date up.</p></div>
+    </div>
+    <div class="detail-row">
+      <h3><span>Tip Four</span>Speak up in the chair</h3>
+      <div><p>The mirror check at the end is not a formality. If you want the fringe shorter, the sides tighter or the beard line lower, say so while you are still in the chair — small adjustments take a minute then, and the whole point is that you leave happy with what you see.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Good To Know</p>
+      <h2>Frequently asked questions</h2>
+      <p>Everything most customers ask before their first visit. Anything else — just message the shop on WhatsApp and ask.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq">
+        <summary>How do I book an appointment?</summary>
+        <div class="faq-body"><p>Three ways: tap any green WhatsApp button on this page (or message <a href="https://wa.me/447449561516">+44 7449 561516</a> directly), book through Fresha, or send the shop a message on Facebook. Tell us what service you would like and when suits you, and we will confirm your appointment.</p></div>
+      </details>
+      <details class="faq">
+        <summary>How much does a haircut cost?</summary>
+        <div class="faq-body"><p>Call or message for prices — prices for haircuts, skin fades, beard trims, hot towel shaves and kids' cuts are confirmed when you get in touch, so you know exactly where you stand before you book. Message <a href="https://wa.me/447449561516">on WhatsApp</a> or call <a href="tel:+447449561516">+44 7449 561516</a>.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What are your opening hours?</summary>
+        <div class="faq-body"><p>Hours can vary, so the safest bet is to message us on WhatsApp or check the shop's Facebook page for today's times before you set off. We will reply as quickly as we can.</p></div>
+      </details>
+      <details class="faq">
+        <summary>Where is Taibach Barbers?</summary>
+        <div class="faq-body"><p>The shop is in Taibach, Port Talbot, in Neath Port Talbot, Wales. If you are coming from elsewhere in Port Talbot or the surrounding area, message us on WhatsApp and we will point you in the right direction.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What is the difference between a haircut and a skin fade?</summary>
+        <div class="faq-body"><p>A standard haircut keeps a more even, natural length through the back and sides, usually with more scissor work. A skin fade is taken down to the skin at the bottom and blended up through the grades — high, mid or low — for a sharper, more graduated look. Not sure which suits you? The consultation at the start of your appointment will sort it.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What happens during a hot towel shave?</summary>
+        <div class="faq-body"><p>Hot towels soften your skin and bristles first, then a rich lather and a straight razor give you the closest possible shave. A cold towel closes the pores afterwards, and a soothing balm finishes the job — clean, smooth and calm.</p></div>
+      </details>
+      <details class="faq">
+        <summary>Do you cut children's hair?</summary>
+        <div class="faq-body"><p>Yes — kids' cuts are available, done patiently and without rushing, to the same neat standard as a gents cut. Mention it is for a child when you book, and feel free to ask about prices on WhatsApp first.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What if I am not sure what style suits me?</summary>
+        <div class="faq-body"><p>That is exactly what the consultation is for. Tell the barber what you like, how your hair behaves and how much styling you do each day, and you will be pointed towards a cut or fade that works with your hair — not against it. You can also bring a photo of a style you like; it always helps.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What if I am not happy with my cut?</summary>
+        <div class="faq-body"><p>Tell us before you leave the shop — we would always rather adjust it there and then so you walk out happy. A 4.7-star rating from 112 Google reviews exists because that is taken seriously, every single time.</p></div>
+      </details>
+      <details class="faq">
+        <summary>Can I call the shop instead of messaging?</summary>
+        <div class="faq-body"><p>Of course — call <a href="tel:+447449561516">+44 7449 561516</a> for prices, bookings and today's availability, or use the same number on WhatsApp if messaging is easier.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKING / CONTACT ================= -->
+<section class="booking" id="book">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Book Your Chair</p>
+      <h2>Booking is simple</h2>
+      <p>No accounts to create and no forms to fight with. Three steps and you are in the chair.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h3>Get in Touch</h3><p>Message the shop on WhatsApp, book through Fresha, or send a message on Facebook — whichever suits you best. WhatsApp is usually quickest.</p></div>
+      <div class="step"><span class="n">2</span><h3>Say What &amp; When</h3><p>Tell us the service — haircut, skin fade, beard trim, hot towel shave, kids' cut, or the full works — and the day and time that suit you. Prices are confirmed at this point too.</p></div>
+      <div class="step"><span class="n">3</span><h3>Turn Up &amp; Sit Back</h3><p>Your appointment is confirmed back to you. Arrive at the shop in Taibach, Port Talbot, take the chair, and leave sharper than you arrived.</p></div>
+    </div>
+    <div class="book-panel">
+      <div class="book-copy">
+        <p class="eyebrow on-dark">Taibach Barbers · Port Talbot</p>
+        <h2>Message now, look sharp next</h2>
+        <p>The fastest way into the chair is a WhatsApp message. Ask about prices, today's availability, or book straight in — it all goes to the same number.</p>
+        <ul class="book-list">
+          <li><strong>WhatsApp / Call</strong>+44 7449 561516</li>
+          <li><strong>Also bookable via</strong>Fresha &amp; Facebook</li>
+          <li><strong>Find us</strong>Taibach, Port Talbot, Neath Port Talbot, Wales</li>
+          <li><strong>Rated</strong>4.7 ★ from 112 Google reviews</li>
+        </ul>
+        <div class="book-ctas">
+          <a class="btn btn-wa" href="https://wa.me/447449561516">💬 Message on WhatsApp</a>
+          <a class="btn btn-call" href="tel:+447449561516" style="background:var(--brass);color:var(--green-950)">📞 Call +44 7449 561516</a>
+        </div>
+        <p style="font-size:.88rem;margin-top:16px;margin-bottom:0;color:#b9c0b4">Booking ahead on WhatsApp is the surest way to get the time you want at busy periods. For today's opening hours, message the shop or check Facebook.</p>
+      </div>
+      <div class="book-photo">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1000&auto=format&fit=crop" alt="Barber finishing a precision haircut at Taibach Barbers">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section style="padding:64px 0">
+  <div class="wrap" style="text-align:center;max-width:720px">
+    <p class="eyebrow">Taibach · Port Talbot · Wales</p>
+    <h2 style="font-size:2rem;margin-bottom:14px">Ready when you are</h2>
+    <p style="color:var(--muted);margin-bottom:28px">A haircut, a fade, a beard tidy or the full hot towel works — one message is all it takes to book your chair at Taibach Barbers. Call or message for prices, and we will take it from there.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:13px;justify-content:center">
+      <a class="btn btn-wa" href="https://wa.me/447449561516">💬 Book on WhatsApp</a>
+      <a class="btn btn-call" href="tel:+447449561516">📞 Call the Shop</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Taibach Barbers</h4>
+        <p>A proper local barber shop in Taibach, Port Talbot, Neath Port Talbot, Wales — haircuts, skin fades, beard trims, hot towel shaves and kids' cuts, rated 4.7 stars from 112 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="foot-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul class="foot-links">
+          <li><a href="https://wa.me/447449561516">WhatsApp: +44 7449 561516</a></li>
+          <li><a href="tel:+447449561516">Call: +44 7449 561516</a></li>
+          <li>Book via Fresha or Facebook</li>
+          <li>Taibach, Port Talbot</li>
+          <li>Neath Port Talbot, Wales</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">© Taibach Barbers, Port Talbot. Demo website — call or message for prices and today's opening hours.<br>Serving Taibach, Port Talbot and the wider Neath Port Talbot area with haircuts, skin fades, beard trims, hot towel shaves and kids' cuts. Book on WhatsApp, through Fresha, or on Facebook — rated 4.7 stars from 112 Google reviews.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447449561516" aria-label="Chat on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
