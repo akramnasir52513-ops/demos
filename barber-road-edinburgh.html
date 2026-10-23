@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barber Road — Edinburgh | Barbers</title>
+<meta name="description" content="Barber Road, Edinburgh barbers offering haircuts, skin fades, beard trims and hot towel shaves. Rated 4.9 from 753 reviews on Google.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--char:#1b1d20;--char2:#26292e;--amber:#f0a51e;--amber2:#ffb92e;--paper:#f4f2ee;--ink:#22252a;--mut:#6b7078;--line:#e2ded4}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.mainnav{position:sticky;top:0;z-index:60;background:var(--char);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 20px;box-shadow:0 3px 14px rgba(0,0,0,.3)}
+.mainnav .brand{color:#fff;font-size:1.1rem;font-weight:800;letter-spacing:.02em;white-space:nowrap;text-transform:uppercase}
+.mainnav .brand span{color:var(--amber)}
+.mainnav .links{display:flex;flex-wrap:wrap;justify-content:flex-end}
+.mainnav .links a{color:#d8d8d8;text-decoration:none;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-left:16px}
+.mainnav .links a:hover{color:var(--amber2)}
+header.hero{background:var(--char);color:#fff;padding:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;max-width:1100px;margin:0 auto}
+.hero-text{padding:58px 30px 54px 20px;text-align:left}
+.hero-text .kicker{display:inline-block;background:var(--amber);color:#191a1c;font-weight:800;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;padding:6px 12px}
+header.hero h1{font-size:3.1rem;font-weight:900;line-height:1.02;letter-spacing:-.01em;margin:18px 0 6px;text-transform:uppercase}
+header.hero h1 span{color:var(--amber)}
+header.hero .town{letter-spacing:.28em;text-transform:uppercase;font-size:.82rem;color:#bdbdbd;font-weight:700}
+header.hero p.tag{max-width:480px;margin-top:18px;color:#e6e6e6;font-size:1.05rem}
+.stars{color:var(--amber);font-size:1.3rem;margin-top:18px;letter-spacing:.2em}
+.stars small{display:block;color:#c9c9c9;font-size:.85rem;letter-spacing:.03em;margin-top:3px}
+.heroimg{height:100%;min-height:420px}
+.cta{display:inline-block;background:var(--amber);color:#191a1c;text-decoration:none;padding:15px 30px;font-size:1rem;font-weight:800;letter-spacing:.03em;margin-top:26px;border-radius:4px;transition:background .25s,transform .25s}
+.cta:hover{background:var(--amber2);transform:translateY(-2px)}
+section{padding:56px 0 10px}
+h2{text-align:left;font-weight:900;font-size:2rem;color:var(--char);text-transform:uppercase;letter-spacing:.01em}
+h2 .accent{color:#c07f00}
+h2+.sub{text-align:left;color:var(--mut);margin:8px 0 32px;max-width:600px;font-size:.97rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:0 0 22px;box-shadow:0 6px 16px rgba(27,29,32,.06)}
+.card .ph{height:175px;overflow:hidden;border-radius:6px 6px 0 0}
+.card .ph img{transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card h3{color:var(--char);font-size:1.2rem;font-weight:800;margin:16px 20px 8px}
+.card p{margin:0 20px;font-size:.95rem;color:var(--mut)}
+.card ul{margin:10px 20px 0;padding-left:18px;color:var(--mut);font-size:.93rem}
+.card ul li{margin:4px 0}
+.card .price-note{margin:14px 20px 0;padding-top:11px;border-top:2px solid var(--amber);color:#9a6400;font-size:.93rem;font-weight:700}
+.why .card{padding:22px 4px 8px;text-align:left;border-top:5px solid var(--char)}
+.why .card h3{font-size:1.12rem}
+.stepnum{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:6px;background:var(--amber);color:#191a1c;font-size:1.35rem;font-weight:900;margin:18px 0 4px}
+.about{background:var(--char2);color:#ececec;margin-top:56px;padding:52px 0}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.about h2{color:#fff;text-align:left}
+.about p{color:#c9c9c9;font-size:.98rem;margin-top:12px}
+.about .big{font-size:2.2rem;color:var(--amber);line-height:1.15;font-weight:900;text-transform:none}
+.hours{background:#fff;border-radius:6px;padding:24px 26px;color:var(--ink)}
+.hours h3{color:var(--char);margin-bottom:10px;font-size:1.12rem;font-weight:800}
+.hours p{color:var(--mut);font-size:.95rem}
+.hours a{color:#9a6400;font-weight:700}
+.reviews{background:var(--amber);margin-top:56px;padding:52px 20px;text-align:center;color:#191a1c}
+.reviews .bignum{font-size:3.6rem;font-weight:900;line-height:1}
+.reviews .rstars{font-size:1.5rem;letter-spacing:.25em;margin:8px 0;color:#191a1c}
+.reviews p{max-width:540px;margin:6px auto 0;font-size:1rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.gallery .g{height:230px;overflow:hidden;border-radius:6px}
+.gallery .g img{transition:transform .6s}
+.gallery .g:hover img{transform:scale(1.08)}
+.faq{max-width:840px;margin:0}
+.faq .qa{background:#fff;border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:4px;padding:17px 20px;margin-bottom:12px;text-align:left}
+.faq .qa h3{font-size:1.05rem;color:var(--char);margin-bottom:5px;font-weight:800}
+.faq .qa p{color:var(--mut);font-size:.95rem}
+.faq .qa a{color:#9a6400;font-weight:700}
+.contact{text-align:left;padding:56px 20px 64px;max-width:1100px;margin:0 auto}
+.contact h2{text-align:left}
+.contact p{color:var(--mut);max-width:520px;margin:8px 0 0;font-size:.97rem}
+.contact .email-big{font-size:1.08rem;color:var(--char);margin-top:14px;word-break:break-all;font-weight:700}
+.contact .email-big a{color:#9a6400}
+.ctaband{background:var(--char);color:#fff;text-align:center;padding:48px 20px 12px;margin-top:10px}
+.ctaband h2{color:#fff;text-align:center}
+.ctaband p{color:#c9c9c9;max-width:540px;margin:8px auto 0}
+footer{background:#101112;color:#a9adb3;text-align:center;padding:24px 16px;font-size:.84rem}
+footer b{color:var(--amber)}
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.heroimg{min-height:260px;height:260px}header.hero h1{font-size:2.2rem}.about .wrap{grid-template-columns:1fr}.mainnav .links a{margin-left:10px;font-size:.7rem}}
+</style>
+</head>
+<body>
+<nav class="mainnav"><div class="brand">Barber <span>Road</span></div><div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></nav>
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="kicker">Edinburgh Barbers</span>
+      <h1>Barber <span>Road</span></h1>
+      <div class="town">Edinburgh &middot; Barbers</div>
+      <p class="tag">No-nonsense barbering in Edinburgh — clean fades, sharp lines and cuts that hold their shape long after you leave the chair.</p>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;<small>Rated 4.9 from 753 reviews on Google</small></div>
+      <a class="cta" href="mailto:barberroadmanagement@gmail.com?subject=Booking%20enquiry">&#9993; Email Us to Book</a>
+    </div>
+    <div class="heroimg"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=70" alt="Barber at work inside Barber Road in Edinburgh"></div>
+  </div>
+</header>
+
+<section class="wrap" id="services">
+  <h2 class="reveal">Our <span class="accent">Services</span></h2>
+  <p class="sub reveal">Straightforward services, done to a high standard. Every cut starts with a quick consultation — tell us what you want, we will make it happen.</p>
+  <div class="cards">
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=70" alt="Haircut being finished with clippers at Barber Road"></div>
+      <h3>Haircuts</h3>
+      <p>Classic cuts, scissor cuts, restyles and tidy-ups — whatever is on your head, we will sort it. Your barber talks through the style first, works through the cut with care, and checks the shape from every side before finishing. You will leave with a cut that sits right and grows out well.</p>
+      <ul>
+        <li>Consultation included with every cut</li>
+        <li>Classic, modern and restyle cuts</li>
+        <li>Finished and styled before you leave</li>
+      </ul>
+      <div class="price-note">Message for prices — ask when you email</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=70" alt="Skin fade with sharp blended sides"></div>
+      <h3>Skin Fades</h3>
+      <p>The fade is our bread and butter. Low, mid or high, we build the blend in stages so the gradient is smooth all the way down to the skin — no steps, no patches, no harsh lines. Finished with crisp edges around the hairline and neck for a fade that looks fresh for longer.</p>
+      <ul>
+        <li>Low, mid and high skin fades</li>
+        <li>Smooth, even blending throughout</li>
+        <li>Crisp edges and clean neckline</li>
+      </ul>
+      <div class="price-note">Message for prices — ask when you email</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=70" alt="Beard trim and hot towel shave in progress"></div>
+      <h3>Beard Trim &amp; Hot Towel Shave</h3>
+      <p>A good beard needs shape, not just length taken off. We sculpt your beard to balance your face, define the cheek and neck lines with a razor, and condition the hair so it looks and feels healthier. The hot towel shave opens the pores first for the closest, smoothest shave possible.</p>
+      <ul>
+        <li>Beard shaped to suit your face</li>
+        <li>Hot towel prep for a closer shave</li>
+        <li>Razor-defined lines and conditioned finish</li>
+      </ul>
+      <div class="price-note">Message for prices — ask when you email</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=70" alt="Complete grooming service at Barber Road Edinburgh"></div>
+      <h3>The Full Works</h3>
+      <p>Everything in one visit: your haircut or fade, a beard trim or hot towel shave, and a full styled finish. It is the full reset — ideal before a wedding, a holiday, a new job, or any week you want to feel completely sharp. Book it once and walk out sorted head to chin.</p>
+      <ul>
+        <li>Any haircut or fade included</li>
+        <li>Beard trim or hot towel shave included</li>
+        <li>Complete styled finish</li>
+      </ul>
+      <div class="price-note">Message for prices — ask when you email</div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="reveal">Why <span class="accent">Barber Road?</span></h2>
+  <p class="sub reveal">Hundreds of Edinburgh customers rate us near-perfect — here is why they keep coming back.</p>
+  <div class="cards why">
+    <div class="card reveal">
+      <h3>4.9 &#9733; from 753 Google Reviews</h3>
+      <p>One of Edinburgh&rsquo;s best-rated barber shops — 753 Google reviews averaging 4.9 stars.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Fade Specialists</h3>
+      <p>Blends are what we are known for. Smooth gradients, sharp edges, zero shortcuts — every time.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Fast, Friendly, No Fuss</h3>
+      <p>A welcoming, walk-in friendly shop where you are looked after properly without the wait-around.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Advice You Can Trust</h3>
+      <p>If a style will not suit your hair, we will tell you — and suggest what will work better instead.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="reveal">How <span class="accent">Booking Works</span></h2>
+  <p class="sub reveal">Booked in three quick steps.</p>
+  <div class="cards">
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">1</span>
+      <h3>Choose Your Service</h3>
+      <p>Have a look at the services above and pick what you need — haircut, fade, beard work or The Full Works.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">2</span>
+      <h3>Email Us</h3>
+      <p>Drop us a line at barberroadmanagement@gmail.com with what you want and when — we will confirm your slot.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">3</span>
+      <h3>Visit the Shop</h3>
+      <p>Head to the shop in Edinburgh at your booked time, take a seat, and leave looking sharp.</p>
+    </div>
+  </div>
+</section>
+
+<div class="about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>About Barber Road</h2>
+      <p class="big">Edinburgh&rsquo;s no-fuss barber shop</p>
+      <p>Barber Road is a local Edinburgh barber shop where the focus is simple: skilled barbers, proper consultations and finishes that last. Regulars come back because they know exactly what they will get — a great cut and a friendly welcome, every visit.</p>
+      <p>The shop has a relaxed, walk-in friendly atmosphere, whether you are in for your usual fade or trying a completely new style. Tell us what you are thinking, and we will give you honest advice and a result you are happy to wear.</p>
+    </div>
+    <div class="hours reveal">
+      <h3>Opening Hours</h3>
+      <p>Opening hours vary — please email us at <a href="mailto:barberroadmanagement@gmail.com">barberroadmanagement@gmail.com</a> for this week&rsquo;s hours and availability.</p>
+      <p style="margin-top:12px">Emailing ahead is the surest way to lock in the time you want.</p>
+    </div>
+  </div>
+</div>
+
+<div class="reviews" id="reviews">
+  <div class="reveal">
+    <div class="bignum">4.9 &#9733;</div>
+    <div class="rstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p><strong>from 753 reviews on Google</strong></p>
+    <p>A huge thank you to everyone who has reviewed us on Google — your feedback keeps us sharp, and we read every single one.</p>
+  </div>
+</div>
+
+<section class="wrap" id="gallery">
+  <h2 class="reveal">The <span class="accent">Gallery</span></h2>
+  <p class="sub reveal">Fresh cuts and clean finishes from the Barber Road chairs.</p>
+  <div class="gallery">
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=70" alt="Barber clippers and tools on the station"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=800&q=70" alt="Client getting a haircut at Barber Road"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?auto=format&fit=crop&w=800&q=70" alt="Close-up clipper work blending a fade"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=800&q=70" alt="Finished sharp hairstyle"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=800&q=70" alt="Barber shop interior with chairs and mirrors"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?auto=format&fit=crop&w=800&q=70" alt="Styling a finished cut in the shop"></div>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <h2 class="reveal">Questions &amp; <span class="accent">Answers</span></h2>
+  <p class="sub reveal">The things people ask us most.</p>
+  <div class="faq">
+    <div class="qa reveal">
+      <h3>How do I book an appointment?</h3>
+      <p>By email — send a message to <a href="mailto:barberroadmanagement@gmail.com">barberroadmanagement@gmail.com</a> with the service you want and a time that suits you, and we will confirm your booking.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>How much do your services cost?</h3>
+      <p>Please message for prices when you email to book — we will confirm the price for your exact service up front, so there are no surprises.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Where is the shop?</h3>
+      <p>We are based in Edinburgh. Email us at barberroadmanagement@gmail.com for directions and we will help you find us easily.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Do I need to book, or can I just walk in?</h3>
+      <p>We are walk-in friendly, but booking by email guarantees your chair — weekends especially can get busy, so it is worth messaging ahead.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>I don&rsquo;t know what style to ask for. What should I do?</h3>
+      <p>Just ask. Bring a photo if you have one, or tell us what you like and dislike about your hair now — your barber will recommend a style that suits your hair type and face shape.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Do you do beard trims and shaves?</h3>
+      <p>Yes — beard trims and hot towel shaves are available on their own, or combined with a cut in The Full Works package.</p>
+    </div>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <h2 class="reveal">Get in Touch</h2>
+  <p class="reveal">Questions, prices or bookings — email is the way to reach us.</p>
+  <p class="email-big reveal">Barber Road &middot; Edinburgh<br><a href="mailto:barberroadmanagement@gmail.com">barberroadmanagement@gmail.com</a></p>
+  <a class="cta reveal" href="mailto:barberroadmanagement@gmail.com?subject=Booking%20enquiry">Message Us</a>
+</div>
+
+<div class="ctaband">
+  <h2 class="reveal">Ready to Look Sharp?</h2>
+  <p class="reveal">One email is all it takes — book your chair at Barber Road today.</p>
+  <a class="cta reveal" href="mailto:barberroadmanagement@gmail.com?subject=Booking%20enquiry">&#9993; Email Us to Book</a>
+</div>
+
+<footer>&copy; Barber Road, Edinburgh &middot; Demo website made by Akram Web Studio</footer>
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
