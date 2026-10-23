@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brow Station | Brow &amp; Lash Studio in Bridlington, East Yorkshire — Brow Shaping, Lamination, HD Brows &amp; Lash Lifts</title>
+<meta name="description" content="Brow Station is a brow and beauty studio in Bridlington, East Yorkshire, rated 4.9 stars from 108 Google reviews. Brow shaping, brow lamination, brow tint, HD brows, lash lifts and lash tints. Book on WhatsApp, Fresha or Facebook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#faf6f0;
+  --cream-2:#f3eadf;
+  --taupe:#8a7360;
+  --taupe-dark:#5d4a3a;
+  --taupe-deep:#3e3128;
+  --rose:#b76e79;
+  --rose-soft:#e9c4bb;
+  --rose-pale:#f7e8e2;
+  --gold:#c39a6b;
+  --ink:#2e2620;
+  --muted:#7a6a5c;
+  --line:#e3d5c6;
+  --white:#ffffff;
+  --shadow:0 18px 40px rgba(62,49,40,.14);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,'Times New Roman',serif;line-height:1.2;color:var(--taupe-deep)}
+h2{font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:600;margin-bottom:.5rem}
+h3{font-size:1.25rem;font-weight:600}
+.wrap{width:min(1160px,92%);margin:0 auto}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;font-weight:600;color:var(--rose);margin-bottom:.6rem}
+.lead{color:var(--muted);max-width:640px}
+section{padding:4.2rem 0}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.6rem;border-radius:999px;font-weight:500;font-size:1rem;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;border:1px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#12291b;box-shadow:0 10px 24px rgba(37,211,102,.35)}
+.btn-wa:hover{background:#1fc25a}
+.btn-call{background:var(--taupe-deep);color:var(--cream)}
+.btn-call:hover{background:var(--taupe-dark)}
+.btn-ghost{background:transparent;border-color:var(--taupe);color:var(--taupe-deep)}
+.btn-ghost:hover{background:var(--rose-pale)}
+/* animations — CSS only, always end fully visible */
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes softZoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.rise{animation:riseIn .9s ease both}
+.rise-1{animation-delay:.08s}.rise-2{animation-delay:.18s}.rise-3{animation-delay:.28s}.rise-4{animation-delay:.4s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+/* top strip */
+.topstrip{background:var(--taupe-deep);color:var(--cream-2);font-size:.86rem;padding:.5rem 0}
+.topstrip .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;justify-content:space-between;align-items:center}
+.topstrip .stars{color:var(--gold);letter-spacing:.15em}
+.topstrip a{font-weight:500;border-bottom:1px dotted var(--rose-soft)}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,240,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+.logo{display:flex;align-items:center;gap:.65rem}
+.logo-mark{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--gold));display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;font-weight:700;box-shadow:var(--shadow)}
+.logo-text{font-family:'Playfair Display',Georgia,serif;font-size:1.45rem;font-weight:700;color:var(--taupe-deep);letter-spacing:.02em}
+.logo-text small{display:block;font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:600}
+.nav-links{display:none;gap:1.6rem;font-size:.98rem;font-weight:500}
+.nav-links a{position:relative;padding:.2rem 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--rose);transition:width .3s ease}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;gap:.55rem;align-items:center}
+.nav-cta .btn{padding:.6rem 1.1rem;font-size:.92rem}
+.nav-cta .btn-call{display:none}
+@media(min-width:860px){.nav-links{display:flex}.nav-cta .btn-call{display:inline-flex}}
+/* hero */
+.hero{position:relative;padding:3.4rem 0 4.4rem;background:linear-gradient(160deg,var(--cream) 55%,var(--rose-pale) 100%);overflow:hidden}
+.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(183,110,121,.16),transparent 65%);top:-160px;right:-120px}
+.hero-grid{display:grid;gap:2.4rem;align-items:center;position:relative}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{font-size:clamp(2.3rem,6vw,3.6rem);font-weight:700;margin-bottom:1rem}
+.hero h1 em{color:var(--rose);font-style:italic}
+.hero p.sub{color:var(--muted);font-size:1.12rem;max-width:520px;margin-bottom:1.6rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.5rem}
+.rating-chip{display:inline-flex;align-items:center;gap:.8rem;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:.7rem 1.1rem;box-shadow:var(--shadow)}
+.rating-chip .big{font-family:'Playfair Display',Georgia,serif;font-size:1.7rem;font-weight:700;color:var(--taupe-deep)}
+.rating-chip .stars{color:var(--gold);letter-spacing:.12em;font-size:1rem}
+.rating-chip .small{font-size:.82rem;color:var(--muted);line-height:1.35}
+.hero-media{position:relative}
+.hero-media .frame{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);border:6px solid var(--white)}
+.hero-media .frame img{width:100%;height:480px;object-fit:cover;animation:softZoom 2.4s ease both}
+.hero-card{position:absolute;left:-14px;bottom:26px;background:var(--white);border-radius:16px;box-shadow:var(--shadow);padding:.95rem 1.2rem;display:flex;gap:.8rem;align-items:center;animation:floatCard 5s ease-in-out infinite;border:1px solid var(--line)}
+.hero-card .ico{width:42px;height:42px;border-radius:50%;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.hero-card strong{display:block;font-size:.98rem;color:var(--taupe-deep)}
+.hero-card span{font-size:.8rem;color:var(--muted)}
+@media(max-width:560px){.hero-media .frame img{height:340px}.hero-card{left:8px}}
+/* trust strip */
+.trust{background:var(--taupe-deep);color:var(--cream-2)}
+.trust .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;padding:1.8rem 0}
+@media(min-width:860px){.trust .wrap{grid-template-columns:repeat(4,1fr)}}
+.trust-item{text-align:center;padding:.4rem .6rem}
+.trust-item .num{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;color:var(--rose-soft);font-weight:700}
+.trust-item .lbl{font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:#cdbfae}
+/* about */
+.about-grid{display:grid;gap:2.4rem;align-items:center}
+@media(min-width:920px){.about-grid{grid-template-columns:.95fr 1.05fr}}
+.about-media{position:relative}
+.about-media img{border-radius:var(--radius);height:440px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about-media::after{content:"";position:absolute;inset:auto -14px -14px auto;width:55%;height:45%;border:2px solid var(--rose-soft);border-radius:var(--radius);z-index:-1}
+.check-list{list-style:none;margin:1.3rem 0;display:grid;gap:.65rem}
+.check-list li{display:flex;gap:.7rem;align-items:flex-start}
+.check-list li::before{content:"✦";color:var(--rose);font-size:.95rem;margin-top:.15rem}
+.about p{color:var(--muted);margin-bottom:1rem}
+/* services */
+.services{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;gap:1.4rem;margin-top:2.2rem}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s ease,box-shadow .3s ease}
+.svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.svc img{height:190px;width:100%;object-fit:cover}
+.svc-body{padding:1.3rem 1.3rem 1.5rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.svc-body p{color:var(--muted);font-size:.97rem}
+.svc-body ul{list-style:none;font-size:.92rem;color:var(--taupe-dark);display:grid;gap:.3rem;margin-top:.2rem}
+.svc-body ul li::before{content:"— ";color:var(--rose)}
+.svc .price-note{margin-top:auto;padding-top:.8rem;font-size:.86rem;letter-spacing:.05em;text-transform:uppercase;color:var(--rose);font-weight:600}
+.svc .book-link{font-weight:500;color:var(--taupe-deep);border-bottom:2px solid var(--rose-soft)}
+/* experience steps */
+.steps{display:grid;gap:1.2rem;margin-top:2.2rem}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem 1.3rem;position:relative}
+.step .n{font-family:'Playfair Display',Georgia,serif;font-size:2.2rem;color:var(--rose-soft);font-weight:700;line-height:1}
+.step h3{margin:.5rem 0 .4rem}
+.step p{color:var(--muted);font-size:.95rem}
+/* gallery */
+.gallery{background:var(--taupe-deep)}
+.gallery h2,.gallery .eyebrow{color:var(--rose-soft)}
+.gallery h2{color:var(--cream)}
+.gallery .lead{color:#cdbfae}
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+@media(min-width:860px){.gal-grid{grid-template-columns:repeat(4,1fr)}}
+.gal{border-radius:14px;overflow:hidden;position:relative}
+.gal img{height:250px;width:100%;object-fit:cover;transition:transform .6s ease}
+.gal:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;background:linear-gradient(transparent,rgba(46,38,32,.75));color:#fff;font-size:.85rem;letter-spacing:.04em}
+/* why us */
+.why-grid{display:grid;gap:1.2rem;margin-top:2.2rem}
+@media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem 1.4rem;transition:transform .3s ease,box-shadow .3s ease}
+.why:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.why .ico{font-size:1.7rem;margin-bottom:.6rem}
+.why p{color:var(--muted);font-size:.96rem;margin-top:.35rem}
+/* booking band */
+.booking{background:linear-gradient(140deg,var(--rose) 0%,var(--taupe) 100%);color:#fff;text-align:center}
+.booking h2{color:#fff}
+.booking p{color:#fbeee9;max-width:560px;margin:0 auto 1.6rem}
+.booking .btn-call{background:#fff;color:var(--taupe-deep)}
+.booking .channels{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center}
+.booking .channel{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:.5rem 1.1rem;font-size:.92rem}
+/* aftercare */
+.care-grid{display:grid;gap:1.2rem;margin-top:2rem}
+@media(min-width:860px){.care-grid{grid-template-columns:repeat(3,1fr)}}
+.care{background:var(--rose-pale);border-radius:var(--radius);padding:1.5rem 1.35rem}
+.care h3{margin-bottom:.45rem}
+.care p{color:var(--taupe-dark);font-size:.95rem}
+/* faq */
+.faq-list{margin-top:2rem;display:grid;gap:.8rem;max-width:820px}
+details{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.05rem 1.3rem}
+details summary{cursor:pointer;font-weight:600;color:var(--taupe-deep);font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";color:var(--rose);font-size:1.4rem;font-weight:400;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:.6rem;font-size:.97rem}
+details a{color:var(--rose);font-weight:500}
+/* contact */
+.contact-grid{display:grid;gap:1.4rem;margin-top:2rem}
+@media(min-width:860px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.contact-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.4rem;text-align:center}
+.contact-card .ico{font-size:1.8rem;margin-bottom:.5rem}
+.contact-card p{color:var(--muted);font-size:.95rem;margin:.4rem 0 1rem}
+/* footer */
+footer{background:var(--taupe-deep);color:#d9cbb9;padding:3.2rem 0 1.6rem}
+.foot-grid{display:grid;gap:2rem}
+@media(min-width:860px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer h3{color:var(--cream);margin-bottom:.8rem;font-size:1.1rem}
+footer ul{list-style:none;display:grid;gap:.45rem;font-size:.95rem}
+footer a:hover{color:var(--rose-soft)}
+.foot-bottom{border-top:1px solid rgba(250,246,240,.15);margin-top:2.2rem;padding-top:1.2rem;font-size:.85rem;color:#b3a28d;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+/* floating whatsapp */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(18,41,27,.35);animation:pulseRing 2.6s infinite}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span><span class="stars">★★★★★</span>&nbsp; Rated <strong>4.9</strong> from <strong>108 Google reviews</strong></span>
+    <span>Brow &amp; lash studio · Bridlington, East Yorkshire</span>
+    <span>Book: <a href="https://wa.me/447588887671">WhatsApp</a> · <a href="tel:+447588887671">+44 7588 887671</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Brow Station home">
+      <span class="logo-mark">B</span>
+      <span class="logo-text">Brow Station<small>Bridlington</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-call" href="tel:+447588887671">Call Us</a>
+      <a class="btn btn-wa" href="https://wa.me/447588887671">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow rise">Brow &amp; Beauty Studio · Bridlington</p>
+      <h1 class="rise rise-1">Beautiful brows &amp; lifted lashes, <em>made for you</em></h1>
+      <p class="sub rise rise-2">Brow Station is Bridlington's brow and beauty studio for shaping, lamination, tinting, HD brows and lash lifts — every treatment designed around your face, your features and your style.</p>
+      <div class="hero-ctas rise rise-3">
+        <a class="btn btn-wa" href="https://wa.me/447588887671">Book on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+447588887671">Call +44 7588 887671</a>
+        <a class="btn btn-ghost" href="#services">View Services</a>
+      </div>
+      <div class="rating-chip rise rise-4">
+        <span class="big">4.9</span>
+        <span>
+          <span class="stars">★★★★★</span><br>
+          <span class="small">from 108 Google reviews<br>for Brow Station, Bridlington</span>
+        </span>
+      </div>
+    </div>
+    <div class="hero-media rise rise-2">
+      <div class="frame">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Beauty treatment being applied at a brow and beauty studio" loading="eager">
+      </div>
+      <div class="hero-card">
+        <span class="ico">✿</span>
+        <span><strong>Brows &amp; lashes, done properly</strong><span>Shaping · Lamination · HD Brows · Lash Lift</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><div class="num">4.9 ★</div><div class="lbl">Google Rating</div></div>
+    <div class="trust-item"><div class="num">108</div><div class="lbl">Client Reviews</div></div>
+    <div class="trust-item"><div class="num">6</div><div class="lbl">Brow &amp; Lash Treatments</div></div>
+    <div class="trust-item"><div class="num">3 Ways</div><div class="lbl">To Book — WhatsApp, Fresha, Facebook</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1200&auto=format&fit=crop" alt="Natural beauty portrait showing groomed brows and lashes" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow">About Brow Station</p>
+      <h2>A brow &amp; beauty studio in the heart of Bridlington</h2>
+      <p>Brow Station is a brow and beauty studio based in Bridlington, East Yorkshire, specialising in the treatments that frame your face — brows and lashes. Rather than a one-shape-suits-all approach, every appointment starts with a look at your natural brow shape, your features and the finish you want to achieve.</p>
+      <p>From a tidy-up and shape to full brow lamination and HD brows, and from lash tints to lash lifts that open up your eyes, each treatment is carried out carefully and finished with honest aftercare advice so you can keep the look going at home. It's this attention to detail that has earned Brow Station a 4.9-star rating from 108 Google reviews.</p>
+      <ul class="check-list">
+        <li>Brow shaping, lamination, tinting and HD brows</li>
+        <li>Lash lifts and lash tints for a wide-awake look</li>
+        <li>Treatments designed around your natural features</li>
+        <li>Patch tests and consultations before tinting treatments</li>
+        <li>Easy booking on WhatsApp, Fresha or Facebook</li>
+        <li>Based in Bridlington, East Yorkshire</li>
+      </ul>
+      <a class="btn btn-wa" href="https://wa.me/447588887671">Message Us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="wrap">
+    <p class="eyebrow">What We Do</p>
+    <h2>Brow &amp; lash services</h2>
+    <p class="lead">Six specialist treatments for brows and lashes. Not sure which one is right for you? Send us a message and we'll happily talk you through the options.</p>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop" alt="Beauty studio treatment in progress" loading="lazy">
+        <div class="svc-body">
+          <h3>Brow Shaping</h3>
+          <p>The foundation of great brows. Your natural shape is assessed first, then your brows are tidied and sculpted to suit your face — removing stray hairs, defining the arch and balancing both sides for a clean, polished finish.</p>
+          <ul>
+            <li>Shape designed for your face</li>
+            <li>Tidy, define &amp; balance</li>
+            <li>Perfect maintenance treatment</li>
+          </ul>
+          <p class="price-note">Call or message for prices</p>
+          <a class="book-link" href="https://wa.me/447588887671">Book brow shaping →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=1200&auto=format&fit=crop" alt="Close-up of full, brushed-up laminated brows look" loading="lazy">
+        <div class="svc-body">
+          <h3>Brow Lamination</h3>
+          <p>The treatment behind the full, fluffy brow look. Lamination relaxes and re-sets your brow hairs in a lifted, brushed-up direction, filling gaps and giving you a fuller, more uniform shape that stays in place day after day.</p>
+          <ul>
+            <li>Fuller, fluffier-looking brows</li>
+            <li>Fills gaps &amp; tames unruly hairs</li>
+            <li>Results typically last 4–6 weeks</li>
+          </ul>
+          <p class="price-note">Call or message for prices</p>
+          <a class="book-link" href="https://wa.me/447588887671">Book lamination →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200&auto=format&fit=crop" alt="Makeup and tint colours in a beauty studio" loading="lazy">
+        <div class="svc-body">
+          <h3>Brow Tint</h3>
+          <p>A tint adds depth and definition by colouring the brow hairs — including the fine, lighter hairs a shape alone can't show. The result is brows that look fuller and more defined, matched to a shade that suits your colouring.</p>
+          <ul>
+            <li>Deeper colour &amp; definition</li>
+            <li>Shade matched to you</li>
+            <li>Pairs perfectly with a shape</li>
+          </ul>
+          <p class="price-note">Call or message for prices</p>
+          <a class="book-link" href="https://wa.me/447588887671">Book a brow tint →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop" alt="Detailed beauty work for a defined HD brows finish" loading="lazy">
+        <div class="svc-body">
+          <h3>HD Brows</h3>
+          <p>A bespoke, multi-step brow treatment that combines custom tinting, shaping and finishing for a high-definition result. Your brows are designed from scratch — measured, coloured and styled to create your most defined brow look.</p>
+          <ul>
+            <li>Fully bespoke brow design</li>
+            <li>Tint, shape &amp; finish combined</li>
+            <li>Your most defined brow look</li>
+          </ul>
+          <p class="price-note">Call or message for prices</p>
+          <a class="book-link" href="https://wa.me/447588887671">Book HD brows →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" alt="Beauty tools and products used for lash treatments" loading="lazy">
+        <div class="svc-body">
+          <h3>Lash Lift</h3>
+          <p>A lash lift curls your natural lashes from the root, opening up your eyes and making lashes look longer and more lifted — no extensions and no daily curling. Add a tint for an even more defined, mascara-like finish.</p>
+          <ul>
+            <li>Lifts &amp; curls natural lashes</li>
+            <li>Eyes look brighter &amp; more open</li>
+            <li>Low-maintenance results</li>
+          </ul>
+          <p class="price-note">Call or message for prices</p>
+          <a class="book-link" href="https://wa.me/447588887671">Book a lash lift →</a>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Beauty treatment close-up for lash tinting" loading="lazy">
+        <div class="svc-body">
+          <h3>Lash Tint</h3>
+          <p>A lash tint darkens your natural lashes from root to tip, giving you definition that doesn't wash off — ideal for holidays, swimming, the gym, or simply waking up looking more polished without reaching for mascara.</p>
+          <ul>
+            <li>Darker, more defined lashes</li>
+            <li>Great for holidays &amp; sport</li>
+            <li>Perfect partner to a lash lift</li>
+          </ul>
+          <p class="price-note">Call or message for prices</p>
+          <a class="book-link" href="https://wa.me/447588887671">Book a lash tint →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow">Your Appointment</p>
+    <h2>The Brow Station experience</h2>
+    <p class="lead">Every appointment follows the same careful process, so you always know what to expect.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h3>Consultation</h3>
+        <p>We talk through the look you want, assess your natural brows and lashes, and agree the right treatment and shade for you. A patch test is arranged before tinting and lamination treatments.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h3>Design</h3>
+        <p>Your brows are mapped and designed around your bone structure and features — no templates, no one-size-fits-all shapes. You approve the plan before we begin.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h3>Treatment</h3>
+        <p>Relax while your treatment is carried out step by step — shaping, tinting, laminating or lifting — with the finish checked from every angle before you're done.</p>
+      </div>
+      <div class="step">
+        <div class="n">04</div>
+        <h3>Aftercare</h3>
+        <p>You leave with clear, simple aftercare advice so your brows and lashes stay looking their best for as long as possible between appointments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="wrap">
+    <p class="eyebrow">The Look</p>
+    <h2>Brows &amp; lashes inspiration</h2>
+    <p class="lead">The finishes our clients love — full laminated brows, defined HD shapes and lifted, tinted lashes.</p>
+    <div class="gal-grid">
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1200&auto=format&fit=crop" alt="Portrait with natural, groomed brows" loading="lazy">
+        <figcaption>Natural &amp; groomed</figcaption>
+      </figure>
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=1200&auto=format&fit=crop" alt="Portrait with defined brows and lashes" loading="lazy">
+        <figcaption>Defined &amp; polished</figcaption>
+      </figure>
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1200&auto=format&fit=crop" alt="Portrait with soft glam brow look" loading="lazy">
+        <figcaption>Soft glam finish</figcaption>
+      </figure>
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1200&auto=format&fit=crop" alt="Portrait with full brows and lifted lashes" loading="lazy">
+        <figcaption>Full &amp; fluffy</figcaption>
+      </figure>
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop" alt="Smiling portrait with tidy shaped brows" loading="lazy">
+        <figcaption>Tidy &amp; shaped</figcaption>
+      </figure>
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop" alt="Portrait with bold defined brows" loading="lazy">
+        <figcaption>Bold &amp; defined</figcaption>
+      </figure>
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop" alt="Relaxing beauty treatment being carried out" loading="lazy">
+        <figcaption>In the studio</figcaption>
+      </figure>
+      <figure class="gal">
+        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1200&auto=format&fit=crop" alt="Beauty and skincare products in the studio" loading="lazy">
+        <figcaption>Studio essentials</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="wrap">
+    <p class="eyebrow">Why Brow Station</p>
+    <h2>Why clients choose Brow Station</h2>
+    <p class="lead">Rated 4.9 stars from 108 Google reviews — here's what sits behind the rating.</p>
+    <div class="why-grid">
+      <div class="why">
+        <div class="ico">★</div>
+        <h3>Rated 4.9 by clients</h3>
+        <p>Brow Station holds a 4.9-star rating from 108 Google reviews — real feedback from real clients in Bridlington and beyond.</p>
+      </div>
+      <div class="why">
+        <div class="ico">✿</div>
+        <h3>Designed for your face</h3>
+        <p>No stencils and no copy-paste shapes. Your brow design starts with your own features, bone structure and natural growth.</p>
+      </div>
+      <div class="why">
+        <div class="ico">✧</div>
+        <h3>Brow &amp; lash specialists</h3>
+        <p>Brows and lashes are the focus here — shaping, lamination, tinting, HD brows and lash lifts are what we do, day in, day out.</p>
+      </div>
+      <div class="why">
+        <div class="ico">❀</div>
+        <h3>Patch tests first</h3>
+        <p>Your safety comes before any treatment. Patch tests are arranged ahead of tinting and lamination appointments where needed.</p>
+      </div>
+      <div class="why">
+        <div class="ico">✆</div>
+        <h3>Book your way</h3>
+        <p>Message on WhatsApp, book through Fresha, or get in touch via Facebook — whichever is easiest for you.</p>
+      </div>
+      <div class="why">
+        <div class="ico">♥</div>
+        <h3>Honest aftercare advice</h3>
+        <p>You'll always leave knowing how to look after your brows and lashes, so your results last as long as they should.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING BAND -->
+<section class="booking">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#f7dcd4">Ready When You Are</p>
+    <h2>Book your brow or lash appointment</h2>
+    <p>The quickest way to book is a WhatsApp message — tell us which treatment you'd like and we'll confirm your appointment and any patch test you need.</p>
+    <div class="channels">
+      <a class="btn btn-wa" href="https://wa.me/447588887671">WhatsApp Us</a>
+      <a class="btn btn-call" href="tel:+447588887671">Call +44 7588 887671</a>
+    </div>
+    <div class="channels" style="margin-top:1.2rem">
+      <span class="channel">Also booking via Fresha</span>
+      <span class="channel">Also on Facebook</span>
+      <span class="channel">Bridlington, East Yorkshire</span>
+    </div>
+  </div>
+</section>
+
+<!-- AFTERCARE -->
+<section id="aftercare">
+  <div class="wrap">
+    <p class="eyebrow">Looking After Your Results</p>
+    <h2>Simple aftercare tips</h2>
+    <p class="lead">A little care goes a long way. These general tips help most clients get the best from their treatments.</p>
+    <div class="care-grid">
+      <div class="care">
+        <h3>After brow lamination</h3>
+        <p>Keep your brows dry and avoid steam, saunas and heavy workouts for the first 24 hours. After that, brush them into place daily and condition them regularly to keep the hairs soft and healthy.</p>
+      </div>
+      <div class="care">
+        <h3>After a lash lift</h3>
+        <p>Keep lashes dry for the first 24 hours and avoid rubbing your eyes. Sleep on your back if you can on the first night, and skip waterproof mascara, which needs harsher removal.</p>
+      </div>
+      <div class="care">
+        <h3>Between appointments</h3>
+        <p>Resist over-plucking between visits — leaving regrowth alone gives us more to work with at your next shape. Tint and lift results fade gradually, so booking your next appointment in good time keeps the look continuous.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AT A GLANCE -->
+<section id="glance" style="padding-top:1rem">
+  <div class="wrap">
+    <p class="eyebrow">Compare Treatments</p>
+    <h2>Brows &amp; lashes at a glance</h2>
+    <p class="lead">A quick guide to what each treatment does — and who it suits best.</p>
+    <div class="care-grid">
+      <div class="care">
+        <h3>For tidy, natural brows</h3>
+        <p>Choose <strong>brow shaping</strong>, with a <strong>brow tint</strong> if your hairs are fair or sparse-looking. Together they clean up the shape and add the colour and depth that make brows look naturally fuller — the ideal regular maintenance pairing.</p>
+      </div>
+      <div class="care">
+        <h3>For full, fluffy brows</h3>
+        <p>Choose <strong>brow lamination</strong>. It's the treatment to pick if your brows are unruly, grow in different directions, have gaps, or simply won't hold a brushed-up style with gel alone. Add a tint for maximum definition.</p>
+      </div>
+      <div class="care">
+        <h3>For maximum definition</h3>
+        <p>Choose <strong>HD brows</strong> for brows and a <strong>lash lift with tint</strong> for lashes. This is the full before-an-event combination — brows designed, coloured and styled, with lashes lifted and darkened for a complete, polished look.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.6rem;color:var(--muted);max-width:720px">Still deciding? That's exactly what the consultation is for. Message us on WhatsApp with the look you're after and we'll point you to the right treatment — there's no obligation to book.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:1rem">
+  <div class="wrap">
+    <p class="eyebrow">Good To Know</p>
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp — message us on <a href="https://wa.me/447588887671">+44 7588 887671</a> with the treatment you'd like. You can also book via Fresha or message us on Facebook, or simply call us on <a href="tel:+447588887671">+44 7588 887671</a>.</p>
+      </details>
+      <details>
+        <summary>How much do treatments cost?</summary>
+        <p>Please call or message us for current prices — send a WhatsApp message to <a href="https://wa.me/447588887671">+44 7588 887671</a> and we'll confirm the price for the treatment you'd like before you book.</p>
+      </details>
+      <details>
+        <summary>Do I need a patch test?</summary>
+        <p>A patch test is usually needed before tinting and lamination treatments, especially if it's your first time or you haven't had the treatment for a while. When you book, we'll let you know if you need one and arrange it with you.</p>
+      </details>
+      <details>
+        <summary>What's the difference between brow shaping, lamination and HD brows?</summary>
+        <p>Brow shaping tidies and sculpts your natural brows. Lamination re-sets the hairs in a lifted direction for a fuller, fluffier look. HD brows is a bespoke multi-step treatment combining custom tinting, shaping and styling for the most defined finish.</p>
+      </details>
+      <details>
+        <summary>How long does brow lamination last?</summary>
+        <p>Results typically last around 4–6 weeks, depending on your natural hair growth cycle and how well the aftercare advice is followed. Keeping brows conditioned helps them stay looking their best.</p>
+      </details>
+      <details>
+        <summary>How long does a lash lift last?</summary>
+        <p>A lash lift typically lasts around 6–8 weeks as your natural lashes grow and shed. Adding a lash tint at the same appointment gives extra definition for the whole of that period.</p>
+      </details>
+      <details>
+        <summary>Can I wear makeup after my treatment?</summary>
+        <p>It's best to keep the treated area clean and dry for the first 24 hours after lamination, tinting and lash lifts. After that, you can return to your normal makeup routine — many clients find they need far less.</p>
+      </details>
+      <details>
+        <summary>I'm not sure which treatment I need — can you advise?</summary>
+        <p>Of course. Send us a WhatsApp message describing the look you'd like — or even a photo of your current brows — and we'll recommend the treatment that will get you there.</p>
+      </details>
+      <details>
+        <summary>Where is Brow Station?</summary>
+        <p>Brow Station is based in Bridlington, East Yorkshire. Message us on WhatsApp and we'll happily share directions and help you plan your visit.</p>
+      </details>
+      <details>
+        <summary>Can I book through Fresha?</summary>
+        <p>Yes — as well as WhatsApp and Facebook, Brow Station takes bookings via Fresha. Choose whichever way suits you best.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / BOOK -->
+<section id="book" style="padding-top:1rem">
+  <div class="wrap">
+    <p class="eyebrow">Get In Touch</p>
+    <h2>Book or ask a question</h2>
+    <p class="lead">Three easy ways to reach Brow Station in Bridlington.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="ico">💬</div>
+        <h3>WhatsApp</h3>
+        <p>The fastest way to book or ask about a treatment — we can also advise on patch tests.</p>
+        <a class="btn btn-wa" href="https://wa.me/447588887671">Message Us</a>
+      </div>
+      <div class="contact-card">
+        <div class="ico">✆</div>
+        <h3>Call Us</h3>
+        <p>Prefer to talk? Call Brow Station and ask about prices, treatments or appointments.</p>
+        <a class="btn btn-call" href="tel:+447588887671">+44 7588 887671</a>
+      </div>
+      <div class="contact-card">
+        <div class="ico">✿</div>
+        <h3>Fresha &amp; Facebook</h3>
+        <p>You can also book through Fresha or find Brow Station on Facebook and message us there.</p>
+        <a class="btn btn-ghost" href="https://wa.me/447588887671">Start With WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Brow Station</h3>
+        <p style="font-size:.95rem;max-width:340px">A brow and beauty studio in Bridlington, East Yorkshire — rated 4.9 stars from 108 Google reviews. Brow shaping, lamination, tinting, HD brows, lash lifts and lash tints.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#services">Brow Shaping</a></li>
+          <li><a href="#services">Brow Lamination</a></li>
+          <li><a href="#services">Brow Tint</a></li>
+          <li><a href="#services">HD Brows</a></li>
+          <li><a href="#services">Lash Lift</a></li>
+          <li><a href="#services">Lash Tint</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/447588887671">+44 7588 887671</a></li>
+          <li>Call: <a href="tel:+447588887671">+44 7588 887671</a></li>
+          <li>Bookings via Fresha &amp; Facebook</li>
+          <li>Bridlington, East Yorkshire</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Brow Station, Bridlington. All rights reserved.</span>
+      <span>Demo website — call or message for prices.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447588887671" aria-label="Chat with Brow Station on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.4 7L4.7 29l7.3-1.6c1.2.7 2.6 1 4 1 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-3.8.8.8-3.6-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-3.9 9.8-8.5 9.8zm5.4-7.3c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
