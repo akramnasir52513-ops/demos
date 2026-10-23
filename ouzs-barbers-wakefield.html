@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouz's Barberz — Wakefield | Skin Fades, Haircuts & Beard Trims</title>
+<meta name="description" content="Ouz's Barberz, 11 Wood St, Wakefield. Skin fades, haircuts and beard trims. Rated 4.4 from 90 reviews on Google. WhatsApp 07848 942006.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--black:#101012;--coal:#1a1a1e;--panel:#222228;--red:#d92323;--red2:#ff4040;--paper:#f4f2ee;--mut:#a7a49c;--line:#33333b;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Arial,sans-serif;background:var(--paper);color:var(--black);line-height:1.55}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--red);color:#fff;text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:9px 12px}
+.mainnav{position:sticky;top:0;z-index:60;background:var(--black);display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 20px;border-bottom:3px solid var(--red)}
+.mainnav .brand{color:#fff;font-size:1.15rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.mainnav .brand span{color:var(--red2)}
+.mainnav .links{display:flex;flex-wrap:wrap;justify-content:flex-end}
+.mainnav .links a{color:#e8e6e1;text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-left:16px}
+.mainnav .links a:hover{color:var(--red2)}
+header.hero{background:var(--black);color:#fff;padding:54px 20px 0;overflow:hidden;position:relative}
+header.hero:before{content:"";position:absolute;top:0;right:0;width:14px;height:100%;background:repeating-linear-gradient(45deg,var(--red) 0 14px,#fff 14px 28px,var(--black) 28px 42px)}
+.hero-inner{max-width:1080px;margin:0 auto}
+.kicker{color:var(--red2);font-weight:900;letter-spacing:.3em;text-transform:uppercase;font-size:.8rem}
+header.hero h1{font-size:3.4rem;font-weight:900;line-height:.98;text-transform:uppercase;letter-spacing:.01em;margin:10px 0 6px}
+header.hero h1 span{color:var(--red);-webkit-text-stroke:1px var(--red2)}
+header.hero .town{letter-spacing:.28em;text-transform:uppercase;font-size:.82rem;color:#cfccc6;font-weight:700}
+header.hero p.tag{max-width:520px;color:#e8e6e1;font-size:1.05rem;margin-top:16px}
+.stars{color:#f2c14e;font-size:1.2rem;margin-top:16px;letter-spacing:.2em}
+.stars small{display:block;color:#cfccc6;font-size:.8rem;letter-spacing:.04em;margin-top:3px;font-weight:700}
+.heroimg{max-width:900px;margin:32px 0 0;height:350px;border-top:6px solid var(--red);animation:slidein 1s ease both}
+@keyframes slidein{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:none}}
+.cta{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:14px 30px;font-size:1rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:22px 0 36px;transition:background .25s,transform .25s}
+.cta:hover{background:var(--red2);transform:translateY(-2px)}
+.cta.wa{background:var(--wa);color:#06351a}
+.cta.wa:hover{background:#3be07a}
+section{padding:54px 0 10px}
+h2{font-size:2.1rem;font-weight:900;text-transform:uppercase;letter-spacing:.02em;color:var(--black)}
+h2 .accent{color:var(--red)}
+h2+.sub{color:#6f6c65;margin:6px 0 30px;max-width:560px;font-size:.97rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #e2ded6;border-bottom:5px solid var(--black);padding:0 0 20px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-4px);border-bottom-color:var(--red)}
+.card .ph{height:175px;overflow:hidden}
+.card .ph img{transition:transform .5s}
+.card:hover .ph img{transform:scale(1.07)}
+.card h3{font-size:1.18rem;font-weight:900;text-transform:uppercase;letter-spacing:.03em;margin:16px 20px 8px;color:var(--black)}
+.card p{margin:0 20px;font-size:.94rem;color:#55534e}
+.card .price-note{margin:12px 20px 0;padding-top:10px;border-top:2px solid var(--red);color:var(--red);font-size:.92rem;font-weight:700}
+.card ul{margin:10px 20px 0;padding-left:18px;color:#55534e;font-size:.92rem}
+.card ul li{margin:3px 0}
+.dark{background:var(--black);color:#f0eee9;margin-top:54px;padding:48px 0}
+.dark h2{color:#fff}
+.dark h2 .accent{color:var(--red2)}
+.dark .sub{color:var(--mut)}
+.dark .card{background:var(--panel);border-color:var(--line);border-bottom-color:var(--red)}
+.dark .card h3{color:#fff}
+.dark .card p,.dark .card ul{color:#c9c6bf}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.aboutgrid p{color:#d8d5cf;font-size:.98rem;margin-top:10px}
+.aboutgrid .big{font-size:2.3rem;font-weight:900;color:var(--red2);line-height:1.1;text-transform:uppercase}
+.hours{background:#fff;color:var(--black);padding:22px 26px;border-top:6px solid var(--red)}
+.hours h3{margin-bottom:10px;font-size:1.1rem;font-weight:900;text-transform:uppercase}
+.hours p{color:#55534e;font-size:.94rem;margin-top:0}
+.rateband{background:var(--red);color:#fff;text-align:center;padding:42px 20px;margin-top:54px}
+.rateband .bigstars{font-size:2rem;letter-spacing:.25em}
+.rateband .score{font-size:2.8rem;font-weight:900;line-height:1.15}
+.rateband p{max-width:540px;margin:6px auto 0;font-size:.98rem;color:#ffe3e3}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.gallery .g{height:230px;overflow:hidden;border:3px solid var(--black)}
+.gallery .g img{transition:transform .6s}
+.gallery .g:hover img{transform:scale(1.09)}
+.note{max-width:760px;margin:26px 0 0;background:#fff;border:1px solid #e2ded6;border-left:6px solid var(--red);padding:16px 20px;font-size:.94rem}
+.stepnum{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;background:var(--red);color:#fff;font-size:1.3rem;font-weight:900;margin:16px 0 2px}
+.faq{max-width:820px}
+.faq .qa{background:#fff;border:1px solid #e2ded6;border-left:6px solid var(--black);padding:16px 20px;margin-bottom:12px}
+.faq .qa:hover{border-left-color:var(--red)}
+.faq .qa h3{font-size:1.05rem;font-weight:800;margin-bottom:5px}
+.faq .qa p{color:#55534e;font-size:.94rem}
+.contact{padding:54px 20px 66px}
+.contact p.lead{color:#55534e;max-width:500px;font-size:.97rem;margin-top:6px}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:920px;margin:26px 0 0;text-align:left}
+.cbox{background:#fff;border:1px solid #e2ded6;border-top:6px solid var(--black);padding:22px 26px}
+.cbox h3{margin-bottom:10px;font-size:1.1rem;font-weight:900;text-transform:uppercase}
+.cbox p{color:#55534e;font-size:.94rem;margin:0 0 8px}
+.cbox a{color:var(--red);font-weight:700}
+.ctaband{background:var(--black);color:#fff;text-align:center;padding:46px 20px 12px;margin-top:54px}
+.ctaband h2{color:#fff;text-align:center}
+.ctaband p{color:#c9c6bf;max-width:520px;margin:8px auto 0}
+footer{background:var(--black);color:#9d9a93;text-align:center;padding:22px 16px;font-size:.82rem;border-top:3px solid var(--red)}
+footer b{color:#fff;font-weight:700}
+.wafloat{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;font-size:1.6rem;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:50;animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(max-width:700px){.cgrid,.aboutgrid{grid-template-columns:1fr}.mainnav .links a{margin-left:10px;font-size:.7rem}header.hero h1{font-size:2.3rem}.heroimg{height:240px}h2{text-align:left}}
+</style>
+</head>
+<body>
+<div class="topbar">11 Wood St · Wakefield</div>
+<nav class="mainnav"><div class="brand">Ouz's <span>Barberz</span></div><div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></nav>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Wakefield City Centre</div>
+    <h1>Ouz's<br><span>Barberz</span></h1>
+    <div class="town">Skin Fades · Haircuts · Beards</div>
+    <p class="tag">Fresh fades, clean cuts and sharp beards on Wood St, Wakefield. Message us on WhatsApp, grab your slot, walk out looking the part.</p>
+    <div class="stars">★★★★☆<small>Rated 4.4 from 90 reviews on Google</small></div>
+    <a class="cta wa" href="https://wa.me/447848942006?text=Hi%20Ouz%27s%20Barberz%2C%20I%27d%20like%20to%20book%20a%20haircut">💬 Book on WhatsApp — 07848 942006</a>
+    <div class="heroimg"><img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?auto=format&fit=crop&w=1200&q=70" alt="Barber at work at Ouz's Barberz, Wakefield"></div>
+  </div>
+</header>
+
+<section class="wrap" id="services">
+  <h2 class="reveal">What We <span class="accent">Do</span></h2>
+  <p class="sub reveal">Straightforward barbering, done properly. Message us on WhatsApp to book any service below.</p>
+  <div class="cards">
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=900&q=70" alt="Skin fade being cut at Ouz's Barberz Wakefield"></div>
+      <h3>Skin Fades</h3>
+      <p>Our most asked-for cut. We grade the fade properly — smooth blend, no harsh lines — and finish the edges crisp so it looks fresh for longer and grows out clean. High, mid or low, tell us how you like it and we'll match it.</p>
+      <ul>
+        <li>High, mid &amp; low skin fades</li>
+        <li>Smooth blends, crisp edges</li>
+        <li>Taper fades too — just ask</li>
+      </ul>
+      <div class="price-note">Message for prices — 07848 942006</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=900&q=70" alt="Haircut and styling at Ouz's Barberz"></div>
+      <h3>Haircuts &amp; Restyles</h3>
+      <p>Keeping your usual style tidy, or going for something completely new? Every cut starts with a quick chat about what you want. We cut it properly, check the shape all round, and style it finished — so you leave knowing how to wear it.</p>
+      <ul>
+        <li>Classic cuts &amp; modern styles</li>
+        <li>Full restyles welcome</li>
+        <li>Styled and finished before you leave</li>
+      </ul>
+      <div class="price-note">Message for prices — 07848 942006</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=900&q=70" alt="Beard trim and shape at Ouz's Barberz Wakefield"></div>
+      <h3>Beard Trim &amp; Shape</h3>
+      <p>A beard that's looked after looks the part. We trim it back, shape it to suit your face and clean up the lines — cheeks and neck finished sharp — so it looks intentional, not overgrown.</p>
+      <ul>
+        <li>Trim, shape &amp; tidy</li>
+        <li>Sharp cheek &amp; neck lines</li>
+        <li>Add it to any haircut</li>
+      </ul>
+      <div class="price-note">Message for prices — 07848 942006</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=900&q=70" alt="Detailed barbering at Ouz's Barberz"></div>
+      <h3>Kids &amp; Lads' Cuts</h3>
+      <p>Young lads welcome in the chair. Patient, friendly cuts for kids and teens — from first tidy-ups to the same fades and styles as the older lads. Message us first and we'll find a slot that suits.</p>
+      <ul>
+        <li>Kids &amp; teen haircuts</li>
+        <li>Patient, friendly chair</li>
+        <li>Book ahead on WhatsApp</li>
+      </ul>
+      <div class="price-note">Message for prices — 07848 942006</div>
+    </div>
+  </div>
+  <div class="note reveal"><b>Please note:</b> we don't publish a price list online — prices depend on the service and the time in the chair. Message us on WhatsApp, tell us what you'd like, and we'll confirm the price before you book.</div>
+</section>
+
+<div class="dark" id="about">
+  <div class="wrap">
+    <div class="aboutgrid">
+      <div class="reveal">
+        <h2>About <span class="accent">Ouz's</span></h2>
+        <p class="big">4.4 ★ from 90 Google reviews</p>
+        <p>Ouz's Barberz is on Wood St, right in the centre of Wakefield — a straight-talking local barber shop for fades, cuts and beards, without the fuss.</p>
+        <p>Whether it's your regular trim or a full restyle, you'll get an honest chat about what suits you, proper time in the chair, and a finish you can keep up yourself.</p>
+      </div>
+      <div class="hours reveal">
+        <h3>Opening Hours</h3>
+        <p>Message us on WhatsApp for this week's hours and the latest availability — we reply as soon as we can during the day.</p>
+        <p style="margin-top:12px"><b>Ouz's Barberz</b><br>11 Wood St, Wakefield<br>WhatsApp 07848 942006</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="wrap">
+  <h2 class="reveal">Why <span class="accent">Ouz's</span></h2>
+  <p class="sub reveal">What you get when you sit in our chair.</p>
+  <div class="cards">
+    <div class="card reveal">
+      <h3>4.4 ★ From 90 Google Reviews</h3>
+      <p>Rated by the people of Wakefield who actually get their hair cut here — 90 Google reviews and counting.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Fades Done Properly</h3>
+      <p>The blend is the whole point. We take the time to grade it right — no harsh lines, no rushed edges.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Book on WhatsApp</h3>
+      <p>No ringing up and hoping. Message 07848 942006 any time, tell us what you need, and we'll confirm your slot.</p>
+    </div>
+    <div class="card reveal">
+      <h3>City Centre, Wood St</h3>
+      <p>Find us at 11 Wood St, Wakefield — easy to get to whether you're in town for work, shopping or a night out.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="reveal">Booking Is <span class="accent">Easy</span></h2>
+  <p class="sub reveal">Three steps between you and a fresh cut.</p>
+  <div class="cards">
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">1</span>
+      <h3>Pick Your Service</h3>
+      <p>Fade, cut, beard — or the lot. Not sure? Tell us the look you're after and we'll advise.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">2</span>
+      <h3>Message on WhatsApp</h3>
+      <p>Send a message to 07848 942006 with the service and a time that suits. We'll confirm your price and slot.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">3</span>
+      <h3>Turn Up &amp; Get Sorted</h3>
+      <p>Come to 11 Wood St, Wakefield at your time, take a seat, and leave looking sharp.</p>
+    </div>
+  </div>
+</section>
+
+<div class="rateband">
+  <div class="bigstars reveal">★★★★☆</div>
+  <div class="score reveal">4.4 / 5</div>
+  <p class="reveal">That's our average rating from <b>90 reviews on Google</b>. Every review comes from a real customer who sat in our chairs — thanks to everyone who's rated us.</p>
+</div>
+
+<section class="wrap" id="gallery">
+  <h2 class="reveal">The <span class="accent">Work</span></h2>
+  <p class="sub reveal">Fades, cuts and finishes from the shop floor.</p>
+  <div class="gallery">
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=70" alt="Barber cutting a customer's hair"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=70" alt="Haircut being finished with care"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=70" alt="Clipper work on a skin fade"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=70" alt="Beard trim in the barber chair"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=70" alt="Inside a traditional barber shop"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=70" alt="A well-kept beard after a trim and shape"></div>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <h2 class="reveal">Questions<span class="accent">?</span></h2>
+  <p class="sub reveal">What people usually ask before booking.</p>
+  <div class="faq">
+    <div class="qa reveal">
+      <h3>How do I book?</h3>
+      <p>Message us on WhatsApp on 07848 942006 — tell us what you'd like and when suits you, and we'll confirm your appointment and the price.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>How much is a haircut?</h3>
+      <p>We don't publish a price list online, as prices depend on the service. Message us on WhatsApp, tell us what you're after, and we'll confirm the price before you book — no surprises.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>What are your opening hours?</h3>
+      <p>Message us on WhatsApp for this week's hours and the latest availability — it's the quickest way to get an up-to-date answer and grab a slot.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Where are you?</h3>
+      <p>11 Wood St, Wakefield — right in the city centre. Pop the postcode into your maps app or just head for Wood St.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Can I show you a photo of the style I want?</h3>
+      <p>Yes — bring it with you or send it over WhatsApp when you book. We'll tell you straight if it will work with your hair and how to look after it.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Do you cut kids' hair?</h3>
+      <p>Yes, young lads are welcome. Message us on WhatsApp to book them in and we'll find a time that suits.</p>
+    </div>
+  </div>
+</section>
+
+<div class="contact wrap" id="contact">
+  <h2 class="reveal">Book Your <span class="accent">Slot</span></h2>
+  <p class="lead reveal">Questions, or not sure what to book? Send us a WhatsApp message and we'll sort you out.</p>
+  <div class="cgrid">
+    <div class="cbox reveal">
+      <h3>Visit Us</h3>
+      <p><b>Ouz's Barberz</b><br>11 Wood St, Wakefield</p>
+      <p>WhatsApp: <a href="https://wa.me/447848942006">07848 942006</a></p>
+      <p>Right in Wakefield city centre — message us any time on WhatsApp to book.</p>
+    </div>
+    <div class="cbox reveal">
+      <h3>Opening Hours</h3>
+      <p>Message us on WhatsApp for this week's hours and the latest availability.</p>
+      <p>Appointments are booked by WhatsApp — message us to check the next free slot.</p>
+    </div>
+  </div>
+  <a class="cta wa reveal" href="https://wa.me/447848942006?text=Hi%20Ouz%27s%20Barberz%2C%20I%27d%20like%20to%20book%20a%20haircut">💬 Chat on WhatsApp — 07848 942006</a>
+</div>
+
+<div class="ctaband">
+  <h2 class="reveal">Fresh Cut? <span style="color:var(--red2)">Sorted.</span></h2>
+  <p class="reveal">One message and you're booked in. See you in the chair.</p>
+  <a class="cta wa reveal" href="https://wa.me/447848942006?text=Hi%20Ouz%27s%20Barberz%2C%20I%27d%20like%20to%20book%20a%20haircut">💬 Book on WhatsApp — 07848 942006</a>
+</div>
+
+<footer>© Ouz's Barberz, Wakefield · <b>Demo website made by Akram Web Studio</b></footer>
+<a class="wafloat" href="https://wa.me/447848942006?text=Hi%20Ouz%27s%20Barberz%2C%20I%27d%20like%20to%20book%20a%20haircut" aria-label="Chat on WhatsApp">💬</a>
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
