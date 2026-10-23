@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mekoś Barber Coppull | Barber Shop in Coppull, Chorley — Haircuts, Skin Fades & Beard Trims</title>
+<meta name="description" content="Mekoś Barber Coppull — barber shop on Spendmore Lane, Coppull, Chorley. Rated 4.9 stars from 40 Google reviews. Haircuts, skin fades, beard trims, hot towel shaves and kids' cuts. Message on WhatsApp to book.">
+<style>
+:root{
+  --graphite:#232629;
+  --graphite-2:#2e3237;
+  --graphite-3:#3a3f45;
+  --ink:#17191c;
+  --amber:#e8a33d;
+  --amber-2:#c9821e;
+  --amber-soft:#f6e3c2;
+  --white:#ffffff;
+  --paper:#f7f5f1;
+  --line:#e3ded4;
+  --muted:#5d6066;
+  --radius:16px;
+  --shadow:0 18px 40px rgba(23,25,28,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16.5px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1160px,92%);margin:0 auto}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;color:var(--graphite)}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem);margin-bottom:.5em}
+h3{font-size:1.22rem}
+.kicker{display:inline-block;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:700;color:var(--amber-2);margin-bottom:.7em}
+.kicker::before{content:"";display:inline-block;width:26px;height:2px;background:var(--amber);vertical-align:middle;margin-right:10px}
+section{padding:72px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;transition:transform .25s ease,background .25s ease,color .25s ease;border:2px solid transparent}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#1faa55;color:#fff}
+.btn-wa:hover{background:#178a44}
+.btn-amber{background:var(--amber);color:var(--ink)}
+.btn-amber:hover{background:var(--amber-2);color:#fff}
+.btn-ghost{background:transparent;border-color:var(--graphite);color:var(--graphite)}
+.btn-ghost:hover{background:var(--graphite);color:#fff}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-light:hover{background:var(--amber-soft)}
+/* top strip */
+.topstrip{background:var(--ink);color:#f3ead9;font-size:.86rem}
+.topstrip .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+.topstrip strong{color:var(--amber)}
+.topstrip a{color:#fff;text-decoration:none;font-weight:700}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:12px;padding-bottom:12px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{width:46px;height:46px;border-radius:12px;background:var(--graphite);color:var(--amber);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:1.5rem;font-weight:700;border-bottom:4px solid var(--amber)}
+.logo-text{line-height:1.1}
+.logo-text b{font-family:Georgia,serif;font-size:1.18rem;color:var(--graphite);display:block}
+.logo-text span{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+nav.mainnav{display:none;gap:26px}
+nav.mainnav a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--graphite)}
+nav.mainnav a:hover{color:var(--amber-2)}
+.header-cta{display:flex;gap:10px}
+.header-cta .btn{padding:10px 18px;font-size:.9rem}
+.header-cta .btn-call{display:none}
+/* hero */
+.hero{background:var(--graphite);color:#fff;position:relative;overflow:hidden;padding:64px 0 84px}
+.hero::after{content:"";position:absolute;inset:auto -10% -55% auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.28),rgba(232,163,61,0) 65%)}
+.hero-grid{display:grid;gap:40px;position:relative;z-index:1}
+.hero-copy .kicker{color:var(--amber)}
+.hero h1{color:#fff;font-size:clamp(2.2rem,6.4vw,3.6rem);margin-bottom:.45em}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p.lede{font-size:1.12rem;color:#e9e6df;max-width:34em;margin-bottom:1.6em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:2em}
+.hero-points{display:grid;gap:10px;font-size:.98rem}
+.hero-points li{list-style:none;display:flex;gap:10px;align-items:flex-start}
+.hero-points li::before{content:"✓";color:var(--amber);font-weight:800}
+.hero-media{position:relative}
+.hero-frame{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.14)}
+.hero-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.4}
+.rating-card{position:absolute;left:14px;bottom:-24px;background:#fff;color:var(--ink);border-radius:14px;box-shadow:var(--shadow);padding:14px 18px;display:flex;gap:14px;align-items:center;max-width:88%}
+.rating-card .stars{color:var(--amber-2);font-size:1.05rem;letter-spacing:2px}
+.rating-card b{font-size:1.3rem;color:var(--graphite);display:block;line-height:1.1}
+.rating-card span{font-size:.82rem;color:var(--muted)}
+.hero-tag{position:absolute;top:14px;right:14px;background:var(--amber);color:var(--ink);font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+/* trust strip */
+.trust{background:#fff;border-bottom:1px solid var(--line);padding:26px 0}
+.trust .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+.trust b{font-family:Georgia,serif;font-size:1.45rem;color:var(--graphite);display:block}
+.trust span{font-size:.85rem;color:var(--muted)}
+/* about */
+.about-grid{display:grid;gap:42px;align-items:center}
+.about-media{position:relative}
+.about-media .main-img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;width:100%}
+.about-media .small-img{position:absolute;right:-8px;bottom:-26px;width:46%;border-radius:16px;border:6px solid var(--paper);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
+.about-copy p{margin-bottom:1em;color:#33363b}
+.checklist{display:grid;gap:10px;margin:1.2em 0 1.6em}
+.checklist li{list-style:none;display:flex;gap:10px}
+.checklist li::before{content:"✓";color:var(--amber-2);font-weight:800}
+/* animations — always end fully visible */
+@keyframes riseIn{from{opacity:.25;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.rise{animation:riseIn .7s ease-out both}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.rating-card{animation:bob 5s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.rise,.rating-card{animation:none}}
+@media(min-width:760px){
+  .trust .wrap{grid-template-columns:repeat(4,1fr)}
+  .hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}
+  .about-grid{grid-template-columns:1fr 1fr}
+  .header-cta .btn-call{display:inline-flex}
+}
+@media(min-width:980px){nav.mainnav{display:flex}}
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <div>★ <strong>4.9</strong> from 40 Google reviews · Spendmore Lane, Coppull, Chorley</div>
+    <div>Book fast on <a href="https://wa.me/447578483578">WhatsApp</a> or call <a href="tel:+447575365320">07575 365320</a></div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Mekoś Barber Coppull — home">
+      <span class="logo-mark">M</span>
+      <span class="logo-text"><b>Mekoś Barber</b><span>Coppull · Chorley</span></span>
+    </a>
+    <nav class="mainnav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-ghost btn-call" href="tel:+447575365320">Call the shop</a>
+      <a class="btn btn-wa" href="https://wa.me/447578483578">WhatsApp us</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy rise">
+      <span class="kicker">Barber shop · Coppull, Chorley</span>
+      <h1>Sharp cuts, honest craft — <em>Mekoś Barber Coppull</em></h1>
+      <p class="lede">A proper local barber shop on Spendmore Lane in Coppull. Clean fades, tidy classic cuts, beard work and hot towel shaves — done carefully, never rushed, by a shop the village rates 4.9 stars.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/447578483578">Message on WhatsApp</a>
+        <a class="btn btn-light" href="#services">See the services</a>
+      </div>
+      <ul class="hero-points">
+        <li>Haircuts, skin fades, beard trims &amp; hot towel shaves</li>
+        <li>Kids' cuts welcome — patient, friendly chair manner</li>
+        <li>Book ahead on WhatsApp, Fresha or Facebook</li>
+      </ul>
+    </div>
+    <div class="hero-media rise">
+      <div class="hero-frame">
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?q=80&w=1600&auto=format&fit=crop" alt="Barber at work giving a precise haircut in the shop">
+      </div>
+      <span class="hero-tag">Walk-ins welcome</span>
+      <div class="rating-card">
+        <div>
+          <b>4.9 ★</b>
+          <span class="stars">★★★★★</span>
+        </div>
+        <span>Rated by customers<br>40 Google reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div><b>4.9 ★</b><span>Google rating</span></div>
+    <div><b>40</b><span>Google reviews</span></div>
+    <div><b>Spendmore Lane</b><span>Coppull, Chorley</span></div>
+    <div><b>WhatsApp</b><span>Quickest way to book</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <img class="main-img" src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?q=80&w=1200&auto=format&fit=crop" alt="Inside a traditional barber shop with chairs and mirrors">
+      <img class="small-img" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=800&auto=format&fit=crop" alt="Barber tools of the trade laid out ready for the day">
+    </div>
+    <div class="about-copy">
+      <span class="kicker">About the shop</span>
+      <h2>A village barber with a craftsman's standards</h2>
+      <p>Mekoś Barber sits on Spendmore Lane in Coppull, between Chorley and Standish — the kind of barber shop where the cut is the advert. No gimmicks, no rush job: just careful clipper and scissor work, finished properly and checked in the mirror before you leave the chair.</p>
+      <p>Regulars come back because the standard doesn't move. Whether it's a skin fade that has to grow out clean, a beard that needs shaping rather than shortening, or a first haircut for a young lad, the same care goes into every appointment.</p>
+      <ul class="checklist">
+        <li>Consultation first — we talk through the cut before the clippers come out</li>
+        <li>Finished with a proper tidy-up around the edges, every time</li>
+        <li>Fades blended to grow out evenly, not just look sharp on day one</li>
+        <li>Friendly, unhurried chair — nervous kids and first-timers welcome</li>
+      </ul>
+      <a class="btn btn-amber" href="https://wa.me/447578483578">Ask a question on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.services{background:var(--graphite);color:#eceae4}
+.services h2{color:#fff}
+.services .kicker{color:var(--amber)}
+.services .intro{max-width:44em;color:#cfccc2;margin-bottom:2.4em}
+.svc-grid{display:grid;gap:22px}
+.svc-card{background:var(--graphite-2);border:1px solid var(--graphite-3);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.svc-card img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.svc-body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:.6em;flex:1}
+.svc-body h3{color:#fff}
+.svc-body p{color:#cfccc2;font-size:.97rem;flex:1}
+.svc-meta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--graphite-3);padding-top:14px;margin-top:6px}
+.svc-price{font-weight:700;color:var(--amber);font-size:.92rem}
+.svc-book{color:#fff;font-weight:700;text-decoration:none;font-size:.92rem}
+.svc-book:hover{color:var(--amber)}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gallery-grid figure{border-radius:14px;overflow:hidden;position:relative}
+.gallery-grid img{aspect-ratio:1/1;object-fit:cover;width:100%;transition:transform .5s ease}
+.gallery-grid figure:hover img{transform:scale(1.05)}
+.gallery-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(23,25,28,.82));color:#fff;font-size:.85rem;padding:26px 14px 10px}
+.why{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-grid{display:grid;gap:20px}
+.why-card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--paper)}
+.why-card .num{font-family:Georgia,serif;font-size:1.6rem;color:var(--amber-2);display:block;margin-bottom:.2em}
+.why-card p{color:var(--muted);font-size:.96rem;margin-top:.4em}
+.steps{display:grid;gap:20px;margin-top:2em}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.step b{font-family:Georgia,serif;font-size:1.15rem;color:var(--graphite)}
+.step .n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--amber);color:var(--ink);font-weight:800;align-items:center;justify-content:center;margin-bottom:10px}
+.step p{color:var(--muted);font-size:.96rem;margin-top:.3em}
+@media(min-width:760px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .why-grid{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="kicker">Services</span>
+    <h2>Everything a proper cut needs</h2>
+    <p class="intro">Six core services, done the traditional way and finished with care. We don't publish a price list online — call or message for prices and we'll give you the exact figure for what you want before you sit down.</p>
+    <div class="svc-grid">
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop" alt="Classic gents haircut being shaped with clippers and comb">
+        <div class="svc-body">
+          <h3>The Haircut</h3>
+          <p>The full works: consultation, wash of the style (not the patter), scissor and clipper cut shaped to your head and how your hair actually grows, then styled and finished. Short back and sides, longer on top, or a complete restyle — bring a photo or just a rough idea and we'll talk it through.</p>
+          <div class="svc-meta"><span class="svc-price">Call or message for prices</span><a class="svc-book" href="https://wa.me/447578483578">Book →</a></div>
+        </div>
+      </article>
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1000&auto=format&fit=crop" alt="Skin fade being blended with precision clipper work">
+        <div class="svc-body">
+          <h3>Skin Fade</h3>
+          <p>Zero, low, mid or high — the fade is blended in stages so there are no harsh lines and it grows out evenly through the weeks. We check it from every angle under proper light before you leave, because a fade that only looks right from the front isn't finished.</p>
+          <div class="svc-meta"><span class="svc-price">Call or message for prices</span><a class="svc-book" href="https://wa.me/447578483578">Book →</a></div>
+        </div>
+      </article>
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1000&auto=format&fit=crop" alt="Beard being trimmed and shaped to a sharp finish">
+        <div class="svc-body">
+          <h3>Beard Trim &amp; Shape</h3>
+          <p>Length taken down evenly, cheek and neck lines sharpened, and the shape balanced to your face rather than a template. Whether you keep it short and tidy or long and full, a shaped beard looks deliberate — an unshaped one just looks overdue.</p>
+          <div class="svc-meta"><span class="svc-price">Call or message for prices</span><a class="svc-book" href="https://wa.me/447578483578">Book →</a></div>
+        </div>
+      </article>
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1000&auto=format&fit=crop" alt="Traditional hot towel shave with a straight razor">
+        <div class="svc-body">
+          <h3>Hot Towel Shave</h3>
+          <p>The old-school ritual: hot towels to soften the beard, a proper lather, a straight-razor shave with the grain and against it where the skin allows, then a cold towel finish. The closest, cleanest shave there is — and a half hour of doing absolutely nothing, which most lads count as a bonus.</p>
+          <div class="svc-meta"><span class="svc-price">Call or message for prices</span><a class="svc-book" href="https://wa.me/447578483578">Book →</a></div>
+        </div>
+      </article>
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4?q=80&w=1000&auto=format&fit=crop" alt="Young lad getting a patient, friendly haircut">
+        <div class="svc-body">
+          <h3>Kids' Cuts</h3>
+          <p>Patient, friendly cuts for young lads — no rushing, no fuss if they wriggle, and the same tidy finish as the grown-ups get. First haircuts handled gently, school-ready trims done quickly when time is tight before the bell.</p>
+          <div class="svc-meta"><span class="svc-price">Call or message for prices</span><a class="svc-book" href="https://wa.me/447578483578">Book →</a></div>
+        </div>
+      </article>
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1517963628607-235ccdd5476c?q=80&w=1000&auto=format&fit=crop" alt="Full grooming service — haircut and beard finished together">
+        <div class="svc-body">
+          <h3>The Full Works</h3>
+          <p>Haircut and beard together in one sitting: cut, fade or tidy, beard shaped, edges sharpened and a hot towel finish. The one to book before a wedding, a job interview, a holiday or any Friday you want to walk out feeling like the best version of yourself.</p>
+          <div class="svc-meta"><span class="svc-price">Call or message for prices</span><a class="svc-book" href="https://wa.me/447578483578">Book →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <span class="kicker">Gallery</span>
+    <h2>The shop, the craft, the finish</h2>
+    <p style="color:var(--muted);max-width:44em;margin-bottom:2em">A feel for the kind of work that leaves the chair at Mekoś Barber Coppull — clean blends, sharp lines and finishes that hold their shape.</p>
+    <div class="gallery-grid">
+      <figure><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=800&auto=format&fit=crop" alt="Barber shop front and signage"><figcaption>The shop front</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?q=80&w=800&auto=format&fit=crop" alt="Clipper work in progress on a fade"><figcaption>Blend in progress</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?q=80&w=800&auto=format&fit=crop" alt="Finished haircut with a clean, sharp outline"><figcaption>The finished outline</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?q=80&w=800&auto=format&fit=crop" alt="Barber chair and station ready for the next client"><figcaption>The chair</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop" alt="Scissor work shaping the top of a haircut"><figcaption>Scissor work up top</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=800&auto=format&fit=crop" alt="Clippers, combs and brushes of the trade"><figcaption>Tools of the trade</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <span class="kicker">Why choose us</span>
+    <h2>Why Coppull keeps coming back</h2>
+    <div class="why-grid">
+      <div class="why-card"><span class="num">01</span><h3>Rated 4.9 by locals</h3><p>40 Google reviews averaging 4.9 stars — the rating comes from the village itself, and we work to keep it that way on every single cut.</p></div>
+      <div class="why-card"><span class="num">02</span><h3>No rushed chairs</h3><p>A cut takes as long as it takes. We'd rather finish properly than finish fast — that's the whole point of booking with a craftsman.</p></div>
+      <div class="why-card"><span class="num">03</span><h3>Fades that grow out clean</h3><p>Blended in stages and checked from every angle, so your fade still looks tidy in week three, not just on day one.</p></div>
+      <div class="why-card"><span class="num">04</span><h3>Easy booking</h3><p>Message on WhatsApp, book through Fresha or Facebook, or just call the shop on 07575 365320. Pick whatever suits you.</p></div>
+      <div class="why-card"><span class="num">05</span><h3>Honest pricing</h3><p>No price list games: ask before you book and you'll get the exact price for the service you want. Call or message for prices.</p></div>
+      <div class="why-card"><span class="num">06</span><h3>All ages welcome</h3><p>From a toddler's first trim to a gent's regular tidy-up, everyone gets the same patience and the same standard of finish.</p></div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><span class="n">1</span><b>Message or call</b><p>WhatsApp us on 07578 483578 or call 07575 365320 and tell us what you're after — cut, fade, beard, or the full works.</p></div>
+      <div class="step"><span class="n">2</span><b>Pick your time</b><p>We'll confirm a slot that suits you, or point you to Fresha and Facebook booking if you'd rather grab one yourself.</p></div>
+      <div class="step"><span class="n">3</span><b>Sit back</b><p>Find us on Spendmore Lane in Coppull, take the chair, and leave sharper than you arrived. Simple as that.</p></div>
+    </div>
+  </div>
+</section>
+
+<style>
+.faq-list{display:grid;gap:12px;max-width:820px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+details summary{font-weight:700;cursor:pointer;color:var(--graphite);font-size:1.02rem}
+details p{color:var(--muted);margin-top:.6em;font-size:.97rem}
+.book{background:var(--graphite);color:#eceae4}
+.book h2{color:#fff}
+.book .kicker{color:var(--amber)}
+.book-grid{display:grid;gap:36px;align-items:start}
+.book-card{background:#fff;color:var(--ink);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+.book-card h3{margin-bottom:.6em}
+.book-card p{color:var(--muted);font-size:.97rem;margin-bottom:1em}
+.book-card .row{display:flex;justify-content:space-between;gap:14px;border-top:1px solid var(--line);padding:12px 0;font-size:.97rem}
+.book-card .row b{color:var(--graphite)}
+.book-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+footer{background:var(--ink);color:#b9bcc0;padding:52px 0 30px}
+footer .cols{display:grid;gap:30px;margin-bottom:34px}
+footer h4{color:#fff;font-family:Georgia,serif;margin-bottom:.6em}
+footer a{color:#e8a33d;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer p,footer li{font-size:.93rem}
+footer li{list-style:none;margin-bottom:.35em}
+.foot-base{border-top:1px solid #33373c;padding-top:20px;font-size:.84rem;color:#8b8f96;display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#1faa55;color:#fff;text-decoration:none;font-weight:800;padding:14px 20px;border-radius:999px;box-shadow:0 12px 28px rgba(0,0,0,.3);display:inline-flex;gap:9px;align-items:center}
+.wa-float:hover{background:#178a44}
+@media(min-width:820px){
+  .book-grid{grid-template-columns:1.05fr .95fr}
+  footer .cols{grid-template-columns:1.3fr 1fr 1fr}
+}
+</style>
+
+<style>
+.visit{background:#fff;border-top:1px solid var(--line)}
+.visit-grid{display:grid;gap:36px;align-items:start}
+.mini-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);padding:22px;margin-bottom:16px}
+.mini-card h3{margin-bottom:.35em}
+.mini-card p{color:var(--muted);font-size:.96rem}
+.guide{background:var(--amber-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.guide-grid{display:grid;gap:20px;margin-top:1.6em}
+.guide-card{background:#fff;border-radius:var(--radius);padding:24px;border:1px solid var(--line)}
+.guide-card h3{margin-bottom:.4em;color:var(--graphite)}
+.guide-card p{color:var(--muted);font-size:.96rem}
+.occasions{display:grid;gap:16px;margin-top:1.6em}
+.occasion{background:var(--graphite);color:#eceae4;border-radius:var(--radius);padding:22px}
+.occasion b{color:#fff;font-family:Georgia,serif;font-size:1.08rem;display:block;margin-bottom:.3em}
+.occasion p{font-size:.94rem;color:#cfccc2}
+@media(min-width:820px){
+  .visit-grid{grid-template-columns:1fr 1fr}
+  .guide-grid{grid-template-columns:repeat(2,1fr)}
+  .occasions{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+
+<style>
+.detail{background:var(--paper)}
+.detail-rows{display:grid;gap:26px;margin-top:1.8em}
+.detail-row{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.detail-row h3{margin-bottom:.45em}
+.detail-row p{color:var(--muted);font-size:.97rem;margin-bottom:.7em}
+.detail-row p:last-child{margin-bottom:0}
+.detail-row .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.detail-row .tag{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:.82rem;font-weight:700;color:var(--graphite)}
+@media(min-width:820px){.detail-rows{grid-template-columns:repeat(3,1fr)}}
+</style>
+
+<section class="detail">
+  <div class="wrap">
+    <span class="kicker">In detail</span>
+    <h2>The craft, explained</h2>
+    <p style="color:var(--muted);max-width:44em">Not sure what to ask for? This is the plain-English version of what happens in the chair — so you can book with confidence and know exactly what you're getting.</p>
+    <div class="detail-rows">
+      <div class="detail-row">
+        <h3>Fades, decoded</h3>
+        <p>A fade is simply hair that graduates from very short at the bottom to longer at the top, with no visible line where one length meets the next. The name describes where the fade starts: a <strong>low fade</strong> begins just above the ear and keeps more weight around the sides — the most forgiving, classic option. A <strong>mid fade</strong> starts higher, around temple level, and suits most head shapes. A <strong>high fade</strong> takes the short work right up towards the crown for the sharpest contrast.</p>
+        <p>A <strong>skin fade</strong> takes the lowest part right down to the skin before blending up. Whichever you choose, the blend is built in stages and checked under proper light — a fade is only finished when it looks smooth from the front, the sides and the back.</p>
+        <div class="tagrow"><span class="tag">Low fade</span><span class="tag">Mid fade</span><span class="tag">High fade</span><span class="tag">Skin fade</span><span class="tag">Taper</span></div>
+      </div>
+      <div class="detail-row">
+        <h3>Beard shaping, properly</h3>
+        <p>A beard trim is not just "shorter". Shaping means the length is balanced so the beard holds its outline, the cheek lines are set at a height that suits your face, and the neckline is placed so it looks clean from the front — not cut so high it doubles your chin, nor left so low it looks untidy.</p>
+        <p>We work with how your beard actually grows: filling the shape where it's full, easing off where it's patchier, and lining up the edges with a razor finish. The result is a beard that looks grown on purpose. If you're growing yours out, regular small shapings on the way beat waiting until it's wild and losing length to a rescue job.</p>
+        <div class="tagrow"><span class="tag">Shape &amp; balance</span><span class="tag">Cheek lines</span><span class="tag">Neckline</span><span class="tag">Razor finish</span></div>
+      </div>
+      <div class="detail-row">
+        <h3>The hot towel ritual</h3>
+        <p>The hot towel shave is the oldest service in barbering, and it has survived because nothing else gets as close or feels as good. Hot towels soften the beard and open the pores; a rich lather lifts the hairs; then the straight razor works with the grain first and across it second, stretching the skin gently for a smooth pass without dragging.</p>
+        <p>A cold towel at the end closes everything down and settles the skin. It's the finish to choose before a big occasion — or for no occasion at all, just because half an hour of being looked after properly is a rare thing.</p>
+        <div class="tagrow"><span class="tag">Hot towels</span><span class="tag">Straight razor</span><span class="tag">Cold towel finish</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <span class="kicker">Your first visit</span>
+      <h2>New to the shop? Here's how it goes</h2>
+      <p style="color:#33363b;margin-bottom:1em">Walking into a new barber shop can feel like a gamble — you've probably had the "that isn't what I asked for" experience somewhere before. Here's exactly what happens at Mekoś Barber, so you know what you're booking.</p>
+      <p style="color:#33363b;margin-bottom:1em">First, we talk. Before any clippers come out, we'll ask what you normally have, what you liked or didn't like about your last cut, and how you style it day to day. A photo helps if you have one; if not, plain words work fine. If what you're asking for won't sit right on your hair — wrong length for the growth pattern, a fade height that will fight your crown — we'll say so and show you the version that will work.</p>
+      <p style="color:#33363b">Then the cut itself, finished properly: edges tidied, neckline cleaned up, and a final look in the mirror from the front, sides and back. If you want a tweak, say the word — adjustments in the chair are part of the service, not an awkward extra. That's the standard that's earned the shop its 4.9 stars from 40 Google reviews, and it applies to your first visit exactly as it does to a ten-year regular's.</p>
+    </div>
+    <div>
+      <div class="mini-card">
+        <h3>Bringing a photo</h3>
+        <p>Screenshots are genuinely useful — they pin down fade height, length on top and fringe shape faster than descriptions do. Bring two or three angles if you have them, and we'll be honest about what transfers to your hair and what needs adapting.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Not sure what suits you?</h3>
+        <p>That's a normal thing to say in a barber's chair, not a weakness. Tell us how much styling effort you'll honestly put in each morning, and we'll steer you to a cut that looks right with that effort — not one that only works in the shop mirror.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Between visits</h3>
+        <p>A good cut should still behave weeks later. Before you leave we'll tell you when the fade will want refreshing and how to keep the top sitting right — so you get the full life out of every appointment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guide">
+  <div class="wrap">
+    <span class="kicker">From the chair</span>
+    <h2>Looking after your cut &amp; beard</h2>
+    <p style="color:#4a4234;max-width:44em">The cut is half the job — the other half is the few minutes you spend on it at home. Straight advice from the shop floor:</p>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>Make the fade last</h3>
+        <p>A skin fade looks its sharpest in the first fortnight. Sleeping on it flattens one side faster than the other, so a quick rinse and a brush back into place in the morning resets it. When the blend starts to blur into the top — usually when strangers stop asking if you've just had it done — it's refresh time.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Product: less than you think</h3>
+        <p>A pea-sized amount, warmed between the palms and worked through dry or towel-dry hair, beats a handful slapped on wet hair every time. Apply to the roots of the top first, then shape. If your hair feels crunchy or looks greasy by lunchtime, you've used too much — halve it tomorrow.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Beard care basics</h3>
+        <p>Wash your beard with the same care as the hair on your head — a gentle wash a few times a week, not daily stripping. Comb it through after a shower to train the growth direction, and keep the cheek and neck lines tidy between visits with careful, small trims rather than one big correction.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Know your refresh rhythm</h3>
+        <p>Short fades want attention every two to three weeks to stay sharp; scissor cuts and longer styles can stretch further. Book your next slot before you leave the shop or over WhatsApp while it's in your mind — the diary fills fastest at weekends and before bank holidays.</p>
+      </div>
+    </div>
+
+    <div class="occasions">
+      <div class="occasion"><b>Weddings</b><p>Groom, best man or guest — book the full works a few days ahead so the cut has settled in for the photos.</p></div>
+      <div class="occasion"><b>Job interviews</b><p>A tidy cut and shaped beard is the cheapest confidence there is. Tell us it's for an interview and we'll keep it sharp and safe.</p></div>
+      <div class="occasion"><b>Holidays</b><p>Heading somewhere hot? A shorter, lower-maintenance cut before you go beats fighting a long style in the heat.</p></div>
+      <div class="occasion"><b>Photo &amp; match days</b><p>Family photos, christenings, the match — any day you'll be looked at twice is a good day to have been to the barber that week.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="kicker">Good to know</span>
+    <h2>Questions, answered straight</h2>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp — message us on <a href="https://wa.me/447578483578">07578 483578</a> with what you'd like done and when suits you. You can also call the shop on <a href="tel:+447575365320">07575 365320</a>, or book through our Fresha and Facebook pages. If we're mid-cut we might not pick up straight away, but a WhatsApp message always gets a reply.</p>
+      </details>
+      <details>
+        <summary>Do you take walk-ins?</summary>
+        <p>Yes — if a chair is free, it's yours. That said, weekends and late afternoons fill up, so a quick WhatsApp message before you set off is the safest way to avoid waiting or a wasted trip.</p>
+      </details>
+      <details>
+        <summary>How much does a haircut cost?</summary>
+        <p>We don't publish a price list on this page — call or message for prices and we'll tell you the exact cost of the service you want before you book. No surprises in the chair, ever.</p>
+      </details>
+      <details>
+        <summary>Where exactly is the shop?</summary>
+        <p>We're on Spendmore Lane in Coppull, Chorley, Lancashire — right in the heart of the village, on the same stretch as the other Spendmore Lane barbers. If you're not sure you've found the right shop, message us on WhatsApp and we'll point you the rest of the way.</p>
+      </details>
+      <details>
+        <summary>What should I ask for if I don't know the names of cuts?</summary>
+        <p>Don't worry about the vocabulary — most people don't know it. Show us a photo of what you like, or just describe it ("shorter on the sides, tidy on top") and we'll translate. If a style won't suit your hair type or growth pattern, we'll tell you honestly and suggest what will.</p>
+      </details>
+      <details>
+        <summary>How long does a skin fade take?</summary>
+        <p>A proper fade can't be hurried — it needs the stages blending one into the next and a final check from every angle. Allow a comfortable appointment rather than a squeezed one, and if you're on a tight schedule, tell us when you book and we'll be straight about what's possible.</p>
+      </details>
+      <details>
+        <summary>Do you cut children's hair?</summary>
+        <p>Yes, kids are very welcome. We're patient with wrigglers and gentle with first-timers, and young lads get the same tidy finish as everyone else. Booking ahead helps us give first haircuts the unhurried time they deserve.</p>
+      </details>
+      <details>
+        <summary>What's included in a hot towel shave?</summary>
+        <p>Hot towels to open the pores and soften the beard, a rich lather, a straight-razor shave, and a cold towel to finish. It's the closest shave there is and it leaves skin feeling fresh rather than scraped.</p>
+      </details>
+      <details>
+        <summary>Can I get my beard shaped without a haircut?</summary>
+        <p>Of course — beard trims and shaping are a service in their own right. Length balanced, lines sharpened, shape matched to your face. Plenty of regulars come in just for the beard between haircuts.</p>
+      </details>
+      <details>
+        <summary>What if I'm not happy with my cut?</summary>
+        <p>Tell us — in the chair is best, while we can still adjust it, but if you notice something at home, message us on WhatsApp and we'll sort it. A 4.9-star rating doesn't happen by sending people away unhappy.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap book-grid">
+    <div>
+      <span class="kicker">Book your chair</span>
+      <h2>Ready when you are</h2>
+      <p style="color:#cfccc2;max-width:36em">One message is all it takes. Send us a WhatsApp, tell us what you're having done, and we'll confirm your slot. Prefer to talk? Call the shop. Prefer to tap through a calendar? We're on Fresha and Facebook too.</p>
+      <div class="book-actions">
+        <a class="btn btn-wa" href="https://wa.me/447578483578">Book on WhatsApp</a>
+        <a class="btn btn-amber" href="tel:+447575365320">Call 07575 365320</a>
+      </div>
+      <p style="color:#cfccc2;margin-top:1.4em;font-size:.95rem">Rated <strong style="color:#fff">4.9 ★</strong> from 40 Google reviews — Coppull's sharp finish, one appointment away.</p>
+    </div>
+    <div class="book-card">
+      <h3>Contact &amp; visit</h3>
+      <p>Everything you need to reach us or find us.</p>
+      <div class="row"><b>WhatsApp</b><a href="https://wa.me/447578483578">07578 483578</a></div>
+      <div class="row"><b>Phone</b><a href="tel:+447575365320">07575 365320</a></div>
+      <div class="row"><b>Find us</b><span>Spendmore Lane, Coppull,<br>Chorley, Lancashire</span></div>
+      <div class="row"><b>Booking</b><span>WhatsApp · Phone · Fresha · Facebook</span></div>
+      <div class="row"><b>Prices</b><span>Call or message for prices</span></div>
+      <div class="book-actions">
+        <a class="btn btn-wa" href="https://wa.me/447578483578">WhatsApp us now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Mekoś Barber Coppull</h4>
+        <p>A local barber shop on Spendmore Lane, Coppull, Chorley — haircuts, skin fades, beard trims, hot towel shaves and kids' cuts, finished to a craftsman's standard.</p>
+        <p style="margin-top:.8em">★ 4.9 rated · 40 Google reviews</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">The Haircut</a></li>
+          <li><a href="#services">Skin Fade</a></li>
+          <li><a href="#services">Beard Trim &amp; Shape</a></li>
+          <li><a href="#services">Hot Towel Shave</a></li>
+          <li><a href="#services">Kids' Cuts</a></li>
+          <li><a href="#services">The Full Works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/447578483578">07578 483578</a></li>
+          <li>Phone: <a href="tel:+447575365320">07575 365320</a></li>
+          <li>Spendmore Lane, Coppull, Chorley, Lancashire</li>
+          <li><a href="#book">Book an appointment</a></li>
+          <li><a href="#faq">Read the FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© Mekoś Barber Coppull — demo website. Prices confirmed on booking: call or message for prices.</span>
+      <span><a href="#top">Back to top ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447578483578" aria-label="Chat with Mekoś Barber Coppull on WhatsApp">💬 WhatsApp us</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
