@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zanzi's Turkish Barber | Traditional Turkish Barbers in Hexham, Northumberland</title>
+<meta name="description" content="Zanzi's Turkish Barber in Hexham, Northumberland. Traditional Turkish haircuts, skin fades, hot towel shaves, beard trims and ear & nose waxing. Rated 4.7 stars from 116 Google reviews. Message on WhatsApp to book.">
+<style>
+:root{
+  --ink:#0e0a08;
+  --coal:#171008;
+  --panel:#1d150c;
+  --panel2:#241a10;
+  --red:#8e1f1f;
+  --red-bright:#c02b20;
+  --gold:#c9a227;
+  --gold-soft:#e5c766;
+  --cream:#f3e9d2;
+  --muted:#cbbfa5;
+  --line:rgba(201,162,39,.28);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  background:var(--ink);
+  color:var(--cream);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1160px,92%);margin:0 auto}
+
+/* ---------- animations (pure CSS, always end fully visible) ---------- */
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes glowPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,.45)}50%{box-shadow:0 0 0 12px rgba(201,162,39,0)}}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+.rise{animation:riseIn .9s ease-out both}
+.rise-1{animation-delay:.08s}.rise-2{animation-delay:.18s}.rise-3{animation-delay:.28s}.rise-4{animation-delay:.4s}
+
+/* ---------- top strip ---------- */
+.topstrip{
+  background:linear-gradient(90deg,#5d1212,var(--red) 45%,#5d1212);
+  color:#ffeec2;font-size:.86rem;letter-spacing:.02em;
+}
+.topstrip .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;justify-content:center;padding:.5rem 0;text-align:center}
+.topstrip strong{color:#fff}
+.stars{color:var(--gold-soft);letter-spacing:.15em}
+
+/* ---------- header / nav ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(14,10,8,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.brand-mark{
+  width:48px;height:48px;flex:0 0 48px;border-radius:50%;
+  border:2px solid var(--gold);display:grid;place-items:center;
+  font-family:Georgia,serif;font-size:1.35rem;color:var(--gold-soft);
+  background:radial-gradient(circle at 35% 30%,#33240f,#171008 70%);
+}
+.brand-name{font-family:Georgia,serif;font-size:1.3rem;line-height:1.1;color:#fff}
+.brand-name span{display:block;font-family:"Segoe UI",sans-serif;font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.nav-links{display:none;gap:1.6rem}
+.nav-links a{text-decoration:none;font-size:.95rem;color:var(--muted)}
+.nav-links a:hover{color:var(--gold-soft)}
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;
+  font-weight:600;border-radius:999px;padding:.72rem 1.5rem;font-size:.98rem;
+  transition:transform .2s ease,box-shadow .2s ease;border:1px solid transparent;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#1faa55;color:#fff}
+.btn-wa:hover{box-shadow:0 10px 24px rgba(31,170,85,.35)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-soft),var(--gold));color:#241a04}
+.btn-gold:hover{box-shadow:0 10px 24px rgba(201,162,39,.35)}
+.btn-ghost{border-color:var(--line);color:var(--cream);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--gold)}
+.nav-cta{padding:.55rem 1.15rem;font-size:.9rem}
+@media(min-width:860px){.nav-links{display:flex}}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 480px at 85% -10%,rgba(142,31,31,.5),transparent 60%),
+    radial-gradient(700px 420px at -10% 110%,rgba(201,162,39,.16),transparent 55%),
+    linear-gradient(180deg,#120c07,#0e0a08);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid;gap:2.4rem;padding:3.4rem 0 3.8rem;align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.eyebrow{
+  display:inline-block;letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;
+  color:var(--gold-soft);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem;margin-bottom:1.1rem;
+  background:rgba(201,162,39,.06);
+}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.08;color:#fff;font-weight:700}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero h1 .redword{color:#e0483a}
+.hero p.lead{margin:1.2rem 0 1.7rem;font-size:1.1rem;color:var(--muted);max-width:34rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.rating-card{
+  margin-top:1.9rem;display:inline-flex;align-items:center;gap:1rem;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--radius);
+  padding:.85rem 1.3rem;
+}
+.rating-num{font-family:Georgia,serif;font-size:2rem;color:#fff;line-height:1}
+.rating-card small{display:block;color:var(--muted);font-size:.82rem}
+.hero-photo{position:relative}
+.hero-photo img{
+  border-radius:22px;border:1px solid var(--line);width:100%;height:100%;object-fit:cover;
+  animation:slowZoom 14s ease-in-out infinite alternate;
+}
+.hero-photo::after{
+  content:"";position:absolute;inset:0;border-radius:22px;
+  box-shadow:inset 0 0 0 1px rgba(201,162,39,.25), inset 0 -90px 90px -40px rgba(0,0,0,.65);
+  pointer-events:none;
+}
+.hero-badge{
+  position:absolute;left:1rem;bottom:1rem;background:rgba(14,10,8,.88);border:1px solid var(--gold);
+  color:var(--cream);border-radius:12px;padding:.6rem 1rem;font-size:.88rem;animation:glowPulse 3.2s infinite;
+}
+.hero-badge strong{color:var(--gold-soft)}
+
+/* ---------- stats ---------- */
+.stats{background:var(--coal);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line)}
+.stat{background:var(--coal);padding:1.5rem 1rem;text-align:center}
+.stat b{display:block;font-family:Georgia,serif;font-size:1.9rem;color:var(--gold-soft)}
+.stat span{font-size:.86rem;color:var(--muted);letter-spacing:.04em}
+@media(min-width:820px){.stats .wrap{grid-template-columns:repeat(4,1fr)}}
+
+/* ---------- sections ---------- */
+section{padding:4.2rem 0}
+.kicker{letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;color:var(--gold);text-align:center}
+.sec-title{font-size:clamp(1.8rem,4vw,2.6rem);text-align:center;color:#fff;margin:.5rem 0 .6rem}
+.sec-sub{text-align:center;color:var(--muted);max-width:44rem;margin:0 auto 2.6rem}
+.divider{width:74px;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 1rem;border-radius:2px}
+
+/* about */
+.about-grid{display:grid;gap:2.4rem;align-items:center}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.about-photos img{border-radius:16px;border:1px solid var(--line);height:100%;object-fit:cover}
+.about-photos img.tall{grid-row:span 2}
+.about-copy h2{font-size:clamp(1.7rem,3.6vw,2.4rem);color:#fff;margin-bottom:1rem}
+.about-copy p{color:var(--muted);margin-bottom:1rem}
+.about-copy p strong{color:var(--cream)}
+.checklist{list-style:none;margin-top:1.3rem;display:grid;gap:.65rem}
+.checklist li{padding-left:1.9rem;position:relative;color:var(--cream)}
+.checklist li::before{
+  content:"✂";position:absolute;left:0;top:0;color:var(--gold);font-size:1rem;
+}
+
+/* services */
+.services{background:linear-gradient(180deg,var(--ink),#120c07 30%,var(--ink))}
+.svc-grid{display:grid;gap:1.4rem}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease;
+}
+.svc:hover{transform:translateY(-5px);border-color:var(--gold)}
+.svc img{height:190px;width:100%;object-fit:cover}
+.svc-body{padding:1.4rem 1.5rem 1.6rem}
+.svc-body h3{color:#fff;font-size:1.3rem;margin-bottom:.5rem}
+.svc-body p{color:var(--muted);font-size:.96rem}
+.price-note{
+  display:inline-block;margin-top:1rem;font-size:.83rem;letter-spacing:.05em;color:var(--gold-soft);
+  border:1px dashed rgba(201,162,39,.5);border-radius:999px;padding:.3rem .85rem;
+}
+
+/* ritual */
+.ritual{background:var(--coal);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:grid;gap:1.4rem}
+@media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{
+  background:var(--panel2);border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.6rem;text-align:center;
+}
+.step-num{
+  width:56px;height:56px;margin:0 auto 1rem;border-radius:50%;display:grid;place-items:center;
+  border:2px solid var(--gold);color:var(--gold-soft);font-family:Georgia,serif;font-size:1.4rem;
+  background:radial-gradient(circle at 35% 30%,#3a2a10,#1d150c 72%);
+}
+.step h3{color:#fff;margin-bottom:.5rem;font-size:1.2rem}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(min-width:860px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+.gal-grid figure{border-radius:16px;overflow:hidden;border:1px solid var(--line);position:relative}
+.gal-grid img{height:250px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal-grid figure:hover img{transform:scale(1.06)}
+.gal-grid figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:1.4rem 1rem .7rem;font-size:.88rem;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.8));
+}
+
+/* why us */
+.why{background:linear-gradient(180deg,var(--ink),#140d07)}
+.why-grid{display:grid;gap:1.4rem}
+@media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem 1.5rem}
+.why-card .icon{font-size:1.7rem;margin-bottom:.7rem}
+.why-card h3{color:#fff;font-size:1.15rem;margin-bottom:.45rem}
+.why-card p{color:var(--muted);font-size:.93rem}
+
+/* faq */
+.faq-list{max-width:820px;margin:0 auto;display:grid;gap:.8rem}
+details{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.05rem 1.3rem;
+}
+details[open]{border-color:var(--gold)}
+summary{cursor:pointer;font-weight:600;color:#fff;list-style:none;font-size:1.02rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:.6rem;font-size:.96rem}
+details a{color:var(--gold-soft)}
+
+/* booking / contact */
+.booking{
+  background:
+    radial-gradient(700px 380px at 90% 0%,rgba(142,31,31,.45),transparent 60%),
+    linear-gradient(180deg,#160f08,#0e0a08);
+  border-top:1px solid var(--line);
+}
+.book-card{
+  max-width:840px;margin:0 auto;text-align:center;background:rgba(255,255,255,.03);
+  border:1px solid var(--gold);border-radius:22px;padding:2.8rem 1.8rem;
+}
+.book-card h2{color:#fff;font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:.7rem}
+.book-card p{color:var(--muted);max-width:36rem;margin:0 auto 1.8rem}
+.book-ctas{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
+.book-meta{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:center;color:var(--muted);font-size:.94rem}
+.book-meta strong{color:var(--cream)}
+
+/* footer */
+footer{background:#0a0705;border-top:1px solid var(--line);padding:2.6rem 0 5.4rem}
+.foot-grid{display:grid;gap:1.8rem;text-align:center}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr;text-align:left}}
+footer h4{color:#fff;font-family:Georgia,serif;margin-bottom:.6rem;font-size:1.05rem}
+footer p,footer a{color:var(--muted);font-size:.93rem;text-decoration:none}
+footer a:hover{color:var(--gold-soft)}
+.foot-brand{font-family:Georgia,serif;font-size:1.4rem;color:#fff}
+.foot-brand span{color:var(--gold)}
+.copyright{margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(201,162,39,.15);text-align:center;color:#8d8168;font-size:.83rem}
+
+/* floating whatsapp */
+.wa-float{
+  position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;
+  background:#1faa55;display:grid;place-items:center;text-decoration:none;
+  box-shadow:0 12px 28px rgba(0,0,0,.5);animation:glowPulse 3s infinite;
+}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span><span class="stars">★★★★★</span> <strong>4.7</strong> from <strong>116 Google reviews</strong></span>
+    <span>Traditional Turkish barbering in <strong>Hexham, Northumberland</strong></span>
+    <span>Message on WhatsApp to book your chair</span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark">Z</span>
+      <span class="brand-name">Zanzi's<span>Turkish Barber · Hexham</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-wa nav-cta" href="https://wa.me/447403349474">WhatsApp Us</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow rise rise-1">Hexham · Northumberland</span>
+      <h1 class="rise rise-2">The Turkish barber ritual, <em>done properly</em> — right here in <span class="redword">Hexham</span>.</h1>
+      <p class="lead rise rise-3">Precision cuts, skin fades, hot towel shaves and proper beard work — the full traditional Turkish barber experience at Zanzi's Turkish Barber. No rushed chairs, no shortcuts: just sharp, careful barbering.</p>
+      <div class="hero-ctas rise rise-4">
+        <a class="btn btn-wa" href="https://wa.me/447403349474">Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447482384770">Call 07482 384770</a>
+        <a class="btn btn-gold" href="#services">See Services</a>
+      </div>
+      <div class="rating-card rise rise-4">
+        <span class="rating-num">4.7</span>
+        <span>
+          <span class="stars">★★★★★</span>
+          <small>Rated by customers on Google — 116 reviews</small>
+        </span>
+      </div>
+    </div>
+    <div class="hero-photo rise rise-3">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop" alt="Barber giving a precision haircut at Zanzi's Turkish Barber in Hexham">
+      <div class="hero-badge"><strong>Hot towel shaves</strong> · the traditional way</div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>4.7 ★</b><span>Google rating</span></div>
+    <div class="stat"><b>116</b><span>Google reviews</span></div>
+    <div class="stat"><b>100%</b><span>Traditional Turkish techniques</span></div>
+    <div class="stat"><b>Hexham</b><span>Northumberland, England</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-photos">
+      <img class="tall" src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=900&auto=format&fit=crop" alt="Inside a traditional barber shop">
+      <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=900&auto=format&fit=crop" alt="Barber at work with clippers">
+      <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=900&auto=format&fit=crop" alt="Classic barber chair and tools">
+    </div>
+    <div class="about-copy">
+      <span class="kicker" style="text-align:left;display:block">About Zanzi's</span>
+      <h2>A proper Turkish barber experience in the heart of Hexham</h2>
+      <p>Turkish barbering is a craft with centuries behind it — unhurried, precise, and built around the ritual as much as the cut itself. At <strong>Zanzi's Turkish Barber in Hexham, Northumberland</strong>, that tradition is alive in every appointment: careful consultation, exact clipper and scissor work, and the finishing touches that turn a haircut into an experience.</p>
+      <p>From sharp skin fades to the classic hot towel shave, everything is done the traditional way — with patience, skill and attention to the details other places skip. It is why local customers rate us <strong>4.7 stars across 116 Google reviews</strong>.</p>
+      <p>Whether it is your regular tidy-up, a full restyle, or the full works before a big occasion, you will leave the chair looking sharper than when you sat down.</p>
+      <ul class="checklist">
+        <li>Traditional Turkish techniques, including the hot towel ritual</li>
+        <li>Precision fades, classic cuts and full restyles</li>
+        <li>Beard trims, shaping and traditional ear &amp; nose waxing</li>
+        <li>Friendly, unhurried service — every client, every time</li>
+        <li>Easy booking — just message us on WhatsApp</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="kicker">What we do</p>
+    <h2 class="sec-title">Services</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">Every service is finished the Turkish way — checked from every angle, tidied at the edges, and styled before you leave the chair. For prices, just call or message us — we will be happy to help.</p>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=900&auto=format&fit=crop" alt="Traditional Turkish haircut being finished">
+        <div class="svc-body">
+          <h3>Turkish Haircut</h3>
+          <p>The classic full service: consultation, precision scissor and clipper cut shaped to your head and hair type, wash and style to finish. The complete traditional cut, done with care from start to finish.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=900&auto=format&fit=crop" alt="Skin fade being blended with clippers">
+        <div class="svc-body">
+          <h3>Skin Fade</h3>
+          <p>Seamless blends from skin to length — low, mid or high fade, tapered or sharp. Blended patiently with no harsh lines, checked in natural light before you leave so it looks right from every side.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=900&auto=format&fit=crop" alt="Traditional cut-throat razor ready for a hot towel shave">
+        <div class="svc-body">
+          <h3>Hot Towel Shave</h3>
+          <p>The signature Turkish ritual: steaming hot towels to soften the beard, rich lather, a traditional cut-throat shave with the grain and against it, then cold towel and soothing oils to finish. The closest, cleanest shave there is.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=900&auto=format&fit=crop" alt="Beard being trimmed and shaped">
+        <div class="svc-body">
+          <h3>Beard Trim &amp; Sculpt</h3>
+          <p>Shape, length and lines — your beard trimmed and sculpted to suit your face, with crisp cheek and neck lines edged with the cut-throat razor and finished with beard oils for a clean, healthy look.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=900&auto=format&fit=crop" alt="Barber detailing and tidying around the ears">
+        <div class="svc-body">
+          <h3>Ear &amp; Nose Waxing</h3>
+          <p>The traditional Turkish finishing touch: quick, tidy ear and nose waxing that removes stray hairs cleanly and comfortably — plus the classic ear-flame finish where suitable. Small detail, big difference.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?q=80&w=900&auto=format&fit=crop" alt="Young customer having a haircut">
+        <div class="svc-body">
+          <h3>Kids Cut</h3>
+          <p>Patient, friendly cuts for younger customers — from a first tidy-up to a sharp fade for school. A calm chair, no rushing, and a style they will actually be happy to show off.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- RITUAL -->
+<section class="ritual">
+  <div class="wrap">
+    <p class="kicker">The experience</p>
+    <h2 class="sec-title">How booking works</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">No forms, no fuss. Booking your chair at Zanzi's takes less than a minute.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Message on WhatsApp</h3>
+        <p>Tap any WhatsApp button on this page and tell us what you would like — a cut, a fade, the full hot towel shave, or the works.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Pick your time</h3>
+        <p>We will confirm a time that suits you. Prefer to talk it through? Call us on <a href="tel:+447482384770" style="color:var(--gold-soft)">07482 384770</a>.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Sit back in the chair</h3>
+        <p>Come in, relax, and let the ritual do the rest. You will leave sharper, fresher and properly looked after.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <p class="kicker">Inside the shop</p>
+    <h2 class="sec-title">Gallery</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">Sharp lines, clean blends and the traditional tools of the trade.</p>
+    <div class="gal-grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=900&auto=format&fit=crop" alt="Barber shop interior with classic chairs">
+        <figcaption>The chair is waiting</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=900&auto=format&fit=crop" alt="Detailed clipper work on a fade">
+        <figcaption>Precision in every blend</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=900&auto=format&fit=crop" alt="Barber finishing a haircut with styling">
+        <figcaption>Finished and styled</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <div class="wrap">
+    <p class="kicker">Why Zanzi's</p>
+    <h2 class="sec-title">Why customers choose Zanzi's</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">Rated 4.7 stars from 116 Google reviews — here is what keeps Hexham coming back.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">🪒</div>
+        <h3>The real Turkish ritual</h3>
+        <p>Hot towels, cut-throat finishing and ear &amp; nose waxing — the traditional touches most barbers skip, all part of the craft here.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🎯</div>
+        <h3>Precision, never rushed</h3>
+        <p>Your cut takes the time it takes. Blends are checked from every angle and in proper light before you leave the chair.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">⭐</div>
+        <h3>Rated 4.7 by locals</h3>
+        <p>116 Google reviews and a 4.7-star rating from customers across Hexham and Northumberland who trust us with their look.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💬</div>
+        <h3>Book in a minute</h3>
+        <p>No accounts, no forms — just message us on WhatsApp, pick a time, and turn up. Simple as it should be.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE FULL WORKS -->
+<section class="ritual" style="background:linear-gradient(180deg,#140d07,var(--coal))">
+  <div class="wrap">
+    <p class="kicker">The signature service</p>
+    <h2 class="sec-title">The Full Works — the complete Turkish ritual</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">If you have never had a traditional Turkish barber experience, this is the one to try. It brings together everything we do into a single, unhurried appointment.</p>
+    <div class="steps" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+      <div class="step">
+        <div class="step-num">✂</div>
+        <h3>1 · The Cut</h3>
+        <p>We start with a consultation and your haircut or fade — precision scissor and clipper work shaped to you, washed and styled so you can see the finished result properly.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">♨</div>
+        <h3>2 · The Hot Towels</h3>
+        <p>Steaming towels are wrapped around the face to open the pores and soften the beard — the heart of the Turkish ritual, and the secret behind the closest shave.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">🪒</div>
+        <h3>3 · The Shave</h3>
+        <p>A rich lather and a traditional cut-throat shave — with the grain, then against it — followed by a cold towel to close the pores and soothing oils to calm the skin.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">✦</div>
+        <h3>4 · The Finishing Touches</h3>
+        <p>Ear and nose waxing, the classic ear-flame finish where suitable, beard lines edged to a crisp finish, and a final check in the mirror from every angle.</p>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--muted);max-width:42rem;margin:2.2rem auto 0">Perfect before a wedding, a big night out, a job interview — or simply because you deserve to feel properly looked after. <strong style="color:var(--cream)">Call or message for prices</strong> and to book the full works.</p>
+    <div style="text-align:center;margin-top:1.6rem">
+      <a class="btn btn-wa" href="https://wa.me/447403349474">Book the Full Works</a>
+    </div>
+  </div>
+</section>
+
+<!-- GROOMING GUIDE -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Look after it</p>
+    <h2 class="sec-title">Keeping it sharp between visits</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">A great cut deserves a little care at home. Our barbers' simple advice for the days after your appointment:</p>
+    <div class="why-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <div class="why-card">
+        <div class="icon">📅</div>
+        <h3>Rebook fades regularly</h3>
+        <p>Skin fades look their sharpest in the first couple of weeks. Regular tidy-up appointments keep the blend clean and the lines crisp — message us any time to book your next one.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🧴</div>
+        <h3>A little product goes far</h3>
+        <p>Use a small amount of styling product on dry hair and work it through with your fingers. Less is more — you can always add, and it keeps the finish natural rather than heavy.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🪮</div>
+        <h3>Brush the beard down</h3>
+        <p>A quick brush through your beard each morning trains it to sit the way it was sculpted in the chair, and a drop of beard oil keeps it soft and the skin underneath comfortable.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🚿</div>
+        <h3>Mind the hot water</h3>
+        <p>Very hot water dries out skin and hair, especially after a close shave. Warm water and a gentle moisturiser will keep that fresh-from-the-chair feeling going longer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <p class="kicker">Good to know</p>
+    <h2 class="sec-title">Frequently asked questions</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">Anything else? Message us on WhatsApp and we will get straight back to you.</p>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp — tap any green WhatsApp button on this page or message <a href="https://wa.me/447403349474">07403 349474</a>. Tell us what service you would like and when, and we will confirm your time. You can also call us on <a href="tel:+447482384770">07482 384770</a>.</p>
+      </details>
+      <details>
+        <summary>Where are you located?</summary>
+        <p>We are Zanzi's Turkish Barber in Hexham, Northumberland. Message us on WhatsApp and we will happily point you in the right direction.</p>
+      </details>
+      <details>
+        <summary>How much are your services?</summary>
+        <p>Prices depend on the service, so the best way to get an exact price is to call or message us — we will be happy to help. Call <a href="tel:+447482384770">07482 384770</a> or WhatsApp <a href="https://wa.me/447403349474">07403 349474</a>.</p>
+      </details>
+      <details>
+        <summary>What is a traditional Turkish hot towel shave?</summary>
+        <p>It is the classic wet shave done the traditional way: hot towels open the pores and soften the beard, a rich lather is applied, and the shave is done with a traditional cut-throat razor. A cold towel and soothing oils finish the ritual, leaving skin close-shaved, calm and fresh.</p>
+      </details>
+      <details>
+        <summary>Do you do skin fades?</summary>
+        <p>Yes — skin fades are one of our most popular services. Low, mid or high, tapered or sharp, every fade is blended carefully and checked from all sides so there are no harsh lines.</p>
+      </details>
+      <details>
+        <summary>What is ear &amp; nose waxing?</summary>
+        <p>It is a quick, tidy traditional service that removes visible stray hairs from the ears and nose cleanly and comfortably. It is a small finishing detail that makes a freshly cut style look properly complete.</p>
+      </details>
+      <details>
+        <summary>Do you cut children's hair?</summary>
+        <p>Yes, we offer kids cuts with a patient, friendly approach — from gentle tidy-ups to sharp school fades. Message us on WhatsApp to book them in.</p>
+      </details>
+      <details>
+        <summary>When are you open?</summary>
+        <p>Opening times can vary, so for today's availability just message us on WhatsApp at <a href="https://wa.me/447403349474">07403 349474</a> or call <a href="tel:+447482384770">07482 384770</a> and we will let you know the best time to come in.</p>
+      </details>
+      <details>
+        <summary>Can I get a beard trim without a haircut?</summary>
+        <p>Of course — beard trims and sculpting are available on their own, including shape, length and crisp razor-edged lines, finished with beard oils.</p>
+      </details>
+      <details>
+        <summary>Can I book for a group, like a groom and best man?</summary>
+        <p>Yes — message us on WhatsApp with how many people and what everyone would like, and we will arrange the appointments so the whole group is looked after properly, one chair at a time.</p>
+      </details>
+      <details>
+        <summary>How long does an appointment take?</summary>
+        <p>It depends on the service — a tidy-up is quicker than the full works with a hot towel shave. When you message us on WhatsApp to book, tell us what you would like and we will let you know how long to allow so you are never rushed.</p>
+      </details>
+      <details>
+        <summary>Do I need to bring anything?</summary>
+        <p>Just yourself. If you have a photo of a style you like, feel free to show us — it is a great starting point for the consultation, and we will honestly tell you how it can be adapted to suit your hair.</p>
+      </details>
+      <details>
+        <summary>What should I ask for if I am not sure what suits me?</summary>
+        <p>Just come in or message us — every appointment starts with a quick consultation, and we will happily recommend a cut or fade that suits your hair type, head shape and how much styling you like to do at home.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- THE ZANZI STANDARD -->
+<section style="background:linear-gradient(180deg,var(--ink),#120c07)">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="kicker" style="text-align:left;display:block">The Zanzi standard</span>
+      <h2>Small details, done every single time</h2>
+      <p>A Turkish barber appointment is a ritual of small details, and it is the details that separate a good cut from a great one. At Zanzi's, every appointment follows the same standard — whether it is your first visit or your fiftieth.</p>
+      <p><strong>It starts with listening.</strong> Before a single hair is cut, we talk through what you want, how your hair grows, and how you style it at home. The best barbering is a conversation, not a conveyor belt — that is how you end up with a cut that still looks right two weeks later, not just two minutes later.</p>
+      <p><strong>Then comes the craft.</strong> Clippers and scissors in practiced hands, blends checked from every angle and in proper light, lines edged cleanly with the cut-throat razor. We would rather take an extra minute than let you leave with a line we would not wear ourselves.</p>
+      <p><strong>And it ends with the finish.</strong> A proper tidy around the ears and neck, stray hairs dealt with, styling shown — not just done — so you can recreate the look at home, and honest advice on when to come back to keep it sharp.</p>
+      <p>That standard is why customers travel in from across the Tyne Valley and leave us the reviews they do. Whether you have been coming for years or it is your very first visit, the chair, the ritual and the care are exactly the same.</p>
+      <ul class="checklist">
+        <li>Consultation first — we listen before we cut</li>
+        <li>Every blend checked from all sides, in proper light</li>
+        <li>Cut-throat razor finishing for truly crisp lines</li>
+        <li>Styling shown, not just done — recreate it at home</li>
+        <li>Honest advice on upkeep and when to rebook</li>
+      </ul>
+    </div>
+    <div class="about-photos">
+      <img class="tall" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=900&auto=format&fit=crop" alt="Barber carrying out detailed clipper work">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=900&auto=format&fit=crop" alt="Careful finishing touches during a haircut">
+      <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=900&auto=format&fit=crop" alt="Barber shop chairs ready for customers">
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Book ahead for</p>
+    <h2 class="sec-title">Big day coming up?</h2>
+    <div class="divider"></div>
+    <p class="sec-sub">Some appointments matter more than others. Here is when Hexham books in with us — message early on WhatsApp to secure your chair.</p>
+    <div class="why-grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+      <div class="why-card">
+        <div class="icon">💍</div>
+        <h3>Weddings</h3>
+        <p>Grooms, best men and fathers of the bride — book the full works a day or two before the big day so you look sharp in every photograph without a same-day rush.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💼</div>
+        <h3>Interviews &amp; new jobs</h3>
+        <p>First impressions count. A clean cut and tidy beard before an interview or a new role is the easiest confidence boost there is.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🎉</div>
+        <h3>Nights out &amp; occasions</h3>
+        <p>Parties, race days, Christmas dos and family get-togethers — a fresh fade and a hot towel shave will have you feeling the part before you walk in.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">📸</div>
+        <h3>Photos &amp; events</h3>
+        <p>Graduations, family photo shoots and anything with a camera pointed at you — come in beforehand and let the ritual do the rest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="book">
+  <div class="wrap">
+    <div class="book-card">
+      <p class="kicker">Book your chair</p>
+      <h2>Ready to look sharper?</h2>
+      <p>Message us on WhatsApp now to book your cut, fade or hot towel shave at Zanzi's Turkish Barber, Hexham. It takes less than a minute.</p>
+      <div class="book-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447403349474">WhatsApp 07403 349474</a>
+        <a class="btn btn-ghost" href="tel:+447482384770">Call 07482 384770</a>
+      </div>
+      <div class="book-meta">
+        <span><strong>Location:</strong> Hexham, Northumberland</span>
+        <span><strong>Rating:</strong> 4.7 ★ · 116 Google reviews</span>
+        <span><strong>Prices:</strong> Call or message for prices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">Zanzi's <span>Turkish Barber</span></p>
+        <p style="margin-top:.6rem">Traditional Turkish barbering in Hexham, Northumberland — precision cuts, skin fades, hot towel shaves, beard sculpting and ear &amp; nose waxing.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <p><a href="#about">About us</a></p>
+        <p><a href="#services">Services</a></p>
+        <p><a href="#gallery">Gallery</a></p>
+        <p><a href="#faq">FAQ</a></p>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <p>WhatsApp: <a href="https://wa.me/447403349474">07403 349474</a></p>
+        <p>Phone: <a href="tel:+447482384770">07482 384770</a></p>
+        <p>Hexham, Northumberland, England</p>
+        <p>Rated 4.7 ★ from 116 Google reviews</p>
+      </div>
+    </div>
+    <p class="copyright">© Zanzi's Turkish Barber, Hexham. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447403349474" aria-label="Chat with Zanzi's Turkish Barber on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4.9 29l7.3-1.4c1.2.4 2.5.6 3.8.6 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
