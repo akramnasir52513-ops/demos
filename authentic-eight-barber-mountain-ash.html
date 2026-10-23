@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authentic Eight Barber Studio | Barbers in Mountain Ash — Fades, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="Authentic Eight Barber Studio, 62 Rheola Street, Mountain Ash. Rated 5.0 from 100 Google reviews. Precision cuts, skin fades, beard trims and hot towel shaves. Book via WhatsApp or Nearcut.">
+<style>
+:root{
+  --black:#0a0a0c; --ink:#101014; --panel:#15151b; --line:#26262e;
+  --white:#ffffff; --paper:#f4f4f2; --grey:#b9b9c0; --grey2:#8a8a93;
+  --blue:#2e7dff; --blue-d:#0f5ae0; --blue-soft:rgba(46,125,255,.12);
+  --disp:"Arial Black","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  --body:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--black);color:var(--paper);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92%);margin:0 auto}
+section{padding:84px 0}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--blue)}
+.kicker::before{content:"";width:34px;height:3px;background:var(--blue);display:inline-block}
+h1,h2,h3{font-family:var(--disp);line-height:1.04;letter-spacing:-.01em;text-transform:uppercase}
+h2{font-size:clamp(1.9rem,4.4vw,3rem);margin:14px 0 16px}
+h2 .bl{color:var(--blue)}
+.lede{color:var(--grey);max-width:640px;font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:6px;font-weight:800;font-size:.98rem;letter-spacing:.02em;transition:transform .2s ease,background .2s ease,border-color .2s ease;border:2px solid transparent;cursor:pointer}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:#22c55e;color:#06130a}
+.btn-wa:hover{background:#1eb356}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-d)}
+.btn-ghost{border-color:#3a3a44;color:var(--white);background:transparent}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn svg{width:20px;height:20px;flex:none}
+/* top strip */
+.strip{background:var(--blue);color:#fff;font-size:.82rem;font-weight:700;letter-spacing:.06em}
+.strip .wrap{display:flex;justify-content:space-between;gap:14px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.strip a{text-decoration:underline;text-underline-offset:3px}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.logo{font-family:var(--disp);font-size:1.06rem;letter-spacing:.02em;text-transform:uppercase;line-height:1.1}
+.logo span{color:var(--blue)}
+.logo small{display:block;font-family:var(--body);font-weight:700;font-size:.62rem;letter-spacing:.34em;color:var(--grey2)}
+.nav nav{display:flex;gap:26px;font-weight:700;font-size:.92rem}
+.nav nav a{color:var(--grey);transition:color .2s}
+.nav nav a:hover{color:#fff}
+.nav .btn{padding:11px 20px}
+@media(max-width:860px){.nav nav{display:none}}
+/* hero */
+.hero{position:relative;padding:0;overflow:hidden;background:var(--ink)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:640px}
+.hero-copy{padding:76px 6% 76px max(4%,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.hero-copy::after{content:"8";position:absolute;right:-30px;top:6px;font-family:var(--disp);font-size:19rem;line-height:1;color:transparent;-webkit-text-stroke:2px rgba(46,125,255,.16);z-index:-1}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);margin:18px 0 20px}
+.hero h1 .bl{color:var(--blue)}
+.hero p{color:var(--grey);font-size:1.12rem;max-width:520px;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-photo{position:relative;min-height:340px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:heroZoom 14s ease-in-out infinite alternate}
+.hero-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,transparent 32%);z-index:1}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.09)}}
+.rate-card{position:absolute;left:26px;bottom:26px;z-index:2;background:#fff;color:#0a0a0c;border-radius:10px;padding:16px 20px;display:flex;align-items:center;gap:16px;box-shadow:0 18px 44px rgba(0,0,0,.45);animation:bob 5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.rate-card .big{font-family:var(--disp);font-size:2rem;line-height:1}
+.rate-card .stars{color:#f5a623;letter-spacing:2px;font-size:1rem}
+.rate-card small{color:#55555e;font-weight:700;display:block;font-size:.78rem}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-copy{padding:60px 4%}.hero-photo{min-height:300px}}
+/* stats */
+.stats{background:#fff;color:#0a0a0c;padding:0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:26px 18px;border-left:1px solid #e4e4e0}
+.stat:first-child{border-left:none}
+.stat b{font-family:var(--disp);font-size:1.7rem;display:block;line-height:1.1}
+.stat b i{font-style:normal;color:var(--blue)}
+.stat span{font-size:.84rem;font-weight:700;color:#55555e;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:760px){.stats .wrap{grid-template-columns:1fr 1fr}.stat{border-top:1px solid #e4e4e0}}
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.collage{position:relative}
+.collage .main{border-radius:12px;width:100%;height:480px;object-fit:cover}
+.collage .over{position:absolute;right:-14px;bottom:-26px;width:52%;height:250px;object-fit:cover;border-radius:12px;border:6px solid var(--black);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.collage .tag{position:absolute;top:18px;left:18px;background:var(--blue);color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.1em;padding:8px 14px;border-radius:4px;text-transform:uppercase}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.collage .main{height:360px}}
+.checks{list-style:none;margin-top:26px;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:var(--grey)}
+.checks li b{color:#fff}
+.checks .tick{flex:none;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:.85rem;margin-top:2px}
+/* services */
+.services{background:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+@media(max-width:980px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .25s ease,border-color .25s ease}
+.svc:hover{transform:translateY(-6px);border-color:var(--blue)}
+.svc img{width:100%;height:210px;object-fit:cover}
+.svc-body{padding:24px}
+.svc .num{font-family:var(--disp);color:var(--blue);font-size:.85rem;letter-spacing:.2em}
+.svc h3{font-size:1.22rem;margin:8px 0 10px}
+.svc p{color:var(--grey);font-size:.96rem;margin-bottom:14px}
+.svc ul{list-style:none;display:grid;gap:7px;margin-bottom:18px}
+.svc ul li{font-size:.9rem;color:var(--grey);padding-left:18px;position:relative}
+.svc ul li::before{content:"";position:absolute;left:0;top:.52em;width:8px;height:8px;background:var(--blue);border-radius:2px}
+.svc .price-note{font-weight:800;color:#fff;font-size:.9rem;border-top:1px dashed #34343e;padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.svc .price-note a{color:var(--blue);font-weight:800;white-space:nowrap}
+.svc .price-note a:hover{text-decoration:underline}
+/* craft rows */
+.craft-row{display:grid;grid-template-columns:90px 1fr 1fr;gap:26px;padding:30px 0;border-bottom:1px solid var(--line);align-items:start}
+.craft-row:last-child{border-bottom:none}
+.craft-row .n{font-family:var(--disp);font-size:2.2rem;color:transparent;-webkit-text-stroke:1.6px var(--blue);line-height:1}
+.craft-row h3{font-size:1.15rem}
+.craft-row p{color:var(--grey);font-size:.97rem}
+@media(max-width:700px){.craft-row{grid-template-columns:1fr}.craft-row .n{font-size:1.6rem}}
+/* gallery */
+.gallery{background:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+@media(max-width:900px){.gal-grid{grid-template-columns:1fr 1fr}}
+.gal{position:relative;border-radius:10px;overflow:hidden}
+.gal img{width:100%;height:250px;object-fit:cover;transition:transform .5s ease}
+.gal:hover img{transform:scale(1.07)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.82));font-weight:700;font-size:.88rem}
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+@media(max-width:980px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.why-grid{grid-template-columns:1fr}}
+.why-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px}
+.why-card .ic{width:50px;height:50px;border-radius:10px;background:var(--blue-soft);display:grid;place-items:center;margin-bottom:16px}
+.why-card .ic svg{width:26px;height:26px;stroke:var(--blue)}
+.why-card h3{font-size:1.05rem;margin-bottom:8px}
+.why-card p{color:var(--grey);font-size:.95rem}
+/* steps */
+.steps{background:var(--blue);color:#fff}
+.steps h2{color:#fff}
+.steps .lede{color:rgba(255,255,255,.85)}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+@media(max-width:820px){.step-grid{grid-template-columns:1fr}}
+.step{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:28px}
+.step .n{font-family:var(--disp);font-size:2rem;opacity:.65;line-height:1}
+.step h3{font-size:1.1rem;margin:12px 0 8px}
+.step p{font-size:.96rem;color:rgba(255,255,255,.9)}
+/* guide */
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
+@media(max-width:820px){.guide-grid{grid-template-columns:1fr}}
+.guide-card{border:1px solid var(--line);border-radius:12px;padding:28px;background:var(--panel)}
+.guide-card h3{font-size:1.08rem;margin-bottom:10px;color:#fff}
+.guide-card p,.guide-card li{color:var(--grey);font-size:.96rem}
+.guide-card ul{list-style:none;display:grid;gap:8px;margin-top:10px}
+.guide-card ul li{padding-left:18px;position:relative}
+.guide-card ul li::before{content:"";position:absolute;left:0;top:.52em;width:8px;height:8px;background:var(--blue);border-radius:2px}
+/* faq */
+.faq-list{margin-top:40px;display:grid;gap:12px;max-width:860px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:0 22px}
+details summary{cursor:pointer;font-weight:800;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-family:var(--disp);color:var(--blue);font-size:1.3rem;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{color:var(--grey);padding:0 0 18px;font-size:.97rem}
+details p a{color:var(--blue);font-weight:700}
+/* contact */
+.contact{background:var(--ink);border-top:1px solid var(--line)}
+.contact-card{background:#fff;color:#0a0a0c;border-radius:14px;padding:clamp(28px,5vw,52px);display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+@media(max-width:860px){.contact-card{grid-template-columns:1fr}}
+.contact-card h2{color:#0a0a0c}
+.contact-card p{color:#4c4c55}
+.contact-rows{display:grid;gap:14px;font-weight:700}
+.contact-rows .row{display:flex;gap:12px;align-items:flex-start}
+.contact-rows .row svg{width:22px;height:22px;flex:none;stroke:var(--blue);margin-top:2px}
+.contact-rows small{display:block;color:#6a6a73;font-weight:600}
+.contact-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+/* footer */
+footer{border-top:1px solid var(--line);padding:52px 0 34px;background:#070709}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px}
+@media(max-width:820px){.foot-grid{grid-template-columns:1fr}}
+footer h4{font-family:var(--disp);text-transform:uppercase;font-size:.92rem;margin-bottom:14px}
+footer p,footer a{color:var(--grey2);font-size:.93rem}
+footer ul{list-style:none;display:grid;gap:9px}
+footer a:hover{color:var(--blue)}
+.foot-base{border-top:1px solid var(--line);margin-top:38px;padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#55555e;font-size:.84rem}
+/* float */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#22c55e;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.45);animation:bob 5s ease-in-out infinite}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="strip">
+  <div class="wrap">
+    <span>★ 5.0 RATED ON GOOGLE — 100 REVIEWS</span>
+    <span>62 Rheola Street, Mountain Ash · <a href="tel:+447340929905">07340 929905</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Authentic <span>Eight</span><small>Barber Studio · Mountain Ash</small></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/447340929905" target="_blank" rel="noopener">Book on WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="kicker">Barber Studio · Mountain Ash</span>
+      <h1>Sharp looks.<br><span class="bl">Studio</span> standard.</h1>
+      <p>Authentic Eight Barber Studio on Rheola Street is where Mountain Ash comes for precision cuts, clean skin fades and proper hot towel shaves — finished to a studio standard, every single chair, every single visit.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447340929905" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.1z"/></svg>Message on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447340929905">Call 07340 929905</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1200&auto=format&fit=crop" alt="Barber at work inside Authentic Eight Barber Studio, Mountain Ash">
+      <div class="rate-card">
+        <span class="big">5.0</span>
+        <span><span class="stars">★★★★★</span><small>100 Google reviews</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>5.0<i>★</i></b><span>Google rating</span></div>
+    <div class="stat"><b>100</b><span>Google reviews</span></div>
+    <div class="stat"><b>No. <i>8</i></b><span>Studio standard</span></div>
+    <div class="stat"><b>1 <i>tap</i></b><span>To book on WhatsApp</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="collage">
+      <img class="main" src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=1200&auto=format&fit=crop" alt="Inside the barber studio on Rheola Street">
+      <img class="over" src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop" alt="Precision haircut in progress at Authentic Eight">
+      <span class="tag">Est. Mountain Ash</span>
+    </div>
+    <div>
+      <span class="kicker">About the studio</span>
+      <h2>A proper barber studio, <span class="bl">right here</span> in Mountain Ash</h2>
+      <p class="lede">You'll find Authentic Eight Barber Studio at 62 Rheola Street, Mountain Ash — in the Aberdare area of the Cynon Valley. It's a studio, not a conveyor belt: every appointment starts with a proper consultation, and no one leaves the chair until the finish is exactly right.</p>
+      <p class="lede" style="margin-top:14px">That approach is why locals rate the studio a perfect 5.0 on Google across 100 reviews. Whether it's a sharp skin fade for the weekend, a tidy-up before a big occasion, or your child's first proper haircut, the standard never drops.</p>
+      <ul class="checks">
+        <li><span class="tick">✓</span><span><b>Consultation first</b> — we talk through the cut, your hair type and how it grows before a clipper is lifted.</span></li>
+        <li><span class="tick">✓</span><span><b>Studio finish</b> — crisp edges, blended fades and a styled finish as standard, not an extra.</span></li>
+        <li><span class="tick">✓</span><span><b>Easy booking</b> — book through Nearcut, message on Facebook, or tap the WhatsApp button anywhere on this page.</span></li>
+        <li><span class="tick">✓</span><span><b>Local &amp; loyal</b> — a Mountain Ash studio built on repeat customers and word of mouth.</span></li>
+      </ul>
+      <div class="hero-ctas" style="margin-top:28px">
+        <a class="btn btn-blue" href="#services">See services</a>
+        <a class="btn btn-ghost" href="https://wa.me/447340929905" target="_blank" rel="noopener">Ask a question</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="kicker">What we do</span>
+    <h2>Services, done <span class="bl">properly</span></h2>
+    <p class="lede">Six core services, each with the same studio standard. We don't print a price list here because the right price depends on the cut and the hair — call or message and you'll get an honest price before you book.</p>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1200&auto=format&fit=crop" alt="Precision haircut at Authentic Eight Barber Studio">
+        <div class="svc-body">
+          <span class="num">/ 01</span>
+          <h3>Precision Haircut</h3>
+          <p>The classic cut, tailored properly. Scissor work and clipper work combined to suit your head shape, hair type and how you actually wear it day to day.</p>
+          <ul>
+            <li>Consultation &amp; style advice included</li>
+            <li>Scissor and clipper techniques</li>
+            <li>Washed, styled finish</li>
+          </ul>
+          <div class="price-note"><span>Call or message for prices</span><a href="https://wa.me/447340929905" target="_blank" rel="noopener">Book →</a></div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=1200&auto=format&fit=crop" alt="Clipper work for a skin fade in Mountain Ash">
+        <div class="svc-body">
+          <span class="num">/ 02</span>
+          <h3>Skin Fade</h3>
+          <p>Low, mid or high — blended seamlessly down to the skin with no harsh lines. The fade is checked from every angle before you leave the chair.</p>
+          <ul>
+            <li>Low, mid, high &amp; taper fades</li>
+            <li>Seamless blending, zero harsh lines</li>
+            <li>Razor-sharp edge-up included</li>
+          </ul>
+          <div class="price-note"><span>Call or message for prices</span><a href="https://wa.me/447340929905" target="_blank" rel="noopener">Book →</a></div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop" alt="Beard trim and sculpting at the studio">
+        <div class="svc-body">
+          <span class="num">/ 03</span>
+          <h3>Beard Trim &amp; Sculpt</h3>
+          <p>Shape, length and lines brought back under control. Your beard is sculpted to suit your face, with clean cheek and neck lines every time.</p>
+          <ul>
+            <li>Shape matched to your face</li>
+            <li>Crisp cheek &amp; neck lines</li>
+            <li>Beard care advice to take home</li>
+          </ul>
+          <div class="price-note"><span>Call or message for prices</span><a href="https://wa.me/447340929905" target="_blank" rel="noopener">Book →</a></div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=1200&auto=format&fit=crop" alt="Traditional hot towel shave preparation">
+        <div class="svc-body">
+          <span class="num">/ 04</span>
+          <h3>Hot Towel Shave</h3>
+          <p>The traditional wet shave, done the way it should be: hot towels to soften, a close comfortable pass, and a cool finish. Old-school ritual, studio precision.</p>
+          <ul>
+            <li>Hot towel preparation</li>
+            <li>Close, comfortable wet shave</li>
+            <li>Soothing cool-towel finish</li>
+          </ul>
+          <div class="price-note"><span>Call or message for prices</span><a href="https://wa.me/447340929905" target="_blank" rel="noopener">Book →</a></div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="Young client with a fresh haircut">
+        <div class="svc-body">
+          <span class="num">/ 05</span>
+          <h3>Kids Cuts</h3>
+          <p>Patient, friendly cuts for younger clients — from first haircuts to school-ready styles and teen fades. No rushing, no fuss, just a cut they'll be happy to show off.</p>
+          <ul>
+            <li>First haircuts welcome</li>
+            <li>School &amp; teen styles</li>
+            <li>Patient, unhurried approach</li>
+          </ul>
+          <div class="price-note"><span>Call or message for prices</span><a href="https://wa.me/447340929905" target="_blank" rel="noopener">Book →</a></div>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop" alt="The full works — cut, beard and finish">
+        <div class="svc-body">
+          <span class="num">/ 06</span>
+          <h3>The Full Works</h3>
+          <p>The complete reset: precision cut or fade, beard sculpt and hot towel finish in one sitting. The one to book before a wedding, a holiday or a big night out.</p>
+          <ul>
+            <li>Cut or fade of your choice</li>
+            <li>Beard trim &amp; sculpt included</li>
+            <li>Hot towel finish</li>
+          </ul>
+          <div class="price-note"><span>Call or message for prices</span><a href="https://wa.me/447340929905" target="_blank" rel="noopener">Book →</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="craft">
+  <div class="wrap">
+    <span class="kicker">The craft</span>
+    <h2>How every cut <span class="bl">comes together</span></h2>
+    <div style="margin-top:26px">
+      <div class="craft-row">
+        <span class="n">01</span>
+        <h3>Consultation</h3>
+        <p>Every appointment starts with a conversation: what you want, what your hair will actually do, and how much upkeep you're happy with. Honest advice first — if a style won't suit your hair, we'll tell you what will.</p>
+      </div>
+      <div class="craft-row">
+        <span class="n">02</span>
+        <h3>The cut</h3>
+        <p>Clipper and scissor work built up in stages, checked against the mirror from every angle as it goes. Fades are blended gradually — that's how you get a gradient with no visible lines and a grow-out that still looks tidy.</p>
+      </div>
+      <div class="craft-row">
+        <span class="n">03</span>
+        <h3>The finish</h3>
+        <p>Edges sharpened, neckline cleaned up, and the style finished so you can see exactly how it'll look day to day. Before you leave, we'll show you how to recreate the finish at home in a couple of minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <span class="kicker">From the studio</span>
+    <h2>The work speaks <span class="bl">for itself</span></h2>
+    <p class="lede">Clean fades, sharp lines and finishes that hold their shape. This is the standard that earned Authentic Eight a perfect 5.0 rating from 100 Google reviews in Mountain Ash and the Aberdare area.</p>
+    <div class="gal-grid">
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1200&auto=format&fit=crop" alt="Barber crafting a cut in the studio"><figcaption>In the chair</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop" alt="Beard sculpting close-up"><figcaption>Beard sculpting</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?q=80&w=1200&auto=format&fit=crop" alt="Studio chairs at Authentic Eight"><figcaption>The studio floor</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop" alt="Finished cut and beard, styled"><figcaption>The finished article</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=1200&auto=format&fit=crop" alt="Professional clippers and tools"><figcaption>Tools of the trade</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1200&auto=format&fit=crop" alt="Client with a fresh, tidy style"><figcaption>Sharp &amp; tidy</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=1200&auto=format&fit=crop" alt="Confident finish after a studio cut"><figcaption>Ready for the weekend</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=1200&auto=format&fit=crop" alt="Barber studio interior, Mountain Ash"><figcaption>62 Rheola Street</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <span class="kicker">Why choose us</span>
+    <h2>Why Mountain Ash <span class="bl">chooses Eight</span></h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+        <h3>Perfect 5.0 rating</h3>
+        <p>A perfect score across 100 Google reviews doesn't happen by accident. It's earned one careful cut at a time, by clients across Mountain Ash and the Aberdare area.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.1 7.9L20 20M8.1 16.1L20 4"/></svg></div>
+        <h3>Studio-standard cuts</h3>
+        <p>Consultation, craft and finish on every service — no rushed chairs, no "that'll do". If it isn't right, it isn't finished.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-4.4-7.7L21 4l-.8 4.2c.5 1.2.8 2.5.8 3.8z"/><path d="M8.5 10.5c.5 2.5 3.5 5.5 6 6l1.7-1.7 3 1.2c.3.1.5.4.4.8l-.3 1.9c0 .3-.3.5-.6.5C10.5 18.6 5.4 13.5 5 5.3c0-.3.2-.6.5-.6l1.9-.3c.4 0 .7.1.8.4l1.2 3z" transform="scale(.9) translate(1.3 1.3)"/></svg></div>
+        <h3>Book in one tap</h3>
+        <p>Message on WhatsApp, book through Nearcut, or reach out on Facebook — whichever suits you. Questions get answered before you commit to anything.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-9.7-9C.9 8.9 2.6 5 6.1 5c2 0 3.4 1.1 4.2 2.4h3.4C14.5 6.1 15.9 5 17.9 5c3.5 0 5.2 3.9 3.8 7-2.2 4.4-9.7 9-9.7 9z" transform="scale(.92) translate(1 1)"/></svg></div>
+        <h3>Honest pricing</h3>
+        <p>No printed price list and no surprises: tell us what you're after by phone or message and you'll get a straight price for your hair and the style you want.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Properly local</h3>
+        <p>On Rheola Street in the heart of Mountain Ash — a studio that lives on local repeat custom, not passing trade. Most new faces arrive by recommendation.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6z"/><path d="M9 12l2 2 4-4.5"/></svg></div>
+        <h3>Clean &amp; careful</h3>
+        <p>Tools cleaned and kit kept to a professional standard between every client, and a calm, unhurried chair — including patient first haircuts for kids.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps" id="book">
+  <div class="wrap">
+    <span class="kicker" style="color:#fff">Booking</span>
+    <h2>Booked in <span style="text-decoration:underline;text-underline-offset:6px">three steps</span></h2>
+    <p class="lede">No accounts, no fuss. Most clients book in under a minute.</p>
+    <div class="step-grid">
+      <div class="step"><span class="n">01</span><h3>Message or call</h3><p>Tap any WhatsApp button on this page, call 07340 929905, or book through Nearcut. Tell us the service you're after and when suits you.</p></div>
+      <div class="step"><span class="n">02</span><h3>Confirm your slot</h3><p>We'll confirm your appointment and give you an honest price for the cut before you come in — no surprises on the day.</p></div>
+      <div class="step"><span class="n">03</span><h3>Sit down, leave sharp</h3><p>Find us at 62 Rheola Street, Mountain Ash CF45 3TB. Consultation, cut and studio finish — then you're on your way looking the part.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <span class="kicker">Look after it</span>
+    <h2>Keep the cut <span class="bl">looking fresh</span></h2>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>Making a fade last</h3>
+        <p>A fade looks its sharpest in the first week or two, then softens as it grows. A few habits stretch the fresh look further:</p>
+        <ul>
+          <li>Brush or comb the top into shape while it's slightly damp</li>
+          <li>A pea-sized amount of product is plenty — more just weighs it down</li>
+          <li>Book your tidy-up before it starts to feel overgrown, not after</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>Beard care basics</h3>
+        <p>Between studio visits, a little upkeep keeps the shape we cut in:</p>
+        <ul>
+          <li>Comb it through daily to train the growth direction</li>
+          <li>Tidy stray hairs only — leave the lines to us at your next trim</li>
+          <li>Hot water opens it up; a cooler rinse keeps it comfortable</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>Not sure what to ask for?</h3>
+        <p>Bring a photo. Screenshots of styles you like are the fastest way to get exactly the cut you're picturing — and if it won't suit your hair type, we'll say so honestly and find the version that will.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Big occasion coming up?</h3>
+        <p>Weddings, interviews, holidays and nights out all deserve the Full Works. Book a few days ahead of the event itself so the cut has settled in and looks completely natural in the photos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--ink);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <span class="kicker">Good to know</span>
+    <h2>Questions, <span class="bl">answered</span></h2>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The easiest way is WhatsApp — tap any green button on this page and message <a href="https://wa.me/447340929905" target="_blank" rel="noopener">07340 929905</a>. You can also book through Nearcut, message the studio on Facebook, or simply call the same number.</p>
+      </details>
+      <details>
+        <summary>How much does a haircut cost?</summary>
+        <p>We say call or message for prices, because the honest price depends on the style and your hair. Message us what you're after and you'll get a straight price before you book — no obligation and no surprises on the day.</p>
+      </details>
+      <details>
+        <summary>Where exactly is the studio?</summary>
+        <p>Authentic Eight Barber Studio, 62 Rheola Street, Mountain Ash CF45 3TB — in the Aberdare area of the Cynon Valley. If you're not sure where to find us, message on WhatsApp and we'll point you in the right direction.</p>
+      </details>
+      <details>
+        <summary>Do you do skin fades?</summary>
+        <p>Yes — low, mid, high and taper fades are a studio speciality. Every fade is blended gradually and checked from every angle, with a razor-sharp edge-up included as standard.</p>
+      </details>
+      <details>
+        <summary>Can I get my beard done as well?</summary>
+        <p>Absolutely. Book a beard trim and sculpt on its own, or combine cut, beard and hot towel finish as the Full Works. Either way, the shape is matched to your face and the lines left crisp.</p>
+      </details>
+      <details>
+        <summary>Do you cut children's hair?</summary>
+        <p>Yes, kids are welcome — from first haircuts through to school styles and teen fades. The approach is patient and unhurried, so younger clients can settle in without any stress.</p>
+      </details>
+      <details>
+        <summary>What is a hot towel shave like?</summary>
+        <p>It's the traditional wet shave: hot towels soften the beard first, then a close, comfortable shave, finished with a cool towel. It's as much a reset as a shave — most clients book it as a treat or before a big occasion.</p>
+      </details>
+      <details>
+        <summary>I've got a style in mind — can you match a photo?</summary>
+        <p>Bring it. Photos are the clearest way to show us the look you want. And if a style won't work with your hair type or growth pattern, we'll tell you honestly and cut the version that will.</p>
+      </details>
+      <details>
+        <summary>Do I need to book, or can I just turn up?</summary>
+        <p>Booking ahead is the surest way to get the time you want — it takes under a minute on WhatsApp. If you're passing Rheola Street, message or call first to check today's availability and we'll do our best to fit you in.</p>
+      </details>
+      <details>
+        <summary>What if I need to change my appointment?</summary>
+        <p>Just message us on WhatsApp or call 07340 929905 as early as you can and we'll move things around where possible. A quick message is all it takes — we'd always rather know than have an empty chair.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div>
+        <span class="kicker">Book your chair</span>
+        <h2>Ready when <span class="bl" style="color:var(--blue-d)">you are</span></h2>
+        <p style="margin-top:12px">Message on WhatsApp for today's availability, book through Nearcut, or give the studio a call. Consultation first, studio finish as standard — that's the Authentic Eight way.</p>
+        <div class="contact-ctas" style="margin-top:24px">
+          <a class="btn btn-wa" href="https://wa.me/447340929905" target="_blank" rel="noopener">WhatsApp the studio</a>
+          <a class="btn btn-blue" href="tel:+447340929905">Call 07340 929905</a>
+        </div>
+      </div>
+      <div class="contact-rows">
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Authentic Eight Barber Studio<small>62 Rheola Street, Mountain Ash CF45 3TB</small></span>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+          <span>07340 929905<small>Call or WhatsApp — same number</small></span>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+          <span>Rated 5.0 on Google<small>From 100 reviews — Mountain Ash &amp; Aberdare area</small></span>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <span>Opening hours<small>Message on WhatsApp to check today's availability</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" style="margin-bottom:14px;display:inline-block">Authentic <span>Eight</span><small>Barber Studio · Mountain Ash</small></a>
+        <p>Precision cuts, skin fades, beard sculpting and hot towel shaves at 62 Rheola Street, Mountain Ash — rated a perfect 5.0 by 100 Google reviewers.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About the studio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Book</h4>
+        <ul>
+          <li><a href="https://wa.me/447340929905" target="_blank" rel="noopener">WhatsApp: 07340 929905</a></li>
+          <li><a href="tel:+447340929905">Call: 07340 929905</a></li>
+          <li><a href="#book">Booking via Nearcut &amp; Facebook</a></li>
+          <li><a href="#contact">62 Rheola Street, Mountain Ash CF45 3TB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© Authentic Eight Barber Studio, Mountain Ash. All rights reserved.</span>
+      <span>Demo website — call or message for prices.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447340929905" target="_blank" rel="noopener" aria-label="Chat with Authentic Eight Barber Studio on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.1z"/></svg>
+</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
