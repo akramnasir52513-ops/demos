@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liberti's Hairdressing — Ipswich | Hair Salon</title>
+<meta name="description" content="Liberti's Hairdressing, hair salon in Ipswich. Cuts and styling, colour, blow-dry and occasion hair. Rated 4.7 from 39 reviews on Google.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--terra:#b45a32;--terra2:#cf7d52;--cream:#fdf7ee;--sand:#f5e7d3;--ink:#3a2c22;--mut:#857162;--line:#ead9bf;--sage:#8a9271}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--ink);line-height:1.65}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+nav{position:sticky;top:0;z-index:50;background:rgba(253,247,238,.97);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:13px;padding-bottom:13px;flex-wrap:wrap;gap:8px}
+.brand{font-size:1.4rem;color:var(--ink);text-decoration:none}
+.brand em{color:var(--terra);font-style:italic}
+nav ul{display:flex;gap:18px;list-style:none;flex-wrap:wrap;font-family:Georgia,serif}
+nav ul a{color:var(--mut);text-decoration:none;font-size:.9rem}
+nav ul a:hover{color:var(--terra)}
+header.hero{background:linear-gradient(165deg,#f7e4c8 0%,#eecfa9 55%,#dfae7f 100%);text-align:center;padding:54px 20px 0;overflow:hidden}
+header.hero .kicker{letter-spacing:.34em;text-transform:uppercase;font-size:.76rem;color:var(--terra)}
+header.hero h1{font-size:2.9rem;font-weight:normal;margin:10px 0 2px}
+header.hero h1 em{color:var(--terra);font-style:italic}
+header.hero .town{letter-spacing:.26em;text-transform:uppercase;font-size:.82rem;color:#7d5c40}
+header.hero p.tag{max-width:590px;margin:16px auto 0;color:#5c4634;font-size:1.04rem;font-style:italic}
+.stars{color:#c07c1e;font-size:1.2rem;margin-top:14px;letter-spacing:.2em}
+.stars small{display:block;color:#7d5c40;font-size:.82rem;letter-spacing:.03em;margin-top:2px;font-family:Georgia,serif}
+.rule{width:120px;height:2px;background:var(--terra);margin:18px auto 0}
+.cta{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;padding:14px 32px;border-radius:40px;font-size:1rem;letter-spacing:.04em;margin:22px 0 34px;transition:background .25s,transform .25s}
+.cta:hover{background:var(--terra2);transform:translateY(-2px)}
+.heroimg{max-width:860px;margin:6px auto 0;border:4px solid #fff;outline:1px solid var(--line);border-bottom:none;height:340px}
+section{padding:54px 0 10px}
+h2{text-align:center;font-weight:normal;font-size:1.95rem}
+h2 em{color:var(--terra);font-style:italic}
+h2+.sub{text-align:center;color:var(--mut);margin:6px auto 30px;max-width:560px;font-size:.96rem;font-style:italic}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);padding:0 0 20px;box-shadow:0 6px 18px rgba(58,44,34,.06);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(58,44,34,.12)}
+.card .ph{height:172px;overflow:hidden}
+.card .ph img{transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card h3{font-size:1.22rem;font-weight:normal;margin:16px 20px 8px}
+.card p{margin:0 20px;font-size:.94rem;color:var(--mut)}
+.card ul{margin:10px 20px 0 38px;font-size:.92rem;color:var(--mut)}
+.card .price-note{margin:12px 20px 0;padding-top:10px;border-top:1px dotted var(--line);color:var(--terra);font-size:.92rem;font-style:italic}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.why .w{background:var(--sand);padding:26px 20px;text-align:center;border-bottom:3px solid var(--terra2)}
+.why .w h3{font-weight:normal;font-size:1.1rem;margin-bottom:8px}
+.why .w p{font-size:.92rem;color:var(--mut)}
+.why .big{font-size:1.9rem;color:var(--terra)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.step{background:#fff;border:1px solid var(--line);padding:26px 22px;text-align:center}
+.step .n{width:44px;height:44px;border-radius:50%;background:var(--terra);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.15rem}
+.step h3{font-weight:normal;margin-bottom:6px}
+.step p{font-size:.93rem;color:var(--mut)}
+.about{background:#43312a;color:#f3e8da;margin-top:54px;padding:48px 0}
+.about .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.about h2{color:#fff;text-align:left}
+.about p{color:#ddcdb8;font-size:.97rem;margin-top:12px}
+.hours{background:var(--cream);color:var(--ink);padding:22px 24px;border-top:4px solid var(--terra)}
+.hours h3{font-weight:normal;margin-bottom:8px}
+.hours p{color:var(--mut);font-size:.93rem;margin-top:0}
+.reviews{background:var(--sand);margin-top:54px;padding:48px 20px;text-align:center}
+.reviews .big{font-size:3rem;color:var(--terra);line-height:1}
+.reviews .stars{margin-top:6px}
+.reviews p{color:var(--mut);max-width:520px;margin:10px auto 0;font-style:italic}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.gallery .g{height:210px;overflow:hidden;border:3px solid #fff;outline:1px solid var(--line)}
+.gallery .g img{transition:transform .5s}
+.gallery .g:hover img{transform:scale(1.07)}
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--line);margin-bottom:10px;padding:16px 20px}
+.faq summary{cursor:pointer;font-size:1.02rem}
+.faq p{color:var(--mut);font-size:.94rem;margin-top:8px}
+.contact{text-align:center}
+.contact p{color:var(--mut);max-width:530px;margin:8px auto 0}
+.contact .email{font-size:1.14rem;color:var(--terra);margin-top:14px;word-break:break-all}
+.ctaband{background:var(--terra);color:#fff;text-align:center;padding:46px 20px;margin-top:54px}
+.ctaband h2{color:#fff}
+.ctaband p{color:#f9e2d4;margin-top:8px;font-style:italic}
+.ctaband .cta{background:#fff;color:var(--terra);margin-bottom:0}
+footer{background:#2e211c;color:#b5a08e;text-align:center;padding:22px 16px;font-size:.86rem}
+@media(max-width:640px){header.hero h1{font-size:2.15rem}.heroimg{height:230px}.about .wrap{grid-template-columns:1fr}nav ul{gap:12px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#top">Liberti's <em>Hairdressing</em></a><ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<header class="hero" id="top">
+<div class="kicker">Boutique Hair Salon · Ipswich</div>
+<h1>Liberti's <em>Hairdressing</em></h1>
+<div class="town">Ipswich · Hair Salon</div>
+<div class="rule"></div>
+<p class="tag">Beautiful hair, the boutique way — thoughtful cuts, gorgeous colour and a warm Ipswich welcome, with every appointment shaped entirely around you.</p>
+<div class="stars">★★★★★<small>Rated 4.7 from 39 reviews on Google</small></div>
+<br><a class="cta" href="mailto:libertipauline@gmail.com?subject=Booking%20enquiry">✉ Email Us to Book</a>
+<div class="heroimg"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=70" alt="Elegant hair styling at Liberti's Hairdressing Ipswich"></div>
+</header>
+
+<section id="services"><div class="wrap">
+<h2 class="reveal">Our <em>Services</em></h2>
+<p class="sub reveal">A small, thoughtful menu — done beautifully, never rushed, and always finished to perfection.</p>
+<div class="cards">
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=70" alt="Precision haircut and styling in the salon"></div><h3>Cuts &amp; Styling</h3><p>A cut designed around you — your face shape, your hair's natural movement and the way you really live day to day. From elegant classics to soft modern shapes, we build in the styling guidance too, so your hair looks just as lovely on an ordinary Tuesday as it does leaving the salon.</p><ul><li>Personal consultation included</li><li>Classic and modern shapes</li><li>Styling advice to take home</li></ul><p class="price-note">Email for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=70" alt="Hair colour being applied with care in a salon"></div><h3>Colour</h3><p>Colour that flatters — rich brunettes, luminous blondes, soft highlights or a complete transformation. We talk honestly about what your hair can achieve and how to keep it healthy and glossy afterwards. Please note: a skin test is required 48 hours before any colour appointment, for your safety and peace of mind.</p><ul><li>Full colour and highlights</li><li>Honest, expert guidance</li><li>Skin test 48 hours before colour</li></ul><p class="price-note">Email for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=70" alt="Blow-dry finishing for smooth glossy hair"></div><h3>Blow-Dry &amp; Finishing</h3><p>The perfect finish makes all the difference. Whether it is smooth and sleek, soft and bouncy, or gently waved, a professional blow-dry gives your hair that polished, swishy quality that is so hard to recreate at home — ideal before a night out, a photograph, or simply because you deserve it.</p><ul><li>Sleek, bouncy or waved</li><li>Long-lasting professional finish</li><li>Perfect pre-event treat</li></ul><p class="price-note">Email for prices</p></article>
+<article class="card reveal"><div class="ph"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=70" alt="Occasion hair styling for a special event"></div><h3>Occasion Hair &amp; Updos</h3><p>Weddings, parties, proms and every celebration in between — occasion hair is where we get to be truly creative. Elegant updos, romantic waves and polished styles built to last the whole event and photograph beautifully. Tell us about your outfit and your day, and we will design the hair to match.</p><ul><li>Weddings and celebrations</li><li>Elegant updos and waves</li><li>Styles that last all day</li></ul><p class="price-note">Email for prices</p></article>
+</div></div></section>
+
+<section><div class="wrap">
+<h2 class="reveal">Why <em>Liberti's?</em></h2>
+<p class="sub reveal">A boutique salon experience, in the heart of Ipswich.</p>
+<div class="why">
+<div class="w reveal"><div class="big">4.7 ★</div><h3>Loved on Google</h3><p>Rated 4.7 ★ from 39 Google reviews — heartfelt feedback from clients who trust us with their hair, again and again.</p></div>
+<div class="w reveal"><h3>Truly Personal</h3><p>No conveyor belt and no copy-and-paste styles. Every appointment begins with listening, and ends with hair that feels like you.</p></div>
+<div class="w reveal"><h3>Healthy Hair First</h3><p>Beautiful colour should never cost you the condition of your hair. Honest advice and skin tests before colour keep your hair safe and glossy.</p></div>
+<div class="w reveal"><h3>Easy Email Booking</h3><p>One friendly email books your appointment — no apps, no accounts, no complicated forms to wrestle with.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2 class="reveal">How Booking <em>Works</em></h2>
+<p class="sub reveal">Three gentle steps to gorgeous hair.</p>
+<div class="steps">
+<div class="step reveal"><div class="n">1</div><h3>Choose Your Service</h3><p>Cuts and styling, colour, a blow-dry finish, or occasion hair for your special day.</p></div>
+<div class="step reveal"><div class="n">2</div><h3>Email Us</h3><p>Write to libertipauline@gmail.com with what you would love, and we will confirm your appointment — including your skin test first, if you are booking colour.</p></div>
+<div class="step reveal"><div class="n">3</div><h3>Visit Us in Ipswich</h3><p>Come in, relax, and let us take care of you. You will leave feeling wonderful.</p></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="wrap">
+<div class="reveal"><h2>About <em style="color:#e8a37c">Liberti's Hairdressing</em></h2>
+<p>Liberti's Hairdressing is a boutique hair salon in Ipswich with an Italian heart: warmth, elegance and the belief that beautiful hair should always feel effortless. Here, an appointment is a small occasion in itself — time set aside to be listened to, looked after and genuinely pampered.</p>
+<p>Whether you visit for a precision cut, a colour transformation or hair for the biggest day of your year, the approach is the same: honest guidance, careful technique and a finish you will love living with. Tell us what you are dreaming of when you book, and we will make it happen — beautifully.</p></div>
+<div class="hours reveal"><h3>Opening Hours</h3><p>Opening hours vary — please email us at libertipauline@gmail.com for this week's hours and availability.</p></div>
+</div></section>
+
+<div class="reviews" id="reviews">
+<div class="big reveal">4.7 ★</div>
+<div class="stars reveal">★★★★★</div>
+<p class="reveal">Rated 4.7 from 39 reviews on Google. Thank you, sincerely, to every client who has shared a kind word about us — your reviews mean more than you know.</p>
+</div>
+
+<section id="gallery"><div class="wrap">
+<h2 class="reveal">The <em>Gallery</em></h2>
+<p class="sub reveal">Glossy finishes, beautiful colour and styling with an Italian touch.</p>
+<div class="gallery">
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=70" alt="Woman with beautifully styled flowing hair"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=800&q=70" alt="Salon styling session in warm light"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=70" alt="Hair being washed and cared for at the basin"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=70" alt="Detailed hairdressing work with brush and dryer"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=70" alt="Finished haircut with a polished salon finish"></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=70" alt="Colour service being carried out in the salon"></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap">
+<h2 class="reveal">Questions, <em>Answered</em></h2>
+<p class="sub reveal">Everything you might like to know before your visit.</p>
+<div class="faq">
+<details class="reveal"><summary>How do I book an appointment?</summary><p>Simply email us at libertipauline@gmail.com with the service you would like, and we will confirm your appointment and help with anything else at all.</p></details>
+<details class="reveal"><summary>How much does it cost?</summary><p>Email for prices — tell us the service you have in mind and we will happily confirm the price before you book, with no obligation whatsoever.</p></details>
+<details class="reveal"><summary>Where are you based?</summary><p>We are based in Ipswich. Email us at libertipauline@gmail.com and we will happily send you directions.</p></details>
+<details class="reveal"><summary>Do I need a skin test before colour?</summary><p>Yes — a skin test is required 48 hours before any colour appointment. It only takes a moment, it keeps you safe, and we will arrange it with you when you book your colour by email.</p></details>
+<details class="reveal"><summary>Do I need to book, or can I just pop in?</summary><p>Booking by email is the best way to secure an unhurried appointment at a time that suits you, especially for colour and occasion hair, which need a little planning. Do get in touch — we would love to hear from you.</p></details>
+<details class="reveal"><summary>I am not sure what style or colour would suit me — can you help?</summary><p>With pleasure — it is one of our favourite parts of the job. Mention it in your email, and we will talk through your hair, your lifestyle and what you love, then recommend something truly flattering.</p></details>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2 class="reveal">Get in <em>Touch</em></h2>
+<p class="reveal">Liberti's Hairdressing · Ipswich. Beautiful hair begins with one little email — we cannot wait to hear from you.</p>
+<p class="email reveal">libertipauline@gmail.com</p>
+<a class="cta reveal" href="mailto:libertipauline@gmail.com?subject=Booking%20enquiry">✉ Message Us</a>
+</div></section>
+
+<div class="ctaband"><h2 class="reveal">Your Hair, Beautifully Done</h2><p class="reveal">Book your Ipswich appointment today — one email is all it takes.</p><a class="cta reveal" href="mailto:libertipauline@gmail.com?subject=Booking%20enquiry">✉ Email Us to Book</a></div>
+<footer>© Liberti's Hairdressing, Ipswich · Demo website made by Akram Web Studio</footer>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});els.forEach(function(e){io.observe(e)});})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
