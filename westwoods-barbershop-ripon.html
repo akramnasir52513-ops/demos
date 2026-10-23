@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Westwood's Barbershop — Ripon | Haircuts, Skin Fades, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="Westwood's Barbershop, 9 Queen Street, Ripon HG4 1ED. Trading since 2019. Haircuts, skin fades, beard trims and hot towel shaves. Rated 5.0 from 385 reviews on Google. Book via Nearcut.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--ink:#17181c;--ink2:#22242b;--gold:#c9a227;--gold2:#e3c766;--paper:#f7f4ec;--mut:#6b675c;--line:#e3ddcd}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--gold);color:var(--ink);text-align:center;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:9px 12px}
+.mainnav{position:sticky;top:0;z-index:60;background:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 20px;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.mainnav .brand{color:#fff;font-size:1.05rem;font-weight:800;letter-spacing:.04em;white-space:nowrap}
+.mainnav .brand span{color:var(--gold2)}
+.mainnav .links{display:flex;flex-wrap:wrap;justify-content:flex-end}
+.mainnav .links a{color:#e8e2d2;text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-left:16px}
+.mainnav .links a:hover{color:var(--gold2)}
+header.hero{background:linear-gradient(155deg,#101116 0%,#1d1f27 55%,#33302a 100%);color:#fff;text-align:center;padding:52px 20px 0;overflow:hidden}
+header.hero .badge{display:inline-block;border:2px solid var(--gold);color:var(--gold2);padding:5px 16px;border-radius:40px;font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+header.hero h1{font-size:2.8rem;font-weight:900;letter-spacing:.02em;margin:14px 0 2px;text-transform:uppercase}
+header.hero h1 span{color:var(--gold2)}
+header.hero .town{letter-spacing:.3em;text-transform:uppercase;font-size:.82rem;color:#cfc8b2}
+.rule{width:120px;height:3px;background:var(--gold);margin:18px auto}
+header.hero p.tag{max-width:580px;margin:0 auto;color:#e5dfcd;font-size:1.03rem}
+.stars{color:var(--gold2);font-size:1.2rem;margin-top:14px;letter-spacing:.2em}
+.stars small{display:block;color:#d8d0ba;font-size:.82rem;letter-spacing:.05em;margin-top:2px}
+.heroimg{max-width:860px;margin:30px auto 0;border:3px solid var(--gold);border-bottom:none;height:340px;animation:rise 1s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.cta{display:inline-block;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:800;padding:14px 30px;border-radius:6px;font-size:1rem;letter-spacing:.04em;margin:22px 6px 34px;transition:background .25s,transform .25s}
+.cta:hover{background:var(--gold2);transform:translateY(-2px)}
+.cta.dark{background:var(--ink);color:#fff}
+.cta.dark:hover{background:var(--ink2)}
+section{padding:52px 0 8px}
+h2{text-align:center;font-size:1.95rem;font-weight:900;text-transform:uppercase;letter-spacing:.03em}
+h2 .accent{color:var(--gold)}
+h2+.sub{text-align:center;color:var(--mut);margin:6px auto 30px;max-width:560px;font-size:.96rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--gold);padding:0 0 20px;box-shadow:0 6px 18px rgba(23,24,28,.07);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(23,24,28,.13)}
+.card .ph{height:170px;overflow:hidden}
+.card .ph img{transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card h3{font-size:1.2rem;margin:16px 20px 8px}
+.card p{margin:0 20px;font-size:.94rem;color:var(--mut)}
+.card ul{margin:10px 20px 0;padding-left:18px;color:var(--mut);font-size:.92rem}
+.card ul li{margin:3px 0}
+.card .price-note{margin:12px 20px 0;padding-top:10px;border-top:1px dotted var(--line);color:#9a7d14;font-size:.92rem;font-weight:700}
+.why .card{padding-top:6px}
+.stepnum{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--gold2);font-size:1.3rem;font-weight:900;margin:16px 0 2px}
+.about{background:var(--ink);color:#efe9d8;margin-top:52px;padding:48px 0}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.about h2{color:#fff;text-align:left}
+.about p{color:#d6cfba;font-size:.98rem;margin-top:10px}
+.about .big{font-size:2.3rem;color:var(--gold2);line-height:1.15;font-weight:900}
+.visitbox{background:#fff;border-top:5px solid var(--gold);padding:22px 26px;color:var(--ink)}
+.visitbox h3{margin-bottom:10px;font-size:1.1rem}
+.visitbox p{color:var(--mut);font-size:.94rem;margin:0 0 8px}
+.visitbox a{color:#9a7d14;font-weight:700}
+.reviews{background:var(--gold);text-align:center;padding:46px 20px;margin-top:52px}
+.reviews .stars{color:var(--ink);font-size:1.8rem;margin:0}
+.reviews h2{color:var(--ink)}
+.reviews p{color:#3d370f;max-width:520px;margin:8px auto 0;font-size:1rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.gallery .g{height:230px;overflow:hidden;border:1px solid var(--line)}
+.gallery .g img{transition:transform .6s}
+.gallery .g:hover img{transform:scale(1.08)}
+.note{max-width:760px;margin:26px auto 0;background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);padding:16px 20px;font-size:.94rem}
+.faq{max-width:820px;margin:0 auto}
+.faq .qa{background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);padding:16px 20px;margin-bottom:12px;text-align:left}
+.faq .qa h3{font-size:1.05rem;margin-bottom:5px}
+.faq .qa p{color:var(--mut);font-size:.94rem}
+.contact{text-align:center;padding:52px 20px 64px}
+.contact p{color:var(--mut);max-width:500px;margin:8px auto 0;font-size:.96rem}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:920px;margin:26px auto 0;text-align:left}
+.cbox{background:#fff;border:1px solid var(--line);border-top:5px solid var(--gold);padding:22px 26px}
+.cbox h3{margin-bottom:10px;font-size:1.1rem}
+.cbox p{color:var(--mut);font-size:.94rem;margin:0 0 8px;max-width:none}
+.cbox a{color:#9a7d14;font-weight:700}
+.ctaband{background:var(--ink);color:#fff;text-align:center;padding:46px 20px 12px;margin-top:52px}
+.ctaband h2{color:#fff}
+.ctaband p{color:#d6cfba;max-width:520px;margin:8px auto 0}
+footer{background:#101116;color:#b9b29c;text-align:center;padding:22px 16px;font-size:.84rem}
+footer b{color:var(--gold2)}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(max-width:700px){.cgrid{grid-template-columns:1fr}.mainnav .links a{margin-left:10px;font-size:.72rem}header.hero h1{font-size:2rem}.heroimg{height:240px}.about .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar">9 Queen Street · Ripon · HG4 1ED · Trading since 2019</div>
+<nav class="mainnav"><div class="brand">Westwood's <span>Barbershop</span></div><div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></nav>
+<header class="hero">
+  <div class="badge">Ripon · Est. 2019</div>
+  <h1>Westwood's <span>Barbershop</span></h1>
+  <div class="town">Sharp Cuts · Clean Fades · Proper Shaves</div>
+  <div class="rule"></div>
+  <p class="tag">A proper barbershop on Queen Street in the heart of Ripon — sharp haircuts, skin fades, beard trims and traditional hot towel shaves, done right every time.</p>
+  <div class="stars">★★★★★<small>Rated 5.0 from 385 reviews on Google</small></div>
+  <div class="heroimg"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=70" alt="Barber at work inside Westwood's Barbershop in Ripon"></div>
+  <a class="cta" href="mailto:westwoodbarbering@gmail.com?subject=Booking%20enquiry%20—%20Westwood%27s%20Barbershop">✉ Message Us to Book</a>
+</header>
+
+<section class="wrap" id="services">
+  <h2 class="reveal">Our <span class="accent">Services</span></h2>
+  <p class="sub reveal">Classic barbering, done properly. Every service starts with a quick chat about what you want — and ends with a finish you can be proud of.</p>
+  <div class="cards">
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?auto=format&fit=crop&w=900&q=70" alt="Classic haircut at Westwood's Barbershop"></div>
+      <h3>Haircuts</h3>
+      <p>From a tidy short back and sides to a full restyle, your haircut is tailored to your head shape, hair type and how you wear it day to day. Consultation first, precision cutting throughout, and a styled finish so you walk out knowing exactly how it should look.</p>
+      <ul>
+        <li>Consultation before the clippers come out</li>
+        <li>Cut to suit your hair type and lifestyle</li>
+        <li>Styled finish and honest styling advice</li>
+      </ul>
+      <div class="price-note">Message for prices</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=70" alt="Skin fade being finished with precision"></div>
+      <h3>Skin Fades</h3>
+      <p>A clean, sharp fade is all about the blend — and that's where we take our time. Whether you want a low, mid or high skin fade, every grade is blended seamlessly with no harsh lines, then finished around the edges for that crisp, fresh-out-the-chair look.</p>
+      <ul>
+        <li>Low, mid or high skin fades</li>
+        <li>Seamless blending, no harsh lines</li>
+        <li>Edges tidied and finished</li>
+      </ul>
+      <div class="price-note">Message for prices</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=70" alt="Beard trim with traditional barber tools"></div>
+      <h3>Beard Trims</h3>
+      <p>Keep your beard looking deliberate, not accidental. We shape, tidy and define your beard to suit your face, clean up the cheek and neck lines, and finish so it sits sharp against your haircut — whether you keep it short and neat or long and full.</p>
+      <ul>
+        <li>Shaped to suit your face</li>
+        <li>Cheek and neck lines cleaned up</li>
+        <li>Matched to your haircut for a complete look</li>
+      </ul>
+      <div class="price-note">Message for prices</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=70" alt="Traditional hot towel shave"></div>
+      <h3>Hot Towel Shaves</h3>
+      <p>The traditional wet shave, done the way it should be. Hot towels open the pores and soften the hair, rich lather protects the skin, and a careful straight-razor shave leaves you smooth and refreshed — a proper bit of time out in the barber's chair.</p>
+      <ul>
+        <li>Hot towel preparation</li>
+        <li>Traditional straight-razor shave</li>
+        <li>Cooling, soothing finish</li>
+      </ul>
+      <div class="price-note">Message for prices</div>
+    </div>
+  </div>
+  <div class="note reveal"><b>Booking:</b> appointments at Westwood's are booked through Nearcut. Prefer to ask a question first? Email us at <a href="mailto:westwoodbarbering@gmail.com">westwoodbarbering@gmail.com</a> and we'll be happy to help.</div>
+</section>
+
+<section class="wrap">
+  <h2 class="reveal">Why <span class="accent">Westwood's</span></h2>
+  <p class="sub reveal">Ripon has trusted us with its hair since 2019 — here's why lads keep coming back.</p>
+  <div class="cards why">
+    <div class="card reveal">
+      <h3>5.0 ★ From 385 Google Reviews</h3>
+      <p>A perfect 5.0 rating from 385 Google reviews. That doesn't happen by accident — it's sharp work and a warm welcome, every single visit.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Trading Since 2019</h3>
+      <p>We've been cutting hair on Queen Street since 2019 — long enough to know our regulars by name, and proud to be part of Ripon's high street.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Traditional Skills, Modern Styles</h3>
+      <p>Classic barbering craft — including proper hot towel shaves — alongside the sharpest modern fades and styles. The best of both worlds.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Easy Booking via Nearcut</h3>
+      <p>No phone tag. Book your chair online through Nearcut in a couple of taps, at whatever time of day suits you.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="reveal">How <span class="accent">Booking Works</span></h2>
+  <p class="sub reveal">Three simple steps between you and a fresh trim.</p>
+  <div class="cards">
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">1</span>
+      <h3>Pick Your Service</h3>
+      <p>Haircut, skin fade, beard trim or a hot towel shave — decide what you need, or book a combination and leave the chair fully sorted.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">2</span>
+      <h3>Book on Nearcut</h3>
+      <p>All appointments are booked through Nearcut — choose your service and a time that suits you. Questions first? Email westwoodbarbering@gmail.com.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">3</span>
+      <h3>Take the Chair</h3>
+      <p>Find us at 9 Queen Street, Ripon at your appointment time. Sit back, relax, and walk out looking sharp.</p>
+    </div>
+  </div>
+</section>
+
+<div class="about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>About Westwood's</h2>
+      <p class="big">Ripon's barbershop since 2019</p>
+      <p>Westwood's Barbershop has been trading on Queen Street in Ripon since 2019, building a reputation the honest way — one good haircut at a time.</p>
+      <p>We're a traditional barbershop with modern standards: proper consultations, precision fades, tidy beards and hot towel shaves, all in a relaxed shop where everyone gets a warm welcome and no one gets rushed out of the chair.</p>
+    </div>
+    <div class="visitbox reveal">
+      <h3>Find Us</h3>
+      <p><b>Westwood's Barbershop</b><br>9 Queen Street<br>Ripon HG4 1ED</p>
+      <p>Phone: <a href="tel:+441765601234">01765 601234</a><br>Email: <a href="mailto:westwoodbarbering@gmail.com">westwoodbarbering@gmail.com</a></p>
+      <p>Appointments are booked via Nearcut — search for Westwood's Barbershop, Ripon to grab your slot.</p>
+    </div>
+  </div>
+</div>
+
+<div class="reviews">
+  <div class="stars">★★★★★</div>
+  <h2 class="reveal">Rated 5.0 on Google</h2>
+  <p class="reveal">Westwood's Barbershop is rated a perfect <b>5.0 from 385 reviews</b> on Google — thank you to every customer who has taken the time to leave us a review.</p>
+</div>
+
+<section class="wrap" id="gallery">
+  <h2 class="reveal">Inside the <span class="accent">Shop</span></h2>
+  <p class="sub reveal">Sharp cuts, clean fades and proper barbering craft.</p>
+  <div class="gallery">
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=70" alt="Barbershop chair and interior"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=800&q=70" alt="Barber styling a client's hair"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?auto=format&fit=crop&w=800&q=70" alt="Clipper work in progress"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=800&q=70" alt="Detailed barber finishing work"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=70" alt="Traditional barber tools of the trade"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=70" alt="Traditional shave at the barbershop"></div>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <h2 class="reveal">Questions &amp; <span class="accent">Answers</span></h2>
+  <p class="sub reveal">Everything you might want to know before you book.</p>
+  <div class="faq">
+    <div class="qa reveal">
+      <h3>How do I book an appointment?</h3>
+      <p>All bookings are made through Nearcut — search for Westwood's Barbershop, Ripon, pick your service and choose a time. If you have a question before booking, email us at westwoodbarbering@gmail.com.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>How much does a haircut cost?</h3>
+      <p>Message for prices — drop us an email at westwoodbarbering@gmail.com or call 01765 601234 and we'll happily confirm the price for the service you'd like.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Where are you in Ripon?</h3>
+      <p>You'll find us at 9 Queen Street, Ripon HG4 1ED — right in the centre of town.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Do you offer hot towel shaves?</h3>
+      <p>Yes — the traditional hot towel shave is one of our specialities. Hot towels, rich lather and a careful straight-razor finish. Book it through Nearcut like any other service.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Can you do skin fades?</h3>
+      <p>Absolutely — low, mid and high skin fades are a big part of what we do, blended cleanly with no harsh lines and finished around the edges.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>How long have you been open?</h3>
+      <p>Westwood's Barbershop has been trading since 2019, and we're rated 5.0 from 385 reviews on Google.</p>
+    </div>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <h2 class="reveal">Get in Touch</h2>
+  <p class="reveal">Questions about a service, or not sure what to book? Send us an email and we'll help you choose.</p>
+  <div class="cgrid">
+    <div class="cbox reveal">
+      <h3>Visit Us</h3>
+      <p><b>Westwood's Barbershop</b><br>9 Queen Street<br>Ripon HG4 1ED</p>
+      <p>Phone: <a href="tel:+441765601234">01765 601234</a></p>
+      <p>You'll find us on Queen Street in the centre of Ripon — book ahead on Nearcut to secure your chair.</p>
+    </div>
+    <div class="cbox reveal">
+      <h3>Message Us</h3>
+      <p>Email: <a href="mailto:westwoodbarbering@gmail.com">westwoodbarbering@gmail.com</a></p>
+      <p>Message for prices, ask about any service, or check what would suit your hair — we reply to every enquiry.</p>
+      <p>For appointments, booking through Nearcut is the fastest way to grab your slot.</p>
+    </div>
+  </div>
+  <a class="cta dark reveal" href="mailto:westwoodbarbering@gmail.com?subject=Booking%20enquiry%20—%20Westwood%27s%20Barbershop">✉ Message Us — westwoodbarbering@gmail.com</a>
+</div>
+
+<div class="ctaband">
+  <h2 class="reveal">Ready to Look Sharp?</h2>
+  <p class="reveal">Book your chair on Nearcut today — or message us first with any question at all.</p>
+  <a class="cta reveal" href="mailto:westwoodbarbering@gmail.com?subject=Booking%20enquiry%20—%20Westwood%27s%20Barbershop">✉ Message Us to Book</a>
+</div>
+
+<footer>© Westwood's Barbershop, Ripon · <b>Demo website made by Akram Web Studio</b></footer>
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
