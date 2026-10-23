@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karizma Barbers | Barbers in Cardigan, Ceredigion — Cuts, Fades, Beards & Hot Towel Shaves</title>
+<meta name="description" content="Karizma Barbers in Cardigan, Ceredigion. Rated 4.9 stars from 103 Google reviews. Haircuts, skin fades, beard trims, hot towel shaves & kids cuts. Book on WhatsApp, Nearcut or Facebook.">
+<style>
+:root{
+  --burg:#5e1220; --burg2:#7c1d2e; --burg-deep:#3d0a14;
+  --cream:#f7efdd; --cream2:#fdf8ec; --brass:#c9a227; --brass2:#a8861d;
+  --ink:#2b2320; --muted:#6f6156; --wa:#25d366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--cream2);color:var(--ink);line-height:1.65}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.2;color:var(--burg-deep)}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+@keyframes rise{from{opacity:.25;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes herozoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.rise{animation:rise .8s ease both}
+.d1{animation-delay:.08s}.d2{animation-delay:.16s}.d3{animation-delay:.24s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* top strip */
+.topstrip{background:var(--burg-deep);color:var(--cream);text-align:center;font-size:.86rem;padding:9px 14px;letter-spacing:.03em}
+.topstrip b{color:var(--brass)}
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(94,18,32,.97);box-shadow:0 3px 16px rgba(0,0,0,.28)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 0}
+.logo{display:flex;align-items:center;gap:11px;color:var(--cream)}
+.logo-mark{width:44px;height:44px;flex:none;border-radius:50%;background:var(--cream);color:var(--burg);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:2px solid var(--brass)}
+.logo b{display:block;font-size:1.22rem;letter-spacing:.05em;line-height:1.1}
+.logo small{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
+.navlinks{display:none;gap:26px}
+.navlinks a{color:var(--cream);font-size:.93rem;font-weight:600}
+.navlinks a:hover{color:var(--brass)}
+@media(min-width:880px){.navlinks{display:flex}}
+.navcta{display:flex;gap:9px;flex:none}
+.btn{display:inline-block;padding:11px 21px;border-radius:999px;font-weight:700;font-size:.93rem;transition:transform .15s ease,box-shadow .15s ease;border:2px solid transparent}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 16px rgba(37,211,102,.35)}
+.btn-call{background:transparent;color:var(--cream);border-color:var(--brass)}
+.btn-brass{background:var(--brass);color:#3d2c02;box-shadow:0 6px 16px rgba(201,162,39,.35)}
+.btn-burg{background:var(--burg);color:var(--cream)}
+/* hero */
+.hero{background:linear-gradient(150deg,var(--burg-deep) 0%,var(--burg) 58%,var(--burg2) 100%);color:var(--cream);overflow:hidden}
+.hero-grid{display:grid;gap:34px;padding:50px 0 58px;align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr;padding:72px 0 82px}}
+.kicker{display:inline-block;border:1px solid var(--brass);color:var(--brass);border-radius:999px;padding:5px 14px;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:17px}
+.hero h1{color:var(--cream);font-size:2.45rem;font-weight:700}
+.hero h1 em{color:var(--brass);font-style:italic}
+.hero p.lead{margin:17px 0 25px;font-size:1.05rem;color:#f2e7cd;max-width:34rem}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative}
+.frame{border-radius:22px;overflow:hidden;border:3px solid var(--brass);box-shadow:0 24px 50px rgba(0,0,0,.45)}
+.frame img{width:100%;height:420px;object-fit:cover;animation:herozoom 13s ease-in-out infinite alternate}
+.ratecard{position:absolute;left:-8px;bottom:22px;background:var(--cream2);color:var(--ink);border-radius:16px;padding:14px 18px;box-shadow:0 16px 34px rgba(0,0,0,.35);animation:bob 4.5s ease-in-out infinite;border-top:4px solid var(--brass)}
+.ratecard .stars{color:var(--brass2);letter-spacing:.14em;font-size:1.02rem}
+.ratecard b{font-size:1.32rem;display:block;line-height:1.15}
+.ratecard small{color:var(--muted);font-size:.79rem}
+/* stats */
+.stats{background:var(--cream);border-bottom:3px solid var(--brass)}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+.stat{padding:22px 14px;text-align:center;border-right:1px dashed rgba(94,18,32,.25)}
+.stat:last-child{border-right:none}
+.stat b{display:block;font-size:1.55rem;color:var(--burg)}
+.stat span{font-size:.79rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+/* sections */
+section{padding:64px 0}
+.alt{background:var(--cream)}
+.dark{background:linear-gradient(155deg,var(--burg-deep),var(--burg));color:var(--cream)}
+.dark h2,.dark h3{color:var(--cream)}
+.sec-head{max-width:44rem;margin-bottom:38px}
+.sec-head .tag{color:var(--brass2);font-size:.76rem;letter-spacing:.26em;text-transform:uppercase;font-weight:700;font-family:Arial,sans-serif}
+.dark .sec-head .tag{color:var(--brass)}
+.sec-head h2{font-size:2rem;margin:8px 0 10px}
+.sec-head p{color:var(--muted)}
+.dark .sec-head p{color:#eadfc2}
+/* about */
+.about-grid{display:grid;gap:34px;align-items:center}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.collage img{border-radius:16px;height:208px;width:100%;object-fit:cover;box-shadow:0 12px 26px rgba(61,10,20,.18)}
+.collage img:first-child{grid-column:1/-1;height:248px}
+.checklist{list-style:none;margin-top:20px;display:grid;gap:11px}
+.checklist li{padding-left:32px;position:relative;font-size:.98rem}
+.checklist li::before{content:"✂";position:absolute;left:0;top:0;color:var(--brass2)}
+.about-copy p{color:#4c4038;margin-bottom:14px}
+/* services */
+.svc-grid{display:grid;gap:22px}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(61,10,20,.10);border:1px solid #ecdcbc;display:flex;flex-direction:column}
+.svc img{height:180px;width:100%;object-fit:cover}
+.svc-body{padding:22px;display:flex;flex-direction:column;gap:9px;flex:1}
+.svc-body h3{color:var(--burg);font-size:1.22rem}
+.svc-body p{color:#55463c;font-size:.94rem;flex:1}
+.svc-num{color:var(--brass2);font-size:.84rem;letter-spacing:.2em;font-weight:700}
+.price-note{font-size:.82rem;font-weight:700;color:var(--brass2);text-transform:uppercase;letter-spacing:.08em;font-family:Arial,sans-serif}
+/* detail rows */
+.detail-rows{display:grid;gap:26px}
+.drow{display:grid;gap:20px;background:#fff;border-radius:18px;padding:26px;box-shadow:0 10px 26px rgba(61,10,20,.08);border-left:6px solid var(--brass)}
+@media(min-width:820px){.drow{grid-template-columns:210px 1fr}}
+.drow img{border-radius:12px;height:172px;width:100%;object-fit:cover}
+.drow h3{color:var(--burg);margin-bottom:8px;font-size:1.24rem}
+.drow p{color:#55463c;font-size:.95rem;margin-bottom:8px}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:900px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal figure{border-radius:16px;overflow:hidden;position:relative;box-shadow:0 12px 26px rgba(0,0,0,.3)}
+.gal img{height:228px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(30,4,10,.85));color:var(--cream);padding:26px 14px 12px;font-size:.87rem;font-weight:600}
+/* why */
+.why-grid{display:grid;gap:20px}
+@media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why{background:rgba(253,248,236,.07);border:1px solid rgba(201,162,39,.5);border-radius:16px;padding:24px}
+.why .ic{font-size:1.7rem;margin-bottom:10px}
+.why h3{color:var(--brass);font-size:1.12rem;margin-bottom:7px}
+.why p{font-size:.93rem;color:#f0e5c9}
+/* steps */
+.steps{display:grid;gap:18px}
+@media(min-width:800px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border-radius:16px;padding:26px 22px;box-shadow:0 10px 24px rgba(61,10,20,.09);text-align:center;border-top:5px solid var(--burg)}
+.step .n{width:46px;height:46px;margin:0 auto 12px;border-radius:50%;background:var(--burg);color:var(--brass);font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+.step h3{color:var(--burg-deep);font-size:1.08rem;margin-bottom:6px}
+.step p{color:var(--muted);font-size:.92rem}
+/* faq */
+.faq-list{display:grid;gap:12px;max-width:830px}
+details{background:#fff;border:1px solid #ecdcbc;border-radius:14px;padding:0 20px;box-shadow:0 6px 16px rgba(61,10,20,.05)}
+summary{cursor:pointer;font-weight:700;color:var(--burg-deep);padding:17px 0;list-style:none;font-size:.99rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--brass2);font-size:1.3rem;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{padding:0 0 17px;color:#55463c;font-size:.94rem}
+/* contact */
+.contact-grid{display:grid;gap:24px}
+@media(min-width:880px){.contact-grid{grid-template-columns:1.15fr .85fr}}
+.bookcard{background:linear-gradient(155deg,var(--burg),var(--burg-deep));color:var(--cream);border-radius:20px;padding:32px;border:2px solid var(--brass)}
+.bookcard h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+.bookcard p{color:#efdfba;font-size:.97rem;margin-bottom:20px}
+.bookcard .btns{display:flex;flex-wrap:wrap;gap:12px}
+.infocard{background:#fff;border-radius:20px;padding:32px;box-shadow:0 12px 28px rgba(61,10,20,.10);border:1px solid #ecdcbc}
+.infocard h3{color:var(--burg);margin-bottom:16px;font-size:1.3rem}
+.infocard dl{display:grid;gap:13px;font-size:.95rem}
+.infocard dt{font-weight:700;color:var(--burg-deep);font-size:.77rem;letter-spacing:.15em;text-transform:uppercase;font-family:Arial,sans-serif}
+.infocard dd{color:#55463c;margin-top:2px}
+/* footer */
+footer{background:var(--burg-deep);color:#dccdaa;padding:46px 0 30px;font-size:.9rem}
+.foot-grid{display:grid;gap:26px}
+@media(min-width:800px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{color:var(--brass);margin-bottom:12px;font-size:1.05rem}
+footer a{color:#f0e5c9}
+footer ul{list-style:none;display:grid;gap:8px}
+.foot-base{border-top:1px solid rgba(201,162,39,.35);margin-top:30px;padding-top:18px;text-align:center;font-size:.82rem;color:#b7a67f}
+/* floating WA */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:70;background:var(--wa);color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 12px 28px rgba(0,0,0,.35);animation:bob 4s ease-in-out infinite}
+</style>
+</head>
+<body>
+
+<div class="topstrip">Rated <b>4.9 ★</b> from <b>103 Google reviews</b> — Karizma Barbers, Cardigan</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">💈</span>
+      <span><b>KARIZMA</b><small>Barbers · Cardigan</small></span>
+    </a>
+    <nav class="navlinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="navcta">
+      <a class="btn btn-call" href="tel:+447880320190">Call</a>
+      <a class="btn btn-wa" href="https://wa.me/447880320190" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker rise">Barber Shop · Cardigan, Ceredigion</span>
+      <h1 class="rise d1">Sharp cuts with <em>Karizma</em> — Cardigan's own barber chair</h1>
+      <p class="lead rise d2">Precision haircuts, skin fades, shaped beards and proper hot towel shaves in the heart of Cardigan. Rated 4.9 stars by 103 customers on Google — book in seconds on WhatsApp, Nearcut or Facebook.</p>
+      <div class="hero-btns rise d3">
+        <a class="btn btn-wa" href="https://wa.me/447880320190" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
+        <a class="btn btn-brass" href="#services">See Services</a>
+        <a class="btn btn-call" href="tel:+447880320190">📞 07880 320190</a>
+      </div>
+    </div>
+    <div class="hero-photo rise d2">
+      <div class="frame"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1000&q=70" alt="Barber at work giving a precision haircut at Karizma Barbers Cardigan"></div>
+      <div class="ratecard">
+        <span class="stars">★★★★★</span>
+        <b>4.9 / 5</b>
+        <small>From 103 Google reviews</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b>4.9★</b><span>Google Rating</span></div>
+    <div class="stat"><b>103</b><span>Google Reviews</span></div>
+    <div class="stat"><b>6+</b><span>Services in the Chair</span></div>
+    <div class="stat"><b>3</b><span>Ways to Book</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="collage rise">
+      <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=1000&q=70" alt="Inside a classic barber shop">
+      <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=700&q=70" alt="Barber chair and tools ready for the next customer">
+      <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=700&q=70" alt="Barber finishing a customer's haircut">
+    </div>
+    <div class="about-copy">
+      <div class="sec-head" style="margin-bottom:14px">
+        <span class="tag">About the Shop</span>
+        <h2>A proper barbershop for Cardigan &amp; Ceredigion</h2>
+      </div>
+      <p>Karizma Barbers is Cardigan's charismatic corner for sharp hair — a classic barber shop with a modern edge, where the welcome is warm, the clippers are precise and nobody leaves the chair until the mirror says it's right.</p>
+      <p>The numbers tell the story: a 4.9-star average across 103 Google reviews, earned one cut at a time. Whether it's your regular trim, a full restyle or the full works before a big day, you get the same care, the same craft and the same attention to the finish.</p>
+      <p>And because the shop books through WhatsApp, Nearcut and Facebook, getting into the chair is as easy as the cut is sharp — one message, a confirmed time, and you're in.</p>
+      <ul class="checklist">
+        <li>Precision cuts tailored to your head shape &amp; hair type</li>
+        <li>Skin fades blended seamlessly — high, mid or low</li>
+        <li>Beard trims &amp; shaping with crisp, clean lines</li>
+        <li>Traditional hot towel shaves, the way they should be</li>
+        <li>Patient, friendly kids' cuts — first haircut to teen styles</li>
+        <li>Book on WhatsApp, Nearcut or Facebook — no phone queues</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">What We Do</span>
+      <h2>Services at Karizma Barbers</h2>
+      <p>Every service starts with a quick conversation about what you want and ends with a clean finish. No prices listed here — just call or message for prices and you'll get a straight answer.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=70" alt="Barber cutting hair with clippers and comb">
+        <div class="svc-body">
+          <span class="svc-num">/ 01</span>
+          <h3>Haircuts</h3>
+          <p>The classic done properly — consultation first, then scissor and clipper work shaped to your hair, your head and how you actually style it in the morning. Finished, styled and checked from every angle before you leave.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=70" alt="Close skin fade being blended with clippers">
+        <div class="svc-body">
+          <span class="svc-num">/ 02</span>
+          <h3>Skin Fades</h3>
+          <p>High, mid or low — fades blended so smoothly there's no line to find. Crisp edges, a razor-sharp hairline and a finish that grows out clean instead of messy. Bring a photo if you have a look in mind.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=70" alt="Barber trimming and shaping a beard">
+        <div class="svc-body">
+          <span class="svc-num">/ 03</span>
+          <h3>Beard Trim &amp; Shape</h3>
+          <p>Length down, shape in, lines sharp. Your beard mapped to your face — cheek lines set, neckline placed where it flatters, bulk removed where it puffs out. Finished tidy, even and growing in the right direction.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?w=800&q=70" alt="Traditional hot towel wet shave">
+        <div class="svc-body">
+          <span class="svc-num">/ 04</span>
+          <h3>Hot Towel Shave</h3>
+          <p>The old-school ritual: hot towels soften the beard, rich lather cushions the blade, and a straight razor takes it closer than any cartridge at home. Cool towel and a soothing finish to close. Unhurried, and worth it.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=800&q=70" alt="Young customer having a haircut in the barber chair">
+        <div class="svc-body">
+          <span class="svc-num">/ 05</span>
+          <h3>Kids' Cuts</h3>
+          <p>First haircuts, school-ready trims and the styles older kids actually ask for — done patiently, without rushing little customers. A relaxed chair, a friendly barber and a neat finish they'll be happy to show off.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?w=800&q=70" alt="Barber giving the full grooming works">
+        <div class="svc-body">
+          <span class="svc-num">/ 06</span>
+          <h3>The Full Works</h3>
+          <p>Cut, fade, beard and hot towel finish in one sitting — the complete reset. Perfect before a wedding, a holiday, an interview, or any day you want to walk out of the shop feeling brand new.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">The Craft</span>
+      <h2>How a Karizma cut comes together</h2>
+      <p>A great haircut isn't luck — it's process. Here's what happens between you sitting down and you checking the mirror.</p>
+    </div>
+    <div class="detail-rows">
+      <div class="drow rise">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=70" alt="Barber tools laid out on the counter">
+        <div>
+          <h3>Fades, decoded</h3>
+          <p>A fade is built in stages — shortest at the bottom, blended up through the grades so there are no steps and no harsh lines. Where it sits changes everything: high fades are bold and sharp, low fades are softer and classic, tapers just clean up the edges.</p>
+          <p>Not sure which is yours? Describe your routine — two minutes of styling or twenty — and you'll be matched to a cut that fits your life, not just the photo.</p>
+        </div>
+      </div>
+      <div class="drow rise">
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=600&q=70" alt="Barber finishing the details of a cut">
+        <div>
+          <h3>The finish is the difference</h3>
+          <p>Edges cleaned, hairline sharpened, neckline right — the last five minutes are what separate a good cut from a Karizma cut. Then it's styled in front of you, so you see it at its best and learn exactly how to recreate it at home.</p>
+          <p>You'll leave knowing what product was used, how much, and when to come back — most fades want a refresh every two to three weeks.</p>
+        </div>
+      </div>
+      <div class="drow rise">
+        <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=600&q=70" alt="Fresh, healthy styled hair after a salon visit">
+        <div>
+          <h3>First visit? Here's what to expect</h3>
+          <p>Message on WhatsApp or book through Nearcut, arrive at your time, and take the chair. First comes the chat — what you have now, what you want, what hasn't worked before. Then the cut. No jargon, no pressure, no surprises at the till — the price is confirmed before the clippers start.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Gallery</span>
+      <h2>From the shop floor</h2>
+      <p>The chairs, the tools and the craft — a look at barbering the Karizma way in Cardigan.</p>
+    </div>
+    <div class="gal">
+      <figure><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=700&q=70" alt="Precision haircut in progress"><figcaption>Precision cuts, every time</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=700&q=70" alt="Skin fade close-up"><figcaption>Fades blended seamlessly</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=700&q=70" alt="Beard being trimmed and shaped"><figcaption>Beards shaped &amp; sharpened</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=700&q=70" alt="Classic barber shop interior"><figcaption>The shop floor</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=700&q=70" alt="Barber chair ready for the next cut"><figcaption>Your chair is waiting</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?w=700&q=70" alt="Hot towel shave preparation"><figcaption>The hot towel ritual</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="dark" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Why Karizma</span>
+      <h2>Why Cardigan keeps coming back</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why rise"><div class="ic">⭐</div><h3>4.9 stars, 103 reviews</h3><p>That rating is earned one chair at a time — real Google reviews from real Cardigan customers rating the cuts, the craft and the welcome.</p></div>
+      <div class="why rise"><div class="ic">✂️</div><h3>Craft over shortcuts</h3><p>Consultation before every cut, blends checked from every angle, and a finish you're shown how to recreate at home. No rushed chairs.</p></div>
+      <div class="why rise"><div class="ic">💬</div><h3>Book in seconds</h3><p>One WhatsApp message, a Nearcut booking or a Facebook message — your slot is sorted without ringing round or queuing on the phone.</p></div>
+      <div class="why rise"><div class="ic">🪒</div><h3>The full service</h3><p>Hair, beard and hot towel shave in one visit, under one roof. Come in scruffy, walk out sharp.</p></div>
+      <div class="why rise"><div class="ic">🧒</div><h3>All ages welcome</h3><p>First haircuts to grandad's regular trim — a patient, relaxed chair for whoever's sitting in it.</p></div>
+      <div class="why rise"><div class="ic">📍</div><h3>Independent &amp; local</h3><p>A local Cardigan business serving Ceredigion — when you book here, your money stays in the town.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Booking</span>
+      <h2>Your chair in three steps</h2>
+      <p>Booking ahead guarantees your slot — here's how it works.</p>
+    </div>
+    <div class="steps">
+      <div class="step rise"><div class="n">1</div><h3>Message or book online</h3><p>Send a WhatsApp message, book on Nearcut, or message the Facebook page — tell us the service you want.</p></div>
+      <div class="step rise"><div class="n">2</div><h3>Pick your time</h3><p>Agree a time that suits you. Message any time and the shop will confirm your slot as soon as it can.</p></div>
+      <div class="step rise"><div class="n">3</div><h3>Sit down &amp; relax</h3><p>Take the chair, enjoy the craft, and walk out with a cut that holds its shape for weeks.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Good to Know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>How do I book an appointment?</summary><p>The fastest way is WhatsApp — tap any WhatsApp button on this page or message 07880 320190. You can also book through Nearcut or send a message on Facebook. Tell the shop which service you'd like and when, and your slot will be confirmed.</p></details>
+      <details><summary>How much does a haircut cost?</summary><p>Prices are confirmed before your cut starts — call 07880 320190 or send a WhatsApp message for the current price of any service, from a standard trim to the full works. No surprises at the till.</p></details>
+      <details><summary>Do you take walk-ins?</summary><p>Walk-ins are welcome when a chair is free, but booked customers are seen first. To guarantee your slot — especially at busy times — send a quick WhatsApp message or book on Nearcut before you set off.</p></details>
+      <details><summary>What's the difference between a fade and a taper?</summary><p>A skin fade blends the back and sides down to the skin and can sit high, mid or low. A taper keeps more length and just cleans up around the ears and neckline — a softer, more classic finish. Not sure? Ask in the chair and you'll be talked through it.</p></details>
+      <details><summary>What does a hot towel shave involve?</summary><p>Hot towels open the pores and soften the beard, a rich lather cushions the blade, and a straight razor gives a closer shave than a cartridge can. A cold towel and soothing finish close everything back down — the traditional barber's shave, done properly.</p></details>
+      <details><summary>Do you cut children's hair?</summary><p>Yes — kids' cuts are part of the service, from first haircuts to school trims and teen styles. The chair stays relaxed and patient so younger customers feel at ease.</p></details>
+      <details><summary>Can I get my beard done at the same time as my haircut?</summary><p>Absolutely — hair and beard together is one of the most popular combinations. Ask for the full works when you book, or just mention it in your WhatsApp message, and enough time will be set aside.</p></details>
+      <details><summary>Where is Karizma Barbers?</summary><p>Karizma Barbers is in Cardigan, Ceredigion, West Wales. If you need directions or want to check how busy the shop is before travelling, call or WhatsApp 07880 320190.</p></details>
+      <details><summary>When are you open?</summary><p>Opening times can vary, so the surest way to check today's hours is to message on WhatsApp or call 07880 320190 before you travel — you'll get a straight answer and can book your slot at the same time.</p></details>
+      <details><summary>How often should I come back?</summary><p>Most fade customers return every two to three weeks to keep it sharp; classic scissor cuts can stretch a little longer. Your barber will tell you honestly what your style needs.</p></details>
+      <details><summary>I'm growing my hair out — can you help?</summary><p>Yes, and it's one of the smartest reasons to visit. Growing out doesn't mean doing nothing: a shaping trim every few weeks keeps the awkward stage looking deliberate, removes split ends, and makes sure the final style actually arrives. Tell the barber the end goal and you'll get a route to it.</p></details>
+      <details><summary>What should I bring to show the style I want?</summary><p>Photos help enormously — two or three pictures of the cut from different angles, ideally on hair a bit like yours. Screenshots on your phone are perfect. And be ready to hear honest advice: if a style won't suit your hair type or your morning routine, you'll be told why and shown the closest version that will work.</p></details>
+      <details><summary>Do you do hair designs or lines?</summary><p>Simple lines, hard parts and tidy detailing can usually be worked into a fade — bring a photo of what you have in mind and mention it when you book on WhatsApp, so enough chair time is set aside for the detail work.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="alt" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">More From the Menu</span>
+      <h2>Beyond the basics</h2>
+      <p>The six core services cover most chairs — but there's more on offer when you need it.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?w=800&q=70" alt="Customer discussing a restyle with the barber">
+        <div class="svc-body">
+          <span class="svc-num">/ 07</span>
+          <h3>Restyles &amp; Transformations</h3>
+          <p>Growing it out? Chopping it off? Bored of the same cut for five years? A restyle starts with a longer conversation — face shape, hair texture, how much styling you'll honestly do — and ends with a genuinely new look, plus a plan for how it grows out.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&q=70" alt="Gentleman having a tidy classic haircut">
+        <div class="svc-body">
+          <span class="svc-num">/ 08</span>
+          <h3>Classic Gentleman's Cut</h3>
+          <p>Scissor-led, tidy and timeless — side partings, swept backs and neat tapers for customers who prefer the traditional barbering craft. Unhurried, precise, and finished the classic way.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+      <article class="svc rise">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=70" alt="Barber chair set for a combined cut and shave service">
+        <div class="svc-body">
+          <span class="svc-num">/ 09</span>
+          <h3>Cut + Shave Combo</h3>
+          <p>The chair-to-mirror transformation in one visit: full haircut, then the hot towel ritual and a straight-razor shave. The appointment to book before weddings, photographs and first impressions that matter.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap" style="text-align:center;max-width:46rem">
+    <span class="tag" style="color:var(--brass);font-size:.76rem;letter-spacing:.26em;text-transform:uppercase;font-weight:700;font-family:Arial,sans-serif">The Karizma Standard</span>
+    <h2 style="font-size:1.9rem;margin:12px 0 14px">You shouldn't have to ask twice for a good haircut.</h2>
+    <p style="color:#f0e5c9;font-size:1rem;margin-bottom:24px">A consultation before every cut. A blend checked from every angle. A finish you're shown how to recreate. And a rating — 4.9 stars from 103 Google reviews — that says Cardigan already trusts this chair. Book once, and you'll understand why they keep coming back.</p>
+    <a class="btn btn-wa" href="https://wa.me/447880320190" target="_blank" rel="noopener">💬 Book Your Chair on WhatsApp</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Look After It</span>
+      <h2>Keeping it sharp between visits</h2>
+      <p>A great cut deserves a little care at home. These are the habits that keep a Karizma cut looking fresh for longer.</p>
+    </div>
+    <div class="detail-rows">
+      <div class="drow rise">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=70" alt="Fade being kept sharp with clippers">
+        <div>
+          <h3>Fade upkeep</h3>
+          <p>A skin fade looks its best in the first fortnight. Keep the neckline clean between visits, sleep on a clean pillowcase to protect the edges, and rebook every two to three weeks — a fade left six weeks isn't a trim any more, it's a whole new haircut.</p>
+          <p>Short on time? A tidy-up of the edges and neckline between full cuts keeps you presentable in half the chair time.</p>
+        </div>
+      </div>
+      <div class="drow rise">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=70" alt="Beard being shaped and cared for">
+        <div>
+          <h3>Beard care basics</h3>
+          <p>Wash your beard with shampoo, not face soap — the skin underneath will thank you. Comb it daily in the direction you want it to grow, and resist trimming the shape yourself between visits; strays are fine to snip, but the cheek line and neckline are best left to the chair.</p>
+          <p>Dry, wiry beard? Ask in the shop about oils and balms — the right product takes ten seconds a day.</p>
+        </div>
+      </div>
+      <div class="drow rise">
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?w=600&q=70" alt="Styling a finished haircut">
+        <div>
+          <h3>Styling in two minutes</h3>
+          <p>Most home styling fails for one reason: too much product, on dry hair, all at once. Use half what you think you need, warm it between your palms, and work it through towel-dried hair from the back to the front — the front gets what's left, which is exactly enough.</p>
+          <p>Every Karizma cut is finished in front of you, so you see the technique before you try it yourself.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Occasions &amp; Area</span>
+      <h2>Serving Cardigan &amp; the Ceredigion coast</h2>
+      <p>Karizma Barbers is Cardigan's local chair — and customers travel in from across Ceredigion and the Teifi valley for it.</p>
+    </div>
+    <div class="steps">
+      <div class="step rise"><div class="n">💍</div><h3>Weddings &amp; big days</h3><p>Groom, best man and the whole party — book the chairs ahead of the day on WhatsApp and everyone walks in photo-ready, on time.</p></div>
+      <div class="step rise"><div class="n">🎓</div><h3>Back to school &amp; term time</h3><p>School-ready trims and tidy-ups for kids and teens — book early in the holidays, because those weeks fill up fast.</p></div>
+      <div class="step rise"><div class="n">🌊</div><h3>Coast &amp; countryside</h3><p>From Cardigan town to St Dogmaels, Gwbert, Cenarth and Newcastle Emlyn — message before you travel and your slot will be waiting.</p></div>
+    </div>
+    <div class="faq-list" style="margin-top:30px;max-width:none">
+      <details><summary>Can I book chairs for a wedding party or group?</summary><p>Yes — message on WhatsApp well ahead of the day with how many chairs you need and the time you must be finished by, and the shop will arrange back-to-back slots so the whole party is done together, with time to spare.</p></details>
+      <details><summary>I'm visiting Cardigan on holiday — can I still book?</summary><p>Of course — visitors are welcome. Send a WhatsApp message when you arrive in the area, book your slot, and head home with a sharper cut than you arrived with.</p></details>
+      <details><summary>Do you offer gift vouchers?</summary><p>Ask in the shop or on WhatsApp — if vouchers are available at the time, the team will sort you out. A full-works booking also makes an easy gift to arrange by message.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Book &amp; Contact</span>
+      <h2>Ready when you are</h2>
+      <p>One message is all it takes — your next sharp look starts here.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="bookcard rise">
+        <h3>Book your chair 💈</h3>
+        <p>Message on WhatsApp with the service you want and a time that suits you, book through Nearcut, or reach the shop on Facebook. Prefer to talk? Call the number — it's the same line.</p>
+        <div class="btns">
+          <a class="btn btn-wa" href="https://wa.me/447880320190" target="_blank" rel="noopener">💬 WhatsApp 07880 320190</a>
+          <a class="btn btn-brass" href="tel:+447880320190">📞 Call the Shop</a>
+        </div>
+      </div>
+      <div class="infocard rise">
+        <h3>Shop details</h3>
+        <dl>
+          <div><dt>Business</dt><dd>Karizma Barbers — barber shop</dd></div>
+          <div><dt>Location</dt><dd>Cardigan, Ceredigion, Wales</dd></div>
+          <div><dt>WhatsApp &amp; Phone</dt><dd>+44 7880 320190</dd></div>
+          <div><dt>Booking</dt><dd>WhatsApp, Nearcut &amp; Facebook</dd></div>
+          <div><dt>Rated</dt><dd>4.9 ★ from 103 Google reviews</dd></div>
+          <div><dt>Prices</dt><dd>Call or message for prices</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Karizma Barbers</h4>
+        <p>An independent barber shop in Cardigan, Ceredigion — haircuts, skin fades, beard trims, hot towel shaves and kids' cuts, rated 4.9 stars from 103 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Haircuts</a></li>
+          <li><a href="#services">Skin Fades</a></li>
+          <li><a href="#services">Beard Trim &amp; Shape</a></li>
+          <li><a href="#services">Hot Towel Shave</a></li>
+          <li><a href="#services">Kids' Cuts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="https://wa.me/447880320190" target="_blank" rel="noopener">WhatsApp: 07880 320190</a></li>
+          <li><a href="tel:+447880320190">Call: +44 7880 320190</a></li>
+          <li>Cardigan, Ceredigion, Wales</li>
+          <li>Book via Nearcut &amp; Facebook</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">Karizma Barbers · Cardigan · Rated 4.9★ from 103 Google reviews · Call or message for prices</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447880320190" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
