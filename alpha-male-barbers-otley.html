@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Male Barbers | Barber Shop in Otley, West Yorkshire — Haircuts, Skin Fades, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="Alpha Male Barbers in Otley, West Yorkshire. Rated 5.0 stars from 191 Google reviews. Precision haircuts, skin fades, beard trims and hot towel shaves. Book on WhatsApp.">
+<style>
+:root{
+  --black:#0c0c0c; --coal:#141414; --panel:#1a1a1a; --panel2:#202020;
+  --gold:#c9a227; --gold2:#e6c65c; --gold-dim:#8a711c;
+  --white:#f5f2ea; --muted:#b9b4a6; --line:#2c2c2c;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:"Segoe UI",Arial,Helvetica,sans-serif;line-height:1.65;font-size:16.5px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:"Arial Narrow","Franklin Gothic Medium",Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;line-height:1.05}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.28em;font-size:.78rem;text-transform:uppercase}
+.btn{display:inline-block;padding:15px 28px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;text-decoration:none;border:2px solid var(--gold);transition:transform .25s ease,background .25s ease,color .25s ease}
+.btn-gold{background:var(--gold);color:#0c0c0c}
+.btn-gold:hover{background:var(--gold2);border-color:var(--gold2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--white)}
+.btn-ghost:hover{background:rgba(201,162,39,.12);transform:translateY(-2px)}
+section{padding:76px 0}
+.sec-head{max-width:760px;margin-bottom:42px}
+.sec-head h2{font-size:clamp(2rem,5vw,3.1rem);font-weight:900;margin:10px 0 14px}
+.sec-head h2 span{color:var(--gold)}
+.sec-head p{color:var(--muted)}
+/* top strip */
+.topstrip{background:var(--gold);color:#0c0c0c;text-align:center;font-weight:800;letter-spacing:.08em;font-size:.85rem;padding:9px 14px;text-transform:uppercase}
+.topstrip a{color:#0c0c0c}
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(12,12,12,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{width:46px;height:46px;border:3px solid var(--gold);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:"Arial Narrow",Arial,sans-serif;font-weight:900;font-size:1.35rem;letter-spacing:.02em}
+.logo-txt{font-family:"Arial Narrow",Arial,sans-serif;font-weight:900;font-size:1.45rem;letter-spacing:.1em;text-transform:uppercase;line-height:1}
+.logo-txt small{display:block;font-size:.62rem;letter-spacing:.34em;color:var(--gold);font-weight:700;margin-top:3px}
+.nav-links{display:none;gap:26px}
+.nav-links a{text-decoration:none;font-weight:700;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{display:flex;gap:10px}
+.nav-cta a{padding:10px 16px;font-size:.76rem}
+@media(min-width:900px){.nav-links{display:flex}}
+/* hero */
+.hero{position:relative;padding:0;overflow:hidden;background:var(--coal)}
+.hero-grid{display:grid;grid-template-columns:1fr}
+.hero-copy{padding:70px 0 54px;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.9rem,9vw,5.6rem);font-weight:900}
+.hero h1 .stroke{color:transparent;-webkit-text-stroke:2px var(--gold)}
+.hero h1 .gold{color:var(--gold)}
+.hero-sub{color:var(--muted);max-width:560px;margin:20px 0 30px;font-size:1.08rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-photo{position:relative;min-height:340px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:grayscale(35%) contrast(1.08)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,12,.25),rgba(12,12,12,.05) 40%,rgba(12,12,12,.55))}
+.rating-card{position:absolute;z-index:3;left:20px;bottom:22px;background:#0c0c0c;border:2px solid var(--gold);padding:14px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 18px 40px rgba(0,0,0,.55)}
+.rating-card .big{font-family:"Arial Narrow",Arial,sans-serif;font-size:2.3rem;font-weight:900;color:var(--gold);line-height:1}
+.rating-card .stars{color:var(--gold);letter-spacing:.2em;font-size:.95rem}
+.rating-card .rc-txt{font-size:.82rem;color:var(--muted);line-height:1.35}
+.rating-card .rc-txt strong{color:var(--white);display:block;font-size:.95rem}
+@media(min-width:960px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .hero-copy{padding:96px 30px 96px 0}
+  .hero-photo{min-height:100%}
+}
+/* marquee */
+.marquee{background:#0c0c0c;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:14px 0}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scrollx 30s linear infinite}
+.marquee-track span{font-family:"Arial Narrow",Arial,sans-serif;font-weight:900;letter-spacing:.22em;text-transform:uppercase;color:#3d3d3d;font-size:1.05rem;padding:0 26px;white-space:nowrap}
+.marquee-track span b{color:var(--gold)}
+@keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.stat{background:var(--panel);padding:28px 22px;text-align:center}
+.stat .num{font-family:"Arial Narrow",Arial,sans-serif;font-size:2.4rem;font-weight:900;color:var(--gold);line-height:1}
+.stat .lbl{color:var(--muted);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
+@media(min-width:820px){.stats{grid-template-columns:repeat(4,1fr)}}
+/* about */
+.about-grid{display:grid;gap:36px}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr;align-items:center}}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-photos img{width:100%;height:100%;object-fit:cover;border:1px solid var(--line)}
+.about-photos .tall{grid-row:span 2;min-height:420px}
+.about-photos .short{min-height:200px}
+.checklist{list-style:none;margin:22px 0}
+.checklist li{padding:9px 0 9px 34px;position:relative;color:#e8e4d8;border-bottom:1px dashed #2e2e2e}
+.checklist li::before{content:"◆";position:absolute;left:2px;color:var(--gold);font-size:.8rem;top:13px}
+/* services */
+.services{background:var(--coal)}
+.svc-grid{display:grid;gap:20px}
+@media(min-width:700px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+.svc{background:var(--panel);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease}
+.svc:hover{transform:translateY(-5px);border-color:var(--gold-dim)}
+.svc img{height:210px;width:100%;object-fit:cover;filter:grayscale(25%)}
+.svc-body{padding:24px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.svc-num{color:var(--gold);font-family:"Arial Narrow",Arial,sans-serif;font-weight:900;letter-spacing:.2em;font-size:.85rem}
+.svc h3{font-size:1.5rem;font-weight:900}
+.svc p{color:var(--muted);font-size:.97rem;flex:1}
+.price-note{color:var(--gold2);font-weight:700;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase}
+/* detail rows */
+.detail-row{display:grid;gap:28px;padding:34px 0;border-bottom:1px solid var(--line);align-items:center}
+.detail-row:last-child{border-bottom:none}
+@media(min-width:880px){.detail-row{grid-template-columns:1fr 1fr}.detail-row.flip .d-img{order:2}}
+.detail-row img{width:100%;height:300px;object-fit:cover;border:1px solid var(--line);filter:grayscale(20%)}
+.detail-row h3{font-size:1.8rem;font-weight:900;margin-bottom:12px}
+.detail-row h3 span{color:var(--gold)}
+.detail-row p{color:var(--muted);margin-bottom:12px}
+/* gallery */
+.gallery{background:var(--coal)}
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:820px){.gal-grid{grid-template-columns:repeat(4,1fr)}}
+.gal-grid figure{position:relative;overflow:hidden;border:1px solid var(--line)}
+.gal-grid img{width:100%;height:250px;object-fit:cover;transition:transform .5s ease;filter:grayscale(30%)}
+.gal-grid figure:hover img{transform:scale(1.07);filter:grayscale(0%)}
+.gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.88));color:var(--white);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:26px 12px 10px}
+/* why */
+.why-grid{display:grid;gap:18px}
+@media(min-width:700px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.why-grid{grid-template-columns:1fr 1fr 1fr}}
+.why-card{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gold);padding:26px 24px}
+.why-card .ic{font-size:1.7rem;color:var(--gold);line-height:1}
+.why-card h3{font-size:1.25rem;font-weight:900;margin:12px 0 8px}
+.why-card p{color:var(--muted);font-size:.96rem}
+/* steps */
+.steps-band{background:linear-gradient(135deg,#191919,#0c0c0c);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:grid;gap:20px}
+@media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{padding:8px 4px}
+.step .n{font-family:"Arial Narrow",Arial,sans-serif;font-size:3.4rem;font-weight:900;color:transparent;-webkit-text-stroke:2px var(--gold);line-height:1}
+.step h3{font-size:1.3rem;font-weight:900;margin:10px 0 8px}
+.step p{color:var(--muted)}
+/* guide */
+.guide-grid{display:grid;gap:18px}
+@media(min-width:820px){.guide-grid{grid-template-columns:1fr 1fr}}
+.guide-card{background:var(--panel);border-left:4px solid var(--gold);padding:26px 26px}
+.guide-card h3{font-size:1.3rem;font-weight:900;margin-bottom:10px}
+.guide-card p,.guide-card li{color:var(--muted)}
+.guide-card ul{margin:8px 0 0 18px}
+.guide-card li{margin-bottom:6px}
+/* faq */
+.faq-list{max-width:860px}
+details{background:var(--panel);border:1px solid var(--line);margin-bottom:12px}
+summary{cursor:pointer;padding:18px 22px;font-weight:800;font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:1.5rem;font-weight:900;line-height:1}
+details[open ] summary::after{content:"–"}
+details .faq-a{padding:0 22px 20px;color:var(--muted)}
+details .faq-a a{color:var(--gold2);font-weight:700}
+/* booking */
+.booking{background:var(--coal)}
+.book-grid{display:grid;gap:26px}
+@media(min-width:900px){.book-grid{grid-template-columns:1.15fr .85fr}}
+.book-card{background:var(--gold);color:#0c0c0c;padding:38px 32px}
+.book-card h2{font-size:clamp(1.9rem,4.5vw,2.7rem);font-weight:900;margin-bottom:14px}
+.book-card p{color:#26220f;margin-bottom:24px;font-weight:600}
+.book-card .btn{border-color:#0c0c0c;margin:0 10px 12px 0}
+.book-card .btn-dark{background:#0c0c0c;color:var(--gold)}
+.book-card .btn-dark:hover{background:#262626}
+.book-card .btn-line{background:transparent;color:#0c0c0c}
+.book-card .btn-line:hover{background:rgba(0,0,0,.08)}
+.info-card{background:var(--panel);border:1px solid var(--line);padding:32px 28px}
+.info-card h3{font-size:1.4rem;font-weight:900;margin-bottom:16px}
+.info-card ul{list-style:none}
+.info-card li{padding:11px 0;border-bottom:1px dashed #2e2e2e;color:var(--muted)}
+.info-card li strong{color:var(--white);display:block;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:2px}
+.info-card li a{color:var(--gold2);font-weight:700;text-decoration:none}
+/* footer */
+footer{border-top:1px solid var(--line);padding:54px 0 30px;background:#090909}
+.foot-grid{display:grid;gap:30px}
+@media(min-width:860px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{font-family:"Arial Narrow",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;font-size:1.05rem;margin-bottom:14px;color:var(--gold)}
+footer p,footer li{color:var(--muted);font-size:.95rem}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid var(--line);margin-top:36px;padding-top:20px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;color:#7c7769;font-size:.84rem}
+/* float WA */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:80;background:#25d366;color:#08290f;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem;text-decoration:none;box-shadow:0 10px 28px rgba(0,0,0,.5);border:2px solid #0c0c0c}
+/* animations — content always visible, motion only enhances */
+@keyframes riseIn{from{opacity:.25;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.rise{animation:riseIn .8s ease both}
+@keyframes heroZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero-photo img{animation:heroZoom 2.4s ease both}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.rating-card{animation:bob 4.5s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topstrip">★ Rated 5.0 from 191 Google reviews — Otley, West Yorkshire ★ &nbsp;·&nbsp; <a href="https://wa.me/447805670172">Message us on WhatsApp to book</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">A</span>
+      <span class="logo-txt">Alpha Male<small>Barbers · Otley</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+447805670172">Call</a>
+      <a class="btn btn-gold" href="https://wa.me/447805670172">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy rise">
+      <p class="eyebrow">Barber Shop · Otley · West Yorkshire</p>
+      <h1>Look <span class="stroke">Sharp.</span><br>Feel <span class="gold">Alpha.</span></h1>
+      <p class="hero-sub">Alpha Male Barbers is Otley's home of precision haircuts, skin fades, beard trims and hot towel shaves — the full traditional barbering experience, done properly. Rated a perfect 5.0 stars by the men of Otley.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://wa.me/447805670172">Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="#services">See Services</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80&auto=format&fit=crop" alt="Barber giving a precision haircut at Alpha Male Barbers Otley">
+      <div class="rating-card">
+        <div class="big">5.0</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="rc-txt"><strong>191 Google reviews</strong>Every single one five stars</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Skin Fades <b>◆</b> Beard Trims <b>◆</b> Hot Towel Shaves <b>◆</b> Precision Cuts <b>◆</b> Kids Cuts <b>◆</b> Otley <b>◆</b></span>
+    <span>Skin Fades <b>◆</b> Beard Trims <b>◆</b> Hot Towel Shaves <b>◆</b> Precision Cuts <b>◆</b> Kids Cuts <b>◆</b> Otley <b>◆</b></span>
+  </div>
+</div>
+
+<!-- STATS -->
+<section style="padding-top:56px;padding-bottom:10px">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="num">5.0★</div><div class="lbl">Google Rating</div></div>
+      <div class="stat"><div class="num">191</div><div class="lbl">Five-Star Reviews</div></div>
+      <div class="stat"><div class="num">6+</div><div class="lbl">Services on the Chair</div></div>
+      <div class="stat"><div class="num">1</div><div class="lbl">Standard — Done Right</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-photos">
+      <img class="tall" src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=900&q=80&auto=format&fit=crop" alt="Inside a traditional barber shop">
+      <img class="short" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=900&q=80&auto=format&fit=crop" alt="Professional barber clippers and tools">
+      <img class="short" src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=900&q=80&auto=format&fit=crop" alt="Barber at work in the shop">
+    </div>
+    <div>
+      <p class="eyebrow">About the Shop</p>
+      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:900;margin:10px 0 16px">Old-school craft.<br><span style="color:var(--gold)">No shortcuts.</span></h2>
+      <p style="color:var(--muted);margin-bottom:14px">Alpha Male Barbers is a proper barber shop in the heart of Otley, West Yorkshire — a place where a haircut is still a craft, not a conveyor belt. Every gent who sits in the chair gets the same thing: time, care, sharp tools and a barber who treats the finish as a matter of pride.</p>
+      <p style="color:var(--muted)">From skin fades blended to perfection to beard work finished with a hot towel, this is barbering the way it should be — and Otley agrees. A perfect 5.0-star rating across 191 Google reviews doesn't happen by accident; it happens one great cut at a time.</p>
+      <ul class="checklist">
+        <li>Precision cutting — clipper and scissor work tailored to your head shape</li>
+        <li>Skin fades blended seamlessly, checked from every angle</li>
+        <li>Beard trims and shaping with a razor-sharp finish</li>
+        <li>Traditional hot towel shaves — the full ritual</li>
+        <li>Kids cuts in a relaxed, friendly chair</li>
+        <li>Easy booking — WhatsApp, phone, Facebook or Nearcut</li>
+      </ul>
+      <a class="btn btn-gold" href="https://wa.me/447805670172">Get in the Chair</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">On the Chair</p>
+      <h2>Services, <span>done properly</span></h2>
+      <p>Six ways to leave the shop looking sharper than you walked in. Prices are kept fair and honest — call or message us for today's prices and we'll confirm before you book.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=900&q=80&auto=format&fit=crop" alt="Barber cutting a gentleman's hair">
+        <div class="svc-body">
+          <div class="svc-num">/ 01</div>
+          <h3>The Haircut</h3>
+          <p>The classic. A full consultation first, then precision clipper and scissor work shaped to your head, your hair type and how you actually style it at home. Washed, finished and styled before you leave — never rushed, never "that'll do".</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900&q=80&auto=format&fit=crop" alt="Styling a sharp modern haircut">
+        <div class="svc-body">
+          <div class="svc-num">/ 02</div>
+          <h3>Skin Fade</h3>
+          <p>Our signature. High, mid or low — blended down to the skin with seamless graduation and not a line out of place. Every fade is checked in natural light and finished with crisp edges around the hairline, ears and neck.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=900&q=80&auto=format&fit=crop" alt="Man with a well-groomed beard">
+        <div class="svc-body">
+          <div class="svc-num">/ 03</div>
+          <h3>Beard Trim &amp; Shape</h3>
+          <p>Length taken down, shape carved back in and cheek and neck lines razor-defined. Whether you are growing it out or keeping it tight, we balance your beard to your face and finish with oils so it sits right for days.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=900&q=80&auto=format&fit=crop" alt="Traditional barber shave in progress">
+        <div class="svc-body">
+          <div class="svc-num">/ 04</div>
+          <h3>Hot Towel Shave</h3>
+          <p>The full traditional ritual. Steaming hot towels to soften and open the skin, a rich lather worked in properly, a close straight-razor pass and a cold towel finish. The closest, smoothest shave you can get — and the most relaxing half hour in Otley.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=900&q=80&auto=format&fit=crop" alt="Young man with a fresh tidy haircut">
+        <div class="svc-body">
+          <div class="svc-num">/ 05</div>
+          <h3>Kids Cuts</h3>
+          <p>Young gents welcome. Patient, friendly cuts for lads of all ages — first haircuts, school-ready trims and the same sharp fades the grown-ups get. No drama, no tears, just a tidy finish and a chair they will actually look forward to.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?w=900&q=80&auto=format&fit=crop" alt="Barber finishing a full service">
+        <div class="svc-body">
+          <div class="svc-num">/ 06</div>
+          <h3>The Full Works</h3>
+          <p>The complete reset. Haircut or fade, beard trim and shape, and the hot towel finish — everything in one sitting. Walk in scruffy, walk out like the best version of yourself. Perfect before a wedding, a big night out or a fresh start.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL ROWS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">The Craft, Explained</p>
+      <h2>What makes the <span>Alpha finish</span></h2>
+    </div>
+
+    <div class="detail-row">
+      <div class="d-img"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?w=1000&q=80&auto=format&fit=crop" alt="Barber blending a fade with clippers"></div>
+      <div>
+        <h3>Fades, <span>decoded</span></h3>
+        <p>A skin fade is only as good as its blend. We work through the grades gradually, stretch the transition and keep checking the silhouette from the front, sides and back — because a fade has to look right from every angle, not just the barber's favourite one.</p>
+        <p>Not sure which fade suits you? High fades give a sharp, bold contrast; low fades keep it subtle and grown-up; a taper fade is the smart middle ground. Tell us the look you are after — or show us a photo — and we will match the blend to your head shape and hair growth.</p>
+      </div>
+    </div>
+
+    <div class="detail-row flip">
+      <div class="d-img"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=1000&q=80&auto=format&fit=crop" alt="Barber tools laid out ready for work"></div>
+      <div>
+        <h3>The hot towel <span>ritual</span></h3>
+        <p>The hot towel is not a gimmick — it is the difference between a shave and an experience. Heat softens the beard hair and opens the pores, so the razor glides instead of dragging. The result is a closer finish with far less irritation, redness and razor burn.</p>
+        <p>Finished with a cold towel to close everything down and a proper tidy of the edges, it is the service gents book once out of curiosity — and then keep booking for good.</p>
+      </div>
+    </div>
+
+    <div class="detail-row">
+      <div class="d-img"><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=1000&q=80&auto=format&fit=crop" alt="Relaxed barber shop atmosphere"></div>
+      <div>
+        <h3>First visit? <span>Here is how it goes</span></h3>
+        <p>Message us on WhatsApp or book through Nearcut and Facebook, then just turn up. We will talk through what you want before a single clipper comes out — bring a photo of the style you like if you have one, it always helps.</p>
+        <p>In the chair you can sit back and relax. When we are done we will show you the finish in the mirror from all sides, tidy up the neckline, and talk you through how to style it at home so it still looks sharp on day ten, not just day one.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">From the Chair</p>
+      <h2>The <span>gallery</span></h2>
+      <p>Sharp work, every day of the week. This is the standard that walks out of the door at Alpha Male Barbers.</p>
+    </div>
+    <div class="gal-grid">
+      <figure><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80&auto=format&fit=crop" alt="Precision clipper work"><figcaption>Precision Work</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=80&auto=format&fit=crop" alt="Barber cutting hair"><figcaption>The Cut</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80&auto=format&fit=crop" alt="Beard grooming result"><figcaption>Beard Game</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80&auto=format&fit=crop" alt="Styling the finish"><figcaption>The Finish</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=800&q=80&auto=format&fit=crop" alt="Fresh cut portrait"><figcaption>Fresh Out</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80&auto=format&fit=crop" alt="Sharp everyday style"><figcaption>Everyday Sharp</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?w=800&q=80&auto=format&fit=crop" alt="Barber at work in the shop"><figcaption>In the Chair</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?w=800&q=80&auto=format&fit=crop" alt="Barber shop detail"><figcaption>The Shop</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Why Alpha Male</p>
+      <h2>191 reviews. <span>Zero below five stars.</span></h2>
+      <p>That record is not luck — it is what happens when a barber shop refuses to let a single gent leave looking anything less than his best.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="ic">★</div><h3>A Perfect 5.0 Record</h3><p>Every one of our 191 Google reviews is five stars. We protect that record the only way you can — by treating every cut like it is the one being reviewed.</p></div>
+      <div class="why-card"><div class="ic">✂</div><h3>Real Barbering Craft</h3><p>Proper consultation, proper technique, proper finish. Clipper work, scissor work and razor work all done the traditional way — no rushed ten-minute churn.</p></div>
+      <div class="why-card"><div class="ic">◆</div><h3>Blends You Can Trust</h3><p>Fades are checked from every angle and in proper light before you leave. If a line is out of place, we fix it in the chair — not at your expense later.</p></div>
+      <div class="why-card"><div class="ic">♨</div><h3>The Full Ritual</h3><p>Hot towels, rich lather, cold towel finish. The traditional touches most shops have dropped are still standard practice here.</p></div>
+      <div class="why-card"><div class="ic">☎</div><h3>Booking Made Easy</h3><p>WhatsApp, phone, Facebook or Nearcut — book however suits you in under a minute, and get a straight answer on times and prices before you commit.</p></div>
+      <div class="why-card"><div class="ic">£</div><h3>Honest, Fair Prices</h3><p>No inflated "premium" nonsense and no surprises at the till. Message us for today's prices — what we quote is what you pay.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps-band">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Booking</p>
+      <h2>In the chair in <span>three steps</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Message or Book</h3><p>Send us a WhatsApp, give us a ring, or book through Facebook or Nearcut. Tell us what you are after — cut, fade, beard or the full works.</p></div>
+      <div class="step"><div class="n">02</div><h3>Confirm Your Slot</h3><p>We will confirm your time and today's price up front, so there are no surprises. Need a different time? We will do our best to fit you in.</p></div>
+      <div class="step"><div class="n">03</div><h3>Sit Back, Leave Sharp</h3><p>Turn up, take the chair and relax. You will leave with a finish checked from every angle — and the know-how to style it at home.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Look After It</p>
+      <h2>The Alpha <span>grooming guide</span></h2>
+      <p>A great cut deserves a little upkeep. Keep yours looking chair-fresh between visits with these basics — and ask us in the shop, we are always happy to talk you through your hair type.</p>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>Keeping a fade sharp</h3>
+        <p>A skin fade grows out fastest at the edges, so most gents refresh every two to three weeks. Between visits:</p>
+        <ul>
+          <li>Sleeping on a satin or smooth pillowcase reduces frizz on the blend</li>
+          <li>A light matte product keeps the top in place without shine</li>
+          <li>Do not attempt the neckline at home — one slip undoes the blend</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>Beard care basics</h3>
+        <p>A shaped beard still needs looking after. A few minutes a week keeps the lines we carved looking deliberate:</p>
+        <ul>
+          <li>Brush it daily to train the growth direction</li>
+          <li>A drop of beard oil after a shower keeps it soft, not wiry</li>
+          <li>Comb before you trim — never cut a tangled beard</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>Styling at home</h3>
+        <p>The finish we give you in the chair is repeatable at home with the right routine:</p>
+        <ul>
+          <li>Apply product to towel-dried, not soaking, hair</li>
+          <li>Work it from the back of the head forwards for even coverage</li>
+          <li>Less is more — you can always add, you cannot take away</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>Big occasion coming up?</h3>
+        <p>Weddings, job interviews, photos, first dates — book The Full Works a day or two before the event, not the morning of. Your cut settles in, the skin calms after the shave, and you walk in looking effortlessly sharp rather than freshly clipped.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE FROM THE MENU -->
+<section style="background:var(--coal)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Also on the Chair</p>
+      <h2>More from <span>the menu</span></h2>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>The Restyle</h3>
+        <p>Grown it out and fed up with it? A restyle is a proper fresh start. We will talk through what suits your face, your hair type and how much effort you actually want to put in each morning — then cut you something that works with your life, not against it. Bring photos of styles you like; changing direction is a conversation, not a gamble.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Classic Scissor Cut</h3>
+        <p>Not every gent wants clippers. The classic scissor cut keeps length and movement on top with a natural, grown-in finish — the gentleman's choice, and the style that never dates. Ideal if you prefer a softer outline or you are growing your hair out with a plan.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Cut &amp; Beard Combo</h3>
+        <p>Hair and beard done together, balanced together. When the cut and the beard are shaped in the same sitting, the proportions work as one — the fade meets the beard line cleanly and the whole look lands. It is the most-booked combination in the shop for a reason.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Father &amp; Son</h3>
+        <p>Side-by-side chairs, one trip, two sharp finishes. Book the lad in with you and make it a proper ritual — his cut gets exactly the same care as yours, and you both walk out ready for the weekend. Message us and we will line the appointments up together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Where Our Gents Travel From</p>
+      <h2>Otley, <span>and beyond</span></h2>
+      <p>Alpha Male Barbers sits in Otley, in the heart of the Wharfe valley. Our regulars travel in from across the area because a barber you can trust is worth the trip — gents join us from Burley in Wharfedale, Menston, Ilkley, Guiseley, Pool in Wharfedale and the surrounding West Yorkshire towns and villages.</p>
+      <p style="color:var(--muted);margin-top:12px">Wherever you are coming from, the routine is the same: book on WhatsApp, take the chair, and leave with a finish worth travelling for.</p>
+    </div>
+    <a class="btn btn-gold" href="https://wa.me/447805670172">Book Your Chair</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--coal)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you <span>book</span></h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>How do I book an appointment?</summary><div class="faq-a">The quickest way is WhatsApp — message us on <a href="https://wa.me/447805670172">+44 7805 670172</a> and we will confirm your slot. You can also call the same number, or book through our Facebook page or Nearcut.</div></details>
+      <details><summary>How much does a haircut cost?</summary><div class="faq-a">Prices are fair and confirmed before you book — just call or message us for today's prices for the service you want. What we quote is what you pay; there are no add-ons sprung on you at the till.</div></details>
+      <details><summary>Do you do skin fades?</summary><div class="faq-a">Yes — skin fades are one of our signatures. High, mid, low or taper, every fade is blended seamlessly and checked from every angle before you leave the chair.</div></details>
+      <details><summary>What is a hot towel shave like?</summary><div class="faq-a">It is the traditional wet shave done properly: steaming hot towels to soften the beard, a rich lather, a close straight-razor pass and a cold towel finish. It gives the closest, smoothest result with the least irritation — most gents find it properly relaxing too.</div></details>
+      <details><summary>Can I get my beard trimmed and shaped?</summary><div class="faq-a">Absolutely. We will take down the length, carve the shape back in and razor-define the cheek and neck lines, finishing with oils so it sits right. Whether you are growing it out or keeping it tight, we will balance it to your face.</div></details>
+      <details><summary>Do you cut children's hair?</summary><div class="faq-a">Yes — young gents are welcome, from first haircuts to school-ready trims and proper fades. We keep it patient and friendly so the chair is never a drama.</div></details>
+      <details><summary>Where are you based?</summary><div class="faq-a">We are in Otley, in West Yorkshire. Message us on WhatsApp and we will happily point you in the right direction and confirm the best way to reach us.</div></details>
+      <details><summary>What are your opening hours?</summary><div class="faq-a">Hours can vary, so the safest bet is to message us on WhatsApp before you set off and we will confirm today's availability and get you booked in.</div></details>
+      <details><summary>Can I just walk in?</summary><div class="faq-a">Booking ahead is always the surest way to get the chair at the time you want. Send a quick WhatsApp message and we will confirm the next available slot — it takes under a minute.</div></details>
+      <details><summary>Why are all your reviews five stars?</summary><div class="faq-a">Because we treat every cut like it matters. A 5.0-star rating across 191 Google reviews is simply what happens when no gent leaves the shop until the finish is right — from every angle, every time.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="booking">
+  <div class="wrap book-grid">
+    <div class="book-card">
+      <h2>Your chair is waiting.</h2>
+      <p>Message us on WhatsApp now — tell us what you are after and we will confirm your slot and today's price straight away. No forms, no fuss, no waiting on hold.</p>
+      <a class="btn btn-dark" href="https://wa.me/447805670172">WhatsApp Us</a>
+      <a class="btn btn-line" href="tel:+447805670172">Call 07805 670172</a>
+    </div>
+    <div class="info-card">
+      <h3>Good to know</h3>
+      <ul>
+        <li><strong>WhatsApp &amp; Phone</strong><a href="https://wa.me/447805670172">+44 7805 670172</a></li>
+        <li><strong>Location</strong>Otley, West Yorkshire</li>
+        <li><strong>Booking</strong>WhatsApp · Phone · Facebook · Nearcut</li>
+        <li><strong>Prices</strong>Call or message for today's prices — confirmed before you book</li>
+        <li><strong>Rating</strong>5.0 ★ from 191 Google reviews</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" style="margin-bottom:14px">
+          <span class="logo-mark">A</span>
+          <span class="logo-txt">Alpha Male<small>Barbers · Otley</small></span>
+        </a>
+        <p>Otley's home of precision haircuts, skin fades, beard work and hot towel shaves. Rated 5.0 stars from 191 Google reviews — every single one earned in the chair.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">The Haircut</a></li>
+          <li><a href="#services">Skin Fade</a></li>
+          <li><a href="#services">Beard Trim &amp; Shape</a></li>
+          <li><a href="#services">Hot Towel Shave</a></li>
+          <li><a href="#services">Kids Cuts</a></li>
+          <li><a href="#services">The Full Works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/447805670172">+44 7805 670172</a></li>
+          <li>Call: <a href="tel:+447805670172">07805 670172</a></li>
+          <li>Otley, West Yorkshire</li>
+          <li>Also on Facebook &amp; Nearcut</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Alpha Male Barbers, Otley. All rights reserved.</span>
+      <span>Look sharp. Feel alpha.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447805670172" aria-label="Chat with Alpha Male Barbers on WhatsApp">✆</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
