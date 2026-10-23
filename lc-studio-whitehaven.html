@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LC Studio | Beauty Studio in Whitehaven, Cumbria — Facials, Lashes, Nails, Waxing & Massage</title>
+<meta name="description" content="LC Studio is a calm coastal beauty studio at 49 Haig Ave, Whitehaven. Facials, waxing, lash & brow, manicure & pedicure, massage and makeup. Rated 5.0 from 60 Google reviews. Message on WhatsApp to book.">
+<style>
+:root{
+  --seaglass:#8fc1b5; --seaglass-soft:#dcefe9; --deep:#17453c; --deep2:#0f352d;
+  --sand:#f5eeda; --sand2:#eadfc6; --ink:#22312c; --muted:#5d6f68;
+  --white:#ffffff; --cream:#fbf8f1; --gold:#c2a468; --line:#dce5df;
+  --radius:18px; --shadow:0 18px 40px rgba(23,69,60,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16.5px}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Didot,"Playfair Display",Georgia,"Times New Roman",serif;line-height:1.15;color:var(--deep2);font-weight:600}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:15.5px;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;border:1px solid transparent}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#1fae55;color:#fff;box-shadow:0 12px 26px rgba(31,174,85,.32)}
+.btn-wa:hover{background:#178c44}
+.btn-call{background:var(--deep);color:#fff}
+.btn-call:hover{background:var(--deep2)}
+.btn-ghost{background:transparent;border-color:var(--deep);color:var(--deep)}
+.btn-ghost:hover{background:var(--seaglass-soft)}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:12px;font-weight:800;color:#7a5f2e}
+section{padding:76px 0}
+.sec-head{max-width:720px;margin:0 auto 44px;text-align:center}
+.sec-head h2{font-size:clamp(30px,4.4vw,44px);margin:10px 0 12px}
+.sec-head p{color:var(--muted)}
+/* top strip */
+.topstrip{background:var(--deep2);color:#eaf4f0;font-size:13.5px}
+.topstrip .wrap{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;justify-content:space-between;padding-top:9px;padding-bottom:9px}
+.topstrip b{color:#ffd98a}
+.topstrip a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--seaglass),var(--deep));color:#fff;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:19px;font-weight:700;letter-spacing:.04em;box-shadow:var(--shadow)}
+.logo-text{font-family:Georgia,serif;font-size:22px;color:var(--deep2);line-height:1.05}
+.logo-text small{display:block;font-family:"Avenir Next","Segoe UI",sans-serif;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.nav-links{display:none;gap:26px;font-weight:600;font-size:15px;color:var(--deep)}
+.nav-links a:hover{color:#7a5f2e}
+.nav-cta{display:flex;gap:10px}
+.nav-cta .btn{padding:10px 18px;font-size:14px}
+@media(min-width:900px){.nav-links{display:flex}}
+/* hero */
+.hero{position:relative;padding:64px 0 0;overflow:hidden;background:linear-gradient(180deg,var(--seaglass-soft) 0%,var(--cream) 88%)}
+.hero-grid{display:grid;gap:38px;align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{font-size:clamp(40px,6vw,62px);margin:14px 0 16px}
+.hero h1 em{font-style:italic;color:#2e7d6a}
+.hero p.lede{font-size:18.5px;color:var(--muted);max-width:540px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 18px}
+.hero-points{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--deep);font-weight:600;font-size:14.5px}
+.hero-points span::before{content:"✓ ";color:#1fae55;font-weight:800}
+.hero-media{position:relative}
+.hero-img{border-radius:170px 170px 22px 22px;overflow:hidden;box-shadow:var(--shadow);animation:heroZoom 16s ease-in-out infinite alternate}
+.hero-img img{width:100%;height:520px;object-fit:cover}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.045)}}
+.rating-card{position:absolute;left:-8px;bottom:26px;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:16px 20px;max-width:250px;animation:bob 5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.rating-card .stars{color:#e8a812;font-size:19px;letter-spacing:2px}
+.rating-card b{font-size:21px;color:var(--deep2)}
+.rating-card p{font-size:13.5px;color:var(--muted);line-height:1.45}
+.wave{display:block;width:100%;height:56px;margin-top:46px}
+/* trust strip */
+.trust{background:var(--deep);color:#eaf4f0}
+.trust .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding-top:26px;padding-bottom:26px;text-align:center}
+@media(min-width:860px){.trust .wrap{grid-template-columns:repeat(4,1fr)}}
+.trust b{display:block;font-family:Georgia,serif;font-size:26px;color:#fff}
+.trust span{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--seaglass)}
+/* about */
+.about-grid{display:grid;gap:40px;align-items:center}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr}}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.collage img{border-radius:var(--radius);object-fit:cover;width:100%;height:230px;box-shadow:var(--shadow)}
+.collage img.tall{height:474px;grid-row:span 2}
+.checklist{list-style:none;margin:20px 0;display:grid;gap:11px}
+.checklist li{padding-left:32px;position:relative}
+.checklist li::before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--seaglass-soft);color:var(--deep);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.about-copy h2{font-size:clamp(29px,4vw,40px);margin:10px 0 14px}
+.about-copy p{color:var(--muted);margin-bottom:14px}
+.signoff{font-family:Georgia,serif;font-style:italic;font-size:19px;color:var(--deep)}
+/* services */
+.services{background:linear-gradient(180deg,#fff, var(--seaglass-soft) 140%)}
+.svc-grid{display:grid;gap:22px}
+@media(min-width:680px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 22px rgba(23,69,60,.07);transition:transform .3s ease,box-shadow .3s ease}
+.svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.svc img{height:190px;width:100%;object-fit:cover}
+.svc-body{padding:24px 24px 26px}
+.svc-body h3{font-size:23px;margin-bottom:8px}
+.svc-body p{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.svc-body ul{list-style:none;display:grid;gap:6px;font-size:15px;margin-bottom:16px}
+.svc-body ul li{padding-left:20px;position:relative}
+.svc-body ul li::before{content:"–";position:absolute;left:2px;color:#2e7d6a;font-weight:800}
+.price-note{display:inline-block;background:var(--sand);border:1px dashed var(--gold);color:#7a5f2e;font-weight:700;font-size:13.5px;padding:7px 13px;border-radius:999px}
+/* rituals */
+.ritual{display:grid;gap:22px;align-items:stretch}
+@media(min-width:900px){.ritual{grid-template-columns:repeat(3,1fr)}}
+.ritual-card{background:var(--deep);color:#eaf4f0;border-radius:var(--radius);padding:30px 28px;position:relative;overflow:hidden}
+.ritual-card::after{content:"";position:absolute;right:-34px;top:-34px;width:120px;height:120px;border-radius:50%;background:rgba(143,193,181,.18)}
+.ritual-card .num{font-family:Georgia,serif;font-size:15px;letter-spacing:.24em;color:var(--seaglass);text-transform:uppercase;font-weight:700}
+.ritual-card h3{color:#fff;font-size:25px;margin:10px 0 10px}
+.ritual-card p{color:#cfe4dd;font-size:15.5px}
+/* gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:900px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+.gal{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 24px rgba(23,69,60,.10)}
+.gal img{height:250px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;background:linear-gradient(180deg,transparent,rgba(15,53,45,.82));color:#fff;font-weight:600;font-size:14.5px}
+/* why */
+.why-grid{display:grid;gap:20px}
+@media(min-width:680px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+.why-card .ic{width:48px;height:48px;border-radius:14px;background:var(--seaglass-soft);display:flex;align-items:center;justify-content:center;font-size:23px;margin-bottom:14px}
+.why-card h3{font-size:21px;margin-bottom:7px}
+.why-card p{color:var(--muted);font-size:15.5px}
+/* steps */
+.steps{background:var(--sand)}
+.steps-grid{display:grid;gap:20px}
+@media(min-width:900px){.steps-grid{grid-template-columns:repeat(4,1fr)}}
+.step{background:#fff;border-radius:var(--radius);padding:26px 24px;border:1px solid var(--sand2)}
+.step .n{width:40px;height:40px;border-radius:50%;background:var(--deep);color:#fff;font-family:Georgia,serif;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:13px}
+.step h3{font-size:20px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+/* aftercare */
+.after-grid{display:grid;gap:20px}
+@media(min-width:860px){.after-grid{grid-template-columns:repeat(2,1fr)}}
+.after-card{border-left:4px solid var(--seaglass);background:#fff;border-radius:0 var(--radius) var(--radius) 0;padding:24px 26px;box-shadow:0 8px 20px rgba(23,69,60,.06)}
+.after-card h3{font-size:21px;margin-bottom:7px}
+.after-card p{color:var(--muted);font-size:15.5px}
+/* detail rows */
+.detail{display:grid;gap:26px;align-items:center;margin-bottom:44px}
+@media(min-width:880px){.detail{grid-template-columns:1fr 1fr}.detail.flip .detail-img{order:2}}
+.detail-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.detail-img img{height:320px;width:100%;object-fit:cover}
+.detail-copy h3{font-size:27px;margin-bottom:10px}
+.detail-copy p{color:var(--muted);margin-bottom:12px;font-size:15.8px}
+.detail-copy ul{list-style:none;display:grid;gap:7px;font-size:15.5px}
+.detail-copy ul li{padding-left:22px;position:relative}
+.detail-copy ul li::before{content:"✓";position:absolute;left:0;color:#1fae55;font-weight:800}
+/* occasions */
+.occ-grid{display:grid;gap:18px}
+@media(min-width:680px){.occ-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.occ-grid{grid-template-columns:repeat(4,1fr)}}
+.occ{background:var(--seaglass-soft);border-radius:var(--radius);padding:26px 24px}
+.occ h3{font-size:20px;margin-bottom:7px}
+.occ p{color:var(--muted);font-size:15px}
+/* faq */
+.faq-list{max-width:820px;margin:0 auto;display:grid;gap:12px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 22px}
+summary{cursor:pointer;font-weight:700;color:var(--deep2);padding:15px 0;font-size:16.5px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:#2e7d6a;font-size:22px;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{color:var(--muted);padding:0 0 17px;font-size:15.5px}
+/* booking */
+.booking{background:linear-gradient(135deg,var(--deep2),var(--deep) 60%,#2e7d6a);color:#eaf4f0}
+.book-grid{display:grid;gap:34px;align-items:center}
+@media(min-width:920px){.book-grid{grid-template-columns:1.05fr .95fr}}
+.booking h2{color:#fff;font-size:clamp(30px,4.4vw,44px);margin-bottom:14px}
+.booking p{color:#cfe4dd;margin-bottom:14px}
+.book-card{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px 28px;box-shadow:var(--shadow)}
+.book-card h3{font-size:23px;margin-bottom:14px}
+.book-row{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.book-row:last-of-type{border-bottom:none}
+.book-row b{min-width:86px;color:var(--deep)}
+.book-card .btn{margin-top:16px;margin-right:8px}
+/* footer */
+footer{background:var(--deep2);color:#bcd6ce;padding:52px 0 30px;font-size:14.5px}
+.foot-grid{display:grid;gap:28px}
+@media(min-width:860px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{color:#fff;font-family:Georgia,serif;font-size:19px;margin-bottom:12px}
+footer a:hover{color:#fff;text-decoration:underline}
+.foot-links{list-style:none;display:grid;gap:8px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#8fb3a8}
+/* floating WA */
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1fae55;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;box-shadow:0 14px 30px rgba(31,174,85,.4);animation:bob 5s ease-in-out infinite}
+.fade-up{animation:fadeUp 1s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span>★ <b>5.0 rated</b> from <b>60 Google reviews</b> — LC Studio, Whitehaven</span>
+    <span>49 Haig Ave, Whitehaven · <a href="https://wa.me/447542741237">Message us on WhatsApp</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="LC Studio home">
+      <span class="logo-mark">LC</span>
+      <span class="logo-text">LC Studio<small>Beauty · Whitehaven</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-call" href="tel:+447542741237">Call</a>
+      <a class="btn btn-wa" href="https://wa.me/447542741237">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="fade-up">
+      <span class="eyebrow">Beauty Studio · Whitehaven, Cumbria</span>
+      <h1>Calm, coastal beauty — <em>done properly.</em></h1>
+      <p class="lede">LC Studio is a peaceful beauty studio on Haig Avenue in Whitehaven, offering facials, waxing, lash &amp; brow treatments, manicures, pedicures, massage and makeup — one client at a time, never rushed.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447542741237">💬 Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="#treatments">See Treatments</a>
+      </div>
+      <div class="hero-points">
+        <span>Rated 5.0 on Google</span>
+        <span>60 happy-client reviews</span>
+        <span>Easy WhatsApp booking</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" alt="A relaxing spa treatment at LC Studio, Whitehaven">
+      </div>
+      <div class="rating-card">
+        <div class="stars">★★★★★</div>
+        <b>5.0 / 5.0</b>
+        <p>From 60 Google reviews — every single one five stars.</p>
+      </div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C240,95 480,5 720,45 C960,85 1200,15 1440,55 L1440,90 L0,90 Z" fill="#17453c"></path></svg>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div><b>5.0 ★</b><span>Google rating</span></div>
+    <div><b>60</b><span>Five-star reviews</span></div>
+    <div><b>6</b><span>Treatment families</span></div>
+    <div><b>1-to-1</b><span>Unhurried appointments</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="collage">
+      <img class="tall" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop" alt="Spa towels and a calm treatment setting">
+      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop" alt="Candles and a peaceful studio atmosphere">
+      <img src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?q=80&w=1200&auto=format&fit=crop" alt="A tranquil spa treatment room">
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow">About the studio</span>
+      <h2>A little pocket of calm on the Cumbrian coast</h2>
+      <p>LC Studio sits on Haig Avenue in Whitehaven, a short stroll from the harbour and the sea. The studio was set up with one simple idea: beauty treatments should feel like a treat, not a conveyor belt. Appointments are booked with breathing room, the room is warm and quiet, and every treatment starts with a proper chat about what you actually want.</p>
+      <p>Whether you are popping in for a tidy-up wax, settling in for a full facial, or getting ready for a big occasion, you will be looked after from the moment you arrive to the moment you float back out of the door.</p>
+      <ul class="checklist">
+        <li>One-to-one appointments — the studio is yours while you are here</li>
+        <li>Honest advice first: if a treatment is not right for you, we will say so</li>
+        <li>Quality professional products, chosen for results and skin comfort</li>
+        <li>Spotless hygiene standards on every tool, every time</li>
+        <li>Simple booking by WhatsApp, phone or Facebook</li>
+      </ul>
+      <p class="signoff">“Leave a little calmer than you arrived.” — the LC Studio way</p>
+      <div style="margin-top:22px">
+        <a class="btn btn-wa" href="https://wa.me/447542741237">💬 Ask a Question</a>
+        <a class="btn btn-call" href="tel:+447542741237">Call 07542 741237</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="treatments">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Treatments</span>
+      <h2>Everything you need, under one calm roof</h2>
+      <p>Six treatment families, each tailored to you on the day. Prices vary by treatment and what you choose, so we keep it simple: call or message for prices and we will give you an exact quote before you book.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop" alt="A relaxing facial treatment">
+        <div class="svc-body">
+          <h3>Facials &amp; Skin Care</h3>
+          <p>The studio favourite. A facial at LC Studio is built around your skin on the day — deep cleansing, gentle exfoliation, a treatment mask and a slow, relaxing massage of the face, neck and shoulders.</p>
+          <ul>
+            <li>Deep-cleanse &amp; refresh facials</li>
+            <li>Hydrating facials for dry, tired skin</li>
+            <li>Calming facials for sensitive skin</li>
+            <li>Relaxing face, neck &amp; shoulder massage included</li>
+          </ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?q=80&w=1200&auto=format&fit=crop" alt="A calm waxing and beauty treatment setting">
+        <div class="svc-body">
+          <h3>Waxing</h3>
+          <p>Smooth skin, done gently and hygienically. We work quickly and carefully to keep discomfort to a minimum, and we will talk you through aftercare so the results last as long as possible.</p>
+          <ul>
+            <li>Brow, lip and chin waxing</li>
+            <li>Leg and arm waxing</li>
+            <li>Underarm waxing</li>
+            <li>Soothing aftercare advice with every appointment</li>
+          </ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?q=80&w=1200&auto=format&fit=crop" alt="A beauty portrait showing lashes and brows">
+        <div class="svc-body">
+          <h3>Lash &amp; Brow</h3>
+          <p>The quickest way to look polished with zero effort in the morning. We shape, tint and lift to suit your face — natural and soft, or bold and defined, it is entirely up to you.</p>
+          <ul>
+            <li>Brow shaping and tidy-ups</li>
+            <li>Brow and lash tinting</li>
+            <li>Lash lifts for a wide-awake look</li>
+            <li>Patch-test guidance before tinting treatments</li>
+          </ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop" alt="A professional manicure in progress">
+        <div class="svc-body">
+          <h3>Manicure &amp; Pedicure</h3>
+          <p>Proper nail care, not just polish. Nails are shaped, cuticles tidied and skin nourished before your colour or finish goes on — and pedicures come with a soak and hard-skin care for genuinely happy feet.</p>
+          <ul>
+            <li>Classic manicures with careful shaping</li>
+            <li>Luxury pedicures with soak and massage</li>
+            <li>Gel-style long-lasting finishes</li>
+            <li>Natural nail care for weak or bitten nails</li>
+          </ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1200&auto=format&fit=crop" alt="Hot stones prepared for a massage treatment">
+        <div class="svc-body">
+          <h3>Massage &amp; Relaxation</h3>
+          <p>When your shoulders live somewhere near your ears, this is the appointment for you. Slow, unhurried massage work to ease tension in the back, neck and shoulders, in the quiet of the studio.</p>
+          <ul>
+            <li>Back, neck and shoulder massage</li>
+            <li>Full relaxation treatments</li>
+            <li>Warm, quiet room and gentle music</li>
+            <li>Pressure always adjusted to your comfort</li>
+          </ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" alt="A selection of professional makeup products">
+        <div class="svc-body">
+          <h3>Makeup &amp; Occasions</h3>
+          <p>Weddings, parties, photographs, or simply a day when you want to feel your best. Makeup is applied to suit you and your occasion — soft and natural, or full glam — and built to last the whole event.</p>
+          <ul>
+            <li>Occasion and party makeup</li>
+            <li>Bridal and bridesmaid makeup</li>
+            <li>Natural “you, but polished” looks</li>
+            <li>Message ahead to plan your look together</li>
+          </ul>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- RITUALS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The LC experience</span>
+      <h2>Three little rituals in every visit</h2>
+      <p>It is the small things that make a treatment feel special. These come as standard at LC Studio, whichever treatment you choose.</p>
+    </div>
+    <div class="ritual">
+      <div class="ritual-card">
+        <span class="num">Ritual One</span>
+        <h3>The proper welcome</h3>
+        <p>No rushing you onto the couch. We start with a chat — what you would like, how your skin or nails have been behaving, anything you are unsure about — so the treatment fits you, not the other way round.</p>
+      </div>
+      <div class="ritual-card">
+        <span class="num">Ritual Two</span>
+        <h3>The quiet room</h3>
+        <p>Warm towels, soft light, gentle music and no interruptions. While you are on the couch, the outside world can wait — many clients tell us this hour is the calmest part of their week.</p>
+      </div>
+      <div class="ritual-card">
+        <span class="num">Ritual Three</span>
+        <h3>The honest finish</h3>
+        <p>Before you leave, we explain exactly what was used, what to expect over the next few days, and how to look after the results at home — plain, honest aftercare, written down if you would like it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>A glimpse inside the studio</h2>
+      <p>Soft sea-glass greens, warm sand tones and a treatment room designed for switching off.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop" alt="A facial treatment being applied"><figcaption>Facials &amp; skin care</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1200&auto=format&fit=crop" alt="Inside a bright beauty studio"><figcaption>The studio space</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=1200&auto=format&fit=crop" alt="Nail polish colours for manicures"><figcaption>Manicure colours</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=1200&auto=format&fit=crop" alt="Skincare products used in treatments"><figcaption>Professional skincare</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=1200&auto=format&fit=crop" alt="A relaxing massage treatment"><figcaption>Massage &amp; relaxation</figcaption></figure>
+      <figure class="gal"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Finished occasion makeup look"><figcaption>Makeup &amp; occasions</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why LC Studio</span>
+      <h2>Why Whitehaven chooses LC Studio</h2>
+      <p>Sixty five-star Google reviews do not happen by accident. Here is what sits behind them.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="ic">⭐</div><h3>A genuine 5.0 rating</h3><p>Every one of our 60 Google reviews is five stars. We work hard for each one — by treating every client like the only client of the day.</p></div>
+      <div class="why-card"><div class="ic">🕊️</div><h3>Never rushed</h3><p>Appointments are spaced so there is time to talk, time to treat, and time to relax afterwards. No double-booking, no clock-watching.</p></div>
+      <div class="why-card"><div class="ic">💬</div><h3>Booking that suits you</h3><p>Message on WhatsApp whenever suits you — evenings included — and we will reply as soon as we can with times that work.</p></div>
+      <div class="why-card"><div class="ic">🧴</div><h3>Products chosen with care</h3><p>Professional ranges selected for results and skin comfort. If you would like to know exactly what is being used on your skin, just ask.</p></div>
+      <div class="why-card"><div class="ic">✨</div><h3>Spotless, every time</h3><p>Fresh towels, sterilised tools and a thoroughly cleaned room for every appointment. Hygiene is the quiet foundation of everything here.</p></div>
+      <div class="why-card"><div class="ic">🤍</div><h3>Honest, friendly advice</h3><p>No hard sell, no jargon, no pressure to add extras. Just straight answers about what will work for you — and what honestly will not.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Booking</span>
+      <h2>From message to treatment room in four steps</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step"><div class="n">1</div><h3>Say hello</h3><p>Send a WhatsApp message or give us a call. Tell us which treatment you are thinking of — or just how you want to feel, and we will suggest something.</p></div>
+      <div class="step"><div class="n">2</div><h3>Pick your time</h3><p>We will offer the appointments available and hold the one that suits you. If a patch test is needed first, we will arrange that too.</p></div>
+      <div class="step"><div class="n">3</div><h3>Relax &amp; enjoy</h3><p>Arrive at 49 Haig Ave, settle in, and let the treatment begin. The room, the time and the attention are all yours.</p></div>
+      <div class="step"><div class="n">4</div><h3>Aftercare, sorted</h3><p>Leave with clear, simple aftercare advice — and a standing invitation to message us with any question afterwards.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AFTERCARE -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Good to know</span>
+      <h2>Getting the most from your treatment</h2>
+    </div>
+    <div class="after-grid">
+      <div class="after-card"><h3>Before you come</h3><p>Arrive with clean skin where you can, and avoid heavy sun exposure before facials or waxing. For tinting treatments, a patch test is needed in advance — message us and we will arrange it in good time.</p></div>
+      <div class="after-card"><h3>After waxing</h3><p>Keep the area cool, clean and out of strong sun for the first day, and skip hot baths and perfumed products while the skin settles. We will go through everything at your appointment so you know exactly what to expect.</p></div>
+      <div class="after-card"><h3>After facials &amp; massage</h3><p>Drink some water, take the rest of the day gently if you can, and let the products do their work before applying makeup. Your skin may glow a little afterwards — that is the treatment working.</p></div>
+      <div class="after-card"><h3>Looking after nails</h3><p>Use cuticle oil daily, wear gloves for washing up and cleaning, and never use your nails as tools. Book your infill or removal with us rather than picking — your natural nails will thank you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS IN DETAIL -->
+<section style="background:#fff;padding-top:10px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">In detail</span>
+      <h2>A closer look at the treatment room</h2>
+      <p>What actually happens during three of our most-loved appointments — so you know exactly what you are booking.</p>
+    </div>
+
+    <div class="detail">
+      <div class="detail-img"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop" alt="Professional skincare product used in facial treatments"></div>
+      <div class="detail-copy">
+        <h3>The signature facial, step by step</h3>
+        <p>We begin by looking at your skin properly — in good light, with no makeup — and talking about what you would like to improve. Then comes a thorough double cleanse, a gentle exfoliation matched to your skin type, and a treatment mask chosen on the day. While the mask works, you get a slow massage of the face, neck and shoulders — most clients drift off here. We finish with serums and moisturiser suited to your skin, and a simple home-care suggestion if you would like one.</p>
+        <ul>
+          <li>Skin consultation built into every facial</li>
+          <li>Products chosen for your skin on the day, never one-size-fits-all</li>
+          <li>Massage included as standard, not as an add-on</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail flip">
+      <div class="detail-img"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=1200&auto=format&fit=crop" alt="A range of professional beauty products"></div>
+      <div class="detail-copy">
+        <h3>Lash lifts &amp; tints, explained</h3>
+        <p>A lash lift gently curls your natural lashes upwards so your eyes look wider and more awake — no extensions, no mascara needed. Add a tint and the effect is even stronger, particularly if your lashes are fair at the ends. Brows are shaped with care to flatter your face, and tinted to a shade that suits your colouring. The whole thing is comfortable and relaxing, and we will always patch test first where one is needed.</p>
+        <ul>
+          <li>Natural lashes only — nothing glued on, nothing to maintain daily</li>
+          <li>Patch testing arranged in advance where required</li>
+          <li>Shades mixed to suit you, from soft and natural to defined</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail-img"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200&auto=format&fit=crop" alt="Professional makeup brushes ready for an occasion look"></div>
+      <div class="detail-copy">
+        <h3>Occasion makeup, without the stress</h3>
+        <p>Tell us about the event, your outfit and the look you have in mind — photographs help, so feel free to send them over WhatsApp before the day. We will build a look that photographs beautifully and still feels like you: skin that looks like skin, eyes that hold up all day, and a finish designed to last from first photo to last dance. Many brides and guests pair makeup with a facial in the week before, plus nails and lashes, for the full works.</p>
+        <ul>
+          <li>Looks planned together in advance — no surprises on the day</li>
+          <li>Long-wear products chosen to last the whole event</li>
+          <li>Combine with facials, nails and lashes for a complete package</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section style="padding-top:16px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Perfect for…</span>
+      <h2>Whatever the occasion, arrive glowing</h2>
+    </div>
+    <div class="occ-grid">
+      <div class="occ"><h3>💍 Weddings</h3><p>Bridal makeup, nails, lashes and a pre-wedding facial plan — book the run-up early and enjoy being pampered while we handle the beauty side.</p></div>
+      <div class="occ"><h3>🎉 Parties &amp; nights out</h3><p>Makeup, nails and a brow tidy in one visit, and you are ready. Message us the date and we will work out the perfect combination.</p></div>
+      <div class="occ"><h3>🌊 Holidays</h3><p>Waxing, a lash lift and tint, and a pedicure before you go — look polished from the first beach day without packing a makeup bag full of extras.</p></div>
+      <div class="occ"><h3>🤍 Just because</h3><p>No occasion needed at all. A facial or a massage on an ordinary week is reason enough — your future self will thank you for the hour of calm.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--seaglass-soft)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>How do I book an appointment?</summary><p>The quickest way is WhatsApp — tap any green button on this page or message 07542 741237. You can also call the same number, or book through our Book in Beautiful / Facebook pages. Tell us the treatment you would like and a rough time that suits you.</p></details>
+      <details><summary>Where is LC Studio?</summary><p>You will find us at 49 Haig Ave, Whitehaven, Cumbria. If you are not sure of the way, message us on WhatsApp and we will happily send directions.</p></details>
+      <details><summary>How much do treatments cost?</summary><p>Prices depend on the treatment and the options you choose, so rather than guess we would rather quote you properly: call or message for prices and we will give you an exact figure before you commit to anything.</p></details>
+      <details><summary>What are your opening hours?</summary><p>Appointments are arranged by booking, so hours flex around clients. Message us on WhatsApp with the day and time you have in mind and we will do our best to fit you in.</p></details>
+      <details><summary>Do I need a patch test?</summary><p>For tinting and some lash treatments, yes — a patch test is needed at least 24–48 hours before your first treatment of that kind. It only takes a moment, and we will arrange it when you book.</p></details>
+      <details><summary>It is my first facial — what should I expect?</summary><p>A friendly chat about your skin first, then cleansing, exfoliation, a mask and massage, all explained as we go. There is no discomfort involved — most clients drift off. Your skin may look a little pink straight after, which settles quickly.</p></details>
+      <details><summary>Does waxing hurt?</summary><p>There is a brief sting as each strip is removed, but it fades immediately and most clients are surprised how manageable it is. We work gently and quickly, and the results last far longer than shaving.</p></details>
+      <details><summary>Can I book for a wedding or special occasion?</summary><p>Absolutely — occasion and bridal makeup are available, and many clients pair it with nails, lashes or a facial in the run-up. Message us as early as you can with your date so we can plan your appointments together.</p></details>
+      <details><summary>What if I need to move my appointment?</summary><p>Life happens — just message us on WhatsApp as early as you can and we will re-arrange your appointment. The earlier you let us know, the easier it is to find you another slot.</p></details>
+      <details><summary>I am nervous about trying a new studio. Can I just ask questions first?</summary><p>Of course — that is exactly what WhatsApp is for. Ask anything at all, with no obligation to book. We would rather you feel completely comfortable before you ever walk through the door.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="book">
+  <div class="wrap book-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--seaglass)">Book your visit</span>
+      <h2>Your calmest hour of the week starts with one message</h2>
+      <p>Send us a WhatsApp message with the treatment you fancy and when suits you — we will reply with availability and an exact price, no obligation at all.</p>
+      <p>Prefer to talk it through? Call us on 07542 741237 and we will happily help you choose.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px">
+        <a class="btn btn-wa" href="https://wa.me/447542741237">💬 Message on WhatsApp</a>
+        <a class="btn btn-ghost" style="border-color:#eaf4f0;color:#fff" href="tel:+447542741237">Call 07542 741237</a>
+      </div>
+    </div>
+    <div class="book-card">
+      <h3>Studio details</h3>
+      <div class="book-row"><b>Studio</b><span>LC Studio — Beauty Studio</span></div>
+      <div class="book-row"><b>Address</b><span>49 Haig Ave, Whitehaven, Cumbria</span></div>
+      <div class="book-row"><b>WhatsApp</b><span>07542 741237</span></div>
+      <div class="book-row"><b>Phone</b><span>07542 741237</span></div>
+      <div class="book-row"><b>Rating</b><span>★ 5.0 from 60 Google reviews</span></div>
+      <div class="book-row"><b>Booking</b><span>By appointment — WhatsApp, phone, Facebook or Book in Beautiful</span></div>
+      <a class="btn btn-wa" href="https://wa.me/447542741237">💬 Book on WhatsApp</a>
+      <a class="btn btn-call" href="tel:+447542741237">Call Now</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>LC Studio</h4>
+        <p>A calm, coastal beauty studio in Whitehaven, Cumbria — facials, waxing, lash &amp; brow, manicure &amp; pedicure, massage and makeup, rated 5.0 from 60 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Treatments</h4>
+        <ul class="foot-links">
+          <li><a href="#treatments">Facials &amp; Skin Care</a></li>
+          <li><a href="#treatments">Waxing</a></li>
+          <li><a href="#treatments">Lash &amp; Brow</a></li>
+          <li><a href="#treatments">Manicure &amp; Pedicure</a></li>
+          <li><a href="#treatments">Massage &amp; Relaxation</a></li>
+          <li><a href="#treatments">Makeup &amp; Occasions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="foot-links">
+          <li>49 Haig Ave, Whitehaven, Cumbria</li>
+          <li><a href="https://wa.me/447542741237">WhatsApp: 07542 741237</a></li>
+          <li><a href="tel:+447542741237">Call: 07542 741237</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#book">Book an appointment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© LC Studio, Whitehaven. All rights reserved.</span>
+      <span>Demo website built for LC Studio — message us to make it yours.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/447542741237" aria-label="Chat with LC Studio on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
