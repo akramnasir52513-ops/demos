@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crown Barber Shop | Barbers in Harrogate, North Yorkshire</title>
+<meta name="description" content="Crown Barber Shop in Harrogate, North Yorkshire. Rated 4.6 stars from 83 Google reviews. Haircuts, skin fades, beard trims and hot towel shaves. Message us on WhatsApp to book.">
+<style>
+:root{
+  --purple:#2a1042; --purple2:#3b1a5e; --purple3:#4a227a;
+  --gold:#c9a227; --gold2:#e6c65c; --ivory:#f7f2e7; --ivory2:#efe6d3;
+  --ink:#241533; --muted:#5d5470; --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--ivory);line-height:1.65;font-size:17px}
+h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;line-height:1.2;color:var(--purple)}
+img{max-width:100%;display:block}
+a{color:var(--purple3)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:bold;font-size:16px;transition:transform .25s ease,box-shadow .25s ease;border:2px solid transparent}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--purple);box-shadow:0 6px 18px rgba(201,162,39,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.45)}
+.btn-outline{border-color:var(--gold);color:var(--ivory);background:transparent}
+.btn-outline:hover{background:rgba(201,162,39,.15);transform:translateY(-2px)}
+.btn-purple{background:var(--purple);color:var(--ivory)}
+.btn-purple:hover{background:var(--purple3);transform:translateY(-2px)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+.rise{animation:fadeUp .8s ease both}
+.rise2{animation:fadeUp .8s ease .15s both}
+.rise3{animation:fadeUp .8s ease .3s both}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+header{background:var(--purple);color:var(--ivory);position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(0,0,0,.35)}
+.topbar{background:#1c0b30;color:var(--gold2);text-align:center;font-size:14px;padding:7px 12px;letter-spacing:.4px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ivory)}
+.crown{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--gold2),var(--gold) 70%);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--purple);flex:none;box-shadow:0 0 0 2px rgba(201,162,39,.4)}
+.logo-text{font-size:22px;font-weight:bold;letter-spacing:.5px;line-height:1.1}
+.logo-text small{display:block;font-size:12px;letter-spacing:3px;color:var(--gold2);font-weight:normal;text-transform:uppercase}
+.nav-links{display:flex;gap:20px;flex-wrap:wrap}
+.nav-links a{color:var(--ivory);text-decoration:none;font-size:15px}
+.nav-links a:hover{color:var(--gold2)}
+.nav-cta .btn{padding:9px 18px;font-size:14px}
+.hero{background:linear-gradient(160deg,var(--purple) 0%,var(--purple2) 55%,#1c0b30 100%);color:var(--ivory);padding:64px 0 72px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+@media(min-width:880px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{color:var(--ivory);font-size:42px;margin-bottom:14px}
+.hero h1 .gold{color:var(--gold2)}
+.hero p.lead{font-size:19px;color:#e9e0f5;margin-bottom:22px;max-width:34em}
+.stars{color:var(--gold2);font-size:20px;letter-spacing:2px}
+.rating-line{display:flex;align-items:center;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.rating-line span{font-size:15px;color:#e9e0f5}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.hero-photo{position:relative}
+.hero-photo img{border-radius:18px;border:3px solid var(--gold);box-shadow:0 24px 50px rgba(0,0,0,.45);animation:slowZoom 14s ease-in-out infinite alternate;width:100%;height:auto}
+.hero-badge{position:absolute;left:14px;bottom:14px;background:rgba(28,11,48,.92);border:1px solid var(--gold);border-radius:12px;padding:12px 16px;color:var(--ivory)}
+.hero-badge strong{color:var(--gold2);font-size:20px}
+.hero-badge small{display:block;font-size:13px;color:#e9e0f5}
+section{padding:64px 0}
+.kicker{text-transform:uppercase;letter-spacing:3px;font-size:13px;color:var(--gold);font-weight:bold;text-align:center;margin-bottom:10px}
+h2.title{text-align:center;font-size:34px;margin-bottom:14px}
+.sub{text-align:center;color:var(--muted);max-width:44em;margin:0 auto 40px}
+.gold-rule{width:90px;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:14px auto 0;border-radius:2px}
+.about-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+@media(min-width:880px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-grid img{border-radius:16px;box-shadow:0 16px 36px rgba(42,16,66,.25);border:2px solid var(--gold)}
+.about-grid h2{text-align:left;font-size:32px;margin-bottom:14px}
+.about-grid p{margin-bottom:14px;color:#3c3350}
+.checks{list-style:none;margin-top:16px}
+.checks li{padding:8px 0 8px 34px;position:relative;color:#3c3350}
+.checks li::before{content:"✦";position:absolute;left:4px;color:var(--gold);font-size:18px}
+.services{background:linear-gradient(180deg,var(--purple) 0%,var(--purple2) 100%);color:var(--ivory)}
+.services h2.title{color:var(--ivory)}
+.services .sub{color:#d9cdf0}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:700px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+.svc{background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.45);border-radius:16px;overflow:hidden;transition:transform .25s ease}
+.svc:hover{transform:translateY(-5px)}
+.svc img{height:190px;width:100%;object-fit:cover}
+.svc-body{padding:22px}
+.svc-body h3{color:var(--gold2);font-size:21px;margin-bottom:8px}
+.svc-body p{color:#e9e0f5;font-size:15.5px;margin-bottom:14px}
+.price-note{font-style:italic;color:var(--gold2);font-size:14.5px}
+.gal-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(min-width:880px){.gal-grid{grid-template-columns:repeat(4,1fr)}}
+.gal-grid figure{border-radius:14px;overflow:hidden;position:relative;border:2px solid rgba(201,162,39,.5)}
+.gal-grid img{height:210px;width:100%;object-fit:cover;transition:transform .4s ease}
+.gal-grid figure:hover img{transform:scale(1.06)}
+.gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(28,11,48,.9));color:var(--ivory);font-size:14px;padding:22px 12px 10px}
+.why-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:700px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-card{background:var(--white);border-radius:16px;padding:26px;border-top:4px solid var(--gold);box-shadow:0 10px 26px rgba(42,16,66,.1)}
+.why-card .icon{font-size:30px;margin-bottom:10px}
+.why-card h3{font-size:20px;margin-bottom:8px}
+.why-card p{color:var(--muted);font-size:15.5px}
+.steps{background:var(--ivory2)}
+.step-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:880px){.step-grid{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--white);border-radius:16px;padding:28px;text-align:center;box-shadow:0 10px 26px rgba(42,16,66,.1)}
+.step .num{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:var(--purple);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:bold;border:2px solid var(--gold)}
+.step h3{font-size:20px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:15.5px}
+.faq-list{max-width:820px;margin:0 auto}
+details{background:var(--white);border:1px solid #ddd2ba;border-radius:12px;margin-bottom:12px;padding:4px 20px}
+details summary{cursor:pointer;font-weight:bold;color:var(--purple);padding:14px 0;font-size:17px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";float:right;color:var(--gold);font-size:22px;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{padding:0 0 16px;color:var(--muted);font-size:15.5px}
+.contact{background:linear-gradient(160deg,var(--purple) 0%,#1c0b30 100%);color:var(--ivory);text-align:center}
+.contact h2{color:var(--ivory);font-size:34px;margin-bottom:12px}
+.contact p{color:#e9e0f5;max-width:40em;margin:0 auto 24px}
+.contact-cards{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.c-card{background:rgba(255,255,255,.07);border:1px solid rgba(201,162,39,.5);border-radius:14px;padding:20px 26px;min-width:230px}
+.c-card small{display:block;color:var(--gold2);text-transform:uppercase;letter-spacing:2px;font-size:12px;margin-bottom:6px}
+.c-card strong{font-size:19px;color:var(--ivory)}
+footer{background:#160826;color:#cbbfe4;padding:44px 0 30px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:880px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{color:var(--gold2);margin-bottom:10px;font-size:17px}
+footer a{color:#e9e0f5;text-decoration:none}
+footer a:hover{color:var(--gold2)}
+footer ul{list-style:none}
+footer li{padding:4px 0}
+.foot-bottom{border-top:1px solid rgba(201,162,39,.3);margin-top:30px;padding-top:18px;text-align:center;font-size:13.5px;color:#9d8fc0}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .25s ease}
+.wa-float:hover{transform:scale(1.08)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">Crown Barber Shop · Harrogate, North Yorkshire · Rated 4.6 stars from 83 Google reviews</div>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="crown">♛</span>
+      <span class="logo-text">Crown Barber Shop<small>Harrogate</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-gold" href="https://wa.me/447718300585" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" style="padding-top:56px">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="rating-line rise">
+        <span class="stars">★★★★★</span>
+        <span><strong>4.6 stars</strong> · 83 Google reviews · Harrogate, North Yorkshire</span>
+      </div>
+      <h1 class="rise2">A Cut Above the Rest — <span class="gold">Fit for a King</span></h1>
+      <p class="lead rise2">Welcome to Crown Barber Shop in Harrogate. Sharp haircuts, clean skin fades, tidy beard work and traditional hot towel shaves — proper barbering, done with care, in the heart of North Yorkshire.</p>
+      <p class="rise3" style="color:#e9e0f5;margin-bottom:20px">No fuss and no long waits on the phone. Just message us on WhatsApp, tell us what you need, and we will get you booked in.</p>
+      <div class="hero-ctas rise3">
+        <a class="btn btn-gold" href="https://wa.me/447718300585" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+447718300585">Call 07718 300585</a>
+      </div>
+    </div>
+    <div class="hero-photo rise2">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1000&q=80" alt="Barber giving a traditional haircut at Crown Barber Shop Harrogate">
+      <div class="hero-badge"><strong>4.6 ★</strong><small>Rated by 83 customers on Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1000&q=80" alt="Inside a classic barber shop">
+    </div>
+    <div>
+      <p class="kicker" style="text-align:left">About Us</p>
+      <h2>Traditional Barbering, the Crown Way</h2>
+      <p>Crown Barber Shop is a local barber shop in Harrogate, North Yorkshire, built on a simple idea: every customer who sits in the chair should walk out feeling like royalty. That means an unhurried service, honest advice about what suits you, and a finish that stays sharp long after you leave.</p>
+      <p>From classic scissor cuts to modern skin fades, from beard shaping to the full hot towel shave ritual, the chair is a place to relax while we take care of the details. Regulars and first-timers alike are welcome — plenty of our customers first found us through our Linktree and Facebook page, and now book straight through WhatsApp.</p>
+      <p>We are rated <strong>4.6 stars from 83 reviews on Google</strong>, and we work hard to earn every single one of them.</p>
+      <p>Whether you have been coming to us for years or you have just found us today through this page, you will get the same Crown welcome: a proper consultation, skilled hands, honest advice and a finish we are proud to put our name to. That is the promise behind the crown — and it is why Harrogate keeps choosing us.</p>
+      <ul class="checks">
+        <li>Classic cuts and modern styles, all ages welcome</li>
+        <li>Precision skin fades, blended by hand</li>
+        <li>Beard trims, shaping and hot towel shaves</li>
+        <li>Easy booking — WhatsApp, phone or Facebook</li>
+        <li>Friendly, relaxed shop in Harrogate</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="wrap">
+    <p class="kicker">What We Do</p>
+    <h2 class="title">Our Services</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">Every service starts with a quick chat about what you want and what will suit your hair, your face and your routine. Call or message for prices — we will give you an exact price before you sit down.</p>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=80" alt="Clipper haircut in progress">
+        <div class="svc-body">
+          <h3>Gents Haircut</h3>
+          <p>The full works: consultation, precision cut with clippers and scissors, styled finish. Whether you like it classic, textured or short back and sides, we cut it to suit you and show you how to keep it looking right at home.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80" alt="Skin fade being blended with clippers">
+        <div class="svc-body">
+          <h3>Skin Fades</h3>
+          <p>Low, mid or high — our skin fades are blended seamlessly from the skin up, with crisp edges and a sharp hairline. Bring a photo of the look you are after, or let us recommend the fade that fits your head shape and hair type.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=800&q=80" alt="Beard trim and shaping">
+        <div class="svc-body">
+          <h3>Beard Trim &amp; Shape</h3>
+          <p>A good beard is shaped, not just shortened. We tidy the length, sharpen the cheek and neck lines, and finish with care so your beard looks deliberate from every angle — and grows out neatly between visits.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=800&q=80" alt="Traditional cut-throat razor shave">
+        <div class="svc-body">
+          <h3>Hot Towel Shave</h3>
+          <p>The traditional ritual: hot towels to soften the beard, a rich lather, a careful cut-throat razor shave and a cool, soothing finish. The closest shave you can get — and the most relaxing half hour in Harrogate.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80" alt="Young customer having a haircut">
+        <div class="svc-body">
+          <h3>Kids Cuts</h3>
+          <p>Patient, friendly cuts for younger customers. We keep it calm and unhurried so children feel at ease in the chair, and parents can relax too. School-ready styles, first haircuts and everything in between.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=800&q=80" alt="Barber finishing a full grooming service">
+        <div class="svc-body">
+          <h3>The Full Crown Service</h3>
+          <p>Haircut, beard work and a hot towel finish in one sitting — the complete freshen-up before a wedding, a night out, a job interview or whenever you simply want to feel your best. Ask us about it when you book.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a class="btn btn-gold" href="https://wa.me/447718300585" target="_blank" rel="noopener">Ask About a Service on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="kicker">Inside the Shop</p>
+    <h2 class="title">The Crown Gallery</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">A look at the craft — sharp fades, clean lines and the traditional tools of the trade.</p>
+    <div class="gal-grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?w=700&q=80" alt="Barber shop chair and mirror">
+        <figcaption>The chair awaits</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?w=700&q=80" alt="Barber at work with clippers">
+        <figcaption>Precision clipper work</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=700&q=80" alt="Barber tools laid out">
+        <figcaption>Tools of the trade</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?w=700&q=80" alt="Detail finishing on a haircut">
+        <figcaption>The finishing details</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?w=700&q=80" alt="Classic barber shop scene">
+        <figcaption>Classic barbering</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?w=700&q=80" alt="Styled finished haircut">
+        <figcaption>The finished look</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=700&q=80" alt="Barber styling hair">
+        <figcaption>Styled to suit you</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=700&q=80" alt="Hair being washed and prepared">
+        <figcaption>Fresh from the basin</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="why" style="padding-top:20px">
+  <div class="wrap">
+    <p class="kicker">Why Crown</p>
+    <h2 class="title">Why Choose Crown Barber Shop?</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">There are plenty of places to get a haircut in Harrogate. Here is why our customers keep coming back to the Crown.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">★</div>
+        <h3>Rated 4.6 on Google</h3>
+        <p>Our 4.6-star rating across 83 Google reviews comes from real customers across Harrogate and North Yorkshire. We read every review and use the feedback to keep raising the standard.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">✂</div>
+        <h3>Proper, Unhurried Cuts</h3>
+        <p>We do not rush you through the chair. Every cut includes a proper consultation and a careful finish, so you leave with a style that works for your hair — not just the quickest option.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">♛</div>
+        <h3>Traditional Skills</h3>
+        <p>Cut-throat razor work, hot towels and hand-blended fades — the traditional skills that separate a barber from a clipper operator, practised every day in the shop.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💬</div>
+        <h3>Booking Made Easy</h3>
+        <p>Message us on WhatsApp any time and we will confirm your appointment as soon as we can. Prefer to talk? Call us. Found us on Facebook or Linktree? Every route leads to the same chair.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">👑</div>
+        <h3>All Ages Welcome</h3>
+        <p>From a child's first haircut to classic gents styling, everyone gets the same care and attention. Families across Harrogate trust us with the whole household's hair.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">✦</div>
+        <h3>Honest Advice</h3>
+        <p>If a style will not work with your hair type, we will tell you — and show you what will. No hard sell, no surprises: you will always know the price before we start. Call or message for prices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <p class="kicker">How It Works</p>
+    <h2 class="title">Book in Three Simple Steps</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">No website forms and no accounts to create. Booking with Crown Barber Shop takes less than a minute.</p>
+    <div class="step-grid">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Send a WhatsApp Message</h3>
+        <p>Tap any WhatsApp button on this page, or message <strong>07718 300585</strong>. Tell us the service you want and roughly when suits you.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>We Confirm Your Slot</h3>
+        <p>We will reply to confirm your appointment time and the exact price, so there are no surprises when you arrive.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Sit Back in the Chair</h3>
+        <p>Arrive at the shop in Harrogate, take a seat, and let us take care of the rest. Walk out feeling like royalty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);padding-top:56px">
+  <div class="wrap">
+    <p class="kicker">In Detail</p>
+    <h2 class="title">Services, Explained Properly</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">Not sure which service you need? Here is exactly what happens with each of our most popular services, so you know what to expect before you sit down.</p>
+
+    <div style="max-width:900px;margin:0 auto">
+      <h3 style="font-size:24px;margin:26px 0 8px">The Skin Fade, Decoded</h3>
+      <p style="color:#3c3350;margin-bottom:12px">A skin fade starts at, or very close to, the skin at the sides and back, then gradually blends upward into the longer hair on top. The magic is in the blend — there should be no visible lines or steps, just a smooth gradient. A <strong>low fade</strong> keeps more weight around the edges and suits classic, professional looks. A <strong>mid fade</strong> is the versatile middle ground most customers choose. A <strong>high fade</strong> takes the blend up further for a sharper, more modern contrast. When you book, tell us which you prefer — or bring a photo and we will match the fade to your hair growth pattern and head shape, because the right fade on the wrong head shape simply does not work, and we will always tell you honestly.</p>
+      <p style="color:#3c3350;margin-bottom:12px">Fades grow out faster than classic cuts because the gradient is so precise. Most of our customers return every two to three weeks for a tidy-up, and many book their next appointment before they leave the chair so the fade never loses its edge.</p>
+
+      <h3 style="font-size:24px;margin:26px 0 8px">The Hot Towel Shave Ritual</h3>
+      <p style="color:#3c3350;margin-bottom:12px">There is a reason the hot towel shave has survived every grooming trend of the last hundred years. The heat and moisture from the towels soften the beard hair and open the pores, which means the razor glides closer with less irritation. We then work up a proper lather, shave with the grain and then against it for the closest possible finish, and complete the ritual with a cold towel and soothing products to close the pores and calm the skin. You will leave with skin that feels smoother than any home shave can achieve — and most customers tell us the relaxing ritual itself is half the reason they come.</p>
+
+      <h3 style="font-size:24px;margin:26px 0 8px">Beard Shaping, Not Just Trimming</h3>
+      <p style="color:#3c3350;margin-bottom:12px">The difference between a beard that looks grown and a beard that looks <em>groomed</em> is shaping. We consider your face shape, your jawline and how your beard actually grows — including the patches and swirls everyone has — then define clean cheek lines, a tidy neckline and balanced length. A shaped beard frames the face, looks intentional from every angle and, done properly, grows out far more neatly between appointments. If you are growing your beard out, regular shaping visits are the secret to getting through the awkward stages without giving up.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <p class="kicker">Look After It</p>
+    <h2 class="title">Crown Grooming Guide</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">A great cut is half the job — the other half is what you do at home. These are the tips we give customers in the chair.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">✂</div>
+        <h3>Keep the Fade Fresh</h3>
+        <p>Sleeping on a fade flattens one side first — a quick rinse and a damp-hand restyle in the morning revives the shape. Avoid heavy, greasy products on a fresh fade; a small amount of matte product keeps the texture without the shine.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🧔</div>
+        <h3>Beard Care at Home</h3>
+        <p>Wash your beard with warm water daily and a proper beard wash a few times a week. Comb it in the direction of growth while damp, and keep the neckline tidy between visits — but leave the cheek lines to us if you are unsure.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💈</div>
+        <h3>Choose a Style That Fits Your Life</h3>
+        <p>Be honest about your morning routine. If you have five minutes, choose a low-maintenance cut that works with your natural growth. If you enjoy styling, we can give you more to work with on top. The best haircut is the one you can actually recreate.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">📸</div>
+        <h3>Bring a Photo</h3>
+        <p>A picture removes all guesswork. Send it on WhatsApp when you book, or show us in the shop. We will tell you honestly how the style will translate to your hair type — and adjust it so it genuinely suits you.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🗓</div>
+        <h3>Book Before the Big Day</h3>
+        <p>For weddings, photos and big events, get your cut three to five days beforehand — fresh cuts settle in and look their most natural just after the first wash or two. Message us early for weekend slots.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">👦</div>
+        <h3>First Haircuts for Kids</h3>
+        <p>Bring little ones when the shop is calm and they are rested and fed. A first visit can even just be a sit in the chair and a tiny tidy — building the habit early makes every future cut easier.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <p class="kicker">Perfect For</p>
+    <h2 class="title">Look Sharp for Every Occasion</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">Whatever is coming up in your calendar, a fresh cut from Crown Barber Shop makes sure you arrive looking the part.</p>
+    <div class="step-grid">
+      <div class="step">
+        <div class="num">✦</div>
+        <h3>Weddings &amp; Events</h3>
+        <p>Grooms, groomsmen and guests — book the Full Crown Service a few days before the big day and walk into every photo with confidence.</p>
+      </div>
+      <div class="step">
+        <div class="num">✦</div>
+        <h3>Interviews &amp; New Jobs</h3>
+        <p>First impressions matter. A clean, classic cut and a tidy beard line say you mean business before you have said a word.</p>
+      </div>
+      <div class="step">
+        <div class="num">✦</div>
+        <h3>Holidays &amp; Nights Out</h3>
+        <p>Heading away or heading out in Harrogate? A fresh fade before you go keeps you looking sharp in every picture.</p>
+      </div>
+    </div>
+    <div style="max-width:820px;margin:36px auto 0;text-align:center">
+      <h3 style="font-size:24px;margin-bottom:10px">Serving Harrogate &amp; North Yorkshire</h3>
+      <p style="color:#3c3350">Our customers come to us from across Harrogate and the wider North Yorkshire area — from the town centre and surrounding neighbourhoods to visitors passing through this famous spa town. Wherever you are travelling from, message us on WhatsApp before you set off and we will confirm your appointment and help with directions.</p>
+      <p style="color:#3c3350;margin-top:12px">Found us through our Linktree or Facebook page? You are in the right place — this is Crown Barber Shop, and every button on this page reaches the same friendly team on <strong>07718 300585</strong>.</p>
+      <div style="margin-top:22px">
+        <a class="btn btn-purple" href="https://wa.me/447718300585" target="_blank" rel="noopener">Message Us on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="kicker">Good to Know</p>
+    <h2 class="title">Frequently Asked Questions</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">Anything else you need to know? Message us on WhatsApp and we will be happy to help.</p>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp — message us on 07718 300585 with the service you would like and when suits you, and we will confirm your slot. You can also call the same number, or reach us through our Facebook page and Linktree.</p>
+      </details>
+      <details>
+        <summary>How much does a haircut cost?</summary>
+        <p>Prices depend on the service, so please call or message for prices — we will always confirm the exact cost before your appointment, and there are never any hidden extras.</p>
+      </details>
+      <details>
+        <summary>Do you take walk-ins?</summary>
+        <p>Availability changes day to day, so the safest way to guarantee your chair is to message us on WhatsApp first. If we have a free slot when you get in touch, we will fit you in as soon as we can.</p>
+      </details>
+      <details>
+        <summary>What are your opening hours?</summary>
+        <p>Hours can vary, so please message or call us on 07718 300585 to check the latest times and same-day availability before travelling.</p>
+      </details>
+      <details>
+        <summary>Where are you located?</summary>
+        <p>We are a barber shop in Harrogate, North Yorkshire. Message us on WhatsApp and we will happily confirm directions and the best place to park nearby.</p>
+      </details>
+      <details>
+        <summary>Do you cut children's hair?</summary>
+        <p>Yes — kids are very welcome. We keep children's cuts calm and patient, whether it is a first haircut or a tidy-up before school photos.</p>
+      </details>
+      <details>
+        <summary>Can I show you a photo of the style I want?</summary>
+        <p>Absolutely — photos help a lot. Send one over on WhatsApp when you book, and we will talk honestly about how the style will work with your hair type and how to maintain it.</p>
+      </details>
+      <details>
+        <summary>What is a hot towel shave?</summary>
+        <p>It is the traditional barber's shave: hot towels open the pores and soften the beard, then a rich lather and a cut-throat razor give an exceptionally close, smooth finish, followed by cooling products to soothe the skin.</p>
+      </details>
+      <details>
+        <summary>How often should I get a skin fade redone?</summary>
+        <p>Most customers return every two to three weeks to keep a fade looking crisp. We can advise on the right interval for your style when you are in the chair.</p>
+      </details>
+      <details>
+        <summary>Do you offer gift vouchers?</summary>
+        <p>Message us on WhatsApp and ask — if you would like to treat someone to a haircut, a beard service or the full hot towel shave experience, we will do our best to arrange it for you.</p>
+      </details>
+      <details>
+        <summary>What if I need to change or cancel my appointment?</summary>
+        <p>Life happens — just send us a WhatsApp message on 07718 300585 as early as you can and we will happily move your booking to another time that suits you. Letting us know frees the chair up for someone else.</p>
+      </details>
+      <details>
+        <summary>How do I leave a review?</summary>
+        <p>If you enjoyed your visit, a Google review means the world to a local shop like ours. Search for Crown Barber Shop in Harrogate on Google and tap "Write a review" — thank you.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <p class="kicker">Your Visit</p>
+    <h2 class="title">What to Expect at Crown Barber Shop</h2>
+    <div class="gold-rule"></div>
+    <p class="sub">Never been to us before? Here is how a visit to Crown Barber Shop in Harrogate works, from the moment you walk in.</p>
+    <div style="max-width:900px;margin:0 auto">
+      <h3 style="font-size:24px;margin:22px 0 8px">1. A Warm Welcome and a Proper Chat</h3>
+      <p style="color:#3c3350;margin-bottom:12px">Every appointment starts with a conversation, not clippers. We will ask what you have in mind, look at how your hair grows, and — if you have brought a photo — talk through how to adapt the style so it genuinely suits you. If you are not sure what you want, that is fine too: tell us how much time you spend on your hair each morning and we will recommend something that fits your life, not just the latest trend.</p>
+      <h3 style="font-size:24px;margin:22px 0 8px">2. The Cut Itself</h3>
+      <p style="color:#3c3350;margin-bottom:12px">We work methodically: shape first, then detail. Fades are blended and checked from every angle, edges are cleaned up with care, and we check the balance in the mirror with you before calling it done. For beard work and hot towel shaves, we slow things right down — those services are as much about the experience as the result.</p>
+      <h3 style="font-size:24px;margin:22px 0 8px">3. The Finish and Honest Aftercare Advice</h3>
+      <p style="color:#3c3350;margin-bottom:12px">Before you leave, we style your hair so you can see the finished result properly, and we will show you exactly how to recreate it at home — which product, how much, and how to apply it. We will also tell you honestly when to come back: most fades need a tidy every two to three weeks, while classic scissor cuts can run a little longer.</p>
+      <h3 style="font-size:24px;margin:22px 0 8px">4. Book the Next One Before You Go</h3>
+      <p style="color:#3c3350;margin-bottom:12px">Popular times fill up quickly, especially towards the weekend. Many regulars book their next chair before leaving, or drop us a WhatsApp message a few days ahead. Either way, you will always get a confirmed time and a confirmed price — no surprises, ever.</p>
+      <div style="background:var(--ivory2);border:1px solid var(--gold);border-radius:14px;padding:24px 26px;margin-top:26px">
+        <h3 style="font-size:22px;margin-bottom:8px">Enjoyed Your Visit? Tell Google.</h3>
+        <p style="color:#3c3350">Our 4.6-star rating from 83 Google reviews is the reason many new customers find Crown Barber Shop — and every new review helps a small Harrogate business like ours more than any advert could. If we earned it, search "Crown Barber Shop Harrogate" on Google and leave us a few words. Thank you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="contact">
+  <div class="wrap">
+    <p class="kicker">Book Your Chair</p>
+    <h2>Ready to Feel Like Royalty?</h2>
+    <p>Send us a WhatsApp message now and we will confirm your appointment and price. Whether it is a sharp new fade, a beard tidy or the full hot towel shave, the Crown chair is waiting for you.</p>
+    <div class="contact-cards">
+      <div class="c-card">
+        <small>WhatsApp &amp; Phone</small>
+        <strong>07718 300585</strong>
+      </div>
+      <div class="c-card">
+        <small>Find Us</small>
+        <strong>Harrogate, North Yorkshire</strong>
+      </div>
+      <div class="c-card">
+        <small>Google Rating</small>
+        <strong>4.6 ★ · 83 reviews</strong>
+      </div>
+    </div>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-gold" href="https://wa.me/447718300585" target="_blank" rel="noopener">Book on WhatsApp</a>
+      <a class="btn btn-outline" href="tel:+447718300585">Call 07718 300585</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>♛ Crown Barber Shop</h4>
+        <p>A local barber shop in Harrogate, North Yorkshire — haircuts, skin fades, beard trims and traditional hot towel shaves. Rated 4.6 stars from 83 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Gents Haircut</a></li>
+          <li><a href="#services">Skin Fades</a></li>
+          <li><a href="#services">Beard Trim &amp; Shape</a></li>
+          <li><a href="#services">Hot Towel Shave</a></li>
+          <li><a href="#services">Kids Cuts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="https://wa.me/447718300585" target="_blank" rel="noopener">WhatsApp: 07718 300585</a></li>
+          <li><a href="tel:+447718300585">Call: 07718 300585</a></li>
+          <li>Harrogate, North Yorkshire</li>
+          <li><a href="#faq">FAQs</a> · <a href="#book">Book a chair</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © Crown Barber Shop, Harrogate. Call or message for prices and opening hours.
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447718300585" target="_blank" rel="noopener" aria-label="Chat with Crown Barber Shop on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
