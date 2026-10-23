@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BARBERZONE — Grantham | Skin Fades, Haircuts, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="BarberZone, Grantham — skin fades, modern and classic haircuts, beard trims and hot towel shaves. Rated 4.9 from 69 reviews on Google. Book on WhatsApp 07572 169193.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--ink:#101418;--slate:#171d24;--panel:#1f2731;--cyan:#22b8f0;--cyan2:#0e8fc7;--ice:#e8f6fc;--paper:#f4f7f9;--mut:#5f7182;--line:#dde7ee;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Verdana,Geneva,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--cyan2);color:#eaf7fd;text-align:center;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;padding:9px 12px}
+.mainnav{position:sticky;top:0;z-index:60;background:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 20px;box-shadow:0 2px 12px rgba(0,0,0,.35);border-bottom:3px solid var(--cyan)}
+.mainnav .brand{color:#fff;font-size:1.05rem;font-weight:800;letter-spacing:.14em;white-space:nowrap;text-transform:uppercase}
+.mainnav .brand span{color:var(--cyan)}
+.mainnav .links{display:flex;flex-wrap:wrap;justify-content:flex-end}
+.mainnav .links a{color:#c4d6e2;text-decoration:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-left:16px}
+.mainnav .links a:hover{color:var(--cyan)}
+header.hero{background:radial-gradient(ellipse at top,#24313f 0%,#141a21 55%,#0a0e12 100%);color:#fff;text-align:center;padding:52px 20px 0;overflow:hidden}
+.pole{font-size:1.9rem}
+header.hero h1{font-size:2.9rem;font-weight:800;letter-spacing:.08em;margin:6px 0 2px;text-transform:uppercase}
+header.hero h1 span{color:var(--cyan)}
+header.hero .town{letter-spacing:.32em;text-transform:uppercase;font-size:.8rem;color:#9fc6da}
+.rule{width:130px;height:3px;background:linear-gradient(90deg,var(--cyan2),var(--cyan),var(--cyan2));margin:18px auto;border-radius:2px}
+header.hero p.tag{max-width:580px;margin:0 auto;color:#ddeaf2;font-size:1.03rem}
+.stars{color:#f2c14e;font-size:1.2rem;margin-top:14px;letter-spacing:.2em}
+.stars small{display:block;color:#b8cbda;font-size:.82rem;letter-spacing:.05em;margin-top:2px}
+.heroimg{max-width:860px;margin:30px auto 0;border:3px solid var(--cyan);border-bottom:none;height:340px;animation:rise 1s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.cta{display:inline-block;background:var(--cyan2);color:#fff;text-decoration:none;padding:14px 30px;border-radius:4px;font-size:1rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:22px 0 34px;transition:background .25s,transform .25s;border:1px solid var(--cyan)}
+.cta:hover{background:var(--cyan);transform:translateY(-2px)}
+.cta.wa{background:var(--wa);color:#06351a;border-color:#0d7a3f;text-transform:none;letter-spacing:.02em}
+.cta.wa:hover{background:#3be07a}
+section{padding:52px 0 8px}
+h2{text-align:center;font-weight:800;font-size:1.9rem;color:var(--ink);text-transform:uppercase;letter-spacing:.05em}
+h2 .accent{color:var(--cyan2)}
+h2+.sub{text-align:center;color:var(--mut);margin:6px auto 30px;max-width:560px;font-size:.95rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--cyan);padding:0 0 20px;box-shadow:0 6px 18px rgba(16,20,24,.07);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(16,20,24,.15)}
+.card .ph{height:170px;overflow:hidden}
+.card .ph img{transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card h3{color:var(--ink);font-size:1.18rem;margin:16px 20px 8px}
+.card p{margin:0 20px;font-size:.94rem;color:var(--mut)}
+.card .price-note{margin:12px 20px 0;padding-top:10px;border-top:1px dotted var(--line);color:var(--cyan2);font-size:.92rem;font-weight:600}
+.about{background:var(--slate);color:#e3edf4;margin-top:52px;padding:46px 0}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.about h2{color:#fff;text-align:left}
+.about p{color:#bccfdb;font-size:.98rem;margin-top:10px}
+.about .big{font-size:2.3rem;color:var(--cyan);line-height:1.15;font-weight:800}
+.hours{background:var(--paper);border:2px solid var(--cyan);padding:22px 26px;color:var(--ink)}
+.hours h3{color:var(--ink);margin-bottom:10px;font-size:1.1rem}
+.hours p{color:var(--mut);font-size:.94rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.gallery .g{height:230px;overflow:hidden;border:1px solid var(--line)}
+.gallery .g img{transition:transform .6s}
+.gallery .g:hover img{transform:scale(1.08)}
+.note{max-width:760px;margin:26px auto 0;background:var(--ice);border:1px solid var(--line);border-left:4px solid var(--cyan2);padding:16px 20px;font-size:.94rem;color:var(--ink)}
+.reviews{background:linear-gradient(135deg,#0e8fc7,#0a5c85);color:#fff;text-align:center;padding:46px 20px;margin-top:52px}
+.reviews .big{font-size:3rem;font-weight:800;color:#dff4fd}
+.reviews .stars{margin-top:2px}
+.reviews p{max-width:560px;margin:10px auto 0;color:#e2f2fa;font-size:.98rem}
+.contact{text-align:center;padding:52px 20px 64px}
+.contact p{color:var(--mut);max-width:480px;margin:8px auto 0;font-size:.96rem}
+.contact .cta{font-size:1.1rem;padding:16px 38px}
+footer{background:var(--ink);color:#8fa4b5;text-align:center;padding:22px 16px;font-size:.82rem}
+footer b{color:var(--cyan);font-weight:600}
+.wafloat{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;font-size:1.6rem;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:50;animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.card ul{margin:10px 20px 0;padding-left:18px;color:var(--mut);font-size:.92rem}
+.card ul li{margin:3px 0}
+.why .card{padding-top:6px;border-top-color:var(--cyan2)}
+.stepnum{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--cyan2);color:#fff;font-size:1.25rem;font-weight:700;margin:16px 0 2px;border:2px solid var(--cyan)}
+.faq{max-width:820px;margin:0 auto}
+.faq .qa{background:#fff;border:1px solid var(--line);border-left:4px solid var(--cyan);padding:16px 20px;margin-bottom:12px;text-align:left}
+.faq .qa h3{font-size:1.05rem;color:var(--ink);margin-bottom:5px}
+.faq .qa p{color:var(--mut);font-size:.94rem}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:920px;margin:26px auto 0;text-align:left}
+.cbox{background:#fff;border:1px solid var(--line);padding:22px 26px}
+.cbox h3{margin-bottom:10px;font-size:1.1rem;color:var(--ink)}
+.cbox p{color:var(--mut);font-size:.94rem;margin:0 0 8px;max-width:none}
+.cbox a{color:var(--cyan2)}
+.ctaband{background:var(--ink);color:#fff;text-align:center;padding:44px 20px 10px;margin-top:52px;border-top:3px solid var(--cyan)}
+.ctaband h2{color:#fff}
+.ctaband p{color:#bccfdb;max-width:520px;margin:8px auto 0}
+@media(max-width:700px){.cgrid{grid-template-columns:1fr}.mainnav .links a{margin-left:10px;font-size:.72rem}}
+@media(max-width:700px){header.hero h1{font-size:2rem}.heroimg{height:240px}.about .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar">BarberZone · Grantham · Sharp Cuts, Zero Fuss</div>
+<nav class="mainnav"><div class="brand">BARBER<span>ZONE</span></div><div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></nav>
+<header class="hero">
+  <div class="pole">💈</div>
+  <h1>BARBER<span>ZONE</span></h1>
+  <div class="town">Barber Shop · Grantham</div>
+  <div class="rule"></div>
+  <p class="tag">Grantham's sharp end — precision skin fades, clean classic cuts, beard work and hot towel shaves. Book your chair in seconds on WhatsApp.</p>
+  <div class="stars">★★★★★<small>Rated 4.9 from 69 reviews on Google</small></div>
+  <div class="heroimg"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=70" alt="Barbering at BarberZone, Grantham"></div>
+  <a class="cta wa" href="https://wa.me/447572169193?text=Hi%20BarberZone%2C%20I%27d%20like%20to%20book%20an%20appointment">💬 Book on WhatsApp — 07572 169193</a>
+</header>
+
+<section class="wrap" id="services">
+  <h2 class="reveal">Our <span class="accent">Services</span></h2>
+  <p class="sub reveal">Precision cuts and proper finishes. Message us on WhatsApp to book, or walk in and take a seat.</p>
+  <div class="cards">
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=70" alt="Skin fade in progress at BarberZone Grantham"></div>
+      <h3>Skin Fades</h3>
+      <p>Our speciality. Low, mid or high, every fade is blended seamlessly with no lines and no shortcuts — clipper work checked from every angle under the light before you leave the chair. Bring a photo of the fade you want, or trust us to find the one that suits your head shape.</p>
+      <ul>
+        <li>Low, mid &amp; high skin fades</li>
+        <li>Seamless blends, checked from every angle</li>
+        <li>Razor-finished edges for a crisp outline</li>
+      </ul>
+      <div class="price-note">Message for prices — 07572 169193</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=70" alt="Haircut at BarberZone Grantham"></div>
+      <h3>Haircuts — Classic &amp; Modern</h3>
+      <p>From a tidy short back and sides to textured crops and longer scissor cuts, every haircut starts with a quick consultation about your style, your hair type and how it grows. We cut, finish and style it — so you can see exactly how to wear it day to day.</p>
+      <ul>
+        <li>Classic cuts, crops &amp; modern styles</li>
+        <li>Shaped around your hair type &amp; growth</li>
+        <li>Washed, dried &amp; styled finish</li>
+      </ul>
+      <div class="price-note">Message for prices — 07572 169193</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=70" alt="Beard trim and shaping at BarberZone"></div>
+      <h3>Beard Trim &amp; Shape</h3>
+      <p>A sharp beard is shaped, not just shortened. We tidy the length, define the cheek and neck lines with the razor, and finish with beard oil — so your beard looks deliberate and clean from every angle, and grows out neatly between visits.</p>
+      <ul>
+        <li>Length tidy &amp; shape correction</li>
+        <li>Razor-sharp cheek &amp; neck lines</li>
+        <li>Beard oil finish &amp; aftercare advice</li>
+      </ul>
+      <div class="price-note">Message for prices — 07572 169193</div>
+    </div>
+    <div class="card reveal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=70" alt="Hot towel shave at BarberZone Grantham"></div>
+      <h3>Hot Towel Shave</h3>
+      <p>The traditional wet shave, done properly: steaming hot towels soften the beard, rich lather is worked in with a brush, and a straight razor delivers the closest shave there is. We finish with a cold towel and soothing balm — smooth skin, no burn, no rash.</p>
+      <ul>
+        <li>Hot towel preparation, the traditional way</li>
+        <li>Straight-razor close finish</li>
+        <li>Cold towel &amp; aftercare balm</li>
+      </ul>
+      <div class="price-note">Message for prices — 07572 169193</div>
+    </div>
+  </div>
+  <div class="note reveal"><b>Walk-ins welcome:</b> drop in when you're passing in Grantham — or message us on WhatsApp first on 07572 169193 to check how busy we are and book your chair.</div>
+</section>
+
+<section class="wrap">
+  <h2 class="reveal">Why <span class="accent">BarberZone</span></h2>
+  <p class="sub reveal">Precision work, honest service — here's what to expect in the chair.</p>
+  <div class="cards why">
+    <div class="card reveal">
+      <h3>4.9 ★ From 69 Google Reviews</h3>
+      <p>Our customers rate us 4.9 out of 5 across 69 Google reviews — for the fades, the finishes and the friendly service.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Fade Specialists</h3>
+      <p>Skin fades are what we do all day, every day — seamless blends with crisp, razor-finished edges.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Checked Before You Leave</h3>
+      <p>Every cut gets a final mirror check from all angles. If a blend isn't perfect, it doesn't leave the chair.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Book in Seconds</h3>
+      <p>One WhatsApp message to 07572 169193 books your chair — no apps, no accounts, no fuss.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="reveal">How <span class="accent">Booking Works</span></h2>
+  <p class="sub reveal">Three simple steps between you and a fresh cut.</p>
+  <div class="cards">
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">1</span>
+      <h3>Pick Your Service</h3>
+      <p>Choose from the services above — fade, cut, beard work, hot towel shave, or a combination.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">2</span>
+      <h3>Message Us on WhatsApp</h3>
+      <p>Send a message to 07572 169193 with what you'd like and when suits you, and we'll confirm your chair.</p>
+    </div>
+    <div class="card reveal" style="text-align:center">
+      <span class="stepnum">3</span>
+      <h3>Take a Seat</h3>
+      <p>Come along at your time, take a seat, and walk out sharp.</p>
+    </div>
+  </div>
+</section>
+
+<div class="about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>About BarberZone</h2>
+      <p class="big">4.9 ★ rated by our customers</p>
+      <p>BarberZone is Grantham's home for precision barbering — skin fades, modern and classic cuts, beard shaping and traditional hot towel shaves.</p>
+      <p>Whether it's your weekly fade or a full restyle, you'll get the same care, the same sharp finish, every single visit.</p>
+    </div>
+    <div class="hours reveal">
+      <h3>Opening Hours</h3>
+      <p>Message us on WhatsApp for this week's hours and the latest availability — we reply fast and we'll always do our best to fit you in.</p>
+      <p style="margin-top:12px">BarberZone<br>Grantham, Lincolnshire<br>WhatsApp 07572 169193</p>
+    </div>
+  </div>
+</div>
+
+<div class="reviews">
+  <div class="reveal">
+    <div class="big">4.9 ★</div>
+    <div class="stars">★★★★★</div>
+    <p>Rated 4.9 out of 5 from 69 reviews on Google. Thank you to every customer who has sat in our chairs and taken the time to review us — we work hard to earn every single star.</p>
+  </div>
+</div>
+
+<section class="wrap">
+  <h2 class="reveal">The <span class="accent">Perfect Fade</span></h2>
+  <p class="sub reveal">What goes into a BarberZone fade? Here's the process, step by step.</p>
+  <div class="cards">
+    <div class="card reveal">
+      <h3>1. The Consultation</h3>
+      <p>Every fade starts with a quick chat: how high, how tight, and how you wear your hair day to day. We look at your head shape and growth patterns first, so the fade is planned — not guessed.</p>
+    </div>
+    <div class="card reveal">
+      <h3>2. The Blend</h3>
+      <p>Guard by guard, the fade is built up and blended until there's no visible line anywhere — just a smooth gradient from skin to length. We check it under the light and in the mirror from every angle.</p>
+    </div>
+    <div class="card reveal">
+      <h3>3. The Finish</h3>
+      <p>Razor-sharp edges around the hairline, neck and ears, then styled so you can see the finished look. We'll show you how to keep it looking fresh at home between visits.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="gallery">
+  <h2 class="reveal">Inside the <span class="accent">Zone</span></h2>
+  <p class="sub reveal">The craft, the tools and the chair — a look at barbering at BarberZone.</p>
+  <div class="gallery">
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=70" alt="Barbering at BarberZone Grantham"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=70" alt="Barber tools at BarberZone"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=70" alt="Classic barbering in the shop"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?auto=format&fit=crop&w=800&q=70" alt="Close shave finish at BarberZone"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=800&q=70" alt="Tools of the trade at BarberZone"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?auto=format&fit=crop&w=800&q=70" alt="Precision clipper work at BarberZone"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=800&q=70" alt="In the barber's chair at BarberZone Grantham"></div>
+    <div class="g reveal"><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=800&q=70" alt="Barbershop atmosphere at BarberZone"></div>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <h2 class="reveal">Questions &amp; <span class="accent">Answers</span></h2>
+  <p class="sub reveal">Everything you might want to know before you visit.</p>
+  <div class="faq">
+    <div class="qa reveal">
+      <h3>Do I need to book, or can I walk in?</h3>
+      <p>Walk-ins are welcome. If you'd rather skip the wait, message us on WhatsApp on 07572 169193 and we'll book your chair for a time that suits you.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>How much do your services cost?</h3>
+      <p>Message us on WhatsApp on 07572 169193 for prices — tell us what you'd like (fade, cut, beard or shave) and we'll confirm the price before you come in. No surprises.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Can you do the fade in a photo I have?</h3>
+      <p>Yes — bring a photo of the style you want, or send it to us on WhatsApp before your visit, and we'll talk you through what will work best with your hair type and head shape.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>What is a hot towel shave?</h3>
+      <p>It's the traditional wet shave: hot towels soften your beard, rich lather is brushed on, and a straight razor gives the closest shave possible. We finish with a cold towel and balm — smooth skin, no burn.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>What are your opening hours?</h3>
+      <p>Message us on WhatsApp for this week's hours and availability — we reply quickly and will always try to fit you in.</p>
+    </div>
+    <div class="qa reveal">
+      <h3>Where are you?</h3>
+      <p>We're in Grantham, Lincolnshire. Message us on WhatsApp on 07572 169193 and we'll happily confirm directions when you book.</p>
+    </div>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <h2 class="reveal">Book Your Chair</h2>
+  <p class="reveal">Questions, prices or ready to book? Send us a WhatsApp message and we'll get you sorted — usually within minutes during opening hours.</p>
+  <div class="cgrid">
+    <div class="cbox reveal">
+      <h3>Visit Us</h3>
+      <p><b>BarberZone</b><br>Grantham, Lincolnshire</p>
+      <p>WhatsApp: <a href="https://wa.me/447572169193">07572 169193</a></p>
+      <p>Walk in for a seat, or message ahead to book your chair and skip the wait.</p>
+    </div>
+    <div class="cbox reveal">
+      <h3>Opening Hours</h3>
+      <p>Message us on WhatsApp for this week's hours and the latest availability.</p>
+      <p>Booking ahead is the best way to skip the wait at busy times — one message and your chair is saved.</p>
+    </div>
+  </div>
+  <a class="cta wa reveal" href="https://wa.me/447572169193?text=Hi%20BarberZone%2C%20I%27d%20like%20to%20book%20an%20appointment">💬 Chat on WhatsApp — 07572 169193</a>
+</div>
+
+<div class="ctaband">
+  <h2 class="reveal">Get In The Zone</h2>
+  <p class="reveal">Your chair is waiting at BarberZone, Grantham — clippers charged, towels hot.</p>
+  <a class="cta wa reveal" href="https://wa.me/447572169193?text=Hi%20BarberZone%2C%20I%27d%20like%20to%20book%20an%20appointment">💬 Book on WhatsApp — 07572 169193</a>
+</div>
+
+<footer>© BarberZone, Grantham · <b>Demo website made by Akram Web Studio</b></footer>
+<a class="wafloat" href="https://wa.me/447572169193?text=Hi%20BarberZone%2C%20I%27d%20like%20to%20book%20an%20appointment" aria-label="Chat on WhatsApp">💬</a>
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
