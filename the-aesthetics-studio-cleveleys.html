@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Aesthetics Studio | Aesthetics & Beauty Studio in Thornton-Cleveleys, Lancashire</title>
+<meta name="description" content="The Aesthetics Studio in Thornton-Cleveleys, Lancashire — rated 4.9 stars from 78 Google reviews. Anti-wrinkle treatments, dermal fillers, facials, skin treatments, lash & brow and consultations. Message on WhatsApp to book.">
+<style>
+:root{
+  --porcelain:#faf8f4;
+  --cream:#f3ede3;
+  --taupe:#b3a28d;
+  --taupe-dark:#8a7962;
+  --champagne:#c6a15b;
+  --champagne-soft:#e8d9bd;
+  --ink:#2e2a25;
+  --ink-soft:#5c554b;
+  --line:#e3dacb;
+  --white:#ffffff;
+  --radius:18px;
+  --shadow:0 18px 45px rgba(64,52,32,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Avenir Next","Segoe UI",Helvetica,Arial,sans-serif;
+  background:var(--porcelain);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:.01em}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1160px,92%);margin:0 auto}
+
+/* ---------- animations (JS-safe: everything ends fully visible) ---------- */
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.07)}}
+@keyframes cardBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes sheenSlide{from{background-position:0% 50%}to{background-position:100% 50%}}
+.rise{animation:riseIn .9s ease both}
+.rise-1{animation-delay:.08s}.rise-2{animation-delay:.16s}.rise-3{animation-delay:.24s}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- top strip ---------- */
+.top-strip{
+  background:linear-gradient(90deg,var(--taupe-dark),var(--champagne),var(--taupe-dark));
+  background-size:200% 100%;
+  animation:sheenSlide 14s ease infinite;
+  color:#fff;text-align:center;
+  font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.55rem 1rem;
+}
+.top-strip strong{font-weight:700}
+
+/* ---------- header / nav ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(250,248,244,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+.logo{display:flex;align-items:center;gap:.7rem}
+.logo-mark{
+  width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--champagne);
+  display:grid;place-items:center;
+  font-family:Georgia,serif;font-size:1.05rem;color:var(--taupe-dark);
+  background:radial-gradient(circle at 32% 30%,#fff,var(--cream));
+  flex:none;
+}
+.logo-text{line-height:1.15}
+.logo-text .name{font-family:Georgia,serif;font-size:1.12rem;letter-spacing:.04em}
+.logo-text .sub{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--taupe-dark)}
+.nav-links{display:none;gap:1.7rem;font-size:.92rem;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--taupe-dark)}
+.nav-cta{
+  background:var(--ink);color:#fff !important;
+  padding:.62rem 1.25rem;border-radius:999px;font-size:.9rem;
+  transition:background .25s ease, transform .25s ease;
+}
+.nav-cta:hover{background:var(--taupe-dark);transform:translateY(-1px)}
+@media(min-width:860px){.nav-links{display:flex;align-items:center}}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.85rem 1.7rem;border-radius:999px;font-size:.98rem;font-weight:600;
+  transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.btn-wa{background:#1faa55;color:#fff;box-shadow:0 12px 26px rgba(31,170,85,.28)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(31,170,85,.34)}
+.btn-ghost{border:1px solid var(--taupe);color:var(--ink);background:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:var(--cream);transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--taupe-dark);transform:translateY(-2px)}
+
+/* ---------- hero ---------- */
+.hero{padding:3.2rem 0 4.2rem;background:
+  radial-gradient(900px 480px at 88% -10%,rgba(198,161,91,.16),transparent 60%),
+  radial-gradient(700px 420px at -10% 110%,rgba(179,162,141,.14),transparent 60%),
+  var(--porcelain);}
+.hero-grid{display:grid;gap:2.6rem;align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.02fr .98fr}}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;color:var(--taupe-dark);
+  border:1px solid var(--line);border-radius:999px;padding:.42rem .95rem;background:#fff;
+}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--champagne)}
+.hero h1{font-size:clamp(2.35rem,5.4vw,3.9rem);line-height:1.12;margin:1.15rem 0 1.05rem;color:var(--ink)}
+.hero h1 em{font-style:italic;color:var(--taupe-dark)}
+.hero p.lead{font-size:1.1rem;color:var(--ink-soft);max-width:34rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.7rem}
+.hero-points{display:flex;flex-wrap:wrap;gap:.55rem 1.4rem;margin-top:1.5rem;font-size:.92rem;color:var(--ink-soft)}
+.hero-points span::before{content:"✦";color:var(--champagne);margin-right:.45rem}
+.hero-media{position:relative}
+.hero-frame{
+  border-radius:210px 210px var(--radius) var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);
+  border:6px solid #fff;
+}
+.hero-frame img{width:100%;height:520px;object-fit:cover;animation:slowZoom 16s ease-in-out infinite alternate}
+.rating-card{
+  position:absolute;left:-14px;bottom:26px;
+  background:#fff;border:1px solid var(--line);border-radius:16px;
+  box-shadow:var(--shadow);padding:.95rem 1.2rem;
+  animation:cardBob 5.5s ease-in-out infinite;
+}
+.rating-card .stars{color:var(--champagne);font-size:1.02rem;letter-spacing:.18em}
+.rating-card .score{font-family:Georgia,serif;font-size:1.45rem;line-height:1.1}
+.rating-card .note{font-size:.8rem;color:var(--ink-soft)}
+.hero-badge{
+  position:absolute;right:10px;top:22px;
+  background:rgba(46,42,37,.88);color:#f4ead3;
+  border-radius:999px;padding:.5rem 1rem;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+}
+@media(max-width:560px){.hero-frame img{height:400px}.rating-card{left:6px}}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--ink);color:#efe8da}
+.trust-row{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;padding:1.7rem 0;text-align:center}
+@media(min-width:860px){.trust-row{grid-template-columns:repeat(4,1fr)}}
+.trust .num{font-family:Georgia,serif;font-size:1.65rem;color:var(--champagne-soft)}
+.trust .lbl{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:#cfc4ae}
+
+/* ---------- sections ---------- */
+section{padding:4.4rem 0}
+.section-head{max-width:44rem;margin-bottom:2.6rem}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.kicker{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--taupe-dark);margin-bottom:.7rem}
+.section-head h2{font-size:clamp(1.85rem,3.6vw,2.6rem);line-height:1.2}
+.section-head p{color:var(--ink-soft);margin-top:.8rem}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;gap:2.6rem;align-items:center}
+@media(min-width:960px){.about-grid{grid-template-columns:1fr 1fr}}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.collage img{border-radius:var(--radius);object-fit:cover;width:100%;box-shadow:0 10px 28px rgba(64,52,32,.12)}
+.collage .tall{height:340px;grid-row:span 2}
+.collage .short{height:162px}
+.about-copy h2{font-size:clamp(1.85rem,3.6vw,2.5rem);line-height:1.2;margin-bottom:1rem}
+.about-copy p{color:var(--ink-soft);margin-bottom:1rem}
+.check-list{list-style:none;margin:1.3rem 0 1.8rem;display:grid;gap:.65rem}
+.check-list li{display:flex;gap:.7rem;align-items:flex-start;font-size:.99rem}
+.check-list li::before{
+  content:"✓";flex:none;width:24px;height:24px;border-radius:50%;
+  background:var(--champagne-soft);color:var(--taupe-dark);
+  display:grid;place-items:center;font-size:.8rem;font-weight:700;margin-top:.1rem;
+}
+.sign-off{font-family:Georgia,serif;font-style:italic;color:var(--taupe-dark);font-size:1.05rem}
+
+/* ---------- services ---------- */
+.services{background:linear-gradient(180deg,var(--cream),var(--porcelain))}
+.svc-grid{display:grid;gap:1.4rem}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.svc img{height:190px;width:100%;object-fit:cover}
+.svc-body{padding:1.5rem 1.5rem 1.7rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.svc-body h3{font-size:1.3rem}
+.svc-body p{color:var(--ink-soft);font-size:.96rem;flex:1}
+.svc .price-note{
+  font-size:.83rem;letter-spacing:.08em;text-transform:uppercase;color:var(--taupe-dark);
+  border-top:1px dashed var(--line);padding-top:.75rem;
+}
+</style>
+</head>
+<body>
+
+<div class="top-strip">Rated <strong>4.9 ★</strong> from <strong>78 Google reviews</strong> · Thornton-Cleveleys, Lancashire</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="The Aesthetics Studio — home">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">
+        <span class="name">The Aesthetics Studio</span><br>
+        <span class="sub">Thornton-Cleveleys</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://wa.me/447842244350" target="_blank" rel="noopener">Book on WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow rise">Aesthetics &amp; Beauty Studio</span>
+      <h1 class="rise rise-1">Refined treatments, <em>natural-looking</em> results.</h1>
+      <p class="lead rise rise-2">Welcome to The Aesthetics Studio in Thornton-Cleveleys — a calm, clinical-luxe space for anti-wrinkle treatments, dermal fillers, facials and skin care, rated 4.9 stars by local clients on Google.</p>
+      <div class="hero-actions rise rise-3">
+        <a class="btn btn-wa" href="https://wa.me/447842244350" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447842244350">Call 07842 244350</a>
+      </div>
+      <div class="hero-points rise rise-3">
+        <span>Consultation-led approach</span>
+        <span>Booking via WhatsApp, Fresha &amp; Facebook</span>
+        <span>Call or message for prices</span>
+      </div>
+    </div>
+    <div class="hero-media rise rise-2">
+      <div class="hero-frame">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" alt="Relaxing facial treatment at The Aesthetics Studio, Thornton-Cleveleys" width="900" height="1100">
+      </div>
+      <div class="hero-badge">Est. for the Fylde Coast</div>
+      <div class="rating-card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <div class="score">4.9 / 5</div>
+        <div class="note">from 78 Google reviews</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TRUST STRIP ================= -->
+<div class="trust">
+  <div class="wrap trust-row">
+    <div><div class="num">4.9 ★</div><div class="lbl">Google rating</div></div>
+    <div><div class="num">78</div><div class="lbl">Client reviews</div></div>
+    <div><div class="num">6</div><div class="lbl">Treatment areas</div></div>
+    <div><div class="num">1-to-1</div><div class="lbl">Personal appointments</div></div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="collage">
+      <img class="tall" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop" alt="Spa-style treatment setting with towels and oils" width="600" height="700" loading="lazy">
+      <img class="short" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop" alt="Calm, serene studio atmosphere" width="600" height="340" loading="lazy">
+      <img class="short" src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=1200&auto=format&fit=crop" alt="Soft towels and a peaceful treatment room feel" width="600" height="340" loading="lazy">
+    </div>
+    <div class="about-copy">
+      <p class="kicker">About the studio</p>
+      <h2>A quieter kind of beauty appointment</h2>
+      <p>The Aesthetics Studio is a beauty and aesthetics studio in Thornton-Cleveleys, on the Fylde Coast near Fleetwood and Cleveleys. Clients come here for considered, unhurried appointments — from first-time facials to advanced aesthetic treatments — with honest advice at the centre of every visit.</p>
+      <p>Every treatment begins with a conversation. What suits one face may not suit another, so recommendations are always based on your skin, your features and the result you actually want — never on a one-size-fits-all menu.</p>
+      <ul class="check-list">
+        <li>Consultation before any advanced treatment</li>
+        <li>Natural-looking results — enhancement, not change</li>
+        <li>Clear aftercare guidance after every appointment</li>
+        <li>Easy booking by WhatsApp, Fresha or Facebook</li>
+        <li>A calm, private studio setting in Thornton-Cleveleys</li>
+      </ul>
+      <p class="sign-off">— We look forward to welcoming you.</p>
+      <div style="margin-top:1.4rem">
+        <a class="btn btn-dark" href="https://wa.me/447842244350" target="_blank" rel="noopener">Start with a message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="treatments" class="services">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="kicker">Treatments</p>
+      <h2>What we offer</h2>
+      <p>Six core treatment areas, tailored to you at consultation. Because every face and every skin is different, prices are confirmed personally — just call or message for prices.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop" alt="Facial treatment being carried out in a calm studio" width="800" height="520" loading="lazy">
+        <div class="svc-body">
+          <h3>Anti-Wrinkle Treatments</h3>
+          <p>Soften the appearance of fine lines and expression lines for a fresher, more rested look. Treatment areas and suitability are discussed fully at consultation, so results stay subtle and in keeping with your natural features.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1200&auto=format&fit=crop" alt="Skincare products used in aesthetic treatments" width="800" height="520" loading="lazy">
+        <div class="svc-body">
+          <h3>Dermal Fillers</h3>
+          <p>Restore gentle volume and definition where it has been lost over time. Filler is placed carefully and conservatively, building gradually where needed — the aim is always balance and proportion rather than a dramatic change.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop" alt="Client enjoying a relaxing facial mask treatment" width="800" height="520" loading="lazy">
+        <div class="svc-body">
+          <h3>Facials</h3>
+          <p>From a first pampering facial to results-focused treatments, each facial is chosen around your skin on the day — cleansing, exfoliation, mask and massage tailored to whether your skin needs calming, brightening or deep hydration.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=1200&auto=format&fit=crop" alt="Close-up of a professional skin treatment" width="800" height="520" loading="lazy">
+        <div class="svc-body">
+          <h3>Skin Treatments</h3>
+          <p>Targeted treatments for dullness, uneven texture, congestion and tired-looking skin. Following a skin consultation, a plan can be built over a series of appointments so improvements come steadily and safely.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" alt="Makeup and beauty tools for lash and brow treatments" width="800" height="520" loading="lazy">
+        <div class="svc-body">
+          <h3>Lash &amp; Brow</h3>
+          <p>The finishing touches that frame the face — brow shaping and tinting and lash treatments that open up the eyes. A simple way to look more polished day-to-day, with patch-test and suitability advice given before booking.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Natural, polished makeup look after a studio consultation" width="800" height="520" loading="lazy">
+        <div class="svc-body">
+          <h3>Consultations</h3>
+          <p>Not sure where to start? Book a consultation and talk it through with no pressure. We will look at your skin, discuss what is realistically achievable, and map out the treatments — and timings — that make sense for you.</p>
+          <p class="price-note">Call or message for prices</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- treatments in detail ---------- */
+.detail-row{display:grid;gap:2rem;align-items:center;margin-bottom:3.2rem}
+.detail-row:last-child{margin-bottom:0}
+@media(min-width:900px){
+  .detail-row{grid-template-columns:1fr 1fr}
+  .detail-row.flip .detail-img{order:2}
+}
+.detail-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 34px rgba(64,52,32,.13)}
+.detail-img img{width:100%;height:320px;object-fit:cover;transition:transform .6s ease}
+.detail-img:hover img{transform:scale(1.04)}
+.detail-copy h3{font-size:1.55rem;margin-bottom:.7rem}
+.detail-copy p{color:var(--ink-soft);margin-bottom:.8rem}
+.detail-copy ul{list-style:none;display:grid;gap:.45rem;margin:.9rem 0 1.1rem}
+.detail-copy li{display:flex;gap:.6rem;align-items:flex-start;font-size:.96rem}
+.detail-copy li::before{content:"✦";color:var(--champagne);flex:none}
+.detail-copy .price-note{font-size:.83rem;letter-spacing:.08em;text-transform:uppercase;color:var(--taupe-dark)}
+
+/* ---------- journey ---------- */
+.journey-grid{display:grid;gap:1.2rem}
+@media(min-width:860px){.journey-grid{grid-template-columns:repeat(3,1fr)}}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.8rem 1.6rem;position:relative;overflow:hidden;
+}
+.step::after{
+  content:"";position:absolute;inset:auto -30px -55px auto;width:130px;height:130px;border-radius:50%;
+  background:radial-gradient(circle,rgba(198,161,91,.16),transparent 70%);
+}
+.step .no{
+  font-family:Georgia,serif;font-size:2rem;color:var(--champagne);
+  width:56px;height:56px;border:1px solid var(--champagne-soft);border-radius:50%;
+  display:grid;place-items:center;margin-bottom:1rem;background:var(--porcelain);
+}
+.step h3{font-size:1.22rem;margin-bottom:.5rem}
+.step p{color:var(--ink-soft);font-size:.96rem}
+
+/* ---------- gallery ---------- */
+.gallery{background:var(--ink);color:#f2ecdf}
+.gallery .kicker{color:var(--champagne-soft)}
+.gallery .section-head p{color:#c9bda6}
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(min-width:860px){.gal-grid{grid-template-columns:repeat(4,1fr)}}
+.gal-grid figure{border-radius:14px;overflow:hidden;position:relative}
+.gal-grid img{width:100%;height:230px;object-fit:cover;transition:transform .6s ease}
+.gal-grid figure:hover img{transform:scale(1.05)}
+.gal-grid figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:1.4rem .9rem .7rem;
+  font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(30,26,20,.75));
+}
+
+/* ---------- why us ---------- */
+.why-grid{display:grid;gap:1.2rem}
+@media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-card{
+  border:1px solid var(--line);border-radius:var(--radius);background:#fff;
+  padding:1.7rem 1.6rem;transition:transform .3s ease,box-shadow .3s ease;
+}
+.why-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.why-card .icon{font-size:1.5rem;margin-bottom:.7rem}
+.why-card h3{font-size:1.18rem;margin-bottom:.45rem}
+.why-card p{color:var(--ink-soft);font-size:.95rem}
+
+/* ---------- good to know ---------- */
+.know{background:linear-gradient(180deg,var(--porcelain),var(--cream))}
+.know-grid{display:grid;gap:1.2rem}
+@media(min-width:860px){.know-grid{grid-template-columns:repeat(2,1fr)}}
+.know-card{background:#fff;border-left:4px solid var(--champagne);border-radius:12px;padding:1.4rem 1.5rem;box-shadow:0 8px 22px rgba(64,52,32,.06)}
+.know-card h3{font-size:1.08rem;margin-bottom:.35rem}
+.know-card p{color:var(--ink-soft);font-size:.94rem}
+
+/* ---------- faq ---------- */
+.faq-list{max-width:820px;margin:0 auto;display:grid;gap:.8rem}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:1.05rem 1.3rem;transition:box-shadow .25s ease;
+}
+details[open]{box-shadow:0 10px 26px rgba(64,52,32,.08)}
+summary{
+  cursor:pointer;font-family:Georgia,serif;font-size:1.06rem;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.35rem;color:var(--taupe-dark);flex:none}
+details[open] summary::after{content:"–"}
+details p{color:var(--ink-soft);font-size:.96rem;margin-top:.6rem}
+
+/* ---------- booking ---------- */
+.booking{background:var(--ink);color:#f2ecdf}
+.booking-card{
+  background:linear-gradient(140deg,#3a342b,#2e2a25);
+  border:1px solid #55483a;border-radius:22px;
+  padding:2.4rem clamp(1.4rem,4vw,3rem);
+  display:grid;gap:2rem;align-items:center;
+}
+@media(min-width:900px){.booking-card{grid-template-columns:1.2fr .8fr}}
+.booking-card h2{font-size:clamp(1.8rem,3.4vw,2.4rem);line-height:1.25}
+.booking-card p{color:#cfc4ae;margin-top:.8rem}
+.booking-actions{display:grid;gap:.8rem}
+.booking-actions .btn{justify-content:center}
+.booking .small{font-size:.85rem;color:#a99b7f;text-align:center}
+
+/* ---------- footer ---------- */
+footer{background:#211d18;color:#b7ab94;padding:3rem 0 2rem;font-size:.92rem}
+.foot-grid{display:grid;gap:2rem}
+@media(min-width:860px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{font-family:Georgia,serif;color:#efe8da;font-size:1.05rem;margin-bottom:.8rem;font-weight:500}
+footer a:hover{color:var(--champagne-soft)}
+.foot-links{list-style:none;display:grid;gap:.45rem}
+.foot-base{border-top:1px solid #3a342b;margin-top:2.2rem;padding-top:1.3rem;display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between;font-size:.83rem;color:#8d8168}
+
+/* ---------- floating WhatsApp ---------- */
+.wa-float{
+  position:fixed;right:18px;bottom:18px;z-index:80;
+  width:58px;height:58px;border-radius:50%;
+  background:#1faa55;color:#fff;font-size:1.55rem;
+  display:grid;place-items:center;
+  box-shadow:0 14px 30px rgba(20,120,60,.4);
+  animation:cardBob 5s ease-in-out infinite;
+  transition:transform .25s ease;
+}
+.wa-float:hover{transform:scale(1.07)}
+</style>
+
+<!-- ================= JOURNEY ================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="kicker">Your visit</p>
+      <h2>How booking works</h2>
+      <p>Three simple steps — most clients start with a WhatsApp message and take it from there.</p>
+    </div>
+    <div class="journey-grid">
+      <div class="step">
+        <div class="no">1</div>
+        <h3>Message or call</h3>
+        <p>Send a WhatsApp message to <a href="https://wa.me/447842244350" target="_blank" rel="noopener" style="text-decoration:underline">07842 244350</a>, call the same number, or book through Fresha or the Facebook page. Tell us what you are thinking of having done.</p>
+      </div>
+      <div class="step">
+        <div class="no">2</div>
+        <h3>Consultation</h3>
+        <p>We talk through your skin, your goals and your options — including whether a treatment is right for you at all. You will always get a straight answer, and prices are confirmed personally before you commit.</p>
+      </div>
+      <div class="step">
+        <div class="no">3</div>
+        <h3>Treatment &amp; aftercare</h3>
+        <p>Your appointment takes place in the calm Thornton-Cleveleys studio, and you leave with clear aftercare guidance so you know exactly how to look after your skin in the days that follow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Gallery</p>
+      <h2>Inside the studio mood</h2>
+      <p>A glimpse of the calm, unhurried feel we aim for in every appointment — clean, comfortable and quietly luxurious.</p>
+    </div>
+    <div class="gal-grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1200&auto=format&fit=crop" alt="Peaceful spa treatment moment" width="700" height="520" loading="lazy">
+        <figcaption>Calm &amp; unhurried</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1200&auto=format&fit=crop" alt="Spa stones and towels in soft light" width="700" height="520" loading="lazy">
+        <figcaption>A moment to unwind</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1200&auto=format&fit=crop" alt="Beauty treatment detail in warm tones" width="700" height="520" loading="lazy">
+        <figcaption>Gentle techniques</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1200&auto=format&fit=crop" alt="Beauty essentials arranged neatly" width="700" height="520" loading="lazy">
+        <figcaption>Finishing touches</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1200&auto=format&fit=crop" alt="Soft, natural beauty look" width="700" height="520" loading="lazy">
+        <figcaption>Natural results</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop" alt="Salon styling in a bright, clean space" width="700" height="520" loading="lazy">
+        <figcaption>Clean &amp; clinical</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1200&auto=format&fit=crop" alt="Bright, welcoming salon interior" width="700" height="520" loading="lazy">
+        <figcaption>A warm welcome</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop" alt="Treatment oils and towels prepared for a client" width="700" height="520" loading="lazy">
+        <figcaption>Prepared for you</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="kicker">Why choose us</p>
+      <h2>Rated 4.9 stars by local clients</h2>
+      <p>With 78 Google reviews behind the studio, here is what shapes every appointment.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">✦</div>
+        <h3>Natural-looking results</h3>
+        <p>The goal is always "you, on a really good day" — refreshed and balanced, never overdone or obvious.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">✎</div>
+        <h3>Consultation first</h3>
+        <p>Advanced treatments are only ever recommended after a proper conversation about suitability, expectations and alternatives.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">♡</div>
+        <h3>Unhurried appointments</h3>
+        <p>One-to-one appointments in a calm studio — no rushing, no conveyor belt, time to ask every question you have.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">☰</div>
+        <h3>Honest pricing</h3>
+        <p>No invented offers or pushy packages. Prices are confirmed personally when you call or message, before you decide anything.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">⌂</div>
+        <h3>Local &amp; easy to reach</h3>
+        <p>Based in Thornton-Cleveleys, handy for Cleveleys, Fleetwood, Poulton-le-Fylde and the wider Fylde Coast.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">✉</div>
+        <h3>Simple booking</h3>
+        <p>WhatsApp, Fresha, Facebook or a quick call — book whichever way suits you, and get a friendly reply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOOD TO KNOW ================= -->
+<section class="know">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Good to know</p>
+      <h2>Before your first appointment</h2>
+    </div>
+    <div class="know-grid">
+      <div class="know-card">
+        <h3>First visit?</h3>
+        <p>If it is your first time, a consultation is the best place to start. Message on WhatsApp with what you have in mind and we will guide you from there.</p>
+      </div>
+      <div class="know-card">
+        <h3>Patch tests</h3>
+        <p>Some lash, brow and tinting treatments need a patch test in advance. We will let you know when you book, so there are no surprises on the day.</p>
+      </div>
+      <div class="know-card">
+        <h3>Prices</h3>
+        <p>Because treatments are tailored, prices are confirmed personally. Call or message for prices — there is never any obligation to go ahead.</p>
+      </div>
+      <div class="know-card">
+        <h3>Running late or need to rearrange?</h3>
+        <p>Life happens — just send a WhatsApp message as soon as you can and we will do our best to find you another time that works.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="kicker">Questions</p>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The easiest way is WhatsApp — message <a href="https://wa.me/447842244350" target="_blank" rel="noopener" style="text-decoration:underline">07842 244350</a>. You can also call the same number, or book via Fresha or the studio's Facebook page.</p>
+      </details>
+      <details>
+        <summary>Where is The Aesthetics Studio?</summary>
+        <p>The studio is in Thornton-Cleveleys, Lancashire — convenient for Cleveleys, Fleetwood, Poulton-le-Fylde and Blackpool. Message on WhatsApp when booking and we will confirm the exact details for your visit.</p>
+      </details>
+      <details>
+        <summary>How much do treatments cost?</summary>
+        <p>Prices depend on the treatment and what is right for you, so they are confirmed personally rather than listed here. Call or message for prices — asking costs nothing and there is no obligation.</p>
+      </details>
+      <details>
+        <summary>Do I need a consultation first?</summary>
+        <p>For advanced treatments such as anti-wrinkle treatments and dermal fillers, yes — a consultation makes sure the treatment is suitable for you and that the plan matches the result you want.</p>
+      </details>
+      <details>
+        <summary>Will my results look natural?</summary>
+        <p>That is the studio's whole approach: subtle enhancement that keeps you looking like yourself. Amounts and placement are kept conservative and can be built up gradually.</p>
+      </details>
+      <details>
+        <summary>What facials do you offer?</summary>
+        <p>Facials are chosen around your skin on the day — whether it needs calming, brightening, deep hydration or a general refresh. Message us with your skin concerns and we will suggest a suitable option.</p>
+      </details>
+      <details>
+        <summary>Do lash and brow treatments need a patch test?</summary>
+        <p>Some do. When you book, we will tell you if a patch test is needed and arrange it in good time before your appointment.</p>
+      </details>
+      <details>
+        <summary>What should I do after my treatment?</summary>
+        <p>You will be given clear aftercare guidance at your appointment, tailored to your treatment. If anything worries you afterwards, just message the studio on WhatsApp.</p>
+      </details>
+      <details>
+        <summary>Can I rearrange my appointment?</summary>
+        <p>Of course — send a WhatsApp message as early as you can and we will find another time. The sooner we know, the easier it is to offer your slot to someone else.</p>
+      </details>
+      <details>
+        <summary>I'm nervous about my first aesthetic treatment — is that normal?</summary>
+        <p>Completely. Most first-time clients feel the same. Start with a consultation: we will explain everything, answer honestly, and you can take all the time you need to decide.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TREATMENTS IN DETAIL ================= -->
+<section style="padding-top:1rem">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="kicker">In detail</p>
+      <h2>A closer look at the treatments</h2>
+      <p>What each treatment involves, who it tends to suit, and what to expect — the honest version, before you ever sit in the chair.</p>
+    </div>
+
+    <div class="detail-row">
+      <div class="detail-img">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop" alt="Precision facial treatment at the studio" width="800" height="560" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <h3>Anti-wrinkle treatments, explained</h3>
+        <p>Expression lines — across the forehead, between the brows, around the eyes — deepen over the years as the skin loses elasticity. Anti-wrinkle treatments work by relaxing the specific muscles that crease the skin, giving the area a smoother, more rested appearance while keeping your natural expressions.</p>
+        <p>Suitability, areas and amounts are always agreed at consultation first. Nothing is rushed and nothing is done on the same day unless it is genuinely right for you.</p>
+        <ul>
+          <li>Consultation and facial assessment first</li>
+          <li>Conservative amounts — build gradually</li>
+          <li>Review and aftercare guidance included in the conversation</li>
+        </ul>
+        <p class="price-note">Call or message for prices</p>
+      </div>
+    </div>
+
+    <div class="detail-row flip">
+      <div class="detail-img">
+        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1200&auto=format&fit=crop" alt="Premium skincare used alongside filler treatments" width="800" height="560" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <h3>Dermal fillers, explained</h3>
+        <p>As we age, the face naturally loses volume, which can leave features looking flatter or more tired. Dermal fillers gently restore that volume and support — commonly in areas such as the lips, cheeks and around the mouth — with results that are visible straight away and soften in naturally over time.</p>
+        <p>The studio's approach is deliberately understated: small amounts, placed with care, reviewed with fresh eyes. The compliment we aim for is "you look well", never "what have you had done?"</p>
+        <ul>
+          <li>Focus on balance and proportion</li>
+          <li>Gradual, buildable approach</li>
+          <li>Full aftercare advice at your appointment</li>
+        </ul>
+        <p class="price-note">Call or message for prices</p>
+      </div>
+    </div>
+
+    <div class="detail-row">
+      <div class="detail-img">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop" alt="Relaxing facial mask being applied" width="800" height="560" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <h3>Facials &amp; skin treatments, explained</h3>
+        <p>Skin is not the same from one week to the next, so facials here are not picked from a fixed script. Your skin is looked at first, then the treatment is built around it — deep cleansing, exfoliation, masks and massage chosen for calming, brightening, clarifying or deep hydration as needed.</p>
+        <p>For longer-term concerns like dullness, uneven texture or congestion, a short course of treatments spaced over time usually achieves far more than a single session — something we can plan together honestly at consultation.</p>
+        <ul>
+          <li>Tailored to your skin on the day</li>
+          <li>Suitable as a one-off treat or a planned course</li>
+          <li>Straightforward home-care advice to keep results going</li>
+        </ul>
+        <p class="price-note">Call or message for prices</p>
+      </div>
+    </div>
+
+    <div class="detail-row flip">
+      <div class="detail-img">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" alt="Brow and lash styling tools laid out neatly" width="800" height="560" loading="lazy">
+      </div>
+      <div class="detail-copy">
+        <h3>Lash &amp; brow, explained</h3>
+        <p>Well-shaped brows and defined lashes do more for the face than most makeup. Brow shaping and tinting brings structure and balance, while lash treatments lift and darken the natural lashes so eyes look brighter with far less daily effort.</p>
+        <p>Patch tests are arranged in advance where a treatment needs one, and we will always check suitability before going ahead — it only takes a moment when you book.</p>
+        <ul>
+          <li>Brow shaping and tinting for definition</li>
+          <li>Lash treatments for a brighter, wide-awake look</li>
+          <li>Patch test arranged in advance where needed</li>
+        </ul>
+        <p class="price-note">Call or message for prices</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= BOOKING ================= -->
+<section class="booking">
+  <div class="wrap">
+    <div class="booking-card">
+      <div>
+        <p class="kicker" style="color:var(--champagne-soft)">Book now</p>
+        <h2>Ready when you are — start with a message</h2>
+        <p>Tell us what you are interested in, ask about prices, or book a consultation. The Aesthetics Studio, Thornton-Cleveleys — rated 4.9 ★ from 78 Google reviews.</p>
+      </div>
+      <div class="booking-actions">
+        <a class="btn btn-wa" href="https://wa.me/447842244350" target="_blank" rel="noopener">💬 WhatsApp 07842 244350</a>
+        <a class="btn btn-ghost" href="tel:+447842244350" style="color:#f2ecdf;border-color:#8a7962">Call 07842 244350</a>
+        <p class="small">Also booking via Fresha &amp; Facebook</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>The Aesthetics Studio</h4>
+        <p>Aesthetics &amp; beauty studio in Thornton-Cleveleys, Lancashire — anti-wrinkle treatments, dermal fillers, facials, skin treatments, lash &amp; brow and consultations.</p>
+        <p style="margin-top:.7rem">Rated <strong style="color:#efe8da">4.9 ★</strong> from 78 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="foot-links">
+          <li><a href="#about">About the studio</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="foot-links">
+          <li><a href="https://wa.me/447842244350" target="_blank" rel="noopener">WhatsApp: 07842 244350</a></li>
+          <li><a href="tel:+447842244350">Call: 07842 244350</a></li>
+          <li>Thornton-Cleveleys, Lancashire</li>
+          <li>Bookings also via Fresha &amp; Facebook</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© The Aesthetics Studio, Thornton-Cleveleys. All rights reserved.</span>
+      <span>Call or message for prices.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447842244350" target="_blank" rel="noopener" aria-label="Message The Aesthetics Studio on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
