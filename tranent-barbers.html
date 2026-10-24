@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tranent Barbers | Barber Shop in Tranent, East Lothian — Fades, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="Tranent Barbers on the High Street, Tranent, East Lothian. Rated 4.7 stars from 134 Google reviews. Skin fades, classic cuts, beard trims, hot towel shaves and kids cuts. Message on WhatsApp to book.">
+<style>
+:root{
+  --pine:#123528;
+  --pine-deep:#0B241B;
+  --pine-soft:#1C4634;
+  --amber:#C99B5F;
+  --amber-bright:#E3B878;
+  --paper:#F7F2E9;
+  --paper-warm:#EFE6D6;
+  --ink:#1E2420;
+  --ink-soft:#4A524C;
+  --line:#DCCFB6;
+  --white:#FFFFFF;
+  --wa:#25D366;
+  --radius:18px;
+  --shadow:0 14px 34px rgba(11,36,27,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:var(--pine-deep)}
+img{display:block;max-width:100%}
+a{text-decoration:none}
+.wrap{width:min(1140px,92%);margin:0 auto}
+
+/* ---------- Top strip ---------- */
+.topstrip{
+  background:var(--pine-deep);
+  color:#EDE4CF;
+  font-size:.82rem;
+  text-align:center;
+  padding:.5rem 4%;
+  letter-spacing:.02em;
+}
+.topstrip strong{color:var(--amber-bright)}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(247,242,233,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:2px solid var(--pine);
+}
+.header-in{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:.8rem;padding:.7rem 0;
+}
+.logo{display:flex;align-items:center;gap:.65rem}
+.logo-mark{
+  width:46px;height:46px;border-radius:50%;
+  background:var(--pine);color:var(--amber-bright);
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,serif;font-size:1.25rem;font-weight:700;
+  border:2px solid var(--amber);
+  flex:none;
+}
+.logo-text{line-height:1.15}
+.logo-text .name{font-family:Georgia,serif;font-weight:700;font-size:1.18rem;color:var(--pine-deep)}
+.logo-text .sub{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.header-cta{display:flex;gap:.5rem;flex:none}
+.btn{
+  display:inline-flex;align-items:center;gap:.45rem;
+  padding:.62rem 1.05rem;border-radius:999px;
+  font-weight:600;font-size:.92rem;line-height:1;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  border:2px solid transparent;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-call{background:var(--white);border-color:var(--pine);color:var(--pine)}
+.btn-wa{background:var(--wa);color:#08351A;box-shadow:0 8px 20px rgba(37,211,102,.35)}
+.btn-amber{background:var(--amber);color:var(--pine-deep)}
+.btn-ghost{border-color:var(--amber-bright);color:#F5EAD2;background:transparent}
+nav.mainnav{display:none}
+@media(min-width:900px){
+  nav.mainnav{display:flex;gap:1.4rem}
+  nav.mainnav a{color:var(--pine);font-weight:600;font-size:.95rem}
+  nav.mainnav a:hover{color:var(--amber)}
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:linear-gradient(160deg,var(--pine-deep) 0%,var(--pine) 55%,var(--pine-soft) 100%);
+  color:#F3EDDD;
+  overflow:hidden;
+  position:relative;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:-1px;height:26px;
+  background:var(--paper);
+  border-radius:50% 50% 0 0/100% 100% 0 0;
+}
+.hero-in{
+  display:grid;gap:2rem;
+  padding:3rem 0 4.2rem;
+  align-items:center;
+}
+@media(min-width:920px){.hero-in{grid-template-columns:1.05fr .95fr;padding:4rem 0 5rem}}
+.hero-eyebrow{
+  display:inline-block;
+  border:1px solid var(--amber);
+  color:var(--amber-bright);
+  padding:.32rem .85rem;border-radius:999px;
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  margin-bottom:1.1rem;
+}
+.hero h1{color:#FBF7EC;font-size:2.45rem;line-height:1.12;margin-bottom:1rem}
+.hero h1 em{color:var(--amber-bright);font-style:normal}
+.hero p.lead{font-size:1.06rem;color:#E4DCC6;max-width:34rem;margin-bottom:1.5rem}
+.rating-card{
+  display:flex;align-items:center;gap:1rem;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(201,155,95,.55);
+  border-radius:var(--radius);
+  padding:.9rem 1.15rem;
+  max-width:26rem;margin-bottom:1.6rem;
+}
+.rating-num{font-family:Georgia,serif;font-size:2.2rem;color:var(--amber-bright);line-height:1}
+.stars{color:var(--amber-bright);font-size:1.05rem;letter-spacing:.12em}
+.rating-card .rtext{font-size:.9rem;color:#EDE4CF;line-height:1.45}
+.hero-btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.4rem}
+.hero-meta{font-size:.9rem;color:#CFC5A9}
+.hero-meta strong{color:#F5EAD2}
+.hero-photo{position:relative}
+.hero-photo .frame{
+  border-radius:26px;overflow:hidden;
+  border:3px solid var(--amber);
+  box-shadow:var(--shadow);
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/4.6}
+@media(min-width:920px){.hero-photo img{aspect-ratio:4/4.9}}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.09)}}
+.hero-photo .frame img{animation:kenburns 16s ease-in-out infinite alternate}
+.hero-badge{
+  position:absolute;left:-8px;bottom:26px;
+  background:var(--paper);color:var(--pine-deep);
+  border-radius:14px;padding:.65rem .95rem;
+  box-shadow:var(--shadow);
+  border-left:5px solid var(--amber);
+  font-size:.85rem;line-height:1.4;max-width:230px;
+}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.hero-badge{animation:bob 5s ease-in-out infinite}
+.hero-badge strong{display:block;font-family:Georgia,serif;font-size:.98rem}
+
+/* ---------- Marquee strip ---------- */
+.strip{background:var(--amber);overflow:hidden;padding:.55rem 0;border-block:2px solid var(--pine-deep)}
+.strip-track{display:flex;gap:2.6rem;width:max-content;animation:scrollx 30s linear infinite}
+.strip-track span{
+  font-family:Georgia,serif;font-weight:700;color:var(--pine-deep);
+  letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;white-space:nowrap;
+}
+@keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){
+  .strip-track,.hero-photo .frame img,.hero-badge{animation:none}
+}
+
+/* ---------- Sections ---------- */
+section{padding:3.4rem 0}
+.kicker{
+  display:inline-block;font-size:.76rem;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--amber);
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:.3rem .85rem;margin-bottom:.9rem;
+}
+.sec-head{max-width:44rem;margin-bottom:2.1rem}
+.sec-head h2{font-size:2rem;line-height:1.2;margin-bottom:.6rem}
+.sec-head p{color:var(--ink-soft)}
+.alt{background:var(--paper-warm)}
+.dark{background:var(--pine-deep);color:#EDE4CF}
+.dark h2,.dark h3{color:#FBF7EC}
+.dark .sec-head p{color:#CFC5A9}
+
+/* About */
+.about-grid{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.about-photos img{border-radius:var(--radius);object-fit:cover;width:100%;height:100%;box-shadow:var(--shadow)}
+.about-photos .tall{grid-row:span 2;aspect-ratio:3/4.4}
+.about-photos .short{aspect-ratio:3/2.05}
+.about-copy p{color:var(--ink-soft);margin-bottom:1rem}
+.checklist{list-style:none;margin:1.2rem 0 1.6rem;display:grid;gap:.6rem}
+.checklist li{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:.65rem .9rem .65rem 2.4rem;position:relative;font-weight:600;color:var(--pine-deep);
+}
+.checklist li::before{
+  content:"✓";position:absolute;left:.85rem;top:50%;transform:translateY(-50%);
+  color:var(--amber);font-weight:800;
+}
+
+/* Services */
+.svc-grid{display:grid;gap:1.1rem}
+@media(min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+.svc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.5rem 1.35rem;position:relative;overflow:hidden;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.svc::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:5px;
+  background:linear-gradient(90deg,var(--pine),var(--amber));
+}
+.svc .ic{font-size:1.7rem;margin-bottom:.6rem}
+.svc h3{font-size:1.22rem;margin-bottom:.5rem}
+.svc p{color:var(--ink-soft);font-size:.95rem;margin-bottom:1rem}
+.price-note{
+  display:inline-block;font-size:.82rem;font-weight:700;color:var(--pine);
+  background:var(--paper-warm);border:1px dashed var(--amber);
+  padding:.35rem .7rem;border-radius:8px;
+}
+.svc-photo{grid-column:1/-1;display:grid;gap:1rem}
+@media(min-width:760px){.svc-photo{grid-template-columns:1fr 1fr}}
+.svc-photo figure{border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow)}
+.svc-photo img{width:100%;height:250px;object-fit:cover;transition:transform .5s ease}
+.svc-photo figure:hover img{transform:scale(1.05)}
+.svc-photo figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(transparent,rgba(11,36,27,.85));
+  color:#F5EAD2;padding:2rem 1.1rem .8rem;font-family:Georgia,serif;font-weight:700;
+}
+
+/* Why us */
+.why-grid{display:grid;gap:1.1rem}
+@media(min-width:760px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(201,155,95,.45);
+  border-radius:var(--radius);padding:1.5rem 1.3rem;
+}
+.why .num{
+  font-family:Georgia,serif;font-size:1.9rem;color:var(--amber-bright);
+  display:block;margin-bottom:.4rem;
+}
+.why h3{font-size:1.12rem;margin-bottom:.45rem}
+.why p{font-size:.93rem;color:#D8CFB4}
+
+/* Gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+@media(min-width:860px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal figure{border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:0 8px 22px rgba(11,36,27,.12)}
+.gal img{width:100%;height:230px;object-fit:cover;transition:transform .5s ease}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(transparent,rgba(11,36,27,.82));
+  color:#F5EAD2;padding:1.8rem .9rem .65rem;font-size:.88rem;font-weight:600;
+}
+
+/* Steps */
+.steps{display:grid;gap:1.1rem}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.6rem 1.35rem;text-align:left;
+}
+.step .n{
+  width:44px;height:44px;border-radius:50%;background:var(--pine);color:var(--amber-bright);
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,serif;font-weight:700;font-size:1.15rem;margin-bottom:.8rem;
+}
+.step h3{font-size:1.15rem;margin-bottom:.45rem}
+.step p{color:var(--ink-soft);font-size:.94rem}
+
+/* FAQ */
+.faq-list{display:grid;gap:.8rem;max-width:52rem}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:0 1.2rem;
+}
+details[open ]{border-color:var(--amber)}
+summary{
+  cursor:pointer;font-weight:700;color:var(--pine-deep);
+  padding:1rem 0;list-style:none;font-size:1.02rem;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;color:var(--amber);font-weight:700;line-height:1}
+details[open ] summary::after{content:"–"}
+details .ans{padding:0 0 1.1rem;color:var(--ink-soft);font-size:.96rem}
+
+/* Visit / contact */
+.visit-grid{display:grid;gap:1.6rem}
+@media(min-width:900px){.visit-grid{grid-template-columns:1fr 1fr}}
+.visit-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.8rem 1.6rem;box-shadow:0 8px 22px rgba(11,36,27,.08);
+}
+.visit-card h3{font-size:1.3rem;margin-bottom:1rem}
+.visit-rows{display:grid;gap:.85rem;margin-bottom:1.4rem}
+.visit-rows .row{display:flex;gap:.8rem;align-items:flex-start}
+.visit-rows .row .k{
+  flex:none;width:92px;font-size:.78rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--amber);padding-top:.2rem;
+}
+.visit-rows .row .v{color:var(--ink)}
+.visit-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.visit-photo img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.cta-row{display:flex;flex-wrap:wrap;gap:.65rem}
+
+/* Final CTA */
+.final{
+  background:linear-gradient(150deg,var(--pine) 0%,var(--pine-deep) 100%);
+  border-radius:26px;padding:2.6rem 1.8rem;text-align:center;color:#F3EDDD;
+  border:2px solid var(--amber);
+}
+.final h2{color:#FBF7EC;font-size:1.9rem;margin-bottom:.6rem}
+.final p{color:#D8CFB4;max-width:36rem;margin:0 auto 1.5rem}
+.final .hero-btns{justify-content:center;margin-bottom:0}
+
+/* Footer */
+footer{background:var(--pine-deep);color:#CFC5A9;padding:2.6rem 0 5.6rem;font-size:.92rem}
+.foot-grid{display:grid;gap:1.6rem}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer h4{font-family:Georgia,serif;color:#FBF7EC;margin-bottom:.6rem;font-size:1.05rem}
+footer a{color:#E3B878}
+footer a:hover{text-decoration:underline}
+.foot-bottom{border-top:1px solid rgba(201,155,95,.3);margin-top:1.8rem;padding-top:1.1rem;font-size:.83rem;text-align:center}
+
+/* Floating WhatsApp */
+.float-wa{
+  position:fixed;right:16px;bottom:16px;z-index:70;
+  background:var(--wa);color:#08351A;
+  border-radius:999px;padding:.8rem 1.15rem;
+  font-weight:700;font-size:.95rem;
+  box-shadow:0 12px 28px rgba(8,53,26,.35);
+  display:inline-flex;align-items:center;gap:.5rem;
+  animation:bob 5s ease-in-out infinite;
+}
+.float-wa:hover{transform:translateY(-2px)}
+@media(max-width:480px){
+  .hero h1{font-size:2.05rem}
+  .header-cta .btn-call{display:none}
+  .hero-badge{max-width:200px;font-size:.8rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topstrip">Rated <strong>4.7 stars</strong> from <strong>134 Google reviews</strong> · 18 High St, Tranent EH33 1HQ · Message us on WhatsApp to book</div>
+
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="#top" aria-label="Tranent Barbers home">
+      <span class="logo-mark">TB</span>
+      <span class="logo-text">
+        <span class="name">Tranent Barbers</span><br>
+        <span class="sub">Tranent · East Lothian</span>
+      </span>
+    </a>
+    <nav class="mainnav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-call" href="tel:+447935567921">📞 Call</a>
+      <a class="btn btn-wa" href="https://wa.me/447935567921" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="hero-eyebrow">Barber Shop · Tranent High Street</span>
+      <h1>Sharp cuts, honest craft — in the heart of <em>Tranent</em>.</h1>
+      <p class="lead">Tranent Barbers is your local barber shop on the High Street in Tranent, East Lothian. From skin fades and classic scissor cuts to beard trims and traditional hot towel shaves, every chair gets the same care, the same attention to detail, and a finish you can see in the mirror before you leave.</p>
+      <div class="rating-card">
+        <span class="rating-num">4.7</span>
+        <div>
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="rtext">Rated 4.7 stars from 134 reviews on Google — thank you to every customer across Tranent and East Lothian who has sat in our chairs and left a review.</p>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-wa" href="https://wa.me/447935567921" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447935567921">📞 Call 07935 567921</a>
+      </div>
+      <p class="hero-meta">Find us at <strong>18 High St, Tranent EH33 1HQ</strong> — right on the High Street. Send a WhatsApp message and we will help you arrange your visit.</p>
+    </div>
+    <div class="hero-photo">
+      <div class="frame">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a customer a precision haircut in the chair">
+      </div>
+      <div class="hero-badge">
+        <strong>Walk the High Street, leave looking sharp</strong>
+        Fades · Classic cuts · Beard work · Hot towel shaves
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Skin Fades ✦ Classic Cuts ✦ Beard Trims ✦ Hot Towel Shaves ✦ Kids Cuts ✦ Tranent · East Lothian ✦ </span>
+    <span>Skin Fades ✦ Classic Cuts ✦ Beard Trims ✦ Hot Towel Shaves ✦ Kids Cuts ✦ Tranent · East Lothian ✦ </span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photos">
+        <img class="tall" src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=1200&auto=format&fit=crop" alt="Inside a traditional barber shop with chairs and mirrors">
+        <img class="short" src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1200&auto=format&fit=crop" alt="Barber at work with clippers on a fade haircut">
+        <img class="short" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop" alt="Barber finishing a haircut with a straight razor detail">
+      </div>
+      <div class="about-copy">
+        <span class="kicker">About the shop</span>
+        <h2 style="font-size:2rem;line-height:1.2;margin-bottom:.8rem">A proper local barber shop for Tranent</h2>
+        <p>Tranent Barbers sits at 18 High Street in Tranent, East Lothian — a traditional barber shop serving the town and the villages around it. We believe a good haircut is simple: listen to what the customer wants, cut it carefully, check it properly, and never rush the finish.</p>
+        <p>Whether you are after a tight skin fade, a tidy classic cut for work, a beard that needs shaping back into line, or a traditional hot towel shave, you will get the same straightforward service every time. No fuss, no pressure — just a decent cut and a friendly chair.</p>
+        <p>Our 4.7-star rating from 134 Google reviews was built one haircut at a time, and we work to earn it again with every customer who walks through the door.</p>
+        <ul class="checklist">
+          <li>Skin fades and classic scissor cuts</li>
+          <li>Beard trims, shaping and hot towel shaves</li>
+          <li>Kids cuts in a relaxed, friendly chair</li>
+          <li>Easy booking — message us on WhatsApp</li>
+          <li>Right on Tranent High Street, East Lothian</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-wa" href="https://wa.me/447935567921" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+          <a class="btn btn-call" href="tel:+447935567921">📞 07935 567921</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">What we do</span>
+      <h2>Barber services, done properly</h2>
+      <p>Every service starts with a quick chat about what you want and ends with a proper check in the mirror. Prices are confirmed when you get in touch — simply call or message for prices on any service below.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="ic">✂️</div>
+        <h3>Classic Haircut</h3>
+        <p>The timeless cut, tailored to you. Scissor work, clipped back and sides, or a mix of both — shaped to your head and how your hair actually grows, then styled and finished so you can recreate it at home. Tell us the look you are after, or bring a photo and we will talk you through what works.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">🪒</div>
+        <h3>Skin Fade</h3>
+        <p>Our most requested cut. High, mid or low skin fade blended seamlessly into the top, with crisp edges and a clean finish around the hairline. We take the time to blend properly — no harsh lines, no shortcuts — so the fade grows out neatly between visits as well.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">🧔</div>
+        <h3>Beard Trim &amp; Shape</h3>
+        <p>A beard needs looking after just like a haircut. We trim to length, shape the cheeks and neckline, sharpen the edges and finish with care so your beard looks deliberate rather than overgrown. Pair it with a haircut for the full tidy-up in one visit.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">♨️</div>
+        <h3>Hot Towel Shave</h3>
+        <p>The traditional wet shave, done the old way. Hot towels soften the beard, a rich lather protects the skin, and a straight razor gives a close, clean finish. It is part grooming, part ritual — the closest shave you will get and a proper bit of time out for yourself.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">👦</div>
+        <h3>Kids Cuts</h3>
+        <p>Patient, friendly cuts for younger customers. We keep it relaxed and unhurried so children feel comfortable in the chair, and we cut everything from first haircuts to the same fades and styles the older lads are getting. Parents are welcome to message ahead with any questions.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">🔄</div>
+        <h3>Restyle &amp; Tidy-Up</h3>
+        <p>Fancy a change, or has your cut simply grown out past saving? A restyle gives you a fresh shape built from scratch, and we will talk honestly about what suits your hair type. Between full cuts, a quick tidy-up around the edges keeps you looking sharp for longer.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc-photo">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=1200&auto=format&fit=crop" alt="Barber carefully trimming and shaping a customer's beard">
+          <figcaption>Beard work &amp; detailing</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop" alt="Barber blending a skin fade with clippers">
+          <figcaption>Fades, blended properly</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" style="background:transparent;color:var(--amber-bright);border-color:var(--amber)">Why Tranent Barbers</span>
+      <h2>Rated 4.7 stars by the people of Tranent</h2>
+      <p>134 Google reviews do not happen by accident. Here is what keeps customers from Tranent and across East Lothian coming back to our chairs.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <span class="num">01</span>
+        <h3>Local &amp; on the High Street</h3>
+        <p>We are at 18 High St, Tranent EH33 1HQ — easy to find, easy to reach, and part of the town we serve every day.</p>
+      </div>
+      <div class="why">
+        <span class="num">02</span>
+        <h3>4.7 stars, 134 reviews</h3>
+        <p>Our Google rating comes from real customers across Tranent and East Lothian who have trusted us with their hair.</p>
+      </div>
+      <div class="why">
+        <span class="num">03</span>
+        <h3>Every cut, done carefully</h3>
+        <p>Fades blended properly, edges sharpened, and a mirror check before you leave — the finish matters as much as the cut.</p>
+      </div>
+      <div class="why">
+        <span class="num">04</span>
+        <h3>Simple to arrange</h3>
+        <p>One WhatsApp message or a quick call is all it takes to sort your visit. No accounts, no forms, no hassle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">The craft</span>
+      <h2>From the barber's chair</h2>
+      <p>A look at the work, the tools and the finishes that walk out of our High Street shop every week.</p>
+    </div>
+    <div class="gal">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=1200&auto=format&fit=crop" alt="Customer having his hair cut and styled at the barbers">
+        <figcaption>Classic cuts &amp; styling</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?q=80&w=1200&auto=format&fit=crop" alt="Barber tools of the trade laid out ready for work">
+        <figcaption>Tools of the trade</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a close, careful shave">
+        <figcaption>The traditional shave</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=1200&auto=format&fit=crop" alt="Barber shop chairs ready for customers">
+        <figcaption>In the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop" alt="Man with a neatly shaped beard and tidy haircut">
+        <figcaption>Beards, shaped &amp; sharp</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?q=80&w=1200&auto=format&fit=crop" alt="Fresh finished haircut with clean edges">
+        <figcaption>The finished result</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Booking</span>
+      <h2>Three steps to a sharper you</h2>
+      <p>Arranging your cut could not be simpler — most customers just send us a message.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <h3>Message or call</h3>
+        <p>Tap the WhatsApp button anywhere on this page or call 07935 567921. Tell us what you would like — a fade, a classic cut, a beard trim, a hot towel shave, or the full works.</p>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <h3>Agree your visit</h3>
+        <p>We will confirm the details with you directly, including the price of your service, so everything is clear before you set off. Ask us anything — we are happy to help.</p>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <h3>Sit back at 18 High St</h3>
+        <p>Come to the shop at 18 High St, Tranent EH33 1HQ, take a seat, and leave looking sharp. If you were happy with the result, a Google review means the world to a local shop like ours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STYLE GUIDE ============ -->
+<section id="styles">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Style guide</span>
+      <h2>Not sure what to ask for?</h2>
+      <p>Half the battle with a haircut is knowing the words. Here is a plain-English guide to the styles we cut most often at Tranent Barbers — bring this page, a photo, or just a rough idea, and we will do the rest.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="ic">🎯</div>
+        <h3>High, Mid or Low Fade — What's the Difference?</h3>
+        <p>The "fade" is where the short back and sides blend up into the longer hair on top. A <strong>high fade</strong> takes that blend up high on the head for a sharp, striking contrast. A <strong>mid fade</strong> sits around the temples — the most popular all-rounder. A <strong>low fade</strong> keeps the blend down near the ears for a subtle, classic look that grows out the most gently. If you work somewhere smart, low or mid is usually the safe shout; if you want maximum sharpness, go high.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">🌊</div>
+        <h3>The Textured Crop</h3>
+        <p>Short on top with choppy, textured length worn forward, usually paired with a fade on the back and sides. The crop is low-maintenance, suits most hair types — including thinning or receding hair, because the forward fringe covers a multitude of sins — and takes about thirty seconds to style in the morning with a fingertip of matte product worked through dry hair.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">👔</div>
+        <h3>The Classic Scissor Cut</h3>
+        <p>The gentleman's standard: cut mostly with scissors rather than clippers, leaving enough length to part, sweep back or tidy to the side. It is the most forgiving cut as it grows out, which makes it ideal if you cannot get to the barbers as often as you would like. Timeless, smart, and it works at sixteen or sixty.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">🔢</div>
+        <h3>Clipper Grades, Explained</h3>
+        <p>Barbers talk in grades — the number is simply how short the clippers cut. A grade 1 is very short (about 3mm), grade 2 is roughly 6mm, grade 3 around 10mm, and grade 4 about 13mm. "Skin" or "zero" means the shortest possible finish at the bottom of a fade. If you have had a cut you loved, ask us to note the grades we used — next time, you can ask for exactly the same again.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">🧭</div>
+        <h3>Choosing a Beard Shape</h3>
+        <p>A good beard follows the jaw you have. Fuller cheeks suit a squarer finish along the bottom; a softer jaw looks sharper with cleaner, straighter edges and a defined neckline just above the Adam's apple. The golden rule at home: never trim the neckline too high — it is the commonest beard mistake we fix. When we shape your beard in the shop, watch where the lines go so you can maintain them between visits.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <div class="ic">📸</div>
+        <h3>Bringing a Photo? Read This First</h3>
+        <p>Photos genuinely help — they show us the length, the finish and the overall shape you are picturing far faster than words can. Two honest tips: try to find a photo of someone with a similar hair type and hairline to yours, because the same cut sits differently on thick wavy hair than on fine straight hair; and be ready for honest advice. If a style will not work on your hair, we will tell you straight and suggest the closest version that will.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GROOMING TIPS ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Between visits</span>
+      <h2>Keeping your cut sharp at home</h2>
+      <p>A great cut should still look great two weeks later. These simple habits, straight from the barber's chair, keep your hair and beard in shape between visits to the High Street.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">✂</span>
+        <h3>Know your grow-out</h3>
+        <p>Hair grows roughly a centimetre a month. Skin fades look their sharpest for the first two to three weeks, so regulars tend to rebook on a cycle that suits their style — ask us in the chair what timing we would recommend for your cut, and message us on WhatsApp when you are ready.</p>
+      </div>
+      <div class="step">
+        <span class="n">💧</span>
+        <h3>Less product, worked in properly</h3>
+        <p>Most men use twice as much product as they need, in one lump at the front. Warm a pea-sized amount between your palms until it disappears, work it from the back of your head forwards, and add a little more only if you need it. For a natural finish choose matte products; for shine and slicker styles, choose a pomade-style finish.</p>
+      </div>
+      <div class="step">
+        <span class="n">🪮</span>
+        <h3>Train it while it dries</h3>
+        <p>Hair sets as it dries, so the two minutes after a shower matter more than ten minutes of styling later. Towel-dry gently, comb or brush your hair into the direction your cut is meant to sit, then leave it alone. Fighting a parting or a crown is usually a sign the cut underneath needs adjusting — tell us next visit and we will cut with your growth pattern, not against it.</p>
+      </div>
+      <div class="step">
+        <span class="n">🧴</span>
+        <h3>Look after the skin under the beard</h3>
+        <p>Itching and flaking under a beard is usually dry skin, not the beard itself. Wash the beard a couple of times a week, work a few drops of beard oil down to the skin (not just the hair) while it is still slightly damp, and brush it through daily to train the direction of growth and spread the oil evenly.</p>
+      </div>
+      <div class="step">
+        <span class="n">🚫</span>
+        <h3>Leave the edges to us</h3>
+        <p>The temptation to tidy your own neckline or edges at home is understandable — and the cause of most of the rescue jobs we see. One slip takes weeks to grow out. If an occasion comes up between cuts and you need to look sharp, message us first; a professional tidy-up is quicker, safer and keeps the shape of your cut intact.</p>
+      </div>
+      <div class="step">
+        <span class="n">📅</span>
+        <h3>Book the next one before you forget</h3>
+        <p>The easiest way to never end up overdue for a cut is to arrange the next visit while the current one still looks fresh. Send us a WhatsApp message whenever suits you — even if it is just to ask a question about styles, prices or opening times, we are happy to help.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Questions</span>
+      <h2>Frequently asked questions</h2>
+      <p>Anything else on your mind? Send us a WhatsApp message and ask — no question is too small.</p>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p class="ans">The easiest way is to message us on WhatsApp at 07935 567921 — just tap any WhatsApp button on this page. You can also call the same number. Tell us what service you would like and we will arrange your visit with you directly.</p>
+      </details>
+      <details>
+        <summary>Where is Tranent Barbers?</summary>
+        <p class="ans">You will find us at 18 High St, Tranent EH33 1HQ, on the High Street in Tranent, East Lothian. We are easy to reach from across Tranent and the surrounding East Lothian towns and villages.</p>
+      </details>
+      <details>
+        <summary>How much does a haircut cost?</summary>
+        <p class="ans">Please call or message us for prices — send a WhatsApp message to 07935 567921 and we will confirm the price of the exact service you want before you visit, so there are no surprises.</p>
+      </details>
+      <details>
+        <summary>Do you do skin fades?</summary>
+        <p class="ans">Yes — skin fades are one of our most popular services. Choose a high, mid or low fade, and we will blend it properly into the top and finish the edges cleanly. If you are not sure which fade suits you, we will happily talk it through in the chair.</p>
+      </details>
+      <details>
+        <summary>Do you offer hot towel shaves?</summary>
+        <p class="ans">Yes, we offer the traditional hot towel shave — hot towels to soften the beard, a rich lather, and a straight razor finish for the closest shave possible. Message us on WhatsApp to arrange yours.</p>
+      </details>
+      <details>
+        <summary>Can you cut my child's hair?</summary>
+        <p class="ans">Of course. We offer kids cuts in a relaxed, friendly setting and keep things patient and unhurried so younger customers feel comfortable. If it is your child's first haircut, feel free to message us beforehand with any questions.</p>
+      </details>
+      <details>
+        <summary>Can you tidy up my beard as well as my hair?</summary>
+        <p class="ans">Yes — beard trims and shaping are a regular part of what we do. We trim to length, shape the cheeks and neckline, and sharpen the edges, and many customers combine a beard trim with their haircut in a single visit.</p>
+      </details>
+      <details>
+        <summary>What if I want a completely new style?</summary>
+        <p class="ans">A restyle is a great way to freshen things up. Bring a photo of the look you like if you have one, and we will give you honest advice on what will work with your hair type and how much upkeep it needs day to day.</p>
+      </details>
+      <details>
+        <summary>What are your opening hours?</summary>
+        <p class="ans">The quickest way to check when we are open and arrange your visit is to message us on WhatsApp at 07935 567921 or give us a call — we will confirm everything with you directly.</p>
+      </details>
+      <details>
+        <summary>How do I leave a review?</summary>
+        <p class="ans">We are rated 4.7 stars from 134 reviews on Google, and every review helps a small local business like ours. If you were happy with your cut, search for Tranent Barbers on Google after your visit and leave us a few words — thank you.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section id="visit" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Visit us</span>
+      <h2>Find us on Tranent High Street</h2>
+      <p>Pop in to 18 High Street, or get in touch first — whichever suits you best.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Tranent Barbers</h3>
+        <div class="visit-rows">
+          <div class="row"><span class="k">Address</span><span class="v">18 High St, Tranent EH33 1HQ<br>Tranent, East Lothian, Scotland</span></div>
+          <div class="row"><span class="k">WhatsApp</span><span class="v"><a href="https://wa.me/447935567921" target="_blank" rel="noopener" style="color:var(--pine);font-weight:700">07935 567921</a> — message any time to arrange your visit</span></div>
+          <div class="row"><span class="k">Phone</span><span class="v"><a href="tel:+447935567921" style="color:var(--pine);font-weight:700">07935 567921</a></span></div>
+          <div class="row"><span class="k">Rating</span><span class="v">4.7 stars from 134 reviews on Google</span></div>
+          <div class="row"><span class="k">Hours</span><span class="v">Message or call us to confirm today's opening times and arrange your appointment.</span></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-wa" href="https://wa.me/447935567921" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          <a class="btn btn-call" href="tel:+447935567921">📞 Call the Shop</a>
+          <a class="btn btn-amber" href="https://www.google.com/maps/search/?api=1&amp;query=Tranent+Barbers+18+High+St+Tranent+EH33+1HQ" target="_blank" rel="noopener">📍 Get Directions</a>
+        </div>
+      </div>
+      <div class="visit-photo">
+        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=1200&auto=format&fit=crop" alt="Customer leaving the barbers with a fresh, tidy haircut">
+      </div>
+    </div>
+
+    <div style="height:2rem"></div>
+
+    <div class="final">
+      <h2>Ready when you are.</h2>
+      <p>One message is all it takes. Send us a WhatsApp now and we will help you arrange your next cut at Tranent Barbers, 18 High Street.</p>
+      <div class="hero-btns">
+        <a class="btn btn-wa" href="https://wa.me/447935567921" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+447935567921">📞 Call 07935 567921</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Tranent Barbers</h4>
+        <p>Your local barber shop on Tranent High Street, East Lothian — skin fades, classic cuts, beard trims, hot towel shaves and kids cuts, rated 4.7 stars from 134 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p>Classic Haircut<br>Skin Fade<br>Beard Trim &amp; Shape<br>Hot Towel Shave<br>Kids Cuts<br>Restyle &amp; Tidy-Up</p>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <p>18 High St, Tranent EH33 1HQ<br>
+        WhatsApp: <a href="https://wa.me/447935567921" target="_blank" rel="noopener">07935 567921</a><br>
+        Phone: <a href="tel:+447935567921">07935 567921</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">Tranent Barbers · 18 High St, Tranent, East Lothian EH33 1HQ · Call or message for prices and opening times.</div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/447935567921" target="_blank" rel="noopener" aria-label="Chat with Tranent Barbers on WhatsApp">💬 WhatsApp Us</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
