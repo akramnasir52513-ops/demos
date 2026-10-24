@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sammi's Unisex Barbers | Barber Shop in Cowdenbeath, Fife — Cuts, Fades & Beard Trims</title>
+<meta name="description" content="Sammi's Unisex Barbers, 46 High St, Cowdenbeath — rated 4.6 stars from 32 Google reviews. Haircuts, skin fades, beard trims and kids cuts for everyone. Message on WhatsApp to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0e2a26; --green2:#123332; --green3:#1b4540;
+  --brass:#d9a441; --brass2:#b9862f;
+  --paper:#faf6ee; --paper2:#f3ecdb;
+  --ink:#1d2422; --muted:#5c6663;
+  --wa:#22b358;
+  --rad:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:16.5px}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;color:var(--green)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;border-radius:999px;padding:14px 26px;font-size:16px;transition:transform .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px rgba(34,179,88,.35)}
+.btn-call{background:var(--green);color:var(--paper)}
+.btn-brass{background:var(--brass);color:var(--green)}
+.btn-ghost{border:2px solid var(--green);color:var(--green);background:transparent}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes scrollx{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.55}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* top strip */
+.strip{background:var(--green);color:var(--paper2);font-size:13.5px;font-weight:700}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:space-between;padding-top:9px;padding-bottom:9px}
+.strip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--brass);margin-right:7px;animation:pulse-dot 2.2s infinite}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(250,246,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e7ddc6}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:13px;padding-bottom:13px;gap:14px}
+.logo{font-family:'Fraunces',serif;font-weight:800;font-size:23px;color:var(--green);line-height:1.05}
+.logo small{display:block;font-family:'Manrope',sans-serif;font-size:11.5px;letter-spacing:2.2px;font-weight:800;color:var(--brass2);text-transform:uppercase}
+nav{display:none;gap:26px;font-weight:700;font-size:15px}
+nav a{color:var(--green)}
+nav a:hover{color:var(--brass2)}
+.head-cta{display:flex;gap:10px}
+.head-cta .btn{padding:10px 18px;font-size:14.5px}
+@media(min-width:860px){nav{display:flex}}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--green) 0%,var(--green2) 58%,var(--green3) 100%);color:var(--paper);overflow:hidden}
+.hero .wrap{display:grid;gap:36px;padding-top:52px;padding-bottom:58px}
+@media(min-width:920px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+.hero .kicker{display:inline-block;background:rgba(217,164,65,.16);border:1px solid rgba(217,164,65,.55);color:var(--brass);font-weight:800;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;border-radius:999px;padding:7px 15px;margin-bottom:18px}
+.hero h1{color:var(--paper);font-size:clamp(40px,7vw,62px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--brass)}
+.hero p.lede{margin-top:18px;font-size:18.5px;color:#e9e2cf;max-width:34em}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+.rating-card{margin-top:30px;display:inline-flex;align-items:center;gap:16px;background:rgba(250,246,238,.08);border:1px solid rgba(250,246,238,.22);border-radius:var(--rad);padding:15px 20px}
+.rating-card .score{font-family:'Fraunces',serif;font-size:38px;font-weight:800;color:var(--brass);line-height:1}
+.rating-card .stars{color:var(--brass);letter-spacing:3px;font-size:17px}
+.rating-card .rc-text{font-size:14.5px;color:#e9e2cf;font-weight:600}
+.hero-media{position:relative}
+.hero-media .main-img{border-radius:26px;border:5px solid rgba(217,164,65,.5);box-shadow:0 30px 60px rgba(0,0,0,.4);width:100%;height:100%;object-fit:cover;min-height:340px}
+.hero-badge{position:absolute;left:-8px;bottom:22px;background:var(--paper);color:var(--green);border-radius:16px;padding:13px 18px;box-shadow:0 16px 34px rgba(0,0,0,.3);animation:floaty 5s ease-in-out infinite;max-width:250px}
+.hero-badge b{font-family:'Fraunces',serif;font-size:19px;display:block}
+.hero-badge span{font-size:13.5px;color:var(--muted);font-weight:600}
+
+/* marquee */
+.marquee{background:var(--brass);color:var(--green);overflow:hidden;padding:11px 0;font-weight:800;letter-spacing:1.4px;font-size:14.5px;text-transform:uppercase}
+.marquee .track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scrollx 30s linear infinite}
+.marquee span{padding:0 22px}
+
+/* sections */
+section{padding:64px 0}
+.sec-head{max-width:44em;margin-bottom:36px}
+.sec-head .tag{color:var(--brass2);font-weight:800;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+.sec-head h2{font-size:clamp(29px,4.6vw,40px);margin-top:8px}
+.sec-head p{color:var(--muted);margin-top:12px;font-size:17px}
+.alt{background:var(--paper2)}
+.dark{background:var(--green);color:var(--paper)}
+.dark h2,.dark h3{color:var(--paper)}
+
+/* about */
+.about-grid{display:grid;gap:34px}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.collage img{border-radius:18px;height:230px;width:100%;object-fit:cover}
+.collage img.tall{grid-row:span 2;height:474px}
+.checklist{list-style:none;margin-top:20px;display:grid;gap:12px}
+.checklist li{background:#fff;border:1px solid #e7ddc6;border-radius:14px;padding:13px 16px 13px 46px;position:relative;font-weight:600}
+.checklist li::before{content:"✓";position:absolute;left:15px;top:11px;width:22px;height:22px;border-radius:50%;background:var(--green);color:var(--brass);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px}
+.about-copy p{color:var(--muted);margin-bottom:15px;font-size:17px}
+.about-copy p b{color:var(--green)}
+
+/* services */
+.svc-grid{display:grid;gap:18px}
+@media(min-width:700px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+.svc{background:#fff;border:1px solid #e7ddc6;border-radius:var(--rad);padding:24px 22px;transition:transform .25s ease,box-shadow .25s ease}
+.svc:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgba(14,42,38,.12)}
+.svc .ico{width:50px;height:50px;border-radius:14px;background:var(--green);color:var(--brass);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:15px}
+.svc h3{font-size:20px;margin-bottom:9px}
+.svc p{color:var(--muted);font-size:15.5px}
+.svc .price-note{margin-top:13px;font-weight:800;color:var(--brass2);font-size:14px}
+.svc-photos{display:grid;gap:14px;margin-top:18px}
+@media(min-width:700px){.svc-photos{grid-template-columns:repeat(4,1fr)}}
+.svc-photos img{border-radius:16px;height:170px;width:100%;object-fit:cover}
+
+/* why */
+.why-grid{display:grid;gap:18px}
+@media(min-width:820px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why{background:var(--green3);border:1px solid rgba(217,164,65,.35);border-radius:var(--rad);padding:24px 22px}
+.why .num{font-family:'Fraunces',serif;font-size:30px;color:var(--brass);font-weight:800}
+.why h3{font-size:19px;margin:10px 0 8px}
+.why p{color:#d8dfd2;font-size:15px}
+
+/* steps */
+.steps{display:grid;gap:18px}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:1px solid #e7ddc6;border-radius:var(--rad);padding:26px 24px}
+.step .n{display:inline-flex;width:42px;height:42px;border-radius:50%;background:var(--brass);color:var(--green);font-family:'Fraunces',serif;font-weight:800;font-size:19px;align-items:center;justify-content:center;margin-bottom:14px}
+.step h3{font-size:20px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:15.5px}
+
+/* gallery */
+.gal{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media(min-width:820px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal figure{border-radius:18px;overflow:hidden;position:relative}
+.gal img{height:250px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(14,42,38,.88));color:var(--paper);font-weight:700;font-size:14.5px;padding:30px 16px 13px}
+
+/* faq */
+.faq-list{display:grid;gap:12px;max-width:820px}
+details{background:#fff;border:1px solid #e7ddc6;border-radius:16px;padding:4px 22px}
+details summary{cursor:pointer;font-weight:800;color:var(--green);padding:15px 0;font-size:16.5px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";float:right;color:var(--brass2);font-size:22px;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{color:var(--muted);padding:0 0 17px;font-size:15.5px}
+
+/* tips */
+.tip-grid{display:grid;gap:18px}
+@media(min-width:820px){.tip-grid{grid-template-columns:repeat(3,1fr)}}
+.tip{background:#fff;border-left:5px solid var(--brass);border-radius:14px;padding:22px;box-shadow:0 6px 18px rgba(14,42,38,.06)}
+.tip h3{font-size:18.5px;margin-bottom:8px}
+.tip p{color:var(--muted);font-size:15px}
+
+/* visit / contact */
+.visit{display:grid;gap:26px}
+@media(min-width:920px){.visit{grid-template-columns:1.1fr .9fr}}
+.visit-card{background:var(--green);color:var(--paper);border-radius:24px;padding:32px 30px}
+.visit-card h2{color:var(--paper)}
+.visit-card p{color:#d8dfd2;margin-top:10px}
+.visit-card .addr{margin-top:20px;background:rgba(250,246,238,.08);border:1px solid rgba(250,246,238,.2);border-radius:14px;padding:16px 18px;font-weight:700}
+.visit-card .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.visit-side{display:grid;gap:16px}
+.mini-card{background:#fff;border:1px solid #e7ddc6;border-radius:18px;padding:22px}
+.mini-card h3{font-size:19px;margin-bottom:7px}
+.mini-card p{color:var(--muted);font-size:15.5px}
+.final-band{margin-top:26px;background:var(--brass);border-radius:24px;padding:32px 30px;text-align:center}
+.final-band h2{color:var(--green);font-size:clamp(25px,4vw,34px)}
+.final-band p{color:#4c3d14;margin:10px auto 20px;max-width:36em;font-weight:600}
+
+footer{background:var(--green);color:#cfe0d6;padding:44px 0 96px;font-size:15px}
+footer .cols{display:grid;gap:24px}
+@media(min-width:820px){footer .cols{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{color:var(--paper);font-family:'Fraunces',serif;font-size:19px;margin-bottom:10px}
+footer a{color:var(--brass);font-weight:700}
+footer .fine{margin-top:28px;border-top:1px solid rgba(250,246,238,.16);padding-top:18px;font-size:13.5px;color:#9db4a8}
+
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:80;background:var(--wa);color:#fff;font-weight:800;border-radius:999px;padding:14px 22px;box-shadow:0 14px 30px rgba(34,179,88,.45);display:inline-flex;align-items:center;gap:9px;animation:floaty 5s ease-in-out infinite}
+</style>
+</head>
+<body>
+
+<div class="strip"><div class="wrap">
+  <span><span class="dot"></span>46 High St, Cowdenbeath KY4 9NE</span>
+  <span>★ 4.6 rated on Google · 32 reviews</span>
+  <span>Unisex barbers — everyone welcome</span>
+</div></div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top">Sammi's<small>Unisex Barbers · Cowdenbeath</small></a>
+  <nav>
+    <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#visit">Visit Us</a>
+  </nav>
+  <div class="head-cta">
+    <a class="btn btn-call" href="tel:+447533284225">Call</a>
+    <a class="btn btn-wa" href="https://wa.me/447533284225">WhatsApp</a>
+  </div>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="kicker">Barber Shop · Cowdenbeath, Fife</span>
+    <h1>Sharp cuts for <em>everyone</em>, right on the High Street.</h1>
+    <p class="lede">Sammi's Unisex Barbers at 46 High St, Cowdenbeath is a friendly local barber shop for men, women and kids — clean fades, classic cuts, beard trims and tidy-ups, finished properly every time. Message us on WhatsApp to book your chair.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/447533284225">💬 Book on WhatsApp</a>
+      <a class="btn btn-brass" href="tel:+447533284225">📞 Call 07533 284225</a>
+      <a class="btn btn-ghost" style="border-color:var(--paper);color:var(--paper)" href="#services">See Services</a>
+    </div>
+    <div class="rating-card">
+      <div class="score">4.6</div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="rc-text">Rated 4.6 stars from 32 reviews on Google</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-media">
+    <img class="main-img" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a client a precise haircut">
+    <div class="hero-badge"><b>Walk-ins &amp; bookings</b><span>Message ahead on WhatsApp and we will get you sorted.</span></div>
+  </div>
+</div></div>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Skin Fades ✂</span><span>Classic Cuts ✂</span><span>Beard Trims ✂</span><span>Kids Cuts ✂</span><span>Hot Towel Finish ✂</span><span>Unisex — All Welcome ✂</span>
+  <span>Skin Fades ✂</span><span>Classic Cuts ✂</span><span>Beard Trims ✂</span><span>Kids Cuts ✂</span><span>Hot Towel Finish ✂</span><span>Unisex — All Welcome ✂</span>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">About the shop</span>
+    <h2>A proper local barbershop in the heart of Cowdenbeath</h2>
+  </div>
+  <div class="about-grid">
+    <div class="collage">
+      <img class="tall" src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=1200&auto=format&fit=crop" alt="Inside a traditional barber shop">
+      <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=1200&auto=format&fit=crop" alt="Stylist finishing a client's hair in a salon">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop" alt="Barber chairs and mirrors in a barber shop">
+    </div>
+    <div class="about-copy">
+      <p>You will find <b>Sammi's Unisex Barbers</b> at <b>46 High St, Cowdenbeath KY4 9NE</b> — easy to reach from anywhere in town and the surrounding Fife villages. As a unisex shop, the chairs are open to everyone: gents' cuts and fades, ladies' cuts and tidy-ups, and patient, friendly cuts for kids.</p>
+      <p>The approach is simple: listen first, cut carefully, and finish every appointment properly. Whether you know exactly what you want or you would like a bit of honest advice on a style that suits you, you will get a cut that grows out well and is easy to look after at home.</p>
+      <p>Local customers rate the shop <b>4.6 stars from 32 Google reviews</b> — and the easiest way to book is a quick WhatsApp message. Tell us what you need and roughly when suits you, and we will confirm your slot.</p>
+      <ul class="checklist">
+        <li>Unisex chairs — men, women and kids all welcome</li>
+        <li>Fades, classic cuts, beard work and tidy-ups</li>
+        <li>Fast booking — just message on WhatsApp</li>
+        <li>Central High Street location in Cowdenbeath</li>
+        <li>Honest advice on styles that suit you</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="services" class="alt"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Services</span>
+    <h2>Everything a good barbershop should do — done well</h2>
+    <p>From a sharp skin fade to a gentle first haircut for your wee one, every service starts with a quick chat about what you want and ends with a proper finish. Prices are kept fair — just call or message us for prices.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc"><div class="ico">✂️</div><h3>Skin Fades</h3><p>High, mid or low fades blended seamlessly into your chosen length on top. We take the time to get the blend clean and the edges razor sharp, so your fade looks fresh for as long as possible between visits.</p><p class="price-note">Call or message for prices</p></div>
+    <div class="svc"><div class="ico">💈</div><h3>Classic Haircuts</h3><p>Timeless scissor cuts and traditional styles, tailored to your head shape and how your hair naturally sits. A classic cut done properly grows out neatly and is easy to style every morning.</p><p class="price-note">Call or message for prices</p></div>
+    <div class="svc"><div class="ico">🧔</div><h3>Beard Trims &amp; Shaping</h3><p>Beards shaped, tidied and balanced to suit your face — length taken down where it needs it, lines cleaned up, and stray growth removed. Leave with a beard that looks deliberate, not overgrown.</p><p class="price-note">Call or message for prices</p></div>
+    <div class="svc"><div class="ico">👩</div><h3>Ladies' Cuts &amp; Tidy-Ups</h3><p>As a unisex barbers, we welcome women for cuts, trims and tidy-ups — keeping your length healthy, refreshing your shape, or giving you a clean restyle without the big-salon fuss.</p><p class="price-note">Call or message for prices</p></div>
+    <div class="svc"><div class="ico">🧒</div><h3>Kids Cuts</h3><p>Patient, friendly haircuts for children of all ages. We keep it calm and unhurried so younger customers feel at ease, and we will always check with the parent before the clippers come out.</p><p class="price-note">Call or message for prices</p></div>
+    <div class="svc"><div class="ico">🪒</div><h3>Hot Towel Finish</h3><p>The classic barbershop finish — a warm towel to open up the skin, followed by careful razor detailing around the edges and neckline. It is the detail that makes a good cut look truly finished.</p><p class="price-note">Call or message for prices</p></div>
+    <div class="svc"><div class="ico">✨</div><h3>Restyles &amp; Advice</h3><p>Fancy a change but not sure what suits you? Sit down with us, talk it through, and get honest advice based on your hair type, face shape and how much styling time you actually have each day.</p><p class="price-note">Call or message for prices</p></div>
+    <div class="svc"><div class="ico">⚡</div><h3>Quick Tidy-Ups</h3><p>In between full cuts? A quick tidy-up around the edges, neckline and sideburns keeps you looking sharp for that wedding, night out, job interview or photo without a full appointment.</p><p class="price-note">Call or message for prices</p></div>
+  </div>
+  <div class="svc-photos">
+    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop" alt="Barber styling a client's hair">
+    <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=1200&auto=format&fit=crop" alt="Close-up of a beard trim in progress">
+    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop" alt="Barber tools laid out ready for a cut">
+    <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1200&auto=format&fit=crop" alt="Client in the barber chair mid-haircut">
+  </div>
+  <div style="text-align:center;margin-top:32px">
+    <a class="btn btn-wa" href="https://wa.me/447533284225">💬 Ask About a Service on WhatsApp</a>
+  </div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag" style="color:var(--brass)">Why Sammi's</span>
+    <h2>Four reasons folk keep coming back</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why"><div class="num">01</div><h3>Everyone's welcome</h3><p>Unisex means exactly that — gents, ladies and kids all get the same care, the same attention to detail and the same friendly welcome in the chair.</p></div>
+    <div class="why"><div class="num">02</div><h3>Booked in seconds</h3><p>No ringing around or guessing. Send a WhatsApp message, tell us what you need, and we will confirm a time that suits — simple as that.</p></div>
+    <div class="why"><div class="num">03</div><h3>Rated by locals</h3><p>A 4.6-star rating from 32 Google reviews, earned one haircut at a time from customers right here in Cowdenbeath and across Fife.</p></div>
+    <div class="why"><div class="num">04</div><h3>Finished properly</h3><p>We do not rush the ending. Edges checked, neckline cleaned, style finished — you leave looking in the mirror, not fixing things at home.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Booking</span>
+    <h2>Getting your chair booked is easy</h2>
+    <p>No accounts, no forms, no fuss — here is how it works.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="n">1</span><h3>Send a WhatsApp message</h3><p>Tap any WhatsApp button on this page or message <b>07533 284225</b>. Tell us what service you would like and roughly when suits you.</p></div>
+    <div class="step"><span class="n">2</span><h3>We confirm your slot</h3><p>We will reply to confirm your appointment time. If you would rather talk it through, you can call the same number instead.</p></div>
+    <div class="step"><span class="n">3</span><h3>Come in &amp; get sharp</h3><p>Find us at 46 High St, Cowdenbeath KY4 9NE. Sit back, get your cut done properly, and head out looking your best.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Gallery</span>
+    <h2>The craft, up close</h2>
+    <p>A look at the kind of work that comes out of the chair — clean blends, sharp edges and proper finishes.</p>
+  </div>
+  <div class="gal">
+    <figure><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a precise clipper cut"><figcaption>Precision clipper work</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=1200&auto=format&fit=crop" alt="Barber at work in the shop"><figcaption>In the chair at Sammi's</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=1200&auto=format&fit=crop" alt="Barber finishing a client's hairstyle"><figcaption>The finishing touches</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=1200&auto=format&fit=crop" alt="Beard being carefully trimmed"><figcaption>Beard trims &amp; shaping</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=1200&auto=format&fit=crop" alt="Stylist working on a woman's hair"><figcaption>Cuts for everyone</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop" alt="Customer with a fresh, tidy haircut"><figcaption>Fresh cut, ready to go</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Good to know</span>
+    <h2>Frequently asked questions</h2>
+  </div>
+  <div class="faq-list">
+    <details><summary>How do I book an appointment?</summary><p>The quickest way is WhatsApp — message us on 07533 284225 with what you would like done and when suits you, and we will confirm your slot. You can also call the same number if you would rather speak to us.</p></details>
+    <details><summary>Do you take walk-ins?</summary><p>Walk-ins are welcome when a chair is free, but booking ahead on WhatsApp is the best way to guarantee your time — especially at busy periods like weekends and before holidays.</p></details>
+    <details><summary>Is Sammi's really unisex?</summary><p>Yes — Sammi's is a unisex barbers. Men, women and children are all welcome in the chair, and every customer gets the same care and attention whatever service they are in for.</p></details>
+    <details><summary>How much does a haircut cost?</summary><p>Prices depend on the service, so the best thing to do is call or message us for prices — tell us what you are after and we will let you know straight away, with no obligation.</p></details>
+    <details><summary>Where exactly are you in Cowdenbeath?</summary><p>You will find us at 46 High St, Cowdenbeath KY4 9NE — right on the High Street in the centre of town, easy to reach on foot, by bus or by car from across Fife.</p></details>
+    <details><summary>Do you cut children's hair?</summary><p>Absolutely. We offer patient, friendly kids cuts and take things at your child's pace so the experience is calm and positive — just mention it is for a child when you book.</p></details>
+    <details><summary>Can you do skin fades and beard trims?</summary><p>Yes — skin fades are one of our most popular services, and we also offer beard trims and shaping. Many customers book a cut and beard tidy together for the full finish.</p></details>
+    <details><summary>I am not sure what style suits me — can you help?</summary><p>Of course. Bring a photo of something you like, or just describe the look you are going for, and we will give you honest advice based on your hair type and face shape before we start.</p></details>
+    <details><summary>What are your opening hours?</summary><p>Opening times can vary, so for today's hours just call or message us on WhatsApp — 07533 284225 — and we will let you know right away and get you booked in.</p></details>
+    <details><summary>How do I get in touch quickly?</summary><p>WhatsApp is fastest: tap any green WhatsApp button on this page or message 07533 284225. You can also call that number directly if you prefer to talk.</p></details>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Look after your cut</span>
+    <h2>Simple tips between visits</h2>
+    <p>A great cut deserves a little care at home. These basics keep your style looking fresh for longer.</p>
+  </div>
+  <div class="tip-grid">
+    <div class="tip"><h3>Do not over-wash</h3><p>Washing every day strips natural oils and can make hair dry and harder to style. Most hair types do better with a wash every two to three days.</p></div>
+    <div class="tip"><h3>Style on damp hair</h3><p>Most products work best worked through towel-dried, slightly damp hair — start with a pea-sized amount and add more only if you need it.</p></div>
+    <div class="tip"><h3>Keep the edges tidy</h3><p>Your cut looks its best for the first couple of weeks. A quick tidy-up of the neckline and edges between full cuts keeps everything looking sharp.</p></div>
+    <div class="tip"><h3>Care for your beard</h3><p>Comb your beard daily to train the growth direction, and keep the skin underneath clean and moisturised — a healthy beard starts with healthy skin.</p></div>
+    <div class="tip"><h3>Show us a photo</h3><p>Photos say what words cannot. Saving a picture of the style you like — or of your last cut when it looked its best — helps us match it exactly.</p></div>
+    <div class="tip"><h3>Book before you need it</h3><p>Regular customers get the best slots. If you know your hair grows fast, message us a few days ahead so your preferred time is still available.</p></div>
+  </div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <div class="visit">
+    <div class="visit-card">
+      <span class="tag" style="color:var(--brass);font-weight:800;letter-spacing:2px;font-size:13px;text-transform:uppercase">Visit us</span>
+      <h2 style="margin-top:8px">Find us on Cowdenbeath High Street</h2>
+      <p>We are right in the centre of town — drop in, or better still, message ahead on WhatsApp and your chair will be ready for you.</p>
+      <div class="addr">📍 Sammi's Unisex Barbers<br>46 High St, Cowdenbeath KY4 9NE</div>
+      <div class="addr" style="margin-top:12px">⭐ Rated 4.6 stars from 32 reviews on Google</div>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/447533284225">💬 WhatsApp Us</a>
+        <a class="btn btn-brass" href="tel:+447533284225">📞 Call 07533 284225</a>
+      </div>
+      <p style="margin-top:18px;font-size:14.5px">For today's opening hours, call or message us — we will get straight back to you.</p>
+    </div>
+    <div class="visit-side">
+      <div class="mini-card"><h3>📍 Easy to reach</h3><p>46 High St is in the heart of Cowdenbeath, handy for the town centre shops and well placed if you are travelling in from Kelty, Lochgelly, Crossgates or Dunfermline.</p></div>
+      <div class="mini-card"><h3>💬 Fastest reply: WhatsApp</h3><p>Messages are the quickest way to reach us. Tell us the service you want and a time that suits, and we will confirm — no phone queues, no fuss.</p></div>
+      <div class="mini-card"><h3>✂️ For the whole family</h3><p>One trip, everyone sorted — bring the kids, book yourself in, and leave with the whole family looking tidy.</p></div>
+      <div class="mini-card"><h3>⭐ Rated by Cowdenbeath locals</h3><p>Sammi's holds a 4.6-star rating from 32 reviews on Google, earned from customers in Cowdenbeath and the villages round about. Every review represents a real appointment in this shop — a cut finished properly, a beard tidied the way it was asked for, a kid who left smiling. We work hard to keep it that way, one chair at a time, and we would love your next visit to be the reason someone else gives us a try. If you have visited us before and were happy, telling a friend is the best compliment a local shop can get.</p></div>
+    </div>
+  </div>
+
+  <div class="final-band">
+    <h2>Ready for a fresh cut?</h2>
+    <p>Send a quick WhatsApp message now and get your appointment confirmed — sharp cuts, friendly service, right here in Cowdenbeath.</p>
+    <a class="btn btn-call" href="https://wa.me/447533284225">💬 Message Sammi's on WhatsApp</a>
+    <a class="btn btn-ghost" href="tel:+447533284225" style="margin-left:8px">Call Instead</a>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Your appointment</span>
+    <h2>What happens when you sit in the chair</h2>
+    <p>Never been to Sammi's before? Here is exactly how a typical appointment runs, so you know what to expect from the moment you walk in.</p>
+  </div>
+  <div class="steps" style="grid-template-columns:1fr">
+    <div class="step"><span class="n">1</span><h3>The consultation — we listen first</h3><p>Every good haircut starts with a conversation, not clippers. We will ask what you have in mind, how you usually wear your hair, and how much time you spend styling it each morning. If you have a photo of the style you like, show us — it helps us match your idea precisely. We will be honest if a style needs a bit of adapting for your hair type, and we will explain why before anything is cut, so there are no surprises halfway through.</p></div>
+    <div class="step"><span class="n">2</span><h3>The cut — careful, checked work</h3><p>Once we agree on the plan, the cut itself is methodical: sections worked in order, lengths checked against each other, and blends built up gradually rather than taken down all at once. For fades, that means the blend is refined in stages until it disappears smoothly into the top. For scissor cuts, it means your hair is checked dry as well as wet, because hair behaves differently — and looks different — once it is dry.</p></div>
+    <div class="step"><span class="n">3</span><h3>The detail work — edges, lines and neckline</h3><p>This is the part that separates a tidy cut from a great one. We clean up the hairline, sharpen the edges around the ears and neckline, tidy sideburns, and — if you are having beard work — shape and balance the beard so it works with the haircut rather than fighting it. A hot towel finish softens the skin and makes the razor detailing comfortable and precise.</p></div>
+    <div class="step"><span class="n">4</span><h3>The finish — styled and explained</h3><p>Before you leave the chair, we style your hair the way you would wear it day to day and show you the back and sides in the mirror so you can check everything yourself. We will talk you through how to recreate the finish at home — which product type suits your hair, how much to use, and the order to apply it — so day two looks as good as day one. If anything does not feel right, say so there and then: we would far rather adjust it in the chair than have you leave unsure.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Style guide</span>
+    <h2>Words you will hear in the shop — explained</h2>
+    <p>Barbers have their own language. Here is a plain-English guide to the terms that come up most, so you can ask for exactly what you want with confidence.</p>
+  </div>
+  <div class="tip-grid">
+    <div class="tip"><h3>Skin fade</h3><p>The sides and back are blended down to the skin at the bottom, rising gradually into longer hair above. Ask for a high, mid or low fade depending on where you want the blend to start.</p></div>
+    <div class="tip"><h3>Taper</h3><p>A gentler version of a fade: the hair gradually shortens only around the edges — the sideburns and neckline — for a softer, more classic finish that suits the office as much as the weekend.</p></div>
+    <div class="tip"><h3>Textured crop</h3><p>Short on top with choppy, textured length that falls forward, usually paired with a fringe. Low-maintenance, modern, and great for thicker hair that needs the weight taken out.</p></div>
+    <div class="tip"><h3>Buzz cut grades</h3><p>Clipper grades run from 0 (closest) upward — each grade is roughly 3mm of length. A grade 3 on top with faded sides is a common, tidy starting point if you are going shorter.</p></div>
+    <div class="tip"><h3>Beard shaping</h3><p>More than a trim: the beard's outline is defined — cheek lines cleaned, neckline set at the right height, and bulk removed where it grows widest so your jaw looks its sharpest.</p></div>
+    <div class="tip"><h3>Growing a cut out</h3><p>Tell us if you are growing your hair longer. We will tidy the shape without taking off the length you have worked for, and advise how often a tidy-up will keep it looking intentional.</p></div>
+  </div>
+  <div style="text-align:center;margin-top:34px">
+    <p style="color:var(--muted);max-width:40em;margin:0 auto 18px">Still not sure which of these is you? That is completely normal — bring the question to your appointment and we will work it out together in the consultation.</p>
+    <a class="btn btn-wa" href="https://wa.me/447533284225">💬 Ask Us on WhatsApp</a>
+    <a class="btn btn-call" href="tel:+447533284225" style="margin-left:8px">📞 Call the Shop</a>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Families &amp; hair types</span>
+    <h2>Kids' first cuts, and care for every hair type</h2>
+    <p>Because Sammi's is unisex, we look after the whole family's hair in one place. Here is what parents ask us most, and how we approach different hair types in the chair.</p>
+  </div>
+  <div class="tip-grid">
+    <div class="tip"><h3>A calm first haircut</h3><p>A child's first trip to the barbers sets the tone for years, so we keep it gentle: no rush, everything explained before it happens, and the noisy clippers introduced slowly. If your wee one would rather start with just a fringe tidy, that is absolutely fine — confidence first, haircut second.</p></div>
+    <div class="tip"><h3>Bring them at a good time</h3><p>Mid-morning or early afternoon usually works best for younger children — after food, before tiredness. If you are booking for a child, mention it on WhatsApp and we will suggest the quieter times of day.</p></div>
+    <div class="tip"><h3>Thick &amp; wavy hair</h3><p>Thick hair needs its weight managed, not just shortened. We remove bulk from where it builds up, keep enough length for the natural wave to sit properly, and show you how a small amount of product stops it puffing out by midday.</p></div>
+    <div class="tip"><h3>Fine &amp; thinning hair</h3><p>With fine hair, the right cut makes all the difference: blunt edges make ends look fuller, overly long tops can look thinner, and a slightly shorter, textured style usually gives the fullest impression. We will advise honestly on what will work.</p></div>
+    <div class="tip"><h3>Curly hair</h3><p>Curls shrink as they dry, so we cut curly hair with that spring in mind — never judging the length while it is stretched or soaking wet. The result sits at the length you actually asked for once it is dry and natural.</p></div>
+    <div class="tip"><h3>Straight hair</h3><p>Straight hair shows every line, which means it rewards precision. We check symmetry carefully, soften any harsh corners, and choose finishes — matte rather than shiny products, for example — that keep it looking natural rather than styled within an inch of its life.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head">
+    <span class="tag">Before you visit</span>
+    <h2>Three small things that make your appointment better</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="n">✓</span><h3>Arrive with your hair as it is</h3><p>Come with your hair in its normal state — not freshly washed with heavy product unless that is genuinely how you wear it. Seeing how your hair naturally sits helps us cut it to behave that way at home, and tell us honestly how long it has been since your last cut so we can judge the growth pattern.</p></div>
+    <div class="step"><span class="n">✓</span><h3>Save a photo or two</h3><p>A photo of the style you want — or of your own hair on a day it looked great — is worth a long description. Equally, a photo of what you do NOT want helps just as much. Keep them on your phone and show us at the consultation; two minutes spent there saves guesswork later.</p></div>
+    <div class="step"><span class="n">✓</span><h3>Speak up in the chair</h3><p>Prefer it shorter on the sides? Nervous about the fringe? Tell us while we are cutting, not after. We check in as we go, and a small adjustment mid-cut is always easy — our only goal is that you leave the shop happy with what you see in the mirror.</p></div>
+  </div>
+  <div style="text-align:center;margin-top:30px">
+    <a class="btn btn-wa" href="https://wa.me/447533284225">💬 Book Your Visit on WhatsApp</a>
+    <a class="btn btn-call" href="tel:+447533284225" style="margin-left:8px">📞 07533 284225</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div>
+      <h4>Sammi's Unisex Barbers</h4>
+      <p>A friendly unisex barber shop on Cowdenbeath High Street — haircuts, skin fades, beard trims and kids cuts, rated 4.6 stars from 32 Google reviews.</p>
+    </div>
+    <div>
+      <h4>Find us</h4>
+      <p>46 High St<br>Cowdenbeath<br>Fife<br>KY4 9NE</p>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <p>WhatsApp / Phone:<br><a href="tel:+447533284225">07533 284225</a></p>
+      <p style="margin-top:10px"><a href="https://wa.me/447533284225">Message us on WhatsApp →</a></p>
+    </div>
+  </div>
+  <div class="fine">Sammi's Unisex Barbers · 46 High St, Cowdenbeath KY4 9NE · Demo website preview — call or message for prices and today's opening hours.</div>
+</div></footer>
+
+<a class="wa-float" href="https://wa.me/447533284225">💬 WhatsApp Us</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
