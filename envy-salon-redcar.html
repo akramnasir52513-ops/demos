@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Envy Salon | Hair Salon in Redcar, North Yorkshire — Cuts, Colour, Balayage & Styling</title>
+<meta name="description" content="Envy Salon is a hair salon on High Street, Redcar, rated 4.8 stars from 47 Google reviews. Cuts & styling, colour, balayage, blow-dries, treatments and occasion hair. Message on WhatsApp to book.">
+<style>
+:root{
+  --emerald:#0c3b2e;
+  --emerald-deep:#07271e;
+  --emerald-soft:#14503d;
+  --cream:#faf5ea;
+  --cream-dark:#f1e8d5;
+  --gold:#c9a24a;
+  --gold-light:#e6cf8f;
+  --ink:#22302a;
+  --muted:#5c6f66;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;color:var(--emerald-deep);line-height:1.2}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ---------- top strip ---------- */
+.topstrip{background:var(--emerald-deep);color:var(--gold-light);text-align:center;font-size:.86rem;padding:8px 14px;letter-spacing:.04em}
+.topstrip strong{color:#fff}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(250,245,234,.97);border-bottom:2px solid var(--gold);box-shadow:0 2px 14px rgba(7,39,30,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{width:44px;height:44px;border-radius:50%;background:var(--emerald);color:var(--gold-light);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:1.35rem;border:2px solid var(--gold)}
+.logo-name{font-family:Georgia,serif;font-size:1.45rem;color:var(--emerald-deep);letter-spacing:.02em}
+.logo-name span{color:var(--gold)}
+.logo-sub{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.nav-links{display:none;gap:22px;font-size:.95rem}
+.nav-links a{color:var(--emerald-deep);font-weight:600}
+.nav-links a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:700;font-size:.98rem;transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(7,39,30,.25)}
+.btn-wa{background:#1faa55;color:#fff}
+.btn-gold{background:var(--gold);color:var(--emerald-deep)}
+.btn-outline{border:2px solid var(--gold-light);color:#fff;background:transparent}
+.btn-sm{padding:9px 18px;font-size:.9rem}
+@media(min-width:820px){.nav-links{display:flex}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--emerald-deep);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;animation:heroZoom 22s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.09)}}
+.hero-inner{position:relative;padding:86px 0 78px;text-align:center}
+.hero-badge{display:inline-block;background:rgba(201,162,74,.16);border:1px solid var(--gold);color:var(--gold-light);padding:7px 18px;border-radius:999px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:20px}
+.hero h1{color:#fff;font-size:2.5rem;margin-bottom:16px}
+.hero h1 em{color:var(--gold-light);font-style:italic}
+.hero p{max-width:640px;margin:0 auto 28px;color:#e9e2cf;font-size:1.08rem}
+.hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.rating-card{display:inline-flex;align-items:center;gap:12px;background:#fff;color:var(--emerald-deep);border-radius:14px;padding:12px 22px;margin-top:34px;box-shadow:0 12px 28px rgba(0,0,0,.28);animation:floatCard 5s ease-in-out infinite}
+@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.stars{color:var(--gold);font-size:1.25rem;letter-spacing:.12em}
+.rating-card .r-num{font-family:Georgia,serif;font-size:1.5rem;font-weight:700}
+.rating-card .r-txt{font-size:.82rem;color:var(--muted);text-align:left;line-height:1.35}
+@media(min-width:760px){.hero h1{font-size:3.4rem}}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--emerald);color:var(--cream)}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+.trust-item{padding:20px 14px;text-align:center;border-bottom:1px solid rgba(230,207,143,.18)}
+.trust-item .t-big{font-family:Georgia,serif;font-size:1.35rem;color:var(--gold-light)}
+.trust-item .t-small{font-size:.82rem;color:#cfe0d6;letter-spacing:.05em}
+@media(min-width:820px){.trust-grid{grid-template-columns:repeat(4,1fr)}.trust-item{border-bottom:none;border-right:1px solid rgba(230,207,143,.18)}.trust-item:last-child{border-right:none}}
+
+/* ---------- sections ---------- */
+section{padding:68px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 42px}
+.sec-kicker{color:var(--gold);letter-spacing:.3em;text-transform:uppercase;font-size:.78rem;font-weight:700;margin-bottom:10px}
+.sec-head h2{font-size:2.05rem;margin-bottom:12px}
+.sec-head p{color:var(--muted)}
+.fade-up{animation:fadeUp 1s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;gap:34px;align-items:center}
+@media(min-width:860px){.about-grid{grid-template-columns:1.05fr 1fr}}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-photos img{border-radius:16px;height:210px;width:100%;object-fit:cover;border:3px solid #fff;box-shadow:0 10px 24px rgba(7,39,30,.16)}
+.about-photos img.tall{grid-row:span 2;height:434px}
+.about-copy h2{font-size:2rem;margin-bottom:14px}
+.about-copy p{margin-bottom:14px;color:#3c4c44}
+.check-list{list-style:none;margin:20px 0 26px}
+.check-list li{padding:8px 0 8px 34px;position:relative;font-weight:600;color:var(--emerald-deep)}
+.check-list li::before{content:"✦";position:absolute;left:4px;color:var(--gold);font-size:1.05rem}
+
+/* ---------- services ---------- */
+.services-sec{background:var(--emerald-deep);color:var(--cream)}
+.services-sec h2,.services-sec h3{color:#fff}
+.services-sec .sec-head p{color:#cfe0d6}
+.svc-grid{display:grid;gap:20px}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:var(--emerald);border:1px solid rgba(230,207,143,.28);border-radius:18px;overflow:hidden;transition:transform .25s ease,border-color .25s ease}
+.svc-card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.svc-card img{height:180px;width:100%;object-fit:cover}
+.svc-body{padding:22px}
+.svc-body h3{font-size:1.28rem;margin-bottom:9px}
+.svc-body p{color:#d7e4da;font-size:.95rem;margin-bottom:14px}
+.price-note{color:var(--gold-light);font-weight:700;font-size:.88rem;letter-spacing:.03em}
+
+/* ---------- detail rows ---------- */
+.detail-row{display:grid;gap:26px;align-items:center;margin-bottom:52px}
+.detail-row:last-child{margin-bottom:0}
+@media(min-width:860px){.detail-row{grid-template-columns:1fr 1fr}.detail-row.flip .detail-img{order:2}}
+.detail-img img{border-radius:18px;height:320px;width:100%;object-fit:cover;box-shadow:0 14px 30px rgba(7,39,30,.18)}
+.detail-copy h3{font-size:1.55rem;margin-bottom:12px}
+.detail-copy p{color:#3c4c44;margin-bottom:12px}
+.detail-copy ul{list-style:none;margin-top:8px}
+.detail-copy li{padding:6px 0 6px 28px;position:relative;color:var(--emerald-deep);font-weight:600}
+.detail-copy li::before{content:"—";position:absolute;left:2px;color:var(--gold);font-weight:700}
+
+/* ---------- gallery ---------- */
+.gallery-sec{background:var(--cream-dark)}
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:860px){.gal-grid{grid-template-columns:repeat(4,1fr)}}
+.gal-item{position:relative;border-radius:14px;overflow:hidden}
+.gal-item img{height:230px;width:100%;object-fit:cover;transition:transform .5s ease}
+.gal-item:hover img{transform:scale(1.07)}
+.gal-cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(7,39,30,.88));color:#fff;padding:26px 14px 12px;font-size:.88rem;font-weight:600}
+
+/* ---------- why ---------- */
+.why-grid{display:grid;gap:18px}
+@media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-card{background:#fff;border-radius:16px;padding:26px;border-top:4px solid var(--gold);box-shadow:0 8px 20px rgba(7,39,30,.08)}
+.why-card .w-ico{font-size:1.7rem;margin-bottom:10px}
+.why-card h3{font-size:1.18rem;margin-bottom:8px}
+.why-card p{color:var(--muted);font-size:.95rem}
+
+/* ---------- booking ---------- */
+.booking-sec{background:var(--emerald);color:var(--cream);text-align:center}
+.booking-sec h2{color:#fff}
+.steps{display:grid;gap:18px;margin:36px 0 30px;text-align:left}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--emerald-soft);border-radius:16px;padding:24px;border:1px solid rgba(230,207,143,.25)}
+.step .s-num{font-family:Georgia,serif;font-size:1.9rem;color:var(--gold-light)}
+.step h3{color:#fff;font-size:1.15rem;margin:6px 0 8px}
+.step p{color:#d7e4da;font-size:.94rem}
+
+/* ---------- faq ---------- */
+.faq-list{max-width:780px;margin:0 auto}
+details{background:#fff;border:1px solid var(--cream-dark);border-radius:12px;margin-bottom:12px;padding:0 20px;box-shadow:0 4px 12px rgba(7,39,30,.05)}
+summary{cursor:pointer;font-weight:700;color:var(--emerald-deep);padding:16px 0;font-size:1.02rem;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold);font-size:1.3rem;line-height:1}
+details[open ] summary::after{content:"–"}
+details p{padding:0 0 18px;color:#3c4c44;font-size:.96rem}
+
+/* ---------- contact ---------- */
+.contact-sec{background:var(--cream-dark)}
+.contact-grid{display:grid;gap:20px}
+@media(min-width:820px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.contact-card{background:#fff;border-radius:16px;padding:28px;text-align:center;box-shadow:0 8px 20px rgba(7,39,30,.08)}
+.contact-card .c-ico{font-size:1.8rem;margin-bottom:10px}
+.contact-card h3{margin-bottom:8px}
+.contact-card p{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+
+/* ---------- footer ---------- */
+footer{background:var(--emerald-deep);color:#cfe0d6;padding:52px 0 30px}
+.foot-grid{display:grid;gap:30px;margin-bottom:34px}
+@media(min-width:820px){.foot-grid{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;margin-bottom:14px;font-size:1.1rem}
+footer a{color:#cfe0d6}
+footer a:hover{color:var(--gold-light)}
+.foot-links{list-style:none}
+.foot-links li{margin-bottom:9px}
+.foot-bottom{border-top:1px solid rgba(230,207,143,.2);padding-top:20px;font-size:.85rem;text-align:center;color:#9db8a9}
+
+/* ---------- floating WA ---------- */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#1faa55;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 10px 26px rgba(0,0,0,.3);animation:floatCard 4.5s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topstrip">★ Rated <strong>4.8 stars</strong> from <strong>47 Google reviews</strong> — Envy Salon, 123b High Street, Redcar</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">E</span>
+      <span>
+        <span class="logo-name">ENVY <span>SALON</span></span><br>
+        <span class="logo-sub">Hair · Redcar</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Envy</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-wa btn-sm" href="https://wa.me/447843677419" target="_blank" rel="noopener">Book on WhatsApp</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1600&q=80" alt="Inside a stylish hair salon">
+  <div class="wrap hero-inner fade-up">
+    <span class="hero-badge">Hair Salon · Redcar, North Yorkshire</span>
+    <h1>Hair You'll Be <em>Envied</em> For</h1>
+    <p>Envy Salon on Redcar High Street is where great hair days begin — precision cuts, beautiful colour, glossy balayage and styling for every occasion, all in one welcoming salon.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-wa" href="https://wa.me/447843677419" target="_blank" rel="noopener">💬 Message Us on WhatsApp</a>
+      <a class="btn btn-outline" href="#services">Explore Services</a>
+    </div>
+    <br>
+    <div class="rating-card">
+      <span class="stars">★★★★★</span>
+      <span class="r-num">4.8</span>
+      <span class="r-txt">from 47 Google reviews<br>for Envy Salon, Redcar</span>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><div class="t-big">4.8 ★</div><div class="t-small">GOOGLE RATING</div></div>
+    <div class="trust-item"><div class="t-big">47</div><div class="t-small">GOOGLE REVIEWS</div></div>
+    <div class="trust-item"><div class="t-big">High Street</div><div class="t-small">IN THE HEART OF REDCAR</div></div>
+    <div class="trust-item"><div class="t-big">WhatsApp</div><div class="t-small">QUICK &amp; EASY BOOKING</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-photos">
+      <img class="tall" src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=900&q=80" alt="Hair being washed and cared for at the salon basin">
+      <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800&q=80" alt="Salon styling chairs and mirrors">
+      <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&q=80" alt="Stylist finishing a client's hair">
+    </div>
+    <div class="about-copy">
+      <p class="sec-kicker">About Envy Salon</p>
+      <h2>Redcar's Home of Beautiful Hair</h2>
+      <p>You'll find Envy Salon at 123b High Street in Redcar — a friendly, professional hair salon where every appointment starts with listening. Whether you're after a complete restyle, a colour refresh or simply a tidy-up that makes you feel like yourself again, you're in good hands.</p>
+      <p>Our clients rate us 4.8 stars on Google, and we work hard to earn that with honest advice, careful technique and hair that still looks great weeks after you leave the chair. From everyday cuts to full colour transformations and special-occasion styling, we tailor everything to your hair, your lifestyle and how much upkeep you actually want.</p>
+      <ul class="check-list">
+        <li>Personal consultation at every appointment</li>
+        <li>Cuts, colour, balayage, styling &amp; treatments</li>
+        <li>Honest advice — no hard sell, ever</li>
+        <li>Easy booking by WhatsApp, Fresha or Facebook</li>
+      </ul>
+      <a class="btn btn-gold" href="https://wa.me/447843677419" target="_blank" rel="noopener">Ask Us Anything</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">What We Do</p>
+      <h2>Our Services</h2>
+      <p>Every service begins with a chat about what you want and what your hair needs. Prices vary with hair length, thickness and the work involved — message us for an honest quote before you book.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80" alt="Haircut and styling in progress">
+        <div class="svc-body">
+          <h3>Cuts &amp; Styling</h3>
+          <p>From sharp bobs and long layers to soft, face-framing cuts, we shape your hair to suit your features and how you style it at home. Every cut is finished with a blow-dry so you leave looking polished.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=800&q=80" alt="Hair colour being applied">
+        <div class="svc-body">
+          <h3>Colour</h3>
+          <p>Full-head colour, roots, highlights and lowlights — rich, even colour chosen to complement your skin tone and keep your hair in the best possible condition. We will always be honest about what's achievable in one visit.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800&q=80" alt="Soft sun-kissed balayage hair">
+        <div class="svc-body">
+          <h3>Balayage</h3>
+          <p>That soft, sun-kissed, grow-out-friendly colour everyone loves. Hand-painted balayage adds dimension and brightness with a natural blend — and because it grows out gently, it is lower maintenance than traditional highlights.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&q=80" alt="Blow-dry styling with brush and dryer">
+        <div class="svc-body">
+          <h3>Blow-Dry &amp; Finish</h3>
+          <p>Bouncy, smooth or full of volume — a professional blow-dry transforms your hair for the weekend, a night out or just because. The perfect pick-me-up between cuts, finished exactly how you like it.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?w=800&q=80" alt="Healthy glossy hair after a treatment">
+        <div class="svc-body">
+          <h3>Hair Treatments</h3>
+          <p>Deep-conditioning and repairing treatments that put moisture and strength back into dry, damaged or colour-treated hair. Ideal alongside a colour service, or as a standalone rescue for stressed lengths and ends.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&q=80" alt="Elegant occasion hair styling">
+        <div class="svc-body">
+          <h3>Occasion Hair</h3>
+          <p>Weddings, proms, parties and big nights out — elegant up-dos, soft waves and polished styling that lasts from the first photo to the last dance. Trials are available so your big day has no surprises.</p>
+          <span class="price-note">Call or message for prices</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL ROWS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">In Detail</p>
+      <h2>The Envy Difference</h2>
+      <p>Great hair is never an accident. Here is how we approach the services our Redcar clients ask for most.</p>
+    </div>
+
+    <div class="detail-row">
+      <div class="detail-img"><img src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?w=1000&q=80" alt="Beautifully blended highlighted hair"></div>
+      <div class="detail-copy">
+        <h3>Colour &amp; Balayage, Done Properly</h3>
+        <p>Colour is where a salon earns its reputation, and we take it seriously. Before any colour touches your hair, we talk through your hair history, your target shade and the condition of your hair — because the best colour is the one that keeps your hair healthy.</p>
+        <p>Balayage and modern highlighting techniques let us build brightness exactly where the light would naturally catch it, with a soft blend that grows out gracefully between appointments.</p>
+        <ul>
+          <li>Full colour, roots, highlights &amp; lowlights</li>
+          <li>Hand-painted balayage for a natural finish</li>
+          <li>Toners for the perfect final shade</li>
+          <li>Patch testing where required — just ask</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail-row flip">
+      <div class="detail-img"><img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=1000&q=80" alt="Happy client with freshly styled hair"></div>
+      <div class="detail-copy">
+        <h3>A Cut That Works With Your Life</h3>
+        <p>The best haircut is one that still behaves on a busy Tuesday morning, not just in the salon mirror. We cut with your natural texture, growth patterns and daily routine in mind, and we will show you how to recreate the finish at home.</p>
+        <p>Whether it is a bold restyle or keeping your signature look sharp, you will leave with hair that feels lighter, healthier and unmistakably you.</p>
+        <ul>
+          <li>Restyles and precision cutting</li>
+          <li>Fringe trims and tidy-ups between cuts</li>
+          <li>Styling advice you can actually follow</li>
+          <li>Finished with a professional blow-dry</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail-row">
+      <div class="detail-img"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=1000&q=80" alt="Welcoming salon interior"></div>
+      <div class="detail-copy">
+        <h3>Healthy Hair Comes First</h3>
+        <p>Shiny, strong hair is the foundation of every great style. Our conditioning and repair treatments are chosen for hair that is coloured, heat-styled or simply feeling tired, helping restore softness, shine and manageability.</p>
+        <p>Add a treatment to your colour appointment, or book one on its own whenever your hair needs rescuing — your stylist will recommend the right option for your hair type.</p>
+        <ul>
+          <li>Deep-conditioning moisture masks</li>
+          <li>Strengthening repair for damaged hair</li>
+          <li>Gloss and shine finishes</li>
+          <li>Honest aftercare recommendations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-sec" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">The Look Book</p>
+      <h2>Styles We Love</h2>
+      <p>A little inspiration for your next appointment — bring a photo of the look you love and we will talk you through how to make it work for your hair.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80" alt="Stylist at work in the salon"><span class="gal-cap">Salon Craftsmanship</span></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=800&q=80" alt="Long flowing styled hair"><span class="gal-cap">Long &amp; Flowing</span></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?w=800&q=80" alt="Detailed styling work"><span class="gal-cap">Detailed Styling</span></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80" alt="Glamorous finished look"><span class="gal-cap">Glamour Finish</span></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=800&q=80" alt="Hair styling session"><span class="gal-cap">The Perfect Finish</span></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?w=800&q=80" alt="Healthy shiny hair"><span class="gal-cap">Gloss &amp; Shine</span></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80" alt="Relaxing salon treatment"><span class="gal-cap">Treatment Time</span></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1526045478516-99145907023c?w=800&q=80" alt="Beautiful natural hair portrait"><span class="gal-cap">Natural Beauty</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">Why Choose Us</p>
+      <h2>Why Redcar Chooses Envy</h2>
+      <p>We are a local salon with local clients who come back again and again — here is why.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="w-ico">⭐</div><h3>Rated 4.8 on Google</h3><p>Our 47 Google reviews average 4.8 stars — real feedback from real Redcar clients who trust us with their hair.</p></div>
+      <div class="why-card"><div class="w-ico">💬</div><h3>Easy WhatsApp Booking</h3><p>No phone tag. Send us a message, tell us what you'd like, and we will find you a time that fits your week.</p></div>
+      <div class="why-card"><div class="w-ico">✂️</div><h3>Tailored to You</h3><p>No one-size-fits-all hair here. Every cut and colour is adapted to your hair type, features and lifestyle.</p></div>
+      <div class="why-card"><div class="w-ico">🤝</div><h3>Honest Advice</h3><p>If a colour would damage your hair or a style won't suit your routine, we will say so — and suggest what will work instead.</p></div>
+      <div class="why-card"><div class="w-ico">📍</div><h3>High Street Location</h3><p>Find us at 123b High Street, Redcar — easy to reach whether you're local or visiting the coast.</p></div>
+      <div class="why-card"><div class="w-ico">💷</div><h3>Clear, Fair Pricing</h3><p>Message us for a quote before you book. Hair length and the work involved affect price — we will always explain first.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HAIR CARE GUIDE -->
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">From the Salon Chair</p>
+      <h2>Our Simple Hair Care Guide</h2>
+      <p>Salon hair doesn't have to end when you leave. These are the honest basics we share with our clients every day.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="w-ico">🧴</div><h3>Protect Your Colour</h3><p>Coloured hair is happiest with gentle, sulphate-free shampoo and lukewarm water. Wash a little less often, and your shade will stay richer for longer between appointments.</p></div>
+      <div class="why-card"><div class="w-ico">🔥</div><h3>Always Use Heat Protection</h3><p>Straighteners and tongs are the biggest cause of dry, snapping ends. A heat-protection spray before styling is the single easiest habit for healthier hair.</p></div>
+      <div class="why-card"><div class="w-ico">✂️</div><h3>Don't Skip the Trim</h3><p>Regular trims stop split ends travelling up the hair shaft. Even if you're growing your hair, a light tidy keeps it looking thick and healthy instead of straggly.</p></div>
+      <div class="why-card"><div class="w-ico">💧</div><h3>Condition Like You Mean It</h3><p>Work conditioner through the mid-lengths and ends — not the roots — and leave it a few minutes before rinsing. Once a week, a deep mask makes a real difference.</p></div>
+      <div class="why-card"><div class="w-ico">🌙</div><h3>Be Kind Overnight</h3><p>Never sleep on wet hair if you can help it, and a loose plait or a silk pillowcase reduces friction, frizz and breakage while you sleep.</p></div>
+      <div class="why-card"><div class="w-ico">❓</div><h3>Not Sure? Ask Us</h3><p>Every head of hair is different. At your appointment we'll happily build a simple routine around your hair type, your colour and your budget — just ask.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">Visit Us</p>
+      <h2>Proudly Serving Redcar &amp; the Coast</h2>
+      <p>Envy Salon sits on Redcar High Street, welcoming clients from across Redcar and the surrounding coastal towns and villages. Whether you're popping in from just around the corner or making a trip to the seaside, you'll find a warm welcome, honest advice and hair you'll love.</p>
+      <p style="margin-top:12px">Appointments are in demand at weekends and before big local events, so we recommend messaging on WhatsApp in good time to secure your slot.</p>
+    </div>
+    <div style="text-align:center">
+      <a class="btn btn-wa" href="https://wa.me/447843677419" target="_blank" rel="noopener">💬 Check Availability on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-sec" id="booking">
+  <div class="wrap">
+    <p class="sec-kicker" style="color:var(--gold-light)">Booking</p>
+    <h2>Book Your Appointment in Three Steps</h2>
+    <div class="steps">
+      <div class="step"><div class="s-num">1</div><h3>Send a Message</h3><p>Tap the WhatsApp button anywhere on this page and tell us what you'd like — a cut, colour, balayage or styling — and when suits you.</p></div>
+      <div class="step"><div class="s-num">2</div><h3>Get Honest Advice &amp; a Quote</h3><p>We will confirm what your hair needs, how long it will take and what it will cost — no surprises when you arrive.</p></div>
+      <div class="step"><div class="s-num">3</div><h3>Visit Us on High Street</h3><p>Come to 123b High Street, Redcar, relax in the chair, and leave with hair you'll be envied for.</p></div>
+    </div>
+    <a class="btn btn-wa" href="https://wa.me/447843677419" target="_blank" rel="noopener">💬 Start Your Booking</a>
+    <p style="margin-top:16px;color:#cfe0d6;font-size:.92rem">You can also book through Fresha or message us on Facebook.</p>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section style="padding-bottom:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">For Every Occasion</p>
+      <h2>Hair for Life's Big (and Small) Moments</h2>
+      <p>Whatever is in your diary, we'll make sure your hair is ready for it.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="w-ico">👰</div><h3>Weddings</h3><p>Bridal parties, bridesmaids and proud mums — elegant styling that photographs beautifully and holds all day. Trials recommended so the day itself is stress-free.</p></div>
+      <div class="why-card"><div class="w-ico">🎓</div><h3>Proms &amp; Graduations</h3><p>Soft waves, sleek finishes and modern up-dos for your big night of celebration. Book early — prom season slots go fast across Redcar.</p></div>
+      <div class="why-card"><div class="w-ico">🎉</div><h3>Parties &amp; Nights Out</h3><p>A bouncy blow-dry or glamorous styling turns a good outfit into a great one. The quickest confidence boost in town.</p></div>
+      <div class="why-card"><div class="w-ico">💼</div><h3>Interviews &amp; New Jobs</h3><p>First impressions matter. A sharp, tidy cut and polished finish helps you walk in feeling like the best version of yourself.</p></div>
+      <div class="why-card"><div class="w-ico">📸</div><h3>Photoshoots &amp; Events</h3><p>Camera-ready hair that looks as good in pictures as it does in the mirror — styled to suit the look you're going for.</p></div>
+      <div class="why-card"><div class="w-ico">🌸</div><h3>Just Because</h3><p>Sometimes the occasion is simply that you deserve it. A fresh cut, a new colour or a glossy treatment — no special reason required.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIRST VISIT -->
+<section style="background:var(--cream-dark)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">New to Envy?</p>
+      <h2>What to Expect at Your First Visit</h2>
+      <p>Never been to us before? Here's exactly how your first appointment works, from message to mirror moment.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="w-ico">📲</div><h3>1. We Chat First</h3><p>Message us on WhatsApp with what you're thinking — a photo of your hair now and one of the look you love helps enormously. We'll give you honest first thoughts, no obligation.</p></div>
+      <div class="why-card"><div class="w-ico">🪑</div><h3>2. A Proper Consultation</h3><p>In the chair, we look at your hair's condition, texture and history before anything starts. Big colour changes sometimes take more than one visit, and we'll always explain the plan first.</p></div>
+      <div class="why-card"><div class="w-ico">✨</div><h3>3. The Transformation</h3><p>Then we get to work — cutting, colouring or styling with professional products and techniques chosen for your hair, checking in with you as we go so there are no surprises.</p></div>
+      <div class="why-card"><div class="w-ico">💡</div><h3>4. Styling Secrets Shared</h3><p>Before you leave, we'll show you how to recreate your finish at home and recommend a simple care routine — because great hair should last longer than the car ride home.</p></div>
+      <div class="why-card"><div class="w-ico">📅</div><h3>5. Your Maintenance Plan</h3><p>We'll suggest when to come back for roots, toners or trims to keep your look at its best — and there's never any pressure to book there and then.</p></div>
+      <div class="why-card"><div class="w-ico">⭐</div><h3>6. Join Our Happy Clients</h3><p>Our 4.8-star Google rating comes from clients across Redcar who return again and again. We'd love your first visit to be the start of the same story.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">Good to Know</p>
+      <h2>Frequently Asked Questions</h2>
+      <p>Anything else? Just message us on WhatsApp — we are happy to help.</p>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp — tap any WhatsApp button on this page and send us a message with what you'd like and when suits you. You can also book via Fresha or message us on Facebook.</p>
+      </details>
+      <details>
+        <summary>Where is Envy Salon?</summary>
+        <p>We are at 123b High Street, Redcar, North Yorkshire — right in the centre of town. Message us on WhatsApp if you need help finding us.</p>
+      </details>
+      <details>
+        <summary>How much will my appointment cost?</summary>
+        <p>Prices depend on your hair length and thickness and the service you choose, so we quote individually. Message us on WhatsApp describing what you'd like (a photo helps) and we will give you a clear price before you book.</p>
+      </details>
+      <details>
+        <summary>Do I need a patch test for colour?</summary>
+        <p>Patch tests are required for some colour services, especially if you are new to colour or haven't had it done with us before. Message us before booking colour and we will let you know what's needed.</p>
+      </details>
+      <details>
+        <summary>What is balayage, and is it right for me?</summary>
+        <p>Balayage is a hand-painted highlighting technique that creates soft, natural-looking brightness with a gentle grow-out — meaning fewer root appointments. It suits most hair types and lengths; we will happily advise during your consultation.</p>
+      </details>
+      <details>
+        <summary>Can you style hair for weddings and special occasions?</summary>
+        <p>Yes — we offer occasion styling including up-dos and polished waves for weddings, proms and parties. We recommend booking ahead for popular dates, and a trial appointment is a great idea for weddings.</p>
+      </details>
+      <details>
+        <summary>My hair is damaged. Can you help?</summary>
+        <p>Yes. Our conditioning and repair treatments are designed for dry, stressed or colour-treated hair, and we will always give you honest advice about what your hair can handle and how to get it back to its best.</p>
+      </details>
+      <details>
+        <summary>What are your opening hours?</summary>
+        <p>Opening hours can vary, so the best way to check today's availability is to message us on WhatsApp — we will let you know the latest appointment times.</p>
+      </details>
+      <details>
+        <summary>Can I get advice before committing to a big change?</summary>
+        <p>Absolutely. Send us a message (and a photo of your hair and your inspiration, if you like) and we will talk honestly about what's achievable, how many visits it may take and how to maintain it.</p>
+      </details>
+      <details>
+        <summary>How do I look after my colour between visits?</summary>
+        <p>Use gentle, colour-safe products, go easy on heat styling, and book toners or glossing treatments between colour appointments to keep your shade fresh. Ask us in the salon and we'll recommend a simple routine for your hair.</p>
+      </details>
+      <details>
+        <summary>Do you offer gift vouchers?</summary>
+        <p>A salon visit makes a lovely gift. Message us on WhatsApp and we will let you know the best way to treat someone to a cut, colour or styling appointment at Envy.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-kicker">Get in Touch</p>
+      <h2>Visit Envy Salon</h2>
+      <p>Ready for your best hair yet? Reach out today — we would love to hear from you.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="c-ico">💬</div>
+        <h3>WhatsApp Us</h3>
+        <p>The fastest way to book, ask about prices or get advice about your hair.</p>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/447843677419" target="_blank" rel="noopener">Message +44 7843 677419</a>
+      </div>
+      <div class="contact-card">
+        <div class="c-ico">📞</div>
+        <h3>Call Us</h3>
+        <p>Prefer to talk? Give us a call and we will help you find the right appointment.</p>
+        <a class="btn btn-gold btn-sm" href="tel:+447843677419">Call +44 7843 677419</a>
+      </div>
+      <div class="contact-card">
+        <div class="c-ico">📍</div>
+        <h3>Find Us</h3>
+        <p>Envy Salon<br>123b High Street<br>Redcar, North Yorkshire</p>
+        <a class="btn btn-gold btn-sm" href="https://wa.me/447843677419" target="_blank" rel="noopener">Ask for Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Envy Salon — Redcar</h4>
+        <p>A friendly hair salon on Redcar High Street offering cuts &amp; styling, colour, balayage, blow-dries, treatments and occasion hair — rated 4.8 stars from 47 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="foot-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Book</h4>
+        <ul class="foot-links">
+          <li><a href="https://wa.me/447843677419" target="_blank" rel="noopener">WhatsApp: +44 7843 677419</a></li>
+          <li><a href="tel:+447843677419">Call: +44 7843 677419</a></li>
+          <li>123b High Street, Redcar</li>
+          <li>Also on Fresha &amp; Facebook</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© Envy Salon, Redcar. Demo website — message us on WhatsApp to book your appointment.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447843677419" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
