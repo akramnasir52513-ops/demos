@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gentleman's Turkish Barber | Pocklington — Haircuts, Skin Fades, Hot Towel Shaves &amp; Beard Trims</title>
+<meta name="description" content="The Gentleman's Turkish Barber, 65 Market Street, Pocklington. Rated 4.6 from 89 Google reviews. Traditional Turkish barbering — haircuts, skin fades, hot towel shaves, beard trims and kids cuts. Book on WhatsApp.">
+<style>
+:root{
+  --burgundy:#4a1220;
+  --burgundy-deep:#330b16;
+  --burgundy-soft:#5e1a2b;
+  --cream:#f7efe1;
+  --cream-soft:#efe3cd;
+  --gold:#c9a227;
+  --gold-soft:#e3c766;
+  --ink:#241a12;
+  --muted:#6d5c48;
+  --card:#fffaf0;
+  --line:#e2d3b3;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--burgundy);text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.2;color:var(--burgundy-deep)}
+h2{font-size:2rem;margin-bottom:14px}
+h3{font-size:1.2rem;margin-bottom:8px}
+p{margin-bottom:14px}
+.eyebrow{display:inline-block;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;font-weight:bold;color:var(--gold);margin-bottom:10px}
+.btn{display:inline-block;padding:14px 26px;border-radius:4px;font-weight:bold;font-size:1rem;letter-spacing:.02em;transition:transform .2s ease,background .2s ease}
+.btn-wa{background:#1faa55;color:#fff}
+.btn-wa:hover{background:#178a45;transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--burgundy-deep)}
+.btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px)}
+.btn-outline{border:2px solid var(--cream);color:var(--cream);background:transparent}
+.btn-outline:hover{background:rgba(247,239,225,.12);transform:translateY(-2px)}
+/* Top strip */
+.topstrip{background:var(--burgundy-deep);color:var(--cream);text-align:center;padding:8px 14px;font-size:.85rem;letter-spacing:.04em}
+.topstrip strong{color:var(--gold-soft)}
+/* Header */
+header{background:var(--burgundy);border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:50}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;flex-wrap:wrap}
+.logo{color:var(--cream);font-size:1.25rem;font-weight:bold;line-height:1.15}
+.logo span{display:block;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-soft);font-weight:normal}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--cream);font-size:.92rem;letter-spacing:.03em}
+nav a:hover{color:var(--gold-soft)}
+/* Hero */
+.hero{background:var(--burgundy-deep);color:var(--cream);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:28px;padding:52px 0 60px;align-items:center}
+.hero h1{color:var(--cream);font-size:2.5rem;margin-bottom:16px}
+.hero h1 em{color:var(--gold-soft);font-style:normal}
+.hero p{color:#e9dcc2;font-size:1.08rem;max-width:560px}
+.hero-photo{border:3px solid var(--gold);border-radius:6px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;min-height:280px}
+.rating-card{background:var(--cream);color:var(--ink);border-radius:6px;padding:16px 20px;display:inline-flex;align-items:center;gap:16px;margin-top:8px;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.rating-card .stars{color:var(--gold);font-size:1.3rem;letter-spacing:.1em}
+.rating-card .score{font-size:1.9rem;font-weight:bold;color:var(--burgundy);line-height:1}
+.rating-card small{color:var(--muted)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+/* Trust strip */
+.trust{background:var(--gold);color:var(--burgundy-deep)}
+.trust-in{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;padding:14px 0;font-weight:bold;font-size:.95rem;text-align:center}
+.trust-in div{flex:1 1 150px}
+/* Sections */
+section{padding:64px 0}
+.alt{background:var(--cream-soft)}
+.dark{background:var(--burgundy);color:var(--cream)}
+.dark h2,.dark h3{color:var(--cream)}
+.dark p{color:#e9dcc2}
+.grid{display:grid;grid-template-columns:1fr;gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px;box-shadow:0 4px 14px rgba(74,18,32,.06)}
+.card img{border-radius:6px;margin-bottom:16px;width:100%;height:190px;object-fit:cover}
+.card .tag{display:inline-block;background:var(--burgundy);color:var(--cream);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:10px}
+.price-note{font-style:italic;color:var(--muted);font-size:.92rem;margin-bottom:0}
+.split{display:grid;grid-template-columns:1fr;gap:30px;align-items:center}
+.split img{border-radius:8px;border:3px solid var(--gold);width:100%;height:100%;object-fit:cover;min-height:260px}
+.checklist{list-style:none;margin:6px 0 16px}
+.checklist li{padding:7px 0 7px 30px;position:relative;border-bottom:1px dashed var(--line)}
+.checklist li::before{content:"✂";position:absolute;left:2px;color:var(--gold)}
+.checklist li:last-child{border-bottom:none}
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery figure{border-radius:8px;overflow:hidden;border:2px solid var(--gold)}
+.gallery img{width:100%;height:180px;object-fit:cover}
+.gallery figcaption{background:var(--burgundy-deep);color:var(--cream);font-size:.82rem;padding:8px 12px;text-align:center}
+/* Steps */
+.steps{display:grid;grid-template-columns:1fr;gap:20px;counter-reset:step}
+.step{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:8px;padding:24px}
+.step .num{font-size:2rem;font-weight:bold;color:var(--gold)}
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:12px;padding:0 22px}
+summary{cursor:pointer;font-weight:bold;color:var(--burgundy);padding:16px 0;font-size:1.02rem}
+details p{padding-bottom:16px;color:#4c3d2c}
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:22px}
+.contact-card{background:var(--burgundy-deep);color:var(--cream);border-radius:8px;padding:28px;border:1px solid var(--gold)}
+.contact-card h3{color:var(--gold-soft)}
+.contact-card p{color:#e9dcc2}
+.contact-card a{color:var(--gold-soft);font-weight:bold}
+/* Footer */
+footer{background:var(--burgundy-deep);color:#d9c9a4;padding:44px 0 28px;font-size:.92rem}
+footer h3{color:var(--cream);margin-bottom:10px}
+footer a{color:var(--gold-soft)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:26px;margin-bottom:26px}
+.copyright{border-top:1px solid rgba(201,162,39,.35);padding-top:16px;text-align:center;font-size:.82rem;color:#a8915f}
+/* Floating WhatsApp */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:99;background:#1faa55;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.wa-float:hover{background:#178a45}
+/* Animations — end at full opacity, content visible without JS */
+@keyframes riseIn{from{opacity:.35;transform:translateY(14px)}to{opacity:1;transform:none}}
+.rise{animation:riseIn .8s ease-out}
+@keyframes zoomSlow{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero-photo img{animation:zoomSlow 2.4s ease-out}
+@media (prefers-reduced-motion:reduce){
+  .rise,.hero-photo img{animation:none}
+  html{scroll-behavior:auto}
+}
+@media(min-width:720px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:repeat(3,1fr)}
+  .hero h1{font-size:3.1rem}
+  h2{font-size:2.3rem}
+}
+@media(min-width:1000px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div class="topstrip">★ Rated <strong>4.6 out of 5</strong> from <strong>89 Google reviews</strong> — 65 Market Street, Pocklington</div>
+
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="#top">The Gentleman's<span>Turkish Barber · Pocklington</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="rise">
+      <span class="eyebrow">Traditional Turkish Barbering</span>
+      <h1>Old-School Craft, <em>Gentleman's</em> Finish</h1>
+      <p>Welcome to The Gentleman's Turkish Barber on Market Street, Pocklington. Classic cuts, sharp skin fades, traditional hot towel shaves and precise beard work — done properly, in the Turkish tradition, right in the heart of town.</p>
+      <div class="rating-card">
+        <div class="score">4.6</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <small>from 89 Google reviews</small>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/447494516111" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+447494516111">Call 07494 516111</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80&auto=format&fit=crop" alt="Barber giving a traditional haircut with clippers">
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap trust-in">
+    <div>✂ Traditional Turkish Craft</div>
+    <div>★ 4.6 Rated · 89 Reviews</div>
+    <div>♨ Hot Towel Shaves</div>
+    <div>✆ Book by WhatsApp</div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">About the Shop</span>
+      <h2>A Proper Barber's, in the Heart of Pocklington</h2>
+      <p>The Gentleman's Turkish Barber sits at 65 Market Street in Pocklington, East Yorkshire — a traditional Turkish barber shop where the craft comes first. No rushing, no shortcuts: every cut is finished with care, every shave follows the classic hot towel ritual, and every customer leaves looking sharp.</p>
+      <p>Turkish barbering is famous across the world for its precision and its rituals — the hot towels, the cut-throat razor finish, the attention to the smallest detail around the edges. That is exactly what you get here, whether you are in for a full restyle, a tidy-up before the weekend, or bringing your lad in for his trim.</p>
+      <ul class="checklist">
+        <li>Traditional Turkish barbering techniques</li>
+        <li>Hot towel shaves with a cut-throat razor finish</li>
+        <li>Skin fades, classic cuts and beard sculpting</li>
+        <li>Kids' cuts in a relaxed, friendly shop</li>
+        <li>Easy booking by WhatsApp, Fresha or Facebook</li>
+      </ul>
+      <a class="btn btn-gold" href="https://wa.me/447494516111" target="_blank" rel="noopener">Message Us on WhatsApp</a>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=1200&q=80&auto=format&fit=crop" alt="Inside a traditional barber shop with classic chairs">
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">What We Do</span>
+    <h2>Services</h2>
+    <p>Every service is finished to the same standard — clean lines, blended properly, and checked from every angle before you leave the chair.</p>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200&q=80&auto=format&fit=crop" alt="Barber trimming a gentleman's haircut">
+        <span class="tag">Most Popular</span>
+        <h3>Gentleman's Haircut</h3>
+        <p>A proper haircut, tailored to you. Scissor work, clippers or a blend of both — shaped to your head, your hair type and how you actually wear it day to day. Finished with a razor tidy around the edges and styled before you go.</p>
+        <p class="price-note">Call or message for prices.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1200&q=80&auto=format&fit=crop" alt="Barber creating a sharp skin fade">
+        <span class="tag">Sharp &amp; Clean</span>
+        <h3>Skin Fades</h3>
+        <p>Low, mid or high — a skin fade blended seamlessly from skin to length with no steps and no harsh lines. The fade is built gradually and checked in the mirror from both sides, so it grows out cleanly too.</p>
+        <p class="price-note">Call or message for prices.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1200&q=80&auto=format&fit=crop" alt="Traditional hot towel shave in progress">
+        <span class="tag">The Ritual</span>
+        <h3>Hot Towel Shave</h3>
+        <p>The classic Turkish shave. Hot towels open the pores and soften the beard, a rich lather is worked in, and a cut-throat razor gives the closest, smoothest finish there is. Finished with a cool towel and soothing balm.</p>
+        <p class="price-note">Call or message for prices.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=1200&q=80&auto=format&fit=crop" alt="Barber shaping and trimming a beard">
+        <span class="tag">Detail Work</span>
+        <h3>Beard Trim &amp; Shape</h3>
+        <p>Length taken down evenly, shape restored, cheek and neck lines sharpened with the razor. Whether you keep it short and neat or long and full, your beard is balanced to your face and finished with care.</p>
+        <p class="price-note">Call or message for prices.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?w=1200&q=80&auto=format&fit=crop" alt="Traditional Turkish barber tools and razor">
+        <span class="tag">Traditional</span>
+        <h3>Traditional Turkish Services</h3>
+        <p>The full Turkish barber experience — the techniques and finishing touches the tradition is known for, from the hot towel ritual to the precise razor finishing around the ears, neckline and hairline.</p>
+        <p class="price-note">Call or message for prices.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?w=1200&q=80&auto=format&fit=crop" alt="Young gentleman having his hair cut">
+        <span class="tag">All Ages</span>
+        <h3>Kids' Cuts</h3>
+        <p>Patient, friendly cuts for younger gentlemen. The same care and attention as the adults' chair — tidy, smart cuts for school, holidays and family occasions, done at a pace that keeps them comfortable.</p>
+        <p class="price-note">Call or message for prices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="detail">
+  <div class="wrap">
+    <span class="eyebrow">In Detail</span>
+    <h2>The Turkish Barber Difference</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>The Hot Towel Ritual</h3>
+        <p>A hot towel is not just for show. It softens coarse beard hair, opens the pores and prepares the skin, so the razor glides instead of dragging. That is why a traditional Turkish shave feels closer and leaves skin calmer than a quick shave at home.</p>
+        <p>After the shave, a cool towel closes everything back down and a soothing balm leaves your skin refreshed — no burn, no tightness.</p>
+      </div>
+      <div class="card">
+        <h3>Fades That Grow Out Well</h3>
+        <p>Anyone can take the sides short. A well-built fade is blended in stages so there are no visible lines on the day — and no awkward step appearing a week later. We blend with the grain of your hair growth and check the blend under the shop lights from every angle.</p>
+        <p>Tell us how often you like to come in, and we will build the fade to suit your routine.</p>
+      </div>
+      <div class="card">
+        <h3>The Razor Finish</h3>
+        <p>It is the last two minutes that make a cut look finished: the hairline, around the ears and the back of the neck, all cleaned up with the cut-throat razor. It is a small detail you will notice every morning in the mirror until your next visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="dark">
+  <div class="wrap">
+    <span class="eyebrow">From the Chair</span>
+    <h2>Gallery</h2>
+    <p>Cuts, fades, shaves and the shop itself — a look at the craft at The Gentleman's Turkish Barber.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=1200&q=80&auto=format&fit=crop" alt="Barber at work in the shop">
+        <figcaption>In the chair</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?w=1200&q=80&auto=format&fit=crop" alt="Precision clipper work on a haircut">
+        <figcaption>Precision clipper work</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?w=1200&q=80&auto=format&fit=crop" alt="Barber styling a finished cut">
+        <figcaption>The finishing touches</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=1200&q=80&auto=format&fit=crop" alt="Classic barber chairs in a traditional shop">
+        <figcaption>Classic chairs</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?w=1200&q=80&auto=format&fit=crop" alt="Barber tools laid out ready for work">
+        <figcaption>Tools of the trade</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=1200&q=80&auto=format&fit=crop" alt="Beard being trimmed and shaped">
+        <figcaption>Beard shaping</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow">Why Choose Us</span>
+    <h2>Why Gentlemen Choose This Chair</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Rated 4.6 by Local Customers</h3>
+        <p>Our 4.6-star rating from 89 Google reviews has been earned one haircut at a time, by customers across Pocklington and the surrounding villages who come back — and bring their sons, brothers and dads with them.</p>
+      </div>
+      <div class="card">
+        <h3>Tradition, Done Properly</h3>
+        <p>Turkish barbering is a craft with centuries behind it. We keep the rituals that make it special — hot towels, razor finishes, unhurried precision — rather than cutting corners to get through the chair faster.</p>
+      </div>
+      <div class="card">
+        <h3>Honest, Straightforward Service</h3>
+        <p>No hard sell and no surprises. Message us on WhatsApp, tell us what you need, and we will sort your appointment. For prices, just call or message — we will tell you straight.</p>
+      </div>
+      <div class="card">
+        <h3>Right on Market Street</h3>
+        <p>You will find us at 65 Market Street in the centre of Pocklington — easy to reach whether you live in town or are coming in from Stamford Bridge, Market Weighton, Wilberfoss or the villages round about.</p>
+      </div>
+      <div class="card">
+        <h3>Every Age Welcome</h3>
+        <p>From a young lad's first proper haircut to a full traditional shave, the chair is open to everyone. Kids are looked after patiently, and gentlemen of every age get the same standard of work.</p>
+      </div>
+      <div class="card">
+        <h3>Book the Way That Suits You</h3>
+        <p>WhatsApp, Fresha or Facebook — book through whichever you already use. The quickest way is a WhatsApp message to <a href="https://wa.me/447494516111" target="_blank" rel="noopener">07494 516111</a> and we will confirm your slot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Booking</span>
+    <h2>In the Chair in Three Steps</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Message or Call</h3>
+        <p>Send us a WhatsApp message or call <a href="tel:+447494516111">07494 516111</a> and tell us what you would like — a cut, a fade, a shave, or the full works.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Confirm Your Slot</h3>
+        <p>We will confirm your appointment time with you. You can also book through Fresha or message the shop on Facebook if you prefer.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Sit Back &amp; Leave Sharp</h3>
+        <p>Find us at 65 Market Street, Pocklington. Take the chair, enjoy the ritual, and walk out looking your best.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="eyebrow">Good to Know</span>
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>How do I book an appointment?</summary>
+      <p>The quickest way is WhatsApp — message us on <a href="https://wa.me/447494516111" target="_blank" rel="noopener">07494 516111</a> and we will confirm your slot. You can also call the same number, book through Fresha, or message the shop on Facebook.</p>
+    </details>
+    <details>
+      <summary>Where are you in Pocklington?</summary>
+      <p>We are at 65 Market Street, Pocklington, East Yorkshire — right in the centre of town. If you are not sure where to find us, message us on WhatsApp and we will point you in the right direction.</p>
+    </details>
+    <details>
+      <summary>How much does a haircut cost?</summary>
+      <p>Prices depend on the service, so we do not list them here — call or message us on WhatsApp and we will tell you exactly what your cut, fade, shave or beard trim will cost before you book.</p>
+    </details>
+    <details>
+      <summary>What is a Turkish hot towel shave?</summary>
+      <p>It is the traditional way to shave: hot towels soften your beard and prepare your skin, a rich lather is applied, and a cut-throat razor gives an exceptionally close, smooth finish. A cool towel and soothing balm complete the ritual.</p>
+    </details>
+    <details>
+      <summary>Do you do skin fades?</summary>
+      <p>Yes — low, mid and high skin fades are one of our most popular services. Your fade is blended in stages with no harsh lines, and built to grow out cleanly between visits.</p>
+    </details>
+    <details>
+      <summary>Do you cut children's hair?</summary>
+      <p>Yes, we offer kids' cuts in a relaxed, friendly environment. Young gentlemen get the same care and attention as everyone else in the chair.</p>
+    </details>
+    <details>
+      <summary>Can you shape and trim my beard?</summary>
+      <p>Of course. Beard trims and shaping include evening out the length, restoring the shape and sharpening the cheek and neck lines with the razor for a clean finish.</p>
+    </details>
+    <details>
+      <summary>What are your opening hours?</summary>
+      <p>Hours can vary, so rather than risk giving you the wrong information here, please message or call us on <a href="tel:+447494516111">07494 516111</a> and we will confirm today's availability and find you a slot.</p>
+    </details>
+    <details>
+      <summary>Do I need an appointment, or can I just turn up?</summary>
+      <p>Booking ahead on WhatsApp is the surest way to get the time you want. If you are passing Market Street, you are welcome to call in — and a quick message before you set off means we can tell you how the day is looking.</p>
+    </details>
+    <details>
+      <summary>How long does an appointment take?</summary>
+      <p>It depends on the service — a tidy-up is quicker than a full restyle or the complete works of cut, shave and beard. When you message to book, tell us what you would like and we will let you know how long to allow, so you are never rushed in the chair.</p>
+    </details>
+    <details>
+      <summary>I am not sure what style suits me — can you advise?</summary>
+      <p>Absolutely — that is part of the job. Tell us what you have in mind, or bring a photograph, and we will talk honestly about what will work with your hair type, growth pattern and how much styling time you have in the morning. We would rather get it right together than simply cut what was asked and have it not suit you.</p>
+    </details>
+    <details>
+      <summary>Is the hot towel shave suitable for sensitive skin?</summary>
+      <p>For many men it is actually the kindest way to shave: the hot towels soften the beard thoroughly, a single razor pass replaces several strokes of a multi-blade razor, and the cool towel and balm at the end calm the skin. Mention any sensitivity when you book and we will take extra care.</p>
+    </details>
+    <details>
+      <summary>Can I book for a group — for example before a wedding?</summary>
+      <p>Yes — grooms and groups are very welcome. Message us on WhatsApp with the date and how many gentlemen need looking after, and we will plan the appointments so everyone is finished in good time for the day.</p>
+    </details>
+  </div>
+</section>
+
+<section id="heritage" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">The Tradition</span>
+    <h2>Why Turkish Barbering?</h2>
+    <p>Barbering in Turkey is one of the oldest crafts in daily life — for centuries, the barber's shop has been a place where a gentleman is properly looked after, not simply trimmed. The tradition built its reputation on three things: patience, precision, and ritual.</p>
+    <p><strong>Patience</strong>, because a proper cut cannot be hurried — the blend is checked, the shape is balanced, and the customer does not leave until it is right. <strong>Precision</strong>, because the tools of the trade — the cut-throat razor above all — reward a steady, practised hand and punish a careless one. And <strong>ritual</strong>, because the hot towels, the lather and the finishing touches turn a necessity into an experience worth repeating.</p>
+    <p>That is the standard we hold ourselves to at 65 Market Street, Pocklington: a traditional service, done the traditional way, for the gentlemen of this town and the villages around it. If you have never tried it, your first hot towel shave will explain everything words cannot.</p>
+    <p style="margin-bottom:0"><a class="btn btn-gold" href="https://wa.me/447494516111" target="_blank" rel="noopener">Experience It — Book on WhatsApp</a></p>
+  </div>
+</section>
+
+<section id="fullworks" class="dark">
+  <div class="wrap">
+    <span class="eyebrow">The Complete Service</span>
+    <h2>The Full Works</h2>
+    <p>For gentlemen who want the complete traditional experience in one visit, combine the services into a single appointment: a tailored haircut or skin fade, the full hot towel shave ritual, and a beard trim and shape to finish. It is the appointment to book before a wedding, a big occasion, or simply when you want to walk out feeling completely put together.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">✂</div>
+        <h3 style="color:var(--burgundy-deep)">The Cut</h3>
+        <p style="color:#4c3d2c">Your haircut or fade, built and blended exactly how you like it, with the razor finish around the edges.</p>
+      </div>
+      <div class="step">
+        <div class="num">♨</div>
+        <h3 style="color:var(--burgundy-deep)">The Shave</h3>
+        <p style="color:#4c3d2c">Hot towels, rich lather and the cut-throat razor — the closest shave there is, finished with a cool towel and balm.</p>
+      </div>
+      <div class="step">
+        <div class="num">★</div>
+        <h3 style="color:var(--burgundy-deep)">The Beard</h3>
+        <p style="color:#4c3d2c">Beard trimmed, shaped and lined up to complete the look — balanced to your face and finished with care.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px;margin-bottom:0">To book the full works, just say so in your WhatsApp message and we will allow the time it deserves. <a href="https://wa.me/447494516111" target="_blank" rel="noopener" style="color:var(--gold-soft);font-weight:bold">Message 07494 516111</a>.</p>
+  </div>
+</section>
+
+<section id="styles">
+  <div class="wrap">
+    <span class="eyebrow">Popular Styles</span>
+    <h2>Styles We Are Asked For Every Week</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>The Classic Short Back &amp; Sides</h3>
+        <p>Timeless, smart and easy to live with. Tapered neatly around the back and sides with enough length on top to part or sweep — the cut that suits the office, the weekend and everything in between.</p>
+      </div>
+      <div class="card">
+        <h3>The Mid Skin Fade</h3>
+        <p>The modern favourite. Blended from skin at the mid-point of the head up into your chosen length on top — sharp enough to look deliberate, soft enough to grow out gracefully.</p>
+      </div>
+      <div class="card">
+        <h3>The Textured Crop</h3>
+        <p>Short, forward-worn texture on top with a clean fade or taper below. Low maintenance in the morning, and it works particularly well for thicker hair that needs its weight managed.</p>
+      </div>
+      <div class="card">
+        <h3>The Scissor Cut</h3>
+        <p>For gentlemen who prefer a softer, more natural finish — all scissor work, shaped rather than clipped, with a gentle taper at the edges. Grows out the most forgivingly of any style.</p>
+      </div>
+      <div class="card">
+        <h3>The Slick Back</h3>
+        <p>Length kept on top and swept back with a tapered or faded finish underneath. A confident, classic look that pairs perfectly with a well-shaped beard.</p>
+      </div>
+      <div class="card">
+        <h3>The Young Gentleman's Trim</h3>
+        <p>Smart, tidy cuts for younger customers — neat around the edges, comfortable in the chair, and school-ready. First haircuts are handled patiently, at their pace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aftercare" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Aftercare</span>
+    <h2>After Your Appointment</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>After a Hot Towel Shave</h3>
+        <p>Your skin has had a close shave, so treat it gently for the rest of the day: splash with cool water, pat dry rather than rubbing, and use a gentle, alcohol-free balm if you have one. Avoid heavy fragrances on the shaved area that day, and give your skin a day's rest before shaving again at home.</p>
+      </div>
+      <div class="card">
+        <h3>After a Skin Fade</h3>
+        <p>A fresh fade can make your scalp a little sun-sensitive for the first day or two — worth remembering in summer. Keep the hair clean, avoid scratching the freshly clipped areas, and your skin will settle quickly. If you notice the edges softening sooner than you would like, book your tidy-up a few days earlier next time.</p>
+      </div>
+      <div class="card">
+        <h3>When to Book Again</h3>
+        <p>Most of our regulars settle into a rhythm: fade customers every two to three weeks, classic cuts every four to six, and beard shaping roughly monthly. Once you have found your rhythm, booking the next appointment before you leave — or with a quick WhatsApp message — keeps you ahead of the untidy stage entirely.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="glossary">
+  <div class="wrap">
+    <span class="eyebrow">Barber Glossary</span>
+    <h2>Words You Will Hear in the Chair</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Fade</h3>
+        <p>A cut where the hair gradually shortens from the top of the sides down towards the skin, with no visible line between the lengths. A "skin fade" takes the shortest part right down to the skin.</p>
+      </div>
+      <div class="card">
+        <h3>Taper</h3>
+        <p>A gentler version of a fade — the hair shortens gradually around the neckline and sideburns while keeping more length overall. The classic, understated finish.</p>
+      </div>
+      <div class="card">
+        <h3>Cut-Throat Razor</h3>
+        <p>The traditional straight razor used for hot towel shaves and for cleaning up hairlines and edges. In trained hands it gives the closest finish of any blade.</p>
+      </div>
+      <div class="card">
+        <h3>Grade</h3>
+        <p>The clipper guard number that sets the length: the lower the grade, the shorter the cut. If you know your grade from a previous cut, tell us — it helps us match it exactly.</p>
+      </div>
+      <div class="card">
+        <h3>Line-Up</h3>
+        <p>Sharpening the natural edges of the haircut — the hairline, temples and around the ears — with the razor, so the whole cut looks crisp and finished.</p>
+      </div>
+      <div class="card">
+        <h3>Hot Towel</h3>
+        <p>A towel heated and placed over the face before a shave. It softens the beard and opens the pores, making the shave closer and kinder to the skin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap split">
+    <div>
+      <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=1200&q=80&auto=format&fit=crop" alt="Gentleman relaxing during a barber service">
+    </div>
+    <div>
+      <span class="eyebrow">Your First Visit</span>
+      <h2>What to Expect in the Chair</h2>
+      <p>Never had a traditional Turkish barber experience before? Here is how a visit usually goes at The Gentleman's Turkish Barber.</p>
+      <p><strong>The consultation.</strong> Before a blade or clipper comes out, we talk through what you want — bring a photo if you have one, or just describe it, and we will tell you honestly what will work with your hair type and head shape.</p>
+      <p><strong>The cut.</strong> Your barber builds the cut in stages, checking the shape as it develops. If you have booked a shave, the hot towels go on first so the ritual starts the moment you sit back.</p>
+      <p><strong>The finish.</strong> Every service ends the traditional way — razor tidy around the edges, a check of the blend and shape in the mirror, and styling so you can see the finished result before you leave.</p>
+      <p><strong>Looking after it.</strong> Before you go, we will happily talk you through keeping the cut looking right at home — how often to come back, and what to ask for next time.</p>
+      <a class="btn btn-wa" href="https://wa.me/447494516111" target="_blank" rel="noopener">Book Your First Visit</a>
+    </div>
+  </div>
+</section>
+
+<section id="guide" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Grooming Guide</span>
+    <h2>Keeping Sharp Between Visits</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>How Often Should You Come In?</h3>
+        <p>A skin fade looks its best for around two to three weeks before the blend starts to soften. A classic scissor cut holds its shape longer — usually four to six weeks. If you are growing your hair out, regular tidy-ups keep it looking intentional rather than untidy while it grows.</p>
+        <p>Beards benefit from a professional shape every few weeks, even if you trim at home in between — the lines around the cheeks and neck are what keep a beard looking deliberate.</p>
+      </div>
+      <div class="card">
+        <h3>Looking After a Fade at Home</h3>
+        <p>Wash your hair regularly but avoid stripping it with very hot water, which dries the scalp. A small amount of product worked through dry hair gives a fade texture without weight. If the edges start to look untidy before your next appointment, resist tidying them yourself — a two-minute razor finish in the shop keeps the lines exactly where they belong.</p>
+      </div>
+      <div class="card">
+        <h3>Beard Care Basics</h3>
+        <p>Rinse your beard daily and wash it properly a few times a week — ordinary shampoo can be harsh, so be gentle. Comb it through after washing to train the direction of growth, and trim stray hairs rather than cutting into the shape. Dry skin underneath is the most common cause of itch; keeping the skin clean and moisturised makes a real difference.</p>
+      </div>
+      <div class="card">
+        <h3>Shaving at Home, the Barber's Way</h3>
+        <p>The hot towel ritual works at home too: shave after a warm shower, or hold a warm, damp towel against your face for a minute first. Use short strokes, rinse the blade often, and finish with cold water and a gentle balm. Your skin will notice the difference straight away.</p>
+      </div>
+      <div class="card">
+        <h3>Choosing Your Next Style</h3>
+        <p>Thinking of a change? The best styles work with your natural hair — its thickness, its growth pattern and how much time you want to spend on it each morning. Bring your ideas to your appointment and we will talk through what will genuinely suit you before anything is cut.</p>
+      </div>
+      <div class="card">
+        <h3>Special Occasions</h3>
+        <p>Weddings, job interviews, family photographs, a big night out — a fresh cut and a proper hot towel shave is the finishing touch. Book a few days ahead of the occasion so your cut has settled in and looks completely natural on the day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <span class="eyebrow">Serving the Area</span>
+    <h2>Pocklington's Turkish Barber</h2>
+    <p>The Gentleman's Turkish Barber is proud to serve Pocklington and the surrounding East Yorkshire villages. You will find us at 65 Market Street — a short trip if you are coming in from:</p>
+    <div class="grid">
+      <div class="card">
+        <h3>In &amp; Around Pocklington</h3>
+        <p>Pocklington itself, plus Allerthorpe, Barmby Moor, Wilberfoss, Newton upon Derwent and Sutton upon Derwent — all just a few minutes from Market Street.</p>
+      </div>
+      <div class="card">
+        <h3>From the West</h3>
+        <p>Stamford Bridge, Dunnington, Kexby and the villages along the A1079 heading towards York regularly make the trip in for a proper Turkish barber service.</p>
+      </div>
+      <div class="card">
+        <h3>From the East &amp; the Wolds</h3>
+        <p>Market Weighton, Hayton, Burnby, Nunburnholme, Londesborough and the Wolds villages — traditional barbering is worth the short drive into town.</p>
+      </div>
+    </div>
+    <p style="margin-top:18px">Wherever you are coming from, a quick WhatsApp message before you set off means your chair can be ready when you arrive. Message us on <a href="https://wa.me/447494516111" target="_blank" rel="noopener">07494 516111</a>.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap contact-grid">
+    <div class="contact-card">
+      <h3>Visit the Shop</h3>
+      <p><strong>The Gentleman's Turkish Barber</strong><br>
+      65 Market Street<br>
+      Pocklington, East Yorkshire</p>
+      <p>Rated ★ 4.6 from 89 Google reviews.</p>
+    </div>
+    <div class="contact-card">
+      <h3>Book Your Chair</h3>
+      <p>WhatsApp: <a href="https://wa.me/447494516111" target="_blank" rel="noopener">07494 516111</a><br>
+      Call: <a href="tel:+447494516111">07494 516111</a></p>
+      <p>You can also book through Fresha or message us on Facebook.</p>
+      <p style="margin-bottom:0"><a class="btn btn-wa" href="https://wa.me/447494516111" target="_blank" rel="noopener">Book on WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>The Gentleman's Turkish Barber</h3>
+        <p>Traditional Turkish barbering on Market Street, Pocklington — haircuts, skin fades, hot towel shaves, beard trims and kids' cuts.</p>
+      </div>
+      <div>
+        <h3>Find Us</h3>
+        <p>65 Market Street<br>Pocklington<br>East Yorkshire</p>
+      </div>
+      <div>
+        <h3>Get in Touch</h3>
+        <p>WhatsApp / Call: <a href="tel:+447494516111">07494 516111</a><br>
+        Book via Fresha or Facebook</p>
+      </div>
+    </div>
+    <div class="copyright">© The Gentleman's Turkish Barber, Pocklington. Rated 4.6 ★ from 89 Google reviews.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447494516111" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">✆</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
