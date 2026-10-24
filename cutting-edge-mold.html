@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cutting Edge | Barber Shop in Mold, Flintshire — Fades, Beard Trims & Hot Towel Shaves</title>
+<meta name="description" content="Cutting Edge is a barber shop in Mold, Flintshire, rated 4.7 stars from 59 Google reviews. Skin fades, classic cuts, beard trims and hot towel shaves at Unit 1, Daniel Owen Shopping Centre, Mold CH7 1AP. Message on WhatsApp to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a1128;
+  --ink2:#101b3c;
+  --paper:#f6f8fb;
+  --paper2:#e9eef6;
+  --blue:#2f7bff;
+  --blue-dark:#1b5fd6;
+  --cyan:#53c8ff;
+  --line:#d5dce8;
+  --grey:#4a5568;
+  --wa:#25d366;
+  --wa-dark:#1eb857;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+h1,h2,h3,.cond{font-family:'Barlow Condensed','Barlow',sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.08}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:16px;padding:14px 26px;border:2px solid var(--ink);transition:transform .18s ease,background .18s ease,color .18s ease;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.btn-wa{background:var(--wa);border-color:#128c4a;color:#062b16}
+.btn-wa:hover{background:var(--wa-dark);transform:translateY(-2px)}
+.btn-call{background:var(--ink);color:#fff}
+.btn-call:hover{background:var(--blue-dark);border-color:var(--blue-dark);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-light:hover{background:var(--cyan);border-color:var(--cyan);transform:translateY(-2px)}
+
+/* top strip */
+.topstrip{background:var(--ink);color:#dbe6ff;font-size:14px;font-weight:600}
+.topstrip .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+.topstrip .stars{color:#ffc531;letter-spacing:2px}
+.topstrip a{color:#fff;border-bottom:1px dotted var(--cyan)}
+
+/* header */
+header.site{position:sticky;top:0;z-index:60;background:rgba(246,248,251,.96);border-bottom:3px solid var(--ink)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:12px;padding-bottom:12px}
+.logo{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.logo .mark{width:46px;height:46px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed';font-weight:700;font-size:24px;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+.logo .name{font-family:'Barlow Condensed';font-weight:700;font-size:27px;text-transform:uppercase;line-height:1}
+.logo .sub{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--blue-dark)}
+nav.main{display:none;gap:26px;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:.06em}
+nav.main a{color:var(--ink);padding:4px 0;border-bottom:3px solid transparent}
+nav.main a:hover{border-color:var(--blue)}
+.head-cta{display:flex;gap:10px}
+.head-cta .btn{padding:10px 18px;font-size:14px}
+@media(min-width:900px){nav.main{display:flex}}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--ink) 0%,var(--ink2) 62%,#16295c 100%);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:44px;background:var(--paper);clip-path:polygon(0 100%,100% 100%,100% 0)}
+.hero .wrap{display:grid;gap:34px;padding-top:52px;padding-bottom:84px;position:relative;z-index:1}
+@media(min-width:920px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+.hero .kicker{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:13px;letter-spacing:.22em;text-transform:uppercase;padding:7px 14px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.hero h1{font-size:56px;font-weight:700;margin:18px 0 6px}
+.hero h1 .thin{color:var(--cyan)}
+.hero .town{font-family:'Barlow Condensed';font-size:24px;text-transform:uppercase;letter-spacing:.14em;color:#bcd2ff}
+.hero p.lede{font-size:19px;color:#d7e3ff;max-width:34em;margin:16px 0 24px}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero .rate-card{margin-top:28px;display:inline-flex;align-items:center;gap:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.25);padding:14px 20px}
+.hero .rate-card .big{font-family:'Barlow Condensed';font-size:42px;font-weight:700;line-height:1}
+.hero .rate-card .stars{color:#ffc531;font-size:19px;letter-spacing:3px}
+.hero .rate-card .small{font-size:14px;color:#c9d9ff}
+.hero figure{position:relative}
+.hero figure img{width:100%;height:100%;min-height:300px;object-fit:cover;clip-path:polygon(0 0,100% 0,100% calc(100% - 34px),calc(100% - 34px) 100%,0 100%);border:4px solid rgba(255,255,255,.15)}
+.hero .badge{position:absolute;left:14px;bottom:20px;background:var(--blue);color:#fff;font-weight:700;padding:10px 16px;font-size:15px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+/* marquee */
+.marquee{background:var(--blue);color:#fff;overflow:hidden;padding:11px 0;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.marquee .track{display:flex;gap:0;width:max-content;animation:slide 26s linear infinite;font-family:'Barlow Condensed';font-weight:600;font-size:20px;text-transform:uppercase;letter-spacing:.12em;white-space:nowrap}
+.marquee span{padding:0 18px}
+.marquee b{color:#ffe08a}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* sections */
+section.block{padding:64px 0}
+section.alt{background:var(--paper2)}
+section.dark{background:var(--ink);color:#e7eeff}
+.sec-head{max-width:720px;margin-bottom:34px}
+.sec-head .tag{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue-dark);border:2px solid var(--blue);padding:5px 12px;margin-bottom:14px}
+section.dark .sec-head .tag{color:var(--cyan);border-color:var(--cyan)}
+.sec-head h2{font-size:42px;font-weight:700}
+.sec-head p{color:var(--grey);margin-top:10px;font-size:18px}
+section.dark .sec-head p{color:#b9ccf5}
+
+/* about */
+.about-grid{display:grid;gap:30px}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.about-grid p{margin-bottom:14px;color:#2c3644}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-photos img{width:100%;height:250px;object-fit:cover}
+.about-photos img.tall{height:514px;grid-row:span 2}
+.checks{list-style:none;margin-top:8px;display:grid;gap:10px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
+.checks .tick{flex:0 0 auto;width:26px;height:26px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%)}
+
+/* services */
+.svc-grid{display:grid;gap:18px}
+@media(min-width:680px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+.svc{background:#fff;border:2px solid var(--ink);padding:24px 20px;transition:transform .18s ease,box-shadow .18s ease}
+.svc:hover{transform:translateY(-5px);box-shadow:8px 8px 0 var(--blue)}
+.svc .num{font-family:'Barlow Condensed';font-weight:700;font-size:15px;color:var(--blue-dark);letter-spacing:.2em}
+.svc h3{font-size:25px;font-weight:600;margin:6px 0 8px}
+.svc p{font-size:15.5px;color:var(--grey)}
+.svc .price-note{margin-top:12px;font-weight:700;font-size:14px;color:var(--ink);text-transform:uppercase;letter-spacing:.05em}
+.svc-tiles{display:grid;gap:14px;margin-top:18px}
+@media(min-width:680px){.svc-tiles{grid-template-columns:repeat(4,1fr)}}
+.svc-tiles figure{position:relative}
+.svc-tiles img{width:100%;height:190px;object-fit:cover}
+.svc-tiles figcaption{position:absolute;left:0;right:0;bottom:0;background:rgba(10,17,40,.85);color:#fff;font-family:'Barlow Condensed';text-transform:uppercase;letter-spacing:.1em;font-size:16px;padding:8px 12px}
+
+/* why */
+.why-grid{display:grid;gap:18px}
+@media(min-width:820px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.22);padding:24px 20px}
+.why .ic{font-size:30px}
+.why h3{font-size:23px;margin:10px 0 6px;color:#fff}
+.why p{font-size:15.5px;color:#b9ccf5}
+
+/* steps */
+.steps{display:grid;gap:18px;counter-reset:step}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:2px solid var(--ink);padding:26px 22px;position:relative}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:'Barlow Condensed';font-weight:700;font-size:44px;color:var(--paper2);position:absolute;top:8px;right:16px}
+.step h3{font-size:24px;margin-bottom:8px}
+.step p{color:var(--grey);font-size:16px}
+
+/* gallery */
+.gal{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media(min-width:820px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal img{width:100%;height:230px;object-fit:cover;transition:transform .25s ease}
+.gal figure{overflow:hidden;border:3px solid var(--ink)}
+.gal figure:hover img{transform:scale(1.05)}
+
+/* rating band */
+.rateband{background:var(--blue);color:#fff;text-align:center;padding:44px 20px;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.rateband .big{font-family:'Barlow Condensed';font-size:64px;font-weight:700;line-height:1}
+.rateband .stars{color:#ffe08a;font-size:26px;letter-spacing:6px;margin:6px 0}
+.rateband p{font-size:18px;font-weight:600}
+
+/* faq */
+.faq-list{display:grid;gap:12px;max-width:840px}
+details.faq{background:#fff;border:2px solid var(--ink);padding:0}
+details.faq summary{cursor:pointer;font-family:'Barlow Condensed';font-weight:600;font-size:21px;text-transform:uppercase;letter-spacing:.03em;padding:16px 20px;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";font-size:28px;color:var(--blue-dark);font-weight:700}
+details.faq[open ] summary::after{content:"–"}
+details.faq .a{padding:0 20px 18px;color:var(--grey);font-size:16px}
+details.faq .a a{color:var(--blue-dark);font-weight:700;border-bottom:1px dotted var(--blue)}
+
+/* visit */
+.visit-grid{display:grid;gap:26px}
+@media(min-width:920px){.visit-grid{grid-template-columns:1.1fr .9fr}}
+.visit-card{background:#fff;border:2px solid var(--ink);padding:28px 24px;box-shadow:10px 10px 0 var(--paper2)}
+.visit-card h3{font-size:27px;margin-bottom:12px}
+.visit-card p{color:var(--grey);margin-bottom:12px}
+.visit-card .addr{font-size:19px;font-weight:700;color:var(--ink)}
+.visit-card .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.visit-side img{width:100%;height:100%;min-height:280px;object-fit:cover;border:3px solid var(--ink)}
+
+/* footer */
+footer.site{background:var(--ink);color:#aebfe8;padding:46px 0 30px}
+footer.site .cols{display:grid;gap:26px}
+@media(min-width:820px){footer.site .cols{grid-template-columns:1.3fr 1fr 1fr}}
+footer.site h4{font-family:'Barlow Condensed';color:#fff;text-transform:uppercase;font-size:21px;letter-spacing:.06em;margin-bottom:10px}
+footer.site a{color:#dbe6ff;border-bottom:1px dotted var(--cyan)}
+footer.site ul{list-style:none;display:grid;gap:7px;font-size:15.5px}
+footer.site .fine{border-top:1px solid rgba(255,255,255,.18);margin-top:30px;padding-top:18px;font-size:13.5px;color:#8498c4;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.3);animation:pulse 2.4s ease-in-out infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+@media (prefers-reduced-motion: reduce){
+  .marquee .track,.hero .badge,.wa-float{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span><span class="stars">★★★★★</span> Rated 4.7 from 59 Google reviews</span>
+    <span>Unit 1, Daniel Owen Shopping Centre, Mold CH7 1AP</span>
+    <span>WhatsApp: <a href="https://wa.me/447865053096">07865 053096</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Cutting Edge Mold home">
+      <span class="mark">CE</span>
+      <span><span class="name">Cutting Edge</span><br><span class="sub">Barber Shop · Mold</span></span>
+    </a>
+    <nav class="main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <div class="head-cta">
+      <a class="btn btn-wa" href="https://wa.me/447865053096">WhatsApp Us</a>
+      <a class="btn btn-call" href="tel:+447865053096">Call</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Barber Shop · Mold, Flintshire</span>
+      <h1>Cutting <span class="thin">Edge</span></h1>
+      <div class="town">Sharp cuts. Clean fades. No fuss.</div>
+      <p class="lede">Cutting Edge is a barber shop in the Daniel Owen Shopping Centre in the heart of Mold. Walk in for a tidy classic cut, a skin fade done properly, a beard trim shaped with care, or a traditional hot towel shave — and walk out looking sharp.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/447865053096">Book on WhatsApp</a>
+        <a class="btn btn-light" href="tel:+447865053096">Call 07865 053096</a>
+        <a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="#services">See Services</a>
+      </div>
+      <div class="rate-card">
+        <span class="big">4.7</span>
+        <span><span class="stars">★★★★★</span><br><span class="small">Average rating from 59 Google reviews</span></span>
+      </div>
+    </div>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a customer a precision haircut at Cutting Edge in Mold">
+      <span class="badge">Now welcoming new customers</span>
+    </figure>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Skin Fades <b>✂</b></span><span>Classic Cuts <b>✂</b></span><span>Beard Trims <b>✂</b></span><span>Hot Towel Shaves <b>✂</b></span><span>Kids Cuts <b>✂</b></span><span>Mold, Flintshire <b>✂</b></span>
+    <span>Skin Fades <b>✂</b></span><span>Classic Cuts <b>✂</b></span><span>Beard Trims <b>✂</b></span><span>Hot Towel Shaves <b>✂</b></span><span>Kids Cuts <b>✂</b></span><span>Mold, Flintshire <b>✂</b></span>
+  </div>
+</div>
+
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="sec-head" style="margin-bottom:18px">
+          <span class="tag">About the shop</span>
+          <h2>A proper local barber in the centre of Mold</h2>
+        </div>
+        <p>Cutting Edge sits inside the Daniel Owen Shopping Centre on Daniel Owen Square — easy to find, easy to reach, and right in the middle of Mold town centre. It is the kind of barber shop where the focus stays on the craft: a careful consultation, a cut that suits your head and your hair, and a finish you can style yourself at home.</p>
+        <p>Customers rate the shop 4.7 stars from 59 Google reviews, and the chair is open to everyone — regulars who have been coming for years, lads in for a tidy-up before the weekend, dads bringing the kids, and visitors passing through Flintshire who need a sharpener.</p>
+        <p>Whether you know exactly what you want or you would rather talk it through first, you will get honest advice and a cut that is done with patience rather than rushed. Bring a photo of the style you are after, or just describe it — either way works.</p>
+        <p>The Daniel Owen Shopping Centre location makes the shop an easy stop to build into a day in Mold — combine your cut with the market, the shops or the school run, and book ahead on WhatsApp so your time in the chair is reserved and waiting for you when you arrive.</p>
+        <ul class="checks">
+          <li><span class="tick">✓</span> Town-centre location inside the Daniel Owen Shopping Centre</li>
+          <li><span class="tick">✓</span> Rated 4.7 stars from 59 Google reviews</li>
+          <li><span class="tick">✓</span> Fades, classic cuts, beard work and hot towel shaves</li>
+          <li><span class="tick">✓</span> Kids cuts in a relaxed, friendly chair</li>
+          <li><span class="tick">✓</span> Book in seconds on WhatsApp — no apps, no accounts</li>
+          <li><span class="tick">✓</span> Straightforward advice on styles and upkeep</li>
+        </ul>
+      </div>
+      <div class="about-photos">
+        <img class="tall" src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1000&auto=format&fit=crop" alt="Inside a traditional barber shop with chairs and mirrors">
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?q=80&w=1000&auto=format&fit=crop" alt="Barber shop interior with styling stations">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1000&auto=format&fit=crop" alt="Barber clippers and tools laid out ready for work">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">What we do</span>
+      <h2>Services at Cutting Edge</h2>
+      <p>Every service starts with a quick chat about what you want and ends with a proper finish. For prices on any service, just call or message — prices are confirmed before any work begins, so there are never surprises at the till.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="num">Service 01</div>
+        <h3>Skin Fades</h3>
+        <p>Low, mid or high — a fade blended seamlessly into the top, with the edges cleaned up sharp. Tell us how tight you like it and how you wear the top, and the blend is built around that.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+      <div class="svc">
+        <div class="num">Service 02</div>
+        <h3>Classic Haircuts</h3>
+        <p>Timeless scissor cuts and tidy clipper work for a smart, natural look. Ideal if you want something clean for work, an event, or simply to feel like yourself again — finished and styled before you leave.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+      <div class="svc">
+        <div class="num">Service 03</div>
+        <h3>Beard Trims &amp; Shaping</h3>
+        <p>Length taken down evenly, lines shaped clean on the cheeks and neck, and the whole beard balanced to your face. A tidy beard changes the whole look — this is the service that does it properly.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+      <div class="svc">
+        <div class="num">Service 04</div>
+        <h3>Hot Towel Shaves</h3>
+        <p>The traditional wet shave: hot towels to soften the beard, a rich lather, a close straight-razor finish and a cool-down to finish. The closest, smoothest shave you can get — and a proper bit of downtime too.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+      <div class="svc">
+        <div class="num">Service 05</div>
+        <h3>Kids Cuts</h3>
+        <p>Patient, friendly haircuts for younger customers, from first cuts to school-ready tidies. Parents are welcome to stay close by, and there is no rushing — the cut takes the time it takes.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+      <div class="svc">
+        <div class="num">Service 06</div>
+        <h3>Restyles &amp; Advice</h3>
+        <p>Fancy a change? Book in for a proper consultation and restyle. We will talk through what suits your hair type, face shape and daily routine, so the new style still works on day ten, not just day one.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+      <div class="svc">
+        <div class="num">Service 07</div>
+        <h3>Buzz Cuts &amp; Clip-Backs</h3>
+        <p>One grade all over or a simple clip-back tidy between full cuts. Quick, even and clean — a good option if you like to keep things short and low-maintenance all year round.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+      <div class="svc">
+        <div class="num">Service 08</div>
+        <h3>Cut &amp; Beard Combo</h3>
+        <p>The full works in one visit: haircut plus beard trim and shaping together, so everything is balanced in one sitting. The most popular way to leave the shop looking completely sorted.</p>
+        <div class="price-note">Call or message for prices</div>
+      </div>
+    </div>
+    <div class="svc-tiles">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=900&auto=format&fit=crop" alt="Barber trimming a beard with clippers">
+        <figcaption>Beard work</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=900&auto=format&fit=crop" alt="Barber styling a customer's hair">
+        <figcaption>Styling &amp; finish</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=900&auto=format&fit=crop" alt="Barber at work with scissors and comb">
+        <figcaption>Scissor cuts</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=900&auto=format&fit=crop" alt="Barber tools of the trade on a worktop">
+        <figcaption>Tools of the trade</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Why Cutting Edge</span>
+      <h2>Why customers choose the chair here</h2>
+      <p>A haircut is a small thing that makes a big difference. Here is what the shop focuses on, every single appointment.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <div class="ic">✂️</div>
+        <h3>Care over speed</h3>
+        <p>The cut is finished when it is right, not when the clock says so. Blends are checked from every angle and edges are cleaned properly before the cape comes off.</p>
+      </div>
+      <div class="why">
+        <div class="ic">💬</div>
+        <h3>Honest advice</h3>
+        <p>If a style will not suit your hair or will be hard work to keep up, you will be told straight — and shown an alternative that gives you the look without the hassle.</p>
+      </div>
+      <div class="why">
+        <div class="ic">📍</div>
+        <h3>Easy to reach</h3>
+        <p>Right in Mold town centre inside the Daniel Owen Shopping Centre — simple to pop in while you are in town for shopping, work or the market.</p>
+      </div>
+      <div class="why">
+        <div class="ic">📱</div>
+        <h3>Simple booking</h3>
+        <p>No booking systems or accounts to wrestle with. Send a WhatsApp message or make one quick call, agree a time, and turn up — that is the whole process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">How it works</span>
+      <h2>Booked in three simple steps</h2>
+      <p>Getting your next cut sorted takes less than a minute.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Message or call</h3>
+        <p>Tap the WhatsApp button anywhere on this page, or call <a href="tel:+447865053096" style="color:var(--blue-dark);font-weight:700">07865 053096</a>. Say what you are after — a fade, a tidy-up, a beard shape, the full works.</p>
+      </div>
+      <div class="step">
+        <h3>Agree your time</h3>
+        <p>We confirm a time that suits you and confirm the price of your service before you come in, so you know exactly what to expect.</p>
+      </div>
+      <div class="step">
+        <h3>Turn up &amp; relax</h3>
+        <p>Find us at Unit 1, Daniel Owen Shopping Centre, Mold CH7 1AP. Take a seat, enjoy the cut, and leave looking sharp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Gallery</span>
+      <h2>From the barber's chair</h2>
+      <p>A look at the craft — fresh cuts, clean fades, beard work and the everyday detail that goes into a proper finish.</p>
+    </div>
+    <div class="gal">
+      <figure><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=900&auto=format&fit=crop" alt="Customer in the barber chair during a haircut"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=900&auto=format&fit=crop" alt="Barber combing and cutting hair with care"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?q=80&w=900&auto=format&fit=crop" alt="Close-up of a barber finishing a haircut"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?q=80&w=900&auto=format&fit=crop" alt="Barber working on a fresh fade"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=900&auto=format&fit=crop" alt="Traditional barber shave in progress"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?q=80&w=900&auto=format&fit=crop" alt="Barber pole and shopfront detail"></figure>
+    </div>
+  </div>
+</section>
+
+<div class="rateband">
+  <div class="big">4.7 / 5</div>
+  <div class="stars">★★★★★</div>
+  <p>Rated by customers on Google — 59 reviews for Cutting Edge, Mold</p>
+</div>
+
+<section class="block" id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">In the chair</span>
+      <h2>Your appointment, step by step</h2>
+      <p>New to the shop? Here is exactly how a visit to Cutting Edge runs, from the moment you sit down to the moment you check the mirror and nod.</p>
+    </div>
+    <div class="steps" style="grid-template-columns:1fr;margin-bottom:18px">
+      <div class="step">
+        <h3>1 — The consultation</h3>
+        <p>Every appointment starts with a conversation, not the clippers. You will be asked what you are after, how you have been wearing your hair, and what has or has not worked for you before. If you have a photo, show it. If the style you want will not behave with your hair type, the barber will say so honestly and suggest the closest version that will actually work day to day. Nothing starts until you are both clear on the plan.</p>
+      </div>
+    </div>
+    <div class="steps" style="grid-template-columns:1fr;margin-bottom:18px">
+      <div class="step">
+        <h3>2 — The cut</h3>
+        <p>With the plan agreed, the cut itself is done with care rather than speed. Fades are built up gradually and checked from every angle as they go, scissor work is shaped to your head rather than a template, and the barber will keep checking in as the shape comes together. If something looks different to what you pictured, say so mid-cut — small adjustments are easy while you are in the chair.</p>
+      </div>
+    </div>
+    <div class="steps" style="grid-template-columns:1fr;margin-bottom:18px">
+      <div class="step">
+        <h3>3 — The detail work</h3>
+        <p>This is where a good cut becomes a sharp one. Edges are lined up clean around the ears and neck, the neckline is finished properly, stray weight is taken out so the style sits right, and beard work — if you are having it — is shaped and balanced to the cut rather than treated as an afterthought. For hot towel shaves, this is the full traditional sequence: hot towels, lather, the shave itself, and a cooling finish.</p>
+      </div>
+    </div>
+    <div class="steps" style="grid-template-columns:1fr">
+      <div class="step">
+        <h3>4 — The finish &amp; the mirror check</h3>
+        <p>Your hair is finished and styled so you can see the cut as it is meant to look — not just how it falls straight out of the chair. You get the mirror check from the front, sides and back before the cape comes off. Then, before you leave, you will get simple advice on keeping the style right at home: how to dry it, what to do on day two, and when to come back for a tidy-up to keep it sharp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="tips">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Barber's advice</span>
+      <h2>Keeping your cut sharp between visits</h2>
+      <p>A great cut should still look good weeks later. These are the simple habits the chair would tell you about — free advice, whether you book or not.</p>
+    </div>
+    <div class="svc-grid" style="grid-template-columns:1fr 1fr">
+      <div class="svc">
+        <div class="num">Tip 01</div>
+        <h3>Book the tidy-up early</h3>
+        <p>Fades look their best in the first couple of weeks. If you like yours sharp, get the next tidy-up in the diary before the fade grows out completely — a short clip-back between full cuts is quicker and keeps the shape the barber built for you.</p>
+      </div>
+      <div class="svc">
+        <div class="num">Tip 02</div>
+        <h3>Dry before you style</h3>
+        <p>Most styles are set while the hair dries, not after. Towel-dry, push the hair in the direction you want it to sit, and let it settle. Two minutes of direction while it dries does more than ten minutes of fixing it once it is dry and set the wrong way.</p>
+      </div>
+      <div class="svc">
+        <div class="num">Tip 03</div>
+        <h3>Less product, worked in properly</h3>
+        <p>A pea-sized amount, rubbed warm between your palms and worked from the back of the head forward, beats a big blob dumped on top. Too much product is the most common reason a fresh cut looks heavy by lunchtime.</p>
+      </div>
+      <div class="svc">
+        <div class="num">Tip 04</div>
+        <h3>Beards need lines, not length</h3>
+        <p>A beard reads as tidy or scruffy mostly by its lines — cheeks and neckline — not its length. If you are growing yours out, a quick shape-up visit keeps it looking deliberate instead of accidental while the length comes in.</p>
+      </div>
+      <div class="svc">
+        <div class="num">Tip 05</div>
+        <h3>Sleep on it before you judge it</h3>
+        <p>Hair sits differently the morning after a cut than it does in the chair. Give a new style a wash and one full day before deciding — and if something still is not right, message the shop and ask. Small tweaks are a normal part of settling into a new cut.</p>
+      </div>
+      <div class="svc">
+        <div class="num">Tip 06</div>
+        <h3>Photos help the next cut too</h3>
+        <p>When your cut looks exactly how you wanted it, take a quick photo. Show it at your next appointment and the barber can rebuild the same shape precisely, instead of working from memory — yours or theirs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Good to know</span>
+      <h2>Frequently asked questions</h2>
+      <p>Quick answers before you book. Anything else — just ask on WhatsApp.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq">
+        <summary>How do I book an appointment?</summary>
+        <div class="a">The quickest way is WhatsApp — tap any WhatsApp button on this page or message <a href="https://wa.me/447865053096">07865 053096</a>. You can also call the same number. Tell us what service you would like and when suits you, and we will confirm your time.</div>
+      </details>
+      <details class="faq">
+        <summary>How much does a haircut cost?</summary>
+        <div class="a">Prices depend on the service, so rather than guess online, call or message for prices — your price is confirmed before any work starts, so there are no surprises. Ask about the service you want and you will get a straight answer.</div>
+      </details>
+      <details class="faq">
+        <summary>Where exactly is the shop?</summary>
+        <div class="a">Cutting Edge is at Unit 1, Daniel Owen Shopping Centre, Mold CH7 1AP — right in Mold town centre, Flintshire. The shopping centre is on Daniel Owen Square, a short walk from the town's main shopping streets and bus stops.</div>
+      </details>
+      <details class="faq">
+        <summary>Do you do skin fades?</summary>
+        <div class="a">Yes — low, mid and high skin fades are a speciality. Tell the barber how tight you want the fade and how you like the top, and the blend is built around your head shape and hair type.</div>
+      </details>
+      <details class="faq">
+        <summary>Can I get a beard trim or a hot towel shave?</summary>
+        <div class="a">Both. Beard trims include shaping and clean lines on the cheeks and neck, and the hot towel shave is the full traditional treatment — hot towels, lather, a close straight-razor finish and a cool-down.</div>
+      </details>
+      <details class="faq">
+        <summary>Do you cut children's hair?</summary>
+        <div class="a">Yes, kids cuts are welcome. The approach is patient and unhurried, and parents are welcome to stay close throughout the appointment.</div>
+      </details>
+      <details class="faq">
+        <summary>What should I ask for if I am not sure what suits me?</summary>
+        <div class="a">Just say you would like advice. The barber will talk through options for your hair type, face shape and how much time you want to spend styling each day — and will be honest if a style is likely to be hard work to maintain.</div>
+      </details>
+      <details class="faq">
+        <summary>Can I bring a photo of the style I want?</summary>
+        <div class="a">Absolutely — photos help. Bring a picture on your phone or describe the look you are after, and the cut will be adapted to your own hair so it works for you, not just for the person in the photo.</div>
+      </details>
+      <details class="faq">
+        <summary>How do I keep my fade looking fresh between visits?</summary>
+        <div class="a">Ask in the chair — you will get simple, practical tips for your hair type, including how often to book a tidy-up to keep the blend sharp. A quick clip-back between full cuts keeps everything looking clean.</div>
+      </details>
+      <details class="faq">
+        <summary>What if I need to change my appointment?</summary>
+        <div class="a">Send a WhatsApp message or call as early as you can and we will do our best to move your booking to a time that works better for you.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Visit us</span>
+      <h2>Find Cutting Edge in Mold</h2>
+      <p>We are in the Daniel Owen Shopping Centre in the centre of Mold. Message ahead to book, or call to check what you need.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Cutting Edge — Barber Shop</h3>
+        <p class="addr">Unit 1, Daniel Owen Shopping Centre,<br>Mold, Flintshire, CH7 1AP</p>
+        <p>WhatsApp &amp; phone: <a href="tel:+447865053096" style="color:var(--blue-dark);font-weight:700">07865 053096</a></p>
+        <p>For opening times today and prices on any service, call or message — both are confirmed quickly and there is no obligation to book.</p>
+        <p>Rated <strong>4.7 stars from 59 Google reviews</strong> by customers across Mold and Flintshire.</p>
+        <div class="cta-row">
+          <a class="btn btn-wa" href="https://wa.me/447865053096">Message on WhatsApp</a>
+          <a class="btn btn-call" href="tel:+447865053096">Call the Shop</a>
+        </div>
+      </div>
+      <div class="visit-side">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop" alt="Barber shop chairs ready for customers">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block dark" style="padding:48px 0">
+  <div class="wrap" style="text-align:center">
+    <h2 style="font-size:38px">Ready when you are</h2>
+    <p style="color:#b9ccf5;max-width:36em;margin:12px auto 24px">One message is all it takes. Send a WhatsApp now to ask about times and prices, and get your next cut in the diary.</p>
+    <a class="btn btn-wa" href="https://wa.me/447865053096">Start a WhatsApp Chat</a>
+    <a class="btn btn-light" href="tel:+447865053096" style="margin-left:10px">Call 07865 053096</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Cutting Edge</h4>
+        <p style="font-size:15.5px;max-width:30em">Barber shop in Mold, Flintshire — skin fades, classic cuts, beard trims, hot towel shaves and kids cuts, rated 4.7 stars from 59 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#about">About the shop</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#visit">Visit us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Unit 1, Daniel Owen Shopping Centre</li>
+          <li>Mold, Flintshire, CH7 1AP</li>
+          <li>WhatsApp: <a href="https://wa.me/447865053096">07865 053096</a></li>
+          <li>Phone: <a href="tel:+447865053096">07865 053096</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© Cutting Edge, Mold. All rights reserved.</span>
+      <span>Demo website — services and details shown as provided.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447865053096" aria-label="Chat with Cutting Edge on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4.7 29l7.3-1.5c1.3.6 2.6.9 4 .9 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.2 0-2.4-.3-3.5-.8l-.7-.4-4.3.9 1-4.1-.5-.8c-1-1.5-1.5-3.2-1.5-5C6.5 9.3 10.8 5.1 16 5.1S25.5 9.3 25.5 14.5 21.2 24.7 16 24.7zm5.3-7.2c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.3-.7.3-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
