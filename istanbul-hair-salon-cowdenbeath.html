@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Istanbul Hair Salon | Turkish Barber &amp; Hair Salon in Cowdenbeath, Fife</title>
+<meta name="description" content="Istanbul Hair Salon — Turkish barber and hair salon on the High Street, Cowdenbeath. Rated 4.8 from 142 Google reviews. Haircuts, skin fades, hot towel shaves and beard trims. Message on WhatsApp to book.">
+<style>
+:root{
+  --ink:#14201c;
+  --emerald:#0b4f3f;
+  --emerald-deep:#06382c;
+  --copper:#bc7134;
+  --copper-soft:#e8b07e;
+  --sand:#faf5ec;
+  --sand-2:#f3ead9;
+  --card:#ffffff;
+  --muted:#5c6a64;
+  --line:#e4d8c3;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--sand);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-weight:600;line-height:1.12;color:var(--emerald-deep)}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.7rem;border-radius:999px;font-weight:600;font-size:1rem;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;border:2px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#1faa55;color:#fff;box-shadow:0 12px 26px rgba(31,170,85,.30)}
+.btn-wa:hover{background:#178a45}
+.btn-call{background:transparent;border-color:var(--emerald);color:var(--emerald)}
+.btn-call:hover{background:var(--emerald);color:#fff}
+.btn-copper{background:var(--copper);color:#fff;box-shadow:0 12px 26px rgba(188,113,52,.32)}
+.btn-copper:hover{background:#a25f27}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.rise{animation:riseIn .8s ease both}
+.rise-1{animation-delay:.08s}.rise-2{animation-delay:.16s}.rise-3{animation-delay:.24s}
+/* ---------- top strip ---------- */
+.strip{background:var(--emerald-deep);color:#f3e9d7;font-size:.88rem}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;align-items:center;justify-content:space-between;padding:.55rem 0}
+.strip .stars{color:var(--copper-soft);letter-spacing:.12em}
+.strip a{font-weight:600;color:#fff;border-bottom:1px dotted var(--copper-soft)}
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(250,245,236,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;gap:1rem}
+.logo{display:flex;align-items:center;gap:.7rem}
+.logo-mark{width:46px;height:46px;border-radius:50% 50% 50% 6px;background:var(--emerald);color:#f6e7cd;display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;transform:rotate(45deg)}
+.logo-mark span{transform:rotate(-45deg)}
+.logo-text{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--emerald-deep);line-height:1}
+.logo-text small{display:block;font-family:'Outfit',sans-serif;font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--copper);font-weight:600;margin-top:.2rem}
+nav.main{display:none;gap:1.7rem;font-weight:500;font-size:.98rem}
+nav.main a{position:relative;padding:.2rem 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--copper);transition:width .3s ease}
+nav.main a:hover::after{width:100%}
+@media(min-width:860px){nav.main{display:flex}}
+.head-cta{padding:.65rem 1.3rem;font-size:.95rem}
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(600px 300px at 8% -5%,rgba(188,113,52,.16),transparent 60%),
+  radial-gradient(700px 380px at 95% 0%,rgba(11,79,63,.12),transparent 60%),var(--sand)}
+.hero .wrap{display:grid;gap:2.4rem;padding:3rem 0 3.4rem;align-items:center}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.05fr .95fr;gap:3rem}}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem;font-size:.85rem;font-weight:600;color:var(--emerald);box-shadow:0 4px 14px rgba(6,56,44,.06)}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#1faa55}
+.hero h1{font-size:clamp(2.6rem,6.2vw,4.3rem);margin:1.1rem 0 .4rem}
+.hero h1 em{font-style:italic;color:var(--copper)}
+.hero .townline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.6vw,1.7rem);color:var(--emerald);margin-bottom:1rem}
+.hero p.lede{font-size:1.08rem;color:var(--muted);max-width:34rem}
+.rate-card{display:flex;align-items:center;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:.9rem 1.2rem;margin:1.4rem 0;max-width:30rem;box-shadow:0 10px 26px rgba(6,56,44,.07)}
+.rate-card .score{font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:700;color:var(--emerald);line-height:1}
+.rate-card .stars{color:var(--copper);letter-spacing:.18em;font-size:1.05rem}
+.rate-card small{color:var(--muted);display:block;font-size:.86rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.4rem}
+.hero-note{margin-top:1rem;font-size:.9rem;color:var(--muted)}
+.hero-note strong{color:var(--emerald)}
+.hero-visual{position:relative}
+.arch{border-radius:260px 260px 22px 22px;overflow:hidden;border:6px solid #fff;box-shadow:0 30px 60px rgba(6,56,44,.22)}
+.arch img{width:100%;height:520px;object-fit:cover}
+@media(max-width:959px){.arch img{height:400px}}
+.hero-badge{position:absolute;left:-14px;bottom:34px;background:var(--emerald-deep);color:#f6ecd8;border-radius:16px;padding:.9rem 1.2rem;box-shadow:0 18px 36px rgba(6,56,44,.35);animation:floaty 5s ease-in-out infinite;max-width:250px}
+.hero-badge .b1{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:#fff;line-height:1.15}
+.hero-badge .b2{font-size:.82rem;color:var(--copper-soft);letter-spacing:.06em}
+.hero-chip{position:absolute;top:26px;right:-8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem;font-weight:600;font-size:.88rem;color:var(--emerald);box-shadow:0 12px 26px rgba(6,56,44,.14)}
+/* ---------- marquee ---------- */
+.marquee{background:var(--emerald);color:#f2e6cd;overflow:hidden;padding:.85rem 0;border-top:3px solid var(--copper);border-bottom:3px solid var(--copper)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scrollX 30s linear infinite}
+.marquee-track span{padding:0 1.6rem;font-family:'Cormorant Garamond',serif;font-size:1.15rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.marquee-track i{color:var(--copper-soft);font-style:normal}
+/* ---------- sections ---------- */
+section{padding:4.2rem 0}
+.sec-head{max-width:44rem;margin-bottom:2.4rem}
+.sec-head.center{margin-inline:auto;text-align:center}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--copper);margin-bottom:.6rem}
+.sec-head h2{font-size:clamp(2rem,4.4vw,2.9rem)}
+.sec-head p{color:var(--muted);margin-top:.7rem;font-size:1.03rem}
+/* about */
+.about-grid{display:grid;gap:2.4rem;align-items:center}
+@media(min-width:960px){.about-grid{grid-template-columns:.95fr 1.05fr}}
+.about-photos{position:relative}
+.about-photos .main-img{border-radius:22px;height:430px;width:100%;object-fit:cover;box-shadow:0 24px 48px rgba(6,56,44,.18)}
+.about-photos .small-img{position:absolute;right:-10px;bottom:-26px;width:46%;height:190px;object-fit:cover;border-radius:18px;border:5px solid var(--sand);box-shadow:0 18px 36px rgba(6,56,44,.22)}
+.about-copy p{color:var(--muted);margin-bottom:1rem}
+.checks{list-style:none;margin:1.3rem 0 1.7rem;display:grid;gap:.7rem}
+.checks li{display:flex;gap:.7rem;align-items:flex-start;font-weight:500}
+.checks .tick{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--emerald);color:#fff;display:grid;place-items:center;font-size:.8rem;margin-top:.1rem}
+/* services */
+#services{background:linear-gradient(180deg,var(--sand-2),var(--sand))}
+.svc-grid{display:grid;gap:1.3rem}
+@media(min-width:700px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem 1.4rem;transition:transform .25s ease,box-shadow .25s ease;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--emerald),var(--copper))}
+.svc:hover{transform:translateY(-5px);box-shadow:0 20px 38px rgba(6,56,44,.12)}
+.svc .num{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--copper);letter-spacing:.2em}
+.svc h3{font-size:1.45rem;margin:.35rem 0 .55rem}
+.svc p{color:var(--muted);font-size:.96rem}
+.svc .price-note{margin-top:1rem;font-weight:600;color:var(--emerald);font-size:.9rem}
+.svc .price-note a{border-bottom:1px dotted var(--copper)}
+.photo-tiles{display:grid;gap:1.3rem;margin-top:1.3rem}
+@media(min-width:700px){.photo-tiles{grid-template-columns:1fr 1fr}}
+.tile{position:relative;border-radius:var(--radius);overflow:hidden;min-height:230px}
+.tile img{width:100%;height:100%;min-height:230px;object-fit:cover;transition:transform .6s ease}
+.tile:hover img{transform:scale(1.05)}
+.tile .cap{position:absolute;left:0;right:0;bottom:0;padding:2.2rem 1.3rem .95rem;background:linear-gradient(transparent,rgba(4,32,25,.82));color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.3rem}
+/* why us */
+.why-grid{display:grid;gap:1.3rem}
+@media(min-width:760px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why{background:var(--emerald-deep);color:#e9dfca;border-radius:var(--radius);padding:1.7rem 1.5rem}
+.why .ic{font-size:1.7rem;margin-bottom:.7rem}
+.why h3{color:#fff;font-size:1.4rem;margin-bottom:.5rem}
+.why p{font-size:.95rem;color:#cfc2a4}
+/* steps */
+.steps{display:grid;gap:1.3rem}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.5rem;text-align:center}
+.step .n{width:52px;height:52px;margin:0 auto .9rem;border-radius:50%;background:var(--sand-2);border:2px solid var(--copper);color:var(--emerald);font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;display:grid;place-items:center}
+.step h3{font-size:1.35rem;margin-bottom:.45rem}
+.step p{color:var(--muted);font-size:.96rem}
+/* gallery */
+.gal{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
+@media(min-width:820px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal figure{border-radius:16px;overflow:hidden;position:relative}
+.gal img{width:100%;height:230px;object-fit:cover;transition:transform .6s ease}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:.8rem;bottom:.7rem;background:rgba(4,32,25,.78);color:#f3e9d7;font-size:.8rem;padding:.3rem .7rem;border-radius:999px}
+/* rating band */
+.band{background:var(--copper);color:#fff;border-radius:26px;padding:2.6rem 2rem;text-align:center;box-shadow:0 24px 48px rgba(188,113,52,.30)}
+.band .big{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.2rem);line-height:1.1}
+.band .stars{letter-spacing:.3em;font-size:1.3rem;margin:.5rem 0}
+.band p{color:#ffe9d2;max-width:36rem;margin:0 auto 1.4rem}
+/* faq */
+.faq-list{max-width:52rem;margin:0 auto;display:grid;gap:.8rem}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.05rem 1.3rem}
+details summary{cursor:pointer;font-weight:600;font-size:1.02rem;color:var(--emerald-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--copper);line-height:1}
+details[open ] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:.6rem;font-size:.97rem}
+details p a{color:var(--emerald);font-weight:600;border-bottom:1px dotted var(--copper)}
+/* visit */
+.visit-grid{display:grid;gap:1.6rem}
+@media(min-width:900px){.visit-grid{grid-template-columns:1.1fr .9fr}}
+.visit-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:2rem;box-shadow:0 16px 34px rgba(6,56,44,.07)}
+.visit-card h3{font-size:1.6rem;margin-bottom:1rem}
+.visit-row{display:flex;gap:.9rem;padding:.8rem 0;border-bottom:1px dashed var(--line);align-items:flex-start}
+.visit-row:last-of-type{border-bottom:none}
+.visit-row .ic{font-size:1.25rem}
+.visit-row strong{display:block;color:var(--emerald-deep)}
+.visit-row span{color:var(--muted);font-size:.96rem}
+.visit-card .hero-ctas{margin-top:1.4rem}
+.visit-photo{border-radius:22px;overflow:hidden;min-height:320px}
+.visit-photo img{width:100%;height:100%;min-height:320px;object-fit:cover}
+/* final cta */
+.final{background:var(--emerald-deep);border-radius:26px;padding:3rem 2rem;text-align:center;color:#e9dfca;position:relative;overflow:hidden}
+.final h2{color:#fff;font-size:clamp(2rem,4.6vw,3rem);margin-bottom:.8rem}
+.final p{max-width:34rem;margin:0 auto 1.6rem;color:#cfc2a4}
+.final .hero-ctas{justify-content:center}
+/* footer */
+footer{background:#04231b;color:#b9ab8d;padding:3rem 0 6.4rem;margin-top:4.2rem}
+footer .cols{display:grid;gap:2rem}
+@media(min-width:820px){footer .cols{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.3rem;margin-bottom:.7rem}
+footer a{color:#e8dcc0}
+footer a:hover{color:#fff}
+footer ul{list-style:none;display:grid;gap:.45rem;font-size:.96rem}
+footer .fine{margin-top:2.2rem;padding-top:1.2rem;border-top:1px solid rgba(232,220,192,.16);font-size:.85rem;color:#8f8268;display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;justify-content:space-between}
+/* floating WA */
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:80;background:#1faa55;color:#fff;border-radius:999px;padding:.9rem 1.4rem;font-weight:700;box-shadow:0 16px 34px rgba(31,170,85,.42);display:inline-flex;gap:.5rem;align-items:center;animation:floaty 5s ease-in-out infinite}
+.float-wa:hover{background:#178a45}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="strip">
+  <div class="wrap">
+    <span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>&nbsp; Rated <strong style="color:#fff">4.8</strong> from <strong style="color:#fff">142 reviews</strong> on Google</span>
+    <span>193-195 High St, Cowdenbeath KY4 9QE &nbsp;&middot;&nbsp; <a href="https://wa.me/447564576821">Message us on WhatsApp</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Istanbul Hair Salon home">
+      <span class="logo-mark"><span>I</span></span>
+      <span class="logo-text">Istanbul<small>Hair Salon &middot; Cowdenbeath</small></span>
+    </a>
+    <nav class="main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <a class="btn btn-wa head-cta" href="https://wa.me/447564576821">Book on WhatsApp</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rise"><span class="dot"></span> Turkish barber &amp; hair salon &middot; Cowdenbeath, Fife</span>
+      <h1 class="rise rise-1">A proper Turkish cut, <em>right on the High Street.</em></h1>
+      <p class="townline rise rise-2">Istanbul Hair Salon &mdash; 193-195 High Street, Cowdenbeath</p>
+      <p class="lede rise rise-2">Sharp fades, traditional hot towel shaves and unhurried, careful barbering. Istanbul Hair Salon brings classic Turkish barber craft to the heart of Cowdenbeath &mdash; walk-ins welcome, and booking ahead is easy on WhatsApp.</p>
+      <div class="rate-card rise rise-3">
+        <span class="score">4.8</span>
+        <span>
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <small>from 142 reviews on Google</small>
+        </span>
+      </div>
+      <div class="hero-ctas rise rise-3">
+        <a class="btn btn-wa" href="https://wa.me/447564576821">&#128172; Book on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+447564576821">&#128222; Call 07564 576821</a>
+      </div>
+      <p class="hero-note rise rise-3">Fastest way to book: <strong>send us a WhatsApp message</strong> and we will confirm your slot.</p>
+    </div>
+    <div class="hero-visual rise rise-2">
+      <div class="arch">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Barber giving a precise haircut at Istanbul Hair Salon, Cowdenbeath">
+      </div>
+      <div class="hero-chip">&#9986; Walk-ins welcome</div>
+      <div class="hero-badge">
+        <div class="b1">Hot towel shaves, the traditional way</div>
+        <div class="b2">A TURKISH BARBER TRADITION</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Skin Fades <i>&#10022;</i></span><span>Hot Towel Shave <i>&#10022;</i></span><span>Beard Trims <i>&#10022;</i></span><span>Turkish Haircuts <i>&#10022;</i></span><span>Kids Cuts <i>&#10022;</i></span><span>Hair Styling <i>&#10022;</i></span>
+    <span>Skin Fades <i>&#10022;</i></span><span>Hot Towel Shave <i>&#10022;</i></span><span>Beard Trims <i>&#10022;</i></span><span>Turkish Haircuts <i>&#10022;</i></span><span>Kids Cuts <i>&#10022;</i></span><span>Hair Styling <i>&#10022;</i></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photos">
+        <img class="main-img" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop" alt="Inside a traditional barber shop">
+        <img class="small-img" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800&auto=format&fit=crop" alt="Professional barber clippers and tools">
+      </div>
+      <div class="about-copy">
+        <div class="sec-head" style="margin-bottom:1rem">
+          <p class="kicker">About the salon</p>
+          <h2>Traditional craft, modern standards</h2>
+        </div>
+        <p>Istanbul Hair Salon sits on Cowdenbeath High Street, bringing the time-honoured traditions of Turkish barbering to Fife. That means sharp, precise cutting, a proper hot towel finish, and the kind of unhurried attention to detail that turns a haircut into a ritual worth repeating.</p>
+        <p>Whether you are after a clean skin fade, a classic scissor cut, a beard sculpt or the full traditional shave experience, you will be looked after by barbers who take genuine pride in the finish &mdash; and it shows in our 4.8-star rating from 142 Google reviews.</p>
+        <ul class="checks">
+          <li><span class="tick">&#10003;</span> Traditional Turkish barbering techniques</li>
+          <li><span class="tick">&#10003;</span> Hot towel shaves and beard sculpting</li>
+          <li><span class="tick">&#10003;</span> Walk-ins welcome, WhatsApp booking available</li>
+          <li><span class="tick">&#10003;</span> Easy to find on Cowdenbeath High Street</li>
+        </ul>
+        <div class="hero-ctas">
+          <a class="btn btn-copper" href="https://wa.me/447564576821">Message the salon</a>
+          <a class="btn btn-call" href="#services">See services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="kicker">What we do</p>
+      <h2>Services at Istanbul Hair Salon</h2>
+      <p>Every service starts with a quick consultation so you leave with exactly the cut you asked for. For prices, just call or message us &mdash; we will confirm before you book.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <div class="num">&mdash; 01</div>
+        <h3>Traditional Turkish Haircut</h3>
+        <p>Our signature service. A precision cut tailored to your head shape and hair type, finished the Turkish way with attention to every detail &mdash; neckline, sideburns and a clean, sharp outline.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+      <article class="svc">
+        <div class="num">&mdash; 02</div>
+        <h3>Skin Fades</h3>
+        <p>From a subtle low taper to a high, tight zero fade, blended seamlessly by hand. Crisp lines, smooth graduation and a finish that grows out cleanly between visits.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+      <article class="svc">
+        <div class="num">&mdash; 03</div>
+        <h3>Hot Towel Shave</h3>
+        <p>The classic Turkish shave ritual: steaming hot towels to soften the beard, rich lather, a straight-razor shave and a cooling finish. The closest, smoothest shave you can get.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+      <article class="svc">
+        <div class="num">&mdash; 04</div>
+        <h3>Beard Trim &amp; Sculpt</h3>
+        <p>Shaping, edging and tidying for beards of every length. We balance the shape to your face, sharpen the lines with the razor and finish with beard care so it looks right for weeks.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+      <article class="svc">
+        <div class="num">&mdash; 05</div>
+        <h3>Scissor Cuts &amp; Classic Styles</h3>
+        <p>Prefer a timeless look? Classic scissor cuts, restyles and tidy-ups for longer hair, done with the same care and precision as our fades. Bring a photo if you have a style in mind.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+      <article class="svc">
+        <div class="num">&mdash; 06</div>
+        <h3>Children's Haircuts</h3>
+        <p>Patient, friendly cuts for younger customers. Whether it is a first haircut or a smart style for school, we keep it calm, quick and comfortable for them &mdash; and easy for you.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+      <article class="svc">
+        <div class="num">&mdash; 07</div>
+        <h3>Ear &amp; Nose Waxing</h3>
+        <p>A traditional finishing touch offered in Turkish barbershops: quick, tidy waxing for ears and nose so the whole look is clean and complete before you leave the chair.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+      <article class="svc">
+        <div class="num">&mdash; 08</div>
+        <h3>The Full Istanbul Experience</h3>
+        <p>The complete works: haircut, hot towel shave or beard sculpt, ear and nose tidy, wash and style to finish. Ideal before a wedding, a holiday or any big occasion.</p>
+        <p class="price-note">Call or message for prices &middot; <a href="https://wa.me/447564576821">Ask on WhatsApp</a></p>
+      </article>
+    </div>
+    <div class="photo-tiles">
+      <div class="tile">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1200&auto=format&fit=crop" alt="Barber performing a traditional wet shave">
+        <div class="cap">The traditional wet shave</div>
+      </div>
+      <div class="tile">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1200&auto=format&fit=crop" alt="Stylist finishing a client's hair">
+        <div class="cap">Styled and finished, every time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Why Istanbul</p>
+      <h2>Why Cowdenbeath chooses us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <div class="ic">&#9733;</div>
+        <h3>Rated 4.8 on Google</h3>
+        <p>142 customers have reviewed us on Google and rate us 4.8 stars &mdash; a reflection of consistent, careful work, chair after chair.</p>
+      </div>
+      <div class="why">
+        <div class="ic">&#9986;</div>
+        <h3>Genuine Turkish craft</h3>
+        <p>Hot towels, straight razors and techniques passed down through generations of Turkish barbers &mdash; not a gimmick, a tradition.</p>
+      </div>
+      <div class="why">
+        <div class="ic">&#128172;</div>
+        <h3>Easy WhatsApp booking</h3>
+        <p>Skip the queue uncertainty. Message us on WhatsApp, tell us what you need, and we will confirm your appointment time.</p>
+      </div>
+      <div class="why">
+        <div class="ic">&#128205;</div>
+        <h3>High Street location</h3>
+        <p>Find us at 193-195 High Street in the centre of Cowdenbeath &mdash; easy to reach whether you are local or passing through Fife.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="kicker">Booking</p>
+      <h2>Booked in three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Message us</h3>
+        <p>Tap any WhatsApp button on this page, or call <a href="tel:+447564576821" style="color:var(--emerald);font-weight:600">07564 576821</a>, and tell us the service you would like.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>Confirm your time</h3>
+        <p>We will agree a time that suits you and confirm your price before you come in &mdash; no surprises on the day.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>Sit back &amp; relax</h3>
+        <p>Visit us at 193-195 High Street, Cowdenbeath, take the chair, and leave looking sharp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Gallery</p>
+      <h2>The craft, up close</h2>
+      <p>A look at the tools, techniques and finishes that define a traditional Turkish barber experience.</p>
+    </div>
+    <div class="gal">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=900&auto=format&fit=crop" alt="Barber trimming a client's hair with care">
+        <figcaption>Precision cutting</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=900&auto=format&fit=crop" alt="Classic barber chairs in a barber shop">
+        <figcaption>In the chair</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?q=80&w=900&auto=format&fit=crop" alt="Barber at work on a detailed haircut">
+        <figcaption>Detail work</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?q=80&w=900&auto=format&fit=crop" alt="Beard trimming with a straight razor">
+        <figcaption>Razor-sharp edging</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=900&auto=format&fit=crop" alt="Bright, modern salon interior">
+        <figcaption>The salon</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=900&auto=format&fit=crop" alt="Barber styling a finished haircut">
+        <figcaption>The finish</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- RATING BAND -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="band">
+      <div class="big">4.8 stars from 142 Google reviews</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>Cowdenbeath customers rate Istanbul Hair Salon 4.8 out of 5 on Google. Come and see why &mdash; message us today and book your chair.</p>
+      <a class="btn" style="background:#fff;color:var(--copper)" href="https://wa.me/447564576821">&#128172; Book on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="kicker">Good to know</p>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The easiest way is WhatsApp &mdash; message us on <a href="https://wa.me/447564576821">07564 576821</a> with the service you would like and a time that suits you, and we will confirm your booking. You can also call us on the same number.</p>
+      </details>
+      <details>
+        <summary>Do you take walk-ins?</summary>
+        <p>Yes, walk-ins are welcome at our High Street salon. If you want to be sure of your slot at a busy time, we recommend messaging ahead on WhatsApp so we can reserve your chair.</p>
+      </details>
+      <details>
+        <summary>How much does a haircut cost?</summary>
+        <p>Prices depend on the service, so we confirm them before you book &mdash; call or message for prices and we will give you an exact figure for what you need. No surprises on the day.</p>
+      </details>
+      <details>
+        <summary>What is a Turkish hot towel shave?</summary>
+        <p>It is the traditional wet-shave ritual: hot towels soften your beard and open the pores, a rich lather is applied, and the shave is done with a straight razor for the closest possible finish, followed by a cooling, soothing treatment.</p>
+      </details>
+      <details>
+        <summary>Where exactly are you in Cowdenbeath?</summary>
+        <p>You will find us at 193-195 High Street, Cowdenbeath, Fife, KY4 9QE &mdash; right on the main High Street in the centre of town.</p>
+      </details>
+      <details>
+        <summary>Do you cut children's hair?</summary>
+        <p>Yes, we offer children's haircuts in a patient, friendly way. Message us on WhatsApp if you would like to book a younger customer in at a quieter time.</p>
+      </details>
+      <details>
+        <summary>Can I get a skin fade and beard trim together?</summary>
+        <p>Absolutely &mdash; combining a fade with a beard trim and sculpt is one of our most popular bookings. Our Full Istanbul Experience brings everything together in one appointment; ask us about it on WhatsApp.</p>
+      </details>
+      <details>
+        <summary>What should I ask for if I am not sure of my style?</summary>
+        <p>Just come in or send us a message &mdash; every appointment starts with a short consultation. Tell us roughly what you like (or show us a photo) and your barber will recommend a cut that suits your hair type and face shape.</p>
+      </details>
+      <details>
+        <summary>Do you offer ear and nose waxing?</summary>
+        <p>Yes, quick ear and nose waxing is available as a traditional finishing touch alongside your haircut or shave. Ask your barber in the chair, or mention it when you message to book.</p>
+      </details>
+      <details>
+        <summary>How do I contact the salon quickly?</summary>
+        <p>WhatsApp is fastest: <a href="https://wa.me/447564576821">message 07564 576821</a>. You can also call the same number: <a href="tel:+447564576821">07564 576821</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT JOURNEY -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Your visit</p>
+      <h2>What happens during your appointment</h2>
+      <p>New to Istanbul Hair Salon, or new to Turkish barbering altogether? Here is exactly what to expect from the moment you walk through the door on Cowdenbeath High Street.</p>
+    </div>
+    <div class="steps" style="grid-template-columns:1fr">
+      <div class="step" style="text-align:left;display:flex;gap:1.3rem;align-items:flex-start">
+        <div class="n" style="margin:0;flex:0 0 auto">1</div>
+        <div>
+          <h3>The consultation</h3>
+          <p>Every appointment starts with a conversation. Your barber will ask what you are after, look at your hair type and growth pattern, and agree the style with you before a single clipper comes out. If you have a photo of the look you want, show it &mdash; it always helps. If you are not sure, your barber will recommend a cut that suits your face shape and lifestyle, and explain how it will grow out.</p>
+        </div>
+      </div>
+      <div class="step" style="text-align:left;display:flex;gap:1.3rem;align-items:flex-start">
+        <div class="n" style="margin:0;flex:0 0 auto">2</div>
+        <div>
+          <h3>The cut</h3>
+          <p>This is where the craft shows. Fades are blended by hand in stages, scissor work is done section by section, and your barber will keep checking the shape from every angle as they work. Turkish barbering is known for its patience &mdash; we would rather take an extra minute on the blend than rush the finish, because the details are what people notice.</p>
+        </div>
+      </div>
+      <div class="step" style="text-align:left;display:flex;gap:1.3rem;align-items:flex-start">
+        <div class="n" style="margin:0;flex:0 0 auto">3</div>
+        <div>
+          <h3>The hot towel finish</h3>
+          <p>If you are having a shave or beard sculpt, this is the heart of the ritual: warm towels soften the hair and skin, a rich lather is worked in, and the straight razor does its work in smooth, careful passes. Even on a standard haircut, expect the neckline and edges to be cleaned up with the razor for that crisp, just-barbered outline.</p>
+        </div>
+      </div>
+      <div class="step" style="text-align:left;display:flex;gap:1.3rem;align-items:flex-start">
+        <div class="n" style="margin:0;flex:0 0 auto">4</div>
+        <div>
+          <h3>Style, check &amp; go</h3>
+          <p>Before you leave the chair, your cut is washed down or brushed off, styled the way you would wear it day to day, and checked in the mirror from the front, sides and back. Your barber will show you how to recreate the style at home and let you know roughly when to come back to keep it sharp. Then you are on your way &mdash; and when you are ready to rebook, one WhatsApp message is all it takes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROOMING TIPS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">From the chair</p>
+      <h2>Keeping your cut sharp between visits</h2>
+      <p>A great haircut should keep looking great for weeks. A few simple habits, straight from the barber's chair, make all the difference.</p>
+    </div>
+    <div class="svc-grid" style="grid-template-columns:1fr">
+      <article class="svc">
+        <h3>Book by how it grows, not by the calendar</h3>
+        <p>Short fades usually look their best for two to three weeks, while longer scissor cuts can go longer between visits. Watch the neckline and the area around the ears &mdash; when those start to look untidy, it is time. Booking your next appointment on WhatsApp while your current cut still looks good means you never end up waiting for a slot when you need one most.</p>
+      </article>
+      <article class="svc">
+        <h3>Less product, applied properly</h3>
+        <p>Most styling problems come from using too much product on dry hair. Start with a pea-sized amount, warm it between your palms, and work it through slightly damp hair from the back forwards. You can always add a little more &mdash; you cannot take it away without washing it out.</p>
+      </article>
+      <article class="svc">
+        <h3>Look after the beard daily</h3>
+        <p>A beard sculpt in the salon sets the shape, but daily care keeps it. Comb it through after a shower while it is soft, keep the neckline where your barber set it rather than creeping higher, and if the edges between appointments bother you, a tidy-up visit is quicker than a full restyle.</p>
+      </article>
+      <article class="svc">
+        <h3>Tell your barber what did not work</h3>
+        <p>If your last cut grew out unevenly, felt too heavy on top, or was hard to style in the morning, say so at your next consultation. That feedback is genuinely useful &mdash; it tells your barber exactly what to adjust, and it is how a good haircut becomes your haircut, refined a little more every visit.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Visit us</p>
+      <h2>Find us on Cowdenbeath High Street</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Istanbul Hair Salon</h3>
+        <div class="visit-row">
+          <span class="ic">&#128205;</span>
+          <div><strong>Address</strong><span>193-195 High St, Cowdenbeath, Fife, KY4 9QE</span></div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">&#128172;</span>
+          <div><strong>WhatsApp</strong><span><a href="https://wa.me/447564576821" style="color:var(--emerald);font-weight:600">07564 576821</a> &mdash; the fastest way to book</span></div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">&#128222;</span>
+          <div><strong>Phone</strong><span><a href="tel:+447564576821" style="color:var(--emerald);font-weight:600">07564 576821</a> &mdash; call for prices and appointments</span></div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">&#9733;</span>
+          <div><strong>Google rating</strong><span>4.8 stars from 142 reviews</span></div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">&#128337;</span>
+          <div><strong>Opening hours</strong><span>Message or call us for today's hours and availability.</span></div>
+        </div>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" href="https://wa.me/447564576821">&#128172; WhatsApp the salon</a>
+          <a class="btn btn-call" href="tel:+447564576821">&#128222; Call now</a>
+        </div>
+      </div>
+      <div class="visit-photo">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1200&auto=format&fit=crop" alt="Client having their hair washed at a salon">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="final">
+      <h2>Ready when you are.</h2>
+      <p>One message is all it takes. Send us a WhatsApp, tell us what you need, and we will confirm your time and price before you set off.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447564576821">&#128172; Book on WhatsApp</a>
+        <a class="btn" style="background:transparent;border-color:#e8b07e;color:#f6ecd8" href="tel:+447564576821">&#128222; Call 07564 576821</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Istanbul Hair Salon</h4>
+        <p style="max-width:24rem">Turkish barber and hair salon on Cowdenbeath High Street, Fife. Haircuts, skin fades, hot towel shaves and beard sculpting &mdash; rated 4.8 from 142 reviews on Google.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About the salon</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#visit">Visit us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>193-195 High St</li>
+          <li>Cowdenbeath, Fife, KY4 9QE</li>
+          <li><a href="https://wa.me/447564576821">WhatsApp: 07564 576821</a></li>
+          <li><a href="tel:+447564576821">Phone: 07564 576821</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>Istanbul Hair Salon &middot; Cowdenbeath, Fife</span>
+      <span>Call or message for prices and today's opening hours.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/447564576821" aria-label="Chat with Istanbul Hair Salon on WhatsApp">&#128172; WhatsApp Us</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
