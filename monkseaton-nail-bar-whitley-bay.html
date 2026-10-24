@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monkseaton Nail Bar &amp; Beauty | Nail Bar &amp; Beauty Salon in Monkseaton, Whitley Bay</title>
+<meta name="description" content="Monkseaton Nail Bar & Beauty — gel nails, acrylics, BIAB, manicures, pedicures, nail art and beauty treatments at 40 Cauldwell Lane, Monkseaton, Whitley Bay. Rated 4.3 stars from 58 Google reviews. Message us on WhatsApp to book.">
+<style>
+  :root{
+    --teal:#177E70;
+    --teal-deep:#0E5A50;
+    --teal-soft:#DDEFEA;
+    --sea-glass:#7FC6B8;
+    --sand:#F4ECDD;
+    --sand-deep:#E7D9BE;
+    --ink:#22312E;
+    --muted:#5A6B66;
+    --white:#FFFFFF;
+    --cream:#FBF8F1;
+    --gold:#C49A3C;
+    --radius:18px;
+    --shadow:0 12px 32px rgba(14,90,80,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px}
+  img{max-width:100%;display:block}
+  a{text-decoration:none}
+  .wrap{width:min(1140px,92%);margin:0 auto}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--teal-deep)}
+  h2{font-size:clamp(1.7rem,4.5vw,2.5rem);margin-bottom:.5em}
+  h3{font-size:1.25rem;margin-bottom:.4em}
+  .kicker{display:inline-block;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:700;color:var(--teal);background:var(--teal-soft);padding:.35em 1em;border-radius:999px;margin-bottom:1em}
+  section{padding:4.2rem 0}
+  .lead{color:var(--muted);max-width:46rem}
+  /* ---------- header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--teal-soft)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:.7rem}
+  .brand-badge{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--sea-glass));display:flex;align-items:center;justify-content:center;color:#fff;font-family:Georgia,serif;font-size:1.25rem;font-weight:bold;flex:none}
+  .brand-name{font-family:Georgia,serif;font-size:1.12rem;color:var(--teal-deep);font-weight:bold;line-height:1.15}
+  .brand-sub{font-size:.78rem;color:var(--muted);letter-spacing:.05em}
+  .nav-links{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.95rem}
+  .nav-links a{color:var(--ink);font-weight:600}
+  .nav-links a:hover{color:var(--teal)}
+  .btn{display:inline-block;padding:.8em 1.7em;border-radius:999px;font-weight:700;font-size:1rem;transition:transform .25s ease,box-shadow .25s ease;border:2px solid transparent}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-wa{background:#1FA855;color:#fff;box-shadow:0 8px 20px rgba(31,168,85,.3)}
+  .btn-call{background:var(--white);color:var(--teal-deep);border-color:var(--teal)}
+  .btn-teal{background:var(--teal);color:#fff;box-shadow:var(--shadow)}
+  .btn-small{padding:.55em 1.2em;font-size:.92rem}
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(160deg,var(--teal-soft) 0%,var(--cream) 55%,var(--sand) 100%);padding:3.6rem 0 4.4rem;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:2.2rem;align-items:center}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+  .hero h1{font-size:clamp(2.1rem,6vw,3.4rem);margin-bottom:.45em}
+  .hero h1 .accent{color:var(--teal)}
+  .hero p{color:var(--muted);font-size:1.08rem;max-width:34rem;margin-bottom:1.6rem}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.6rem}
+  .rating-card{display:inline-flex;align-items:center;gap:.8rem;background:#fff;border:1px solid var(--teal-soft);border-radius:14px;padding:.7rem 1.1rem;box-shadow:var(--shadow)}
+  .stars{color:var(--gold);font-size:1.15rem;letter-spacing:.1em}
+  .rating-card strong{color:var(--teal-deep)}
+  .rating-card span{color:var(--muted);font-size:.9rem}
+  .hero-photo{position:relative}
+  .hero-photo img{border-radius:26px;box-shadow:var(--shadow);width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.4}
+  .hero-photo::after{content:"40 Cauldwell Lane · Monkseaton";position:absolute;left:14px;bottom:14px;background:rgba(14,90,80,.88);color:#fff;font-size:.85rem;padding:.45em 1em;border-radius:999px}
+  /* CSS-only gentle entrance — runs without JavaScript, always ends fully visible */
+  @keyframes riseIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  .rise{animation:riseIn .8s ease-out both}
+  .rise-2{animation:riseIn .8s ease-out .15s both}
+  .rise-3{animation:riseIn .8s ease-out .3s both}
+  /* ---------- strip ---------- */
+  .strip{background:var(--teal-deep);color:#EAF5F1}
+  .strip .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;padding:1.6rem 0;text-align:center}
+  @media(min-width:800px){.strip .wrap{grid-template-columns:repeat(4,1fr)}}
+  .strip strong{display:block;font-size:1.35rem;font-family:Georgia,serif;color:#fff}
+  .strip span{font-size:.88rem;opacity:.85}
+  /* ---------- about ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr;gap:2.4rem;align-items:center}
+  @media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+  .about-photo img{border-radius:22px;box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;width:100%}
+  .about-photo figcaption{font-size:.85rem;color:var(--muted);margin-top:.6rem;text-align:center}
+  .checklist{list-style:none;margin-top:1.2rem}
+  .checklist li{padding:.45rem 0 .45rem 2rem;position:relative;color:var(--ink)}
+  .checklist li::before{content:"✓";position:absolute;left:0;top:.4rem;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--teal);color:#fff;font-size:.8rem;display:flex;align-items:center;justify-content:center}
+  /* ---------- services ---------- */
+  .services{background:linear-gradient(180deg,var(--white),var(--teal-soft) 130%)}
+  .cards{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:2rem}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:980px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 22px rgba(14,90,80,.1);display:flex;flex-direction:column}
+  .card img{height:190px;width:100%;object-fit:cover}
+  .card-body{padding:1.3rem 1.4rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+  .card-body p{color:var(--muted);font-size:.97rem;flex:1}
+  .price-note{font-weight:700;color:var(--teal);font-size:.92rem}
+  .card .tag{align-self:flex-start;background:var(--sand);color:#7A5E1E;font-size:.75rem;font-weight:700;padding:.25em .8em;border-radius:999px;letter-spacing:.05em;text-transform:uppercase}
+  /* ---------- detail band ---------- */
+  .detail-band{background:var(--sand)}
+  .detail-grid{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:2rem}
+  @media(min-width:860px){.detail-grid{grid-template-columns:repeat(3,1fr)}}
+  .detail{background:#fff;border-radius:var(--radius);padding:1.6rem;border-top:5px solid var(--sea-glass)}
+  .detail p{color:var(--muted);font-size:.97rem}
+  .detail .num{font-family:Georgia,serif;font-size:2rem;color:var(--sea-glass);line-height:1}
+  /* ---------- gallery ---------- */
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:2rem}
+  @media(min-width:860px){.gallery-grid{grid-template-columns:repeat(4,1fr)}}
+  .gallery-grid figure{border-radius:14px;overflow:hidden;position:relative}
+  .gallery-grid img{height:210px;width:100%;object-fit:cover;transition:transform .5s ease}
+  .gallery-grid figure:hover img{transform:scale(1.06)}
+  .gallery-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(14,90,80,.85));color:#fff;font-size:.85rem;padding:1.6rem .8rem .6rem}
+  /* ---------- why ---------- */
+  .why-grid{display:grid;grid-template-columns:1fr;gap:1.3rem;margin-top:2rem}
+  @media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+  .why{background:#fff;border:1px solid var(--teal-soft);border-radius:var(--radius);padding:1.5rem}
+  .why .icon{width:48px;height:48px;border-radius:14px;background:var(--teal-soft);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:.8rem}
+  .why p{color:var(--muted);font-size:.96rem}
+  /* ---------- steps ---------- */
+  .steps{background:var(--teal-deep);color:#E7F3EF}
+  .steps h2{color:#fff}
+  .steps .lead{color:#BFE0D6}
+  .step-grid{display:grid;grid-template-columns:1fr;gap:1.3rem;margin-top:2rem}
+  @media(min-width:860px){.step-grid{grid-template-columns:repeat(3,1fr)}}
+  .step{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:1.6rem}
+  .step .num{font-family:Georgia,serif;font-size:2.1rem;color:var(--sea-glass)}
+  .step h3{color:#fff}
+  .step p{font-size:.96rem;color:#CFE8E0}
+  /* ---------- faq ---------- */
+  .faq-list{max-width:52rem;margin:2rem auto 0}
+  details{background:#fff;border:1px solid var(--teal-soft);border-radius:14px;margin-bottom:.8rem;overflow:hidden}
+  summary{cursor:pointer;padding:1rem 1.2rem;font-weight:700;color:var(--teal-deep);list-style:none;position:relative;padding-right:2.6rem}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:1.1rem;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--teal)}
+  details[open ] summary::after{content:"–"}
+  details .faq-a{padding:0 1.2rem 1.1rem;color:var(--muted);font-size:.97rem}
+  /* ---------- contact ---------- */
+  .contact{background:linear-gradient(150deg,var(--teal) 0%,var(--teal-deep) 90%);color:#EAF5F1}
+  .contact h2{color:#fff}
+  .contact-grid{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+  @media(min-width:880px){.contact-grid{grid-template-columns:1.1fr .9fr}}
+  .contact-card{background:#fff;color:var(--ink);border-radius:20px;padding:1.8rem;box-shadow:var(--shadow)}
+  .contact-card h3{margin-bottom:.8rem}
+  .contact-row{display:flex;gap:.7rem;padding:.5rem 0;border-bottom:1px dashed var(--teal-soft);font-size:.98rem}
+  .contact-row:last-of-type{border-bottom:none}
+  .contact-row b{color:var(--teal-deep);min-width:5.6rem}
+  .contact-ctas{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.2rem}
+  /* ---------- footer ---------- */
+  footer{background:#123B34;color:#BFD9D1;padding:2.6rem 0 2rem;font-size:.93rem}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:1.6rem}
+  @media(min-width:800px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+  footer h3{color:#fff;font-size:1.05rem}
+  footer a{color:#BFD9D1}
+  footer a:hover{color:#fff}
+  .foot-links{list-style:none}
+  .foot-links li{margin:.35rem 0}
+  .copyright{border-top:1px solid rgba(255,255,255,.15);margin-top:1.8rem;padding-top:1.1rem;text-align:center;font-size:.85rem;opacity:.8}
+  .float-wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#1FA855;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 10px 26px rgba(31,168,85,.45)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Monkseaton Nail Bar and Beauty — home">
+      <span class="brand-badge">M</span>
+      <span>
+        <span class="brand-name">Monkseaton Nail Bar &amp; Beauty</span><br>
+        <span class="brand-sub">NAIL BAR · BEAUTY SALON · WHITLEY BAY</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-wa btn-small" href="https://wa.me/447767687979" target="_blank" rel="noopener">WhatsApp Us</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker rise">Nail Bar &amp; Beauty Salon · Monkseaton</span>
+        <h1 class="rise-2">Beautiful nails, <span class="accent">seaside calm</span> — right here in Monkseaton</h1>
+        <p class="rise-3">Welcome to Monkseaton Nail Bar &amp; Beauty on Cauldwell Lane, Whitley Bay. From glossy gel nails and strong, natural-looking BIAB to relaxing pedicures and bespoke nail art, we look after your hands, feet and finishing touches — just a short stroll from the Whitley Bay coast.</p>
+        <div class="hero-ctas rise-3">
+          <a class="btn btn-wa" href="https://wa.me/447767687979" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
+          <a class="btn btn-call" href="tel:+447767687979">📞 Call 07767 687979</a>
+        </div>
+        <div class="rating-card rise-3" aria-label="Google rating">
+          <span class="stars" aria-hidden="true">★★★★☆</span>
+          <span><strong>4.3 stars</strong> · <span>from 58 Google reviews</span></span>
+        </div>
+      </div>
+      <div class="hero-photo rise-2">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop" alt="Freshly painted nails in soft seaside tones at a nail bar">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STRIP ================= -->
+  <div class="strip" aria-label="Quick facts">
+    <div class="wrap">
+      <div><strong>4.3 ★</strong><span>Google rating · 58 reviews</span></div>
+      <div><strong>40 Cauldwell Lane</strong><span>Monkseaton, Whitley Bay</span></div>
+      <div><strong>Gel · BIAB · Acrylic</strong><span>plus mani, pedi &amp; nail art</span></div>
+      <div><strong>WhatsApp booking</strong><span>message us any time</span></div>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <figure class="about-photo">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1200&auto=format&fit=crop" alt="Bright, welcoming nail salon interior">
+        <figcaption>Our Monkseaton salon — a calm little corner of the coast.</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">About Us</span>
+        <h2>A friendly local nail bar in the heart of Monkseaton</h2>
+        <p class="lead">Monkseaton Nail Bar &amp; Beauty is a neighbourhood nail bar and beauty salon serving Monkseaton, Whitley Bay and the wider Tyne and Wear coast. We believe great nails should feel effortless: a warm welcome, careful prep, quality products and a finish that lasts — whether you are treating yourself, getting ready for a holiday, or preparing for a special occasion.</p>
+        <p class="lead" style="margin-top:1rem">Every appointment starts with a quick chat about what you want and the condition of your natural nails, so we can recommend the service that suits you best — gel polish for shine, BIAB for strength and growth, acrylics for length, or a classic manicure and pedicure for a clean, polished look.</p>
+        <ul class="checklist">
+          <li>Gel nails, acrylics and BIAB (builder in a bottle)</li>
+          <li>Classic manicures and spa-style pedicures</li>
+          <li>Hand-painted nail art, from subtle to statement</li>
+          <li>Beauty treatments to complete your visit</li>
+          <li>Easy booking by WhatsApp, Facebook or phone</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <span class="kicker">Our Services</span>
+      <h2>Nails &amp; beauty, done properly</h2>
+      <p class="lead">Every treatment includes careful cuticle work, shaping and a tidy finish. We don&rsquo;t publish a fixed price list — prices depend on the service, length and design — so just <strong>call or message us for prices</strong> and we&rsquo;ll happily quote before you book.</p>
+
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1200&auto=format&fit=crop" alt="Glossy gel polish nails in a soft pink shade">
+          <div class="card-body">
+            <span class="tag">Most Loved</span>
+            <h3>Gel Nails</h3>
+            <p>High-shine gel polish on your natural nails or over extensions. Gel is cured under the lamp for a hard-wearing, chip-resistant finish that keeps its gloss for weeks. Choose from classic shades, French tips, ombré and seasonal colours.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=1200&auto=format&fit=crop" alt="Elegant long acrylic nails with a neat finish">
+          <div class="card-body">
+            <span class="tag">Length &amp; Strength</span>
+            <h3>Acrylic Nails</h3>
+            <p>If you want length and durability, acrylics are the classic choice. We sculpt and shape to suit your hands — almond, coffin, square or stiletto — then finish with your choice of colour, glitter or art. Infill and rebalance appointments keep them looking fresh.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=1200&auto=format&fit=crop" alt="Natural looking BIAB nails with a healthy shine">
+          <div class="card-body">
+            <span class="tag">Grow Your Own</span>
+            <h3>BIAB — Builder in a Bottle</h3>
+            <p>BIAB adds a strong, flexible layer over your natural nails, helping them grow longer without snapping. Ideal if your nails are weak, bendy or recovering from extensions. Wear it sheer and natural, or top it with gel colour for the best of both worlds.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1200&auto=format&fit=crop" alt="Classic manicure with neat cuticle care">
+          <div class="card-body">
+            <span class="tag">The Classic</span>
+            <h3>Manicure</h3>
+            <p>A proper manicure: soak, cuticle care, nail shaping, buffing and a relaxing hand massage, finished with polish or a natural shine. Perfect for keeping your hands looking tidy, and a great first step before gel or BIAB.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1200&auto=format&fit=crop" alt="Relaxing spa pedicure treatment">
+          <div class="card-body">
+            <span class="tag">Treat Your Feet</span>
+            <h3>Pedicure</h3>
+            <p>Soak, exfoliation, hard-skin care, cuticle work, a foot massage and perfectly painted toes. Choose a classic pedicure or add gel polish on toes for a finish that lasts through holidays, sandals and seaside walks alike.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop" alt="Detailed hand-painted nail art design">
+          <div class="card-body">
+            <span class="tag">Make It Yours</span>
+            <h3>Nail Art</h3>
+            <p>From tiny hand-painted flowers and French variations to chrome, cat-eye, glitter fades and full themed sets. Bring a photo of what you love and we&rsquo;ll talk through what works on your nail length and shape. Art is priced by design — send us your idea on WhatsApp for a quote.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop" alt="Relaxing facial beauty treatment">
+          <div class="card-body">
+            <span class="tag">Finishing Touches</span>
+            <h3>Beauty Treatments</h3>
+            <p>Complete your visit with our beauty treatments, from relaxing facials to tidy-up essentials. Ask us what&rsquo;s available when you book — we&rsquo;ll let you know the current treatment list and help you combine treatments in a single visit.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=1200&auto=format&fit=crop" alt="Calm spa setting with towels and stones">
+          <div class="card-body">
+            <span class="tag">Safe &amp; Gentle</span>
+            <h3>Removal &amp; Nail Care</h3>
+            <p>Never peel or pry off your gel or acrylics — book a safe soak-off removal instead. We remove product gently, reshape and condition your natural nails, and can add a strengthening treatment so your nails recover beautifully.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200&auto=format&fit=crop" alt="Colourful palette of nail and beauty shades">
+          <div class="card-body">
+            <span class="tag">Special Occasions</span>
+            <h3>Occasion &amp; Holiday Nails</h3>
+            <p>Weddings, proms, parties and holidays — tell us the date and the outfit, and we&rsquo;ll plan a set that fits the moment. We recommend booking occasion nails a little ahead so there&rsquo;s time to perfect the design.</p>
+            <span class="price-note">Call or message for prices</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DETAIL BAND ================= -->
+  <section class="detail-band">
+    <div class="wrap">
+      <span class="kicker">Not Sure What To Book?</span>
+      <h2>Gel, BIAB or acrylic — a quick guide</h2>
+      <div class="detail-grid">
+        <div class="detail">
+          <div class="num">01</div>
+          <h3>Choose gel polish if…</h3>
+          <p>Your natural nails are already a length you like and you want colour with serious shine. Gel polish is thinner and more natural-feeling, and it&rsquo;s the quickest appointment of the three — great for busy weeks and holidays.</p>
+        </div>
+        <div class="detail">
+          <div class="num">02</div>
+          <h3>Choose BIAB if…</h3>
+          <p>You&rsquo;re growing your nails or they break easily. The builder layer adds strength while keeping a natural look, and because it&rsquo;s soaked off and reapplied (or infilled), your natural nail keeps growing underneath, protected.</p>
+        </div>
+        <div class="detail">
+          <div class="num">03</div>
+          <h3>Choose acrylic if…</h3>
+          <p>You want instant length or a dramatic shape. Acrylics are the hardest-wearing option and the best canvas for long designs. They need infills every few weeks to keep the balance and shape looking right.</p>
+        </div>
+      </div>
+      <p class="lead" style="margin-top:1.6rem">Still deciding? Send us a photo of your nails on WhatsApp and tell us the look you&rsquo;re after — we&rsquo;ll recommend the best option honestly, even if it&rsquo;s the simpler one.</p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery">
+    <div class="wrap">
+      <span class="kicker">Gallery</span>
+      <h2>Inside the nail bar</h2>
+      <p class="lead">A little inspiration for your next set — fresh colours, careful finishes and that just-done feeling.</p>
+      <div class="gallery-grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=900&auto=format&fit=crop" alt="Polished nails in soft coastal tones">
+          <figcaption>Soft coastal shades</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=900&auto=format&fit=crop" alt="Glossy pink gel nails">
+          <figcaption>Glossy gel finish</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=900&auto=format&fit=crop" alt="Long elegant nail extensions">
+          <figcaption>Length &amp; shape</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=900&auto=format&fit=crop" alt="Detailed nail art close up">
+          <figcaption>Hand-painted detail</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=900&auto=format&fit=crop" alt="Classic manicure in progress">
+          <figcaption>Classic manicure care</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=900&auto=format&fit=crop" alt="Natural BIAB nails with healthy shine">
+          <figcaption>Natural BIAB shine</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=900&auto=format&fit=crop" alt="Salon stylist at work">
+          <figcaption>In the salon</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=900&auto=format&fit=crop" alt="Beauty products and brushes">
+          <figcaption>Finishing touches</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section id="why" style="background:var(--white)">
+    <div class="wrap">
+      <span class="kicker">Why Choose Us</span>
+      <h2>The Monkseaton difference</h2>
+      <div class="why-grid">
+        <div class="why">
+          <div class="icon">🌊</div>
+          <h3>Truly local</h3>
+          <p>We&rsquo;re on Cauldwell Lane in Monkseaton — part of the neighbourhood, not a chain. You&rsquo;ll see familiar faces, and we remember how you like your nails.</p>
+        </div>
+        <div class="why">
+          <div class="icon">⭐</div>
+          <h3>Rated by locals</h3>
+          <p>Our 4.3-star Google rating from 58 reviews comes from real local clients across Monkseaton and Whitley Bay — and we work hard to earn every one of them.</p>
+        </div>
+        <div class="why">
+          <div class="icon">💅</div>
+          <h3>Prep done properly</h3>
+          <p>Long-lasting nails start with preparation. We take time over cuticle work, dehydration and base layers so your gel, BIAB or acrylics stay put and grow out neatly.</p>
+        </div>
+        <div class="why">
+          <div class="icon">🎨</div>
+          <h3>Colours for every mood</h3>
+          <p>From barely-there nudes to bold seaside brights, chrome and glitter — plus hand-painted art. If you&rsquo;ve seen a design you love, bring it in and we&rsquo;ll recreate the look.</p>
+        </div>
+        <div class="why">
+          <div class="icon">💬</div>
+          <h3>Easy WhatsApp booking</h3>
+          <p>No phone queues. Message us on WhatsApp with the service you&rsquo;d like and a time that suits you, and we&rsquo;ll confirm your appointment as soon as we can.</p>
+        </div>
+        <div class="why">
+          <div class="icon">🧼</div>
+          <h3>Clean &amp; calm</h3>
+          <p>Tools are cleaned and sanitised between clients, workstations are wiped down every appointment, and the atmosphere stays relaxed — a little pause in your day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW BOOKING WORKS ================= -->
+  <section class="steps">
+    <div class="wrap">
+      <span class="kicker" style="background:rgba(255,255,255,.14);color:#BFE0D6">Booking</span>
+      <h2>Booked in three easy steps</h2>
+      <p class="lead">We don&rsquo;t have an online booking website — we keep it personal. Here&rsquo;s how to get your appointment:</p>
+      <div class="step-grid">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Message or call</h3>
+          <p>Tap the WhatsApp button anywhere on this page, or call us on 07767 687979. Tell us which service you&rsquo;d like — gel, BIAB, acrylics, a pedicure, nail art or a beauty treatment.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Pick your time</h3>
+          <p>We&rsquo;ll let you know the appointments available and confirm a time that suits you. Got a design in mind? Send a photo so we can allow the right amount of time.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Come &amp; relax</h3>
+          <p>Find us at 40 Cauldwell Lane, Monkseaton, Whitley Bay. Sit back, choose your colour, and leave with nails you&rsquo;ll keep admiring all week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AFTERCARE ================= -->
+  <section>
+    <div class="wrap about-grid">
+      <div>
+        <span class="kicker">Aftercare</span>
+        <h2>Keep your new nails looking their best</h2>
+        <p class="lead">A few simple habits make a big difference to how long your set lasts:</p>
+        <ul class="checklist">
+          <li>Apply cuticle oil daily — it keeps nails flexible and the skin healthy</li>
+          <li>Wear gloves for washing up and cleaning — water and chemicals lift product</li>
+          <li>Never use your nails as tools to open tins or pick at labels</li>
+          <li>Book infills every 2–3 weeks for acrylics and BIAB as they grow out</li>
+          <li>If a nail lifts or breaks, message us — don&rsquo;t glue or peel it yourself</li>
+          <li>Always book a proper soak-off removal instead of pulling product off</li>
+        </ul>
+      </div>
+      <figure class="about-photo">
+        <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=1200&auto=format&fit=crop" alt="Spa towels and a calm treatment setting">
+        <figcaption>Small daily care, longer-lasting nails.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= LOCAL AREA ================= -->
+  <section style="background:var(--white)">
+    <div class="wrap">
+      <span class="kicker">Visit Us</span>
+      <h2>Easy to reach from across the coast</h2>
+      <p class="lead">You&rsquo;ll find us at <strong>40 Cauldwell Lane, Monkseaton, Whitley Bay, Tyne and Wear</strong> — right in the village centre, a short walk from Monkseaton Metro station and handy for the shops and cafés of the village. Clients visit us from:</p>
+      <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-top:1.4rem">
+        <div class="why" style="text-align:center"><h3>Monkseaton</h3><p>Our home village</p></div>
+        <div class="why" style="text-align:center"><h3>Whitley Bay</h3><p>Five minutes away</p></div>
+        <div class="why" style="text-align:center"><h3>West Monkseaton</h3><p>Just along the road</p></div>
+        <div class="why" style="text-align:center"><h3>Earsdon</h3><p>A short drive</p></div>
+        <div class="why" style="text-align:center"><h3>Cullercoats</h3><p>Down the coast</p></div>
+        <div class="why" style="text-align:center"><h3>Tynemouth</h3><p>Along the seafront</p></div>
+      </div>
+      <p class="lead" style="margin-top:1.4rem">Pair your appointment with a wander around Monkseaton village or a walk down to Whitley Bay&rsquo;s promenade and Spanish City — fresh nails and fresh sea air make a very good day.</p>
+    </div>
+  </section>
+
+  <!-- ================= GLOSSARY ================= -->
+  <section class="detail-band" style="background:var(--teal-soft)">
+    <div class="wrap">
+      <span class="kicker">Nail Know-How</span>
+      <h2>Words you might hear in the salon</h2>
+      <div class="detail-grid">
+        <div class="detail">
+          <h3>Infill</h3>
+          <p>As your nails grow, a gap appears near the cuticle. An infill appointment refreshes the product at the base, rebalances the nail and keeps acrylics and BIAB strong — usually every 2–3 weeks.</p>
+        </div>
+        <div class="detail">
+          <h3>Soak-off</h3>
+          <p>The safe way to remove gel, BIAB or acrylic: product is gently softened and lifted away without forcing, protecting the natural nail underneath. Far kinder than peeling or prying.</p>
+        </div>
+        <div class="detail">
+          <h3>French &amp; ombré</h3>
+          <p>French tips pair a natural pink base with crisp white (or coloured) tips. Ombré blends two shades into each other for a soft gradient — both are timeless, and both look beautiful over gel or BIAB.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" style="background:var(--teal-soft);background:linear-gradient(180deg,var(--cream),var(--teal-soft))">
+    <div class="wrap">
+      <div style="text-align:center">
+        <span class="kicker">Good To Know</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>How do I book an appointment?</summary>
+          <div class="faq-a">The quickest way is WhatsApp — tap any WhatsApp button on this page or message 07767 687979. You can also call us on the same number, or reach us through our Facebook page. Tell us the service you&rsquo;d like and a time that suits, and we&rsquo;ll confirm.</div>
+        </details>
+        <details>
+          <summary>How much do treatments cost?</summary>
+          <div class="faq-a">Prices vary by service, nail length and how detailed the design is, so we don&rsquo;t publish a fixed price list here. Call or message us for prices — tell us what you&rsquo;d like (a photo helps) and we&rsquo;ll give you a clear quote before you book, with no obligation.</div>
+        </details>
+        <details>
+          <summary>What&rsquo;s the difference between gel, BIAB and acrylic?</summary>
+          <div class="faq-a">Gel polish is a long-wear colour on your natural nails. BIAB (builder in a bottle) adds a strengthening layer so your own nails can grow. Acrylics are sculpted extensions for instant length and shape. If you&rsquo;re unsure, send us a photo of your nails on WhatsApp and we&rsquo;ll advise.</div>
+        </details>
+        <details>
+          <summary>How long will my nails last?</summary>
+          <div class="faq-a">With normal wear and good aftercare, gel polish typically looks great for 2–3 weeks, while BIAB and acrylics are usually infilled every 2–3 weeks as your nails grow. Cuticle oil and gloves for housework really do help them last longer.</div>
+        </details>
+        <details>
+          <summary>Can you recreate a design from a photo?</summary>
+          <div class="faq-a">Very often, yes. Send us the photo on WhatsApp before your appointment so we can check the colours and techniques needed, quote for the design, and book enough time to do it justice.</div>
+        </details>
+        <details>
+          <summary>Do you remove gel or acrylics applied elsewhere?</summary>
+          <div class="faq-a">Yes — book a soak-off removal. We remove product gently and finish with shaping and conditioning so your natural nails are left in the best possible condition. Please never peel product off, as it takes layers of your natural nail with it.</div>
+        </details>
+        <details>
+          <summary>Where are you, and where can I park?</summary>
+          <div class="faq-a">You&rsquo;ll find us at 40 Cauldwell Lane, Monkseaton, Whitley Bay, Tyne and Wear — a short walk from Monkseaton Metro station. Message us on WhatsApp if you need directions or local parking tips before your visit.</div>
+        </details>
+        <details>
+          <summary>What if I need to change or cancel my appointment?</summary>
+          <div class="faq-a">Life happens — just message us on WhatsApp or call as early as you can and we&rsquo;ll happily rearrange your appointment for another time.</div>
+        </details>
+        <details>
+          <summary>Do you offer gift-friendly pamper appointments?</summary>
+          <div class="faq-a">Treating someone? A manicure and pedicure combination makes a lovely gift experience. Message us with the details and we&rsquo;ll help you plan the visit.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT / BOOK ================= -->
+  <section id="book" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="kicker" style="background:rgba(255,255,255,.15);color:#D8EFE8">Get In Touch</span>
+        <h2>Ready for fresh nails?</h2>
+        <p style="color:#CFE8E0;max-width:30rem">Message us on WhatsApp for the fastest reply — tell us the service you fancy and when you&rsquo;d like to come in. Prefer to talk? Call us on the same number. We&rsquo;d love to welcome you to Cauldwell Lane.</p>
+        <div class="contact-ctas">
+          <a class="btn btn-wa" href="https://wa.me/447767687979" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+          <a class="btn btn-call" href="tel:+447767687979">📞 Call 07767 687979</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <h3>Visit us</h3>
+        <div class="contact-row"><b>Salon</b><span>Monkseaton Nail Bar &amp; Beauty</span></div>
+        <div class="contact-row"><b>Address</b><span>40 Cauldwell Lane, Monkseaton,<br>Whitley Bay, Tyne and Wear</span></div>
+        <div class="contact-row"><b>Phone</b><span><a href="tel:+447767687979" style="color:var(--teal-deep);font-weight:700">07767 687979</a></span></div>
+        <div class="contact-row"><b>WhatsApp</b><span><a href="https://wa.me/447767687979" target="_blank" rel="noopener" style="color:var(--teal-deep);font-weight:700">Chat with us on WhatsApp</a></span></div>
+        <div class="contact-row"><b>Booking</b><span>Via WhatsApp, Facebook or phone</span></div>
+        <div class="contact-row"><b>Rating</b><span>4.3 ★ from 58 Google reviews</span></div>
+        <p style="margin-top:1rem;color:var(--muted);font-size:.93rem">Opening hours can vary — please message or call ahead and we&rsquo;ll confirm the best time for your appointment.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Monkseaton Nail Bar &amp; Beauty</h3>
+        <p style="margin-top:.6rem">A friendly nail bar and beauty salon in Monkseaton, Whitley Bay — gel nails, acrylics, BIAB, manicures, pedicures, nail art and beauty treatments, finished with seaside calm.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="foot-links">
+          <li><a href="#about">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#book">Book an appointment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="foot-links">
+          <li>40 Cauldwell Lane, Monkseaton</li>
+          <li>Whitley Bay, Tyne and Wear</li>
+          <li><a href="tel:+447767687979">Call: 07767 687979</a></li>
+          <li><a href="https://wa.me/447767687979" target="_blank" rel="noopener">WhatsApp: 07767 687979</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© Monkseaton Nail Bar &amp; Beauty · 40 Cauldwell Lane, Monkseaton, Whitley Bay · Rated 4.3 ★ from 58 Google reviews</div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/447767687979" target="_blank" rel="noopener" aria-label="Chat with Monkseaton Nail Bar and Beauty on WhatsApp">💬</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
