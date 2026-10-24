@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharon's Barber Shop | Barber in Ripon, North Yorkshire</title>
+<meta name="description" content="Sharon's Barber Shop — a traditional barber on North Street, Ripon, North Yorkshire. Rated 4.9 stars from 37 Google reviews. Haircuts, beard trims, hot towel shaves and kids cuts. Message on WhatsApp to book.">
+<style>
+  :root{
+    --oxblood:#4a1420;
+    --oxblood-deep:#330d16;
+    --wine:#6d1f30;
+    --cream:#f7f0e3;
+    --cream-soft:#efe4cf;
+    --brass:#c19a49;
+    --brass-light:#e3c67e;
+    --ink:#2b2320;
+    --muted:#6f6259;
+    --wa:#1faa53;
+    --wa-dark:#178a43;
+    --card:#fffdf8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:Georgia,'Times New Roman',serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{text-decoration:none;}
+  .wrap{width:min(1140px,92%);margin:0 auto;}
+
+  /* ---------- Top strip ---------- */
+  .topstrip{
+    background:var(--oxblood-deep);
+    color:var(--cream-soft);
+    font-family:Verdana,Geneva,sans-serif;
+    font-size:.78rem;
+    letter-spacing:.04em;
+    padding:.5rem 0;
+    text-align:center;
+  }
+  .topstrip strong{color:var(--brass-light);font-weight:700;}
+  .topstrip a{color:var(--cream-soft);text-decoration:underline;}
+
+  /* ---------- Header ---------- */
+  header{
+    background:var(--cream);
+    border-bottom:3px double var(--brass);
+    position:sticky;top:0;z-index:50;
+  }
+  .header-in{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:1rem;padding:.85rem 0;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:.8rem;}
+  .brand-mark{
+    width:52px;height:52px;border-radius:50%;
+    background:var(--oxblood);color:var(--brass-light);
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.45rem;font-weight:700;
+    border:2px solid var(--brass);
+    font-family:Georgia,serif;
+    flex:none;
+  }
+  .brand h1{font-size:1.28rem;line-height:1.15;color:var(--oxblood);font-weight:700;}
+  .brand small{
+    display:block;font-family:Verdana,Geneva,sans-serif;
+    font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+  }
+  nav{display:flex;gap:1.15rem;flex-wrap:wrap;font-family:Verdana,Geneva,sans-serif;font-size:.82rem;}
+  nav a{color:var(--ink);letter-spacing:.03em;padding:.25rem 0;border-bottom:2px solid transparent;}
+  nav a:hover{border-bottom-color:var(--brass);color:var(--oxblood);}
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-family:Verdana,Geneva,sans-serif;font-weight:700;font-size:.9rem;
+    padding:.8rem 1.5rem;border-radius:999px;border:2px solid transparent;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    cursor:pointer;text-align:center;justify-content:center;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(51,13,22,.22);}
+  .btn-wa{background:var(--wa);color:#fff;}
+  .btn-wa:hover{background:var(--wa-dark);}
+  .btn-call{background:transparent;color:var(--oxblood);border-color:var(--oxblood);}
+  .btn-call:hover{background:var(--oxblood);color:var(--cream);}
+  .btn-brass{background:var(--brass);color:var(--oxblood-deep);}
+  .btn-brass:hover{background:var(--brass-light);}
+  .btn-sm{padding:.55rem 1.05rem;font-size:.8rem;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(160deg,var(--oxblood) 0%,var(--oxblood-deep) 78%);
+    color:var(--cream);
+    overflow:hidden;
+  }
+  .hero-in{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:2.4rem;
+    align-items:center;padding:3.4rem 0 3rem;
+  }
+  .hero .kicker{
+    font-family:Verdana,Geneva,sans-serif;font-size:.74rem;letter-spacing:.3em;
+    text-transform:uppercase;color:var(--brass-light);margin-bottom:1rem;
+    display:flex;align-items:center;gap:.7rem;
+  }
+  .hero .kicker::before{content:"";width:38px;height:2px;background:var(--brass);display:inline-block;}
+  .hero h2{
+    font-size:clamp(2.1rem,5.2vw,3.4rem);line-height:1.08;font-weight:700;margin-bottom:1.05rem;
+  }
+  .hero h2 em{font-style:italic;color:var(--brass-light);}
+  .hero p.lede{font-size:1.08rem;color:#efe3cd;max-width:34rem;margin-bottom:1.6rem;}
+  .stars-row{
+    display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;
+    background:rgba(247,240,227,.08);border:1px solid rgba(193,154,73,.45);
+    border-radius:14px;padding:.75rem 1rem;margin-bottom:1.7rem;max-width:34rem;
+  }
+  .stars{color:var(--brass-light);font-size:1.15rem;letter-spacing:.18em;}
+  .stars-row span{font-family:Verdana,Geneva,sans-serif;font-size:.83rem;color:var(--cream-soft);}
+  .stars-row strong{color:#fff;}
+  .hero-ctas{display:flex;gap:.8rem;flex-wrap:wrap;}
+  .hero-photo{position:relative;}
+  .hero-photo img{
+    border-radius:18px;border:4px solid var(--brass);
+    box-shadow:0 24px 48px rgba(0,0,0,.4);
+    animation:heroFloat 9s ease-in-out infinite;
+  }
+  @keyframes heroFloat{
+    0%,100%{transform:translateY(0) rotate(0deg);}
+    50%{transform:translateY(-8px) rotate(.4deg);}
+  }
+  .hero-badge{
+    position:absolute;left:-14px;bottom:22px;
+    background:var(--cream);color:var(--oxblood);
+    border-radius:12px;padding:.65rem 1rem;
+    font-family:Verdana,Geneva,sans-serif;font-size:.78rem;font-weight:700;
+    box-shadow:0 12px 26px rgba(0,0,0,.3);border-left:5px solid var(--brass);
+    animation:badgePulse 3.2s ease-in-out infinite;
+  }
+  @keyframes badgePulse{0%,100%{transform:scale(1);}50%{transform:scale(1.045);}}
+  .hero-badge small{display:block;font-weight:400;color:var(--muted);font-size:.7rem;}
+
+  /* ---------- Marquee ---------- */
+  .marquee{
+    background:var(--brass);color:var(--oxblood-deep);
+    overflow:hidden;white-space:nowrap;
+    font-family:Verdana,Geneva,sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.14em;
+    padding:.6rem 0;text-transform:uppercase;
+  }
+  .marquee-track{display:inline-block;animation:marqueeMove 30s linear infinite;padding-left:100%;}
+  @keyframes marqueeMove{from{transform:translateX(0);}to{transform:translateX(-100%);}}
+
+  /* ---------- Sections ---------- */
+  section{padding:3.6rem 0;}
+  .sec-head{max-width:44rem;margin:0 auto 2.2rem;text-align:center;}
+  .sec-head .tag{
+    font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.3em;
+    text-transform:uppercase;color:var(--wine);margin-bottom:.6rem;display:block;
+  }
+  .sec-head h3{font-size:clamp(1.7rem,3.6vw,2.4rem);color:var(--oxblood);line-height:1.15;margin-bottom:.7rem;}
+  .sec-head p{color:var(--muted);}
+  .rule{width:74px;height:3px;background:var(--brass);margin:1rem auto 0;border-radius:2px;}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:center;}
+  .about-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+  .about-photos img{border-radius:14px;height:100%;object-fit:cover;box-shadow:0 14px 30px rgba(51,13,22,.16);}
+  .about-photos img:first-child{grid-row:span 2;}
+  .about-copy h3{font-size:1.9rem;color:var(--oxblood);margin-bottom:1rem;line-height:1.2;}
+  .about-copy p{margin-bottom:1rem;color:#41372f;}
+  .about-points{list-style:none;margin:1.3rem 0 1.6rem;font-family:Verdana,Geneva,sans-serif;font-size:.9rem;}
+  .about-points li{padding:.5rem 0 .5rem 1.9rem;position:relative;border-bottom:1px dashed var(--cream-soft);}
+  .about-points li::before{
+    content:"✂";position:absolute;left:0;top:.5rem;color:var(--brass);font-size:1rem;
+  }
+
+  /* ---------- Services ---------- */
+  .services{background:var(--oxblood-deep);color:var(--cream);}
+  .services .sec-head h3{color:var(--cream);}
+  .services .sec-head p{color:#d9c9a8;}
+  .services .sec-head .tag{color:var(--brass-light);}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;}
+  .svc{
+    background:linear-gradient(170deg,#571a29,#3d0f1a);
+    border:1px solid rgba(193,154,73,.4);border-radius:16px;
+    padding:1.7rem 1.5rem;
+    transition:transform .3s ease, border-color .3s ease;
+  }
+  .svc:hover{transform:translateY(-6px);border-color:var(--brass-light);}
+  .svc .icon{font-size:1.9rem;margin-bottom:.8rem;display:block;}
+  .svc h4{font-size:1.22rem;margin-bottom:.6rem;color:#fff;}
+  .svc p{font-size:.95rem;color:#e6d9bf;margin-bottom:1rem;}
+  .svc .price-note{
+    font-family:Verdana,Geneva,sans-serif;font-size:.76rem;letter-spacing:.06em;
+    color:var(--brass-light);text-transform:uppercase;border-top:1px dashed rgba(193,154,73,.5);
+    padding-top:.8rem;display:block;
+  }
+  .svc-photo{border-radius:16px;overflow:hidden;border:1px solid rgba(193,154,73,.4);}
+  .svc-photo img{height:100%;object-fit:cover;transition:transform .5s ease;}
+  .svc-photo:hover img{transform:scale(1.05);}
+  .services .fineprint{
+    text-align:center;margin-top:2rem;font-family:Verdana,Geneva,sans-serif;
+    font-size:.82rem;color:#d9c9a8;
+  }
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  ★ Rated <strong>4.9 stars</strong> from <strong>37 Google reviews</strong> · 73 North St, Ripon HG4 1DP · <a href="tel:+447929734246">07929 734246</a>
+</div>
+
+<header>
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="Sharon's Barber Shop home">
+      <span class="brand-mark">S</span>
+      <span>
+        <h1>Sharon's Barber Shop</h1>
+        <small>Ripon · North Yorkshire</small>
+      </span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <a class="btn btn-wa btn-sm" href="https://wa.me/447929734246">💬 WhatsApp Us</a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <p class="kicker">Traditional barbering in Ripon</p>
+      <h2>A proper cut, done <em>properly</em> — right on North Street.</h2>
+      <p class="lede">Sharon's Barber Shop is a friendly local barber in the heart of Ripon, North Yorkshire — sharp cuts, tidy beard work and a warm welcome, every single visit.</p>
+      <div class="stars-row">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><strong>4.9 out of 5</strong> — rated by 37 customers on Google</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/447929734246">💬 Book on WhatsApp</a>
+        <a class="btn btn-brass" href="tel:+447929734246">📞 Call 07929 734246</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80" alt="Barber giving a customer a precision haircut" width="900" height="700">
+      <div class="hero-badge">73 North Street<small>North St, Ripon HG4 1DP</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <span class="marquee-track">Haircuts ✂ Beard Trims ✂ Hot Towel Shaves ✂ Kids Cuts ✂ Skin Fades ✂ Restyles ✂ Haircuts ✂ Beard Trims ✂ Hot Towel Shaves ✂ Kids Cuts ✂ Skin Fades ✂ Restyles ✂&nbsp;</span>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photos">
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=900&q=80" alt="Inside a classic barbershop with leather chairs" width="700" height="900">
+        <img src="https://images.unsplash.com/photo-1593702288056-7927b442d0fa?w=900&q=80" alt="Barber at work in the shop" width="700" height="440">
+        <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?w=900&q=80" alt="Barber trimming a customer's hair with care" width="700" height="440">
+      </div>
+      <div class="about-copy">
+        <span class="sec-head tag" style="text-align:left;display:block;font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--wine);margin-bottom:.6rem;">About the shop</span>
+        <h3>A North Street barber Ripon can rely on</h3>
+        <p>Tucked on North Street in the centre of Ripon, Sharon's Barber Shop keeps the best traditions of the trade alive: a careful consultation before the clippers come out, honest advice on what suits you, and a finish that is checked twice before you leave the chair.</p>
+        <p>Whether it is your regular tidy-up, a complete restyle, or a first haircut for a youngster, the approach is the same — unhurried, precise and friendly. It is why local customers have rated the shop 4.9 stars on Google.</p>
+        <ul class="about-points">
+          <li>Rated 4.9 stars from 37 Google reviews</li>
+          <li>Easy to find at 73 North St, Ripon HG4 1DP</li>
+          <li>Book ahead on WhatsApp or call the shop</li>
+          <li>Classic cuts and modern styles alike</li>
+          <li>Children welcome for patient, gentle cuts</li>
+        </ul>
+        <a class="btn btn-wa" href="https://wa.me/447929734246">💬 Message the Shop</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">What we do</span>
+      <h3>Barber services, done with care</h3>
+      <p>Every service starts with a quick chat about what you want and ends with a proper finish. For today's prices, just call or message — we are happy to help.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="icon">✂️</span>
+        <h4>Gents Haircut</h4>
+        <p>A full consultation, precision cut tailored to your head shape and hair type, styled and finished so it looks just as good when you do it yourself at home.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <span class="icon">💈</span>
+        <h4>Skin Fades &amp; Tapers</h4>
+        <p>Clean, graduated fades blended seamlessly into your chosen length on top — from a subtle taper to a sharp zero fade, edged and detailed to finish.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc-photo">
+        <img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?w=900&q=80" alt="Traditional barber tools laid out ready for work" width="700" height="520">
+      </div>
+      <div class="svc">
+        <span class="icon">🧔</span>
+        <h4>Beard Trim &amp; Shape</h4>
+        <p>Length taken down evenly, shape sharpened around the cheeks and neckline, and conditioned so your beard sits neatly and grows out well.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <span class="icon">🪒</span>
+        <h4>Hot Towel Shave</h4>
+        <p>The traditional wet shave: hot towels to soften, a rich lather, a close straight-razor finish and a cool, soothing treatment to end. A proper treat.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <span class="icon">👦</span>
+        <h4>Kids Cuts</h4>
+        <p>Patient, friendly haircuts for younger customers — no rushing, no fuss, just a calm experience and a smart result they will be proud of.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <span class="icon">🔄</span>
+        <h4>Restyle &amp; Advice</h4>
+        <p>Fancy a change? Bring a photo or just an idea and we will talk honestly about what will work with your hair, then build the new look together.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc">
+        <span class="icon">📏</span>
+        <h4>Clipper Cuts &amp; Tidy-Ups</h4>
+        <p>One grade all over, or a quick in-between tidy of the edges, back and sides to keep your cut looking fresh between full appointments.</p>
+        <span class="price-note">Call or message for prices</span>
+      </div>
+      <div class="svc-photo">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=900&q=80" alt="Barber comb and scissors ready on the counter" width="700" height="520">
+      </div>
+    </div>
+    <p class="fineprint">Prices vary by service — call <strong>07929 734246</strong> or message on WhatsApp for prices and availability.</p>
+  </div>
+</section>
+
+<style>
+  /* ---------- Why us ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;}
+  .why{
+    background:var(--card);border:1px solid var(--cream-soft);border-top:4px solid var(--brass);
+    border-radius:14px;padding:1.5rem 1.3rem;text-align:center;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .why:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(51,13,22,.12);}
+  .why .big{font-size:2rem;display:block;margin-bottom:.6rem;}
+  .why h4{color:var(--oxblood);font-size:1.1rem;margin-bottom:.5rem;}
+  .why p{font-size:.9rem;color:var(--muted);}
+
+  /* ---------- Gallery ---------- */
+  .gallery-sec{background:var(--cream-soft);}
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;}
+  .gal-grid figure{border-radius:14px;overflow:hidden;position:relative;box-shadow:0 12px 26px rgba(51,13,22,.14);}
+  .gal-grid img{height:260px;width:100%;object-fit:cover;transition:transform .55s ease;}
+  .gal-grid figure:hover img{transform:scale(1.07);}
+  .gal-grid figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    background:linear-gradient(transparent,rgba(51,13,22,.85));
+    color:var(--cream);font-family:Verdana,Geneva,sans-serif;font-size:.78rem;
+    padding:2rem 1rem .8rem;letter-spacing:.03em;
+  }
+
+  /* ---------- Steps ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;counter-reset:step;}
+  .step{
+    background:var(--card);border:1px solid var(--cream-soft);border-radius:16px;
+    padding:1.8rem 1.5rem;position:relative;
+  }
+  .step::before{
+    counter-increment:step;content:counter(step);
+    position:absolute;top:-18px;left:22px;
+    width:38px;height:38px;border-radius:50%;
+    background:var(--oxblood);color:var(--brass-light);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:1.05rem;border:2px solid var(--brass);
+  }
+  .step h4{color:var(--oxblood);margin:.4rem 0 .5rem;font-size:1.15rem;}
+  .step p{font-size:.93rem;color:#41372f;}
+
+  /* ---------- FAQ ---------- */
+  .faq-sec{background:var(--cream-soft);}
+  .faq-list{max-width:820px;margin:0 auto;display:grid;gap:.9rem;}
+  details{
+    background:var(--card);border:1px solid var(--cream-soft);border-left:5px solid var(--brass);
+    border-radius:12px;padding:1.05rem 1.3rem;
+  }
+  summary{
+    cursor:pointer;font-weight:700;color:var(--oxblood);font-size:1.05rem;
+    list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";font-size:1.5rem;color:var(--brass);line-height:1;flex:none;}
+  details[open ] summary::after{content:"–";}
+  details p{margin-top:.7rem;color:#41372f;font-size:.96rem;}
+  details a{color:var(--wine);text-decoration:underline;font-weight:700;}
+
+  /* ---------- Visit / contact ---------- */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.2rem;align-items:stretch;}
+  .visit-card{
+    background:var(--oxblood);color:var(--cream);border-radius:18px;
+    padding:2.2rem 2rem;border:2px solid var(--brass);
+  }
+  .visit-card h3{font-size:1.7rem;margin-bottom:1.2rem;color:#fff;}
+  .visit-row{display:flex;gap:.9rem;padding:.75rem 0;border-bottom:1px dashed rgba(193,154,73,.45);font-family:Verdana,Geneva,sans-serif;font-size:.92rem;}
+  .visit-row:last-of-type{border-bottom:none;}
+  .visit-row .ic{font-size:1.15rem;flex:none;}
+  .visit-row strong{color:var(--brass-light);display:block;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.15rem;}
+  .visit-row a{color:var(--cream);text-decoration:underline;}
+  .visit-ctas{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem;}
+  .visit-photo{border-radius:18px;overflow:hidden;box-shadow:0 18px 36px rgba(51,13,22,.2);}
+  .visit-photo img{height:100%;width:100%;object-fit:cover;transition:transform .6s ease;}
+  .visit-photo:hover img{transform:scale(1.04);}
+  .rating-band{
+    margin-top:2.2rem;background:var(--card);border:1px solid var(--cream-soft);
+    border-radius:16px;padding:1.6rem;text-align:center;
+  }
+  .rating-band .stars{color:var(--brass);font-size:1.7rem;letter-spacing:.3em;display:block;margin-bottom:.4rem;}
+  .rating-band p{font-family:Verdana,Geneva,sans-serif;font-size:.9rem;color:var(--muted);}
+  .rating-band strong{color:var(--oxblood);}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--oxblood-deep);color:#d9c9a8;padding:2.6rem 0 1.6rem;}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2rem;margin-bottom:2rem;}
+  footer h5{color:var(--brass-light);font-size:1.05rem;margin-bottom:.8rem;}
+  footer p, footer a{font-family:Verdana,Geneva,sans-serif;font-size:.86rem;color:#d9c9a8;}
+  footer a:hover{color:#fff;text-decoration:underline;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:.45rem;}
+  .foot-base{
+    border-top:1px solid rgba(193,154,73,.35);padding-top:1.2rem;text-align:center;
+    font-family:Verdana,Geneva,sans-serif;font-size:.76rem;color:#a68f66;
+  }
+
+  /* ---------- Floating WhatsApp ---------- */
+  .wa-float{
+    position:fixed;right:18px;bottom:18px;z-index:99;
+    background:var(--wa);color:#fff;border-radius:999px;
+    padding:.85rem 1.25rem;font-family:Verdana,Geneva,sans-serif;font-weight:700;font-size:.88rem;
+    box-shadow:0 14px 30px rgba(23,138,67,.45);
+    display:inline-flex;align-items:center;gap:.5rem;
+    animation:floatBob 3.4s ease-in-out infinite;
+  }
+  .wa-float:hover{background:var(--wa-dark);}
+  @keyframes floatBob{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:900px){
+    .hero-in{grid-template-columns:1fr;padding:2.4rem 0;}
+    .about-grid,.visit-grid{grid-template-columns:1fr;}
+    .svc-grid{grid-template-columns:1fr 1fr;}
+    .why-grid{grid-template-columns:1fr 1fr;}
+    .gal-grid{grid-template-columns:1fr 1fr;}
+    .steps{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    nav{display:none;}
+    .hero-badge{left:8px;}
+  }
+  @media (max-width:540px){
+    .svc-grid,.gal-grid,.why-grid{grid-template-columns:1fr;}
+    .header-in{justify-content:center;text-align:center;}
+    .brand{flex-direction:column;text-align:center;}
+    section{padding:2.6rem 0;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .hero-photo img,.hero-badge,.marquee-track,.wa-float{animation:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Why Sharon's</span>
+      <h3>The little things that make a great barber</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <span class="big">⭐</span>
+        <h4>4.9-Star Rated</h4>
+        <p>Rated 4.9 out of 5 from 37 reviews on Google by customers across Ripon and North Yorkshire.</p>
+      </div>
+      <div class="why">
+        <span class="big">📍</span>
+        <h4>Central Ripon</h4>
+        <p>Easy to find and easy to reach at 73 North St, Ripon HG4 1DP — right in the middle of town.</p>
+      </div>
+      <div class="why">
+        <span class="big">💬</span>
+        <h4>Book on WhatsApp</h4>
+        <p>Message the shop on WhatsApp to ask about appointments, services and prices — quick and simple.</p>
+      </div>
+      <div class="why">
+        <span class="big">✂️</span>
+        <h4>All Ages Welcome</h4>
+        <p>From first haircuts to classic gents styling, every customer gets the same care and attention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-sec" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Gallery</span>
+      <h3>From the barber's chair</h3>
+      <p>A look at the craft — sharp lines, clean blends and traditional barbering done the right way.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="gal-grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900&q=80" alt="Barber styling a customer's hair" width="700" height="520">
+        <figcaption>Precision styling</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=900&q=80" alt="Customer having his hair cut in a barbershop" width="700" height="520">
+        <figcaption>In the chair</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=900&q=80" alt="Haircut in progress with clippers" width="700" height="520">
+        <figcaption>Clipper work</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1584486483122-af7d49cf2992?w=900&q=80" alt="Traditional straight razor used for shaves" width="700" height="520">
+        <figcaption>The traditional shave</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=900&q=80" alt="Barber finishing a haircut and checking the details" width="700" height="520">
+        <figcaption>Finishing touches</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=900&q=80" alt="Professional barber scissors and comb" width="700" height="520">
+        <figcaption>Tools of the trade</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">How to book</span>
+      <h3>Three easy steps to a sharper you</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h4>Message or call</h4>
+        <p>Tap the WhatsApp button anywhere on this page, or call <strong>07929 734246</strong>, and tell us what you would like done.</p>
+      </div>
+      <div class="step">
+        <h4>Agree a time</h4>
+        <p>We will confirm a time that suits you and let you know anything worth knowing before your visit to North Street.</p>
+      </div>
+      <div class="step">
+        <h4>Sit back &amp; relax</h4>
+        <p>Take a seat at 73 North St, Ripon HG4 1DP, and leave with a cut that is sharp, tidy and easy to look after.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Good to know</span>
+      <h3>Frequently asked questions</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Where is Sharon's Barber Shop?</summary>
+        <p>You will find us at 73 North St, Ripon HG4 1DP, in the centre of Ripon, North Yorkshire — easy to reach from anywhere in town.</p>
+      </details>
+      <details>
+        <summary>How do I book an appointment?</summary>
+        <p>The quickest way is WhatsApp — tap any WhatsApp button on this page or message <a href="https://wa.me/447929734246">07929 734246</a>. You can also call the same number on <a href="tel:+447929734246">07929 734246</a>.</p>
+      </details>
+      <details>
+        <summary>How much does a haircut cost?</summary>
+        <p>Prices depend on the service you choose, so for prices please call or message us on WhatsApp and we will happily let you know before you book.</p>
+      </details>
+      <details>
+        <summary>Do you cut children's hair?</summary>
+        <p>Yes — younger customers are very welcome. We take a patient, friendly approach so first haircuts and regular trims alike are a calm, positive experience.</p>
+      </details>
+      <details>
+        <summary>Do you offer beard trims and shaves?</summary>
+        <p>Yes. As well as haircuts and fades, we offer beard trims and shaping, plus the traditional hot towel wet shave for a really close, clean finish.</p>
+      </details>
+      <details>
+        <summary>What do customers say about the shop?</summary>
+        <p>Sharon's Barber Shop is rated 4.9 stars on Google from 37 reviews — something we are proud of, and work hard to live up to with every customer, every day.</p>
+      </details>
+      <details>
+        <summary>Can I ask for a completely new style?</summary>
+        <p>Of course. Bring a photo or describe the look you are after and we will give you honest advice on what will suit your hair type and face shape before we start.</p>
+      </details>
+      <details>
+        <summary>How often should I get my hair cut?</summary>
+        <p>It depends on your style. Short cuts and skin fades usually look their sharpest with a tidy-up every two to four weeks, while longer styles can often go five or six weeks. At your appointment we are happy to advise what will suit your hair and your routine — and you can message us on WhatsApp any time to book your next visit.</p>
+      </details>
+      <details>
+        <summary>I am nervous about a first visit — what should I expect?</summary>
+        <p>A warm welcome, a proper chat about what you would like before anything is cut, and no rushing. You will be shown the mirror at the end so we can check the back and sides together, and if you would like anything adjusted, just say — we would much rather get it right while you are still in the chair.</p>
+      </details>
+      <details>
+        <summary>Do you offer gift ideas for family members?</summary>
+        <p>A haircut, beard treatment or hot towel shave makes a thoughtful treat for birthdays and special occasions. Message us on WhatsApp or call 07929 734246 and we will happily talk through what might suit the person you have in mind and when they could come in.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Visit us</span>
+      <h3>Find us on North Street, Ripon</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Sharon's Barber Shop</h3>
+        <div class="visit-row">
+          <span class="ic">📍</span>
+          <div><strong>Address</strong>73 North St, Ripon HG4 1DP<br>North Yorkshire</div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">📞</span>
+          <div><strong>Phone</strong><a href="tel:+447929734246">07929 734246</a></div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">💬</span>
+          <div><strong>WhatsApp</strong><a href="https://wa.me/447929734246">Message us on WhatsApp</a> — the fastest way to book.</div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">⭐</span>
+          <div><strong>Google rating</strong>4.9 stars from 37 reviews</div>
+        </div>
+        <div class="visit-row">
+          <span class="ic">🕐</span>
+          <div><strong>Opening hours</strong>Message or call us for today's opening hours and appointment availability.</div>
+        </div>
+        <div class="visit-ctas">
+          <a class="btn btn-wa" href="https://wa.me/447929734246">💬 WhatsApp Us</a>
+          <a class="btn btn-brass" href="tel:+447929734246">📞 Call the Shop</a>
+        </div>
+      </div>
+      <div class="visit-photo">
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=900&q=80" alt="Warm, traditional barbershop interior" width="800" height="900">
+      </div>
+    </div>
+    <div class="rating-band">
+      <span class="stars" aria-hidden="true">★★★★★</span>
+      <p><strong>4.9 out of 5</strong> — Sharon's Barber Shop is rated by <strong>37 customers</strong> on Google. Pop in and see why Ripon keeps coming back.</p>
+      <p style="margin-top:.7rem;">You will find the shop at 73 North St, Ripon HG4 1DP — easy to reach from across Ripon and the surrounding North Yorkshire villages. Whether it is your first visit or your fiftieth, expect the same careful cut, the same honest advice and the same friendly welcome. To arrange your appointment, simply call or message on WhatsApp and we will find a time that works for you.</p>
+    </div>
+  </div>
+</section>
+
+<section id="detail" style="background:var(--cream-soft);">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">In detail</span>
+      <h3>What happens during your appointment</h3>
+      <p>Never been to Sharon's Barber Shop before? Here is what a typical visit looks like, from the moment you walk through the door on North Street.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <h3 style="font-size:1.5rem;">The consultation comes first</h3>
+        <p>Every appointment starts with a proper conversation. We will ask what you have in mind, how you usually wear your hair, and how much time you spend on it in the morning. If you have a photo of a style you like, show us — it helps us understand exactly the length, shape and finish you are picturing.</p>
+        <p>We will also be honest with you. Some styles need a certain hair type or a bit of growing first, and we would rather tell you that upfront and agree a plan than send you home with something that will not sit right by the weekend.</p>
+        <h3 style="font-size:1.5rem;margin-top:1.4rem;">Careful cutting, checked twice</h3>
+        <p>During the cut we work methodically — building the shape gradually rather than taking too much off at once. Fades are blended in stages and checked from every angle, edges are cleaned up carefully around the ears and neckline, and the finish is styled so you can see exactly how it will look day to day.</p>
+        <p>Before you leave the chair, we hand you the mirror and check the back together. If anything needs adjusting — a little more off the fringe, a tighter blend — that is the moment, and we are always happy to do it.</p>
+      </div>
+      <div class="about-copy">
+        <h3 style="font-size:1.5rem;">Beards, shaves and the finishing touches</h3>
+        <p>Beard appointments follow the same unhurried approach: we agree the shape first, take the length down evenly, sharpen the lines around the cheeks and neck, and finish so the beard sits neatly against your face shape. A hot towel shave is the full traditional experience — towels, lather, a close razor finish and a calm, comfortable end to the treatment.</p>
+        <p>For younger customers, we keep things relaxed and pressure-free. Parents are welcome to stay close by, and we work at whatever pace keeps the child comfortable — a positive first experience at the barber matters far more to us than speed.</p>
+        <h3 style="font-size:1.5rem;margin-top:1.4rem;">Booking ahead helps everyone</h3>
+        <p>Messaging ahead on WhatsApp is the easiest way to secure a time that suits you, and it means we can be ready for you when you arrive at 73 North St, Ripon HG4 1DP. You can reach the shop on <strong>07929 734246</strong> — the same number works for calls and WhatsApp messages.</p>
+        <p>Whatever brings you in — a regular trim, a restyle, a beard reshape or a first haircut for your little one — you will get the same thing at Sharon's Barber Shop: careful work, honest advice and a warm Ripon welcome.</p>
+        <a class="btn btn-wa" href="https://wa.me/447929734246" style="margin-top:.6rem;">💬 Book Your Visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guide" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Look after your cut</span>
+      <h3>Simple grooming tips from your Ripon barber</h3>
+      <p>A great haircut should keep looking good long after you leave North Street. Here is the straightforward advice we give customers in the chair.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h4>Book before you grow out</h4>
+        <p>Most cuts look their best for the first few weeks. If you like your hair sharp, message us on WhatsApp to book your next visit before the edges start to soften — short back and sides styles especially benefit from regular tidy-ups rather than waiting until everything has grown out.</p>
+      </div>
+      <div class="step">
+        <h4>Less product, better placed</h4>
+        <p>A pea-sized amount of styling product, warmed between your palms and worked through dry or nearly-dry hair, beats a big handful every time. Start at the back and sides, then finish the top — that way the front never ends up overloaded or greasy looking.</p>
+      </div>
+      <div class="step">
+        <h4>Tell us what did not work</h4>
+        <p>If part of your last cut grew out awkwardly — a stubborn crown, a fringe that would not sit — tell us at your next visit. Honest feedback helps us adjust the cut so it behaves better with your hair's natural growth pattern.</p>
+      </div>
+      <div class="step">
+        <h4>Beard care between visits</h4>
+        <p>Comb your beard downwards daily to train the hairs, keep the neckline tidy with careful small trims, and wash it with warm water rather than very hot, which dries the skin underneath. Leave the reshaping to us at your next appointment.</p>
+      </div>
+      <div class="step">
+        <h4>Bring a photo, honestly</h4>
+        <p>Photos help a lot — of a style you like, or even of your own hair on a good day. We will always be straight with you about whether a style will work with your hair type, thickness and face shape before a single cut is made.</p>
+      </div>
+      <div class="step">
+        <h4>First haircuts, gently done</h4>
+        <p>For little ones, a short, calm visit works best. Bring them at a quiet time of day if you can, and do not worry if the first trip is just about getting comfortable in the chair — a good experience matters more than a perfect finish.</p>
+      </div>
+    </div>
+    <div class="rating-band" style="margin-top:2.4rem;">
+      <p>Not sure what you need? <strong>Message us on WhatsApp</strong> with a quick description — or even a photo — and we will happily advise before you book. Call or message <strong>07929 734246</strong> · Sharon's Barber Shop, 73 North St, Ripon HG4 1DP.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>Sharon's Barber Shop</h5>
+        <p>A traditional local barber on North Street, Ripon — sharp cuts, beard work, hot towel shaves and a friendly welcome for all ages.</p>
+      </div>
+      <div>
+        <h5>Quick links</h5>
+        <ul>
+          <li><a href="#about">About the shop</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#visit">Visit us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li>73 North St, Ripon HG4 1DP</li>
+          <li><a href="tel:+447929734246">07929 734246</a></li>
+          <li><a href="https://wa.me/447929734246">WhatsApp the shop</a></li>
+          <li>★ 4.9 from 37 Google reviews</li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-base">© Sharon's Barber Shop, 73 North St, Ripon HG4 1DP, North Yorkshire. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447929734246" aria-label="Chat with Sharon's Barber Shop on WhatsApp">💬 Book on WhatsApp</a>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
