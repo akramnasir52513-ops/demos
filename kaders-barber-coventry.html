@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kader's Barber Shop — Coventry | Sharp Cuts, Clean Fades</title>
+<meta name="description" content="Kader's Barber Shop, 526 Stoney Stanton Road, Coventry. Sharp skin fades, beard trims and classic cuts. Book by phone or email.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #111; color: #f2ede4; line-height: 1.6; }
+  @keyframes rise { from { transform: translateY(14px); } to { transform: translateY(0); } }
+  @keyframes glow { 0%,100% { text-shadow: 0 0 0 rgba(212,175,55,0); } 50% { text-shadow: 0 0 18px rgba(212,175,55,.45); } }
+  .rise { animation: rise .7s ease both; }
+  header.hero { position: relative; min-height: 92vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+  header.hero img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.45); }
+  .hero-inner { position: relative; padding: 2rem 1.2rem; max-width: 820px; }
+  .hero-inner h1 { font-size: clamp(2.4rem, 7vw, 4.4rem); letter-spacing: .02em; color: #fff; animation: glow 4s ease-in-out infinite; }
+  .hero-inner .tag { color: #d4af37; letter-spacing: .28em; text-transform: uppercase; font-size: .85rem; margin-bottom: 1rem; }
+  .hero-inner p { font-size: 1.15rem; color: #e8e0d0; margin: 1rem 0 1.8rem; }
+  .btn { display: inline-block; background: #d4af37; color: #111; font-weight: bold; padding: .9rem 1.8rem; border-radius: 4px; text-decoration: none; font-size: 1.05rem; }
+  .btn:hover { background: #e8c766; }
+  .btn.outline { background: transparent; color: #f2ede4; border: 2px solid #d4af37; margin-left: .6rem; }
+  section { padding: 4rem 1.2rem; max-width: 1000px; margin: 0 auto; }
+  h2 { font-size: 2rem; color: #d4af37; margin-bottom: 1.2rem; border-bottom: 1px solid #333; padding-bottom: .5rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+  .card { background: #1c1c1c; border: 1px solid #2c2c2c; border-radius: 8px; padding: 1.4rem; }
+  .card h3 { color: #fff; margin-bottom: .4rem; }
+  .card p { color: #cfc6b4; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+  .gallery img { width: 100%; height: 240px; object-fit: cover; border-radius: 8px; border: 1px solid #2c2c2c; }
+  details { background: #1c1c1c; border: 1px solid #2c2c2c; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: .8rem; }
+  summary { cursor: pointer; font-weight: bold; color: #fff; }
+  details p { color: #cfc6b4; margin-top: .5rem; }
+  .contact-box { background: #1c1c1c; border: 1px solid #d4af37; border-radius: 8px; padding: 1.6rem; text-align: center; }
+  .contact-box a { color: #d4af37; }
+  footer { text-align: center; padding: 2rem 1rem 3rem; color: #999; border-top: 1px solid #2c2c2c; }
+  @media (prefers-reduced-motion: reduce) { .rise { animation: none; } .hero-inner h1 { animation: none; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="bg" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=80" alt="Barber cutting a client's hair">
+  <div class="hero-inner rise">
+    <div class="tag">Coventry &middot; Est. on Stoney Stanton Road</div>
+    <h1>Kader's Barber Shop</h1>
+    <p>Sharp skin fades, clean beard lines and classic cuts — done properly, every time. Loved by local customers, rated 5 stars.</p>
+    <a class="btn" href="#booking">Book an Appointment</a>
+    <a class="btn outline" href="#services">See Services</a>
+  </div>
+</header>
+
+<section id="about" class="rise">
+  <h2>About Kader's</h2>
+  <p>Kader's Barber Shop sits on Stoney Stanton Road in Coventry, serving the local community with traditional barbering and modern fade work. Walk in, take a seat, and leave looking sharp — whether it's a fresh skin fade for the weekend, a tidy beard shape-up, or a classic cut that never goes out of style.</p>
+  <p style="margin-top:1rem;">Every cut is finished with attention to detail: clean lines, even blends and a hot-lather neckline finish where requested. No rush, no shortcuts — just a proper barber's cut.</p>
+</section>
+
+<section id="services" class="rise">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Skin Fade</h3>
+      <p>Low, mid or high skin fade, blended smooth with a crisp lineup. Finished with a razor-sharp edge and styling to suit your hair.</p>
+    </div>
+    <div class="card">
+      <h3>Taper Fade</h3>
+      <p>A clean, natural taper that keeps length on top and tidies the sides and back — smart for work, sharp for the weekend.</p>
+    </div>
+    <div class="card">
+      <h3>Beard Trim &amp; Shape</h3>
+      <p>Beard sculpting, line-up and detailing, with beard oil to finish. Keep it full, keep it tidy, keep it yours.</p>
+    </div>
+    <div class="card">
+      <h3>Hot Towel Shave</h3>
+      <p>The traditional hot towel shave: warm lather, a close comfortable shave and a cool finish. The old-school treat.</p>
+    </div>
+    <div class="card">
+      <h3>Classic Cut &amp; Style</h3>
+      <p>Scissor cuts, textured crops, side parts and restyles — cut to your head shape and your routine.</p>
+    </div>
+    <div class="card">
+      <h3>Kids' Cuts</h3>
+      <p>Patient, friendly cuts for young gentlemen — fades, trims and first haircuts, with a chair-side manner that puts them at ease.</p>
+    </div>
+  </div>
+  <p style="margin-top:1.2rem; color:#cfc6b4;">Prices: call or message us for prices — we keep it fair and local.</p>
+</section>
+
+<section id="gallery" class="rise">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1200&q=80" alt="Barber at work in the shop">
+    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200&q=80" alt="Barbershop interior with chairs">
+    <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=1200&q=80" alt="Barber tools and clippers">
+    <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=1200&q=80" alt="Fresh haircut being finished">
+  </div>
+</section>
+
+<section id="faq" class="rise">
+  <h2>Questions, Answered</h2>
+  <details>
+    <summary>Do I need to book, or can I walk in?</summary>
+    <p>Both work. Booking ahead guarantees your slot at busy times; walk-ins are welcome whenever a chair is free. Call or message us to check.</p>
+  </details>
+  <details>
+    <summary>What should I ask for if I want a skin fade?</summary>
+    <p>Just say skin fade and how high you want it — low, mid or high — and whether you want length left on top. Bring a photo if you have one; it helps us match the look exactly.</p>
+  </details>
+  <details>
+    <summary>Do you cut kids' hair?</summary>
+    <p>Yes — kids' cuts are a regular part of the day here, from first haircuts to school-smart trims and fades.</p>
+  </details>
+  <details>
+    <summary>Where are you, and how do I find you?</summary>
+    <p>526 Stoney Stanton Road, Coventry CV6 5GA. Call or message us if you need directions.</p>
+  </details>
+  <details>
+    <summary>How much does a cut cost?</summary>
+    <p>Call or message us for prices — we keep pricing fair and local, and we will confirm the price before we start.</p>
+  </details>
+</section>
+
+<section id="booking" class="rise">
+  <h2>Book an Appointment</h2>
+  <div class="contact-box">
+    <p>Booking is simple — call or email us and tell us what you need and when.</p>
+    <p style="margin-top:1rem; font-size:1.15rem;">Phone: <a href="tel:+447397532279">07397 532279</a><br>
+    Email: <a href="mailto:kadermo1993@gmail.com">kadermo1993@gmail.com</a></p>
+    <p style="margin-top:1rem;"><a class="btn" href="mailto:kadermo1993@gmail.com?subject=Booking%20request%20—%20Kader's%20Barber%20Shop">Email to Book</a></p>
+  </div>
+</section>
+
+<section id="contact" class="rise">
+  <h2>Find Us</h2>
+  <p><strong>Kader's Barber Shop</strong><br>
+  526 Stoney Stanton Road<br>
+  Coventry CV6 5GA<br>
+  Phone: 07397 532279<br>
+  Email: kadermo1993@gmail.com</p>
+  <p style="margin-top:1rem; color:#cfc6b4;">Opening times: call or message us for today's hours.</p>
+</section>
+
+<footer>
+  <p>&copy; Kader's Barber Shop, Coventry. Demo website — built to show how your own site could look.</p>
+</footer>
+
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
