@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clifton's Barber Shop — Bristol</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0f1e33;color:#f2ede2;font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:'Trebuchet MS', Verdana, sans-serif;line-height:1.2}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.rise{animation:rise .8s ease both}.rise2{animation:rise .8s .15s ease both}.rise3{animation:rise .8s .3s ease both}
+.hero{background:#d4a537;color:#fff;padding:56px 20px;text-align:center}
+.hero.split{text-align:left;display:flex;flex-wrap:wrap;gap:28px;align-items:center;max-width:1100px;margin:0 auto;background:#0f1e33;color:#f2ede2}
+.hero.split .htext{flex:1 1 320px}.hero.split .himg{flex:1 1 320px;border-radius:8px;overflow:hidden}
+.hero.split .himg img{width:100%;display:block}
+.hero.overlay{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url(https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80) center/cover;padding:90px 20px;text-align:center;color:#fff}
+.hero h1{margin:0 0 10px;font-size:2.4em}.hero p{margin:0 auto;max-width:640px;font-size:1.15em}
+.btn{display:inline-block;background:#d4a537;color:#fff;padding:12px 26px;border-radius:999px;text-decoration:none;font-weight:bold;margin:6px 6px 0 0}
+.btn.outline{background:transparent;border:2px solid #d4a537;color:#d4a537}
+section{max-width:1000px;margin:0 auto;padding:44px 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#182c4a;border:1px solid #22395e;border-radius:8px;padding:20px;transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.card .price{font-weight:bold;color:#d4a537;font-size:1.15em}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px;display:block}
+details{background:#182c4a;border:1px solid #22395e;border-radius:8px;padding:14px 18px;margin:10px 0}
+summary{font-weight:bold;cursor:pointer}
+footer{background:#f2ede2;color:#0f1e33;text-align:center;padding:28px 20px}
+a{color:#d4a537}
+@media(max-width:600px){.hero h1{font-size:1.8em}}
+</style></head><body>
+<header class="hero split rise">
+<div class="himg"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80" alt="Clifton's Barber Shop in Bristol"></div><div class="htext">
+<h1>Clifton's Barber Shop</h1>
+<p>Sharp cuts and proper grooming on Whiteladies Road, Clifton.</p>
+<p><a class="btn" href="tel:07988878714">Call 07988 878714</a><a class="btn outline" href="mailto:cliftonbarbershop@gmail.com">Email us</a></p>
+</div>
+</header>
+<section class="rise2"><h2>About us</h2>
+<p>Clifton's Barber Shop is a well-loved local business in Bristol, rated 4.9 stars from 157 reviews. Customers come back for friendly service, careful work and a relaxed atmosphere. Whether you are a regular or visiting for the first time, you will be looked after.</p>
+<p>Find us at 175 Whiteladies Road, Clifton, Bristol BS8 2RY.</p></section>
+<section class="rise3"><h2>Our services</h2><div class="cards"><div class="card"><h3>Haircut</h3><p class="price">£18</p></div><div class="card"><h3>Skin Fade</h3><p class="price">£21</p></div><div class="card"><h3>Haircut & Beard</h3><p class="price">£28</p></div><div class="card"><h3>Head Wet Shave</h3><p class="price">£19</p></div><div class="card"><h3>Students</h3><p class="price">£16</p></div></div>
+<p style="color:#b9c2d0">Prices shown are from the business's own published price list.</p></section>
+<section><h2>Gallery</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80" alt="Clifton's Barber Shop in Bristol" loading="lazy"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80" alt="Clifton's Barber Shop in Bristol" loading="lazy"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80" alt="Clifton's Barber Shop in Bristol" loading="lazy"></div></section>
+<section><h2>Questions, answered</h2><details><summary>Do I need to book in advance?</summary><p>Booking ahead is recommended so we can fit you in at your preferred time. Just call or email us.</p></details><details><summary>How much do treatments cost?</summary><p>See the prices listed above.</p></details><details><summary>Where are you located?</summary><p>You will find us at 175 Whiteladies Road, Clifton, Bristol BS8 2RY, Bristol.</p></details><details><summary>How can I contact you?</summary><p>Call us on 07988 878714 or email cliftonbarbershop@gmail.com.</p></details></section>
+<section><h2>Book your visit</h2>
+<p>The easiest way to book is to call or email us — tell us what you would like and when, and we will look after the rest.</p>
+<p><a class="btn" href="tel:07988878714">Call 07988 878714</a><a class="btn outline" href="mailto:cliftonbarbershop@gmail.com">Email cliftonbarbershop@gmail.com</a></p>
+<h3>Opening hours</h3><p>Please call or message us for our current opening hours.</p>
+<h3>Find us</h3><p>175 Whiteladies Road, Clifton, Bristol BS8 2RY, Bristol.</p></section>
+<footer><p><strong>Clifton's Barber Shop</strong> — Bristol · <a href="tel:07988878714">07988 878714</a> · <a href="mailto:cliftonbarbershop@gmail.com">cliftonbarbershop@gmail.com</a></p>
+<p style="font-size:.9em">Demo website made for Clifton's Barber Shop.</p></footer>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
