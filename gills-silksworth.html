@@ -50,6 +50,9 @@
   .btn.navy{background:var(--navy);color:#fff!important;box-shadow:0 6px 16px rgba(11,42,58,.35)}
   .btn.ghost{background:transparent;color:var(--navy)!important;border:2px solid var(--navy);box-shadow:none}
   .btn.small{padding:10px 18px;font-size:14px}
+  .head-call{font-weight:800;color:var(--navy);text-decoration:none;font-size:15px;white-space:nowrap}
+  @keyframes ctaPulse{0%,100%{box-shadow:0 6px 16px rgba(242,160,7,.4)}50%{box-shadow:0 6px 24px rgba(242,160,7,.85)}}
+  .pulse-cta{animation:ctaPulse 3s ease-in-out infinite}
   /* Hero */
   .hero{background:var(--navy);color:#fff;overflow:hidden}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:46px 18px;max-width:1100px;margin:0 auto}
@@ -145,6 +148,7 @@
   .stickybar{display:none}
   @media(max-width:700px){
     nav{display:none}
+    .head-call{display:none}
     body{padding-bottom:76px}
     .hero-grid{grid-template-columns:1fr;padding:30px 18px}
     .hero h1{font-size:34px}
@@ -178,7 +182,8 @@
       <a href="#hours">Opening Hours</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn small" href="#order">Order Now</a>
+    <a class="head-call" href="tel:+441915210605">Call 0191 521 0605</a>
+    <a class="btn small pulse-cta" href="#order">Order Now</a>
   </div>
 </header>
 
@@ -189,7 +194,7 @@
       <h1 class="rise d1">Fresh fish &amp; chips, pizzas, kebabs <em>&amp; burgers</em> — cooked to order.</h1>
       <p class="rise d2">Your local takeaway on Aline Street. Generous portions, proper chip-shop flavour, and easy online ordering with secure card payment.</p>
       <div class="hero-ctas rise d3">
-        <a class="btn" href="https://www.gillssilksworth.co.uk/takeaways/Sunderland/SR3/gills-sunderland/menu">Order Online</a>
+        <a class="btn pulse-cta" href="https://www.gillssilksworth.co.uk/takeaways/Sunderland/SR3/gills-sunderland/menu">Order Online</a>
         <a class="btn ghost" href="tel:+441915210605">Call 0191 521 0605</a>
       </div>
       <div class="hero-ticks rise d3"><span>Online ordering</span><span>Secure card payment</span><span>Collection &amp; delivery</span></div>
