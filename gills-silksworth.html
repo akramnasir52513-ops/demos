@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gills Silksworth | Fish &amp; Chips, Pizzas, Kebabs &amp; Burgers in Sunderland</title>
+<meta name="description" content="Gills Silksworth takeaway on Aline Street, Silksworth, Sunderland. Fish & chips, pizzas, kebabs, burgers and meal deals. Order online and pay by card, or call 0191 521 0605.">
+<style>
+  :root{
+    --navy:#0b2a3a; --navy2:#10394f; --red:#d62828; --red2:#b51f1f;
+    --yellow:#ffb703; --cream:#fff8ec; --paper:#ffffff; --ink:#1d2a32; --muted:#5c6b76;
+    --line:#eadfcd; --green:#2a9d8f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+  /* Top bar */
+  .topbar{background:var(--navy);color:#fff;font-size:13px;text-align:center;padding:8px 12px;letter-spacing:.3px}
+  .topbar b{color:var(--yellow)}
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,248,236,.96);border-bottom:2px solid var(--line);backdrop-filter:blur(6px)}
+  .head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;max-width:1100px;margin:0 auto}
+  .logo{font-family:Georgia,serif;font-size:26px;font-weight:700;color:var(--navy);letter-spacing:.5px;text-decoration:none}
+  .logo span{color:var(--red)}
+  .logo small{display:block;font-family:"Segoe UI",sans-serif;font-size:11px;letter-spacing:3px;color:var(--muted);font-weight:600}
+  nav{display:flex;gap:16px;font-weight:600;font-size:15px}
+  nav a{text-decoration:none;color:var(--navy)}
+  nav a:hover{color:var(--red)}
+  .btn{display:inline-block;background:var(--red);color:#fff!important;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;box-shadow:0 6px 16px rgba(214,40,40,.35);transition:transform .15s ease,box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(214,40,40,.4)}
+  .btn.yellow{background:var(--yellow);color:#1d2a32!important;box-shadow:0 6px 16px rgba(255,183,3,.4)}
+  .btn.ghost{background:transparent;color:var(--navy)!important;border:2px solid var(--navy);box-shadow:none}
+  .btn.small{padding:9px 16px;font-size:14px}
+  /* Hero */
+  .hero{background:var(--navy);color:#fff;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:42px 18px;max-width:1100px;margin:0 auto}
+  .hero h1{font-size:52px;margin:10px 0 14px}
+  .hero h1 em{color:var(--yellow);font-style:normal}
+  .hero p{font-size:18px;color:#d7e5ec;max-width:520px}
+  .pill{display:inline-block;background:var(--yellow);color:#1d2a32;font-weight:800;font-size:13px;letter-spacing:1.5px;padding:6px 14px;border-radius:999px;text-transform:uppercase}
+  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .hero-ctas .btn.ghost{color:#fff!important;border-color:#fff}
+  .hero img{width:100%;height:380px;object-fit:cover;border-radius:20px;border:4px solid rgba(255,255,255,.15);box-shadow:0 20px 40px rgba(0,0,0,.35)}
+  .strip{background:var(--yellow);color:#1d2a32;font-weight:700}
+  .strip .wrap{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;padding:12px 18px;font-size:15px}
+  /* Sections */
+  section{padding:56px 0}
+  .kicker{color:var(--red);font-weight:800;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+  h2{font-size:36px;color:var(--navy);margin:8px 0 12px}
+  .lede{color:var(--muted);font-size:17px;max-width:680px}
+  /* About + features */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:26px}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(11,42,58,.06)}
+  .card h3{font-size:22px;color:var(--navy);margin-bottom:8px}
+  .card p{color:var(--muted)}
+  .ticks{list-style:none;margin-top:14px}
+  .ticks li{padding:8px 0 8px 30px;position:relative;font-weight:600}
+  .ticks li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+  /* Menu */
+  .menu-cat{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 8px}
+  .menu-cat a{background:#fff;border:2px solid var(--line);border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:700;font-size:14px;color:var(--navy)}
+  .menu-cat a:hover{border-color:var(--red);color:var(--red)}
+  .menu-block{margin-top:34px}
+  .menu-block h3{font-size:26px;color:var(--navy);border-bottom:3px solid var(--yellow);padding-bottom:8px;margin-bottom:6px}
+  .menu-note{color:var(--muted);font-size:14px;margin-bottom:16px}
+  .items{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+  .item{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+  .item b{font-size:16px}
+  .item span{color:var(--muted);font-size:14px;display:block}
+  .price{color:var(--red);font-weight:800;font-size:17px;white-space:nowrap}
+  .tag{display:inline-block;background:var(--navy);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;padding:2px 8px;border-radius:999px;vertical-align:middle;margin-left:6px}
+  /* Order */
+  .order{background:var(--navy);color:#fff}
+  .order h2{color:#fff}
+  .order .lede{color:#d7e5ec}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+  .step{background:var(--navy2);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px}
+  .step .n{font-family:Georgia,serif;font-size:40px;color:var(--yellow);line-height:1}
+  .step h3{color:#fff;margin:8px 0 6px}
+  .step p{color:#cfe0ea;font-size:15px}
+  .order-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+  .gallery img{width:100%;height:220px;object-fit:cover;border-radius:16px}
+  /* Hours + contact */
+  .hours-table{width:100%;border-collapse:collapse;margin-top:18px;background:#fff;border-radius:14px;overflow:hidden}
+  .hours-table td{padding:11px 16px;border-bottom:1px solid var(--line)}
+  .hours-table tr:last-child td{border-bottom:none}
+  .hours-table td:last-child{text-align:right;font-weight:700}
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-top:12px}
+  details summary{font-weight:700;cursor:pointer;color:var(--navy)}
+  details p{color:var(--muted);margin-top:8px}
+  .own{background:#fff3d6;border:2px solid var(--yellow);border-radius:16px;padding:20px 24px;margin-top:28px}
+  .own b{color:var(--navy)}
+  footer{background:var(--navy);color:#cfe0ea;padding:34px 0;margin-top:0}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer h3{color:#fff}
+  footer a{color:var(--yellow)}
+  .fine{font-size:12px;color:#8fb0c2;margin-top:22px}
+  /* Safe animations: only when JS runs (html.js) */
+  .js .fade{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .js .fade.in{opacity:1;transform:none}
+  @keyframes floaty{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+  .hero img{animation:floaty 5s ease-in-out infinite alternate}
+  @media(max-width:700px){
+    nav{display:none}
+    .hero-grid{grid-template-columns:1fr;padding:30px 18px}
+    .hero h1{font-size:38px}
+    .hero img{height:250px}
+    .cols,.items,.steps,.gallery{grid-template-columns:1fr}
+    .gallery img{height:180px}
+    h2{font-size:29px}
+    section{padding:40px 0}
+  }
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="topbar">Collection &amp; Delivery in Silksworth, Sunderland &nbsp;•&nbsp; Call <b>0191 521 0605</b></div>
+<header>
+  <div class="head">
+    <a class="logo" href="#">GILLS <span>SILKSWORTH</span><small>FISH • PIZZA • KEBABS</small></a>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order">Order Online</a>
+      <a href="#hours">Opening Hours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn small" href="#order">Order Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="fade">
+      <span class="pill">Silksworth • Sunderland</span>
+      <h1>Fresh fish &amp; chips, pizzas, kebabs <em>&amp; burgers</em> — cooked to order.</h1>
+      <p>Your local takeaway on Aline Street. Generous portions, proper chip-shop flavour, and easy online ordering with secure card payment.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://www.gillssilksworth.co.uk/takeaways/Sunderland/SR3/gills-sunderland/menu">Order Online</a>
+        <a class="btn ghost" href="tel:+441915210605">Call 0191 521 0605</a>
+      </div>
+    </div>
+    <img class="fade" src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Freshly cooked takeaway meal">
+  </div>
+</section>
+<div class="strip"><div class="wrap"><span>✓ Online ordering</span><span>✓ Secure card payment</span><span>✓ Collection &amp; delivery</span><span>✓ Family meal deals</span></div></div>
+
+<section>
+  <div class="wrap">
+    <p class="kicker fade">Welcome to Gills</p>
+    <h2 class="fade">A proper local chippy, with a menu for everyone.</h2>
+    <p class="lede fade">From golden fish &amp; chips straight from the fryer to stone-baked pizzas, flame-grilled kebabs and stacked burgers — everything is cooked fresh when you order.</p>
+    <div class="cols">
+      <div class="card fade">
+        <h3>Why order from Gills?</h3>
+        <ul class="ticks">
+          <li>Fish &amp; chips cooked fresh to order</li>
+          <li>Pizzas with buy-one-get-one-free deals</li>
+          <li>Kebabs, wraps &amp; burgers for every appetite</li>
+          <li>Family boxes &amp; meal deals for the whole table</li>
+        </ul>
+      </div>
+      <div class="card fade">
+        <h3>Good to know</h3>
+        <p><b>Collection &amp; delivery</b> available across the week. Delivery hours run daily from 4:45pm to 9:30pm. For delivery details in your area, just give us a ring — we are happy to help.</p>
+        <p style="margin-top:12px"><b>Pay your way:</b> order online and pay securely by card, or pay on collection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:#fff">
+  <div class="wrap">
+    <p class="kicker fade">Our menu</p>
+    <h2 class="fade">The full menu, with honest prices.</h2>
+    <p class="lede fade">Prices below are from the current Gills menu. Final prices are confirmed at checkout on the order page.</p>
+    <div class="menu-cat fade">
+      <a href="#deals">Meal Deals</a><a href="#fryer">From the Fryer</a><a href="#kebabs">Kebabs</a><a href="#wraps">Wraps</a><a href="#burgers">Burgers</a><a href="#pizzas">Pizzas</a><a href="#sundries">Sundries</a><a href="#kids">Kids Meals</a><a href="#desserts">Desserts &amp; Drinks</a>
+    </div>
+
+    <div class="menu-block fade" id="deals">
+      <h3>Meal Deals</h3>
+      <p class="menu-note">Feed the family, save on the bill.</p>
+      <div class="items">
+        <div class="item"><div><b>Deal 2</b><span>Small doner kebab, 12&quot; pizza &amp; 10&quot; garlic bread</span></div><div class="price">£18.60</div></div>
+        <div class="item"><div><b>Deal 3</b><span>10&quot; pizza, tray of meat, chips &amp; pop</span></div><div class="price">£19.30</div></div>
+        <div class="item"><div><b>Deal 4</b><span>10&quot; garlic bread cheese, 10&quot; margherita, 12&quot; pizza or any kebab</span></div><div class="price">£22.90</div></div>
+        <div class="item"><div><b>Mix Platter Box</b><span>Cheeseburger, chicken burger, salad, mix kebab &amp; chips, 2 sauces</span></div><div class="price">£15.99</div></div>
+        <div class="item"><div><b>Pizza Party</b><span>3 × 12&quot; pizzas</span></div><div class="price">£29.00</div></div>
+        <div class="item"><div><b>Munchie Box</b><span>2 × 8&quot; pizzas, doner meat, chips &amp; 2 sauces</span></div><div class="price">£17.80</div></div>
+        <div class="item"><div><b>Family Deal</b><span>2 × 10&quot; pizzas, 10&quot; garlic bread cheese, tray of mixed kebab, 2 small chips &amp; 2 sauces</span></div><div class="price">£30.60</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="fryer">
+      <h3>From the Fryer</h3>
+      <p class="menu-note">The classics, done properly.</p>
+      <div class="items">
+        <div class="item"><div><b>Chip Butty &amp; Sauce</b></div><div class="price">£5.80</div></div>
+        <div class="item"><div><b>Skin On Cod</b></div><div class="price">£9.60</div></div>
+        <div class="item"><div><b>Haddock</b></div><div class="price">£8.99</div></div>
+        <div class="item"><div><b>Lemon Sole</b></div><div class="price">£8.95</div></div>
+        <div class="item"><div><b>Fish Bites (3)</b></div><div class="price">£6.80</div></div>
+        <div class="item"><div><b>Mince Pie</b></div><div class="price">£3.00</div></div>
+        <div class="item"><div><b>Steak Pie</b></div><div class="price">£3.00</div></div>
+        <div class="item"><div><b>Smokey</b></div><div class="price">£2.99</div></div>
+        <div class="item"><div><b>Jumbo Sausage</b></div><div class="price">£3.20</div></div>
+        <div class="item"><div><b>Cheese Pattie</b></div><div class="price">£3.40</div></div>
+        <div class="item"><div><b>Corned Beef Pattie</b></div><div class="price">£3.30</div></div>
+        <div class="item"><div><b>Fish Cake</b></div><div class="price">£3.20</div></div>
+        <div class="item"><div><b>Battered Burger</b></div><div class="price">£3.50</div></div>
+        <div class="item"><div><b>Spam Fritter</b></div><div class="price">£3.40</div></div>
+        <div class="item"><div><b>Chop Suey Roll</b></div><div class="price">£3.00</div></div>
+        <div class="item"><div><b>Haggis</b></div><div class="price">£3.95</div></div>
+        <div class="item"><div><b>Pineapple Ring</b></div><div class="price">£1.80</div></div>
+        <div class="item"><div><b>Chicken Breast</b></div><div class="price">£6.30</div></div>
+        <div class="item"><div><b>Chicken Nuggets (8)</b></div><div class="price">£5.99</div></div>
+        <div class="item"><div><b>Scampi (10)</b></div><div class="price">£7.80</div></div>
+        <div class="item"><div><b>Onion Rings (5)</b></div><div class="price">£1.80</div></div>
+        <div class="item"><div><b>Chips &amp; Gravy Tray</b></div><div class="price">£4.70</div></div>
+        <div class="item"><div><b>Chips &amp; Curry Tray</b></div><div class="price">£4.80</div></div>
+        <div class="item"><div><b>Chips &amp; Bolognese Tray</b></div><div class="price">£5.60</div></div>
+        <div class="item"><div><b>Cheesy Chips</b></div><div class="price">£5.20</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="kebabs">
+      <h3>Kebabs</h3>
+      <p class="menu-note">Served with salad or chips &amp; your choice of dip.</p>
+      <div class="items">
+        <div class="item"><div><b>Chicken Kebab</b></div><div class="price">£12.60</div></div>
+        <div class="item"><div><b>Chicken Tikka Kebab</b></div><div class="price">£12.60</div></div>
+        <div class="item"><div><b>Kebab Meat, Chips &amp; Cheese</b></div><div class="price">£7.20</div></div>
+        <div class="item"><div><b>Mixed Kebab</b></div><div class="price">£12.99</div></div>
+        <div class="item"><div><b>Kebab Butty</b></div><div class="price">£5.99</div></div>
+        <div class="item"><div><b>Kebab &amp; Chip Butty</b></div><div class="price">£6.60</div></div>
+        <div class="item"><div><b>Pitta Salad</b></div><div class="price">£4.90</div></div>
+        <div class="item"><div><b>Tray Salad</b></div><div class="price">£3.80</div></div>
+        <div class="item"><div><b>Tray of Mix Kebab</b></div><div class="price">£8.60</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="wraps">
+      <h3>Wraps</h3>
+      <p class="menu-note">All served with a generous helping of salad or chips, chilli or garlic sauce.</p>
+      <div class="items">
+        <div class="item"><div><b>BBQ Chicken Wrap</b></div><div class="price">£7.20</div></div>
+        <div class="item"><div><b>Mexican Wrap</b><span>Served with onion, pepper, jalapeños &amp; chillies</span></div><div class="price">£7.99</div></div>
+        <div class="item"><div><b>Southern Fried Chicken Wrap</b></div><div class="price">£6.99</div></div>
+        <div class="item"><div><b>Tikka Wrap</b></div><div class="price">See menu</div></div>
+        <div class="item"><div><b>Mixed Wrap</b></div><div class="price">See menu</div></div>
+        <div class="item"><div><b>Doner Wrap</b></div><div class="price">See menu</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="burgers">
+      <h3>Burgers</h3>
+      <p class="menu-note">All served in a bun with salad &amp; sauce. Meals come with chips &amp; a can of Pepsi. Prices shown at checkout on the order page.</p>
+      <div class="items">
+        <div class="item"><div><b>Plain Burger</b></div><div class="price">—</div></div>
+        <div class="item"><div><b>Cheeseburger</b></div><div class="price">—</div></div>
+        <div class="item"><div><b>Bolognese Burger</b></div><div class="price">—</div></div>
+        <div class="item"><div><b>Chilli Burger</b></div><div class="price">—</div></div>
+        <div class="item"><div><b>Chicken Burger</b></div><div class="price">—</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="pizzas">
+      <h3>Pizzas <span class="tag">Buy One Get One Free on selected pizzas</span></h3>
+      <p class="menu-note">Add extra toppings in your basket. Prices shown at checkout on the order page.</p>
+      <div class="items">
+        <div class="item"><div><b>Margherita</b><span>Cheese, tomato &amp; herbs</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Bolognese Pizza</b><span>Cheese, bolognese sauce &amp; herbs</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Hawaiian Pizza</b><span>Cheese, ham, pineapple &amp; herbs</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Vegetarian Pizza</b><span>Onion, peppers, mushroom &amp; sweetcorn</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Mighty Meat Pizza</b><span>Cheese, tomato, ham, salami, pepperoni &amp; chicken</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Pizza Kiev</b><span>Cheese, tomato, chicken, ham, garlic, mushrooms &amp; herbs</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Tuna Special Pizza</b><span>Cheese, tomato, tuna, sweetcorn, onion &amp; herbs</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Calzone</b><span>Cheese, tomato, ham, mushroom, onion &amp; peppers</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Pepperoni Supreme Pizza</b><span>Cheese, tomato, pepperoni, peppers, onion &amp; herbs</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Hot &amp; Spicy Pizza</b><span>Cheese, tomato, spicy beef, chillies, peppers, onion &amp; herbs</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Inferno Pizza</b><span>Chilli or garlic base, cheese, tomato, pepperoni, salami, onion &amp; peppers</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Kebab Special Pizza</b><span>Chilli or garlic base, kebab meat, cheese, onion &amp; peppers</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Spicy Special Pizza</b><span>Cheese, tomato, ham, pepperoni, peppers, onion, mushroom, spicy pork, chillies &amp; garlic</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Mix Kebab Special Pizza</b><span>Doner, chicken, peppers, onion, chilli &amp; garlic</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Plain Pepperoni Pizza</b><span>Cheese, tomato &amp; pepperoni</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>BBQ Chicken Pizza</b><span>Cheese, BBQ sauce &amp; BBQ chicken</span></div><div class="price">—</div></div>
+        <div class="item"><div><b>Make Your Own Pizza</b><span>Cheese, tomato &amp; any 3 toppings</span></div><div class="price">—</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="sundries">
+      <h3>Sundries</h3>
+      <p class="menu-note">Little extras that make the meal.</p>
+      <div class="items">
+        <div class="item"><div><b>Mozzarella Dippers (4)</b></div><div class="price">£5.00</div></div>
+        <div class="item"><div><b>Southern Fried Chicken Fillets (3)</b></div><div class="price">£5.40</div></div>
+        <div class="item"><div><b>Jalapeño Cheese Bites (4)</b></div><div class="price">£4.90</div></div>
+        <div class="item"><div><b>Sauces</b><span>Garlic, chilli, curry, gravy, peas</span></div><div class="price">See menu</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="kids">
+      <h3>Kids Meals</h3>
+      <p class="menu-note">All served with chips &amp; a drink.</p>
+      <div class="items">
+        <div class="item"><div><b>Kids Sausage Meal</b></div><div class="price">£6.50</div></div>
+        <div class="item"><div><b>Kids 4 Nuggets Meal</b></div><div class="price">£6.20</div></div>
+        <div class="item"><div><b>Kids 2 Cod Bites Meal</b></div><div class="price">£7.45</div></div>
+        <div class="item"><div><b>Kids Kebab Meal</b></div><div class="price">£6.80</div></div>
+        <div class="item"><div><b>Kids Cheeseburger Meal</b></div><div class="price">£6.80</div></div>
+      </div>
+    </div>
+
+    <div class="menu-block fade" id="desserts">
+      <h3>Desserts &amp; Drinks</h3>
+      <div class="items">
+        <div class="item"><div><b>Ben &amp; Jerry's Cookie Dough</b></div><div class="price">£7.65</div></div>
+        <div class="item"><div><b>Ben &amp; Jerry's Choc Fudge Brownie</b></div><div class="price">£7.65</div></div>
+        <div class="item"><div><b>Coca-Cola, Pepsi, Diet Coke (330ml)</b></div><div class="price">£1.95</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="order">
+  <div class="wrap">
+    <p class="kicker fade" style="color:var(--yellow)">Order online</p>
+    <h2 class="fade">Hungry? Order in three easy steps.</h2>
+    <p class="lede fade">Order direct from Gills — no marketplace queues, no fuss. Pay securely by card online, or pay when you collect.</p>
+    <div class="steps">
+      <div class="step fade"><div class="n">1</div><h3>Pick your favourites</h3><p>Browse the full menu — fish &amp; chips, pizzas, kebabs, burgers and family deals.</p></div>
+      <div class="step fade"><div class="n">2</div><h3>Order &amp; pay by card</h3><p>Check out online with secure card payment, or choose to pay on collection.</p></div>
+      <div class="step fade"><div class="n">3</div><h3>Collect or get delivery</h3><p>Hot food, ready when you want it. Delivery runs daily from 4:45pm to 9:30pm.</p></div>
+    </div>
+    <div class="order-ctas fade">
+      <a class="btn yellow" href="https://www.gillssilksworth.co.uk/takeaways/Sunderland/SR3/gills-sunderland/menu">Order Online Now</a>
+      <a class="btn ghost" style="color:#fff!important;border-color:#fff" href="tel:+441915210605">Call 0191 521 0605</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker fade">Fresh from the kitchen</p>
+    <h2 class="fade">Made fresh, every single order.</h2>
+    <div class="gallery fade">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Freshly baked pizza">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Stacked burger">
+      <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Golden fried chicken">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Pizza fresh from the oven">
+      <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Loaded wraps">
+      <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Dessert to finish">
+    </div>
+  </div>
+</section>
+
+<section id="hours" style="background:#fff">
+  <div class="wrap">
+    <div class="cols">
+      <div class="fade">
+        <p class="kicker">Opening hours</p>
+        <h2>When we are open</h2>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>4:30pm – 9:30pm</td></tr>
+          <tr><td>Tuesday</td><td>4:30pm – 9:30pm</td></tr>
+          <tr><td>Wednesday</td><td>4:30pm – 9:30pm</td></tr>
+          <tr><td>Thursday</td><td>4:30pm – 9:30pm</td></tr>
+          <tr><td>Friday</td><td>4:30pm – 10:00pm</td></tr>
+          <tr><td>Saturday</td><td>11:30am – 1:30pm &amp; 4:30pm – 10:00pm</td></tr>
+          <tr><td>Sunday</td><td>5:00pm – 9:30pm</td></tr>
+        </table>
+        <p style="color:var(--muted);margin-top:12px">Delivery hours: daily 4:45pm – 9:30pm.</p>
+      </div>
+      <div id="contact" class="fade">
+        <p class="kicker">Find us</p>
+        <h2>Visit or call</h2>
+        <div class="card">
+          <h3>Gills Silksworth</h3>
+          <p>Aline Street, Silksworth,<br>Sunderland SR3 2DZ</p>
+          <p style="margin-top:12px"><b>Phone:</b> <a href="tel:+441915210605">0191 521 0605</a></p>
+          <p style="margin-top:12px"><b>Ordering:</b> online with secure card payment, or by phone.</p>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn small" href="https://www.gillssilksworth.co.uk/takeaways/Sunderland/SR3/gills-sunderland/menu">Order Online</a>
+            <a class="btn small ghost" href="tel:+441915210605">Call Now</a>
+          </div>
+        </div>
+        <details>
+          <summary>Do you deliver to my area?</summary>
+          <p>Delivery runs daily from 4:45pm to 9:30pm. Call 0191 521 0605 and we will confirm delivery for your address.</p>
+        </details>
+        <details>
+          <summary>Can I pay by card?</summary>
+          <p>Yes — order online and pay securely by card, or pay when you collect.</p>
+        </details>
+        <div class="own">
+          <b>Your website, your brand.</b> This website belongs to Gills Silksworth — its own menu, prices and name, run independently. Ordering direct means no marketplace in the middle.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>Gills Silksworth</h3>
+      <p>Aline Street, Silksworth, Sunderland SR3 2DZ<br>Phone: <a href="tel:+441915210605">0191 521 0605</a></p>
+    </div>
+    <div>
+      <h3>Order</h3>
+      <p><a href="https://www.gillssilksworth.co.uk/takeaways/Sunderland/SR3/gills-sunderland/menu">Order online</a> • Secure card payment<br>Collection &amp; delivery</p>
+    </div>
+  </div>
+  <div class="wrap"><p class="fine">Preview website prepared for Gills Silksworth. Menu prices and hours as listed on the business's current menu; final prices confirmed at checkout.</p></div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+<script data-goatcounter="https://akramwebstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
