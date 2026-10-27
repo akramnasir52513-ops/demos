@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aberdeen Beauty Clinic — Beauty Salon & Aesthetics in Aberdeen</title>
+<meta name="description" content="Aberdeen Beauty Clinic in Aberdeen — rated 4.8 from 33 Google reviews. Waxing, facials, lashes, brows, massage and body treatments at 1A Thistle Place.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--teal:#0e3b3c;--teal2:#155e5f;--gold:#c9a227;--gold2:#e8c766;--cream:#faf6ec;--ink:#1d2b2b;--mut:#5c6b6b}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+a{color:inherit}
+.topbar{position:sticky;top:0;z-index:50;background:var(--teal);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.topbar b{font-size:15px;letter-spacing:.5px}
+.topbar .cta{display:flex;gap:8px}
+.topbar a.btn{background:var(--gold);color:#1d1d1d;text-decoration:none;font-family:Arial,sans-serif;font-weight:700;font-size:13px;padding:9px 14px;border-radius:999px}
+.topbar a.btn.ghost{background:transparent;color:#fff;border:1.5px solid var(--gold2)}
+.hero{position:relative;text-align:center;padding:0 0 34px;background:var(--teal);color:#fff;overflow:hidden}
+.hero img.arch{width:100%;height:300px;object-fit:cover;object-position:center 30%;display:block;mask-image:linear-gradient(to bottom,black 70%,transparent);-webkit-mask-image:linear-gradient(to bottom,black 70%,transparent)}
+.hero h1{font-size:38px;line-height:1.1;margin:18px 16px 6px;font-weight:700}
+.hero h1 span{color:var(--gold2)}
+.hero p.sub{font-family:Arial,sans-serif;font-size:15px;color:#d8e6e6;margin:0 20px}
+.stars{margin:14px 0 4px;color:var(--gold2);font-size:22px;letter-spacing:3px}
+.rating{font-family:Arial,sans-serif;font-size:14px;color:#eaf2f2}
+.rating b{color:var(--gold2)}
+section{padding:34px 20px;max-width:720px;margin:0 auto}
+h2{font-size:26px;color:var(--teal);margin-bottom:6px}
+h2:after{content:"";display:block;width:52px;height:3px;background:var(--gold);margin-top:8px}
+.lede{font-family:Arial,sans-serif;font-size:15px;line-height:1.65;color:var(--mut);margin-top:10px}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pill{font-family:Arial,sans-serif;font-size:13px;background:#eef3f2;border:1.5px solid #cfe0de;border-radius:999px;padding:7px 13px;color:var(--teal)}
+.svc{margin-top:20px}
+.svc h3{font-family:Arial,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.svc ul{list-style:none}
+.svc li{display:flex;justify-content:space-between;gap:12px;font-family:Arial,sans-serif;font-size:15px;padding:11px 0;border-bottom:1px dotted #cbbf9a}
+.svc li span.note{display:block;font-size:12px;color:var(--mut);margin-top:2px}
+.svc li b{white-space:nowrap;color:var(--teal)}
+.fix{background:var(--teal);color:#fff;border-radius:18px;padding:26px 22px;margin-top:8px}
+.fix h2{color:var(--gold2)}
+.fix h2:after{background:var(--gold2)}
+.fix p{font-family:Arial,sans-serif;font-size:15px;line-height:1.65;color:#d8e6e6;margin-top:10px}
+.fix ul{list-style:none;margin-top:14px;font-family:Arial,sans-serif;font-size:15px}
+.fix li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.fix li:last-child{border:none}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.gallery img{width:100%;height:150px;object-fit:cover;border-radius:12px}
+.hoursbox{background:#fff;border:1.5px solid #e3dcc2;border-radius:14px;padding:20px;margin-top:14px;font-family:Arial,sans-serif}
+.hoursbox b{color:var(--teal)}
+.contact{background:var(--teal);color:#fff;text-align:center;padding:36px 20px 44px}
+.contact h2{color:#fff}
+.contact h2:after{background:var(--gold2);margin-left:auto;margin-right:auto}
+.contact p{font-family:Arial,sans-serif;font-size:15px;line-height:1.7;color:#d8e6e6;margin-top:12px}
+.contact a.big{display:inline-block;margin-top:18px;background:var(--gold);color:#1d1d1d;text-decoration:none;font-family:Arial,sans-serif;font-weight:800;padding:14px 26px;border-radius:999px;font-size:16px}
+.contact a.mail{display:block;margin-top:12px;color:var(--gold2);font-family:Arial,sans-serif}
+.foot{font-family:Arial,sans-serif;font-size:12px;color:#8aa0a0;text-align:center;padding:16px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.hero h1,.hero p.sub,.stars,.rating{animation:rise .8s ease both}
+.hero p.sub{animation-delay:.15s}.stars{animation-delay:.25s}.rating{animation-delay:.35s}
+</style>
+</head>
+<body>
+<div class="topbar"><b>ABERDEEN BEAUTY CLINIC</b><div class="cta"><a class="btn" href="tel:+447584179366">Call</a><a class="btn ghost" href="mailto:info@aberdeenbeautyclinic.com">Email</a></div></div>
+
+<div class="hero">
+<img class="arch" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&q=80" alt="Relaxing facial treatment at Aberdeen Beauty Clinic">
+<h1>Aberdeen <span>Beauty Clinic</span></h1>
+<p class="sub">A sanctuary of relaxation and advanced clinical care in Aberdeen&rsquo;s West End</p>
+<div class="stars">★★★★★</div>
+<div class="rating"><b>4.8</b> from 33 Google reviews &nbsp;·&nbsp; 1A Thistle Place, Aberdeen</div>
+</div>
+
+<section class="reveal">
+<h2>Welcome to the Clinic</h2>
+<p class="lede">Perfectly placed just off Union Street, Aberdeen Beauty Clinic blends high-performance, medical-grade treatments with true luxury pampering. Every treatment is tailored to your skin type and personal needs, in a warm, welcoming salon where you can relax from head to toe.</p>
+<div class="pillrow"><span class="pill">Fully licensed aesthetics clinic</span><span class="pill">Waxing specialists</span><span class="pill">LVL lashes</span><span class="pill">Advanced facials</span><span class="pill">Massage &amp; body wraps</span></div>
+</section>
+
+<section class="reveal">
+<h2>Lashes, Brows &amp; Face</h2>
+<p class="lede">Beautifully defined eyes and brows, by specialists. A quick patch test is needed 24–48 hours before tinting or lash lifts for first-time clients.</p>
+<div class="svc">
+<ul>
+<li><span>Eyebrow Wax</span><b>£13.00</b></li>
+<li><span>Eyebrow Reshape<span class="note">Includes mapping &amp; shaping</span></span><b>£20.00</b></li>
+<li><span>Eyebrow Tint<span class="note">Patch test required</span></span><b>£12.00</b></li>
+<li><span>Eyelash Tint<span class="note">Patch test required</span></span><b>£19.00</b></li>
+<li><span>Eyelash &amp; Brow Tint<span class="note">Patch test required</span></span><b>£25.00</b></li>
+<li><span>Henna Brows<span class="note">Lead-free, ammonia-free, lasts up to 6 weeks · Patch test required</span></span><b>£28</b></li>
+<li><span>LVL Lashes<span class="note">Length, volume and lift with your own natural lashes · Patch test required</span></span><b>£47.00</b></li>
+<li><span>Lady Tonic Lash Lift<span class="note">Patch test required</span></span><b>£47.00</b></li>
+<li><span>Facial Bleaching</span><b>from £15.00</b></li>
+</ul>
+</div>
+</section>
+
+<section class="reveal">
+<div class="fix">
+<h2>Body Treatments</h2>
+<p>Our full body menu — waxing, massage and wraps — all in one place, easy to find and easy to book.</p>
+<ul>
+<li>Professional Waxing — bikini, Brazilian &amp; Hollywood, with gentle Cirepil Blue non-strip wax</li>
+<li>Swedish Massage &amp; Hot Stone Massage</li>
+<li>Shrink Violet Body Wraps</li>
+<li>Spray Tanning (Fake Bake)</li>
+<li>Advanced Facials, Manicures &amp; Pedicures</li>
+</ul>
+<p>Call for prices on body treatments — we&rsquo;ll be happy to help you choose.</p>
+</div>
+</section>
+
+<section class="reveal">
+<h2>Inside the Salon</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80" alt="Massage treatment">
+<img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80" alt="Beauty treatment">
+<img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80" alt="Salon interior">
+<img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=800&q=80" alt="Nail treatment">
+</div>
+</section>
+
+<section class="reveal">
+<h2>Visit Us</h2>
+<div class="hoursbox"><b>Opening hours:</b> Call for today&rsquo;s hours.<br><br><b>Find us:</b> 1A Thistle Place, Aberdeen AB10 1UZ — just off Thistle Street and Holburn Street, with pay-and-display parking outside and Union Street bus routes nearby.</div>
+</section>
+
+<div class="contact reveal">
+<h2>Book Your Treatment</h2>
+<p>Book in advance — late-night Thursday appointments and weekend sessions fill up fast.<br>New clients: please arrive 5 minutes early for a brief consultation form.</p>
+<a class="big" href="tel:+447584179366">Call 07584 179366</a>
+<a class="mail" href="mailto:info@aberdeenbeautyclinic.com">info@aberdeenbeautyclinic.com</a>
+</div>
+<div class="foot">Aberdeen Beauty Clinic · 1A Thistle Place, Aberdeen AB10 1UZ · © 2026</div>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
