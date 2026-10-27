@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turner&#x27;s Barbershop | Worthing — Barber Shop, Prices &amp; Booking</title>
+<meta name="description" content="Turner&#x27;s Barbershop in Worthing — rated 5.0 from 49 Google reviews. See services and prices, opening hours, and book by phone or email on one simple page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700;900&family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Fira Sans',sans-serif;background:#fffbeb;color:#292524;line-height:1.6}
+h1,h2,h3{font-family:'Lora',serif;line-height:1.15}
+.topbar{position:sticky;top:0;z-index:50;background:#292524;color:#fffbeb;display:flex;justify-content:space-between;align-items:center;padding:.65rem 1rem;gap:.5rem;flex-wrap:wrap}
+.topbar a{color:#d97706;font-weight:700;text-decoration:none}
+.hero{padding:2.2rem 1.2rem}
+.hero.full{position:relative;padding:0;min-height:86vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero.full .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
+.hero.full .overlay{position:relative;color:#fff;max-width:720px;padding:2rem 1.2rem;animation:rise .8s ease both}
+.hero.split{display:grid;grid-template-columns:1.05fr .95fr;gap:1.5rem;align-items:center;max-width:1020px;margin:0 auto}
+.hero.split .himg{width:100%;height:420px;object-fit:cover;border-radius:2px}
+.hero.grad{background:linear-gradient(135deg,#d97706,#fef3c7);color:#fff;text-align:center;padding:4rem 1.2rem}
+.hero.grad .hcard{max-width:720px;margin:0 auto;animation:rise .8s ease both}
+.hero.banner .bimg{width:100%;height:46vh;object-fit:cover;display:block}
+.hero.banner .htext{max-width:900px;margin:0 auto;padding:1.5rem 1.2rem}
+.hero.panel{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:center;max-width:1020px;margin:0 auto}
+.hero.panel .frame img{width:100%;height:400px;object-fit:cover;border-radius:2px;border:6px solid #d97706}
+.hero.minimal{text-align:center;max-width:860px;margin:0 auto}
+.hero.minimal .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:1.6rem}
+.hero.minimal .strip img{width:100%;height:150px;object-fit:cover;border-radius:2px}
+.eyebrow{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;color:#d97706;margin-bottom:.7rem;font-weight:700}
+.hero.grad .eyebrow,.hero.full .eyebrow{color:#fff;opacity:.92}
+.hero h1{font-size:clamp(2.1rem,7vw,3.8rem)}
+.stars{font-weight:700;margin:.6rem 0}
+.cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.1rem}
+.hero.full .cta,.hero.grad .cta,.hero.minimal .cta{justify-content:center}
+.btn{display:inline-block;background:#d97706;color:#fff;font-weight:700;padding:.85rem 1.6rem;border-radius:2px;text-decoration:none}
+.btn.ghost{background:transparent;border:2px solid #d97706;color:inherit}
+section{padding:2.8rem 1.2rem;max-width:960px;margin:0 auto}
+h2{font-size:1.8rem;color:#d97706;margin-bottom:1rem}
+.svc-card{border:2px solid #fef3c7;border-radius:2px;padding:1rem;margin-bottom:.8rem;display:flex;justify-content:space-between;gap:1rem}
+.svc-row{display:flex;gap:.6rem;padding:.85rem 0;border-bottom:1px solid #fef3c7;align-items:baseline}
+.svc-row .dots{flex:1;border-bottom:2px dotted #fef3c7}
+.price{font-weight:700;white-space:nowrap;color:#d97706}
+.gal{display:grid;gap:.8rem}
+.gal.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.gal.g2{grid-template-columns:1fr 1fr}
+.gal.scroll{display:flex;overflow-x:auto;padding-bottom:.5rem}
+.gal.scroll img{flex:0 0 260px}
+.gal img{width:100%;height:220px;object-fit:cover;border-radius:2px}
+.bookbox{background:#292524;color:#fffbeb;border-radius:2px;padding:1.8rem;text-align:center}
+.bookbox a{color:#d97706}
+.hours li{list-style:none;padding:.45rem 0;border-bottom:1px solid #fef3c7}
+footer{text-align:center;padding:2rem 1rem 4.5rem;opacity:.7}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#292524;color:#fffbeb;display:flex;justify-content:center;gap:1rem;padding:.7rem}
+.callbar a{color:#d97706;font-weight:700;text-decoration:none}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.vis{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media(max-width:640px){.hero.split,.hero.panel{grid-template-columns:1fr}.hero.split .himg,.hero.panel .frame img{height:260px}.gal.g2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Turner&#x27;s Barbershop · Worthing</span><span><a href="tel:+441903895096">Call 01903 895096</a> &nbsp;|&nbsp; <a href="#book">Book Now</a></span></div>
+<header class="hero minimal"><p class="eyebrow">Worthing · Barber Shop</p><h1>Turner&#x27;s Barbershop</h1><p class="stars">★ 5.0 from 49 Google reviews</p><p>Everything you need on one page — services, prices, hours and booking.</p><div class="cta"><a class="btn" href="#book">Book Now</a><a class="btn ghost" href="#services">Services & Prices</a></div><div class="strip"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=900&q=80" alt=""><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=900&q=80" alt=""><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=900&q=80" alt=""></div></header>
+<section class="reveal"><h2>About Turner&#x27;s Barbershop</h2><p>A cool, contemporary grooming destination on Montague Street in Worthing — the team takes time to understand exactly what each client wants before starting any cut.</p></section>
+<section class="reveal" id="services"><h2>Services & Prices</h2><div class="svc-row"><span>Sharp Men&#x27;s Haircuts</span><span class="dots"></span><span class="price">Call for prices</span></div><div class="svc-row"><span>Traditional Beard Trims</span><span class="dots"></span><span class="price">Call for prices</span></div><div class="svc-row"><span>Expert Styling for All Hair Types</span><span class="dots"></span><span class="price">Call for prices</span></div><p style="margin-top:1rem">Prices marked “Call for prices” are confirmed by phone or email — no surprises.</p></section>
+<section class="reveal" id="book"><h2>Book in One Place</h2><div class="bookbox"><p>No apps, no accounts, no hunting for links — just call or email us with the service you want and when you would like to come in.</p><p style="margin-top:1rem;font-size:1.12rem">Phone: <a href="tel:+441903895096">01903 895096</a><br>Email: <a href="mailto:hello@turnersbarbershop.co.uk">hello@turnersbarbershop.co.uk</a></p><p style="margin-top:1.2rem"><a class="btn" href="mailto:hello@turnersbarbershop.co.uk?subject=Booking%20request">Email to Book</a> &nbsp; <a class="btn ghost" href="tel:+441903895096" style="color:inherit">Call Now</a></p></div></section>
+<section class="reveal"><h2>Gallery</h2><div class="gal scroll"><img loading="lazy" src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=900&q=80" alt="Turner&#x27;s Barbershop"><img loading="lazy" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=900&q=80" alt="Turner&#x27;s Barbershop"><img loading="lazy" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=900&q=80" alt="Turner&#x27;s Barbershop"><img loading="lazy" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=900&q=80" alt="Turner&#x27;s Barbershop"></div></section>
+<section class="reveal"><h2>Opening Hours</h2><ul class="hours"><li>Monday Closed</li><li>Tuesday – Friday 10:00am – 6:00pm</li><li>Saturday 8:00am – 2:00pm</li><li>Sunday Closed</li></ul></section>
+<section class="reveal"><h2>Find Us</h2><p><strong>Turner&#x27;s Barbershop</strong><br>120 Montague Street, Worthing BN11 3HG<br>Phone: 01903 895096<br>Email: hello@turnersbarbershop.co.uk</p></section>
+<footer><p>&copy; Turner&#x27;s Barbershop, Worthing. Demo website showing how your own site could look.</p></footer>
+<div class="callbar"><a href="tel:+441903895096">📞 Call 01903 895096</a><a href="mailto:hello@turnersbarbershop.co.uk">✉️ Email Us</a></div>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
