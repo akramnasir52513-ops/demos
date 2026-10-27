@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrimeEdge Solutions — IT & Business Services | Demo Preview</title>
+<meta name="description" content="Demo preview of a professional lead-generation website. Sample design for review only.">
+<style>
+  :root{
+    --navy:#0b1b33; --navy2:#10254a; --gold:#e8b44a; --gold-dark:#c9962e;
+    --ink:#16233a; --muted:#5b6b84; --line:#e4e8ef; --bg:#f6f7f9; --white:#ffffff;
+    --green:#1e7d4f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-text-size-adjust:100%}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.25;color:var(--navy)}
+  a{color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  section{scroll-margin-top:84px}
+
+  /* Demo notice bar */
+  .demo-bar{background:var(--gold);color:#231a04;text-align:center;font-size:13px;font-weight:700;padding:9px 16px;letter-spacing:.2px}
+  .demo-bar span{font-weight:400}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+  .head{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+  .logo{font-family:Georgia,serif;font-size:23px;font-weight:700;color:var(--navy);text-decoration:none;white-space:nowrap}
+  .logo b{color:var(--gold-dark)}
+  nav.mainnav{display:none}
+  header .head-cta{display:none}
+  .burger{background:none;border:1px solid var(--line);border-radius:8px;width:44px;height:44px;font-size:22px;cursor:pointer;color:var(--navy)}
+  .mobile-menu{display:none;border-top:1px solid var(--line);background:#fff;padding:8px 20px 16px}
+  .mobile-menu.open{display:block}
+  .mobile-menu a{display:block;padding:12px 0;border-bottom:1px solid #eef1f5;text-decoration:none;font-weight:600;color:var(--navy)}
+  .mobile-menu a:last-child{border-bottom:0}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:13px 24px;font-size:16px;text-align:center;cursor:pointer;border:0}
+  .btn-gold{background:var(--gold);color:#231a04}
+  .btn-gold:hover{background:var(--gold-dark);color:#fff}
+  .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
+  .btn-outline:hover{border-color:#fff}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:var(--navy2)}
+
+  /* Hero */
+  .hero{background:radial-gradient(900px 400px at 85% -10%,rgba(232,180,74,.35),transparent 60%),linear-gradient(160deg,#0b1b33 0%,#12294f 60%,#0b1b33 100%);color:#fff;overflow:hidden}
+  .hero .wrap{padding:52px 20px 56px;position:relative}
+  .hero-badge{display:inline-block;background:rgba(232,180,74,.16);border:1px solid rgba(232,180,74,.55);color:#f3d488;font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:7px 13px;border-radius:999px}
+  .hero h1{color:#fff;font-size:36px;margin:18px 0 14px;max-width:640px}
+  .hero h1 em{color:var(--gold);font-style:normal}
+  .hero p.lead{color:#c9d4e6;font-size:17px;max-width:620px;margin-bottom:26px}
+  .hero-ctas{display:flex;flex-direction:column;gap:12px;max-width:420px}
+  .hero-ctas .btn{width:100%}
+  .hero-note{margin-top:22px;color:#9fb0c9;font-size:14px}
+  .hero-note b{color:#fff}
+
+  /* Trust strip */
+  .trust{border-bottom:1px solid var(--line);background:#fff}
+  .trust .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0}
+  .trust-item{padding:18px 20px;border-bottom:1px solid var(--line);font-size:14.5px;font-weight:600;color:var(--navy)}
+  .trust-item i{color:var(--green);font-style:normal;margin-right:7px}
+  .trust-item:nth-child(odd){border-right:1px solid var(--line)}
+
+  /* Section headings */
+  .sec{padding:56px 0}
+  .sec.alt{background:var(--bg)}
+  .sec.dark{background:var(--navy);color:#dbe3f0}
+  .sec.dark h2{color:#fff}
+  .kicker{color:var(--gold-dark);font-weight:800;letter-spacing:1.4px;text-transform:uppercase;font-size:12.5px}
+  .sec.dark .kicker{color:var(--gold)}
+  .sec h2{font-size:30px;margin:8px 0 10px}
+  .sec .sub{color:var(--muted);max-width:640px;margin-bottom:30px;font-size:16.5px}
+  .sec.dark .sub{color:#aebcd2}
+
+  /* Services */
+  .cards{display:grid;grid-template-columns:1fr;gap:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+  .card .ico{width:48px;height:48px;border-radius:12px;background:#fdf6e3;border:1px solid #f0ddab;color:var(--gold-dark);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;margin-bottom:14px}
+  .card h3{font-size:20px;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15.5px;margin-bottom:14px}
+  .card a{color:var(--gold-dark);font-weight:700;text-decoration:none}
+  .card a:hover{text-decoration:underline}
+
+  /* Why us */
+  .whys{display:grid;grid-template-columns:1fr;gap:16px}
+  .why{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:24px}
+  .why h3{color:#fff;font-size:20px;margin-bottom:8px}
+  .why p{color:#b9c6da;font-size:15.5px}
+
+  /* Process */
+  .steps{display:grid;grid-template-columns:1fr;gap:16px;counter-reset:step}
+  .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;position:relative}
+  .step .num{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:14px}
+  .step h3{font-size:19px;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:15.5px}
+
+  /* Testimonials */
+  .sample-note{background:#fff8e1;border:1px dashed #d9b64a;color:#6b5310;font-size:14px;padding:12px 16px;border-radius:10px;margin-bottom:22px}
+  .testis{display:grid;grid-template-columns:1fr;gap:16px}
+  .testi{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+  .testi .tag{display:inline-block;background:#eef2f7;color:var(--navy);font-size:11.5px;font-weight:800;letter-spacing:1px;padding:4px 10px;border-radius:999px;margin-bottom:14px}
+  .testi p{font-size:16px;font-style:italic;color:#33415c}
+  .testi .who{margin-top:16px;font-size:14px;color:var(--muted)}
+  .testi .who b{color:var(--navy)}
+
+  /* Quote form */
+  .form-shell{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
+  .form-copy h2{font-size:30px;margin:8px 0 10px}
+  .form-copy p{color:var(--muted);margin-bottom:14px}
+  .form-copy ul{list-style:none;color:var(--navy);font-weight:600}
+  .form-copy li{padding:7px 0;border-bottom:1px solid var(--line)}
+  .form-copy li i{color:var(--green);font-style:normal;margin-right:8px}
+  form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 12px 30px rgba(11,27,51,.08)}
+  form h3{font-size:21px;margin-bottom:4px}
+  form .fsub{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+  label{display:block;font-weight:700;font-size:14px;margin:14px 0 6px;color:var(--navy)}
+  input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #d4dae4;border-radius:10px;font-size:16px;font-family:inherit;color:var(--ink);background:#fff}
+  input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold-dark);box-shadow:0 0 0 3px rgba(232,180,74,.25)}
+  textarea{min-height:110px;resize:vertical}
+  .form-note{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}
+  .form-success{display:none;background:#eaf6ef;border:1px solid #bfe3cd;color:#14532d;padding:16px;border-radius:10px;font-weight:600;margin-top:16px}
+
+  /* FAQ */
+  .faq{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px;overflow:hidden}
+  .faq button{width:100%;text-align:left;background:#fff;border:0;padding:18px 20px;font-size:16.5px;font-weight:700;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;gap:16px}
+  .faq button span{color:var(--gold-dark);flex-shrink:0}
+  .faq .ans{display:none;padding:0 20px 18px;color:var(--muted);font-size:15.5px}
+  .faq.open .ans{display:block}
+
+  /* Footer */
+  footer{background:#081223;color:#9fb0c9}
+  footer .wrap{padding:44px 20px 30px}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:28px}
+  footer h4{color:#fff;font-size:17px;margin-bottom:12px;font-family:Georgia,serif}
+  footer a{color:#9fb0c9;text-decoration:none;display:block;padding:4px 0}
+  footer a:hover{color:#fff}
+  footer p{font-size:15px}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:32px;padding-top:18px;font-size:13.5px;text-align:center}
+
+  @media (min-width:640px){
+    .hero-ctas{flex-direction:row;max-width:none}
+    .hero-ctas .btn{width:auto}
+    .trust .wrap{grid-template-columns:repeat(4,1fr)}
+    .trust-item{border-bottom:0;border-right:1px solid var(--line);text-align:center;padding:20px 12px}
+    .trust-item:last-child{border-right:0}
+    .cards{grid-template-columns:1fr 1fr}
+    .whys{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .testis{grid-template-columns:1fr 1fr}
+    .foot-grid{grid-template-columns:1.4fr 1fr 1fr}
+  }
+  @media (min-width:1024px){
+    .burger,.mobile-menu{display:none!important}
+    nav.mainnav{display:flex;gap:26px;align-items:center}
+    nav.mainnav a{text-decoration:none;font-weight:600;color:var(--navy);font-size:15.5px}
+    nav.mainnav a:hover{color:var(--gold-dark)}
+    header .head-cta{display:inline-block}
+    .hero .wrap{padding:84px 20px 88px}
+    .hero h1{font-size:54px}
+    .hero p.lead{font-size:19px}
+    .sec{padding:76px 0}
+    .sec h2{font-size:36px}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .whys{grid-template-columns:repeat(4,1fr)}
+    .steps{grid-template-columns:repeat(4,1fr)}
+    .testis{grid-template-columns:repeat(3,1fr)}
+    .form-shell{grid-template-columns:1fr 1.1fr;gap:56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-bar">DEMO PREVIEW <span>— sample design for review. All content is illustrative, not a real business.</span></div>
+
+<header>
+  <div class="wrap head">
+    <a class="logo" href="#top">Prime<b>Edge</b> Solutions</a>
+    <nav class="mainnav">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-navy head-cta" href="#quote">Free Quote</a>
+    <button class="burger" id="burger" aria-label="Open menu">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+    <a href="#quote">Get a Free Quote</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="hero-badge">Professional Services &middot; Rawalpindi, Pakistan</span>
+      <h1>Grow Your Business with <em>Expert IT &amp; Support Services</em></h1>
+      <p class="lead">We help small businesses win more enquiries, bookings and sales — with a professional website, reliable support and services built around your goals.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#quote">Get a Free Quote</a>
+        <a class="btn btn-outline" href="#services">Explore Services</a>
+      </div>
+      <p class="hero-note"><b>Free consultation.</b> No obligation. A clear, fixed quote before any work starts.</p>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item"><i>&#10003;</i> Dedicated support</div>
+      <div class="trust-item"><i>&#10003;</i> Clear fixed pricing</div>
+      <div class="trust-item"><i>&#10003;</i> Fast turnaround</div>
+      <div class="trust-item"><i>&#10003;</i> You own 100% of the work</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="sec" id="services">
+    <div class="wrap">
+      <span class="kicker">What we do</span>
+      <h2>Services Built to Bring You Customers</h2>
+      <p class="sub">Every service is designed around one goal: turning visitors into enquiries, and enquiries into paying customers.</p>
+      <div class="cards">
+        <div class="card"><div class="ico">W</div><h3>Web Design &amp; Development</h3><p>Fast, mobile-friendly websites that explain your business clearly and make it easy for visitors to contact you.</p><a href="#quote">Request this service &rarr;</a></div>
+        <div class="card"><div class="ico">M</div><h3>Medical Billing Support</h3><p>Accurate, organised billing assistance that reduces errors and frees up your time for patient care.</p><a href="#quote">Request this service &rarr;</a></div>
+        <div class="card"><div class="ico">IT</div><h3>IT Support &amp; Maintenance</h3><p>Dependable day-to-day IT help — setup, troubleshooting and keeping your systems running smoothly.</p><a href="#quote">Request this service &rarr;</a></div>
+        <div class="card"><div class="ico">A</div><h3>Business Automation</h3><p>Simple tools and workflows that save hours every week — bookings, follow-ups and routine admin, handled.</p><a href="#quote">Request this service &rarr;</a></div>
+        <div class="card"><div class="ico">E</div><h3>E-commerce Setup</h3><p>Online stores with easy ordering, secure payments and product pages your customers trust.</p><a href="#quote">Request this service &rarr;</a></div>
+        <div class="card"><div class="ico">D</div><h3>Digital Presence Setup</h3><p>Google Business Profile, social pages and local listings — so customers in your area can find you first.</p><a href="#quote">Request this service &rarr;</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="sec dark" id="why">
+    <div class="wrap">
+      <span class="kicker">Why choose us</span>
+      <h2>A Partner, Not Just a Provider</h2>
+      <p class="sub">We work the way a good partner should — honestly, clearly and with your business goals first.</p>
+      <div class="whys">
+        <div class="why"><h3>You Own Everything</h3><p>Your website, your domain, your content. No lock-in, no hostage situations — it is yours from day one.</p></div>
+        <div class="why"><h3>One Team, Everything Covered</h3><p>Website, support and setup under one roof, so you stop chasing different people for different problems.</p></div>
+        <div class="why"><h3>Plain Language, Always</h3><p>No jargon, no confusing tech talk. You always know what is happening, what it costs and when it is done.</p></div>
+        <div class="why"><h3>Built for Leads</h3><p>Pretty is not enough. Every page is designed to turn a visitor into a message, a call or an order.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="sec alt" id="process">
+    <div class="wrap">
+      <span class="kicker">How it works</span>
+      <h2>From First Message to New Customers</h2>
+      <p class="sub">A simple, transparent process — you always know what happens next.</p>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3>Tell Us What You Need</h3><p>Fill in the form below or send a message. Tell us about your business and what you want to achieve.</p></div>
+        <div class="step"><div class="num">2</div><h3>Get a Clear Plan &amp; Quote</h3><p>We reply with a straightforward plan and a fixed quote — no hidden costs, no surprises later.</p></div>
+        <div class="step"><div class="num">3</div><h3>We Build &amp; Launch</h3><p>We design, build and test everything, and show you a preview before anything goes live.</p></div>
+        <div class="step"><div class="num">4</div><h3>You Get Enquiries</h3><p>Your site starts working for you — and we stay available for support whenever you need it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (clearly labelled samples) -->
+  <section class="sec" id="testimonials">
+    <div class="wrap">
+      <span class="kicker">Client feedback</span>
+      <h2>What Clients Say</h2>
+      <div class="sample-note"><b>Sample testimonials:</b> these are placeholder examples showing how this section will look. They will be replaced with your real client feedback before launch.</div>
+      <div class="testis">
+        <div class="testi"><span class="tag">SAMPLE</span><p>&ldquo;The new website explains our services so clearly that customers now arrive knowing exactly what they want. Enquiries have become much easier to handle.&rdquo;</p><div class="who"><b>Sample Client</b><br>Small Business Owner</div></div>
+        <div class="testi"><span class="tag">SAMPLE</span><p>&ldquo;Billing used to eat up our whole week. With proper support in place, the whole process is organised and we finally have time for our patients.&rdquo;</p><div class="who"><b>Sample Client</b><br>Clinic Manager</div></div>
+        <div class="testi"><span class="tag">SAMPLE</span><p>&ldquo;Our online store is simple for customers to use, and orders come in without us chasing anyone. It feels like the shop is open even when we are closed.&rdquo;</p><div class="who"><b>Sample Client</b><br>Online Store Owner</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="sec alt" id="quote">
+    <div class="wrap form-shell">
+      <div class="form-copy">
+        <span class="kicker">Free quote</span>
+        <h2>Tell Us About Your Project</h2>
+        <p>Fill in the form and we will get back to you with a clear plan and a fixed quote. It takes less than a minute.</p>
+        <ul>
+          <li><i>&#10003;</i> Free consultation, no obligation</li>
+          <li><i>&#10003;</i> Fixed quote before work starts</li>
+          <li><i>&#10003;</i> You own everything we build</li>
+          <li><i>&#10003;</i> Support after launch included</li>
+        </ul>
+      </div>
+      <form id="leadForm" action="#" method="post">
+        <h3>Request Your Free Quote</h3>
+        <p class="fsub">Fill this in — we reply within one working day.</p>
+        <label for="f-name">Your Name *</label>
+        <input id="f-name" name="name" type="text" placeholder="e.g. Ahmed Khan" required>
+        <label for="f-email">Email Address *</label>
+        <input id="f-email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="f-phone">Phone / WhatsApp (optional)</label>
+        <input id="f-phone" name="phone" type="tel" placeholder="+92 3XX XXXXXXX">
+        <label for="f-service">Service You Need *</label>
+        <select id="f-service" name="service" required>
+          <option value="" selected>Choose a service…</option>
+          <option>Web Design &amp; Development</option>
+          <option>Medical Billing Support</option>
+          <option>IT Support &amp; Maintenance</option>
+          <option>Business Automation</option>
+          <option>E-commerce Setup</option>
+          <option>Digital Presence Setup</option>
+          <option>Something else</option>
+        </select>
+        <label for="f-msg">Tell Us About Your Project *</label>
+        <textarea id="f-msg" name="message" placeholder="What does your business do, and what would you like the website or service to achieve?" required></textarea>
+        <button class="btn btn-gold" type="submit" style="width:100%;margin-top:20px">Send My Request</button>
+        <p class="form-note">Demo form — no information is sent or stored. Your real form will deliver enquiries straight to your email or WhatsApp.</p>
+        <div class="form-success" id="formSuccess">Thank you! Your request has been noted. This is a demo form, so nothing was actually sent — on your live site, this message would go directly to the business owner.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <span class="kicker">Common questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p class="sub">Straight answers, no jargon. Anything else — just ask through the form above.</p>
+      <div class="faq"><button type="button">How long does a website take to build? <span>+</span></button><div class="ans">Most small business websites are ready within one to two weeks, depending on how much content and how many pages are needed. You will see a preview before launch.</div></div>
+      <div class="faq"><button type="button">How much will it cost? <span>+</span></button><div class="ans">It depends on the scope — a simple business site costs less than a full online store. You always get a fixed quote before work starts, so there are no surprises.</div></div>
+      <div class="faq"><button type="button">Do I own my website and domain? <span>+</span></button><div class="ans">Yes — 100%. Your domain is registered in your name and the website is yours. You can move it or manage it yourself at any time.</div></div>
+      <div class="faq"><button type="button">Do you work with businesses outside Pakistan? <span>+</span></button><div class="ans">Yes. Most communication happens online, so location is not a barrier — we work with clients wherever they are.</div></div>
+      <div class="faq"><button type="button">What happens after I send an enquiry? <span>+</span></button><div class="ans">You get a reply within one working day with a clear plan and quote. If you are happy, we start — if not, there is no obligation at all.</div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>PrimeEdge Solutions</h4>
+        <p>Professional IT &amp; business services that help small businesses grow — websites, support and setup, done properly.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Contact (Sample Details)</h4>
+        <p>Email: you@example.com<br>Phone: +92 3XX XXXXXXX<br>Rawalpindi, Pakistan</p>
+        <p style="margin-top:10px;font-size:13.5px;color:#7d8ea8">Replace with your real contact details before launch.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">&copy; PrimeEdge Solutions — Demo Preview. Sample design for review; not a live business website.</div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.innerHTML = open ? '&times;' : '&#9776;';
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      burger.innerHTML = '&#9776;';
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement;
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq').forEach(function(f){ f.classList.remove('open'); f.querySelector('span').textContent = '+'; });
+      if(!wasOpen){ item.classList.add('open'); btn.querySelector('span').textContent = '−'; }
+    });
+  });
+
+  // Demo lead form (non-functional by design)
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formSuccess').style.display = 'block';
+    document.getElementById('formSuccess').scrollIntoView({behavior:'smooth', block:'center'});
+  });
+</script>
+</body>
+</html>
