@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M Hair Extensions — Nottingham | Great Lengths Hair Extensions Salon</title>
+<meta name="description" content="M Hair Extensions, 11 George St, Nottingham. Award-winning Great Lengths hair extensions salon with over 30 years of experience. Rated 4.5 from 84 Google reviews.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #fdf8f5; color: #3a2a33; line-height: 1.7; }
+  a { color: #8a2f5c; }
+  .topbar { position: sticky; top: 0; z-index: 50; background: rgba(253,248,245,.96); border-bottom: 1px solid #e8d5da; padding: .7rem 1.1rem; display: flex; align-items: center; justify-content: space-between; gap: .8rem; }
+  .topbar .brand { font-size: 1.05rem; letter-spacing: .04em; color: #4a1942; font-weight: bold; }
+  .topbar .cta { display: flex; gap: .5rem; }
+  .topbar .cta a { font-family: Arial, Helvetica, sans-serif; font-size: .85rem; text-decoration: none; background: #4a1942; color: #fff; padding: .5rem .9rem; border-radius: 999px; }
+  .topbar .cta a.mail { background: #b76e79; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .rise { animation: rise .8s ease both; }
+  body.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+  body.js .reveal.in { opacity: 1; transform: translateY(0); }
+  .hero { max-width: 1080px; margin: 0 auto; padding: 2.6rem 1.2rem 2rem; display: grid; grid-template-columns: 1.05fr .95fr; gap: 2rem; align-items: center; }
+  .eyebrow { font-family: Arial, Helvetica, sans-serif; font-size: .8rem; letter-spacing: .3em; text-transform: uppercase; color: #b76e79; margin-bottom: .8rem; }
+  .hero h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); line-height: 1.08; color: #4a1942; margin-bottom: 1rem; }
+  .hero h1 em { font-style: italic; color: #b76e79; }
+  .pill { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: .9rem; background: #fff; border: 1px solid #e8d5da; border-radius: 999px; padding: .45rem 1rem; margin-bottom: 1.1rem; color: #4a1942; }
+  .hero p.lead { font-size: 1.12rem; color: #5c4550; margin-bottom: 1.5rem; }
+  .btn { display: inline-block; font-family: Arial, Helvetica, sans-serif; background: #4a1942; color: #fff; text-decoration: none; font-weight: bold; padding: .9rem 1.6rem; border-radius: 999px; }
+  .btn.soft { background: transparent; color: #4a1942; border: 2px solid #b76e79; margin-left: .5rem; }
+  .arch { width: 100%; height: 460px; object-fit: cover; border-radius: 230px 230px 18px 18px; border: 6px solid #fff; box-shadow: 0 18px 40px rgba(74,25,66,.18); }
+  section { max-width: 1080px; margin: 0 auto; padding: 3.2rem 1.2rem; }
+  h2 { font-size: 1.9rem; color: #4a1942; margin-bottom: .4rem; }
+  .sub { color: #8a6f7c; margin-bottom: 1.6rem; }
+  .svc { border-top: 1px solid #e8d5da; padding: 1.3rem 0; display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: baseline; }
+  .svc:last-of-type { border-bottom: 1px solid #e8d5da; }
+  .svc h3 { font-size: 1.25rem; color: #4a1942; }
+  .svc p { color: #5c4550; margin-top: .2rem; }
+  .svc .price { font-family: Arial, Helvetica, sans-serif; font-size: .9rem; color: #b76e79; white-space: nowrap; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .gallery img { width: 100%; height: 240px; object-fit: cover; border-radius: 14px; border: 4px solid #fff; box-shadow: 0 10px 24px rgba(74,25,66,.12); }
+  .hours { width: 100%; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; }
+  .hours td { padding: .7rem .4rem; border-bottom: 1px solid #e8d5da; }
+  .hours td:last-child { text-align: right; color: #4a1942; font-weight: bold; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+  .box { background: #fff; border: 1px solid #e8d5da; border-radius: 16px; padding: 1.6rem; }
+  .box h3 { color: #4a1942; margin-bottom: .7rem; }
+  form label { display: block; font-family: Arial, Helvetica, sans-serif; font-size: .85rem; margin: .7rem 0 .2rem; color: #4a1942; }
+  form input, form select, form textarea { width: 100%; padding: .7rem; border: 1px solid #e0c6cd; border-radius: 8px; font-size: 1rem; font-family: Arial, Helvetica, sans-serif; background: #fdf8f5; }
+  form button { margin-top: 1rem; font-family: Arial, Helvetica, sans-serif; background: #4a1942; color: #fff; border: none; font-weight: bold; padding: .9rem 1.6rem; border-radius: 999px; cursor: pointer; }
+  footer { text-align: center; padding: 2rem 1rem 3rem; color: #8a6f7c; font-size: .9rem; }
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; }
+    .arch { height: 320px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .btn.soft { margin-left: 0; margin-top: .6rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { .rise { animation: none; } body.js .reveal { transition: none; opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">M Hair Extensions</span>
+  <span class="cta"><a href="tel:+441159415117">Call</a><a class="mail" href="mailto:info@mhairextensions.co.uk">Email</a></span>
+</div>
+
+<header class="hero">
+  <div class="rise">
+    <div class="eyebrow">Nottingham &middot; Great Lengths Specialists</div>
+    <h1>Beautiful hair, <em>made to measure.</em></h1>
+    <span class="pill">&#9733; 4.5 &middot; 84 Google reviews</span>
+    <p class="lead">A multi-award-winning Nottingham salon with over 30 years of experience in hair extensions — the only Great Lengths Supreme Status Salon in the country.</p>
+    <a class="btn" href="#booking">Request a Consultation</a>
+    <a class="btn soft" href="#services">Our Services</a>
+  </div>
+  <img class="arch rise" src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1200&q=80" alt="Stylist working on a client's hair in the salon">
+</header>
+
+<section id="about" class="reveal">
+  <h2>About M Hair Extensions</h2>
+  <p class="sub">Craft, care and over three decades of extension expertise.</p>
+  <p>M Hair Extensions sits on George Street in the heart of Nottingham. For over 30 years, the salon has specialised in one thing done properly: beautiful, natural-looking hair extensions, fitted and blended by people who truly know hair.</p>
+  <p style="margin-top:1rem;">The salon is the only Great Lengths Supreme Status Salon in the country, and co-founder James Henderson is a Global Ambassador for Great Lengths. M Hair Extensions also works with the Little Princess Trust, donating extensions made into wigs for children.</p>
+</section>
+
+<section id="services" class="reveal">
+  <h2>Services</h2>
+  <p class="sub">Every set is bespoke — price on consultation.</p>
+  <div class="svc">
+    <div><h3>Great Lengths Hair Extensions</h3><p>Premium extensions using 100% human hair, fitted for a natural look and feel.</p></div>
+    <span class="price">Price on consultation</span>
+  </div>
+  <div class="svc">
+    <div><h3>Bespoke Volume, Length or Transformation</h3><p>From subtle added volume to a complete transformation — designed around you.</p></div>
+    <span class="price">Price on consultation</span>
+  </div>
+  <div class="svc">
+    <div><h3>Cutting &amp; Blending</h3><p>Expert cutting and blending so your extensions move and fall like your own hair.</p></div>
+    <span class="price">Price on consultation</span>
+  </div>
+  <div class="svc">
+    <div><h3>Consultation</h3><p>Talk through your hair goals with the team before anything is fitted — no pressure, just honest advice.</p></div>
+    <span class="price">Free to request</span>
+  </div>
+</section>
+
+<section id="gallery" class="reveal">
+  <h2>Gallery</h2>
+  <p class="sub">A look inside the salon.</p>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=1200&q=80" alt="Hair being washed and cared for in the salon">
+    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200&q=80" alt="Stylist styling a client's hair">
+    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80" alt="Beauty and finishing touches">
+    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1200&q=80" alt="Salon beauty treatment in progress">
+  </div>
+</section>
+
+<section id="hours" class="reveal">
+  <h2>Opening Hours</h2>
+  <table class="hours">
+    <tr><td>Monday</td><td>9am &ndash; 4pm</td></tr>
+    <tr><td>Tuesday</td><td>8am &ndash; 8pm</td></tr>
+    <tr><td>Wednesday</td><td>8am &ndash; 8pm</td></tr>
+    <tr><td>Thursday</td><td>10am &ndash; 6pm</td></tr>
+    <tr><td>Friday</td><td>8am &ndash; 8pm</td></tr>
+    <tr><td>Saturday</td><td>8am &ndash; 6pm</td></tr>
+    <tr><td>Sunday</td><td>Closed</td></tr>
+  </table>
+</section>
+
+<section id="booking" class="reveal">
+  <h2>Book &amp; Contact</h2>
+  <p class="sub">New: request your consultation online — we will confirm by phone or email.</p>
+  <div class="contact-grid">
+    <div class="box">
+      <h3>Find Us</h3>
+      <p><strong>M Hair Extensions</strong><br>
+      11 George St<br>
+      Nottingham NG1 3BH<br>
+      Phone: <a href="tel:+441159415117">0115 941 5117</a><br>
+      Email: <a href="mailto:info@mhairextensions.co.uk">info@mhairextensions.co.uk</a></p>
+      <p style="margin-top:1rem;"><a class="btn" href="mailto:info@mhairextensions.co.uk?subject=Consultation%20request%20—%20M%20Hair%20Extensions">Email to Book</a></p>
+    </div>
+    <div class="box">
+      <h3>Request a Consultation</h3>
+      <form action="mailto:info@mhairextensions.co.uk" method="post" enctype="text/plain">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="contact">Phone or email</label>
+        <input id="contact" name="contact" type="text" required>
+        <label for="service">What are you interested in?</label>
+        <select id="service" name="service">
+          <option>Great Lengths extensions</option>
+          <option>Volume or length</option>
+          <option>Cutting &amp; blending</option>
+          <option>General consultation</option>
+        </select>
+        <label for="msg">Anything we should know?</label>
+        <textarea id="msg" name="message" rows="3"></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; M Hair Extensions, Nottingham. Demo website — built to show how your own site could look.</p>
+</footer>
+
+<script>
+  document.body.classList.add('js');
+  var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold: 0.12}) : null;
+  document.querySelectorAll('.reveal').forEach(function(el){ if(io){ io.observe(el); } else { el.classList.add('in'); } });
+  setTimeout(function(){ document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); }); }, 2500);
+</script>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
