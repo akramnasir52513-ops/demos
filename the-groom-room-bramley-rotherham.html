@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Groom Room Bramley | Barber Shop in Rotherham</title>
+<meta name="description" content="The Groom Room Bramley — a barber shop in Rotherham. Rated 4.7 stars from 189 Google reviews.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#121110;color:#f3ede2;line-height:1.65}
+  h1,h2,h3{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;letter-spacing:-.01em;line-height:1.15}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1100px,92%);margin:0 auto}
+  @keyframes riseIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes glowPulse{0%,100%{box-shadow:0 0 0 0 rgba(240,180,41,.35)}50%{box-shadow:0 0 30px 4px rgba(240,180,41,.22)}}
+  @keyframes fadeSlide{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:translateX(0)}}
+  .rise{animation:riseIn .9s ease-out both}
+  .rise-1{animation-delay:.1s}.rise-2{animation-delay:.2s}.rise-3{animation-delay:.3s}
+  header{position:sticky;top:0;z-index:50;background:rgba(18,17,16,.94);border-bottom:1px solid #2e2823}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+  .brand{text-decoration:none;font-weight:800;font-size:1.25rem}
+  .brand span{color:#e08a3c}
+  .brand small{display:block;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:#b8ab97;font-weight:600}
+  .nav-links{display:none;gap:1.4rem}
+  .nav-links a{text-decoration:none;color:#b8ab97;font-size:.92rem}
+  .nav-links a:hover{color:#f5b87a}
+  @media(min-width:900px){.nav-links{display:flex}}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;padding:.8rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem;border:1px solid transparent;transition:transform .25s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:linear-gradient(135deg,#f5b87a,#e08a3c);color:#1a1408;animation:glowPulse 3.4s ease-in-out infinite}
+  .btn-wa{background:#25d366;color:#06280f}
+  .btn-ghost{border-color:#e08a3c;color:#f5b87a;background:transparent}
+  .btn-sm{padding:.55rem 1.05rem;font-size:.85rem}
+  .hero{position:relative;overflow:hidden;text-align:center}
+  .hero-media{position:absolute;inset:0}
+  .hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.42)}
+  .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,17,16,.55),rgba(18,17,16,.2) 40%,#121110 96%)}
+  .hero-inner{position:relative;padding:6rem 0 5rem;max-width:760px;margin:0 auto}
+  .eyebrow{display:inline-block;padding:.35rem .95rem;border:1px solid #e08a3c;border-radius:999px;font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:#f5b87a;background:rgba(18,17,16,.55);margin-bottom:1.3rem}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem)}
+  .hero h1 em{font-style:normal;color:#e08a3c}
+  .hero p.lead{margin:1.3rem auto 2rem;font-size:1.12rem;color:#e8ddc8;max-width:56ch}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
+  .hero-card{margin:2.6rem auto 0;display:inline-flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:center;background:rgba(20,17,16,.8);border:1px solid #2e2823;border-radius:16px;padding:1rem 1.4rem;animation:fadeSlide 1s ease-out both}
+  .hero-card .score{font-size:2rem;color:#f5b87a;line-height:1;font-weight:800}
+  .hero-card small{color:#b8ab97;display:block;font-size:.8rem}
+  section{padding:4.4rem 0}
+  .sec-tag{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:#e08a3c;margin-bottom:.6rem}
+  .sec-head{max-width:680px;margin:0 auto 2.6rem;text-align:center}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.5rem)}
+  .sec-head p{color:#b8ab97;margin-top:.8rem}
+  .dark-band{background:#171412;border-top:1px solid #2e2823;border-bottom:1px solid #2e2823}
+  .about-grid{display:grid;gap:2.4rem;align-items:center}
+  @media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr}}
+  .about-copy p{color:#b8ab97;margin-bottom:1.1rem}
+  .about-copy p strong{color:#f3ede2}
+  .about-copy .note{color:#f5b87a;border-left:3px solid #e08a3c;padding-left:1rem}
+  .about-img img{border-radius:16px;border:1px solid #2e2823;width:100%;height:340px;object-fit:cover}
+  .services-grid{display:grid;gap:1.4rem}
+  @media(min-width:700px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+  .service{background:#1d1917;border:1px solid #2e2823;border-radius:16px;overflow:hidden;transition:transform .3s,border-color .3s}
+  .service:hover{transform:translateY(-6px);border-color:#e08a3c}
+  .service img{height:180px;width:100%;object-fit:cover}
+  .service-body{padding:1.4rem}
+  .service h3{font-size:1.25rem;margin-bottom:.5rem}
+  .service p{color:#b8ab97;font-size:.95rem}
+  .service .price-note{margin-top:1rem;display:inline-block;font-size:.8rem;color:#f5b87a;border:1px dashed #e08a3c;padding:.3rem .8rem;border-radius:999px}
+  .service.text-only{padding:2rem 1.6rem;display:flex;flex-direction:column;justify-content:center}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  @media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+  .gallery figure{border-radius:16px;overflow:hidden;border:1px solid #2e2823;position:relative}
+  .gallery img{height:230px;width:100%;object-fit:cover;transition:transform .6s}
+  .gallery figure:hover img{transform:scale(1.07)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;font-size:.85rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78))}
+  .hours-table{width:100%;border-collapse:collapse;max-width:640px;margin:0 auto;background:#1d1917;border:1px solid #2e2823;border-radius:16px;overflow:hidden}
+  .hours-table td{padding:.9rem 1.3rem;border-bottom:1px solid #2e2823}
+  .hours-table tr:last-child td{border-bottom:none}
+  .hours-table td:last-child{text-align:right;color:#f5b87a;font-weight:600}
+  .book-grid{display:grid;gap:2rem}
+  @media(min-width:920px){.book-grid{grid-template-columns:1.1fr .9fr}}
+  .book-card{background:#1d1917;border:1px solid #e08a3c;border-radius:20px;padding:2.2rem}
+  .book-card h2{font-size:1.9rem;margin-bottom:.7rem}
+  .book-card p{color:#b8ab97;margin-bottom:1.6rem}
+  .book-actions{display:flex;flex-direction:column;gap:.8rem}
+  @media(min-width:560px){.book-actions{flex-direction:row;flex-wrap:wrap}}
+  .contact-list{list-style:none;display:grid;gap:1.1rem}
+  .contact-list li{background:#1d1917;border:1px solid #2e2823;border-radius:12px;padding:1.1rem 1.3rem}
+  .contact-list b{display:block;color:#f5b87a;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.25rem}
+  .contact-list a{text-decoration:none;font-size:1.1rem;font-weight:600}
+  .contact-list span{color:#b8ab97}
+  footer{background:#080606;border-top:1px solid #2e2823;padding:2.5rem 0;color:#b8ab97}
+  .foot-bottom{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;font-size:.85rem}
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#06280f;text-decoration:none;font-weight:700;padding:.9rem 1.3rem;border-radius:999px;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">THE <span>GROOM ROOM BRAMLEY</span><small>Barber Shop · Rotherham</small></a>
+    <nav class="nav-links">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#book">Contact</a>
+    </nav>
+    <a class="btn btn-gold btn-sm" href="#book">Book now</a>
+  </div>
+</header>
+<main id="top">
+  <section class="hero" style="padding:0">
+    <div class="hero-media"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop" alt="The Groom Room Bramley in Rotherham"></div>
+    <div class="wrap"><div class="hero-inner">
+      <span class="eyebrow rise rise-1">Barber Shop · Rotherham</span>
+      <h1 class="rise rise-2">The Groom Room Bramley<br><em>Done properly.</em></h1>
+      <p class="lead rise rise-3">Bramley&#x27;s barbershop — restyles, great haircuts and helpful advice on how to get the look you want, rated 4.7 stars.</p>
+      <div class="hero-ctas rise rise-3">
+        <a class="btn btn-ghost" href="tel:+441709280483">Call 01709 280483</a>
+<a class="btn btn-ghost" href="mailto:sales@thegroomroombramley.co.uk">Email us</a>
+      </div>
+      <div class="hero-card">
+        <div><span class="score">4.7</span><small>Google rating</small></div>
+        <div><span class="score">189</span><small>Google reviews</small></div>
+        <div><span class="score">Rotherham</span><small>Find us here</small></div>
+      </div>
+    </div></div>
+  </section>
+  <section id="about">
+    <div class="wrap"><div class="about-grid">
+      <div class="about-img"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=800&auto=format&fit=crop" alt="Inside The Groom Room Bramley"></div>
+      <div class="about-copy">
+        <div class="sec-tag">About</div>
+        <h2 style="font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1.1rem">Welcome to The Groom Room Bramley</h2>
+        <p>The Groom Room Bramley is Bramley&#x27;s friendly barbershop, where first-time customers get a proper restyle and honest advice about what will work for their hair.</p>
+<p>Rated 4.7 stars from 189 Google reviews, reviewers praise the amazing job on restyles, the helpful guidance and a team that takes the time to listen before cutting.</p>
+
+        
+      </div>
+    </div></div>
+  </section>
+  <section id="services" class="dark-band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Services</div>
+        <h2>What we do at The Groom Room Bramley</h2>
+        <p>Call or message for prices — straight answers, no surprises.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1000&auto=format&fit=crop" alt="Gents Haircut at The Groom Room Bramley">
+          <div class="service-body">
+            <h3>Gents Haircut</h3>
+            <p>A consultation first, then a careful cut tailored to your hair — including full restyles for a fresh start.</p>
+            <span class="price-note">Call for prices</span>
+          </div>
+        </article>
+<article class="service">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1000&auto=format&fit=crop" alt="Skin Fade at The Groom Room Bramley">
+          <div class="service-body">
+            <h3>Skin Fade</h3>
+            <p>Clean, blended fades with sharp edges, cut to suit your style.</p>
+            <span class="price-note">Call for prices</span>
+          </div>
+        </article>
+<article class="service">
+          <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=1000&auto=format&fit=crop" alt="Beard Trim at The Groom Room Bramley">
+          <div class="service-body">
+            <h3>Beard Trim</h3>
+            <p>Beard trims and shaping that finish the cut properly.</p>
+            <span class="price-note">Call for prices</span>
+          </div>
+        </article>
+<article class="service text-only">
+          <div class="sec-tag">The full works</div>
+          <h3>Restyle</h3>
+          <p>Not sure what suits you? Book a restyle — advice on the cut, the length and how to keep it looking right.</p>
+          <span class="price-note">Call for prices</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Gallery</div>
+        <h2>The work, up close</h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=800&auto=format&fit=crop" alt="Inside the shop at The Groom Room Bramley"><figcaption>Inside the shop</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=800&auto=format&fit=crop" alt="Chairs and mirrors at The Groom Room Bramley"><figcaption>Chairs and mirrors</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=800&auto=format&fit=crop" alt="Barber at work at The Groom Room Bramley"><figcaption>Barber at work</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?q=80&w=800&auto=format&fit=crop" alt="Precision styling at The Groom Room Bramley"><figcaption>Precision styling</figcaption></figure>
+
+      </div>
+    </div>
+  </section>
+  <section id="hours" class="dark-band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Opening hours</div>
+        <h2>When to find us</h2>
+      </div>
+      <table class="hours-table">
+        <tr><td>Monday</td><td>Closed</td></tr>
+<tr><td>Tuesday</td><td>10:00 AM – 8:00 PM</td></tr>
+<tr><td>Wednesday</td><td>10:00 AM – 8:00 PM</td></tr>
+<tr><td>Thursday</td><td>10:00 AM – 8:00 PM</td></tr>
+<tr><td>Friday</td><td>10:00 AM – 8:00 PM</td></tr>
+<tr><td>Saturday</td><td>8:00 AM – 5:00 PM</td></tr>
+<tr><td>Sunday</td><td>Closed</td></tr>
+
+      </table>
+    </div>
+  </section>
+  <section id="book">
+    <div class="wrap"><div class="book-grid">
+      <div class="book-card">
+        <div class="sec-tag">Get in touch</div>
+        <h2>Book at The Groom Room Bramley</h2>
+        <p>Call or email to book — tell us the service you would like and when suits you, and we will confirm your slot in Bramley.</p>
+        <div class="book-actions">
+          <a class="btn btn-ghost" href="tel:+441709280483">Call 01709 280483</a>
+<a class="btn btn-ghost" href="mailto:sales@thegroomroombramley.co.uk">Email us</a>
+        </div>
+      </div>
+      <ul class="contact-list">
+        <li><b>Phone</b><a href="tel:+441709280483">01709 280483</a><br><span>Call for prices and availability</span></li>
+        <li><b>Email</b><a href="mailto:sales@thegroomroombramley.co.uk">sales@thegroomroombramley.co.uk</a></li>
+        <li><b>Find us</b><span>Unit B, Bawtry Road, Bramley, Rotherham S66 2TP</span><br><span>Rated 4.7 from 189 Google reviews</span></li>
+        <li><b>Opening hours</b><span>See the hours table above — message or call to check today's availability.</span></li>
+      </ul>
+    </div></div>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><div class="foot-bottom">
+    <span>© The Groom Room Bramley, Rotherham. All rights reserved.</span>
+    <span>Rated 4.7 from 189 Google reviews · Call or message for prices</span>
+  </div></div>
+</footer>
+
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

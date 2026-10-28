@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T&amp;G The Barber Shop | Barbers in Norwich</title>
+<meta name="description" content="T&G The Barber Shop in Norwich — haircuts, beard trims, head shaves and hot towel shaves. Rated 4.8 stars from 76 Google reviews.">
+<style>
+  :root{--slate:#0f172a;--panel:#1e293b;--panel2:#243349;--yellow:#facc15;--yellow2:#eab308;--cream:#f1f5f9;--muted:#94a3b8;--line:#334155}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--slate);color:var(--cream);line-height:1.65}
+  h1,h2,h3{font-family:"Segoe UI",system-ui,sans-serif;letter-spacing:-.01em}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1100px,92%);margin:0 auto}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes pulseBtn{0%,100%{box-shadow:0 0 0 0 rgba(250,204,21,.4)}50%{box-shadow:0 0 26px 4px rgba(250,204,21,.3)}}
+  @keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  .fade{animation:fadeUp .9s ease-out both}
+  .fade-2{animation-delay:.12s}.fade-3{animation-delay:.24s}
+  header{background:rgba(15,23,42,.95);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+  .brand{font-size:1.35rem;font-weight:800;text-decoration:none}
+  .brand span{color:var(--yellow)}
+  .nav-links{display:none;gap:1.4rem}
+  .nav-links a{text-decoration:none;font-size:.92rem;color:var(--muted)}
+  .nav-links a:hover{color:var(--yellow)}
+  @media(min-width:860px){.nav-links{display:flex}}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;padding:.8rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem;border:1px solid transparent;transition:transform .25s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-yellow{background:var(--yellow);color:#422006;animation:pulseBtn 3.2s ease-in-out infinite}
+  .btn-ghost{border-color:var(--yellow);color:#fef08a;background:transparent}
+  .hero{position:relative;overflow:hidden}
+  .hero-media{position:absolute;inset:0}
+  .hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.4)}
+  .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.5),rgba(15,23,42,.25) 40%,var(--slate) 96%)}
+  .hero-inner{position:relative;padding:5.6rem 0 4.6rem;max-width:700px}
+  .eyebrow{display:inline-block;padding:.35rem .95rem;border:1px solid var(--yellow);border-radius:999px;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--yellow);margin-bottom:1.1rem;background:rgba(15,23,42,.6)}
+  .hero h1{font-size:clamp(2.3rem,6vw,3.9rem);line-height:1.06}
+  .hero h1 em{font-style:normal;color:var(--yellow)}
+  .hero p.lead{margin:1.2rem 0 1.8rem;color:#e2e8f0;font-size:1.1rem;max-width:54ch}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+  .hero-card{margin-top:2.4rem;display:inline-flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;background:rgba(30,41,59,.85);border:1px solid var(--line);border-radius:16px;padding:1rem 1.4rem;animation:floatCard 6s ease-in-out infinite}
+  .hero-card .score{font-size:1.9rem;color:var(--yellow);line-height:1;font-weight:800}
+  .hero-card small{color:var(--muted);display:block;font-size:.8rem}
+  section{padding:4rem 0}
+  .sec-tag{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:var(--yellow);margin-bottom:.5rem;font-weight:700}
+  .sec-head h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15}
+  .sec-head p{color:var(--muted);margin-top:.7rem;max-width:68ch}
+  .about-grid{display:grid;gap:2.2rem;align-items:center}
+  @media(min-width:900px){.about-grid{grid-template-columns:1fr 1.05fr}}
+  .about-grid img{border-radius:18px;height:360px;width:100%;object-fit:cover;border:1px solid var(--line)}
+  .about-copy p{color:var(--muted);margin-bottom:1rem}
+  .about-copy p strong{color:var(--cream)}
+  .checklist{list-style:none;display:grid;gap:.6rem;margin-top:1.2rem}
+  .checklist li{display:flex;gap:.7rem;color:#e2e8f0}
+  .checklist li::before{content:"✂";color:var(--yellow)}
+  .services{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel)}
+  .service-list{list-style:none;display:grid;gap:1rem;margin-top:2rem}
+  @media(min-width:760px){.service-list{grid-template-columns:repeat(2,1fr)}}
+  .service-list li{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.5rem}
+  .service-list li h3{color:var(--yellow);margin-bottom:.4rem}
+  .service-list li p{color:var(--muted);font-size:.95rem}
+  .service-list li span{display:inline-block;margin-top:.8rem;font-size:.8rem;color:#fef08a;border:1px dashed rgba(250,204,21,.5);padding:.3rem .8rem;border-radius:999px}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+  @media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+  .gallery figure{border-radius:14px;overflow:hidden;position:relative;border:1px solid var(--line)}
+  .gallery img{height:220px;width:100%;object-fit:cover;transition:transform .5s}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .8rem .6rem;font-size:.85rem;color:#fff;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78))}
+  .hours-contact{display:grid;gap:2rem}
+  @media(min-width:900px){.hours-contact{grid-template-columns:1fr 1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:2rem}
+  .card h3{color:var(--yellow);margin-bottom:1rem;font-size:1.3rem}
+  .hours{list-style:none;display:grid;gap:.55rem}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dashed var(--line);padding-bottom:.55rem}
+  .hours li span:last-child{font-weight:600;color:#fff}
+  .contact-list{list-style:none;display:grid;gap:1rem}
+  .contact-list b{display:block;color:var(--yellow);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.2rem}
+  .contact-list a{text-decoration:none;font-weight:700;font-size:1.05rem}
+  .contact-list a:hover{color:var(--yellow)}
+  .book-card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--yellow);border-radius:20px;padding:2.2rem;margin-top:2rem}
+  .book-card h2{font-size:1.8rem;margin-bottom:.6rem}
+  .book-card h2 span{color:var(--yellow)}
+  .book-card p{color:var(--muted);margin-bottom:1.5rem}
+  footer{border-top:1px solid var(--line);padding:2.4rem 0;color:var(--muted);font-size:.9rem}
+  .foot{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">T&amp;G <span>Barbers</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-yellow" href="tel:+441603614037">Call 01603 614037</a>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop" alt="Barber giving a precision haircut at T&G The Barber Shop, Norwich">
+    </div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="eyebrow fade">Barber Shop · Norwich</span>
+        <h1 class="fade fade-2">A proper cut,<br>every time.<br><em>T&amp;G Barbers.</em></h1>
+        <p class="lead fade fade-3">A well-loved barber shop on Prince of Wales Road, Norwich — sharp haircuts, tidy beard work and traditional hot towel shaves. Rated 4.8 stars from 76 Google reviews.</p>
+        <div class="hero-ctas fade fade-3">
+          <a class="btn btn-yellow" href="tel:+441603614037">📞 Call 01603 614037</a>
+          <a class="btn btn-ghost" href="mailto:garygts85@live.com">✉️ Email us</a>
+        </div>
+        <div class="hero-card fade fade-3">
+          <div><span class="score">4.8</span><small>Google rating</small></div>
+          <div><span class="score">76</span><small>Google reviews</small></div>
+          <div><span class="score">✂</span><small>Cuts · Beards · Shaves</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1000&auto=format&fit=crop" alt="Barber at work in the shop">
+        <div class="about-copy">
+          <div class="sec-tag">About the shop</div>
+          <h2 style="font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;margin-bottom:1rem">Norwich's go-to chair on Prince of Wales Road</h2>
+          <p><strong>T&amp;G The Barber Shop</strong> sits at 73 Prince of Wales Road, Norwich — a proper local barbers where the cut comes first and the finish is always checked twice.</p>
+          <p>From a tidy short back and sides to a full beard reshape and a traditional hot towel shave, the service list covers everything a modern gent needs. With a <strong>4.8-star rating from 76 Google reviews</strong>, Norwich customers keep voting with their feet.</p>
+          <ul class="checklist">
+            <li>Consultation before every cut</li>
+            <li>Specialists in fades, scissor work and beard shaping</li>
+            <li>Traditional hot towel shaves</li>
+            <li>Clean, razor-finished edges as standard</li>
+            <li>Simple booking by phone or email</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Services</div>
+        <h2>What T&amp;G offers</h2>
+        <p>Call or email for prices — straight answers, no surprises.</p>
+      </div>
+      <ul class="service-list">
+        <li><h3>Gents Haircut</h3><p>A full consultation, precision scissor and clipper work tailored to your head shape and hair type, finished with styling product.</p><span>Call for prices</span></li>
+        <li><h3>Beard Trim &amp; Shape</h3><p>Length taken down where it needs it, shape carved to suit your jaw, edges lined up with a razor finish.</p><span>Call for prices</span></li>
+        <li><h3>Head Shave</h3><p>A clean, careful head shave with a smooth finish — done properly, not rushed.</p><span>Call for prices</span></li>
+        <li><h3>Hot Towel Shave</h3><p>The traditional ritual: hot towels, rich lather, a careful straight-razor shave, then cold towel and balm to close.</p><span>Call for prices</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Gallery</div>
+        <h2>The craft, up close</h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800&auto=format&fit=crop" alt="Barber tools ready for a shave"><figcaption>Tools of the trade</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=800&auto=format&fit=crop" alt="Classic gents haircut in progress"><figcaption>Classic cuts</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?q=80&w=800&auto=format&fit=crop" alt="Hot towel shave preparation"><figcaption>Hot towel ritual</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=800&auto=format&fit=crop" alt="Inside a traditional barber shop"><figcaption>The shop floor</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap">
+      <div class="hours-contact">
+        <div class="card">
+          <h3>Opening hours</h3>
+          <ul class="hours">
+            <li><span>Monday</span><span>08:00 – 17:30</span></li>
+            <li><span>Tuesday</span><span>08:00 – 18:00</span></li>
+            <li><span>Wednesday</span><span>08:00 – 18:00</span></li>
+            <li><span>Thursday</span><span>08:00 – 18:00</span></li>
+            <li><span>Friday</span><span>08:00 – 18:00</span></li>
+            <li><span>Saturday</span><span>08:00 – 16:30</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Find us &amp; contact</h3>
+          <ul class="contact-list">
+            <li><b>Address</b><span>73 Prince of Wales Rd, Norwich NR1 1DG</span></li>
+            <li><b>Phone</b><a href="tel:+441603614037">01603 614037</a></li>
+            <li><b>Email</b><a href="mailto:garygts85@live.com">garygts85@live.com</a></li>
+            <li><b>Rating</b><span>4.8 ★ from 76 Google reviews</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="book-card" id="book">
+        <h2>Book your chair at <span>T&amp;G The Barber Shop</span></h2>
+        <p>Call or email to book — tell us the service you want and when suits you, and we will confirm your slot in Norwich.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-yellow" href="tel:+441603614037">📞 Call 01603 614037</a>
+          <a class="btn btn-ghost" href="mailto:garygts85@live.com">✉️ Email us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <span>© T&amp;G The Barber Shop, Norwich.</span>
+    <span>Haircuts · Beard trims · Head shaves · Hot towel shaves · Rated 4.8 ★ from 76 Google reviews</span>
+  </div>
+</footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todds Chop Shop | Traditional Barbers in South Shields</title>
+<meta name="description" content="Todds Chop Shop — a traditional barber shop at 73 Nevinson Avenue, South Shields. Haircuts, beard trims and hot towel shaves. Rated 5.00 from 443 Google reviews.">
+<style>
+  :root{--navy:#0a1c33;--navy2:#10294d;--orange:#ff7a1a;--orange2:#ff9a4d;--ink:#0b1526;--paper:#f5f7fa;--muted:#5b6b82;--line:#dbe3ee;--wa:#25d366}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+  h1,h2,h3{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:-.01em;color:var(--navy)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1120px,92%);margin:0 auto}
+  @keyframes riseIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes glowPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,122,26,.45)}50%{box-shadow:0 0 26px 4px rgba(255,122,26,.35)}}
+  @keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  .rise{animation:riseIn .9s ease-out both}
+  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+  .brand{font-size:1.3rem;font-weight:800;text-decoration:none}
+  .brand span{color:var(--orange)}
+  .nav-links{display:none;gap:1.4rem;font-size:.92rem}
+  .nav-links a{text-decoration:none;color:#cfe0f5}
+  @media(min-width:900px){.nav-links{display:flex}}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;padding:.8rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem}
+  .btn-orange{background:var(--orange);color:#fff;animation:glowPulse 3.4s ease-in-out infinite}
+  .btn-wa{background:var(--wa);color:#06280f}
+  .btn-ghost{border:2px solid #fff;color:#fff}
+  .hero{position:relative;overflow:hidden;color:#fff}
+  .hero-media{position:absolute;inset:0}
+  .hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.5)}
+  .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,28,51,.55),rgba(10,28,51,.25) 45%,rgba(10,28,51,.92))}
+  .hero-inner{position:relative;padding:6rem 0 5rem;max-width:700px}
+  .hero h1{color:#fff;font-size:clamp(2.4rem,6vw,4rem);line-height:1.05}
+  .hero h1 em{font-style:normal;color:var(--orange2)}
+  .hero p.lead{margin:1.2rem 0 1.8rem;font-size:1.12rem;color:#e6edf7}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+  .badge{display:inline-flex;gap:1rem;align-items:center;background:rgba(255,255,255,.94);color:var(--ink);border-radius:14px;padding:.9rem 1.3rem;margin-top:2.2rem;animation:floatBadge 6s ease-in-out infinite}
+  .badge .score{font-size:1.9rem;font-weight:800;color:var(--navy);line-height:1}
+  .badge small{color:var(--muted);display:block;font-size:.8rem}
+  section{padding:3.4rem 0}
+  section h2{font-size:1.9rem;margin-bottom:.6rem}
+  section p.sub{color:var(--muted);margin-bottom:1.8rem;max-width:62ch}
+  .grid{display:grid;grid-template-columns:1fr;gap:1.2rem}
+  @media(min-width:760px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.grid{grid-template-columns:repeat(4,1fr)}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.4rem}
+  .card h3{font-size:1.1rem;margin-bottom:.4rem}
+  .card p{color:var(--muted);font-size:.95rem}
+  .card .price{margin-top:.9rem;font-weight:800;color:var(--orange)}
+  .about{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+  @media(min-width:860px){.about{grid-template-columns:1fr 1fr}}
+  .about img{border-radius:16px;width:100%;height:100%;object-fit:cover}
+  .gallery{display:grid;grid-template-columns:1fr;gap:1rem}
+  @media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}}
+  .gallery img{border-radius:16px;height:240px;width:100%;object-fit:cover}
+  .gallery figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem}
+  .hours{background:var(--navy);color:#fff}
+  .hours h2{color:#fff}
+  .hours table{width:100%;border-collapse:collapse;background:var(--navy2);border-radius:14px;overflow:hidden}
+  .hours td{padding:.7rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.1)}
+  .hours tr:last-child td{border-bottom:0}
+  .hours td:last-child{text-align:right;color:var(--orange2);font-weight:700}
+  .contact-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.8rem;display:grid;gap:1rem}
+  @media(min-width:860px){.contact-card{grid-template-columns:1.2fr 1fr}}
+  footer{background:var(--navy);color:#9db4d4;text-align:center;padding:1.4rem 0;font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">Todds <span>Chop Shop</span></a>
+    <nav class="nav-links"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-orange" href="https://wa.me/447779271369">Book on WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" alt="Barber trimming a client's beard at Todds Chop Shop"></div>
+  <div class="wrap hero-inner">
+    <h1 class="rise">Todds Chop Shop<br><em>Traditional barbers in South Shields</em></h1>
+    <p class="lead rise">A friendly, traditional barber shop on Nevinson Avenue — sharp haircuts, tidy beard trims and hot towel shaves, with a warm welcome every time.</p>
+    <div class="hero-ctas rise">
+      <a class="btn btn-wa" href="https://wa.me/447779271369">WhatsApp us</a>
+      <a class="btn btn-ghost" href="tel:01919087981">Call 0191 908 7981</a>
+    </div>
+    <div class="badge"><span class="score">5.00</span><span><strong>from 443 Google reviews</strong><small>Traditional barber shop, South Shields</small></span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About Todds Chop Shop</h2>
+      <p class="sub">Todds Chop Shop is a traditional barber shop in South Shields, known for its friendly atmosphere, comfortable shop and quality cuts. Walk-ins and appointments are welcome, and students and OAPs can ask about discounts in the shop.</p>
+      <p class="sub">Find us at 73 Nevinson Avenue, South Shields NE34 8ND — or book online through our booking page.</p>
+      <a class="btn btn-orange" href="https://toddschopshop.nearcut.com/">Book online</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1200&q=80" alt="Classic barber chair inside a traditional barber shop">
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="sub">Classic barbering, done properly. Ask in the shop for today's availability.</p>
+    <div class="grid">
+      <div class="card"><h3>Haircuts</h3><p>Traditional and modern cuts, finished with care.</p><p class="price">Call for prices</p></div>
+      <div class="card"><h3>Beard trims</h3><p>Tidy trims and shape-ups for a clean finish.</p><p class="price">Call for prices</p></div>
+      <div class="card"><h3>Hot towel shaves</h3><p>The classic close shave, with a hot towel finish.</p><p class="price">Call for prices</p></div>
+      <div class="card"><h3>Student &amp; OAP discounts</h3><p>Ask in the shop about discounts for students and OAPs.</p><p class="price">Ask in shop</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>Gallery</h2>
+    <p class="sub">A look inside the barber's chair.</p>
+    <div class="gallery">
+      <figure><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1200&q=80" alt="Classic barber chair"><figcaption>The barber's chair</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=80" alt="Barber clippers, scissors and grooming products"><figcaption>Tools of the trade</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1200&q=80" alt="Barber blow-drying a client's hair"><figcaption>Cut and finish</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="hours" class="hours">
+  <div class="wrap">
+    <h2>Opening hours</h2>
+    <table>
+      <tr><td>Monday</td><td>Closed</td></tr>
+      <tr><td>Tuesday</td><td>9:00 AM – 5:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>9:00 AM – 5:00 PM</td></tr>
+      <tr><td>Thursday</td><td>9:00 AM – 7:00 PM</td></tr>
+      <tr><td>Friday</td><td>9:00 AM – 7:00 PM</td></tr>
+      <tr><td>Saturday</td><td>8:00 AM – 2:00 PM</td></tr>
+      <tr><td>Sunday</td><td>Closed</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div>
+        <p><strong>Address:</strong> 73 Nevinson Avenue, South Shields NE34 8ND</p>
+        <p><strong>Phone:</strong> <a href="tel:01919087981">0191 908 7981</a></p>
+        <p><strong>Mobile / WhatsApp:</strong> <a href="https://wa.me/447779271369">07779 271369</a></p>
+        <p><strong>Email:</strong> <a href="mailto:toddschopshop@outlook.com">toddschopshop@outlook.com</a></p>
+        <p><strong>Book online:</strong> <a href="https://toddschopshop.nearcut.com/">toddschopshop.nearcut.com</a></p>
+      </div>
+      <div>
+        <a class="btn btn-wa" href="https://wa.me/447779271369">Message on WhatsApp</a>
+        <p style="margin-top:1rem;color:var(--muted)">Prefer to call? Ring <a href="tel:01919087981">0191 908 7981</a> during opening hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Todds Chop Shop — 73 Nevinson Avenue, South Shields NE34 8ND · Demo website</div>
+</footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

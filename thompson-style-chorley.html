@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thompson Style | Hair Salon in Chorley</title>
+<meta name="description" content="Thompson Style, a unisex hair salon on Market Street in Chorley. Rated 4.8 from 70 Google reviews. Cuts, colour, balayage and hair extensions.">
+<style>
+  :root{--burgundy:#6e1423;--burgundy-dark:#4d0d18;--beige:#f5efe3;--cream:#fffaf0;--gold:#c9a227;--ink:#2b2320}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--beige);color:var(--ink);line-height:1.6}
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;color:var(--burgundy);letter-spacing:.3px}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes shine{0%,100%{transform:translateX(-8px)}50%{transform:translateX(8px)}}
+  @keyframes glowPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,.45)}50%{box-shadow:0 0 0 10px rgba(201,162,39,0)}}
+  .hero{display:flex;flex-wrap:wrap;align-items:center;background:var(--burgundy);color:#fff}
+  .hero-text{flex:1 1 320px;padding:48px 36px;animation:fadeUp .9s ease both}
+  .hero-text h1{color:#fff;font-size:2.6rem;line-height:1.15}
+  .hero-text p{margin:14px 0;font-size:1.1rem;color:#f0e6d2}
+  .hero-img{flex:1 1 320px;min-height:340px;background:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat}
+  .badge{display:inline-block;background:var(--gold);color:#3a2a00;padding:6px 14px;border-radius:20px;font-weight:bold;animation:shine 3s ease-in-out infinite}
+  .cta{display:inline-block;margin-top:18px;background:var(--gold);color:#3a2a00;text-decoration:none;padding:13px 26px;border-radius:30px;font-weight:bold;animation:glowPulse 2.6s infinite}
+  .cta2{display:inline-block;margin-top:18px;margin-left:10px;border:2px solid #fff;color:#fff;text-decoration:none;padding:11px 24px;border-radius:30px;font-weight:bold}
+  .wrap{max-width:1020px;margin:0 auto;padding:44px 22px}
+  .section{margin-bottom:44px;animation:fadeUp .9s ease both}
+  .section h2{font-size:1.9rem;border-bottom:3px solid var(--gold);padding-bottom:8px;margin-bottom:18px}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .card{background:var(--cream);border:1px solid #e3d7bd;border-radius:14px;overflow:hidden}
+  .card img{width:100%;height:170px;object-fit:cover;display:block}
+  .card div{padding:16px}
+  .card h3{font-size:1.2rem;margin-bottom:6px}
+  .price{color:var(--burgundy);font-weight:bold}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px;border:3px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+  table{width:100%;border-collapse:collapse;background:var(--cream);border-radius:12px;overflow:hidden}
+  td{padding:11px 16px;border-bottom:1px solid #eadfc6}
+  td:last-child{text-align:right;font-weight:bold}
+  .contact-box{background:var(--burgundy);color:#fff;border-radius:16px;padding:30px;text-align:center}
+  .contact-box h2{color:#fff;border:none}
+  .contact-box a{color:#ffe9a8}
+  footer{text-align:center;padding:22px;color:#7a6f5c;font-size:.9rem}
+  @media(max-width:640px){.hero-text h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">★ 4.8 — 70 Google reviews</span>
+    <h1>Thompson Style</h1>
+    <p>Chorley's friendly unisex hair salon since 2011. Expert cuts, colour, balayage and extensions on Market Street — from baby's first trim to colour done to perfection.</p>
+    <a class="cta" href="tel:01257263656">Call 01257 263656</a>
+    <a class="cta2" href="mailto:thompson.style@btconnect.com">Email Us</a>
+  </div>
+  <div class="hero-img" role="img" aria-label="Thompson Style salon interior"></div>
+</section>
+
+<div class="wrap">
+  <section class="section">
+    <h2>About Us</h2>
+    <p>Thompson Style has been looking after Chorley's hair since 2011. Our friendly, highly trained stylists understand head shape, hair texture and structure, so every cut and colour is crafted around you. From everyday trims for adults and children to bespoke colouring, balayage and hair extensions, you will be welcomed by a team that takes real pride in its work.</p>
+  </section>
+
+  <section class="section">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80" alt="Haircut in progress"><div><h3>Ladies &amp; Gents Haircuts</h3><p>Precision cuts for adults and children, finished and styled.</p><p class="price">Call for prices</p></div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&w=800&q=80" alt="Hair colouring"><div><h3>Colour &amp; Balayage</h3><p>Bespoke colouring and balayage from our colour experts.</p><p class="price">Call for prices</p></div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" alt="Hair wash and care"><div><h3>Hair Extensions</h3><p>Full, natural-looking length and volume, fitted by specialists.</p><p class="price">Call for prices</p></div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80" alt="Styled hair"><div><h3>Styling &amp; Hair Up</h3><p>Occasion styling and hair up for weddings and special days.</p><p class="price">Call for prices</p></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80" alt="Salon work">
+      <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80" alt="Hair styling">
+      <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=800&q=80" alt="Finished hairstyle">
+      <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80" alt="Salon interior">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Opening Hours</h2>
+    <table>
+      <tr><td>Monday</td><td>Closed</td></tr>
+      <tr><td>Tuesday</td><td>9am – 5pm</td></tr>
+      <tr><td>Wednesday</td><td>8am – 8pm</td></tr>
+      <tr><td>Thursday</td><td>8am – 8pm</td></tr>
+      <tr><td>Friday</td><td>8am – 8pm</td></tr>
+      <tr><td>Saturday</td><td>8am – 4pm</td></tr>
+      <tr><td>Sunday</td><td>Closed</td></tr>
+    </table>
+  </section>
+
+  <section class="section contact-box">
+    <h2>Visit Us</h2>
+    <p>125 Market Street, Chorley PR7 2SQ</p>
+    <p>Phone: <a href="tel:01257263656">01257 263656</a> &nbsp;|&nbsp; Email: <a href="mailto:thompson.style@btconnect.com">thompson.style@btconnect.com</a></p>
+    <p>Find us on Facebook: Thompson Style Chorley</p>
+    <a class="cta" href="tel:01257263656">Book by Phone</a>
+  </section>
+</div>
+
+<footer>© Thompson Style, Chorley. Rated 4.8 from 70 Google reviews.</footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
