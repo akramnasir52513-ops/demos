@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nails by TN | Nail Salon in Salisbury</title>
+<meta name="description" content="Nails by TN — a nail salon on Winchester Street, Salisbury. Rated 4.7 stars from 72 Google reviews. Acrylic, gel polish, dipping powder, manicures and pedicures.">
+<style>
+:root{--green:#1d4a33;--green2:#2c6b4a;--cream:#f7f5ef;--ink:#1e2420;--muted:#5a6a60;--gold:#c9a227;--line:#dfe7e0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--green)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1100px,92%);margin:0 auto}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes pulseBtn{0%,100%{box-shadow:0 0 0 0 rgba(44,107,74,.35)}50%{box-shadow:0 0 0 12px rgba(44,107,74,0)}}
+.rise{animation:fadeUp .9s ease-out both}
+.rise-1{animation-delay:.1s}.rise-2{animation-delay:.2s}.rise-3{animation-delay:.3s}
+header{background:#fff;border-bottom:3px solid var(--green);position:sticky;top:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+.brand{font-family:Georgia,serif;font-size:1.35rem;color:var(--green);text-decoration:none}
+.brand span{color:var(--gold)}
+.badge{background:var(--green);color:#fff;border-radius:999px;padding:.35rem 1rem;font-size:.85rem}
+.badge b{color:#f0d98c}
+.btn{display:inline-block;text-decoration:none;padding:.85rem 1.6rem;border-radius:999px;font-weight:700;font-size:.95rem}
+.btn-green{background:var(--green2);color:#fff;animation:pulseBtn 3s ease-in-out infinite}
+.btn-ghost{border:2px solid var(--green);color:var(--green)}
+.hero{padding:4rem 0;background:var(--cream)}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--green2)}
+.hero p.lead{margin:1.2rem 0 1.8rem;color:var(--muted);font-size:1.1rem;max-width:52ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero-img{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 48px rgba(29,74,51,.18);animation:floaty 6s ease-in-out infinite}
+.hero-img img{width:100%;height:420px;object-fit:cover}
+.rate-card{margin-top:1.8rem;display:flex;gap:2rem;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.4rem}
+.rate-card b{font-family:Georgia,serif;font-size:1.8rem;display:block;line-height:1;color:var(--green)}
+.rate-card span{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+section{padding:4rem 0}
+section.cream{background:var(--cream)}
+section.green{background:var(--green);color:#fff}
+section.green h2{color:#fff}
+section.green .sec-tag{color:#f0d98c}
+section.green p{color:#dfeee4}
+.sec-tag{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--green2);margin-bottom:.5rem;font-weight:700}
+.sec-head h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;margin-bottom:.7rem}
+.sec-head p{color:var(--muted);max-width:66ch}
+.about-grid{display:grid;gap:2rem;align-items:start}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-grid p{color:var(--muted);margin-bottom:1rem}
+.checklist{list-style:none;display:grid;gap:.6rem;margin-top:1rem}
+.checklist li::before{content:"✓ ";color:var(--green2);font-weight:700}
+.services-grid{display:grid;gap:1.3rem;margin-top:2rem}
+@media(min-width:700px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+.service{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.service img{height:190px;width:100%;object-fit:cover}
+.service-body{padding:1.3rem 1.4rem}
+.service h3{font-size:1.25rem;margin-bottom:.4rem}
+.service p{color:var(--muted);font-size:.95rem}
+.price{display:inline-block;margin-top:.9rem;font-size:.8rem;color:var(--green2);border:1px dashed var(--green2);padding:.25rem .8rem;border-radius:999px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+@media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{border-radius:14px;overflow:hidden;position:relative}
+.gallery img{height:220px;width:100%;object-fit:cover}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .8rem .6rem;font-size:.85rem;color:#fff;background:linear-gradient(180deg,transparent,rgba(0,0,0,.75))}
+.hours-table{width:100%;border-collapse:collapse;margin-top:2rem;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.hours-table td{padding:.8rem 1.2rem;border-bottom:1px solid var(--line)}
+.hours-table tr:last-child td{border-bottom:none}
+.hours-table td:last-child{text-align:right;font-weight:600}
+.contact-grid{display:grid;gap:1.2rem;margin-top:2rem}
+@media(min-width:820px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.4rem}
+.contact-card b{display:block;color:var(--green2);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.3rem}
+.contact-card a{font-weight:700;text-decoration:none;font-size:1.05rem}
+.contact-card a:hover{color:var(--green2)}
+footer{background:#143826;color:#dfeee4;padding:2.5rem 0 1.5rem}
+footer p{font-size:.9rem;opacity:.9}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Nails by <span>TN</span></a>
+    <span class="badge">★ <b>4.7</b> from 72 Google reviews</span>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="rise rise-1" style="letter-spacing:.28em;text-transform:uppercase;font-size:.75rem;color:var(--green2);font-weight:700">Nail Salon · Winchester Street, Salisbury</p>
+        <h1 class="rise rise-2">Beautiful nails, <em>made to last.</em></h1>
+        <p class="lead rise rise-3">On Winchester Street in the heart of Salisbury, Nails by TN is rated 4.7 stars from 72 Google reviews. Acrylic and gel polish, dipping powder, nail extensions and relaxing manicures and pedicures — all with careful, friendly service.</p>
+        <div class="hero-ctas rise rise-3">
+          <a class="btn btn-green" href="tel:+441722335100">📞 Call 01722 335100</a>
+          <a class="btn btn-ghost" href="mailto:nailsbytn12@gmail.com">✉️ Email us</a>
+        </div>
+        <div class="rate-card rise rise-3">
+          <div><b>4.7</b><span>Google rating</span></div>
+          <div><b>72</b><span>Google reviews</span></div>
+          <div><b>SP1 1HB</b><span>Winchester St</span></div>
+        </div>
+      </div>
+      <div class="hero-img rise rise-2">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop" alt="Manicured nails at Nails by TN, Salisbury">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <div class="sec-tag">About the salon</div>
+          <h2>Careful work, lovely results</h2>
+          <p>Nails by TN is a friendly Salisbury nail salon with a <strong>4.7-star rating from 72 Google reviews</strong>. Whether you want a classic polish, a full set of acrylics, or long-lasting dipping powder, the team takes time to get the shape, length and finish just right.</p>
+          <p>From everyday manicures to special-occasion nails, every treatment is done with clean tools, quality products and a calm, welcoming touch — right in the centre of Salisbury.</p>
+        </div>
+        <div>
+          <div class="sec-tag">Why customers choose us</div>
+          <ul class="checklist">
+            <li>Acrylic and gel polish full sets and infills</li>
+            <li>Dipping powder — SNS and NexGen</li>
+            <li>Toe nail extensions and two big toes with polish</li>
+            <li>Manicures and pedicures with polish or gel polish</li>
+            <li>Take-off and redo services</li>
+            <li>Central Salisbury location on Winchester Street</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="cream">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Services</div>
+        <h2>What we do at Nails by TN</h2>
+        <p>Call for prices and to book your appointment.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1000&auto=format&fit=crop" alt="Acrylic nail extensions">
+          <div class="service-body">
+            <h3>Acrylic &amp; Gel Polish</h3>
+            <p>Full sets and infills in acrylic with gel polish — strong, glossy and shaped to suit you.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=1000&auto=format&fit=crop" alt="Dipping powder nails">
+          <div class="service-body">
+            <h3>Dipping Powder — SNS &amp; NexGen</h3>
+            <p>Lightweight, long-lasting dipping powder overlays, plus take-off and redo services.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1000&auto=format&fit=crop" alt="Manicure treatment">
+          <div class="service-body">
+            <h3>Manicure &amp; Pedicure</h3>
+            <p>Manicures and pedicures with polish or gel polish — including Shellac gel polish nails.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1614806687007-2215a9db3b1c?q=80&w=1000&auto=format&fit=crop" alt="Toe nail treatment">
+          <div class="service-body">
+            <h3>Toe Nail Extensions</h3>
+            <p>Toe nail extensions, two big toes with polish, and polish-only finishes for a neat look.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="green">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Gallery</div>
+        <h2>Fresh sets, happy hands</h2>
+        <p>Clean finishes, pretty colours and nails that last — a look at the Nails by TN style.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?q=80&w=800&auto=format&fit=crop" alt="Fresh manicure"><figcaption>Fresh manicure</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800&auto=format&fit=crop" alt="Polished nails"><figcaption>Polished finish</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" alt="Relaxing salon treatment"><figcaption>Relaxing treatment</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=800&auto=format&fit=crop" alt="Detailed nail work"><figcaption>Detailed work</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Opening hours</div>
+        <h2>When to find us</h2>
+      </div>
+      <table class="hours-table">
+        <tr><td>Monday</td><td>9:00am – 6:30pm</td></tr>
+        <tr><td>Tuesday</td><td>9:00am – 6:30pm</td></tr>
+        <tr><td>Wednesday</td><td>9:00am – 6:30pm</td></tr>
+        <tr><td>Thursday</td><td>9:00am – 6:30pm</td></tr>
+        <tr><td>Friday</td><td>9:00am – 6:30pm</td></tr>
+        <tr><td>Saturday</td><td>9:00am – 5:00pm</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact" class="cream">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Get in touch</div>
+        <h2>Book your appointment</h2>
+        <p>Call or email to book — we look forward to seeing you in the salon.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <b>Phone</b>
+          <a href="tel:+441722335100">01722 335100</a>
+          <p style="color:var(--muted);font-size:.95rem">Call to book</p>
+        </div>
+        <div class="contact-card">
+          <b>Email</b>
+          <a href="mailto:nailsbytn12@gmail.com">nailsbytn12@gmail.com</a>
+          <p style="color:var(--muted);font-size:.95rem">We reply as soon as we can</p>
+        </div>
+        <div class="contact-card">
+          <b>Find us</b>
+          <p style="font-weight:700">12 Winchester Street, Salisbury SP1 1HB</p>
+          <p style="color:var(--muted);font-size:.95rem">Rated 4.7 ★ from 72 Google reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>© Nails by TN, 12 Winchester Street, Salisbury SP1 1HB · Phone 01722 335100 · Acrylic, gel polish, dipping powder, manicures and pedicures.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

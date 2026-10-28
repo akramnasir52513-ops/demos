@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pretty In Pink | Nail Bar in Kempston, Bedford</title>
+<meta name="description" content="Pretty In Pink Nail Bar in Kempston, Bedford — manicures, nail art, waxing and sunbed. Rated 4.5 stars from 43 Google reviews.">
+<style>
+  :root{--slate:#1e293b;--slate2:#334155;--yellow:#facc15;--yellow2:#eab308;--paper:#f8fafc;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+  h1,h2,h3{font-family:"Segoe UI",system-ui,sans-serif;letter-spacing:-.01em}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1100px,92%);margin:0 auto}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes pulseBtn{0%,100%{box-shadow:0 0 0 0 rgba(250,204,21,.45)}50%{box-shadow:0 0 26px 4px rgba(250,204,21,.35)}}
+  @keyframes slideBar{from{width:0}to{width:100%}}
+  .fade{animation:fadeUp .9s ease-out both}
+  .fade-2{animation-delay:.12s}.fade-3{animation-delay:.24s}
+  header{background:var(--slate);color:#fff;position:sticky;top:0;z-index:50}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+  .brand{font-size:1.35rem;font-weight:800;text-decoration:none}
+  .brand span{color:var(--yellow)}
+  .nav-links{display:none;gap:1.4rem}
+  .nav-links a{text-decoration:none;font-size:.92rem;color:#cbd5e1}
+  .nav-links a:hover{color:var(--yellow)}
+  @media(min-width:860px){.nav-links{display:flex}}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;padding:.8rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem;border:1px solid transparent;transition:transform .25s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-yellow{background:var(--yellow);color:#422006;animation:pulseBtn 3.2s ease-in-out infinite}
+  .btn-wa{background:#25d366;color:#06280f}
+  .btn-ghost{border-color:var(--yellow);color:#fef08a;background:transparent}
+  .hero{background:var(--slate);color:#fff;padding:3.6rem 0 4rem;position:relative;overflow:hidden}
+  .hero::after{content:"";display:block;height:6px;background:var(--yellow);animation:slideBar 1.2s ease-out both;position:absolute;left:0;right:0;bottom:0}
+  .hero-grid{display:grid;gap:2.2rem;align-items:center}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+  .eyebrow{display:inline-block;padding:.35rem .95rem;border:1px solid var(--yellow);border-radius:999px;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--yellow);margin-bottom:1.1rem}
+  .hero h1{font-size:clamp(2.3rem,6vw,3.9rem);line-height:1.06}
+  .hero h1 em{font-style:normal;color:var(--yellow)}
+  .hero p.lead{margin:1.2rem 0 1.8rem;color:#e2e8f0;font-size:1.1rem;max-width:54ch}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+  .hero img{border-radius:18px;border:3px solid var(--yellow);width:100%;height:380px;object-fit:cover}
+  .badge-row{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:1.8rem}
+  .badge-row b{font-size:1.5rem;color:var(--yellow)}
+  .badge-row small{display:block;color:#cbd5e1;font-size:.8rem}
+  section{padding:4rem 0}
+  .sec-tag{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:#b45309;margin-bottom:.5rem;font-weight:700}
+  .sec-head h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;color:var(--slate)}
+  .sec-head p{color:var(--muted);margin-top:.7rem;max-width:68ch}
+  .about-grid{display:grid;gap:2.2rem;align-items:center}
+  @media(min-width:900px){.about-grid{grid-template-columns:1fr 1.05fr}}
+  .about-grid img{border-radius:18px;height:360px;width:100%;object-fit:cover}
+  .about-copy p{color:var(--muted);margin-bottom:1rem}
+  .about-copy p strong{color:var(--ink)}
+  .checklist{list-style:none;display:grid;gap:.6rem;margin-top:1.2rem}
+  .checklist li{display:flex;gap:.7rem;color:var(--slate)}
+  .checklist li::before{content:"✓";color:var(--yellow2);font-weight:800}
+  .services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .service-list{list-style:none;display:grid;gap:.8rem;margin-top:2rem}
+  @media(min-width:760px){.service-list{grid-template-columns:repeat(2,1fr)}}
+  .service-list li{display:flex;justify-content:space-between;gap:1rem;background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--yellow);border-radius:12px;padding:1rem 1.2rem}
+  .service-list li b{color:var(--slate)}
+  .service-list li span{color:#b45309;font-weight:700;white-space:nowrap}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+  @media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+  .gallery figure{border-radius:14px;overflow:hidden;position:relative;border:1px solid var(--line)}
+  .gallery img{height:220px;width:100%;object-fit:cover;transition:transform .5s}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .8rem .6rem;font-size:.85rem;color:#fff;background:linear-gradient(180deg,transparent,rgba(0,0,0,.75))}
+  .hours-contact{display:grid;gap:2rem}
+  @media(min-width:900px){.hours-contact{grid-template-columns:1fr 1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:2rem}
+  .card h3{color:var(--slate);margin-bottom:1rem;font-size:1.3rem}
+  .hours{list-style:none;display:grid;gap:.55rem}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dashed var(--line);padding-bottom:.55rem}
+  .hours li span:last-child{font-weight:600;color:var(--slate)}
+  .contact-list{list-style:none;display:grid;gap:1rem}
+  .contact-list b{display:block;color:#b45309;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.2rem}
+  .contact-list a{text-decoration:none;font-weight:700;font-size:1.05rem}
+  .contact-list a:hover{color:#b45309}
+  .book-card{background:var(--slate);color:#fff;border-radius:20px;padding:2.2rem;margin-top:2rem}
+  .book-card h2{font-size:1.8rem;margin-bottom:.6rem}
+  .book-card h2 span{color:var(--yellow)}
+  .book-card p{color:#e2e8f0;margin-bottom:1.5rem}
+  footer{background:var(--slate);color:#cbd5e1;padding:2.4rem 0;font-size:.9rem}
+  .foot{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;text-decoration:none;font-size:1.5rem;color:#06280f;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Pretty In <span>Pink</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-yellow" href="https://wa.me/447455311800" target="_blank" rel="noopener">Book on WhatsApp</a>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow fade">Nail Bar · Kempston, Bedford</span>
+          <h1 class="fade fade-2">Beautiful nails,<br>done with care.<br><em>Pretty In Pink.</em></h1>
+          <p class="lead fade fade-3">A friendly nail bar on Kempston High Street — manicures, nail art, waxing and sunbed sessions, all delivered with a personal touch. Rated 4.5 stars from 43 Google reviews.</p>
+          <div class="hero-ctas fade fade-3">
+            <a class="btn btn-wa" href="https://wa.me/447455311800" target="_blank" rel="noopener">💬 WhatsApp 07455 311800</a>
+            <a class="btn btn-ghost" href="tel:+441234840111">📞 Call 01234 840111</a>
+          </div>
+          <div class="badge-row fade fade-3">
+            <div><b>4.5 ★</b><small>Google rating</small></div>
+            <div><b>43</b><small>Google reviews</small></div>
+            <div><b>Kempston</b><small>High Street</small></div>
+          </div>
+        </div>
+        <img class="fade fade-2" src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1200&auto=format&fit=crop" alt="Freshly manicured nails at Pretty In Pink, Kempston">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1000&auto=format&fit=crop" alt="Nail technician at work in the salon">
+        <div class="about-copy">
+          <div class="sec-tag">About the salon</div>
+          <h2 style="font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;color:var(--slate);margin-bottom:1rem">Your local nail bar on Kempston High Street</h2>
+          <p><strong>Pretty In Pink</strong> is a welcoming nail bar at 46 High Street, Kempston, Bedford. From a quick tidy-up to a full set with nail art, every appointment gets proper time and attention — no rushing, no conveyor belt.</p>
+          <p>Alongside nails, the salon offers waxing for face and body, plus sunbed sessions, so you can sort the whole routine in one visit. With a <strong>4.5-star rating from 43 Google reviews</strong>, local customers keep coming back — and keep recommending it.</p>
+          <ul class="checklist">
+            <li>Manicures, nail art and men's manicures</li>
+            <li>Face and body waxing, including brows and tinting</li>
+            <li>Sunbed sessions, single or by package</li>
+            <li>Gift vouchers available in store</li>
+            <li>Easy booking by WhatsApp, phone or email</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Services &amp; prices</div>
+        <h2>What Pretty In Pink offers</h2>
+        <p>Real prices from the salon's booking page. Message on WhatsApp to check availability before you visit.</p>
+      </div>
+      <ul class="service-list">
+        <li><b>Mini Manicure</b><span>£15</span></li>
+        <li><b>Manicure</b><span>£25</span></li>
+        <li><b>Nail Art</b><span>£5</span></li>
+        <li><b>Man-Ly Cure (Men's Mani)</b><span>£20</span></li>
+        <li><b>Eyebrow Wax</b><span>£8</span></li>
+        <li><b>Eyebrow Tint</b><span>£8</span></li>
+        <li><b>Lip Wax</b><span>£5</span></li>
+        <li><b>Chin Wax</b><span>£5</span></li>
+        <li><b>Neck Wax</b><span>£5</span></li>
+        <li><b>Underarm Wax</b><span>£12</span></li>
+        <li><b>Forearm Wax</b><span>£12</span></li>
+        <li><b>Half Leg Wax</b><span>£20</span></li>
+        <li><b>Full Leg Wax</b><span>£30</span></li>
+        <li><b>Bikini Wax</b><span>£20</span></li>
+        <li><b>Chest Wax</b><span>£30</span></li>
+        <li><b>Back Wax</b><span>£30</span></li>
+        <li><b>Sunbed — 9 Minutes</b><span>£9</span></li>
+        <li><b>Sunbed Package — 120 Minutes</b><span>£70</span></li>
+        <li><b>Gift Vouchers</b><span>£5–£50</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Gallery</div>
+        <h2>Fresh nails, finished properly</h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=800&auto=format&fit=crop" alt="Polished nails with a glossy finish"><figcaption>Glossy finish</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop" alt="Pink nail polish being applied"><figcaption>Colour that pops</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=800&auto=format&fit=crop" alt="Nail technician shaping a client's nails"><figcaption>Careful shaping</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=800&auto=format&fit=crop" alt="Natural-looking manicured nails"><figcaption>Natural look</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap">
+      <div class="hours-contact">
+        <div class="card">
+          <h3>Opening hours</h3>
+          <ul class="hours">
+            <li><span>Monday</span><span>Closed</span></li>
+            <li><span>Tuesday</span><span>10:00 – 17:30</span></li>
+            <li><span>Wednesday</span><span>10:00 – 19:00</span></li>
+            <li><span>Thursday</span><span>10:00 – 19:00</span></li>
+            <li><span>Friday</span><span>10:00 – 19:00</span></li>
+            <li><span>Saturday</span><span>10:00 – 17:30</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Find us &amp; contact</h3>
+          <ul class="contact-list">
+            <li><b>Address</b><span>46 High Street, Kempston, Bedford MK42 7AL</span></li>
+            <li><b>WhatsApp</b><a href="https://wa.me/447455311800" target="_blank" rel="noopener">07455 311800</a></li>
+            <li><b>Phone</b><a href="tel:+441234840111">01234 840111</a></li>
+            <li><b>Email</b><a href="mailto:prettyinpinknailbar@icloud.com">prettyinpinknailbar@icloud.com</a></li>
+            <li><b>Rating</b><span>4.5 ★ from 43 Google reviews</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="book-card" id="book">
+        <h2>Book your appointment at <span>Pretty In Pink</span></h2>
+        <p>One message is all it takes — tell us the treatment you want and when suits you, and we will confirm your slot on Kempston High Street.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" href="https://wa.me/447455311800" target="_blank" rel="noopener">💬 WhatsApp 07455 311800</a>
+          <a class="btn btn-ghost" href="mailto:prettyinpinknailbar@icloud.com">✉️ Email us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <span>© Pretty In Pink, Kempston, Bedford.</span>
+    <span>Manicures · Nail art · Waxing · Sunbed · Rated 4.5 ★ from 43 Google reviews</span>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/447455311800" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

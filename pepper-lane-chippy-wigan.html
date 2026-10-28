@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pepper Lane Chippy | Takeaway in Wigan</title>
+<meta name="description" content="Pepper Lane Chippy — takeaway in Wigan. Rated 4.6 stars from 745 Google reviews. Order by phone or WhatsApp.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:#1f1210;color:#fdf6ec;line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:0 auto}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}50%{box-shadow:0 0 26px 4px rgba(37,211,102,.25)}}
+@keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.fade{animation:fadeUp .9s ease-out both}
+.pulse{animation:pulse 3s ease-in-out infinite}
+.topbar{background:#a31621;color:#fff;font-size:.88rem}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;justify-content:space-between;padding:.5rem 0}
+header{background:#2b1a17;border-bottom:3px solid #d7263d;position:sticky;top:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{text-decoration:none;font-family:Georgia,serif;font-size:1.35rem;font-weight:700;color:#d7263d}
+.nav-links{display:none;gap:1.4rem}
+.nav-links a{text-decoration:none;font-size:.92rem}
+@media(min-width:900px){.nav-links{display:flex}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;padding:.8rem 1.5rem;border-radius:999px;font-weight:700;border:1px solid transparent}
+.btn-red{background:#d7263d;color:#fff}
+.btn-wa{background:#25d366;color:#06280f}
+.btn-ghost{border-color:#d7263d;color:#d7263d}
+.hero{position:relative;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
+.hero-inner{position:relative;padding:5.5rem 0 4.5rem;max-width:720px;color:#fff}
+.eyebrow{display:inline-block;padding:.35rem .95rem;border:1px solid #fff;border-radius:999px;font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05}
+.hero p.lead{margin:1.2rem 0 1.8rem;font-size:1.12rem;max-width:56ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.badge{margin-top:2.2rem;display:inline-flex;gap:1.6rem;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:.9rem 1.3rem;animation:floatBadge 6s ease-in-out infinite}
+.badge b{font-size:1.6rem;display:block}
+.badge small{font-size:.8rem;opacity:.85}
+section{padding:4rem 0}
+.sec-tag{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:#d7263d;margin-bottom:.5rem}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15}
+.sec-head p{opacity:.8;margin-top:.7rem;max-width:680px}
+.grid{display:grid;gap:1.3rem;margin-top:2.2rem}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:#33201c;border:1px solid rgba(0,0,0,.12);border-radius:16px;overflow:hidden}
+.card img{height:190px;width:100%;object-fit:cover}
+.card-body{padding:1.3rem 1.4rem 1.5rem}
+.card h3{font-size:1.25rem;margin-bottom:.4rem}
+.card p{font-size:.95rem;opacity:.85}
+.price{display:inline-block;margin-top:.9rem;font-weight:700;color:#d7263d;border:1px dashed #d7263d;padding:.25rem .8rem;border-radius:999px;font-size:.85rem}
+.textcard{display:flex;align-items:center}
+.extras{margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.6rem;list-style:none}
+.extras li{background:#2b1a17;border:1px solid rgba(0,0,0,.12);padding:.45rem 1rem;border-radius:999px;font-size:.92rem}
+.about-grid{display:grid;gap:2rem;align-items:center}
+@media(min-width:920px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-grid img{border-radius:16px;height:320px;width:100%;object-fit:cover}
+.about-copy p{opacity:.85;margin-bottom:1rem}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.2rem}
+@media(min-width:820px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.gallery figure{border-radius:14px;overflow:hidden;position:relative}
+.gallery img{height:230px;width:100%;object-fit:cover}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;font-size:.85rem;color:#fff;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78))}
+table.hours{width:100%;border-collapse:collapse;margin-top:2rem;background:#33201c;border-radius:14px;overflow:hidden}
+table.hours td{padding:.8rem 1.1rem;border-bottom:1px solid rgba(0,0,0,.1)}
+table.hours td:last-child{text-align:right;font-weight:600}
+.contact-grid{display:grid;gap:1.4rem;margin-top:2.2rem}
+@media(min-width:920px){.contact-grid{grid-template-columns:1.1fr .9fr}}
+.book-card{background:#d7263d;color:#fff;border-radius:20px;padding:2rem}
+.book-card p{opacity:.9;margin:.8rem 0 1.4rem}
+.contact-list{list-style:none;display:grid;gap:1rem}
+.contact-list li{background:#33201c;border:1px solid rgba(0,0,0,.12);border-radius:12px;padding:1.1rem 1.3rem}
+.contact-list b{display:block;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#d7263d;margin-bottom:.25rem}
+.contact-list a{text-decoration:none;font-weight:600;font-size:1.1rem}
+footer{border-top:1px solid rgba(0,0,0,.15);padding:2.2rem 0;font-size:.88rem;opacity:.8}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#06280f;text-decoration:none;font-weight:700;padding:.9rem 1.2rem;border-radius:999px;box-shadow:0 10px 26px rgba(0,0,0,.4)}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><div><strong>4.6</strong> rated from <strong>745 Google reviews</strong></div><div>Wigan · Takeaway</div></div></div>
+<header><div class="wrap nav"><a class="brand" href="#top">Pepper Lane Chippy</a><nav class="nav-links"><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#contact">Contact</a></nav><a class="btn btn-wa pulse" href="https://wa.me/447359171505" target="_blank" rel="noopener">Order on WhatsApp</a></div></header>
+<main id="top">
+<section class="hero" style="padding:0"><div class="hero-media"><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1600&auto=format&fit=crop" alt="Pepper Lane Chippy takeaway in Wigan"></div><div class="wrap"><div class="hero-inner"><span class="eyebrow fade">Takeaway · Wigan</span><h1 class="fade">Pepper Lane Chippy</h1><p class="lead fade">Proper takeaway food in Wigan — rated 4.6 stars from 745 Google reviews. Fresh, hot and made to order.</p><div class="hero-ctas fade"><a class="btn btn-wa pulse" href="https://wa.me/447359171505" target="_blank" rel="noopener">Order on WhatsApp</a><a class="btn btn-ghost" style="background:rgba(0,0,0,.35);color:#fff;border-color:#fff" href="#menu">See the menu</a></div><div class="badge"><div><b>4.6 ★</b><small>Google rating</small></div><div><b>745</b><small>Reviews</small></div><div><b>Wigan</b><small>Find us here</small></div></div></div></div></section>
+<section id="menu"><div class="wrap"><div class="sec-head"><div class="sec-tag">Menu</div><h2>What to order at Pepper Lane Chippy</h2><p>Fresh takeaway favourites, cooked to order. Call or message for prices where a price is not shown.</p></div><div class="grid"><article class="card"><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1000&auto=format&fit=crop" alt="Fish &amp; Chips at Pepper Lane Chippy"><div class="card-body"><h3>Fish &amp; Chips</h3><p>Traditional fish and chips, cooked fresh.</p><span class="price">Call for prices</span></div></article><article class="card"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=1000&auto=format&fit=crop" alt="Chips at Pepper Lane Chippy"><div class="card-body"><h3>Chips</h3><p>Golden chips, a Standish favourite.</p><span class="price">Call for prices</span></div></article></div><ul class="extras"><li>Fish suppers</li><li>Chip-shop sides</li><li>Soft drinks</li></ul></div></section>
+<section id="about"><div class="wrap"><div class="about-grid"><div class="about-copy"><div class="sec-tag">About</div><h2 style="font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.15;margin-bottom:1rem">A local favourite in Wigan</h2><p>Pepper Lane Chippy in Standish, Wigan, is a village chip shop with a loyal local following. Traditional fish and chips at lunchtime and tea time.</p><p>With a <strong>4.6-star rating from 745 Google reviews</strong>, customers keep coming back — and new customers find it the same way: by reputation.</p></div><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1000&auto=format&fit=crop" alt="Fish &amp; chips at Pepper Lane Chippy"></div></div></section>
+<section id="gallery"><div class="wrap"><div class="sec-head"><div class="sec-tag">Gallery</div><h2>Fresh from the kitchen</h2></div><div class="gallery"><figure><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1000&auto=format&fit=crop" alt="Fish &amp; chips at Pepper Lane Chippy"><figcaption>Fish &amp; chips</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=1000&auto=format&fit=crop" alt="Golden chips at Pepper Lane Chippy"><figcaption>Golden chips</figcaption></figure></div></div></section>
+<section id="hours"><div class="wrap"><div class="sec-head"><div class="sec-tag">Opening hours</div><h2>When to order</h2></div><table class="hours"><tr><td>Monday</td><td>Closed</td></tr><tr><td>Tuesday – Thursday</td><td>11:30am – 2pm | 4pm – 7pm</td></tr><tr><td>Friday</td><td>11:30am – 2pm | 4pm – 7:30pm</td></tr><tr><td>Saturday</td><td>11:30am – 2pm | 4pm – 7pm</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table></div></section>
+<section id="contact"><div class="wrap"><div class="contact-grid"><div class="book-card"><div class="sec-tag" style="color:#ffd9a0">Order now</div><h2>Order from Pepper Lane Chippy</h2><p>Call or message to place your order for collection. Tell us what you fancy and when you want to pick it up — we will have it hot and ready.</p><a class="btn btn-wa pulse" href="https://wa.me/447359171505" target="_blank" rel="noopener">Order on WhatsApp</a></div><ul class="contact-list"><li><b>Phone</b><a href="tel:+447359171505">07359 171505</a></li><li><b>Email</b><a href="mailto:sonia.alldred1972@icloud.com">sonia.alldred1972@icloud.com</a></li><li><b>Find us</b><span>4 Pepper Lane, Standish, Wigan WN6 0PX</span><br><span>Rated 4.6 ★ from 745 Google reviews</span></li></ul></div></div></section>
+</main>
+<footer><div class="wrap"><p>© Pepper Lane Chippy, Wigan. Free demo website — call or message for prices and availability.</p></div></footer>
+<a class="wa-float" href="https://wa.me/447359171505" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat</a>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
