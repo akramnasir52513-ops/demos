@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awa Grill | Takeaway in Swansea</title>
+<meta name="description" content="Awa Grill — takeaway in Swansea. Rated 4.5 stars from 1632 Google reviews. See the menu, opening hours and order details.">
+<style>
+:root{--bg:#160d08;--acc:#e8641c;--soft:#ffe4c4;--cream:#fdf6ec;--muted:#d8c6ae;--panel:#2b1a0e;--line:#4a2c15}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;background:var(--bg);color:var(--cream);line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:0 auto}
+@keyframes riseUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,122,26,.35)}50%{box-shadow:0 0 26px 4px rgba(255,122,26,.28)}}
+@keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.rise{animation:riseUp .85s ease-out both}
+.rise-1{animation-delay:.1s}.rise-2{animation-delay:.2s}.rise-3{animation-delay:.3s}
+header{position:sticky;top:0;z-index:50;background:rgba(20,12,6,.94);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 0;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-size:1.35rem;text-decoration:none}
+.brand span{color:var(--acc)}
+.btn{display:inline-flex;gap:.5rem;align-items:center;text-decoration:none;padding:.8rem 1.4rem;border-radius:999px;font-weight:700;border:1px solid transparent;transition:transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--soft),var(--acc));color:#241203;animation:pulseGlow 3.4s ease-in-out infinite}
+.btn-wa{background:#25d366;color:#06280f}
+.btn-ghost{border-color:var(--acc);color:var(--soft)}
+.hero{position:relative;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.5),rgba(20,12,6,.2) 45%,var(--bg) 97%)}
+.hero-inner{position:relative;padding:5.5rem 0 4.5rem;max-width:720px}
+.eyebrow{display:inline-block;padding:.35rem 1rem;border:1px solid var(--acc);border-radius:999px;font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;color:var(--soft);background:rgba(20,12,6,.55);margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05}
+.hero p.lead{margin:1.2rem 0 1.8rem;font-size:1.12rem;color:#efe2cc;max-width:56ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.badge{margin-top:2.2rem;display:inline-flex;gap:1.6rem;align-items:center;background:rgba(25,15,8,.8);border:1px solid var(--line);border-radius:16px;padding:1rem 1.4rem;animation:floatBadge 6s ease-in-out infinite}
+.badge b{font-family:Georgia,serif;font-size:1.9rem;color:var(--soft);display:block;line-height:1}
+.badge small{color:var(--muted);font-size:.8rem}
+section{padding:4.2rem 0}
+.sec-tag{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--acc);margin-bottom:.5rem}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15}
+.sec-head p{color:var(--muted);margin-top:.7rem;max-width:660px}
+.menu-grid{display:grid;gap:1.2rem;margin-top:2.2rem}
+@media(min-width:700px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.dish{background:linear-gradient(180deg,#33200f,var(--panel));border:1px solid var(--line);border-radius:6px;border:2px dashed var(--acc);overflow:hidden;transition:transform .3s}
+.dish:hover{transform:translateY(-5px)}
+.dish img{height:170px;width:100%;object-fit:cover}
+.dish-body{padding:1.2rem 1.3rem 1.4rem}
+.dish h3{font-size:1.15rem;margin-bottom:.4rem}
+.price{display:inline-block;font-size:.85rem;color:var(--soft);border:1px dashed var(--acc);padding:.25rem .8rem;border-radius:999px}
+.about-grid{display:grid;gap:2rem;align-items:start}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-copy p{color:var(--muted);margin-bottom:1rem}
+.about-copy p strong{color:var(--cream)}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.2rem}
+@media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);position:relative}
+.gallery img{height:210px;width:100%;object-fit:cover}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .8rem .6rem;font-size:.85rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8))}
+.hours-list{list-style:none;display:grid;gap:.7rem;margin-top:1.6rem;max-width:620px}
+.hours-list li{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.2rem}
+.contact-card{background:linear-gradient(160deg,#3a2410,var(--panel));border:1px solid var(--acc);border-radius:20px;padding:2rem}
+.contact-card h2{font-size:1.8rem;margin-bottom:.6rem}
+.contact-card p{color:var(--muted);margin-bottom:1.4rem}
+.contact-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+footer{border-top:1px solid var(--line);padding:2.2rem 0;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top">Awa <span>Grill</span></a>
+<div style="display:flex;gap:.6rem;flex-wrap:wrap"><a class="btn btn-gold" href="tel:+441792475767">Call 01792 475767</a><a class="btn btn-ghost" href="mailto:awagrillswansea@gmail.com">Email us</a></div>
+</div></header>
+<main id="top">
+<section class="hero" style="padding:0"><div class="hero-media"><img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1000&auto=format&fit=crop" alt="Grilled meat skewers served with chips at Awa Grill"></div>
+<div class="wrap"><div class="hero-inner">
+<span class="eyebrow rise rise-1">Takeaway &middot; Swansea</span>
+<h1 class="rise rise-2">Awa Grill</h1>
+<p class="lead rise rise-3">Awa Grill is a Mediterranean grill house in the heart of Swansea, known for its mixed grills, shish kebabs and grilled prawns, all cooked over the grill and served with fresh salads. Takeaway and delivery available.</p>
+<div class="hero-ctas rise rise-3"><a class="btn btn-gold" href="tel:+441792475767">Call to order: 01792 475767</a><a class="btn btn-ghost" href="mailto:awagrillswansea@gmail.com">Email us</a></div>
+<div class="badge rise rise-3"><div><b>4.5 ★</b><small>Google rating</small></div><div><b>1632</b><small>Google reviews</small></div><div><b>Swansea</b><small>Find us here</small></div></div>
+</div></div></section>
+<section id="menu"><div class="wrap"><div class="sec-head"><div class="sec-tag">Order favourites</div>
+<h2>Menu at Awa Grill</h2>
+<p>Fresh from the kitchen — call or message for today's availability and prices where marked. Everything below comes from the shop's own public menu.</p></div>
+<div class="menu-grid"><article class="dish"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000&auto=format&fit=crop" alt="Plates of grilled meat with salad"><div class="dish-body"><h3>Mixed Grill Platter</h3><span class="price">Call for prices</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1000&auto=format&fit=crop" alt="Grilled meat skewers with chips"><div class="dish-body"><h3>Lamb Shish Kebab</h3><span class="price">Call for prices</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000&auto=format&fit=crop" alt="Plates of grilled meat with salad"><div class="dish-body"><h3>Lamb Chops</h3><span class="price">Call for prices</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=1000&auto=format&fit=crop" alt="Grilled prawns with dip and salad"><div class="dish-body"><h3>Grilled Prawns</h3><span class="price">Call for prices</span></div></article><article class="dish text-only"><div class="dish-body"><h3>Halloumi Wrap</h3><span class="price">Call for prices</span></div></article><article class="dish text-only"><div class="dish-body"><h3>Chicken Shawarma Wrap</h3><span class="price">Call for prices</span></div></article><article class="dish text-only"><div class="dish-body"><h3>Fresh Juices</h3><span class="price">£4</span></div></article></div></div></section>
+<section id="about" style="background:#150c06;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap"><div class="about-grid">
+<div><div class="sec-tag">About the shop</div><h2 style="font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.15;margin-bottom:1rem">Awa Grill in Swansea</h2>
+<p class="about-copy" style="color:var(--muted)">Awa Grill is a Mediterranean grill house in the heart of Swansea, known for its mixed grills, shish kebabs and grilled prawns, all cooked over the grill and served with fresh salads. Takeaway and delivery available. Rated <strong style="color:var(--cream)">4.5 stars from 1632 Google reviews</strong>, it is a name locals keep coming back to — and a first stop worth making if you are hungry in Swansea.</p></div>
+<div><div class="sec-tag">Find us</div><p style="color:var(--muted)">8-10 College St, Swansea SA1 5AE<br>Phone: 01792 475767<br>Email: awagrillswansea@gmail.com</p></div>
+</div></div></section>
+<section id="gallery"><div class="wrap"><div class="sec-head"><div class="sec-tag">From the kitchen</div><h2>Fresh, hot and ready to go</h2></div>
+<div class="gallery"><figure><img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1000&auto=format&fit=crop" alt="Skewers, straight off the grill"><figcaption>Skewers, straight off the grill</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000&auto=format&fit=crop" alt="Grilled plates to share"><figcaption>Grilled plates to share</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=1000&auto=format&fit=crop" alt="Grilled prawns"><figcaption>Grilled prawns</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=1000&auto=format&fit=crop" alt="Inside the grill house"><figcaption>Inside the grill house</figcaption></figure></div></div></section>
+<section id="hours" style="background:#150c06;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap"><div class="sec-head"><div class="sec-tag">Opening hours</div><h2>When to order</h2></div>
+<ul class="hours-list"><li>Sunday – Thursday: 12:00pm – 9:30pm</li><li>Friday – Saturday: 12:00pm – 10:00pm</li></ul></div></section>
+<section id="contact"><div class="wrap"><div class="contact-card">
+<div class="sec-tag">Hungry? Order now</div><h2>Order from Awa Grill</h2>
+<p>8-10 College St, Swansea SA1 5AE · Phone 01792 475767 · Email awagrillswansea@gmail.com · Rated 4.5 from 1632 Google reviews.</p>
+<div class="contact-actions"><a class="btn btn-gold" href="tel:+441792475767">Call 01792 475767</a><a class="btn btn-ghost" href="mailto:awagrillswansea@gmail.com">Email us</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap"><span>© Awa Grill, Swansea. Demo website by Akram Web Studio.</span></div></footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora Beauty Health &amp; Wellbeing Studio | Beauty Salon in East Kilbride, Scotland</title>
+<meta name="description" content="Aurora Beauty Health &amp; Wellbeing Studio - a beauty salon in East Kilbride, Scotland. Rated 4.9 stars from 47 reviews.">
+<style>
+  :root{--ink:#0c2318;--coal:#10291f;--panel:#162e22;--panel2:#1d3829;--line:#2c4636;--gold:#c8a24a;--gold-soft:#e3c878;--cream:#f3ead9;--muted:#b8ab97;--wa:#25d366;--radius:16px}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--ink);color:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.brand-name{font-family:Georgia,"Times New Roman",serif;letter-spacing:.02em}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1180px,92%);margin:0 auto}
+  @keyframes riseIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes glowPulse{0%,100%{box-shadow:0 0 0 0 rgba(200,162,74,.35)}50%{box-shadow:0 0 34px 4px rgba(200,162,74,.22)}}
+  @keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  .rise{animation:riseIn .9s ease-out both}
+  .rise-1{animation-delay:.08s}.rise-2{animation-delay:.16s}.rise-3{animation-delay:.24s}.rise-4{animation-delay:.32s}
+  .topbar{background:linear-gradient(90deg,#0a0807,#1d1712,#0a0807);border-bottom:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+  .topbar .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;align-items:center;justify-content:space-between;padding:.5rem 0}
+  .topbar strong{color:var(--gold-soft);font-weight:600}
+  .stars{color:var(--gold);letter-spacing:.15em}
+  header{position:sticky;top:0;z-index:50;background:rgba(12,10,9,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+  .brand{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+  .brand-mark{width:46px;height:46px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:1.25rem;color:var(--gold)}
+  .brand-name{font-size:1.3rem;line-height:1.1;color:var(--cream)}
+  .brand-name span{color:var(--gold)}
+  .brand-sub{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+  .nav-links{display:none;gap:1.6rem}
+  .nav-links a{text-decoration:none;font-size:.92rem;color:var(--muted)}
+  .nav-links a:hover{color:var(--gold-soft)}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;text-decoration:none;cursor:pointer;padding:.8rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem;border:1px solid transparent;transition:transform .25s,box-shadow .25s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-soft),var(--gold) 55%,#a07f2f);color:#1a1408;animation:glowPulse 3.4s ease-in-out infinite}
+  .btn-wa{background:var(--wa);color:#06280f}
+  .btn-ghost{border-color:var(--gold);color:var(--gold-soft);background:transparent}
+  .btn-sm{padding:.55rem 1.05rem;font-size:.85rem}
+  @media(min-width:900px){.nav-links{display:flex}}
+  .hero{position:relative;overflow:hidden}
+  .hero-media{position:absolute;inset:0}
+  .hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.42) saturate(.9)}
+  .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,9,.55),rgba(12,10,9,.25) 40%,var(--ink) 96%),radial-gradient(ellipse at 20% 40%,rgba(200,162,74,.14),transparent 55%)}
+  .hero-inner{position:relative;padding:6.2rem 0 5.2rem;max-width:720px;text-align:left}
+  .eyebrow{display:inline-block;padding:.35rem .95rem;border:1px solid var(--gold);border-radius:999px;font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-soft);background:rgba(12,10,9,.55);margin-bottom:1.3rem}
+  .hero h1{font-size:clamp(2.5rem,6.5vw,4.3rem);line-height:1.05;font-weight:700}
+  .hero h1 em{font-style:normal;color:var(--gold-soft)}
+  .hero p.lead{margin:1.3rem 0 2rem;font-size:1.13rem;color:#e8ddc8;max-width:56ch}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+  .hero-card{margin-top:2.6rem;display:inline-flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;background:rgba(20,17,16,.78);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.4rem;backdrop-filter:blur(6px);animation:floatBadge 6s ease-in-out infinite}
+  .hero-card .score{font-family:Georgia,serif;font-size:2rem;color:var(--gold-soft);line-height:1}
+  .hero-card small{color:var(--muted);display:block;font-size:.8rem}
+  .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--coal)}
+  .strip .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
+  .strip-item{padding:1.5rem 1rem;text-align:center;border-left:1px solid var(--line)}
+  .strip-item:first-child{border-left:none}
+  .strip-item b{display:block;font-family:Georgia,serif;font-size:1.45rem;color:var(--gold-soft)}
+  .strip-item span{font-size:.82rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+  @media(min-width:820px){.strip .wrap{grid-template-columns:repeat(4,1fr)}}
+  section{padding:4.6rem 0}
+  .sec-head{max-width:680px;margin-bottom:2.6rem}
+  .sec-tag{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15}
+  .sec-head p{color:var(--muted);margin-top:.8rem}
+  .dark-band{background:linear-gradient(180deg,var(--coal),#100d0b);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about-grid{display:grid;gap:2.4rem;align-items:center}
+  @media(min-width:920px){.about-grid{grid-template-columns:1.05fr 1fr}}
+  .about-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .about-photos img{border-radius:var(--radius);height:100%;object-fit:cover;border:1px solid var(--line)}
+  .about-photos .tall{grid-row:span 2;min-height:340px}
+  .about-copy p{color:var(--muted);margin-bottom:1.1rem}
+  .about-copy p strong{color:var(--cream)}
+  .checklist{list-style:none;margin-top:1.4rem;display:grid;gap:.7rem}
+  .checklist li{display:flex;gap:.7rem;align-items:flex-start;color:#e6dbc6}
+  .checklist li::before{content:"✓";color:var(--gold);font-size:1rem;line-height:1.5}
+  .services-grid{display:grid;gap:1.4rem}
+  @media(min-width:700px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1020px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+  .service{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .3s,border-color .3s}
+  .service:hover{transform:translateY(-6px);border-color:var(--gold)}
+  .service img{height:180px;width:100%;object-fit:cover;filter:saturate(.92)}
+  .service-body{padding:1.4rem 1.4rem 1.6rem}
+  .service h3{font-size:1.3rem;margin-bottom:.5rem;color:var(--cream)}
+  .service p{color:var(--muted);font-size:.95rem}
+  .service .price-note{margin-top:1rem;display:inline-block;font-size:.8rem;letter-spacing:.05em;color:var(--gold-soft);border:1px dashed rgba(200,162,74,.55);padding:.3rem .8rem;border-radius:999px}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  @media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+  .gallery figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);position:relative}
+  .gallery img{height:230px;width:100%;object-fit:cover;transition:transform .6s ease;filter:saturate(.92)}
+  .gallery figure:hover img{transform:scale(1.07)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;font-size:.85rem;color:#f5edd9;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78))}
+  .hours-table table{width:100%;border-collapse:collapse;max-width:620px}
+  .hours-table td{padding:.7rem 1rem;border-bottom:1px solid var(--line)}
+  .hours-table td:first-child{color:var(--gold-soft);font-weight:600}
+  .book-grid{display:grid;gap:2rem}
+  @media(min-width:920px){.book-grid{grid-template-columns:1.1fr .9fr}}
+  .book-card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--gold);border-radius:20px;padding:2.2rem}
+  .book-card h2{font-size:1.9rem;margin-bottom:.7rem}
+  .book-card p{color:var(--muted);margin-bottom:1.6rem}
+  .book-actions{display:flex;flex-direction:column;gap:.8rem}
+  @media(min-width:560px){.book-actions{flex-direction:row;flex-wrap:wrap}}
+  .contact-list{list-style:none;display:grid;gap:1.1rem}
+  .contact-list li{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.3rem}
+  .contact-list b{display:block;color:var(--gold-soft);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.25rem}
+  .contact-list a{text-decoration:none;font-size:1.12rem;font-weight:600}
+  .contact-list a:hover{color:var(--gold-soft)}
+  .contact-list span{color:var(--muted)}
+  footer{background:#080606;border-top:1px solid var(--line);padding:3rem 0 2rem;color:var(--muted)}
+  .foot-grid{display:grid;gap:2rem;margin-bottom:2.2rem}
+  @media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+  footer h4{color:var(--cream);font-family:Georgia,serif;font-size:1.05rem;margin-bottom:.8rem}
+  footer ul{list-style:none;display:grid;gap:.45rem}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--gold-soft)}
+  .foot-bottom{border-top:1px solid var(--line);padding-top:1.4rem;font-size:.85rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;text-decoration:none;font-size:1.5rem;color:#06280f;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="stars">★★★★★</span> <strong>4.9</strong> rated from <strong>47 reviews</strong></div>
+    <div>East Kilbride · Scotland</div>
+  </div>
+</div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <div class="brand-mark">A</div>
+      <div>
+        <div class="brand-name">Aurora Beauty Health &amp; Wellbeing Studio</div>
+        <div class="brand-sub">Beauty Salon · East Kilbride</div>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="btn btn-gold" href="tel:+441355570979">📞 Call 01355 570979</a>
+  </div>
+</header>
+<main id="top">
+  <section class="hero" style="padding:0">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1600&auto=format&fit=crop" alt="Aurora Beauty Health &amp; Wellbeing Studio in East Kilbride">
+    </div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="eyebrow rise rise-1">Beauty Salon · East Kilbride, Scotland</span>
+        <h1 class="rise rise-2">Aurora Beauty Health &amp; Wellbeing Studio</h1>
+        <p class="lead rise rise-3">An East Kilbride beauty and wellbeing studio rated 4.9 from 47 reviews.</p>
+        <div class="hero-ctas rise rise-4"><a class="btn btn-gold" href="tel:+441355570979">📞 Call 01355 570979</a><a class="btn btn-ghost" href="mailto:enquiriesaurora@yahoo.co.uk">✉️ Email us</a></div>
+        <div class="hero-card rise rise-4">
+          <div><span class="score">4.9</span><small>Rating</small></div>
+          <div><span class="score">47</span><small>Reviews</small></div>
+          <div><span class="score">East Kilbride</span><small>Scotland</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="strip">
+    <div class="wrap">
+      <div class="strip-item"><b>4.9 ★</b><span>Rating</span></div>
+      <div class="strip-item"><b>47</b><span>Reviews</span></div>
+      <div class="strip-item"><b>East Kilbride</b><span>Scotland</span></div>
+      <div class="strip-item"><b>Beauty Salon</b><span>Services</span></div>
+    </div>
+  </div>
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-photos">
+          <img class="tall" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop" alt="Facial care at Aurora Beauty Health &amp; Wellbeing Studio">
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1000&auto=format&fit=crop" alt="Relax and restore at Aurora Beauty Health &amp; Wellbeing Studio">
+          <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=1000&auto=format&fit=crop" alt="Massage treatments at Aurora Beauty Health &amp; Wellbeing Studio">
+        </div>
+        <div class="about-copy">
+          <div class="sec-tag">About</div>
+          <h2 style="font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin-bottom:1.1rem">Welcome to Aurora Beauty Health &amp; Wellbeing Studio</h2>
+          <p><strong>Aurora Beauty Health &amp; Wellbeing Studio</strong> is a beauty salon in East Kilbride, Scotland. An East Kilbride beauty and wellbeing studio rated 4.9 from 47 reviews.</p>
+          <p>Find us at 12 Pankhurst Pl, East Kilbride G74 4BH. Call or message to book - Bookings via Book via Fresha - call or message to arrange a time.</p>
+          <ul class="checklist">
+            <li>Rated 4.9 from 47 reviews</li>
+            <li>Based in East Kilbride, Scotland</li>
+            <li>Call or message for prices and availability</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="dark-band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">What we do</div>
+        <h2>Services at Aurora Beauty Health &amp; Wellbeing Studio</h2>
+        <p>Call or message for prices and availability - no surprises, just straight answers.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop" alt="Luxury Facial at Aurora Beauty Health &amp; Wellbeing Studio">
+          <div class="service-body">
+            <h3>Luxury Facial</h3>
+            <p>A full relaxing facial treatment.</p>
+            <span class="price-note">£50</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop" alt="Express Facial at Aurora Beauty Health &amp; Wellbeing Studio">
+          <div class="service-body">
+            <h3>Express Facial</h3>
+            <p>A shorter refreshing facial.</p>
+            <span class="price-note">£20</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=1000&auto=format&fit=crop" alt="Swedish Massage at Aurora Beauty Health &amp; Wellbeing Studio">
+          <div class="service-body">
+            <h3>Swedish Massage</h3>
+            <p>Relaxing full-body massage.</p>
+            <span class="price-note">1 hr £30 · 30 mins £20</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1000&auto=format&fit=crop" alt="Eyelash Extensions at Aurora Beauty Health &amp; Wellbeing Studio">
+          <div class="service-body">
+            <h3>Eyelash Extensions</h3>
+            <p>Fuller, longer-looking lashes.</p>
+            <span class="price-note">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1000&auto=format&fit=crop" alt="Hot Stone Massage at Aurora Beauty Health &amp; Wellbeing Studio">
+          <div class="service-body">
+            <h3>Hot Stone Massage</h3>
+            <p>Warm-stone deep relaxation.</p>
+            <span class="price-note">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1000&auto=format&fit=crop" alt="Spray Tanning at Aurora Beauty Health &amp; Wellbeing Studio">
+          <div class="service-body">
+            <h3>Spray Tanning</h3>
+            <p>A healthy, even glow.</p>
+            <span class="price-note">Call for prices</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Inside</div>
+        <h2>Gallery</h2>
+        <p>A look at the craft and care at Aurora Beauty Health &amp; Wellbeing Studio in East Kilbride.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop" alt="Facial care at Aurora Beauty Health &amp; Wellbeing Studio">
+          <figcaption>Facial care</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1000&auto=format&fit=crop" alt="Relax and restore at Aurora Beauty Health &amp; Wellbeing Studio">
+          <figcaption>Relax and restore</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=1000&auto=format&fit=crop" alt="Massage treatments at Aurora Beauty Health &amp; Wellbeing Studio">
+          <figcaption>Massage treatments</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1000&auto=format&fit=crop" alt="Finishing touches at Aurora Beauty Health &amp; Wellbeing Studio">
+          <figcaption>Finishing touches</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section id="hours" class="dark-band hours-table">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">When to visit</div>
+        <h2>Opening hours</h2>
+      </div>
+      <table><tr><td>Monday</td><td>Closed</td></tr><tr><td>Tuesday</td><td>9:00am - 6:00pm</td></tr><tr><td>Wednesday</td><td>12:00pm - 6:00pm</td></tr><tr><td>Thursday</td><td>10:00am - 8:00pm</td></tr><tr><td>Friday</td><td>9:00am - 8:00pm</td></tr><tr><td>Saturday</td><td>10:00am - 5:00pm</td></tr><tr><td>Sunday</td><td>12:00pm - 4:00pm</td></tr></table>
+    </div>
+  </section>
+  <section id="book">
+    <div class="wrap">
+      <div class="book-grid">
+        <div class="book-card">
+          <div class="sec-tag">Ready when you are</div>
+          <h2>Book at Aurora Beauty Health &amp; Wellbeing Studio</h2>
+          <p>One message or call is all it takes. Tell us what you need and roughly when, and we will arrange your visit in East Kilbride. Bookings via Book via Fresha - call or message to arrange a time.</p>
+          <div class="book-actions">
+            <a class="btn btn-gold" href="tel:+441355570979">📞 Call 01355 570979</a>
+            
+          </div>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <b>Phone</b>
+            <a href="tel:+441355570979">01355 570979</a><br>
+            <span>Call for prices and availability</span>
+          </li>
+          <li>
+            <b>Email</b>
+            <a href="mailto:enquiriesaurora@yahoo.co.uk">enquiriesaurora@yahoo.co.uk</a><br>
+            <span>Message us any time</span>
+          </li>
+          <li>
+            <b>Find us</b>
+            <span>12 Pankhurst Pl, East Kilbride G74 4BH</span><br>
+            <span>Rated 4.9 from 47 reviews</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Aurora Beauty Health &amp; Wellbeing Studio</h4>
+        <p>A beauty salon in East Kilbride, Scotland - rated 4.9 from 47 reviews.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+441355570979">Phone: 01355 570979</a></li>
+          <li><a href="mailto:enquiriesaurora@yahoo.co.uk">Email: enquiriesaurora@yahoo.co.uk</a></li>
+          <li>East Kilbride, Scotland</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Aurora Beauty Health &amp; Wellbeing Studio, East Kilbride. All rights reserved.</span>
+      <span>Call or message for prices</span>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
