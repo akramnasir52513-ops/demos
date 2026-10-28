@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lily's Nail Bar | Nail Salon in Bournemouth</title>
+<meta name="description" content="Lily's Nail Bar — a nail salon on Old Christchurch Road, Bournemouth. Rated 4.4 stars from 211 Google reviews. Extensions, ombré, BIAB, acrylic, gel manicures, lashes, waxing and massage.">
+<style>
+:root{--green:#1d4a33;--green2:#2c6b4a;--cream:#f7f5ef;--ink:#1e2420;--muted:#5a6a60;--gold:#c9a227;--line:#dfe7e0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--green)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1100px,92%);margin:0 auto}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes pulseBtn{0%,100%{box-shadow:0 0 0 0 rgba(44,107,74,.35)}50%{box-shadow:0 0 0 12px rgba(44,107,74,0)}}
+.rise{animation:fadeUp .9s ease-out both}
+.rise-1{animation-delay:.1s}.rise-2{animation-delay:.2s}.rise-3{animation-delay:.3s}
+header{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+.brand{font-family:Georgia,serif;font-size:1.35rem;color:var(--green);text-decoration:none}
+.brand span{color:var(--gold)}
+.badge{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;font-size:.85rem}
+.badge b{color:var(--green)}
+.btn{display:inline-block;text-decoration:none;padding:.85rem 1.6rem;border-radius:999px;font-weight:700;font-size:.95rem}
+.btn-green{background:var(--green2);color:#fff;animation:pulseBtn 3s ease-in-out infinite}
+.btn-ghost{border:2px solid var(--green);color:var(--green)}
+.hero{padding:4rem 0;background:var(--cream)}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--green2)}
+.hero p.lead{margin:1.2rem 0 1.8rem;color:var(--muted);font-size:1.1rem;max-width:52ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero-img{border-radius:20px;overflow:hidden;border:6px solid #fff;box-shadow:0 24px 48px rgba(29,74,51,.18);animation:floaty 6s ease-in-out infinite}
+.hero-img img{width:100%;height:420px;object-fit:cover}
+.rate-card{margin-top:1.8rem;display:flex;gap:2rem;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.4rem}
+.rate-card b{font-family:Georgia,serif;font-size:1.8rem;display:block;line-height:1;color:var(--green)}
+.rate-card span{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+section{padding:4rem 0}
+section.green{background:var(--green);color:#fff}
+section.green h2{color:#fff}
+section.green .sec-tag{color:#f0d98c}
+section.green p{color:#dfeee4}
+.sec-tag{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--green2);margin-bottom:.5rem;font-weight:700}
+.sec-head h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;margin-bottom:.7rem}
+.sec-head p{color:var(--muted);max-width:66ch}
+.about-grid{display:grid;gap:2rem;align-items:start}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-grid p{color:var(--muted);margin-bottom:1rem}
+.checklist{list-style:none;display:grid;gap:.6rem;margin-top:1rem}
+.checklist li::before{content:"✓ ";color:var(--green2);font-weight:700}
+.services-grid{display:grid;gap:1.3rem;margin-top:2rem}
+@media(min-width:700px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+.service{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.service img{height:190px;width:100%;object-fit:cover}
+.service-body{padding:1.3rem 1.4rem}
+.service h3{font-size:1.25rem;margin-bottom:.4rem}
+.service p{color:var(--muted);font-size:.95rem}
+.price{display:inline-block;margin-top:.9rem;font-size:.8rem;color:var(--green2);border:1px dashed var(--green2);padding:.25rem .8rem;border-radius:999px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+@media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{border-radius:14px;overflow:hidden;position:relative}
+.gallery img{height:220px;width:100%;object-fit:cover}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .8rem .6rem;font-size:.85rem;color:#fff;background:linear-gradient(180deg,transparent,rgba(0,0,0,.75))}
+.hours-table{width:100%;border-collapse:collapse;margin-top:2rem;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.hours-table td{padding:.8rem 1.2rem;border-bottom:1px solid var(--line)}
+.hours-table tr:last-child td{border-bottom:none}
+.hours-table td:last-child{text-align:right;font-weight:600}
+.contact-grid{display:grid;gap:1.2rem;margin-top:2rem}
+@media(min-width:820px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.4rem}
+.contact-card b{display:block;color:var(--green2);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.3rem}
+.contact-card a{font-weight:700;text-decoration:none;font-size:1.05rem}
+.contact-card a:hover{color:var(--green2)}
+footer{background:#143826;color:#dfeee4;padding:2.5rem 0 1.5rem}
+footer p{font-size:.9rem;opacity:.9}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Lily's <span>Nail Bar</span></a>
+    <span class="badge">★ <b>4.4</b> from 211 Google reviews</span>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="rise rise-1" style="letter-spacing:.28em;text-transform:uppercase;font-size:.75rem;color:var(--green2);font-weight:700">Nail &amp; Beauty · Old Christchurch Road, Bournemouth</p>
+        <h1 class="rise rise-2">Nails, lashes &amp; <em>beauty in one place.</em></h1>
+        <p class="lead rise rise-3">Lily's Nail Bar in the heart of Bournemouth does it all — nail extensions, ombré, BIAB and acrylic, plus eyelash extensions, waxing, spray tanning and massage. Rated 4.4 stars from 211 Google reviews.</p>
+        <div class="hero-ctas rise rise-3">
+          <a class="btn btn-green" href="tel:+441202553128">📞 Call 01202 553128</a>
+          <a class="btn btn-ghost" href="mailto:vuvloan@gmail.com">✉️ Email us</a>
+        </div>
+        <div class="rate-card rise rise-3">
+          <div><b>4.4</b><span>Google rating</span></div>
+          <div><b>211</b><span>Google reviews</span></div>
+          <div><b>BH1 1LR</b><span>Bournemouth</span></div>
+        </div>
+      </div>
+      <div class="hero-img rise rise-2">
+        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=1200&auto=format&fit=crop" alt="Manicure treatment at Lily's Nail Bar, Bournemouth">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <div class="sec-tag">About the salon</div>
+          <h2>One stop for hands, lashes and beauty</h2>
+          <p>On Old Christchurch Road, a short walk from Bournemouth town centre, Lily's Nail Bar has built a loyal following — <strong>4.4 stars from 211 Google reviews</strong> and counting. Customers come for the nails and stay for everything else: lashes, waxing, tanning and massage, all under one roof.</p>
+          <p>From a full set of ombré extensions to a quick gel manicure top-up, a set of lashes before a night out, or a relaxing massage after a long week — the team keeps it friendly, clean and professional.</p>
+        </div>
+        <div>
+          <div class="sec-tag">Why customers choose us</div>
+          <ul class="checklist">
+            <li>Nail extensions, full set ombré, BIAB and acrylic</li>
+            <li>Gel manicures, pedicures, nail art and repairs</li>
+            <li>Eyelash extensions for a full, fluttery finish</li>
+            <li>Spray tanning, waxing and body massages</li>
+            <li>Central Bournemouth location, easy to reach</li>
+            <li>Booking available — call to check today's slots</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="green">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Services</div>
+        <h2>What we do at Lily's Nail Bar</h2>
+        <p>Call or email for prices and to book — tell us what you would like and we will fit you in.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1000&auto=format&fit=crop" alt="Nail extensions finished at the salon">
+          <div class="service-body">
+            <h3>Nail Extensions &amp; Ombré</h3>
+            <p>Full set extensions and soft ombré blends — length, shape and colour tailored to you, finished glossy and neat.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1000&auto=format&fit=crop" alt="BIAB and acrylic nail set">
+          <div class="service-body">
+            <h3>BIAB, Acrylic &amp; Gel</h3>
+            <p>BIAB nails, acrylic sets and gel manicures that wear beautifully — plus pedicures, nail art and repairs.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop" alt="Eyelash extension treatment">
+          <div class="service-body">
+            <h3>Eyelash Extensions</h3>
+            <p>Full, natural-looking lash extensions applied with care — wake up ready, no mascara needed.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop" alt="Relaxing body massage treatment">
+          <div class="service-body">
+            <h3>Massage, Waxing &amp; Tanning</h3>
+            <p>Body massages, waxing and spray tanning — the full beauty routine, all in one Bournemouth salon.</p>
+            <span class="price">Call for prices</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Gallery</div>
+        <h2>From the nail bar</h2>
+        <p>Colour, gloss and a little pampering — a look at life inside Lily's Nail Bar.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop" alt="Gel polish colour choices"><figcaption>Gel colour choices</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1614806687007-2215a9db3b1c?q=80&w=800&auto=format&fit=crop" alt="Nail art detail"><figcaption>Nail art detail</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?q=80&w=800&auto=format&fit=crop" alt="Manicure care"><figcaption>Manicure care</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800&auto=format&fit=crop" alt="Finished polished nails"><figcaption>Finished &amp; polished</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours" class="green">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Opening hours</div>
+        <h2>When to find us</h2>
+      </div>
+      <table class="hours-table">
+        <tr><td>Monday</td><td>10am – 6:30pm</td></tr>
+        <tr><td>Tuesday</td><td>10am – 6:30pm</td></tr>
+        <tr><td>Wednesday</td><td>10am – 6:30pm</td></tr>
+        <tr><td>Thursday</td><td>10am – 6:30pm</td></tr>
+        <tr><td>Friday</td><td>10am – 6:30pm</td></tr>
+        <tr><td>Saturday</td><td>10am – 6:30pm</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Get in touch</div>
+        <h2>Book your appointment</h2>
+        <p>Call or email to book — tell us the treatment you want and when suits you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <b>Phone</b>
+          <a href="tel:+441202553128">01202 553128</a>
+          <p style="color:var(--muted);font-size:.95rem">Call for prices and availability</p>
+        </div>
+        <div class="contact-card">
+          <b>Email</b>
+          <a href="mailto:vuvloan@gmail.com">vuvloan@gmail.com</a>
+          <p style="color:var(--muted);font-size:.95rem">We reply as soon as we can</p>
+        </div>
+        <div class="contact-card">
+          <b>Find us</b>
+          <p style="font-weight:700">102 Old Christchurch Road, Bournemouth BH1 1LR</p>
+          <p style="color:var(--muted);font-size:.95rem">Rated 4.4 ★ from 211 Google reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>© Lily's Nail Bar, 102 Old Christchurch Road, Bournemouth BH1 1LR · Phone 01202 553128 · Extensions, ombré, BIAB, lashes, waxing and massage.</p>
+  </div>
+</footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

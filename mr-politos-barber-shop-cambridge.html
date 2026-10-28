@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr Polito's Barber Shop, Cambridge | Classic Barbering Since 1992</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:#1e293b;background:#f1f5f9;line-height:1.6}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes slideBar{from{width:0}to{width:120px}}
+  @keyframes pulseBtn{0%,100%{box-shadow:0 0 0 0 rgba(250,204,21,.55)}50%{box-shadow:0 0 0 10px rgba(250,204,21,0)}}
+  header{background:#334155;color:#fff;padding:18px 6%}
+  header strong{font-size:20px;letter-spacing:.5px}
+  header span{color:#facc15}
+  .hero{background:linear-gradient(90deg,#334155 55%,#475569);color:#fff;padding:64px 6% 56px;text-align:left;animation:fadeUp .8s ease both}
+  .hero h1{font-size:42px;line-height:1.15;max-width:640px}
+  .hero h1 em{color:#facc15;font-style:normal}
+  .hero .bar{height:6px;background:#facc15;margin:20px 0;animation:slideBar 1s ease both}
+  .hero p{max-width:600px;color:#e2e8f0;font-size:18px}
+  .rating{display:inline-block;background:#facc15;color:#1e293b;font-weight:700;padding:8px 16px;border-radius:999px;margin-top:22px;animation:fadeUp 1s .3s ease both}
+  .cta{display:inline-block;margin-top:24px;background:#facc15;color:#1e293b;font-weight:700;text-decoration:none;padding:14px 26px;border-radius:8px;animation:pulseBtn 2.4s infinite}
+  .cta2{display:inline-block;margin-top:24px;margin-left:12px;background:transparent;color:#fff;font-weight:700;text-decoration:none;padding:13px 24px;border:2px solid #facc15;border-radius:8px}
+  section{padding:48px 6%;max-width:1060px;margin:0 auto}
+  h2{font-size:28px;color:#334155;border-left:6px solid #facc15;padding-left:14px;margin-bottom:20px}
+  .services{list-style:none}
+  .services li{display:flex;justify-content:space-between;gap:16px;background:#fff;border:1px solid #e2e8f0;border-left:5px solid #facc15;padding:14px 18px;margin-bottom:10px;border-radius:6px}
+  .services li b{color:#334155}
+  .services li span{color:#0f172a;font-weight:700;white-space:nowrap}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px;animation:fadeUp .8s ease both}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden}
+  td{padding:12px 16px;border-bottom:1px solid #e2e8f0}
+  td:first-child{font-weight:600;color:#334155}
+  .contact{background:#334155;color:#fff;border-radius:12px;padding:32px}
+  .contact h2{color:#fff}
+  .contact a{color:#facc15}
+  footer{text-align:center;padding:24px;color:#64748b;font-size:14px}
+  @media(max-width:600px){.hero h1{font-size:30px}.cta2{margin-left:0}}
+</style>
+</head>
+<body>
+<header><strong>MR POLITO'S <span>BARBER SHOP</span></strong> &nbsp;·&nbsp; Cambridge</header>
+
+<div class="hero">
+  <h1>Classic Barbering in Cambridge <em>Since 1992</em></h1>
+  <div class="bar"></div>
+  <p>A friendly, professional barbershop on Silver Street. Tailored haircuts, sharp skin fades, beard trims and traditional hot-towel shaves — cut exactly as you ask.</p>
+  <div class="rating">★ 4.8 — from 620 Google reviews</div><br>
+  <a class="cta" href="tel:+441223369622">Call 01223 369622</a>
+  <a class="cta2" href="mailto:mrpolitosbarbershop@gmail.com">Email Us</a>
+</div>
+
+<section>
+  <h2>About Us</h2>
+  <p>Mr Polito's Barber Shop has been serving Cambridge since 1992. Customers praise the welcoming atmosphere, skilled haircuts and attentive service — stylists who listen to what you want and deliver it, from classic scissor cuts to modern fades. Walk in or book ahead at our Silver Street shop, right in the heart of the city.</p>
+</section>
+
+<section>
+  <h2>Services &amp; Prices</h2>
+  <ul class="services">
+    <li><b>Wash, Cut &amp; Blowdry</b><span>£18.00</span></li>
+    <li><b>Dry Cut</b><span>£16.00</span></li>
+    <li><b>Back &amp; Sides</b><span>£14.00</span></li>
+    <li><b>Skin Fade</b><span>£18.00</span></li>
+    <li><b>Beard Trim</b><span>£6.00</span></li>
+    <li><b>Shave &amp; Hot Towel</b><span>£17.00</span></li>
+    <li><b>Complete Restyles</b><span>Call for prices</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80" alt="Barber cutting a client's hair">
+    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=900&q=80" alt="Barber shaving tools at work">
+    <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=900&q=80" alt="Barbershop interior">
+    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900&q=80" alt="Haircut in progress">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <table>
+    <tr><td>Monday – Friday</td><td>8:30am – 5:30pm</td></tr>
+    <tr><td>Saturday</td><td>8:30am – 5:00pm</td></tr>
+    <tr><td>Sunday</td><td>Closed</td></tr>
+  </table>
+</section>
+
+<section>
+  <div class="contact">
+    <h2>Visit or Contact Us</h2>
+    <p>4 Silver Street, Cambridge CB3 9EL</p>
+    <p>Phone: <a href="tel:+441223369622">01223 369622</a></p>
+    <p>Email: <a href="mailto:mrpolitosbarbershop@gmail.com">mrpolitosbarbershop@gmail.com</a></p>
+    <p style="margin-top:16px"><a class="cta" href="tel:+441223369622">Call to Book</a></p>
+  </div>
+</section>
+
+<footer>Mr Polito's Barber Shop · 4 Silver Street, Cambridge CB3 9EL · Rated 4.8 from 620 Google reviews</footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
