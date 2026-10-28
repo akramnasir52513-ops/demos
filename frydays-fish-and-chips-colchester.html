@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frydays Fish &amp; Chips | Takeaway in Colchester</title>
+<meta name="description" content="Frydays Fish &amp; Chips — takeaway in Colchester. Rated 4.4 stars from 459 Google reviews. See the menu, opening hours and order details.">
+<style>
+:root{--bg:#20140c;--acc:#f59e0b;--soft:#fde9c8;--cream:#fdf6ec;--muted:#d8c6ae;--panel:#2b1a0e;--line:#4a2c15}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;background:var(--bg);color:var(--cream);line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:0 auto}
+@keyframes riseUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,122,26,.35)}50%{box-shadow:0 0 26px 4px rgba(255,122,26,.28)}}
+@keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.rise{animation:riseUp .85s ease-out both}
+.rise-1{animation-delay:.1s}.rise-2{animation-delay:.2s}.rise-3{animation-delay:.3s}
+header{position:sticky;top:0;z-index:50;background:rgba(20,12,6,.94);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 0;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-size:1.35rem;text-decoration:none}
+.brand span{color:var(--acc)}
+.btn{display:inline-flex;gap:.5rem;align-items:center;text-decoration:none;padding:.8rem 1.4rem;border-radius:999px;font-weight:700;border:1px solid transparent;transition:transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--soft),var(--acc));color:#241203;animation:pulseGlow 3.4s ease-in-out infinite}
+.btn-wa{background:#25d366;color:#06280f}
+.btn-ghost{border-color:var(--acc);color:var(--soft)}
+.hero{position:relative;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.5),rgba(20,12,6,.2) 45%,var(--bg) 97%)}
+.hero-inner{position:relative;padding:5.5rem 0 4.5rem;max-width:720px}
+.eyebrow{display:inline-block;padding:.35rem 1rem;border:1px solid var(--acc);border-radius:999px;font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;color:var(--soft);background:rgba(20,12,6,.55);margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05}
+.hero p.lead{margin:1.2rem 0 1.8rem;font-size:1.12rem;color:#efe2cc;max-width:56ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.badge{margin-top:2.2rem;display:inline-flex;gap:1.6rem;align-items:center;background:rgba(25,15,8,.8);border:1px solid var(--line);border-radius:16px;padding:1rem 1.4rem;animation:floatBadge 6s ease-in-out infinite}
+.badge b{font-family:Georgia,serif;font-size:1.9rem;color:var(--soft);display:block;line-height:1}
+.badge small{color:var(--muted);font-size:.8rem}
+section{padding:4.2rem 0}
+.sec-tag{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--acc);margin-bottom:.5rem}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15}
+.sec-head p{color:var(--muted);margin-top:.7rem;max-width:660px}
+.menu-grid{display:grid;gap:1.2rem;margin-top:2.2rem}
+@media(min-width:700px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.dish{background:linear-gradient(180deg,#33200f,var(--panel));border:1px solid var(--line);border-radius:22px 6px 22px 6px;border:3px double var(--acc);overflow:hidden;transition:transform .3s}
+.dish:hover{transform:translateY(-5px)}
+.dish img{height:170px;width:100%;object-fit:cover}
+.dish-body{padding:1.2rem 1.3rem 1.4rem}
+.dish h3{font-size:1.15rem;margin-bottom:.4rem}
+.price{display:inline-block;font-size:.85rem;color:var(--soft);border:1px dashed var(--acc);padding:.25rem .8rem;border-radius:999px}
+.about-grid{display:grid;gap:2rem;align-items:start}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-copy p{color:var(--muted);margin-bottom:1rem}
+.about-copy p strong{color:var(--cream)}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.2rem}
+@media(min-width:820px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);position:relative}
+.gallery img{height:210px;width:100%;object-fit:cover}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .8rem .6rem;font-size:.85rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8))}
+.hours-list{list-style:none;display:grid;gap:.7rem;margin-top:1.6rem;max-width:620px}
+.hours-list li{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.2rem}
+.contact-card{background:linear-gradient(160deg,#3a2410,var(--panel));border:1px solid var(--acc);border-radius:20px;padding:2rem}
+.contact-card h2{font-size:1.8rem;margin-bottom:.6rem}
+.contact-card p{color:var(--muted);margin-bottom:1.4rem}
+.contact-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+footer{border-top:1px solid var(--line);padding:2.2rem 0;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top">Frydays <span>Fish &amp; Chips</span></a>
+<div style="display:flex;gap:.6rem;flex-wrap:wrap"><a class="btn btn-gold" href="tel:+441206868630">Call 01206 868630</a><a class="btn btn-ghost" href="mailto:maja811@hotmail.co.uk">Email us</a></div>
+</div></header>
+<main id="top">
+<section class="hero" style="padding:0"><div class="hero-media"><img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=1000&auto=format&fit=crop" alt="Burgers served with chips at Frydays"></div>
+<div class="wrap"><div class="hero-inner">
+<span class="eyebrow rise rise-1">Takeaway &middot; Colchester</span>
+<h1 class="rise rise-2">Frydays Fish &amp; Chips</h1>
+<p class="lead rise rise-3">Frydays on Ipswich Road is a Colchester chippy with a big menu: cod and haddock with chips, burgers, pies, doner meat and chips, and a meal deal for two. Takeaway and delivery, seven days a week.</p>
+<div class="hero-ctas rise rise-3"><a class="btn btn-gold" href="tel:+441206868630">Call to order: 01206 868630</a><a class="btn btn-ghost" href="mailto:maja811@hotmail.co.uk">Email us</a></div>
+<div class="badge rise rise-3"><div><b>4.4 ★</b><small>Google rating</small></div><div><b>459</b><small>Google reviews</small></div><div><b>Colchester</b><small>Find us here</small></div></div>
+</div></div></section>
+<section id="menu"><div class="wrap"><div class="sec-head"><div class="sec-tag">Order favourites</div>
+<h2>Menu at Frydays Fish &amp; Chips</h2>
+<p>Fresh from the kitchen — call or message for today's availability and prices where marked. Everything below comes from the shop's own public menu.</p></div>
+<div class="menu-grid"><article class="dish"><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1000&auto=format&fit=crop" alt="Battered fish and chips in a takeaway box"><div class="dish-body"><h3>Cod with Chips + Can + Salad</h3><span class="price">£8.90</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1000&auto=format&fit=crop" alt="Battered fish and chips in a takeaway box"><div class="dish-body"><h3>Haddock with Chips + Can + Salad</h3><span class="price">£9.50</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=1000&auto=format&fit=crop" alt="Burgers served with chips"><div class="dish-body"><h3>4oz Burger</h3><span class="price">£6.40</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=1000&auto=format&fit=crop" alt="Burgers served with chips"><div class="dish-body"><h3>12oz Burger</h3><span class="price">£9.40</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=1000&auto=format&fit=crop" alt="Burgers served with chips"><div class="dish-body"><h3>Chicken Fillet Burger</h3><span class="price">£6.40</span></div></article><article class="dish text-only"><div class="dish-body"><h3>Pukka Pie + Battered Sausage</h3><span class="price">£8.90</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1000&auto=format&fit=crop" alt="Battered fish and chips in a takeaway box"><div class="dish-body"><h3>Meal Deal for 2</h3><span class="price">£15</span></div></article><article class="dish text-only"><div class="dish-body"><h3>Doner Meat and Chips</h3><span class="price">Call for prices</span></div></article><article class="dish"><img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=1000&auto=format&fit=crop" alt="Crispy fried chicken pieces with dip"><div class="dish-body"><h3>Kids Meal (4 nuggets + chips + lollipop + fruit shoot)</h3><span class="price">Call for prices</span></div></article><article class="dish text-only"><div class="dish-body"><h3>Curry Sauce</h3><span class="price">Call for prices</span></div></article><article class="dish text-only"><div class="dish-body"><h3>Mushy Peas</h3><span class="price">Call for prices</span></div></article></div></div></section>
+<section id="about" style="background:#150c06;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap"><div class="about-grid">
+<div><div class="sec-tag">About the shop</div><h2 style="font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.15;margin-bottom:1rem">Frydays Fish &amp; Chips in Colchester</h2>
+<p class="about-copy" style="color:var(--muted)">Frydays on Ipswich Road is a Colchester chippy with a big menu: cod and haddock with chips, burgers, pies, doner meat and chips, and a meal deal for two. Takeaway and delivery, seven days a week. Rated <strong style="color:var(--cream)">4.4 stars from 459 Google reviews</strong>, it is a name locals keep coming back to — and a first stop worth making if you are hungry in Colchester.</p></div>
+<div><div class="sec-tag">Find us</div><p style="color:var(--muted)">116 Ipswich Road, Colchester CO4 0AE<br>Phone: 01206 868630<br>Email: maja811@hotmail.co.uk</p></div>
+</div></div></section>
+<section id="gallery"><div class="wrap"><div class="sec-head"><div class="sec-tag">From the kitchen</div><h2>Fresh, hot and ready to go</h2></div>
+<div class="gallery"><figure><img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?q=80&w=1000&auto=format&fit=crop" alt="Cod and chips"><figcaption>Cod and chips</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=1000&auto=format&fit=crop" alt="Burgers and chips"><figcaption>Burgers and chips</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=1000&auto=format&fit=crop" alt="Chips"><figcaption>Chips</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=1000&auto=format&fit=crop" alt="Chicken for the kids meal"><figcaption>Chicken for the kids meal</figcaption></figure></div></div></section>
+<section id="hours" style="background:#150c06;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap"><div class="sec-head"><div class="sec-tag">Opening hours</div><h2>When to order</h2></div>
+<ul class="hours-list"><li>Monday – Thursday &amp; Saturday: 11:30am – 9:00pm</li><li>Friday: 11:30am – 9:30pm</li><li>Sunday: 2:30pm – 9:00pm</li></ul></div></section>
+<section id="contact"><div class="wrap"><div class="contact-card">
+<div class="sec-tag">Hungry? Order now</div><h2>Order from Frydays Fish &amp; Chips</h2>
+<p>116 Ipswich Road, Colchester CO4 0AE · Phone 01206 868630 · Email maja811@hotmail.co.uk · Rated 4.4 from 459 Google reviews.</p>
+<div class="contact-actions"><a class="btn btn-gold" href="tel:+441206868630">Call 01206 868630</a><a class="btn btn-ghost" href="mailto:maja811@hotmail.co.uk">Email us</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap"><span>© Frydays Fish &amp; Chips, Colchester. Demo website by Akram Web Studio.</span></div></footer>
+<script data-goatcounter="https://akramnasir52513-ops.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
