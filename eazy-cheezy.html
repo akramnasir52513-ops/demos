@@ -240,7 +240,12 @@
     --ink:#FFF4E0; --muted:#D9BE97; --line:#453218;
     --shadow:0 14px 34px rgba(0,0,0,.5);
     background:#150E07;
+    color:var(--ink);
   }
+  /* Contrast fix: headings, wordmark, card titles aur prices halke cream rang me */
+  .theme-kith h1,.theme-kith h2,.theme-kith h3,
+  .theme-kith .wordmark,.theme-kith .feat .price,
+  .theme-kith .item .nm b{color:var(--ink)}
   .theme-kith h1,.theme-kith h2,.theme-kith h3,
   .theme-kith .wordmark,.theme-kith .price{font-family:"Baloo 2","Bricolage Grotesque",sans-serif}
   /* Brand bar — centered stack */
