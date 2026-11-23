@@ -124,11 +124,42 @@
   .sticky-bar .call{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1.5px solid var(--sage);color:var(--sage-deep);text-decoration:none;font-weight:600;border-radius:12px;padding:11px 16px;min-height:50px}
   .sticky-bar .order{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;border-radius:12px;padding:11px 16px;min-height:50px;font-size:1rem}
   .sticky-bar .order:active{background:var(--wa-deep)}
-  .float-wa{position:fixed;right:16px;bottom:96px;z-index:41;width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(23,138,68,.4);text-decoration:none}
+  .float-wa{position:fixed;right:16px;bottom:132px;z-index:41;width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(23,138,68,.4);text-decoration:none;transition:transform .25s ease,background .2s ease}
   .float-wa:active{background:var(--wa-deep)}
+  .float-wa:hover{transform:scale(1.08)}
+
+  /* ---------- Animations ---------- */
   @media (prefers-reduced-motion: no-preference){
     .float-wa{animation:pulse 2.6s ease-in-out infinite}
     @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+    @keyframes heroFadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes heroZoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+    .hero-img{animation:heroZoom 2.4s ease-out both}
+    .hero-inner>*{animation:heroFadeUp .8s cubic-bezier(.22,.8,.32,1) both}
+    .hero-inner>*:nth-child(1){animation-delay:.05s}
+    .hero-inner>*:nth-child(2){animation-delay:.15s}
+    .hero-inner>*:nth-child(3){animation-delay:.25s}
+    .hero-inner>*:nth-child(4){animation-delay:.35s}
+    .hero-inner>*:nth-child(5){animation-delay:.45s}
+    .hero-inner>*:nth-child(6){animation-delay:.55s}
+    .hero-inner>*:nth-child(7){animation-delay:.65s}
+    @keyframes revealUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+    html.js-anim .reveal.play{animation:revealUp .7s cubic-bezier(.22,.8,.32,1) both}
+    .item{transition:transform .35s ease,box-shadow .35s ease}
+    .item:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(67,86,58,.16)}
+    .item-photo{transition:transform .6s ease}
+    .item:hover .item-photo{transform:scale(1.04)}
+    .sec-photo img{transition:transform .7s ease}
+    .sec-photo:hover img{transform:scale(1.03)}
+    .btn,.order-btn,.chip,.dir-btn{transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+    .btn:hover,.order-btn:hover{transform:translateY(-2px)}
+    .chip:hover{transform:translateY(-1px);background:var(--sage-soft)}
+    .status-pill .dot{animation:dotPulse 1.8s ease-in-out infinite}
+    @keyframes dotPulse{0%,100%{box-shadow:0 0 0 3px rgba(34,163,85,.25)}50%{box-shadow:0 0 0 6px rgba(34,163,85,.12)}}
+    @keyframes barUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+    .sticky-bar{animation:barUp .6s cubic-bezier(.22,.8,.32,1) .3s both}
+    @keyframes floatIn{from{opacity:0;transform:translateY(16px) scale(.85)}to{opacity:1;transform:translateY(0) scale(1)}}
+    .float-wa{animation:floatIn .5s ease .8s both,pulse 2.6s ease-in-out 1.4s infinite}
   }
 </style>
 </head>
@@ -328,6 +359,24 @@
   render("pastaGrid", pastas, false);
   render("mocktailGrid", mocktails, false);
   render("drinkGrid", drinks, false);
+
+  /* ---- Scroll-reveal animations (cards/photos only — sections never hidden) ---- */
+  (function(){
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    document.documentElement.classList.add("js-anim");
+    var els = document.querySelectorAll(".item, .sec-photo, .visit-card");
+    els.forEach(function(el, i){ el.classList.add("reveal"); el.style.animationDelay = (i % 4) * 60 + "ms"; });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add("play"); io.unobserve(e.target); }
+      });
+    }, {threshold: 0, rootMargin: "0px 0px 120px 0px"});
+    els.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight + 120) el.classList.add("play");
+      else io.observe(el);
+    });
+  })();
 
   /* ---- Live open/closed status — Pakistan time, 7 PM – 12 AM ---- */
   function updateStatus(){
